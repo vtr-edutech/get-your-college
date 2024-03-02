@@ -1,0 +1,1 @@
+export const PROJECT_NAME_TITLE_CASE = 'Know Your College';

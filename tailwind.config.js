@@ -7,6 +7,13 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        card: '#F2F2F2',
+        background: '#EDEDED',
+        'fill-black': '#3c3c3c',
+        'fill-white': '#F0F0F0',
+        input: '#EAEAEA'
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
