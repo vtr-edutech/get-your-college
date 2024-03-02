@@ -14,6 +14,9 @@ module.exports = {
         'fill-white': '#F0F0F0',
         input: '#EAEAEA'
       },
+      textColor: {
+        primary: '#3c3c3c',
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
