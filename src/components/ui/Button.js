@@ -1,15 +1,20 @@
-'use client'
-import { redirect, useRouter } from 'next/navigation'
-import React from 'react'
+"use client";
+import Link from "next/link";
+import React from "react";
 
-const Button = ({ label, to = '', isDisabled }) => {
-    const router = useRouter();
+const Button = ({ label, to = "", onClick = () => null, isDisabled }) => {
 
   return (
-    <button className={`bg-fill-black w-full py-[10px] rounded text-fill-white ${isDisabled? 'opacity-20 pointer-events-none': ''}`} onClick={() => to != '' && router.push(to)}>
-        {label}
-    </button>
-  )
-}
+    <Link
+      className={`bg-fill-black w-full py-[10px] rounded text-center transition-opacity text-fill-white ${
+        isDisabled ? "opacity-20 pointer-events-none" : ""
+      }`}
+      href={to ?? '#'}
+      onClick={onClick}
+    >
+      {label}
+    </Link>
+  );
+};
 
-export default Button
+export default Button;

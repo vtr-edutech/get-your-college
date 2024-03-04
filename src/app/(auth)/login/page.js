@@ -1,11 +1,39 @@
 "use client";
 import AuthCard from "@/components/AuthCard";
 import Button from "@/components/ui/Button";
+import { testNumber } from "@/utils";
+import axios from "axios";
+import { useRouter } from "next/navigation";
 import React, { useRef, useState } from "react";
 
 const Login = () => {
   const mobileInputRef = useRef();
+  const router = useRouter();
   const [canSubmit, setCanSubmit] = useState(false);
+  const [reqStatus, setReqStatus] = useState("");
+
+  const handleSubmit = async () => {
+    setCanSubmit(false);
+    setReqStatus("loading");
+    try {
+      let number = mobileInputRef.current.value;
+      if (number.slice(0, 3) === '+91' && (number.slice(3).length === 10)) {
+        number = number.slice(3);
+      } else {
+        // toast to show invalid number
+      }
+      const mobileReq = await axios.post("/api/send-otp", { mobile: number });
+      alert(mobileReq.data.message);
+      router.push('/otp');
+    } catch (error) {
+      console.log(error);
+      setReqStatus("error");
+      alert(error.response.data.error);
+      mobileInputRef.current.value = '';
+    } finally {
+      setCanSubmit(true);
+    }
+  }
 
   return (
     <AuthCard>
@@ -21,15 +49,15 @@ const Login = () => {
           inputMode='numeric'
           ref={mobileInputRef}
           onInput={(e) =>
-            e.currentTarget.value.length === 10
+            testNumber(e.currentTarget.value)
               ? setCanSubmit(true)
               : setCanSubmit(false)
           }
           placeholder='+91'
-          className='w-[22rem] rounded-md bg-input px-3 py-2 focus:outline-1 focus:outline-gray-300'
+          className={`w-[22rem] rounded-md bg-input px-3 py-2 focus:outline-1 focus:outline-gray-300`}
         />
       </div>
-      <Button label={"Get OTP"} to={"/otp"} isDisabled={!canSubmit} />
+      <Button label={"Get OTP"} isDisabled={!canSubmit} onClick={handleSubmit} />
     </AuthCard>
   );
 };
