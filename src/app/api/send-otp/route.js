@@ -21,7 +21,7 @@ export async function POST(req) {
             lastOTP: '000000'
         }, { new: true, upsert: true });
 
-        console.log("🚀 ~ POST ~ userData:", userData)
+        console.log(`🚀 ~ user created for ${mobile} `)
         return NextResponse.json({ message: "OTP has been sent!" }, { status: 200 });
     } catch (error) {
         console.log("🚀 ~ POST ~ error:", error)

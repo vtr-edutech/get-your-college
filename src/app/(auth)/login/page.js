@@ -5,6 +5,7 @@ import { testNumber } from "@/utils";
 import axios from "axios";
 import { useRouter } from "next/navigation";
 import React, { useEffect, useRef, useState } from "react";
+import { toast } from "react-toastify";
 
 const Login = () => {
   const mobileInputRef = useRef();
@@ -20,22 +21,27 @@ const Login = () => {
   const handleSubmit = async () => {
     setCanSubmit(false);
     setReqStatus("loading");
+    let number = mobileInputRef.current.value;
     try {
-      let number = mobileInputRef.current.value;
-      if (number.slice(0, 3) === '+91' && (number.slice(3).length === 10)) {
+      
+      if ((number.slice(0, 3) === '+91' && (number.slice(3).length === 10))) {
         number = number.slice(3);
-      } else {
-        // toast to show invalid number
       }
+
+      if (number.length !== 10) return toast.error("Invalid number. Please check again!");
+
       const mobileReq = await axios.post("/api/send-otp", { mobile: number });
       localStorage.setItem('mobile', number); // temporarily setting mobile number in localstorage, so i can fetch it in /otp page
-      alert(mobileReq.data.message);
+      
       router.push('/otp');
+
     } catch (error) {
+      
       console.log(error);
       setReqStatus("error");
-      alert(error.response.data? error.response.data.error: error.message);
+      toast.error(`Couldn\'t send OTP to ${number}`)
       mobileInputRef.current.value = '';
+
     } finally {
       setCanSubmit(true);
     }
@@ -60,7 +66,7 @@ const Login = () => {
               : setCanSubmit(false)
           }
           placeholder='+91'
-          className={`w-[22rem] rounded-md bg-input px-3 py-2 focus:outline-1 focus:outline-gray-300`}
+          className={`w-[22rem] rounded-md bg-input px-3 py-2 focus:outline-1 focus:outline-gray-300 ${reqStatus === 'loading' && 'opacity-30'}`}
         />
       </div>
       <Button label={"Get OTP"} isDisabled={!canSubmit} onClick={handleSubmit} />

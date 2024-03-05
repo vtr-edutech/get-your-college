@@ -1,9 +1,11 @@
 "use client";
 import AuthCard from "@/components/AuthCard";
+import axios from "axios";
 import { OTPInput } from "input-otp";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import React, { useEffect, useRef, useState } from "react";
+import { toast } from "react-toastify";
 
 const InputSlot = (props) => (
   <div className='w-10 h-10 rounded-md bg-input px-3 py-2 focus:outline-1 focus:outline-gray-300'>
@@ -11,44 +13,54 @@ const InputSlot = (props) => (
   </div>
 );
 
-const handleOTPSubmit = (e, router, ref) => {
-  // logic to handle OTP submit
-
-  // testing logic only
-  // console.log(ref.current);
-  ref.current.style.opacity = 10;
-  setTimeout(() => {
-    router.push("/register");
-  }, 1000);
-};
-
 const Login = () => {
   const router = useRouter();
   const OTPInputRef = useRef();
   const [isOTPProvided, setIsOTPProvided] = useState(false);
   const [mobile, setMobile] = useState(null);
+  
+  const handleOTPSubmit = async (otp) => {
+  
+    // testing logic only
+    try {
+      const verifyOTPRequest = await axios.post('/api/verify-otp', { otp, mobile });
+      localStorage.setItem('verified', true);
+      router.push('/register');
+    } catch (error) {
+      console.log(error);
+      toast.error(error.response.data.error ?? error.message);
+      setIsOTPProvided(false);
+    }
+  };
 
   // check once after comp mounts if mobile number is there in localstorage
   useEffect(() => {
     const number = localStorage.getItem('mobile');
-    if (!number) return alert('We couldn\'t find the mobile number you entered. Please enter number again');
+    const isVerifiedAlready = localStorage.getItem("verified");
+    if (isVerifiedAlready) router.push("/register");
+    if (!number) {
+      toast.error(
+        "We couldn't find the mobile number you entered. Please enter number again"
+      );
+      router.replace('/login');
+    }
     setMobile(number);
   }, [])
   
 
   return (
-    <AuthCard gap={8}>
+    <AuthCard gap={4}>
       <h2 className='font-medium text-xl text-black/90'>
         Enter OTP to continue
       </h2>
       <div className='flex flex-col gap-5'>
-        <p className='font-light text-xs'>We&apos;ve sent an OTP to {mobile} <Link href={'/mobile'} className="underline">Not your number?</Link> </p>
+        <p className='font-light text-xs'>We&apos;ve sent an OTP to {mobile} <br /> <Link href={'/login'} className="underline">Not your number?</Link> </p>
         <OTPInput
           ref={OTPInputRef}
           inputMode='numeric'
-          onComplete={(e) => {
+          onComplete={(otp) => {
             setIsOTPProvided(!isOTPProvided);
-            handleOTPSubmit(e, router, OTPInputRef);
+            handleOTPSubmit(otp);
           }}
           containerClassName={`group flex items-center has-[:disabled]:opacity-30`}
           disabled={isOTPProvided}
