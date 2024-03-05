@@ -1,5 +1,7 @@
 {
   "files.associations": {
     "*.js": "javascriptreact"
-  }
+  },
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorBlinking": "smooth"
 }
