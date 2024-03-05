@@ -1,8 +1,9 @@
 "use client";
 import AuthCard from "@/components/AuthCard";
 import { OTPInput } from "input-otp";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 const InputSlot = (props) => (
   <div className='w-10 h-10 rounded-md bg-input px-3 py-2 focus:outline-1 focus:outline-gray-300'>
@@ -25,6 +26,15 @@ const Login = () => {
   const router = useRouter();
   const OTPInputRef = useRef();
   const [isOTPProvided, setIsOTPProvided] = useState(false);
+  const [mobile, setMobile] = useState(null);
+
+  // check once after comp mounts if mobile number is there in localstorage
+  useEffect(() => {
+    const number = localStorage.getItem('mobile');
+    if (!number) return alert('We couldn\'t find the mobile number you entered. Please enter number again');
+    setMobile(number);
+  }, [])
+  
 
   return (
     <AuthCard gap={8}>
@@ -32,7 +42,7 @@ const Login = () => {
         Enter OTP to continue
       </h2>
       <div className='flex flex-col gap-5'>
-        <p className='font-light text-xs'>Get your number verified</p>
+        <p className='font-light text-xs'>We&apos;ve sent an OTP to {mobile} <Link href={'/mobile'} className="underline">Not your number?</Link> </p>
         <OTPInput
           ref={OTPInputRef}
           inputMode='numeric'

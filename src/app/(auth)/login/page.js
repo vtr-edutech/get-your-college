@@ -4,13 +4,18 @@ import Button from "@/components/ui/Button";
 import { testNumber } from "@/utils";
 import axios from "axios";
 import { useRouter } from "next/navigation";
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 const Login = () => {
   const mobileInputRef = useRef();
   const router = useRouter();
   const [canSubmit, setCanSubmit] = useState(false);
   const [reqStatus, setReqStatus] = useState("");
+
+  // clear localstorage for good measures
+  useEffect(() => {
+    localStorage.clear();
+  }, []);
 
   const handleSubmit = async () => {
     setCanSubmit(false);
@@ -23,12 +28,13 @@ const Login = () => {
         // toast to show invalid number
       }
       const mobileReq = await axios.post("/api/send-otp", { mobile: number });
+      localStorage.setItem('mobile', number); // temporarily setting mobile number in localstorage, so i can fetch it in /otp page
       alert(mobileReq.data.message);
       router.push('/otp');
     } catch (error) {
       console.log(error);
       setReqStatus("error");
-      alert(error.response.data.error);
+      alert(error.response.data? error.response.data.error: error.message);
       mobileInputRef.current.value = '';
     } finally {
       setCanSubmit(true);
