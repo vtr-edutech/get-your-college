@@ -7,6 +7,8 @@ import { useRouter } from "next/navigation";
 import React, { useEffect, useRef, useState } from "react";
 import { toast } from "react-toastify";
 
+/* Check if already token is there in layout.js i think, and if so, just redirect to home */
+
 const Login = () => {
   const mobileInputRef = useRef();
   const router = useRouter();

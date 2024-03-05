@@ -1,3 +1,4 @@
+'use client'
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -6,6 +7,7 @@ import { MdOutlineDashboard, MdLogout } from "react-icons/md";
 import { GoSearch } from "react-icons/go";
 import { TbReportAnalytics } from "react-icons/tb";
 import { LuPhone } from "react-icons/lu";
+import { usePathname } from "next/navigation";
 
 const MENU_ITEMS = [
   {
@@ -40,6 +42,8 @@ const Vr = ({ mt }) => {
 }
 
 const Navbar = () => {
+  const currentPathName = usePathname();
+  
   return (
     <div className='flex flex-col h-screen items-center w-72 bg-white fixed top-0 left-0'>
       {/* Profile Section */}
@@ -63,12 +67,14 @@ const Navbar = () => {
       <Vr />
 
       {/* Menu Section */}
-      <div className='flex flex-col gap-7 p-8'>
+      <div className='flex flex-col gap-1 py-8 w-full'>
         {MENU_ITEMS.map((menu, i) => (
           <Link
             key={i}
             href={menu.to}
-            className='font-medium flex gap-2 items-center'
+            className={`font-medium flex gap-2 items-center pl-4 py-4 ml-10 ${
+              currentPathName == menu.to ? "bg-gray-200 rounded-s-md shadow-sm shadow-black/30": ''
+            }`}
           >
             {menu.icon}
             {menu.name}
@@ -80,7 +86,10 @@ const Navbar = () => {
 
       {/* Logout */}
       <div className='flex p-5 items-center'>
-        <Link href={"/logout"} className='flex gap-2 items-center text-red-400 font-medium'>
+        <Link
+          href={"/logout"}
+          className='flex gap-2 items-center text-red-400 font-medium'
+        >
           <MdLogout size={18} />
           LOGOUT
         </Link>
