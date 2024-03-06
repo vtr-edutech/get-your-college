@@ -62,7 +62,7 @@ const Home = () => {
             })}
           />
           {errors["MinCutoff"] && (
-            <p className='text-xs text-red-500 font-light absolute -bottom-8 left-0'>
+            <p className='text-xs text-red-500 font-light absolute -top-4 left-0'>
               {errors["MinCutoff"].message}
             </p>
           )}
@@ -88,7 +88,7 @@ const Home = () => {
             })}
           />
           {errors["MaxCutoff"] && (
-            <p className='text-xs text-red-500 font-light absolute -bottom-8 left-0'>
+            <p className='text-xs text-red-500 font-light absolute -top-4 left-0'>
               {errors["MaxCutoff"].message}
             </p>
           )}
@@ -124,7 +124,7 @@ const Home = () => {
             <option value='MECH'>MECH</option>
           </select>
           {errors["Dept"] && (
-            <p className='text-xs text-red-500 font-light absolute -bottom-8 left-0'>
+            <p className='text-xs text-red-500 font-light absolute -top-4 left-0'>
               {errors["Dept"].message}
             </p>
           )}
@@ -160,7 +160,7 @@ const Home = () => {
             <option value='SCA'>SCA</option>
           </select>
           {errors["Category"] && (
-            <p className='text-xs text-red-500 font-light absolute -bottom-8 left-0'>
+            <p className='text-xs text-red-500 font-light absolute -top-4 left-0'>
               {errors["Category"].message}
             </p>
           )}
