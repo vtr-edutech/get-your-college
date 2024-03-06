@@ -103,6 +103,32 @@ const Register = () => {
             <option value={"Female"}>Female</option>
             <option value={"Other"}>Other</option>
           </select>
+          {errors["Gender"] && (
+            <p className='text-xs text-red-500 font-light'>
+              {errors["Gender"].message}
+            </p>
+          )}
+        </div>
+        {/* Current pursuit */}
+        <div className='flex flex-col gap-1'>
+          <p className='font-light text-xs'>Group</p>
+          <select
+            {...register("Group", {
+              required: true,
+              validate: (value) =>
+                ["BWM", "CS", "CWCS"].includes(value) || "Invalid group",
+            })}
+            className='w-[22rem] rounded-md bg-input px-3 py-2 focus:outline-1 focus:outline-gray-300'
+          >
+            <option value={"BWM"}>Bio with Math</option>
+            <option value={"CS"}>Computer Science</option>
+            <option value={"CWCS"}>Commerce with Computer Science</option>
+          </select>
+          {errors["Group"] && (
+            <p className='text-xs text-red-500 font-light'>
+              {errors["Group"].message}
+            </p>
+          )}
         </div>
         {/* Address */}
         <div className='flex flex-col gap-1'>
@@ -142,6 +168,7 @@ const Register = () => {
           label={"Confirm Details"}
           className={"opacity-20"}
           isDisabled={!isChecked}
+          asButton
         />
       </form>
     </AuthCard>

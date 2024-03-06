@@ -73,7 +73,7 @@ const Navbar = () => {
             key={i}
             href={menu.to}
             className={`font-medium flex gap-2 items-center pl-4 py-4 ml-10 ${
-              currentPathName == menu.to ? "bg-gray-200 rounded-s-md shadow-sm shadow-black/30": ''
+              currentPathName == menu.to ? "bg-gray-100 rounded-s-md shadow-sm shadow-black/30": ''
             }`}
           >
             {menu.icon}
