@@ -16,6 +16,7 @@ const Register = () => {
     if (Object.keys(errors).length === 0) {
         console.log(data);
         // send data to server
+        // automatically redirect to home page after setting JWT in cookie
     }
   };
 

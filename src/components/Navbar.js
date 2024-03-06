@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { IoSettingsOutline, IoBookOutline } from "react-icons/io5";
+import { IoSettingsOutline, IoBookOutline, IoCompassOutline } from "react-icons/io5";
 import { MdOutlineDashboard, MdLogout } from "react-icons/md";
 import { GoSearch } from "react-icons/go";
 import { TbReportAnalytics } from "react-icons/tb";
@@ -29,6 +29,11 @@ const MENU_ITEMS = [
     name: "REPORT",
     icon: <TbReportAnalytics strokeWidth={2} size={18} />,
     to: "/report",
+  },
+  {
+    name: "DISCOVER",
+    icon: <IoCompassOutline size={22} />,
+    to: "/discover",
   },
   {
     name: "CONTACT",
