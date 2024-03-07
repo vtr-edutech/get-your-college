@@ -1,4 +1,4 @@
-import { cookies } from "next/headers";
+import { cookies, headers } from "next/headers";
 import { NextResponse } from "next/server";
 import { verifyJWT } from "./utils";
 import { revalidatePath } from "next/cache";
@@ -14,10 +14,10 @@ export async function middleware(req) {
     console.log("🚀 ~ middleware ~ pathname:", pathname)
 
     const actk = cookies().get('actk')?.value;
-    console.log("🚀 ~ Cookies in middleware", actk)
+    // console.log("🚀 ~ Cookies in middleware", actk)
 
     const cookieData = (actk && (await verifyJWT(actk)));
-    console.log("🚀 ~ middleware ~ cookieData:", cookieData)
+    console.log("🚀 ~ middleware ~ cookieData:", cookieData?.sub?.id);
 
     /* If request in any of the auth routes, then check if cookie is valid, if so redirect to home */
     if (AUTH_PATHS.includes(pathname) && !cookieData) {
@@ -25,7 +25,7 @@ export async function middleware(req) {
     }
 
     if (AUTH_PATHS.includes(pathname) && cookieData) {
-      console.log("ACTK inside auth path:", cookieData);
+      // console.log("ACTK inside auth path:", cookieData);
       return NextResponse.redirect(new URL("/home", req.url));
     } 
 
@@ -34,7 +34,10 @@ export async function middleware(req) {
       return NextResponse.redirect(new URL("/login", req.url));
     }
 
-    if (cookieData) req.userId = cookieData.id;
+    if (cookieData) {
+      // headers().set('a')
+      req.userId = cookieData.id
+    };
 
     return NextResponse.next();
 

@@ -49,12 +49,12 @@ export async function POST(req) {
             with that userId, query mongo if userId is there, or else, popup invalid user and yeet them out
             or else, save that data with that userId
         */
-      const regToken = issueRegistrationJWT(userData._id);
+      const regToken = await issueRegistrationJWT(userData._id);
       cookies().set('regtk', regToken, { httpOnly: true, secure: true });
 
     } catch (error) {
         console.log("🚀 ~ verify-otp Error:", error)
         return NextResponse.json({ error: 'Server error in verifying details!' }, { status: 500 })   
     }
-    if (isSuccess) return NextResponse.redirect('/register');
+    if (isSuccess) return NextResponse.redirect(new URL('/register', req.url));
 }

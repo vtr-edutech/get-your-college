@@ -32,11 +32,11 @@ export async function issueRegistrationJWT(userId) {
 
 export async function verifyRegistrationJWT(token) {
   try {
-    const { id } = await jose.jwtVerify(
+    const { payload } = await jose.jwtVerify(
       token,
       new TextEncoder().encode(process.env.JWT_SECRET)
     );
-    return id;
+    return payload.sub.id;
   } catch (error) {
     console.log("🚀 ~ verifyRegistrationJWT ~ error:", error);
     return null;

@@ -26,7 +26,7 @@ export async function POST(req) {
         { status: 403 }
       );
 
-    const userId = verifyRegistrationJWT(registrationToken.value);
+    const userId = await verifyRegistrationJWT(registrationToken.value);
     if (userId == null) {
       cookies().delete('regtk');
       return NextResponse.json(
@@ -56,7 +56,7 @@ export async function POST(req) {
     userData.email = email;
     await userData.save();
 
-    const accessToken = issueJWT(userData._id, userData.firstName);
+    const accessToken = await issueJWT(userData._id, userData.firstName);
 
     cookies().set('actk', accessToken, { httpOnly: true, secure: true });
     cookies().delete('regtk');
