@@ -27,6 +27,7 @@ export async function POST(req) {
             */
         const accToken = await issueJWT(userData._id, userData.firstName);
         console.log('loggin in existing user');
+        // req.cookies.set("actk", accToken, { httpOnly: true, secure: true });
         cookies().set("actk", accToken, { httpOnly: true, secure: true });
         // return NextResponse.redirect(new URL("/home", req.url));
         return NextResponse.json({ message: 'Logged in Succesfully' }, { status: 200 });
