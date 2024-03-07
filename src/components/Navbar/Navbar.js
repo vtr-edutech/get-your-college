@@ -92,7 +92,7 @@ const Navbar = ({ userName }) => {
       {/* Logout */}
       <div className='flex p-5 items-center'>
         <Link
-          href={"/logout"}
+          href={"/api/logout"}
           className='flex gap-2 items-center text-red-400 font-medium'
         >
           <MdLogout size={18} />

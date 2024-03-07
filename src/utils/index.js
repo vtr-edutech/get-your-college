@@ -14,7 +14,7 @@ export async function issueJWT(userId, userName) {
   const token = await new jose.SignJWT({})
     .setProtectedHeader({ alg: "HS256" })
     .setIssuedAt()
-    .setExpirationTime('5m')
+    .setExpirationTime('2hrs')
     .setSubject({ id: userId, name: userName })
     .sign(new TextEncoder().encode(process.env.JWT_SECRET));
   return token;
@@ -24,7 +24,7 @@ export async function issueRegistrationJWT(userId) {
   const token = await new jose.SignJWT({})
     .setProtectedHeader({ alg: "HS256" })
     .setIssuedAt()
-    .setExpirationTime('5m')
+    .setExpirationTime('1d')
     .setSubject({ id: userId })
     .sign(new TextEncoder().encode(process.env.JWT_SECRET));
   return token;

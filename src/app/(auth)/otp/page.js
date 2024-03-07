@@ -29,6 +29,7 @@ const Login = () => {
       router.push('/register'); // just sending to any of the auth routes and it automatically send back if cookie to /home
     } catch (error) {
       console.log(error);
+      OTPInputRef.current?.focus();
       toast.error(error.response.data.error ?? error.message);
       setIsOTPProvided(false);
     }

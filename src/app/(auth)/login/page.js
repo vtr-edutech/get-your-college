@@ -30,7 +30,11 @@ const Login = () => {
         number = number.slice(3);
       }
 
-      if (number.length !== 10) return toast.error("Invalid number. Please check again!");
+      if (number.length !== 10) {
+        setReqStatus("");
+        setCanSubmit(false);
+        return toast.error("Invalid number. Please check again!");
+      }
 
       const mobileReq = await axios.post("/api/send-otp", { mobile: number });
       localStorage.setItem('mobile', number); // temporarily setting mobile number in localstorage, so i can fetch it in /otp page
@@ -41,12 +45,15 @@ const Login = () => {
       
       console.log(error);
       setReqStatus("error");
+      setCanSubmit(true);
       toast.error(`Couldn\'t send OTP to ${number}`)
       mobileInputRef.current.value = '';
 
-    } finally {
-      setCanSubmit(true);
     }
+  }
+
+  const handleEnterKeyPress = (e) => {
+    if (e.keyCode === 13) handleSubmit();
   }
 
   return (
@@ -67,6 +74,7 @@ const Login = () => {
               ? setCanSubmit(true)
               : setCanSubmit(false)
           }
+          onKeyUp={handleEnterKeyPress}
           placeholder='+91'
           className={`w-[22rem] rounded-md bg-input px-3 py-2 focus:outline-1 focus:outline-gray-300 ${reqStatus === 'loading' && 'opacity-30'}`}
         />
