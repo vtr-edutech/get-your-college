@@ -25,7 +25,7 @@ const Login = () => {
     try {
       const verifyOTPRequest = await axios.post('/api/verify-otp', { otp, mobile });
       toast.success(verifyOTPRequest.data.message);
-      // if (verifyOTPRequest.status == 303) return router.replace('/home');
+      if (verifyOTPRequest.status == 200) return router.replace('/home');
       router.push('/register'); // just sending to any of the auth routes and it automatically send back if cookie to /home
     } catch (error) {
       console.log(error);

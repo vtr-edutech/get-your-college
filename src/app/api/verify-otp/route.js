@@ -29,7 +29,7 @@ export async function POST(req) {
         console.log('loggin in existing user');
         // req.cookies.set("actk", accToken, { httpOnly: true, secure: true });
         cookies().set("actk", accToken, { httpOnly: true, secure: true });
-        return NextResponse.redirect(new URL("/home", req.url), { status: 200 });
+        return NextResponse.redirect(new URL("/home", req.url), { status: 302 });
         // return NextResponse.json({ message: 'Logged in Succesfully' }, { status: 200 });
         /* check in register page if cookie is there in layout.js, if so, decode it and check if session is valid
                 and redirect to home page. but if not cookie, 
