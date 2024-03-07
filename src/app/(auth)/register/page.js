@@ -1,8 +1,11 @@
 "use client";
 import AuthCard from "@/components/AuthCard";
 import Button from "@/components/ui/Button";
+import axios from "axios";
+import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
+import { toast } from "react-toastify";
 
 const Register = () => {
   const [isChecked, setIsChecked] = useState(false);
@@ -11,12 +14,25 @@ const Register = () => {
     handleSubmit,
     formState: { errors },
   } = useForm();
+  const router = useRouter();
 
-  const onSubmit = (data) => {
+  const onSubmit = async (data) => {
     if (Object.keys(errors).length === 0) {
         console.log(data);
-        // send data to server
-        // automatically redirect to home page after setting JWT in cookie
+        try {
+          const registerReq = await axios.post("/api/register", data);
+          console.log("🚀 ~ onSubmit ~ registerReq:", registerReq)
+          toast.success(registerReq.data.message);
+          router.replace('/home');
+        } catch (error) {
+          console.log("🚀 ~ onSubmit ~ error:", error)
+          toast.error(error.response.data.error ?? error.message);
+          if (error.response.status == 401) {
+            setTimeout(() => {
+              router.replace('/login');
+            }, 3000);
+          }
+        }
     }
   };
 
@@ -30,7 +46,7 @@ const Register = () => {
         <div className='flex flex-col gap-1'>
           <p className='font-light text-xs'>First Name</p>
           <input
-            {...register("First Name", {
+            {...register("firstName", {
               required: { value: true, message: "Can't be empty" },
               maxLength: {
                 value: 80,
@@ -41,9 +57,9 @@ const Register = () => {
             type='text'
             className='w-[22rem] rounded-md bg-input px-3 py-2 focus:outline-1 focus:outline-gray-300'
           />
-          {errors["First Name"] && (
+          {errors["firstName"] && (
             <p className='text-xs text-red-500 font-light'>
-              {errors["First Name"].message}
+              {errors["firstName"].message}
             </p>
           )}
         </div>
@@ -51,7 +67,7 @@ const Register = () => {
         <div className='flex flex-col gap-1'>
           <p className='font-light text-xs'>Last Name</p>
           <input
-            {...register("Last Name", {
+            {...register("lastName", {
               required: { value: true, message: "Can't be empty" },
               maxLength: {
                 value: 80,
@@ -62,9 +78,9 @@ const Register = () => {
             type='text'
             className='w-[22rem] rounded-md bg-input px-3 py-2 focus:outline-1 focus:outline-gray-300'
           />
-          {errors["Last Name"] && (
+          {errors["lastName"] && (
             <p className='text-xs text-red-500 font-light'>
-              {errors["Last Name"].message}
+              {errors["lastName"].message}
             </p>
           )}
         </div>
@@ -72,7 +88,7 @@ const Register = () => {
         <div className='flex flex-col gap-1'>
           <p className='font-light text-xs'>E-mail</p>
           <input
-            {...register("Email", {
+            {...register("email", {
               required: { value: true, message: "Required!" },
               maxLength: {
                 value: 100,
@@ -83,9 +99,9 @@ const Register = () => {
             type='text'
             className='w-[22rem] rounded-md bg-input px-3 py-2 focus:outline-1 focus:outline-gray-300'
           />
-          {errors["Email"] && (
+          {errors["email"] && (
             <p className='text-xs text-red-500 font-light'>
-              {errors["Email"].message}
+              {errors["email"].message}
             </p>
           )}
         </div>
@@ -93,20 +109,20 @@ const Register = () => {
         <div className='flex flex-col gap-1'>
           <p className='font-light text-xs'>Gender</p>
           <select
-            {...register("Gender", {
+            {...register("gender", {
               required: true,
               validate: (value) =>
-                ["Male", "Female", "Other"].includes(value) || "Invalid Gender",
+                ["male", "female", "other"].includes(value) || "Invalid Gender",
             })}
             className='w-[22rem] rounded-md bg-input px-3 py-2 focus:outline-1 focus:outline-gray-300'
           >
-            <option value={"Male"}>Male</option>
-            <option value={"Female"}>Female</option>
-            <option value={"Other"}>Other</option>
+            <option value={"male"}>Male</option>
+            <option value={"female"}>Female</option>
+            <option value={"other"}>Other</option>
           </select>
-          {errors["Gender"] && (
+          {errors["gender"] && (
             <p className='text-xs text-red-500 font-light'>
-              {errors["Gender"].message}
+              {errors["gender"].message}
             </p>
           )}
         </div>
@@ -114,7 +130,7 @@ const Register = () => {
         <div className='flex flex-col gap-1'>
           <p className='font-light text-xs'>Group</p>
           <select
-            {...register("Group", {
+            {...register("group", {
               required: true,
               validate: (value) =>
                 ["BWM", "CS", "CWCS"].includes(value) || "Invalid group",
@@ -125,9 +141,9 @@ const Register = () => {
             <option value={"CS"}>Computer Science</option>
             <option value={"CWCS"}>Commerce with Computer Science</option>
           </select>
-          {errors["Group"] && (
+          {errors["group"] && (
             <p className='text-xs text-red-500 font-light'>
-              {errors["Group"].message}
+              {errors["group"].message}
             </p>
           )}
         </div>
@@ -135,7 +151,7 @@ const Register = () => {
         <div className='flex flex-col gap-1'>
           <p className='font-light text-xs'>Address</p>
           <input
-            {...register("Address", {
+            {...register("address", {
               required: { value: true, message: "Required!" },
               minLength: { value: true, message: "Invalid Address" },
               maxLength: {
@@ -147,9 +163,9 @@ const Register = () => {
             type='text'
             className='w-[22rem] rounded-md bg-input px-3 py-2 focus:outline-1 focus:outline-gray-300'
           />
-          {errors["Address"] && (
+          {errors["address"] && (
             <p className='text-xs text-red-500 font-light'>
-              {errors["Address"].message}
+              {errors["address"].message}
             </p>
           )}
         </div>

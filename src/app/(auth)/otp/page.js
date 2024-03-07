@@ -24,7 +24,8 @@ const Login = () => {
     // testing logic only
     try {
       const verifyOTPRequest = await axios.post('/api/verify-otp', { otp, mobile });
-      localStorage.setItem('verified', true);
+      toast.success(verifyOTPRequest.data.message);
+      if (verifyOTPRequest.status == 303) return router.replace('/home');
       router.push('/register');
     } catch (error) {
       console.log(error);
@@ -36,8 +37,6 @@ const Login = () => {
   // check once after comp mounts if mobile number is there in localstorage
   useEffect(() => {
     const number = localStorage.getItem('mobile');
-    const isVerifiedAlready = localStorage.getItem("verified");
-    if (isVerifiedAlready) router.push("/register");
     if (!number) {
       toast.error(
         "We couldn't find the mobile number you entered. Please enter number again"

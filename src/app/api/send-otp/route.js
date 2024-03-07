@@ -1,4 +1,5 @@
 import UserModel from "@/models/UserModel";
+import { issueRegistrationJWT } from "@/utils";
 import dbConnect from "@/utils/db";
 import { NextResponse } from "next/server"
 
@@ -16,7 +17,7 @@ export async function POST(req) {
         // verify mobile using regex 
         // make a call to twilio
 
-        const userData = await UserModel.findOneAndReplace({ mobile: mobile }, { 
+        const userData = await UserModel.findOneAndUpdate({ mobile: mobile }, { 
             mobile: mobile,
             lastOTP: '000000'
         }, { new: true, upsert: true });
