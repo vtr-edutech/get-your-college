@@ -30,6 +30,7 @@ export async function middleware(req) {
     } 
 
     if (!cookieData) {
+      console.log('tryna redirect homie?');
       req.cookies.delete('actk');
       return NextResponse.redirect(new URL("/login", req.url));
     }

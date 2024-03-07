@@ -2,12 +2,9 @@ import UserModel from "@/models/UserModel";
 import { issueJWT, issueRegistrationJWT } from "@/utils";
 import dbConnect from "@/utils/db";
 import { cookies } from "next/headers";
-import { redirect } from "next/navigation";
 import { NextResponse } from "next/server"
 
 export async function POST(req) {
-    let isSuccess = false;
-
     try {
       const { otp, mobile } = await req.json();
 
@@ -42,19 +39,19 @@ export async function POST(req) {
 
       userData.isMobileVerified = true;
       await userData.save();
-      isSuccess = true;
-
+      
       /* issue a brand new JWT JUST for signup where userId is signed and sent to user as cookie. 
-            in /api/register, read the cookie, verify it, and take userId from it.
-            with that userId, query mongo if userId is there, or else, popup invalid user and yeet them out
-            or else, save that data with that userId
-        */
-      const regToken = await issueRegistrationJWT(userData._id);
-      cookies().set('regtk', regToken, { httpOnly: true, secure: true });
+      in /api/register, read the cookie, verify it, and take userId from it.
+      with that userId, query mongo if userId is there, or else, popup invalid user and yeet them out
+      or else, save that data with that userId
+      */
+     const regToken = await issueRegistrationJWT(userData._id);
+     cookies().set('regtk', regToken, { httpOnly: true, secure: true });
+     console.log('regtk given and gona redir');
+     return NextResponse.redirect(new URL('/register', req.url), { status: 302 });
 
     } catch (error) {
         console.log("🚀 ~ verify-otp Error:", error)
         return NextResponse.json({ error: 'Server error in verifying details!' }, { status: 500 })   
     }
-    if (isSuccess) return NextResponse.redirect(new URL('/register', req.url));
 }
