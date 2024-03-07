@@ -8,7 +8,9 @@ const ServerNav = async () => {
     1. cant read req object in server component
     2. can read headers, but dont know if setting custom header with user's name is a security concern or not
   */
-  const userName =  (await verifyJWT(cookies().get('actk')?.value))?.sub?.name || 'User';
+  const cookie = cookies().get("actk")?.value;
+  if (!cookie) return null;
+  const userName =  (await verifyJWT(cookie))?.sub?.name || 'User';
   // console.log("🚀 ~ ServerNav ~ userName:", userName?.sub?.name);
   return (
     <>
