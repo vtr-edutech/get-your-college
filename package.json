@@ -12,7 +12,6 @@
     "axios": "^1.6.7",
     "input-otp": "^0.3.31-beta",
     "jose": "^5.2.2",
-    "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.2.0",
     "next": "14.1.1",
     "react": "^18",

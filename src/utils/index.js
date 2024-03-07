@@ -1,4 +1,3 @@
-import jwt, { JsonWebTokenError } from "jsonwebtoken";
 import * as jose from "jose";
 
 export function testNumber(number) {
