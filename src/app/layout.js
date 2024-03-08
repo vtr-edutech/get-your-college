@@ -3,6 +3,7 @@ import "./globals.css";
 import { PROJECT_NAME_TITLE_CASE } from "@/constants";
 import { Slide, ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css'
+import { AuthProvider } from "@/app/AuthProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -13,21 +14,22 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={inter.className + ` bg-background`}>{children}
-      <ToastContainer
-        position='bottom-right'
-        autoClose={5000}
-        hideProgressBar
-        newestOnTop
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        theme='light'
-        transition={Slide}
-      />
+    <html lang='en'>
+      <body className={inter.className + ` bg-background`}>
+        <AuthProvider>{children}</AuthProvider>
+        <ToastContainer
+          position='bottom-right'
+          autoClose={5000}
+          hideProgressBar
+          newestOnTop
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme='light'
+          transition={Slide}
+        />
       </body>
     </html>
   );

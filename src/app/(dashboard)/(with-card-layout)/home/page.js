@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import React from "react";
 import { useForm } from "react-hook-form";
 import { LuSearch } from "react-icons/lu";
@@ -170,6 +171,12 @@ const Home = () => {
           Go
         </button>
       </form>
+
+      {/* div where table is shown */}
+      <div className="grid place-items-center h-full">
+        <p className="text-sm font-light text-gray-500">Begin search by entering details and Go</p>
+        <Image src={'/home-illustration.png'} width={300} height={400} alt="Illustration Search" />
+      </div>
     </>
   );
 };

@@ -2,6 +2,7 @@
 import AuthCard from "@/components/AuthCard";
 import axios from "axios";
 import { OTPInput } from "input-otp";
+import { signIn } from "next-auth/react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import React, { useEffect, useRef, useState } from "react";
@@ -23,10 +24,15 @@ const Login = () => {
   
     // testing logic only
     try {
-      const verifyOTPRequest = await axios.post('/api/verify-otp', { otp, mobile });
-      toast.success(verifyOTPRequest.data.message);
-      if (verifyOTPRequest.status == 200) return router.replace('/home');
-      router.push('/register'); // just sending to any of the auth routes and it automatically send back if cookie to /home
+      // const verifyOTPRequest = await axios.post('/api/verify-otp', { otp, mobile });
+      // toast.success(verifyOTPRequest.data.message);
+      // if (verifyOTPRequest.status == 200) return router.replace('/home');
+      // router.push('/register'); // just sending to any of the auth routes and it automatically send back if cookie to /home
+
+      const testing = await signIn('credentials', { mobile, otp, redirect: false });
+      if (!testing.ok) return toast.error('Mobile or OTP Invalid. Please try again!');
+      if (testing.ok) router.replace('/home');
+
     } catch (error) {
       console.log(error);
       OTPInputRef.current?.focus();

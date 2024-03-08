@@ -15,7 +15,7 @@ const ReOrderTable = ({ collegPrefernces, setCollegPrefernces }) => {
           <Reorder.Item
             key={college.id}
             value={college}
-            className='flex justify-around items-center outline p-4 outline-1 outline-gray-200 last-of-type:rounded-ee-md last-of-type:rounded-es-md'
+            className='flex cursor-grab justify-around items-center outline p-4 bg-white outline-1 outline-gray-200 last-of-type:rounded-ee-md last-of-type:rounded-es-md'
           >
             <h2 className="flex-1">{i + 1}</h2>
             <h2 className="flex-1">{college.id}</h2>

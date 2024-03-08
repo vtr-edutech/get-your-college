@@ -1,73 +1,11 @@
 "use client";
 import ReOrderTable from "@/components/ReOrderTable";
-// import { dummyPreferenceList } from "@/utils/dummy_data";
+import { dummyPreferenceList } from "@/utils/dummy_data";
 import { useMotionValue } from "framer-motion";
 import React, { useState } from "react";
-// console.log("🚀 ~ dummyPreferenceList:", dummyPreferenceList)
 
 const Report = () => {
-  const [collegPrefernces, setCollegPrefernces] = useState([
-    {
-      id: 463,
-      name: "South Bohan Academy",
-      address: "Alderney City",
-      website: "https://google.com",
-    },
-    {
-      id: 52,
-      name: "East Holland University",
-      address: "South Bohan",
-      website: "https://google.com",
-    },
-    {
-      id: 404,
-      name: "Westdyke College",
-      address: "South Bohan",
-      website: "https://google.com",
-    },
-    {
-      id: 126,
-      name: "Alderney City School",
-      address: "Alderney City",
-      website: "https://google.com",
-    },
-    {
-      id: 737,
-      name: "Middle Park Institute",
-      address: "South Bohan",
-      website: "https://google.com",
-    },
-    {
-      id: 891,
-      name: "Alderney City School",
-      address: "Alderney City",
-      website: "https://google.com",
-    },
-    {
-      id: 532,
-      name: "Middle Park Institute",
-      address: "South Bohan",
-      website: "https://google.com",
-    },
-    {
-      id: 741,
-      name: "East Holland University",
-      address: "Westdyke",
-      website: "https://google.com",
-    },
-    {
-      id: 598,
-      name: "Middle Park Institute",
-      address: "Westdyke",
-      website: "https://google.com",
-    },
-    {
-      id: 224,
-      name: "Middle Park Institute",
-      address: "East Holland",
-      website: "https://google.com",
-    },
-  ]);
+  const [collegPrefernces, setCollegPrefernces] = useState(dummyPreferenceList);
   const y = useMotionValue(0);
 
   return (
