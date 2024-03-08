@@ -9,9 +9,9 @@ const ServerNav = async () => {
     2. can read headers, but dont know if setting custom header with user's name is a security concern or not
   */
   const cookie = cookies().get("actk")?.value;
-  if (!cookie) return null;
-  const userName =  (await verifyJWT(cookie))?.sub?.name || 'User';
-  // console.log("🚀 ~ ServerNav ~ userName:", userName?.sub?.name);
+  // if (!cookie) return null;
+  // const userName =  (await verifyJWT(cookie))?.sub?.name || 'User';
+  const userName = 'User';
   return (
     <>
         <Navbar userName={userName} />

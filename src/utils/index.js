@@ -56,3 +56,7 @@ export async function verifyJWT(token) {
     return null;
   }
 }
+
+export function random({ start = 0, end = 10 }) {
+  return Math.floor(start + (Math.random() * end));
+}
