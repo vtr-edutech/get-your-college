@@ -26,16 +26,17 @@ export async function POST(req) {
                 hence issue JWT in cookie and redirect to dashboard
             */
         const accToken = await issueJWT(userData._id, userData.firstName);
-        console.log('loggin in existing user');
-        // req.cookies.set("actk", accToken, { httpOnly: true, secure: true });
-        cookies().set("actk", accToken, { httpOnly: true, secure: true });
-        // return NextResponse.redirect(new URL("/home", req.url), { status: 302 });
-        return NextResponse.json({ message: 'Logged in Succesfully' }, { status: 200 });
-        /* check in register page if cookie is there in layout.js, if so, decode it and check if session is valid
-                and redirect to home page. but if not cookie, 
-            */
-        // handle login instead of registration if user had already registered
-        // maybe issue a cookie and redirect to dashboard instead (which is /home)
+        console.log('User exists, logging in...');
+        const res = NextResponse.json(
+          { message: "Logged in Succesfully" },
+          { status: 200 }
+        );
+        res.cookies.set("actk", accToken, {
+          httpOnly: true,
+          secure: true,
+          sameSite: "none",
+        });
+        return res;
       }
 
       userData.isMobileVerified = true;

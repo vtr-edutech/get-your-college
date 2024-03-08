@@ -44,6 +44,7 @@ export async function verifyRegistrationJWT(token) {
 
 export async function verifyJWT(token) {
   try {
+    if (!token) return null;
     const decoded = await jose.jwtVerify(
       token,
       new TextEncoder().encode(process.env.JWT_SECRET)

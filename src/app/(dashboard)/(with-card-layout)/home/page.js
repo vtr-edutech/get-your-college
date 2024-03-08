@@ -36,7 +36,7 @@ const Home = () => {
         Enter 12th Cut-Off marks and choose Category
       </h3>
       <form
-        className='flex gap-2 mt-3 items-center'
+        className='flex gap-2 mt-3 items-center flex-wrap'
         onSubmit={handleSubmit(searchSubmission)}
       >
         {/* Min cutoff */}
