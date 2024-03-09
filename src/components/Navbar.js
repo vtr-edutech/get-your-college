@@ -7,7 +7,7 @@ import {
   IoBookOutline,
   IoCompassOutline,
 } from "react-icons/io5";
-import { MdOutlineDashboard, MdLogout } from "react-icons/md";
+import { MdLogout } from "react-icons/md";
 import { GoSearch } from "react-icons/go";
 import { TbReportAnalytics } from "react-icons/tb";
 import { LuPhone } from "react-icons/lu";
@@ -16,9 +16,9 @@ import { signOut, useSession } from "next-auth/react";
 
 const MENU_ITEMS = [
   {
-    name: "DASHBOARD",
-    icon: <MdOutlineDashboard />,
-    to: "/dashboard",
+    name: "DISCOVER",
+    icon: <IoCompassOutline size={22} />,
+    to: "/discover",
   },
   {
     name: "SEARCH",
@@ -34,11 +34,6 @@ const MENU_ITEMS = [
     name: "REPORT",
     icon: <TbReportAnalytics strokeWidth={2} size={18} />,
     to: "/report",
-  },
-  {
-    name: "DISCOVER",
-    icon: <IoCompassOutline size={22} />,
-    to: "/discover",
   },
   {
     name: "CONTACT",

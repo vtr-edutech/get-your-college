@@ -35,7 +35,6 @@ const Login = () => {
 
     } catch (error) {
       console.log(error);
-      OTPInputRef.current?.focus();
       toast.error(error.response.data.error ?? error.message);
       setIsOTPProvided(false);
     }
