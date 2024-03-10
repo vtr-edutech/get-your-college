@@ -14,7 +14,9 @@ import { LuPhone } from "react-icons/lu";
 import { usePathname } from "next/navigation";
 import { signOut, useSession } from "next-auth/react";
 import { FaBookMedical } from "react-icons/fa6";
-import { Combobox, useCombobox } from "@mantine/core";
+import { Combobox, Skeleton, useCombobox } from "@mantine/core";
+import { useDispatch, useSelector } from "react-redux";
+import { selectCategory } from "@/store/collegeCategorySlice";
 
 const MENU_ITEMS = [
   {
@@ -95,10 +97,11 @@ const Vr = ({ mt }) => {
 
 const Navbar = () => {
   const currentPathName = usePathname();
-  const { data: session } = useSession();
+  const { data: session, status: hasSessionLoaded } = useSession();
   console.log("🚀 ~ Nav ~ session:", session);
-
-  const [selectedCollegeCategory, setSelectedCollegeCategory] = useState("engineering"); // soon change this to redux global state and use dispatch to update states and read from it
+  // const [selectedCollegeCategory, setSelectedCollegeCategory] = useState("engineering"); // soon change this to redux global state and use dispatch to update states and read from it
+  const dispatch = useDispatch();
+  const selectedCollegeCategory = useSelector((state) => state.collegeCategory);
 
   const collegeCategorySelect = useCombobox({
     onDropdownClose: () => collegeCategorySelect.resetSelectedOption(),
@@ -109,7 +112,10 @@ const Navbar = () => {
     },
   });
 
-  const collegeCategoryDisplay = useMemo(() => COLLEGE_CATEGORIES.find(c => c.value === selectedCollegeCategory), [selectedCollegeCategory])
+  const collegeCategoryDisplay = useMemo(
+    () => COLLEGE_CATEGORIES.find((c) => c.value === selectedCollegeCategory),
+    [selectedCollegeCategory]
+  );
 
   return (
     <div className='flex flex-col h-screen items-center w-72 bg-white fixed top-0 left-0'>
@@ -123,8 +129,17 @@ const Navbar = () => {
             height={200}
           />
         </div>
-        <div className='flex gap-2 items-center'>
-          <h4>Hi, {session?.user?.name || "User"}</h4>
+        <div className='flex gap-2 items-center justify-center '>
+          <Skeleton
+            visible={hasSessionLoaded === "loading"}
+            radius={5}
+            height={24}
+            width={86}
+          >
+            <h4>
+              Hi, {session?.user?.name}
+            </h4>
+          </Skeleton>
           <Link href={"/settings"}>
             <IoSettingsOutline className='text-black' />
           </Link>
@@ -141,7 +156,7 @@ const Navbar = () => {
           dropdownPadding={2}
           withinPortal={false}
           onOptionSubmit={(v) => {
-            setSelectedCollegeCategory(v);
+            dispatch(selectCategory(v));
             collegeCategorySelect.updateSelectedOptionIndex("active");
             collegeCategorySelect.closeDropdown();
           }}
@@ -154,7 +169,7 @@ const Navbar = () => {
               className='w-48 outline outline-1 outline-gray-100 rounded-sm bg-gray-100 p-2 flex justify-between items-center'
               onClick={() => collegeCategorySelect.toggleDropdown()}
             >
-              <span className="flex gap-2 items-center">
+              <span className='flex gap-2 items-center'>
                 {collegeCategoryDisplay.icon}
                 {collegeCategoryDisplay.name}
               </span>

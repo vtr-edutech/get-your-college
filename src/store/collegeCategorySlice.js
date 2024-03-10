@@ -4,7 +4,7 @@ const collegeCategorySlice = createSlice({
     initialState: 'engineering',
     name: 'collegeCategory',
     reducers: {
-        selectCategory(state, action) { state = action.payload }, 
+        selectCategory(state, action) { return state = action.payload }, 
     }
 });
 
