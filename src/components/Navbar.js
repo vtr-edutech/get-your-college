@@ -117,7 +117,6 @@ const Navbar = () => {
         <Combobox
           store={collegeCategorySelect}
           resetSelectionOnOptionHover
-          dropdownPadding={2}
           withinPortal={false}
           onOptionSubmit={(v) => {
             dispatch(selectCategory(v));

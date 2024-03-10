@@ -1,22 +1,27 @@
 "use client";
 import Image from "next/image";
-import React from "react";
+import React, { useMemo, useState } from "react";
 import { useForm } from "react-hook-form";
 import { LuSearch } from "react-icons/lu";
+import colleges, { UNIQUE_COURSE_NAMES } from '../../../../../.test_assets/collegeData'
 
 const Home = () => {
   const {
     formState: { errors },
     handleSubmit,
     register,
-    trigger,
     setError,
   } = useForm();
+
+  const [collegeData, setCollegeData] = useState(colleges);
+  const [searchCriteria, setSearchCriteria] = useState(null);
+
+  const collegesAfterFiltering = useMemo(() => colleges.filter((college) => college["Branch Name"] === searchCriteria?.Dept), [searchCriteria])
 
   const searchSubmission = async (data) => {
     if (Object.keys(data).length !== 0) {
       console.log(data);
-      if (parseInt(data.MinCutoff) > parseInt(data.MaxCutoff))
+      if (parseInt(data.MinCutoff) > parseInt(data.MaxCutoff)) {
         setError(
           "MinCutoff",
           {
@@ -25,6 +30,10 @@ const Home = () => {
           },
           { shouldFocus: true }
         );
+        setSearchCriteria(null);
+        return;
+      }
+      setSearchCriteria(data);
     }
   };
 
@@ -37,7 +46,7 @@ const Home = () => {
         Enter 12th Cut-Off marks and choose Category
       </h3>
       <form
-        className='flex mt-16 w-full h-[40vh] justify-center items-center flex-wrap'
+        className='flex mt-10 w-full h-[40vh] justify-center items-center flex-wrap'
         onSubmit={handleSubmit(searchSubmission)}
       >
         {/* Min cutoff */}
@@ -97,26 +106,30 @@ const Home = () => {
           <select
             name='category'
             defaultValue={"select"}
-            className='bg-card p-2 py-2.5 pr-8 focus:outline-1 focus:outline-gray-200'
+            className='bg-card p-2 py-2.5 w-52 pr-8 focus:outline-1 focus:outline-gray-200'
             id='category'
             {...register("Dept", {
               required: { value: true, message: "This field is required" },
               validate: (value) =>
-                (value !== "select" &&
-                  ["CSE", "ECE", "IT", "CCE", "AIDS", "ICE", "MECH"].includes(
-                    value
-                  )) ||
+                (value !== "select" && UNIQUE_COURSE_NAMES.includes(value)) ||
                 "Invalid value selected!",
             })}
           >
-            <option value='select'>Select Department</option>
-            <option value='CSE'>CSE</option>
+            <option className='break-words w-52' value='select'>
+              Select Department
+            </option>
+            {UNIQUE_COURSE_NAMES.map((course, i) => (
+              <option className='break-words w-52' key={i} value={course}>
+                {course}
+              </option>
+            ))}
+            {/* <option value='CSE'>CSE</option>
             <option value='ECE'>ECE</option>
             <option value='IT'>IT</option>
             <option value='CCE'>CCE</option>
             <option value='AIDS'>AIDS</option>
             <option value='ICE'>ICE</option>
-            <option value='MECH'>MECH</option>
+            <option value='MECH'>MECH</option> */}
           </select>
           {errors["Dept"] && (
             <p className='text-xs text-red-500 font-light absolute -top-4 left-0'>
@@ -164,16 +177,26 @@ const Home = () => {
 
       {/* div where table is shown */}
       <div className='flex flex-col self-center h-full'>
-        <p className='text-sm font-light text-gray-500'>
-          Begin search by entering details and Go
-        </p>
-        <Image
-          src={"/home-illustration.png"}
-          width={220}
-          height={0}
-          className="outline"
-          alt='Illustration Search'
-        />
+        {searchCriteria ? (
+          <>
+            {collegesAfterFiltering.map((college, i) => (
+              <p key={i}>{college["College Name"]}</p>
+            ))}
+          </>
+        ) : (
+          <>
+            <p className='text-sm font-light text-gray-500'>
+              Begin search by entering details and Go
+            </p>
+            <Image
+              src={"/home-illustration.png"}
+              width={220}
+              height={0}
+              className='outline'
+              alt='Illustration Search'
+            />
+          </>
+        )}
       </div>
     </>
   );
