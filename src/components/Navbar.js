@@ -7,16 +7,16 @@ import {
   IoBookOutline,
   IoCompassOutline,
 } from "react-icons/io5";
-import { MdLogout, MdOutlineEngineering } from "react-icons/md";
+import { MdLogout } from "react-icons/md";
 import { GoSearch } from "react-icons/go";
 import { TbReportAnalytics } from "react-icons/tb";
 import { LuPhone } from "react-icons/lu";
-import { usePathname } from "next/navigation";
+import { usePathname, useSearchParams } from "next/navigation";
 import { signOut, useSession } from "next-auth/react";
-import { FaBookMedical } from "react-icons/fa6";
-import { Combobox, Skeleton, useCombobox } from "@mantine/core";
+import { Accordion, Combobox, Skeleton, useCombobox } from "@mantine/core";
 import { useDispatch, useSelector } from "react-redux";
 import { selectCategory } from "@/store/collegeCategorySlice";
+import { COLLEGE_CATEGORIES } from "@/utils/nav_data";
 
 const MENU_ITEMS = [
   {
@@ -33,6 +33,7 @@ const MENU_ITEMS = [
     name: "COLLEGES",
     icon: <IoBookOutline />,
     to: "/colleges",
+    subcategoryFrom: "engineering",
   },
   {
     name: "REPORT",
@@ -46,47 +47,6 @@ const MENU_ITEMS = [
   },
 ];
 
-/* 
-  Once real data is given, replace the following data with the ones they give, and make sure whatever value is given in any of the following
-  fields, the same is also followed when saving in MongoDB
-*/
-const COLLEGE_CATEGORIES = [
-  {
-    name: "Engineering",
-    value: "engineering",
-    icon: <MdOutlineEngineering />,
-    subcategories: [
-      {
-        name: "JEE Mains",
-        value: "jee-mains",
-      },
-      {
-        name: "Category X",
-        value: "cat-x",
-      },
-    ],
-  },
-  {
-    name: "Medical",
-    value: "medical",
-    icon: <FaBookMedical size={16} />,
-    subcategories: [
-      {
-        name: "Category-Y",
-        value: "cat-y",
-      },
-      {
-        name: "Category Z",
-        value: "cat-z",
-      },
-      {
-        name: "Category A",
-        value: "cat-a",
-      },
-    ],
-  },
-];
-
 const Vr = ({ mt }) => {
   return (
     <div
@@ -97,9 +57,11 @@ const Vr = ({ mt }) => {
 
 const Navbar = () => {
   const currentPathName = usePathname();
+  const currentSubCategoryType = useSearchParams().get('t');
+
   const { data: session, status: hasSessionLoaded } = useSession();
   console.log("🚀 ~ Nav ~ session:", session);
-  // const [selectedCollegeCategory, setSelectedCollegeCategory] = useState("engineering"); // soon change this to redux global state and use dispatch to update states and read from it
+  
   const dispatch = useDispatch();
   const selectedCollegeCategory = useSelector((state) => state.collegeCategory);
 
@@ -138,7 +100,9 @@ const Navbar = () => {
             // height={24}
             // width={86}
           >
-            <h4 className="text-ellipsis w-fit">Hi, {session?.user?.name || 'User'}</h4>
+            <h4 className='text-ellipsis w-fit'>
+              Hi, {session?.user?.name || "User"}
+            </h4>
           </Skeleton>
           <Link href={"/settings"}>
             <IoSettingsOutline className='text-black' />
@@ -197,22 +161,65 @@ const Navbar = () => {
       </div>
 
       {/* Menu Section */}
-      <div className='flex flex-col gap-1 py-4 w-full'>
-        {MENU_ITEMS.map((menu, i) => (
-          <Link
-            key={i}
-            href={menu.to}
-            prefetch={false}
-            className={`font-medium flex gap-2 items-center pl-4 py-4 ml-10 ${
-              currentPathName == menu.to
-                ? "bg-blue-50 rounded-s-md shadow-sm shadow-black/30"
-                : ""
-            }`}
-          >
-            {menu.icon}
-            {menu.name}
-          </Link>
-        ))}
+      <div className='flex flex-col gap-1 py-4 w-full overflow-x-hidden'>
+        {MENU_ITEMS.map((menu, i) =>
+          menu.subcategoryFrom ? (
+            <Accordion
+              chevronPosition='right'
+              key={i}
+              variant='filled'
+              unstyled
+              chevron={menu.icon}
+              defaultValue={currentSubCategoryType}
+            >
+              <Accordion.Item
+                value={currentSubCategoryType ?? 'a'}
+                className={`${currentPathName == menu.to ? "bg-blue-50" : ""}`}
+              >
+                <Accordion.Control
+                  className={`flex w-full font-medium gap-2 items-center pl-14 py-4 ${
+                    currentPathName == menu.to
+                      ? "bg-blue-50 rounded-s-md shadow-sm shadow-black/10"
+                      : ""
+                  }`}
+                >
+                  {menu.name}
+                </Accordion.Control>
+                {collegeCategoryDisplay.subcategories.map((category) => (
+                  <Accordion.Panel
+                    key={category.value}
+                    className={`${
+                      currentSubCategoryType == category.value ? "bg-blue-100 rounded-sm" : ""
+                    }`}
+                  >
+                    <Link
+                      key={i}
+                      href={{ pathname: '/colleges', query: { t: category.value }}}
+                      prefetch={false}
+                      className={`font-normal flex gap-2 items-center py-1 ml-16`}
+                    >
+                      {category.name}
+                    </Link>
+                  </Accordion.Panel>
+                ))}
+              </Accordion.Item>
+            </Accordion>
+          ) : (
+            <Link
+              key={i}
+              href={menu.to}
+              prefetch={false}
+              className={`font-medium flex gap-2 items-center pl-4 py-4 ml-10 ${
+                currentPathName == menu.to
+                  ? "bg-blue-50 rounded-s-md shadow-sm shadow-black/30"
+                  : ""
+              }`}
+            >
+              {menu.icon}
+              {menu.name}
+            </Link>
+          )
+        )}
       </div>
 
       <Vr mt />
