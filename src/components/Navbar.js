@@ -1,18 +1,20 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useMemo, useState } from "react";
 import {
   IoSettingsOutline,
   IoBookOutline,
   IoCompassOutline,
 } from "react-icons/io5";
-import { MdLogout } from "react-icons/md";
+import { MdLogout, MdOutlineEngineering } from "react-icons/md";
 import { GoSearch } from "react-icons/go";
 import { TbReportAnalytics } from "react-icons/tb";
 import { LuPhone } from "react-icons/lu";
 import { usePathname } from "next/navigation";
 import { signOut, useSession } from "next-auth/react";
+import { FaBookMedical } from "react-icons/fa6";
+import { Combobox, Input, InputBase, useCombobox } from "@mantine/core";
 
 const MENU_ITEMS = [
   {
@@ -42,6 +44,47 @@ const MENU_ITEMS = [
   },
 ];
 
+/* 
+  Once real data is given, replace the following data with the ones they give, and make sure whatever value is given in any of the following
+  fields, the same is also followed when saving in MongoDB
+*/
+const COLLEGE_CATEGORIES = [
+  {
+    name: "Engineering",
+    value: "engineering",
+    icon: <MdOutlineEngineering />,
+    subcategories: [
+      {
+        name: "JEE Mains",
+        value: "jee-mains",
+      },
+      {
+        name: "Category X",
+        value: "cat-x",
+      },
+    ],
+  },
+  {
+    name: "Medical",
+    value: "medical",
+    icon: <FaBookMedical />,
+    subcategories: [
+      {
+        name: "Category-Y",
+        value: "cat-y",
+      },
+      {
+        name: "Category Z",
+        value: "cat-z",
+      },
+      {
+        name: "Category A",
+        value: "cat-a",
+      },
+    ],
+  },
+];
+
 const Vr = ({ mt }) => {
   return (
     <div
@@ -54,6 +97,19 @@ const Navbar = () => {
   const currentPathName = usePathname();
   const { data: session } = useSession();
   console.log("🚀 ~ Nav ~ session:", session);
+
+  const [selectedCollegeCategory, setSelectedCollegeCategory] = useState("engineering"); // soon change this to redux global state and use dispatch to update states and read from it
+
+  const collegeCategorySelect = useCombobox({
+    onDropdownClose: () => collegeCategorySelect.resetSelectedOption(),
+    onDropdownOpen: (eventSource) => {
+      eventSource == "keyboard"
+        ? collegeCategorySelect.selectActiveOption()
+        : collegeCategorySelect.updateSelectedOptionIndex("active");
+    },
+  });
+
+  const collegeCategoryDisplay = useMemo(() => COLLEGE_CATEGORIES.find(c => c.value === selectedCollegeCategory), [selectedCollegeCategory])
 
   return (
     <div className='flex flex-col h-screen items-center w-72 bg-white fixed top-0 left-0'>
@@ -68,7 +124,7 @@ const Navbar = () => {
           />
         </div>
         <div className='flex gap-2 items-center'>
-          <h4>Hi, {session?.user?.name || 'User'}</h4>
+          <h4>Hi, {session?.user?.name || "User"}</h4>
           <Link href={"/settings"}>
             <IoSettingsOutline className='text-black' />
           </Link>
@@ -77,8 +133,59 @@ const Navbar = () => {
 
       <Vr />
 
+      {/* College Type selection */}
+      <div className='p-1 mt-3 grid place-items-center'>
+        <Combobox
+          store={collegeCategorySelect}
+          resetSelectionOnOptionHover
+          dropdownPadding={2}
+          withinPortal={false}
+          onOptionSubmit={(v) => {
+            setSelectedCollegeCategory(v);
+            collegeCategorySelect.updateSelectedOptionIndex("active");
+            collegeCategorySelect.closeDropdown();
+          }}
+          styles={{
+            width: "80%",
+          }}
+        >
+          <Combobox.Target targetType='button'>
+            <InputBase
+              component='button'
+              type='button'
+              pointer
+              className='w-44'
+              rightSection={<Combobox.Chevron />}
+              rightSectionPointerEvents='none'
+              onClick={() => collegeCategorySelect.toggleDropdown()}
+            >
+              <span className="flex gap-2 items-center">
+                {collegeCategoryDisplay.icon}
+                {collegeCategoryDisplay.name}
+              </span>
+            </InputBase>
+          </Combobox.Target>
+          <Combobox.Dropdown>
+            <Combobox.Options>
+              {COLLEGE_CATEGORIES.filter(
+                (cateogry) => cateogry.value !== selectedCollegeCategory
+              ).map((cateogry, i) => (
+                <Combobox.Option
+                  className='flex items-center gap-2'
+                  key={i}
+                  value={cateogry.value}
+                  active={cateogry.value === selectedCollegeCategory}
+                >
+                  {cateogry.icon}
+                  {cateogry.name}
+                </Combobox.Option>
+              ))}
+            </Combobox.Options>
+          </Combobox.Dropdown>
+        </Combobox>
+      </div>
       {/* Menu Section */}
-      <div className='flex flex-col gap-1 py-8 w-full'>
+      <div className='flex flex-col gap-1 py-4 w-full'>
         {MENU_ITEMS.map((menu, i) => (
           <Link
             key={i}

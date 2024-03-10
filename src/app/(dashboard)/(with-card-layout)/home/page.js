@@ -37,7 +37,7 @@ const Home = () => {
         Enter 12th Cut-Off marks and choose Category
       </h3>
       <form
-        className='flex mt-16 self-center items-center flex-wrap'
+        className='flex mt-16 w-full h-[40vh] justify-center items-center flex-wrap'
         onSubmit={handleSubmit(searchSubmission)}
       >
         {/* Min cutoff */}
@@ -156,14 +156,14 @@ const Home = () => {
             </p>
           )}
         </div>
-        <button className='bg-fill-black px-6 py-1 text-lg rounded flex gap-2 text-white items-center ml-2'>
+        <button className='bg-fill-black px-6 py-1.5 text-lg rounded flex gap-2 text-white items-center ml-2'>
           <LuSearch />
           Go
         </button>
       </form>
 
       {/* div where table is shown */}
-      <div className='flex flex-col self-center mt-16 h-full'>
+      <div className='flex flex-col self-center h-full'>
         <p className='text-sm font-light text-gray-500'>
           Begin search by entering details and Go
         </p>
