@@ -37,19 +37,17 @@ const Home = () => {
         Enter 12th Cut-Off marks and choose Category
       </h3>
       <form
-        className='flex gap-2 mt-3 items-center flex-wrap'
+        className='flex mt-16 self-center items-center flex-wrap'
         onSubmit={handleSubmit(searchSubmission)}
       >
         {/* Min cutoff */}
         <div className='flex flex-col gap-1 items-center relative'>
           <input
-            // min={0}
-            // max={200}
             type='number'
             name='starting-cutoff'
             id='starting-cutoff'
             placeholder='Starting Cut-Off'
-            className='bg-card p-2 w-44 rounded-md focus:outline-1 focus:outline-gray-200'
+            className='bg-card p-2 w-44 rounded-ss-md rounded-es-md focus:outline-1 focus:outline-gray-200'
             {...register("MinCutoff", {
               required: { value: true, message: "This field is required" },
               min: {
@@ -75,7 +73,7 @@ const Home = () => {
             name='ending-cutoff'
             id='ending-cutoff'
             placeholder='Ending Cut-Off'
-            className='bg-card p-2 w-44 rounded-md focus:outline-1 focus:outline-gray-200'
+            className='bg-card p-2  w-44 focus:outline-1 focus:outline-gray-200'
             {...register("MaxCutoff", {
               required: { value: true, message: "This field is required" },
               min: {
@@ -99,20 +97,16 @@ const Home = () => {
           <select
             name='category'
             defaultValue={"select"}
-            className='bg-card p-2 pr-8 rounded-md focus:outline-1 focus:outline-gray-200'
+            className='bg-card p-2 py-2.5 pr-8 focus:outline-1 focus:outline-gray-200'
             id='category'
             {...register("Dept", {
               required: { value: true, message: "This field is required" },
               validate: (value) =>
-                (value !== "select" && [
-                  "CSE",
-                  "ECE",
-                  "IT",
-                  "CCE",
-                  "AIDS",
-                  "ICE",
-                  "MECH",
-                ].includes(value)) || 'Invalid value selected!'
+                (value !== "select" &&
+                  ["CSE", "ECE", "IT", "CCE", "AIDS", "ICE", "MECH"].includes(
+                    value
+                  )) ||
+                "Invalid value selected!",
             })}
           >
             <option value='select'>Select Department</option>
@@ -135,20 +129,16 @@ const Home = () => {
           <select
             name='category'
             defaultValue={"Select"}
-            className='bg-card p-2 pr-8 rounded-md focus:outline-1 focus:outline-gray-200'
+            className='bg-card p-2 py-2.5 pr-8 rounded-ee-md rounded-se-md focus:outline-1 focus:outline-gray-200'
             id='category'
             {...register("Category", {
               required: { value: true, message: "This field is required" },
               validate: (value) =>
-                (value !== "select" && [
-                  "OC",
-                  "BC",
-                  "BCM",
-                  "MBC",
-                  "SC",
-                  "ST",
-                  "SCA",
-                ].includes(value)) || 'Invalid value selected!'
+                (value !== "select" &&
+                  ["OC", "BC", "BCM", "MBC", "SC", "ST", "SCA"].includes(
+                    value
+                  )) ||
+                "Invalid value selected!",
             })}
           >
             <option value='select'>Select Category</option>
@@ -166,16 +156,24 @@ const Home = () => {
             </p>
           )}
         </div>
-        <button className='bg-fill-black px-6 py-1 text-lg rounded flex gap-2 text-white items-center'>
+        <button className='bg-fill-black px-6 py-1 text-lg rounded flex gap-2 text-white items-center ml-2'>
           <LuSearch />
           Go
         </button>
       </form>
 
       {/* div where table is shown */}
-      <div className="grid place-items-center h-full">
-        <p className="text-sm font-light text-gray-500">Begin search by entering details and Go</p>
-        <Image src={'/home-illustration.png'} width={300} height={400} alt="Illustration Search" />
+      <div className='flex flex-col self-center mt-16 h-full'>
+        <p className='text-sm font-light text-gray-500'>
+          Begin search by entering details and Go
+        </p>
+        <Image
+          src={"/home-illustration.png"}
+          width={220}
+          height={0}
+          className="outline"
+          alt='Illustration Search'
+        />
       </div>
     </>
   );
