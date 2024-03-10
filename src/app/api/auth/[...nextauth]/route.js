@@ -46,12 +46,13 @@ export const authOptions = {
       if (user) {
         token.id = user._id;
         token.name = user.firstName;
+        token.image = user.imageURL;
       }
       return token;
     },
     async session({ session, token }) {
       if (token) {
-        session.user = {id: token.id, name: token.name};
+        session.user = {id: token.id, name: token.name, image: token.image};
       }
       return session;
     },

@@ -29,6 +29,7 @@ const UserSchema = new Schema(
       enum: ["BWM", "CS", "CWCS"],
     },
     address: String,
+    imageURL: String
   },
   { timestamps: true }
 );

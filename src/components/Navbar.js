@@ -122,23 +122,23 @@ const Navbar = () => {
       {/* Profile Section */}
       <div className='flex flex-col gap-4 justify-center items-center p-10 w-full'>
         <div className='grid place-items-center w-20 h-20'>
-          <Image
-            src={"/profile-1.png"}
-            alt='profile image'
-            width={200}
-            height={200}
-          />
+          <Skeleton visible={hasSessionLoaded === "loading"} circle>
+            <Image
+              src={session?.user?.image || "/profile-1.png"}
+              alt='profile image'
+              width={200}
+              height={200}
+            />
+          </Skeleton>
         </div>
         <div className='flex gap-2 items-center justify-center '>
           <Skeleton
             visible={hasSessionLoaded === "loading"}
             radius={5}
-            height={24}
-            width={86}
+            // height={24}
+            // width={86}
           >
-            <h4>
-              Hi, {session?.user?.name}
-            </h4>
+            <h4 className="text-ellipsis w-fit">Hi, {session?.user?.name || 'User'}</h4>
           </Skeleton>
           <Link href={"/settings"}>
             <IoSettingsOutline className='text-black' />
