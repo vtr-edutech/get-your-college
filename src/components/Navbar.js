@@ -14,7 +14,7 @@ import { LuPhone } from "react-icons/lu";
 import { usePathname } from "next/navigation";
 import { signOut, useSession } from "next-auth/react";
 import { FaBookMedical } from "react-icons/fa6";
-import { Combobox, Input, InputBase, useCombobox } from "@mantine/core";
+import { Combobox, useCombobox } from "@mantine/core";
 
 const MENU_ITEMS = [
   {
@@ -67,7 +67,7 @@ const COLLEGE_CATEGORIES = [
   {
     name: "Medical",
     value: "medical",
-    icon: <FaBookMedical />,
+    icon: <FaBookMedical size={16} />,
     subcategories: [
       {
         name: "Category-Y",
@@ -150,20 +150,16 @@ const Navbar = () => {
           }}
         >
           <Combobox.Target targetType='button'>
-            <InputBase
-              component='button'
-              type='button'
-              pointer
-              className='w-44'
-              rightSection={<Combobox.Chevron />}
-              rightSectionPointerEvents='none'
+            <button
+              className='w-48 outline outline-1 outline-gray-100 rounded-sm bg-gray-100 p-2 flex justify-between items-center'
               onClick={() => collegeCategorySelect.toggleDropdown()}
             >
               <span className="flex gap-2 items-center">
                 {collegeCategoryDisplay.icon}
                 {collegeCategoryDisplay.name}
               </span>
-            </InputBase>
+              <Combobox.Chevron />
+            </button>
           </Combobox.Target>
           <Combobox.Dropdown>
             <Combobox.Options>
@@ -184,6 +180,7 @@ const Navbar = () => {
           </Combobox.Dropdown>
         </Combobox>
       </div>
+
       {/* Menu Section */}
       <div className='flex flex-col gap-1 py-4 w-full'>
         {MENU_ITEMS.map((menu, i) => (

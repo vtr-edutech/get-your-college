@@ -6,6 +6,7 @@ import 'react-toastify/dist/ReactToastify.css'
 import { AuthProvider } from "@/app/AuthProvider";
 import { ColorSchemeScript, MantineProvider } from "@mantine/core";
 import "@mantine/core/styles.css";
+import StoreProvider from "./StoreProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,7 +23,9 @@ export default function RootLayout({ children }) {
       </head>
       <body className={inter.className + ` bg-background`}>
         <AuthProvider>
-          <MantineProvider>{children}</MantineProvider>
+          <StoreProvider>
+            <MantineProvider>{children}</MantineProvider>
+          </StoreProvider>
         </AuthProvider>
         <ToastContainer
           position='bottom-right'
