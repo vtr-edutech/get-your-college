@@ -1,9 +1,9 @@
 "use client";
 import Image from "next/image";
-import React, { useMemo, useState } from "react";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { LuSearch } from "react-icons/lu";
-import colleges, { UNIQUE_COURSE_NAMES } from '../../../../../.test_assets/collegeData'
+import { UNIQUE_COURSE_NAMES } from '../../../../utils/collegeData'
 import CollegesTable from "@/components/CollegesTable";
 
 const Home = () => {
@@ -15,9 +15,7 @@ const Home = () => {
   } = useForm();
 
   // const [collegeData, setCollegeData] = useState(colleges);
-  const [searchCriteria, setSearchCriteria] = useState({
-    Dept: "COMPUTER SCIENCE AND ENGINEERING",
-  });
+  const [searchCriteria, setSearchCriteria] = useState();
 
   const searchSubmission = async (data) => {
     if (Object.keys(data).length !== 0) {
@@ -177,12 +175,12 @@ const Home = () => {
       </form>
 
       {/* div where table is shown */}
-      <div className='flex flex-col h-full w-full gap-4'>
+      <div className='flex flex-col h-full w-full gap-4 items-center'>
         {searchCriteria ? (
           <CollegesTable searchCriteria={searchCriteria} />
         ) : (
           <>
-            <p className='text-sm font-light text-gray-500'>
+            <p className='text-sm font-light text-gray-500 mt-4'>
               Begin search by entering details and Go
             </p>
             <Image
