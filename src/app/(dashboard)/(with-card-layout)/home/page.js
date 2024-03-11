@@ -4,6 +4,7 @@ import React, { useMemo, useState } from "react";
 import { useForm } from "react-hook-form";
 import { LuSearch } from "react-icons/lu";
 import colleges, { UNIQUE_COURSE_NAMES } from '../../../../../.test_assets/collegeData'
+import CollegesTable from "@/components/CollegesTable";
 
 const Home = () => {
   const {
@@ -13,10 +14,10 @@ const Home = () => {
     setError,
   } = useForm();
 
-  const [collegeData, setCollegeData] = useState(colleges);
-  const [searchCriteria, setSearchCriteria] = useState(null);
-
-  const collegesAfterFiltering = useMemo(() => colleges.filter((college) => college["Branch Name"] === searchCriteria?.Dept), [searchCriteria])
+  // const [collegeData, setCollegeData] = useState(colleges);
+  const [searchCriteria, setSearchCriteria] = useState({
+    Dept: "COMPUTER SCIENCE AND ENGINEERING",
+  });
 
   const searchSubmission = async (data) => {
     if (Object.keys(data).length !== 0) {
@@ -46,7 +47,7 @@ const Home = () => {
         Enter 12th Cut-Off marks and choose Category
       </h3>
       <form
-        className='flex mt-10 w-full h-[40vh] justify-center items-center flex-wrap'
+        className='flex mt-20 w-full justify-center items-center flex-wrap'
         onSubmit={handleSubmit(searchSubmission)}
       >
         {/* Min cutoff */}
@@ -176,13 +177,9 @@ const Home = () => {
       </form>
 
       {/* div where table is shown */}
-      <div className='flex flex-col self-center h-full'>
+      <div className='flex flex-col h-full w-full gap-4'>
         {searchCriteria ? (
-          <>
-            {collegesAfterFiltering.map((college, i) => (
-              <p key={i}>{college["College Name"]}</p>
-            ))}
-          </>
+          <CollegesTable searchCriteria={searchCriteria} />
         ) : (
           <>
             <p className='text-sm font-light text-gray-500'>
