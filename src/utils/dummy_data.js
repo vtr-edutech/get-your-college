@@ -1,90 +1,90 @@
-import { random } from ".";
+// import { random } from ".";
 
-function randomCollegeName() {
-  const names = [
-    "Middle Park Institute",
-    "East Holland University",
-    "Westdyke College",
-    "Alderney City School",
-    "South Bohan Academy",
-  ];
-  return names[random({ start: 0, end: names.length })];
-}
+// function randomCollegeName() {
+//   const names = [
+//     "Middle Park Institute",
+//     "East Holland University",
+//     "Westdyke College",
+//     "Alderney City School",
+//     "South Bohan Academy",
+//   ];
+//   return names[random({ start: 0, end: names.length })];
+// }
 
-function randomAddress() {
-  const addresses = [
-    "South Bohan",
-    "Middle Park",
-    "East Holland",
-    "Westdyke",
-    "Alderney City",
-  ];
-  return addresses[random({ start: 0, end: addresses.length })];
-}
+// function randomAddress() {
+//   const addresses = [
+//     "South Bohan",
+//     "Middle Park",
+//     "East Holland",
+//     "Westdyke",
+//     "Alderney City",
+//   ];
+//   return addresses[random({ start: 0, end: addresses.length })];
+// }
 
 // static data
-export const dummyPreferenceList = [
-  {
-    id: 463,
-    name: "South Bohan Academy",
-    address: "Alderney City",
-    website: "https://google.com",
-  },
-  {
-    id: 52,
-    name: "East Holland University",
-    address: "South Bohan",
-    website: "https://google.com",
-  },
-  {
-    id: 404,
-    name: "Westdyke College",
-    address: "South Bohan",
-    website: "https://google.com",
-  },
-  {
-    id: 126,
-    name: "Alderney City School",
-    address: "Alderney City",
-    website: "https://google.com",
-  },
-  {
-    id: 737,
-    name: "Middle Park Institute",
-    address: "South Bohan",
-    website: "https://google.com",
-  },
-  {
-    id: 891,
-    name: "Alderney City School",
-    address: "Alderney City",
-    website: "https://google.com",
-  },
-  {
-    id: 532,
-    name: "Middle Park Institute",
-    address: "South Bohan",
-    website: "https://google.com",
-  },
-  {
-    id: 741,
-    name: "East Holland University",
-    address: "Westdyke",
-    website: "https://google.com",
-  },
-  {
-    id: 598,
-    name: "Middle Park Institute",
-    address: "Westdyke",
-    website: "https://google.com",
-  },
-  {
-    id: 224,
-    name: "Middle Park Institute",
-    address: "East Holland",
-    website: "https://google.com",
-  },
-];
+// export const dummyPreferenceList = [
+//   {
+//     id: 463,
+//     name: "South Bohan Academy",
+//     address: "Alderney City",
+//     website: "https://google.com",
+//   },
+//   {
+//     id: 52,
+//     name: "East Holland University",
+//     address: "South Bohan",
+//     website: "https://google.com",
+//   },
+//   {
+//     id: 404,
+//     name: "Westdyke College",
+//     address: "South Bohan",
+//     website: "https://google.com",
+//   },
+//   {
+//     id: 126,
+//     name: "Alderney City School",
+//     address: "Alderney City",
+//     website: "https://google.com",
+//   },
+//   {
+//     id: 737,
+//     name: "Middle Park Institute",
+//     address: "South Bohan",
+//     website: "https://google.com",
+//   },
+//   {
+//     id: 891,
+//     name: "Alderney City School",
+//     address: "Alderney City",
+//     website: "https://google.com",
+//   },
+//   {
+//     id: 532,
+//     name: "Middle Park Institute",
+//     address: "South Bohan",
+//     website: "https://google.com",
+//   },
+//   {
+//     id: 741,
+//     name: "East Holland University",
+//     address: "Westdyke",
+//     website: "https://google.com",
+//   },
+//   {
+//     id: 598,
+//     name: "Middle Park Institute",
+//     address: "Westdyke",
+//     website: "https://google.com",
+//   },
+//   {
+//     id: 224,
+//     name: "Middle Park Institute",
+//     address: "East Holland",
+//     website: "https://google.com",
+//   },
+// ];
 
 // generator
 // export const dummyPreferenceList = Array.from({ length: 10 }, () => ({
@@ -93,3 +93,170 @@ export const dummyPreferenceList = [
 //   address: randomAddress(),
 //   website: "https://google.com",
 // }));
+
+export const dummyPreferenceList = [
+  {
+    "S.No": 12,
+    "College Code": 1,
+    "College Name":
+      "University Departments of Anna University  Chennai - CEG Campus  Sardar Patel Road  Guindy  Chennai 600 025",
+    "Branch Code": "ME",
+    "Branch Name": "MECHANICAL ENGINEERING",
+    "OC - Cutoff": 195.5,
+    "BC - Cutoff": 193.5,
+    "BCM - Cutoff": 191,
+    "MBC - Cutoff": 191.5,
+    "SC - Cutoff": 182.5,
+    "SCA - Cutoff": 168,
+    "OC - Rank": 2279,
+    "BC - Rank": 3885,
+    "BCM - Rank": 6054,
+    "MBC - Rank": 5386,
+    "SC - Rank": 15385,
+    "SCA - Rank": 35544,
+  },
+  {
+    "S.No": 503,
+    "College Code": 1315,
+    "College Name":
+      "Sri Sivasubramaniya Nadar College of Engineering (Autonomous)  Kalavakkam  Old Mahabalipuram Road (OMR)  Chengalpattu District 603110",
+    "Branch Code": "ME",
+    "Branch Name": "MECHANICAL ENGINEERING",
+    "OC - Cutoff": 192,
+    "BC - Cutoff": 190,
+    "BCM - Cutoff": 188,
+    "MBC - Cutoff": 187.5,
+    "SC - Cutoff": 169.5,
+    "SCA - Cutoff": 147.5,
+    "OC - Rank": 5139,
+    "BC - Rank": 7062,
+    "BCM - Rank": 9460,
+    "MBC - Rank": 10149,
+    "SC - Rank": 33177,
+    "SCA - Rank": 74851,
+  },
+  {
+    "S.No": 577,
+    "College Code": 1399,
+    "College Name":
+      "Chennai Institute of Technology  Puduper Village Nandambakkam Post  Kundrathur  Chennai 600069",
+    "Branch Code": "ME",
+    "Branch Name": "MECHANICAL ENGINEERING",
+    "OC - Cutoff": 184,
+    "BC - Cutoff": 175,
+    "BCM - Cutoff": 182.5,
+    "MBC - Cutoff": 175.5,
+    "SC - Cutoff": 157.5,
+    "SCA - Cutoff": 111,
+    "OC - Rank": 13871,
+    "BC - Rank": 25548,
+    "BCM - Rank": 15331,
+    "MBC - Rank": 24222,
+    "SC - Rank": 53993,
+    "SCA - Rank": 152377,
+  },
+  {
+    "S.No": 926,
+    "College Code": 2005,
+    "College Name":
+      "Government College of Technology (Autonomous) Thadagam Road  Coimbatore District 641013",
+    "Branch Code": "ME",
+    "Branch Name": "MECHANICAL ENGINEERING",
+    "OC - Cutoff": 182,
+    "BC - Cutoff": 173.5,
+    "BCM - Cutoff": 177,
+    "MBC - Cutoff": 173,
+    "SC - Cutoff": 155.5,
+    "SCA - Cutoff": 151,
+    "ST - Cutoff": 141.47,
+    "OC - Rank": 16374,
+    "BC - Rank": 27136,
+    "BCM - Rank": 22429,
+    "MBC - Rank": 28275,
+    "SC - Rank": 57876,
+    "SCA - Rank": 67759,
+    "ST - Rank": 88146,
+  },
+  {
+    "S.No": 942,
+    "College Code": 2006,
+    "College Name":
+      "PSG College of Technology (Autonomous)  Peelamedu Coimbatore District 641004",
+    "Branch Code": "ME",
+    "Branch Name": "MECHANICAL ENGINEERING",
+    "OC - Cutoff": 192,
+    "BC - Cutoff": 190,
+    "BCM - Cutoff": 189,
+    "MBC - Cutoff": 189.5,
+    "SC - Cutoff": 175,
+    "SCA - Cutoff": 169.5,
+    "OC - Rank": 4914,
+    "BC - Rank": 7124,
+    "BCM - Rank": 8210,
+    "MBC - Rank": 8068,
+    "SC - Rank": 25455,
+    "SCA - Rank": 33314,
+  },
+  {
+    "S.No": 965,
+    "College Code": 2007,
+    "College Name":
+      "Coimbatore Institute of Technology (Autonomous)  Civil Aerodrome Post  Coimbatore District 641014",
+    "Branch Code": "ME",
+    "Branch Name": "MECHANICAL ENGINEERING",
+    "OC - Cutoff": 186.5,
+    "BC - Cutoff": 180.5,
+    "BCM - Cutoff": 181,
+    "MBC - Cutoff": 177.5,
+    "SC - Cutoff": 158.5,
+    "SCA - Cutoff": 150.5,
+    "ST - Cutoff": 139.5,
+    "OC - Rank": 10952,
+    "BC - Rank": 18116,
+    "BCM - Rank": 17294,
+    "MBC - Rank": 22049,
+    "SC - Rank": 52918,
+    "SCA - Rank": 68360,
+    "ST - Rank": 91724,
+  },
+  {
+    "S.No": 1103,
+    "College Code": 2377,
+    "College Name":
+      "PSG Institute of Technology and Applied Research  Avinashi Road  Neelambur  Coimbatore 641062",
+    "Branch Code": "ME",
+    "Branch Name": "MECHANICAL ENGINEERING",
+    "OC - Cutoff": 185,
+    "BC - Cutoff": 178.5,
+    "BCM - Cutoff": 178,
+    "MBC - Cutoff": 170,
+    "SC - Cutoff": 159.5,
+    "OC - Rank": 12646,
+    "BC - Rank": 20299,
+    "BCM - Rank": 21064,
+    "MBC - Rank": 32946,
+    "SC - Rank": 50264,
+  },
+  {
+    "S.No": 2809,
+    "College Code": 5008,
+    "College Name":
+      "Thiagarajar College of Engineering (Autonomous) Tirupparankundram  Madurai District 625015",
+    "Branch Code": "ME",
+    "Branch Name": "MECHANICAL ENGINEERING",
+    "OC - Cutoff": 187.5,
+    "BC - Cutoff": 182,
+    "BCM - Cutoff": 185.5,
+    "MBC - Cutoff": 182.5,
+    "SC - Cutoff": 160.5,
+    "SCA - Cutoff": 146,
+    "ST - Cutoff": 122,
+    "OC - Rank": 10009,
+    "BC - Rank": 15855,
+    "BCM - Rank": 12167,
+    "MBC - Rank": 15678,
+    "SC - Rank": 49160,
+    "SCA - Rank": 78131,
+    "ST - Rank": 131568,
+  },
+];

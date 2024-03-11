@@ -25,7 +25,7 @@ const CollegesTable = ({ searchCriteria }) => {
     siblings: 1,
   });
 
-  console.log("🚀 ~ CollegesTable ~ pagination:", collegesAfterFiltering.length)
+  console.log("🚀 ~ CollegesTable ~ pagination:", collegesAfterFiltering)
   if (!searchCriteria.Dept) return <p>Invalid Search Criteria!</p>;
 
   return (
