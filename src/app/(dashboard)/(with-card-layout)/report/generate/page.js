@@ -1,8 +1,10 @@
 "use client";
 import ReOrderTable from "@/components/ReOrderTable";
+import Button from "@/components/ui/Button";
 import { dummyPreferenceList } from "@/utils/dummy_data";
 import { PDFExport } from "@progress/kendo-react-pdf";
 import React, { useRef, useState } from "react";
+import { MdOutlineFileDownload } from "react-icons/md";
 
 const Generate = () => {
   const [collegPrefernces, setCollegPrefernces] = useState(dummyPreferenceList);
@@ -16,7 +18,6 @@ const Generate = () => {
       <h1 className='font-normal text-base'>
         Feel free to re-order according to your preference
       </h1>
-      <button onClick={() => pdfComponentRef.current.save()}>Save</button>
       {/* Table for Next Page */}
       <PDFExport
         ref={pdfComponentRef}
@@ -36,6 +37,17 @@ const Generate = () => {
           setCollegPrefernces={setCollegPrefernces}
         />
       </PDFExport>
+      <Button
+        label={
+          <span className='flex gap-2 items-center justify-center'>
+            <MdOutlineFileDownload />
+            Download Report
+          </span>
+        }
+        className='w-fit px-4 ml-auto py-2'
+        asButton
+        onClick={() => pdfComponentRef.current.save()}
+      />
     </>
   );
 };

@@ -2,6 +2,7 @@
 import { dummyPreferenceList } from "@/utils/dummy_data";
 import { useMotionValue } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { LuSearch } from "react-icons/lu";
@@ -145,6 +146,8 @@ const Report = () => {
           alt='Illustration Search'
         />
       </div>
+
+      <Link href={'/report/generate'}>Test: Go to Report Generate page</Link>
     </>
   );
 };

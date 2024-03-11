@@ -1,4 +1,4 @@
-import { AnimatePresence, Reorder, useMotionValue } from "framer-motion";
+import { Reorder } from "framer-motion";
 import React from "react";
 
 const ReOrderTable = ({ collegPrefernces, setCollegPrefernces }) => {

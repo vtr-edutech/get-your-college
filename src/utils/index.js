@@ -1,4 +1,6 @@
 import * as jose from "jose";
+import { clsx } from "clsx";
+import { twMerge } from "tailwind-merge";
 
 export function testNumber(number) {
   const regex = /^[5-9]\d{9}$/;
@@ -59,4 +61,8 @@ export async function verifyJWT(token) {
 
 export function random({ start = 0, end = 10 }) {
   return Math.floor(start + (Math.random() * end));
+}
+
+export function cn(...inputs) {
+  return twMerge(clsx(inputs));
 }

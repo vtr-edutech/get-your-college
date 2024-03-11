@@ -15,6 +15,7 @@
     "@progress/kendo-react-pdf": "^7.2.3",
     "@reduxjs/toolkit": "^2.2.1",
     "axios": "^1.6.7",
+    "clsx": "^2.1.0",
     "framer-motion": "^11.0.8",
     "input-otp": "^0.3.31-beta",
     "jose": "^5.2.2",
@@ -26,7 +27,8 @@
     "react-hook-form": "^7.51.0",
     "react-icons": "^5.0.1",
     "react-redux": "^9.1.0",
-    "react-toastify": "^10.0.4"
+    "react-toastify": "^10.0.4",
+    "tailwind-merge": "^2.2.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",
