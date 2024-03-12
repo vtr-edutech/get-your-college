@@ -3,7 +3,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { LuSearch } from "react-icons/lu";
-import { UNIQUE_COURSE_NAMES } from '../../../../utils/collegeData'
+import { UNIQUE_COURSE_NAMES } from '@/utils/collegeData'
 import CollegesTable from "@/components/CollegesTable";
 
 const Home = () => {
