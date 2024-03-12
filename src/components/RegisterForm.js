@@ -5,13 +5,12 @@ import { cn } from "@/utils";
 import axios from "axios";
 import { signOut } from "next-auth/react";
 import { useRouter } from "next/navigation";
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { useDispatch, useSelector } from "react-redux";
 import { toast } from "react-toastify";
 
 const RegisterForm = () => {
-  const [isChecked, setIsChecked] = useState(false);
   const {
     register,
     handleSubmit,
