@@ -4,7 +4,7 @@ import ContentCard from "@/components/ContentCard";
 import { ALL_VALID_CATEGORIES } from "@/utils/nav_data";
 import { useDebouncedState } from "@mantine/hooks";
 import { useSearchParams } from "next/navigation";
-import React, { useState } from "react";
+import React, { Suspense, useState } from "react";
 
 const Colleges = () => {
   const currentSubCategoryType = useSearchParams().get('t');
@@ -38,4 +38,10 @@ const Colleges = () => {
   );
 };
 
-export default Colleges;
+export default function Page() {
+  return (
+    <Suspense fallback={'Loading...'}>
+      <Colleges />
+    </Suspense>
+  )
+};

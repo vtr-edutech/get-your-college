@@ -1,3 +1,4 @@
+'use server'
 import UserModel from "@/models/UserModel";
 import { getServerSession } from "next-auth";
 import { NextResponse } from "next/server";

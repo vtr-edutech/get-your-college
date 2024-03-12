@@ -1,3 +1,4 @@
+'use server'
 import UserModel from "@/models/UserModel";
 import { getServerSession } from "next-auth";
 import { NextResponse } from "next/server";
@@ -9,7 +10,7 @@ export async function GET() {
     await dbConnect();
 
     const userSession = await getServerSession(authOptions);
-    const userId = userSession?.user?.id;
+    const userId = await userSession?.user?.id;
 
     if (!userSession || !userId)
       return NextResponse.json(

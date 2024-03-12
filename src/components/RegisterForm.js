@@ -78,7 +78,7 @@ const RegisterForm = () => {
             })}
             type='text'
             className='w-full rounded-md bg-input px-3 py-2 focus:outline-1 focus:outline-gray-300'
-            value={userInfo.firstName ?? ''}
+            defaultValue={userInfo.firstName ?? ''}
           />
           {errors["firstName"] && (
             <p className='text-xs text-red-500 font-light'>
@@ -100,7 +100,7 @@ const RegisterForm = () => {
             })}
             type='text'
             className='w-full  rounded-md bg-input px-3 py-2 focus:outline-1 focus:outline-gray-300'
-            value={userInfo.lastName ?? ''}
+            defaultValue={userInfo.lastName ?? ''}
           />
           {errors["lastName"] && (
             <p className='text-xs text-red-500 font-light'>
@@ -122,7 +122,7 @@ const RegisterForm = () => {
             })}
             type='text'
             className='w-full  rounded-md bg-input px-3 py-2 focus:outline-1 focus:outline-gray-300'
-            value={userInfo.email ?? ''}
+            defaultValue={userInfo.email ?? ''}
           />
           {errors["email"] && (
             <p className='text-xs text-red-500 font-light'>
@@ -140,7 +140,7 @@ const RegisterForm = () => {
                 ["male", "female", "other"].includes(value) || "Invalid Gender",
             })}
             className='w-full  rounded-md bg-input px-3 py-2 focus:outline-1 focus:outline-gray-300'
-            value={userInfo.gender ?? ''}
+            defaultValue={userInfo.gender ?? ''}
           >
             <option value={"male"}>Male</option>
             <option value={"female"}>Female</option>
@@ -162,7 +162,7 @@ const RegisterForm = () => {
                 ["BWM", "CS", "CWCS"].includes(value) || "Invalid group",
             })}
             className='w-full  rounded-md bg-input px-3 py-2 focus:outline-1 focus:outline-gray-300'
-            value={userInfo.group ?? ''}
+            defaultValue={userInfo.group ?? ''}
           >
             <option value={"BWM"}>Bio with Math</option>
             <option value={"CS"}>Computer Science</option>
@@ -189,7 +189,7 @@ const RegisterForm = () => {
             })}
             type='text'
             className='w-full  rounded-md bg-input px-3 py-2 focus:outline-1 focus:outline-gray-300'
-            value={userInfo.address ?? ''}
+            defaultValue={userInfo.address ?? ''}
           />
           {errors["address"] && (
             <p className='text-xs text-red-500 font-light'>
