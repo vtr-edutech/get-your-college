@@ -60,12 +60,9 @@ const RegisterForm = () => {
 
   return (
     <div className='flex flex-col items-center w-full'>
-      <h2 className='font-medium text-sm text-black/90'>
-        Tell us about yourself...
-      </h2>
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className={cn('flex flex-col gap-4 w-full', { 'opacity-20': !userInfo })}
+        className={cn('flex flex-col gap-4 w-full', { 'opacity-20 pointer-events-none': !userInfo.firstName })}
       >
         {/* First name input */}
         <div className='flex flex-col gap-1'>

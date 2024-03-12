@@ -5,7 +5,8 @@ import { Pagination } from "@mantine/core";
 
 const PAGE_SIZE = 10;
 
-/* if sorting is needed, then create an object right here that says */
+/* if sorting is needed, then create an object right here like { columnName: sortingFn, .... } */
+/* then on click, find the corresponding fn from this object and sort the rows based on the function and then return the filtered colleges */
 
 const CollegesTable = ({ searchCriteria }) => {
   const collegesAfterFiltering = useMemo(

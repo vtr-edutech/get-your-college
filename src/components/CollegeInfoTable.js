@@ -35,6 +35,16 @@ const CollegeInfoTable = ({ searchCriteria }) => {
 
   return (
     <>
+      <div className='w-full self-end flex'>
+        <Pagination
+          total={parseInt(collegesAfterFiltering.length / PAGE_SIZE) + 1}
+          value={pagination.active}
+          onChange={pagination.setPage}
+          className='ml-auto'
+        />
+      </div>
+
+      {/* Table Header */}
       <div className='flex flex-col mt-6 w-full transition-all'>
         <div className='flex justify-around items-center p-4 rounded-se-lg rounded-ss-lg outline outline-1 outline-gray-200'>
           <h2 className='flex-1 font-medium max-w-28'>S.No.</h2>
@@ -47,6 +57,7 @@ const CollegeInfoTable = ({ searchCriteria }) => {
           </h2> */}
         </div>
 
+        {/* Table body */}
         {collegesAfterFiltering
           .slice(
             PAGE_SIZE * pagination.active - PAGE_SIZE,
@@ -55,8 +66,6 @@ const CollegeInfoTable = ({ searchCriteria }) => {
           .map((college, i) => (
             <div
               key={college["S.No"]}
-              // onMouseOver={(e) => e.currentTarget.classList.replace('h-16', 'h-auto')}
-              // onMouseOut={(e) => e.currentTarget.classList.replace('h-auto', 'h-16')}
               className='flex transition-all justify-around items-center outline p-1 min-h-32 animate-fade-in overflow-hidden bg-white outline-1 outline-gray-200 last-of-type:rounded-ee-md last-of-type:rounded-es-md'
             >
               <h2 className='flex-1 text-sm max-w-28'>

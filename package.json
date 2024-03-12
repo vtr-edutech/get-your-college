@@ -19,6 +19,7 @@
     "framer-motion": "^11.0.8",
     "input-otp": "^0.3.31-beta",
     "jose": "^5.2.2",
+    "mantine-datatable": "^7.6.1",
     "mongoose": "^8.2.0",
     "next": "14.1.1",
     "next-auth": "^4.24.7",
