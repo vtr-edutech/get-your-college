@@ -31,7 +31,7 @@ const Login = () => {
 
       const testing = await signIn('credentials', { mobile, otp, redirect: false });
       if (!testing.ok) return toast.error('Mobile or OTP Invalid. Please try again!');
-      if (testing.ok) router.replace('/home');
+      if (testing.ok) router.refresh();
 
     } catch (error) {
       console.log(error);

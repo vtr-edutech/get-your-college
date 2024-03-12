@@ -1,10 +1,13 @@
 "use client";
 import Button from "@/components/ui/Button";
+import { setUserData } from "@/store/userInfoSlice";
+import { cn } from "@/utils";
 import axios from "axios";
 import { signOut } from "next-auth/react";
 import { useRouter } from "next/navigation";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
+import { useDispatch, useSelector } from "react-redux";
 import { toast } from "react-toastify";
 
 const RegisterForm = () => {
@@ -15,6 +18,24 @@ const RegisterForm = () => {
     formState: { errors },
   } = useForm();
   const router = useRouter();
+
+  const dispatch = useDispatch();
+  const userInfo = useSelector(state => state.userInfo);
+  console.log("🚀 ~ RegisterForm ~ userInfo:", userInfo)
+
+  useEffect(() => {
+    const fetchUserInfo = async () => {
+      try {
+        const userInfoRequest = await axios.get('/api/user-info');
+        console.log("🚀 ~ fetchUserInfo ~ userInfo:", userInfoRequest)
+        dispatch(setUserData(userInfoRequest.data.user));
+      } catch (error) {
+        toast.error(error.response.data.error ?? error.message);
+      }
+    }
+    if (!userInfo.firstName) fetchUserInfo();
+  }, [userInfo])
+  
 
   const onSubmit = async (data) => {
     if (Object.keys(errors).length === 0) {
@@ -43,7 +64,10 @@ const RegisterForm = () => {
       <h2 className='font-medium text-sm text-black/90'>
         Tell us about yourself...
       </h2>
-      <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col gap-4 w-full'>
+      <form
+        onSubmit={handleSubmit(onSubmit)}
+        className={cn('flex flex-col gap-4 w-full', { 'opacity-20': !userInfo })}
+      >
         {/* First name input */}
         <div className='flex flex-col gap-1'>
           <p className='font-light text-xs'>First Name</p>
@@ -58,6 +82,7 @@ const RegisterForm = () => {
             })}
             type='text'
             className='w-full rounded-md bg-input px-3 py-2 focus:outline-1 focus:outline-gray-300'
+            value={userInfo.firstName ?? ''}
           />
           {errors["firstName"] && (
             <p className='text-xs text-red-500 font-light'>
@@ -79,6 +104,7 @@ const RegisterForm = () => {
             })}
             type='text'
             className='w-full  rounded-md bg-input px-3 py-2 focus:outline-1 focus:outline-gray-300'
+            value={userInfo.lastName ?? ''}
           />
           {errors["lastName"] && (
             <p className='text-xs text-red-500 font-light'>
@@ -100,6 +126,7 @@ const RegisterForm = () => {
             })}
             type='text'
             className='w-full  rounded-md bg-input px-3 py-2 focus:outline-1 focus:outline-gray-300'
+            value={userInfo.email ?? ''}
           />
           {errors["email"] && (
             <p className='text-xs text-red-500 font-light'>
@@ -117,6 +144,7 @@ const RegisterForm = () => {
                 ["male", "female", "other"].includes(value) || "Invalid Gender",
             })}
             className='w-full  rounded-md bg-input px-3 py-2 focus:outline-1 focus:outline-gray-300'
+            value={userInfo.gender ?? ''}
           >
             <option value={"male"}>Male</option>
             <option value={"female"}>Female</option>
@@ -138,6 +166,7 @@ const RegisterForm = () => {
                 ["BWM", "CS", "CWCS"].includes(value) || "Invalid group",
             })}
             className='w-full  rounded-md bg-input px-3 py-2 focus:outline-1 focus:outline-gray-300'
+            value={userInfo.group ?? ''}
           >
             <option value={"BWM"}>Bio with Math</option>
             <option value={"CS"}>Computer Science</option>
@@ -164,6 +193,7 @@ const RegisterForm = () => {
             })}
             type='text'
             className='w-full  rounded-md bg-input px-3 py-2 focus:outline-1 focus:outline-gray-300'
+            value={userInfo.address ?? ''}
           />
           {errors["address"] && (
             <p className='text-xs text-red-500 font-light'>
@@ -171,8 +201,10 @@ const RegisterForm = () => {
             </p>
           )}
         </div>
+
+        {/* Temporarily disabling this, maybe enable later if client needs */}
         {/* Agree or not */}
-        <div className='flex gap-2'>
+        {/* <div className='flex gap-2'>
           <input
             id='agree'
             type='checkbox'
@@ -182,12 +214,8 @@ const RegisterForm = () => {
           <label htmlFor='agree' className='font-normal text-sm'>
             I agree to service terms and conditions
           </label>
-        </div>
-        <Button
-          label={"Confirm Details"}
-          isDisabled={!isChecked}
-          asButton
-        />
+        </div> */}
+        <Button label={"Confirm Details"} isDisabled={!userInfo} asButton />
       </form>
     </div>
   );

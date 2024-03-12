@@ -1,5 +1,4 @@
 import UserModel from "@/models/UserModel";
-import { issueRegistrationJWT } from "@/utils";
 import dbConnect from "@/utils/db";
 import { NextResponse } from "next/server"
 
@@ -26,6 +25,6 @@ export async function POST(req) {
         return NextResponse.json({ message: "OTP has been sent!" }, { status: 200 });
     } catch (error) {
         console.log("🚀 ~ POST ~ error:", error)
-        NextResponse.json({ error: "Server error in sending OTP" }, {status: 500})        
+        return NextResponse.json({ error: "Server error in sending OTP" }, {status: 500})        
     }
 }

@@ -46,7 +46,7 @@ const Login = () => {
       console.log(error);
       setReqStatus("error");
       setCanSubmit(true);
-      toast.error(`Couldn\'t send OTP to ${number}`)
+      toast.error(error.response.data.error ?? error.message)
       mobileInputRef.current.value = '';
 
     }
