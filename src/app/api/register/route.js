@@ -1,8 +1,8 @@
 import UserModel from "@/models/UserModel";
-import { issueJWT, verifyRegistrationJWT } from "@/utils";
-import { cookies } from "next/headers";
-import { redirect } from "next/navigation";
+import { getServerSession } from "next-auth";
 import { NextResponse } from "next/server";
+import { authOptions } from "../auth/[...nextauth]/route";
+import dbConnect from "@/utils/db";
 
 export async function POST(req) {
   try {
@@ -17,29 +17,21 @@ export async function POST(req) {
     //   email,
     //   address
     // );
+    await dbConnect();
 
-    const registrationToken = cookies().get("regtk");
-    // console.log("🚀 ~ POST ~ registrationToken:", registrationToken);
-    if (!registrationToken)
+    const userSession = await getServerSession(authOptions);
+    const userId = userSession?.user?.id;
+    
+    if (!userSession || !userId)
       return NextResponse.json(
-        { error: "We could not verify your registration, please register again" },
+        { error: "We could not authenticate you, please login again" },
         { status: 403 }
       );
-
-    const userId = await verifyRegistrationJWT(registrationToken.value);
-    if (userId == null) {
-      cookies().delete('regtk');
-      return NextResponse.json(
-        {
-          error: "We could not verify your registration, please register again. You will be redirected shortly",
-        },
-        { status: 401 }
-      );
-    }
 
     console.log(userId);
 
     const userData = await UserModel.findOne({ _id: userId });
+    console.log("🚀 ~ POST ~ userData:", userData)
     if (!userData)
       return NextResponse.json(
         {
@@ -55,11 +47,6 @@ export async function POST(req) {
     userData.group = group;
     userData.email = email;
     await userData.save();
-
-    const accessToken = await issueJWT(userData._id, userData.firstName);
-
-    cookies().set('actk', accessToken, { httpOnly: true, secure: true });
-    cookies().delete('regtk');
     
     return NextResponse.json(
       { message: "Registered succesfully" },

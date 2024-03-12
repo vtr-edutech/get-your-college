@@ -1,13 +1,13 @@
 "use client";
-import AuthCard from "@/components/AuthCard";
 import Button from "@/components/ui/Button";
 import axios from "axios";
+import { signOut } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { toast } from "react-toastify";
 
-const Register = () => {
+const RegisterForm = () => {
   const [isChecked, setIsChecked] = useState(false);
   const {
     register,
@@ -23,13 +23,15 @@ const Register = () => {
           const registerReq = await axios.post("/api/register", data);
           console.log("🚀 ~ onSubmit ~ registerReq:", registerReq)
           toast.success(registerReq.data.message);
-          router.replace('/home');
+          setTimeout(() => {
+            router.refresh();
+          }, 2000);
         } catch (error) {
           console.log("🚀 ~ onSubmit ~ error:", error)
           toast.error(error.response.data.error ?? error.message);
-          if (error.response.status == 401) {
+          if (error.response.status == 401 || error.response.status == 403) {
             setTimeout(() => {
-              router.replace('/login');
+              signOut();
             }, 3000);
           }
         }
@@ -37,11 +39,11 @@ const Register = () => {
   };
 
   return (
-    <AuthCard gap={5}>
-      <h2 className='font-medium text-xl text-black/90'>
+    <div className='flex flex-col items-center w-full'>
+      <h2 className='font-medium text-sm text-black/90'>
         Tell us about yourself...
       </h2>
-      <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col gap-4'>
+      <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col gap-4 w-full'>
         {/* First name input */}
         <div className='flex flex-col gap-1'>
           <p className='font-light text-xs'>First Name</p>
@@ -55,7 +57,7 @@ const Register = () => {
               validate: (value) => value.trim() !== "" || "Invalid First name",
             })}
             type='text'
-            className='w-[22rem] rounded-md bg-input px-3 py-2 focus:outline-1 focus:outline-gray-300'
+            className='w-full rounded-md bg-input px-3 py-2 focus:outline-1 focus:outline-gray-300'
           />
           {errors["firstName"] && (
             <p className='text-xs text-red-500 font-light'>
@@ -76,7 +78,7 @@ const Register = () => {
               validate: (value) => value.trim() !== "" || "Invalid Last name",
             })}
             type='text'
-            className='w-[22rem] rounded-md bg-input px-3 py-2 focus:outline-1 focus:outline-gray-300'
+            className='w-full  rounded-md bg-input px-3 py-2 focus:outline-1 focus:outline-gray-300'
           />
           {errors["lastName"] && (
             <p className='text-xs text-red-500 font-light'>
@@ -97,7 +99,7 @@ const Register = () => {
               pattern: { value: /^\S+@\S+$/i, message: "Invalid Email" },
             })}
             type='text'
-            className='w-[22rem] rounded-md bg-input px-3 py-2 focus:outline-1 focus:outline-gray-300'
+            className='w-full  rounded-md bg-input px-3 py-2 focus:outline-1 focus:outline-gray-300'
           />
           {errors["email"] && (
             <p className='text-xs text-red-500 font-light'>
@@ -114,7 +116,7 @@ const Register = () => {
               validate: (value) =>
                 ["male", "female", "other"].includes(value) || "Invalid Gender",
             })}
-            className='w-[22rem] rounded-md bg-input px-3 py-2 focus:outline-1 focus:outline-gray-300'
+            className='w-full  rounded-md bg-input px-3 py-2 focus:outline-1 focus:outline-gray-300'
           >
             <option value={"male"}>Male</option>
             <option value={"female"}>Female</option>
@@ -135,7 +137,7 @@ const Register = () => {
               validate: (value) =>
                 ["BWM", "CS", "CWCS"].includes(value) || "Invalid group",
             })}
-            className='w-[22rem] rounded-md bg-input px-3 py-2 focus:outline-1 focus:outline-gray-300'
+            className='w-full  rounded-md bg-input px-3 py-2 focus:outline-1 focus:outline-gray-300'
           >
             <option value={"BWM"}>Bio with Math</option>
             <option value={"CS"}>Computer Science</option>
@@ -161,7 +163,7 @@ const Register = () => {
               validate: (value) => value.trim() !== "" || "Invalid Address",
             })}
             type='text'
-            className='w-[22rem] rounded-md bg-input px-3 py-2 focus:outline-1 focus:outline-gray-300'
+            className='w-full  rounded-md bg-input px-3 py-2 focus:outline-1 focus:outline-gray-300'
           />
           {errors["address"] && (
             <p className='text-xs text-red-500 font-light'>
@@ -183,13 +185,12 @@ const Register = () => {
         </div>
         <Button
           label={"Confirm Details"}
-          className={"opacity-20"}
           isDisabled={!isChecked}
           asButton
         />
       </form>
-    </AuthCard>
+    </div>
   );
 };
 
-export default Register;
+export default RegisterForm;

@@ -55,7 +55,7 @@ const Vr = ({ mt }) => {
   );
 };
 
-const Navbar = () => {
+const Navbar = ({ modalOpen }) => {
   const currentPathName = usePathname();
   const currentSubCategoryType = useSearchParams().get('t');
 
@@ -104,9 +104,7 @@ const Navbar = () => {
               Hi, {session?.user?.name || "User"}
             </h4>
           </Skeleton>
-          <Link href={"/settings"}>
-            <IoSettingsOutline className='text-black' />
-          </Link>
+          <IoSettingsOutline onClick={modalOpen} size={20} className='text-black cursor-pointer' />
         </div>
       </div>
 
@@ -172,7 +170,7 @@ const Navbar = () => {
               defaultValue={currentSubCategoryType}
             >
               <Accordion.Item
-                value={currentSubCategoryType ?? 'a'}
+                value={currentSubCategoryType ?? "a"}
                 className={`${currentPathName == menu.to ? "bg-blue-50" : ""}`}
               >
                 <Accordion.Control
@@ -188,12 +186,17 @@ const Navbar = () => {
                   <Accordion.Panel
                     key={category.value}
                     className={`${
-                      currentSubCategoryType == category.value ? "bg-blue-100 rounded-sm" : ""
+                      currentSubCategoryType == category.value
+                        ? "bg-blue-100 rounded-sm"
+                        : ""
                     }`}
                   >
                     <Link
                       key={i}
-                      href={{ pathname: '/colleges', query: { t: category.value }}}
+                      href={{
+                        pathname: "/colleges",
+                        query: { t: category.value },
+                      }}
                       prefetch={false}
                       className={`font-normal flex gap-2 items-center py-1 ml-16`}
                     >
