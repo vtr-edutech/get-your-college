@@ -1,6 +1,7 @@
 "use client";
 import { dummyPreferenceList } from "@/utils/dummy_data";
 import { useMotionValue } from "framer-motion";
+import { DataTable } from "mantine-datatable";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
@@ -13,14 +14,15 @@ const Report = () => {
     formState: { errors },
     handleSubmit,
     register,
-    trigger,
     setError,
   } = useForm();
+
+  const [searchCriteria, setSearchCriteria] = useState(null);
 
   const searchSubmission = async (data) => {
     if (Object.keys(data).length !== 0) {
       console.log(data);
-      if (parseInt(data.MinCutoff) > parseInt(data.MaxCutoff))
+      if (parseInt(data.MinCutoff) > parseInt(data.MaxCutoff)) {
         setError(
           "MinCutoff",
           {
@@ -29,6 +31,8 @@ const Report = () => {
           },
           { shouldFocus: true }
         );
+      }
+      setSearchCriteria(data);
     }
   };
 
@@ -134,20 +138,26 @@ const Report = () => {
         </button>
       </form>
 
-      <div className='flex flex-col self-center mt-6 h-full'>
-        <p className='text-sm font-light text-gray-500'>
-          Begin search by entering details and Go
-        </p>
-        <Image
-          src={"/reports-illustration.png"}
-          width={280}
-          height={0}
-          className='outline'
-          alt='Illustration Search'
-        />
-      </div>
+      {searchCriteria?.MinCutoff ? (
+        <DataTable />
+      ) : (
+        <>
+          <div className='flex flex-col self-center mt-6 h-full'>
+            <p className='text-sm font-light text-gray-500'>
+              Begin search by entering details and Go
+            </p>
+            <Image
+              src={"/reports-illustration.png"}
+              width={280}
+              height={0}
+              className='outline'
+              alt='Illustration Search'
+            />
+          </div>
+        </>
+      )}
 
-      <Link href={'/report/generate'}>Test: Go to Report Generate page</Link>
+      <Link href={"/report/generate"}>Test: Go to Report Generate page</Link>
     </>
   );
 };

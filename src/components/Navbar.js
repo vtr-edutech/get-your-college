@@ -104,7 +104,11 @@ const Navbar = ({ modalOpen }) => {
               Hi, {session?.user?.name || "User"}
             </h4>
           </Skeleton>
-          <IoSettingsOutline onClick={modalOpen} size={20} className='text-black cursor-pointer' />
+          <IoSettingsOutline
+            onClick={modalOpen}
+            size={20}
+            className='text-black cursor-pointer'
+          />
         </div>
       </div>
 
@@ -198,9 +202,9 @@ const Navbar = ({ modalOpen }) => {
                         query: { t: category.value },
                       }}
                       prefetch={false}
-                      className={`font-normal flex gap-2 items-center py-1 ml-16`}
+                      className={`font-normal flex gap-2 items-center py-1 ml-20`}
                     >
-                      {category.name}
+                      ↪ {category.name}
                     </Link>
                   </Accordion.Panel>
                 ))}

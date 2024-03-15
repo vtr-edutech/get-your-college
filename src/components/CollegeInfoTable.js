@@ -31,7 +31,7 @@ const CollegeInfoTable = ({ searchCriteria }) => {
     siblings: 1,
   });
 
-  console.log("🚀 ~ CollegeInfoTable ~ pagination:", collegesAfterFiltering.slice(0, 3));
+  // console.log("🚀 ~ CollegeInfoTable ~ pagination:", collegesAfterFiltering.slice(0, 3));
 
   return (
     <>
@@ -41,7 +41,13 @@ const CollegeInfoTable = ({ searchCriteria }) => {
           value={pagination.active}
           onChange={pagination.setPage}
           className='ml-auto'
-        />
+          classNames={{ 
+             control: {
+              opacity: '10%'
+             }
+          }}
+        >
+        </Pagination>
       </div>
 
       {/* Table Header */}

@@ -18,7 +18,6 @@ export async function POST(req) {
     //   email,
     //   address
     // );
-    await dbConnect();
 
     const userSession = await getServerSession(authOptions);
     const userId = userSession?.user?.id;
@@ -30,6 +29,8 @@ export async function POST(req) {
       );
 
     console.log(userId);
+    
+    await dbConnect();
 
     const userData = await UserModel.findOne({ _id: userId });
     console.log("🚀 ~ POST ~ userData:", userData)
