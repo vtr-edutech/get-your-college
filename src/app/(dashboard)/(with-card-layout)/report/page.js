@@ -1,15 +1,22 @@
 "use client";
+// import ReportTable from "@/components/ReportTable";
 import { dummyPreferenceList } from "@/utils/dummy_data";
-import { useMotionValue } from "framer-motion";
-import { DataTable } from "mantine-datatable";
+import { Skeleton } from "@mantine/core";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { Suspense, lazy, useState } from "react";
 import { useForm } from "react-hook-form";
 import { LuSearch } from "react-icons/lu";
 
+const TableSkeletonLoader = () => {
+  return Array.from({ length: 10 }).map((x) => (
+    <Skeleton width={"100%"} height={65} radius='sm' key={x} />
+  ));
+};
+
+const ReportTable = lazy(() => import("@/components/ReportTable"));
+
 const Report = () => {
-  const y = useMotionValue(0);
   const {
     formState: { errors },
     handleSubmit,
@@ -139,7 +146,9 @@ const Report = () => {
       </form>
 
       {searchCriteria?.MinCutoff ? (
-        <DataTable />
+        <Suspense fallback={<TableSkeletonLoader />}>
+          <ReportTable searchCriteria={searchCriteria} />
+        </Suspense>
       ) : (
         <>
           <div className='flex flex-col self-center mt-6 h-full'>

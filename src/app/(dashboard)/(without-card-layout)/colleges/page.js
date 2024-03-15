@@ -1,10 +1,11 @@
 'use client';
-import CollegeInfoTable from "@/components/CollegeInfoTable";
 import ContentCard from "@/components/ContentCard";
 import { ALL_VALID_CATEGORIES } from "@/utils/nav_data";
 import { useDebouncedState } from "@mantine/hooks";
 import { useSearchParams } from "next/navigation";
-import React, { Suspense, useState } from "react";
+import React, { Suspense, lazy } from "react";
+
+const CollegeInfoTable = lazy(() => import('@/components/CollegeInfoTable'));
 
 const Colleges = () => {
   const currentSubCategoryType = useSearchParams().get('t');
@@ -32,7 +33,9 @@ const Colleges = () => {
         className='bg-white/60 px-3 py-2 rounded-md focus:outline-1 focus:outline-black/10 border-none shadow-sm'
       />
       <ContentCard>
-        <CollegeInfoTable searchCriteria={{ searchKey: collegeSearchKey }} />
+        <Suspense fallback={'Loading data...'}>
+          <CollegeInfoTable searchCriteria={{ searchKey: collegeSearchKey }} />
+        </Suspense>
       </ContentCard>
     </>
   );
