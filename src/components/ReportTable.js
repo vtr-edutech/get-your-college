@@ -18,7 +18,7 @@ const ReportTable = ({ searchCriteria }) => {
     .getItem("colleges")
     .split(",");
   
-  const previouslySelectedColleges = useMemo(() => previouslySelectedCollegeIds.map(id => collegeData.find(id)), [previouslySelectedCollegeIds]) 
+  const previouslySelectedColleges = useMemo(() => previouslySelectedCollegeIds.map(id => collegeData.find(college => college.id == id)), [previouslySelectedCollegeIds]) 
 
   const collegesAfterFiltering = useMemo(
     () =>

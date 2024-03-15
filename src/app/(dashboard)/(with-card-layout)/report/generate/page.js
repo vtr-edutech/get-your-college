@@ -3,27 +3,27 @@ import ReOrderTable from "@/components/ReOrderTable";
 import Button from "@/components/ui/Button";
 // import { dummyPreferenceList } from "@/utils/dummy_data";
 import { PDFExport } from "@progress/kendo-react-pdf";
-import React, { useMemo, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { MdOutlineFileDownload } from "react-icons/md";
 import collegeData from "@/utils/collegeData";
+import SkeletonLoader from "@/components/SkeletonLoader";
 
 export const dynamic = "force-dynamic";
 
 const Generate = () => {
-  const preferredCollegesId = localStorage.getItem("colleges").split(',');
-  // console.log("🚀 ~ Generate ~ preferredColleges:", preferredCollegesId);
-  const preferredCategory = localStorage.getItem("Cat");
-
-  const preferredColleges = useMemo(
-    () => preferredCollegesId.map(id => collegeData.find(college => college.id == id)),
-    [preferredCollegesId]
-  );
-  // console.log("🚀 ~ Generate ~ preferredColleges:", preferredColleges)
-
-  const [collegPrefernces, setCollegPrefernces] = useState(preferredColleges);
+  const [collegPrefernces, setCollegPrefernces] = useState([]);
+  const [selectedCategory, setSelectedCategory] = useState();
   const pdfComponentRef = useRef();
-
-  if (!preferredCategory) return <p>Couldn&apos;t find category, please select your colleges again from Report page!</p>;
+  
+  useEffect(() => {
+    const preferredCollegesId = localStorage.getItem("colleges").split(",");
+    const preferredColleges = preferredCollegesId.map(id => collegeData.find(college => college.id == id));
+    setCollegPrefernces(preferredColleges)
+    setSelectedCategory(localStorage.getItem('Cat'))
+  }, []);
+  // console.log("🚀 ~ Generate ~ preferredColleges:", preferredColleges)
+  
+  if (!selectedCategory) return <SkeletonLoader rows={7} />
 
   return (
     <>
@@ -45,7 +45,7 @@ const Generate = () => {
           <h2 className='flex-1 font-medium max-w-36'>College Code</h2>
           <h2 className='min-w-44 max-w-96 flex-1 font-medium'>College Name</h2>
           <h2 className='max-w-36 flex-1 font-medium'>Branch Name</h2>
-          <h2 className='max-w-36 flex-1 font-medium'>{preferredCategory} - Cutoff</h2>
+          <h2 className='max-w-36 flex-1 font-medium'>{selectedCategory} - Cutoff</h2>
         </div>
         <ReOrderTable
           collegPrefernces={collegPrefernces}

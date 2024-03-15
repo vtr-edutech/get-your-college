@@ -1,19 +1,11 @@
 "use client";
+import SkeletonLoader from "@/components/SkeletonLoader";
 import Button from "@/components/ui/Button";
-// import ReportTable from "@/components/ReportTable";
-import { dummyPreferenceList } from "@/utils/dummy_data";
-import { Skeleton } from "@mantine/core";
 import Image from "next/image";
 import Link from "next/link";
 import React, { Suspense, lazy, useState } from "react";
 import { useForm } from "react-hook-form";
 import { LuSearch } from "react-icons/lu";
-
-const TableSkeletonLoader = () => {
-  return Array.from({ length: 10 }).map((x, i) => (
-    <Skeleton width={"100%"} height={65} radius='sm' key={i} />
-  ));
-};
 
 const ReportTable = lazy(() => import("@/components/ReportTable"));
 
@@ -40,7 +32,7 @@ const Report = () => {
           { shouldFocus: true }
         );
       }
-      localStorage.setItem('Cat', data.Category);
+      typeof window !== "undefined" && localStorage.setItem("Cat", data.Category);
       setSearchCriteria(data);
     }
   };
@@ -148,7 +140,7 @@ const Report = () => {
       </form>
 
       {searchCriteria?.MinCutoff ? (
-        <Suspense fallback={<TableSkeletonLoader />}>
+        <Suspense fallback={<SkeletonLoader />}>
           <input type="search" name="searchKey" placeholder="Search for college name, branch name, etc." id="search" className="py-2 mt-6 px-3 w-full outline outline-1 outline-gray-100 rounded-md focus:outline-1 focus:outline-gray-200" onInput={(e) => setSearchCriteria({...searchCriteria, searchKey: e.currentTarget.value})} />
           <ReportTable searchCriteria={searchCriteria} />
           <div className="w-full flex">
