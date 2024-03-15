@@ -12,7 +12,7 @@ const ReOrderTable = ({ collegPrefernces, setCollegPrefernces }) => {
     >
         {collegPrefernces.map((college, i) => (
           <Reorder.Item
-            key={college["S.No"]}
+            key={college["id"]}
             value={college}
             className='reorder-item flex cursor-grab justify-around items-center outline p-1 min-h-32 overflow-hidden bg-white outline-1 outline-gray-200 last-of-type:rounded-ee-md last-of-type:rounded-es-md'
           >
@@ -26,10 +26,10 @@ const ReOrderTable = ({ collegPrefernces, setCollegPrefernces }) => {
               {college["College Name"]}
             </h2>
             <h2 className='max-w-36 flex-1 text-sm pl-2'>
-              {college["Branch Code"]}
+              {college["Branch Name"]}
             </h2>
             <h2 className='max-w-36 flex-1 text-sm'>
-              {college[`BC - Cutoff`]}
+              {college[`${localStorage.getItem("Cat")} - Cutoff`]}
             </h2>
           </Reorder.Item>
         ))}

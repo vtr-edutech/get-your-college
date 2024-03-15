@@ -16,9 +16,9 @@ const CollegeInfoTable = ({ searchCriteria }) => {
         college["College Name"]
           .toLowerCase()
           .replace(/\s+/g, "")
-          .trim()
+          
           .includes(
-            searchCriteria.searchKey.toLowerCase().replace(/\s+/g, "").trim()
+            searchCriteria.searchKey.toLowerCase().replace(/\s+/g, "")
           )
       );
     },
