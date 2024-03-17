@@ -7,6 +7,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { MdOutlineFileDownload } from "react-icons/md";
 import collegeData from "@/utils/collegeData";
 import SkeletonLoader from "@/components/SkeletonLoader";
+import { useSession } from "next-auth/react";
 
 export const dynamic = "force-dynamic";
 
@@ -14,6 +15,7 @@ const Generate = () => {
   const [collegPrefernces, setCollegPrefernces] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState();
   const pdfComponentRef = useRef();
+  const { data } = useSession();
   
   useEffect(() => {
     const preferredCollegesId = localStorage.getItem("colleges").split(",");
@@ -36,7 +38,7 @@ const Generate = () => {
       {/* Table for Next Page */}
       <PDFExport
         ref={pdfComponentRef}
-        fileName='what'
+        fileName={(data?.user?.name || 'User') + ' ' + (new Date().toLocaleString()) + '-' + 'College Choice Report'}
         paperSize={"A4"}
         margin='1cm'
       >

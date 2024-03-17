@@ -56,16 +56,17 @@ kendo-pdf-document .reorder-header h2 {
 kendo-pdf-document .reorder-item {
   padding: 5px !important;
   border: 1px solid #e5e7eb;
-  font-size: 8px;
+  font-size: 9px;
 }
 
 kendo-pdf-document .reorder-container li {
   min-height: 50px !important;
-  max-height: 100px !important;
+  max-height: 80px !important;
 }
 
 kendo-pdf-document .reorder-item > h2 {
-  font-size: 10px;
+  font-size: 9px;
+  line-height: 12px;
 }
 
 kendo-pdf-document .reorder-container {

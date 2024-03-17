@@ -14,11 +14,16 @@ const addCollegeToList = (colleges, setSelectedColleges) => {
 };
 
 const ReportTable = ({ searchCriteria }) => {
-  const previouslySelectedCollegeIds = localStorage
-    .getItem("colleges")
-    .split(",");
+  const previouslySelectedCollegeIds = localStorage.getItem("colleges");
   
-  const previouslySelectedColleges = useMemo(() => previouslySelectedCollegeIds.map(id => collegeData.find(college => college.id == id)), [previouslySelectedCollegeIds]) 
+  const previouslySelectedColleges = useMemo(
+    () =>
+      previouslySelectedCollegeIds &&
+      previouslySelectedCollegeIds
+        .split(",")
+        .map((id) => collegeData.find((college) => college.id == id)),
+    [previouslySelectedCollegeIds]
+  ); 
 
   const collegesAfterFiltering = useMemo(
     () =>
@@ -60,7 +65,7 @@ const ReportTable = ({ searchCriteria }) => {
   );
 
   const [selectedColleges, setSelectedColleges] = useState(
-    previouslySelectedColleges
+    previouslySelectedColleges ?? []
   );
 
   if (!searchCriteria.Category) return <p>Invalid search parameters!</p>;
