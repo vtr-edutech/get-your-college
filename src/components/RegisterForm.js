@@ -138,10 +138,6 @@ const RegisterForm = ({ closeFn }) => {
           <input
             {...register("email", {
               required: { value: true, message: "Required!" },
-              maxLength: {
-                value: 100,
-                message: "Max length is 100 characters only",
-              },
               pattern: { value: /^\S+@\S+$/i, message: "Invalid Email" },
             })}
             type='text'
