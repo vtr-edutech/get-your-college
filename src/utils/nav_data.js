@@ -1,5 +1,5 @@
 import { FaBookMedical } from "react-icons/fa6";
-import { MdOutlineEngineering } from "react-icons/md";
+import { MdEngineering } from "react-icons/md";
 
 /* 
   Once real data is given, replace the following data with the ones they give, and make sure whatever value is given in any of the following
@@ -9,7 +9,7 @@ export const COLLEGE_CATEGORIES = [
   {
     name: "Engineering",
     value: "engineering",
-    icon: <MdOutlineEngineering />,
+    icon: <MdEngineering size={18} />,
     subcategories: [
       {
         name: "JEE Mains",

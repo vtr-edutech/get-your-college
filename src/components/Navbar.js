@@ -234,7 +234,7 @@ const Navbar = ({ modalOpen }) => {
       <div className='flex p-5'>
         <button
           onClick={() => signOut()}
-          className='flex gap-2 text-red-400 font-medium'
+          className='flex gap-2 text-red-400 font-medium items-center'
         >
           <MdLogout size={18} />
           LOGOUT

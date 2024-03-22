@@ -74,5 +74,5 @@ kendo-pdf-document .reorder-container {
 }
 
 .mantine-datatable-empty-state, .mantine-datatable-loader {
-  display: none;
+  display: none !important;
 }

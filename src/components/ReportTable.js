@@ -40,7 +40,6 @@ const ReportTable = ({ searchCriteria }) => {
             ? college["College Name"]
                 .toLowerCase()
                 .replace(/\s+/g, "")
-                // .trim()
                 .includes(
                   searchCriteria.searchKey.toLowerCase().replace(/\s+/g, "")
                 )
@@ -108,6 +107,7 @@ const ReportTable = ({ searchCriteria }) => {
         selectionTrigger='cell'
         selectionColumnClassName='cursor-pointer'
         selectionCheckboxProps={{ className: "cursor-pointer" }}
+        rowClassName={'h-28 max-h-28'}
       />
       {/* <div className='w-full self-end flex'> */}
       {/* <Pagination

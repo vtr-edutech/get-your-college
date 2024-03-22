@@ -3,7 +3,7 @@ import SkeletonLoader from "@/components/SkeletonLoader";
 import Button from "@/components/ui/Button";
 import Image from "next/image";
 import Link from "next/link";
-import React, { Suspense, lazy, useState } from "react";
+import React, { Suspense, lazy, useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { LuSearch } from "react-icons/lu";
 
@@ -15,13 +15,31 @@ const Report = () => {
     handleSubmit,
     register,
     setError,
+    reset
   } = useForm();
 
   const [searchCriteria, setSearchCriteria] = useState(null);
 
+  useEffect(() => {
+    const searchCriteriaFromLS = localStorage.getItem('search');
+    if (searchCriteriaFromLS) {
+      const searchCriteriaObj = JSON.parse(searchCriteriaFromLS);
+      setSearchCriteria(searchCriteriaObj);
+      reset({
+        MinCutoff: searchCriteriaObj.MinCutoff,
+        MaxCutoff: searchCriteriaObj.MaxCutoff,
+        Category: searchCriteriaObj.Category
+      });
+    }
+    // if (searchCriteriaFromLS) setSearchCriteria(searchCriteriaFromLS);
+    // searchSubmission({ searchCriteria });
+  }, [])
+  
+
   const searchSubmission = async (data) => {
     if (Object.keys(data).length !== 0) {
       console.log(data);
+      localStorage.setItem('search', JSON.stringify(data));
       if (parseInt(data.MinCutoff) > parseInt(data.MaxCutoff)) {
         setError(
           "MinCutoff",
@@ -149,7 +167,7 @@ const Report = () => {
         </Suspense>
       ) : (
         <>
-          <div className='flex flex-col self-center mt-6 h-full'>
+          <div className='flex flex-col self-center mt-6 h-full items-center'>
             <p className='text-sm font-light text-gray-500'>
               Begin search by entering details and Go
             </p>
