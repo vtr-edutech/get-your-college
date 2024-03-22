@@ -8,22 +8,21 @@ const PAGE_SIZE = 10;
 /* if sorting is needed, then create an object right here that says */
 
 const CollegeInfoTable = ({ searchCriteria }) => {
-    console.log('server component ah');
-  const collegesAfterFiltering = useMemo(
-    () => {
-      if (!searchCriteria || searchCriteria?.searchKey == '') return colleges
-      return colleges.filter((college) =>
-        college["College Name"]
-          .toLowerCase()
-          .replace(/\s+/g, "")
-          
-          .includes(
-            searchCriteria.searchKey.toLowerCase().replace(/\s+/g, "")
-          )
-      );
-    },
-    [searchCriteria]
-  );
+  /* for now leave the search as is. but in future implement each word word by word searching like in VSCode
+    if search is "sairam information tech":
+      1. break each word, check if each word is in the college['college name'] and college['branch name'] combined,
+      2. if not check if either of the split words are in college['college name'] and college['branch name'] 
+      3. else, default checking like as already implemented
+  */
+  const collegesAfterFiltering = useMemo(() => {
+    if (!searchCriteria || searchCriteria?.searchKey == "") return colleges;
+    return colleges.filter((college) =>
+      (college["College Name"] + college["Branch Name"])
+        .toLowerCase()
+        .replace(/\s+/g, "")
+        .includes(searchCriteria.searchKey.toLowerCase().replace(/\s+/g, ""))
+    );
+  }, [searchCriteria]);
 
   const pagination = usePagination({
     total: parseInt(collegesAfterFiltering.length / PAGE_SIZE) + 1,
@@ -41,18 +40,17 @@ const CollegeInfoTable = ({ searchCriteria }) => {
           value={pagination.active}
           onChange={pagination.setPage}
           className='ml-auto'
-          classNames={{ 
-             control: {
-              opacity: '10%'
-             }
+          classNames={{
+            control: {
+              opacity: "10%",
+            },
           }}
-        >
-        </Pagination>
+        ></Pagination>
       </div>
 
       {/* Table Header */}
       <div className='flex flex-col mt-6 w-full transition-all'>
-        <div className='flex justify-around items-center p-4 rounded-se-lg rounded-ss-lg outline outline-1 outline-gray-200'>
+        <div className='flex justify-around items-center p-4 rounded-se-lg rounded-ss-lg outline outline-1 outline-gray-200 shadow sticky top-0 bg-white'>
           <h2 className='flex-1 font-medium max-w-28'>S.No.</h2>
           <h2 className='flex-1 font-medium max-w-36'>College Code</h2>
           <h2 className='min-w-44 max-w-96 flex-1 font-medium'>College Name</h2>

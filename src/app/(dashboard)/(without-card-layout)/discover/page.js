@@ -34,7 +34,11 @@ const Discover = () => {
                 alt='Facebook - Know your College'
               />
             </a>
-            <a href='https://web.whatsapp.com' target='_blank' className='m-5'>
+            <a
+              href='https://web.whatsapp.com/send?phone=9362667920&text&app_absent=0'
+              target='_blank'
+              className='m-5'
+            >
               <Image
                 src={"/wp.png"}
                 width={80}
@@ -48,9 +52,18 @@ const Discover = () => {
         <div className='flex flex-col p-6 flex-1 rounded-md shadow-sm shadow-black/10 bg-white'>
           <h1 className='font-semibold text-xl'>Topics</h1>
           Connect with any of our socials to get latest updates
-          <div className="flex w-full relative">
-            <Image src={'/Empty-pana.png'} height={180} width={300} className='self-center flex p-5' quality={95} alt='No data placeholder image' /> 
-            <p className='text-primary/50 absolute -translate-x-1/2 left-[50%] bottom-2'>No data yet!</p>
+          <div className='flex w-full relative'>
+            <Image
+              src={"/Empty-pana.png"}
+              height={180}
+              width={300}
+              className='self-center flex p-5'
+              quality={95}
+              alt='No data placeholder image'
+            />
+            <p className='text-primary/50 absolute -translate-x-1/2 left-[50%] bottom-2'>
+              No data yet!
+            </p>
           </div>
         </div>
       </div>
@@ -59,7 +72,7 @@ const Discover = () => {
         <h1 className='font-semibold text-xl'>News</h1>
         Connect with any of our socials to get latest updates
         {/* Invisible div for height */}
-        <div className="h-64"></div>
+        <div className='h-64'></div>
       </div>
     </div>
   );

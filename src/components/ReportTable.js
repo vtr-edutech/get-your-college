@@ -77,7 +77,7 @@ const ReportTable = ({ searchCriteria }) => {
         noRecordsIcon={<>{""}</>}
         noRecordsText=''
         emptyState={<>{""}</>}
-        minHeight={"400px"}
+        minHeight={280}
         mah={"450px"}
         customLoader={<>{""}</>}
         loaderSize={"xs"}

@@ -26,13 +26,13 @@ const CollegesTable = ({ searchCriteria }) => {
     siblings: 1,
   });
 
-  console.log("🚀 ~ CollegesTable ~ pagination:", collegesAfterFiltering)
+  // console.log("🚀 ~ CollegesTable ~ pagination:", collegesAfterFiltering)
   if (!searchCriteria.Dept) return <p>Invalid Search Criteria!</p>;
 
   return (
     <>
       <div className='flex flex-col mt-6 w-full transition-all'>
-        <div className='flex justify-around items-center p-4 rounded-se-lg rounded-ss-lg outline outline-1 outline-gray-200'>
+        <div className='flex justify-around items-center p-4 rounded-se-lg rounded-ss-lg outline outline-1 outline-gray-200 sticky top-0 bg-white shadow'>
           <h2 className='flex-1 font-medium max-w-28'>S.No.</h2>
           <h2 className='flex-1 font-medium max-w-36'>College Code</h2>
           <h2 className='min-w-44 max-w-96 flex-1 font-medium'>College Name</h2>
