@@ -247,7 +247,7 @@ const Home = () => {
                 name='searchKey'
                 placeholder='Search for college name, college code, etc.'
                 id='search'
-                className='py-2 px-3 md:w-[50%] w-full outline outline-1 placeholder:text-sm outline-gray-200 rounded-md focus:outline-1 focus:outline-gray-300'
+                className='py-2 px-3 w-full md:w-[50%] outline outline-1 placeholder:text-sm outline-gray-200 rounded-md focus:outline-1 focus:outline-gray-300'
                 onInput={(e) =>
                   setSearchCriteria({
                     ...searchCriteria,
@@ -258,7 +258,7 @@ const Home = () => {
               <SegmentedControl
                 label={"Filter By"}
                 value={searchCriteria.filterBy}
-                styles={{ root: { width: '100%' } }}
+                styles={{ root: { width: window.innerWidth < 768? "100%": 'unset' } }}
                 onChange={(value) =>
                   setSearchCriteria((prev) => ({ ...prev, filterBy: value }))
                 }

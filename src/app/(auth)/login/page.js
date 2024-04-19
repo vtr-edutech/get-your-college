@@ -59,7 +59,7 @@ const Login = () => {
   return (
     <AuthCard>
       <h2 className='font-medium text-xl text-black/90'>
-        Let&apos;s create an account for you...
+        Let&apos;s get you started...
       </h2>
       <div className='flex flex-col gap-1'>
         <p className='font-light text-xs'>
@@ -76,7 +76,7 @@ const Login = () => {
           }
           onKeyUp={handleEnterKeyPress}
           placeholder='+91'
-          className={`w-[22rem] rounded-md bg-input px-3 py-2 focus:outline-1 focus:outline-gray-300 ${reqStatus === 'loading' && 'opacity-30'}`}
+          className={`md:w-[22rem] rounded-md bg-input px-3 py-2 focus:outline-1 focus:outline-gray-300 ${reqStatus === 'loading' && 'opacity-30'}`}
         />
       </div>
       <Button label={"Get OTP"} isDisabled={!canSubmit} onClick={handleSubmit} />

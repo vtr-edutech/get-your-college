@@ -17,6 +17,7 @@ import { Accordion, Combobox, Skeleton, useCombobox } from "@mantine/core";
 import { useDispatch, useSelector } from "react-redux";
 import { selectCategory } from "@/store/collegeCategorySlice";
 import { COLLEGE_CATEGORIES } from "@/utils/nav_data";
+import { cn } from "@/utils";
 
 const MENU_ITEMS = [
   {
@@ -79,7 +80,34 @@ const Navbar = ({ modalOpen }) => {
     [selectedCollegeCategory]
   );
 
-  return (
+  return window.innerWidth < 768 ? (
+    <>
+      <div className='fixed flex max-h-16 md:hidden justify-around items-center w-full bottom-0 z-50 px-2 py-2 shadow shadow-black/40 bg-white'>
+        {MENU_ITEMS.slice(0, 4).map((menu, i) => (
+          <Link
+            href={menu.to}
+            key={i}
+            className={cn(
+              "flex gap-1 flex-col items-center justify-center p-1.5 h-full rounded md:hidden",
+              { "bg-slate-100": currentPathName === menu.to }
+            )}
+          >
+            {menu.icon}
+            <p className='text-xs text-black/50'>{menu.name}</p>
+          </Link>
+        ))}
+        <Link
+          href={MENU_ITEMS[4].to}
+          className={cn(
+            "flex absolute right-4 shadow shadow-black/10 rounded-full bottom-20 gap-1 flex-col items-center justify-center p-3 md:hidden",
+            { "bg-slate-100": currentPathName === "contact" }
+          )}
+        >
+          {MENU_ITEMS[4].icon}
+        </Link>
+      </div>
+    </>
+  ) : (
     <div className='hidden md:flex-col md:flex md:h-screen md:items-center md:w-72 md:bg-white md:fixed md:top-0 md:left-0'>
       {/* Profile Section */}
       <div className='flex flex-col gap-4 justify-center items-center p-10 w-full'>

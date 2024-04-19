@@ -1,5 +1,6 @@
 "use client";
 import AuthCard from "@/components/AuthCard";
+import { cn } from "@/utils";
 import axios from "axios";
 import { OTPInput } from "input-otp";
 import { signIn } from "next-auth/react";
@@ -8,9 +9,21 @@ import { useRouter } from "next/navigation";
 import React, { useEffect, useRef, useState } from "react";
 import { toast } from "react-toastify";
 
+const FakeCaret = () => (
+  <div className='absolute pointer-events-none inset-0 flex items-center justify-center animate-caret-blink'>
+    <div className='w-px h-8 bg-black' />
+  </div>
+);
+
 const InputSlot = (props) => (
-  <div className='w-10 h-10 rounded-md bg-input px-3 py-2 focus:outline-1 focus:outline-gray-300'>
+  <div
+    className={cn(
+      "w-10 h-10 rounded-md bg-input px-3 py-2",
+      {"outline-1 outline-black-200": props.isActive}
+    )}
+  >
     {props.char !== null && props.char}
+    {/* {props.hasFakeCaret && <FakeCaret />} */}
   </div>
 );
 
