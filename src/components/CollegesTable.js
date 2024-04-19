@@ -9,14 +9,19 @@ const PAGE_SIZE = 10;
 /* then on click, find the corresponding fn from this object and sort the rows based on the function and then return the filtered colleges */
 
 const CollegesTable = ({ searchCriteria }) => {
-  const [filterBy, setFilterBy] = useState('Cutoff');
   const collegesAfterFiltering = useMemo(
     () =>
       colleges.filter(
         (college) =>
-          college["Branch Name"] === searchCriteria?.Dept &&
-          college[`${searchCriteria.Category} - Cutoff`] >= parseFloat(searchCriteria.MinCutoff) &&
-          college[`${searchCriteria.Category} - Cutoff`] <= parseFloat(searchCriteria.MaxCutoff)
+          (
+            college["Branch Name"] === searchCriteria?.Dept &&
+            college[`${searchCriteria.Category} - Cutoff`] >=
+              parseFloat(searchCriteria.MinCutoff) &&
+            college[`${searchCriteria.Category} - Cutoff`] <=
+              parseFloat(searchCriteria.MaxCutoff)
+          ) 
+            &&
+          college["College Name"].toLowerCase().replace(/\s+/g, "").includes(searchCriteria.searchKey.toLowerCase().replace(/\s+/g, ""))
       ),
     [searchCriteria]
   );
@@ -32,23 +37,6 @@ const CollegesTable = ({ searchCriteria }) => {
 
   return (
     <>
-      <div className='ml-auto mt-6'>
-        <SegmentedControl
-          label={"Filter By"}
-          value={filterBy}
-          onChange={setFilterBy}
-          data={[
-            {
-              label: "By Cutoff",
-              value: "Cutoff",
-            },
-            {
-              label: "By Rank",
-              value: "Rank",
-            },
-          ]}
-        />
-      </div>
       <div className='flex flex-col w-full transition-all'>
         <div className='flex justify-around items-center p-4 rounded-se-lg rounded-ss-lg outline outline-1 outline-gray-200 sticky top-0 bg-white shadow'>
           <h2 className='flex-1 font-medium max-w-28'>S.No.</h2>
@@ -56,7 +44,7 @@ const CollegesTable = ({ searchCriteria }) => {
           <h2 className='min-w-44 max-w-96 flex-1 font-medium'>College Name</h2>
           <h2 className='max-w-36 flex-1 font-medium'>Department Code</h2>
           <h2 className='max-w-36 flex-1 font-medium'>
-            {searchCriteria.Category} {filterBy}
+            {searchCriteria.Category} {searchCriteria.filterBy}
           </h2>
         </div>
 
@@ -85,7 +73,7 @@ const CollegesTable = ({ searchCriteria }) => {
                 {college["Branch Code"]}
               </h2>
               <h2 className='max-w-36 flex-1 text-sm'>
-                {college[`${searchCriteria.Category} - ${filterBy}`]}
+                {college[`${searchCriteria.Category} - ${searchCriteria.filterBy}`]}
               </h2>
             </div>
           ))}

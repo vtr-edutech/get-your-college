@@ -6,6 +6,7 @@ import { LuSearch } from "react-icons/lu";
 import { UNIQUE_COURSE_NAMES } from '@/utils/collegeData'
 import { SegmentedControl, Select } from "@mantine/core";
 import SkeletonLoader from "@/components/SkeletonLoader";
+import { useDebouncedState } from "@mantine/hooks";
 
 const CollegesTable = lazy(() => import("@/components/CollegesTable"));
 
@@ -19,7 +20,7 @@ const Home = () => {
   const yearInputRef = useRef();
   const cutoffCategoryRef = useRef();
 
-  const [searchCriteria, setSearchCriteria] = useState({ cutoffCategory: 'GC' });
+  const [searchCriteria, setSearchCriteria] = useState({ cutoffCategory: 'GC', filterBy: 'Cutoff', searchKey: '' });
   console.log("🚀 ~ Home ~ searchCriteria:", searchCriteria)
 
   const searchSubmission = async (data) => {
@@ -57,17 +58,20 @@ const Home = () => {
         onSubmit={handleSubmit(searchSubmission)}
       >
         {/* Category and Years container */}
-        <div className="flex items-center gap-8">
+        <div className='flex items-center gap-8'>
           {/* Cutoff Category choose */}
           <div className='flex flex-col justify-center gap-1'>
             <p className='font-normal text-sm'>Cutoff category:</p>
             <SegmentedControl
               ref={cutoffCategoryRef}
               withItemsBorders={false}
-              styles={{ root: { width: '27rem' } }}
+              styles={{ root: { width: "27rem" } }}
               value={searchCriteria?.cutoffCategory || "GC"}
               onChange={(value) =>
-                setSearchCriteria((prev) => ({ ...prev, cutoffCategory: value }))
+                setSearchCriteria((prev) => ({
+                  ...prev,
+                  cutoffCategory: value,
+                }))
               }
               radius='xs'
               data={[
@@ -91,12 +95,14 @@ const Home = () => {
             <p className='font-normal text-sm'>Search year:</p>
             <Select
               ref={yearInputRef}
-              defaultValue="2023"
+              defaultValue='2023'
               allowDeselect={false}
-              checkIconPosition="right"
-              styles={{root: { width: '8rem' }}}
-              style={{fontFamily: 'Inter'}}
-              onChange={(value) => setSearchCriteria(prev => ({ ...prev, year: value }))}
+              checkIconPosition='right'
+              styles={{ root: { width: "8rem" } }}
+              style={{ fontFamily: "Inter" }}
+              onChange={(value) =>
+                setSearchCriteria((prev) => ({ ...prev, year: value }))
+              }
               data={["2023"]} // for now only year 2023 is available. later add 2021 and 2022 too
             />
           </div>
@@ -235,6 +241,38 @@ const Home = () => {
       <div className='flex flex-col h-full w-full gap-4 items-center'>
         {searchCriteria?.MaxCutoff ? (
           <Suspense fallback={<SkeletonLoader />}>
+            <div className='flex w-full mt-6 justify-between items-center'>
+              <input
+                type='search'
+                name='searchKey'
+                placeholder='Search for college name, branch name, college code, etc.'
+                id='search'
+                className='py-2 px-3 w-[50%] outline outline-1 outline-gray-200 rounded-md focus:outline-1 focus:outline-gray-300'
+                onInput={(e) =>
+                  setSearchCriteria({
+                    ...searchCriteria,
+                    searchKey: e.currentTarget.value,
+                  })
+                }
+              />
+              <SegmentedControl
+                label={"Filter By"}
+                value={searchCriteria.filterBy}
+                onChange={(value) =>
+                  setSearchCriteria((prev) => ({ ...prev, filterBy: value }))
+                }
+                data={[
+                  {
+                    label: "By Cutoff",
+                    value: "Cutoff",
+                  },
+                  {
+                    label: "By Rank",
+                    value: "Rank",
+                  },
+                ]}
+              />
+            </div>
             <CollegesTable searchCriteria={searchCriteria} />
           </Suspense>
         ) : (

@@ -18,7 +18,7 @@ const RegisterForm = ({ closeFn }) => {
   const userInfo = useSelector((state) => state.userInfo.user);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  console.log("🚀 ~ RegisterForm ~ userInfo:", userInfo);
+  // console.log("🚀 ~ RegisterForm ~ userInfo:", userInfo);
 
   const {
     register,
