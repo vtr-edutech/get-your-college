@@ -6,7 +6,6 @@ import { LuSearch } from "react-icons/lu";
 import { UNIQUE_COURSE_NAMES } from '@/utils/collegeData'
 import { SegmentedControl, Select } from "@mantine/core";
 import SkeletonLoader from "@/components/SkeletonLoader";
-import { useDebouncedState } from "@mantine/hooks";
 
 const CollegesTable = lazy(() => import("@/components/CollegesTable"));
 
@@ -21,6 +20,7 @@ const Home = () => {
   const cutoffCategoryRef = useRef();
 
   const [searchCriteria, setSearchCriteria] = useState({ cutoffCategory: 'GC', filterBy: 'Cutoff', searchKey: '' });
+
   console.log("🚀 ~ Home ~ searchCriteria:", searchCriteria)
 
   const searchSubmission = async (data) => {
@@ -54,18 +54,18 @@ const Home = () => {
         Enter 12th Cut-Off marks and choose Category
       </h3>
       <form
-        className='flex flex-col mt-2 w-full px-28 gap-3'
+        className='flex flex-col mt-2 md:w-full md:px-28 gap-6 justify-start'
         onSubmit={handleSubmit(searchSubmission)}
       >
         {/* Category and Years container */}
-        <div className='flex items-center gap-8'>
+        <div className='flex flex-col gap-2 justify-start items-start md:items-center md:gap-16'>
           {/* Cutoff Category choose */}
           <div className='flex flex-col justify-center gap-1'>
             <p className='font-normal text-sm'>Cutoff category:</p>
             <SegmentedControl
               ref={cutoffCategoryRef}
               withItemsBorders={false}
-              styles={{ root: { width: "27rem" } }}
+              styles={{ root: { width: "20rem" } }}
               value={searchCriteria?.cutoffCategory || "GC"}
               onChange={(value) =>
                 setSearchCriteria((prev) => ({
@@ -109,7 +109,7 @@ const Home = () => {
         </div>
 
         {/* Linear Search bar */}
-        <div className='flex items-center'>
+        <div className='grid grid-cols-2 grid-rows-2 gap-2 md:flex md:flex-col md:gap-1 md:justify-center md:items-center'>
           {/* Min cutoff */}
           <div className='flex flex-col gap-1 items-center relative'>
             <input
@@ -117,7 +117,7 @@ const Home = () => {
               name='starting-cutoff'
               id='starting-cutoff'
               placeholder='Starting Cut-Off'
-              className='bg-card p-2 w-44 rounded-ss-md rounded-es-md focus:outline-1 focus:outline-gray-200'
+              className='bg-card p-2 max-w-40 md:w-44 rounded-ss-md rounded-es-md focus:outline-1 focus:outline-gray-200'
               {...register("MinCutoff", {
                 required: { value: true, message: "This field is required" },
                 min: {
@@ -143,7 +143,7 @@ const Home = () => {
               name='ending-cutoff'
               id='ending-cutoff'
               placeholder='Ending Cut-Off'
-              className='bg-card p-2  w-44 focus:outline-1 focus:outline-gray-200'
+              className='bg-card p-2 max-w-40 md:w-44 focus:outline-1 focus:outline-gray-200'
               {...register("MaxCutoff", {
                 required: { value: true, message: "This field is required" },
                 min: {
@@ -163,11 +163,11 @@ const Home = () => {
             )}
           </div>
           {/* Dept */}
-          <div className='flex flex-col gap-1 items-center relative'>
+          <div className='grid col-span-2 md:flex md:flex-col md:gap-1 md:items-center relative'>
             <select
               name='category'
               defaultValue={"select"}
-              className='bg-card p-2 py-2.5 w-52 pr-8 focus:outline-1 focus:outline-gray-200'
+              className='bg-card p-2 py-2.5 w-full md:w-52 pr-8 focus:outline-1 focus:outline-gray-200'
               id='category'
               {...register("Dept", {
                 required: { value: true, message: "This field is required" },
@@ -199,7 +199,7 @@ const Home = () => {
             )}
           </div>
           {/* Category */}
-          <div className='flex flex-col gap-1 items-center relative'>
+          <div className='grid col-span-2 md:flex md:flex-col md:gap-1 md:items-center relative'>
             <select
               name='category'
               defaultValue={"Select"}
@@ -230,9 +230,9 @@ const Home = () => {
               </p>
             )}
           </div>
-          <button className='bg-fill-black px-6 py-1.5 text-lg rounded flex gap-2 text-white items-center ml-2'>
+          <button className='bg-fill-black text-center w-full md:px-6 py-1.5 text-lg rounded flex gap-2 text-white items-center justify-center md:ml-2'>
             <LuSearch />
-            Go
+            <p>Go</p>
           </button>
         </div>
       </form>
@@ -245,7 +245,7 @@ const Home = () => {
               <input
                 type='search'
                 name='searchKey'
-                placeholder='Search for college name, branch name, college code, etc.'
+                placeholder='Search for college name, college code, etc.'
                 id='search'
                 className='py-2 px-3 w-[50%] outline outline-1 outline-gray-200 rounded-md focus:outline-1 focus:outline-gray-300'
                 onInput={(e) =>

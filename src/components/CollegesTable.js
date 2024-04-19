@@ -21,7 +21,10 @@ const CollegesTable = ({ searchCriteria }) => {
               parseFloat(searchCriteria.MaxCutoff)
           ) 
             &&
-          college["College Name"].toLowerCase().replace(/\s+/g, "").includes(searchCriteria.searchKey.toLowerCase().replace(/\s+/g, ""))
+          (
+            college["College Name"].toLowerCase().replace(/\s+/g, "").includes(searchCriteria.searchKey.toLowerCase().replace(/\s+/g, "")) ||
+            college["College Code"].toString().toLowerCase().replace(/\s+/g, "").includes(searchCriteria.searchKey.toLowerCase().replace(/\s+/g, ""))
+          )
       ),
     [searchCriteria]
   );

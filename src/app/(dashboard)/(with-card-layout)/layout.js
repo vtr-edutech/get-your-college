@@ -10,7 +10,7 @@ const RootLayout = ({ children }) => {
   const [opened, { open, close }] = useDisclosure(false);
 
   return (
-    <main className='flex min-h-screen justify-center w-full relative pt-12 pl-80 pr-12'>
+    <main className='flex min-h-screen justify-center w-full relative md:pt-12 md:pl-80 md:pr-12'>
       <Suspense fallback={'Loading...'}>
         <Navbar modalOpen={open} />
       </Suspense>

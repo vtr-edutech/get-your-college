@@ -80,7 +80,7 @@ const Navbar = ({ modalOpen }) => {
   );
 
   return (
-    <div className='flex flex-col h-screen items-center w-72 bg-white fixed top-0 left-0'>
+    <div className='hidden md:flex-col md:h-screen md:items-center md:w-72 md:bg-white md:fixed md:top-0 md:left-0'>
       {/* Profile Section */}
       <div className='flex flex-col gap-4 justify-center items-center p-10 w-full'>
         <div className='grid place-items-center w-20 h-20'>
