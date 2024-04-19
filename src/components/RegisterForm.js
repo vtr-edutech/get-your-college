@@ -5,17 +5,19 @@ import { cn } from "@/utils";
 import axios from "axios";
 import { signOut, useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { useDispatch, useSelector } from "react-redux";
 import { toast } from "react-toastify";
 
 const RegisterForm = ({ closeFn }) => {
-  console.log("🚀 ~ RegisterForm ~ closeFn:", closeFn)
+  // console.log("🚀 ~ RegisterForm ~ closeFn:", closeFn)
   const router = useRouter();
 
   const dispatch = useDispatch();
-  const userInfo = useSelector((state) => state.userInfo);
+  const userInfo = useSelector((state) => state.userInfo.user);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
   console.log("🚀 ~ RegisterForm ~ userInfo:", userInfo);
 
   const {
@@ -32,34 +34,39 @@ const RegisterForm = ({ closeFn }) => {
       try {
         const userInfoRequest = await axios.get("/api/user-info");
         console.log("🚀 ~ fetchUserInfo ~ userInfo:", userInfoRequest);
-        reset({
-          firstName: userInfoRequest.firstName,
-          lastName: userInfoRequest.lastName,
-          email: userInfoRequest.email,
-          gender: userInfoRequest.gender,
-          group: userInfoRequest.group,
-          address: userInfoRequest.address,
-        });
+        // reset({
+        //   firstName: userInfoRequest.firstName,
+        //   lastName: userInfoRequest.lastName,
+        //   email: userInfoRequest.email,
+        //   gender: userInfoRequest.gender,
+        //   group: userInfoRequest.group,
+        //   address: userInfoRequest.address,
+        // });
         dispatch(setUserData(userInfoRequest.data.user));
       } catch (error) {
         toast.error(error.response.data.error ?? error.message);
       }
     };
-    if (!userInfo.firstName) fetchUserInfo();
-    reset({
-      firstName: userInfo.firstName ?? "",
-      lastName: userInfo.lastName ?? "",
-      email: userInfo.email ?? "",
-      gender: userInfo.gender ?? "",
-      group: userInfo.group ?? "",
-      address: userInfo.address ?? "",
-    });
-  }, [userInfo]);
+    console.log(userInfo);
+    if (!userInfo.firstName) {
+       fetchUserInfo();
+    } else {
+      reset({
+        firstName: userInfo.firstName ?? "",
+        lastName: userInfo.lastName ?? "",
+        email: userInfo.email ?? "",
+        gender: userInfo.gender ?? "",
+        group: userInfo.group ?? "",
+        address: userInfo.address ?? "",
+      });
+    }
+  }, [userInfo?.firstName]);
 
   const onSubmit = async (data) => {
     if (Object.keys(errors).length === 0) {
       console.log(data);
       try {
+        setIsSubmitting(true);
         const registerReq = await axios.post("/api/register", data);
         console.log("🚀 ~ onSubmit ~ registerReq:", registerReq);
         toast.success(registerReq.data.message);
@@ -74,6 +81,8 @@ const RegisterForm = ({ closeFn }) => {
             signOut();
           }, 3000);
         }
+      } finally {
+        setIsSubmitting(false);
       }
     }
   };
@@ -83,7 +92,7 @@ const RegisterForm = ({ closeFn }) => {
       <form
         onSubmit={handleSubmit(onSubmit)}
         className={cn("flex flex-col gap-4 w-full", {
-          "opacity-20 pointer-events-none": !userInfo.firstName,
+          "opacity-20 pointer-events-none": !userInfo.mobile,
         })}
       >
         {/* First name input */}
@@ -231,7 +240,7 @@ const RegisterForm = ({ closeFn }) => {
             I agree to service terms and conditions
           </label>
         </div> */}
-        <Button label={"Confirm Details"} isDisabled={!userInfo} asButton />
+        <Button label={"Confirm Details"} isDisabled={!userInfo || isSubmitting} asButton />
       </form>
     </div>
   );

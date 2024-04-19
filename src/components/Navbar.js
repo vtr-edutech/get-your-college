@@ -25,7 +25,7 @@ const MENU_ITEMS = [
     to: "/discover",
   },
   {
-    name: "SEARCH",
+    name: "CUTOFF",
     icon: <GoSearch strokeWidth={0.4} />,
     to: "/home",
   },
@@ -36,7 +36,7 @@ const MENU_ITEMS = [
     subcategoryFrom: "engineering",
   },
   {
-    name: "REPORT",
+    name: "CHOICE LIST",
     icon: <TbReportAnalytics strokeWidth={2} size={18} />,
     to: "/report",
   },

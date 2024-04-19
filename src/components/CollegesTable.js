@@ -1,7 +1,7 @@
 import { usePagination } from "@mantine/hooks";
 import colleges from "../utils/collegeData";
-import { useMemo } from "react";
-import { Pagination } from "@mantine/core";
+import { useMemo, useState } from "react";
+import { Pagination, SegmentedControl } from "@mantine/core";
 
 const PAGE_SIZE = 10;
 
@@ -9,6 +9,7 @@ const PAGE_SIZE = 10;
 /* then on click, find the corresponding fn from this object and sort the rows based on the function and then return the filtered colleges */
 
 const CollegesTable = ({ searchCriteria }) => {
+  const [filterBy, setFilterBy] = useState('Cutoff');
   const collegesAfterFiltering = useMemo(
     () =>
       colleges.filter(
@@ -31,13 +32,31 @@ const CollegesTable = ({ searchCriteria }) => {
 
   return (
     <>
-      <div className='flex flex-col mt-6 w-full transition-all'>
+      <div className='ml-auto mt-6'>
+        <SegmentedControl
+          label={"Filter By"}
+          value={filterBy}
+          onChange={setFilterBy}
+          data={[
+            {
+              label: "By Cutoff",
+              value: "Cutoff",
+            },
+            {
+              label: "By Rank",
+              value: "Rank",
+            },
+          ]}
+        />
+      </div>
+      <div className='flex flex-col w-full transition-all'>
         <div className='flex justify-around items-center p-4 rounded-se-lg rounded-ss-lg outline outline-1 outline-gray-200 sticky top-0 bg-white shadow'>
           <h2 className='flex-1 font-medium max-w-28'>S.No.</h2>
           <h2 className='flex-1 font-medium max-w-36'>College Code</h2>
           <h2 className='min-w-44 max-w-96 flex-1 font-medium'>College Name</h2>
           <h2 className='max-w-36 flex-1 font-medium'>Department Code</h2>
-          <h2 className='max-w-36 flex-1 font-medium'>{searchCriteria.Category} Cutoff
+          <h2 className='max-w-36 flex-1 font-medium'>
+            {searchCriteria.Category} {filterBy}
           </h2>
         </div>
 
@@ -56,11 +75,17 @@ const CollegesTable = ({ searchCriteria }) => {
               <h2 className='flex-1 text-sm max-w-28'>
                 <p className='ml-2'>{i + 1}</p>
               </h2>
-              <h2 className='flex-1 text-sm max-w-36'>{college["College Code"]}</h2>
-              <h2 className='min-w-44 max-w-96 flex-1 text-sm'>{college["College Name"]}</h2>
-              <h2 className='max-w-36 flex-1 text-sm pl-2'>{college["Branch Code"]}</h2>
+              <h2 className='flex-1 text-sm max-w-36'>
+                {college["College Code"]}
+              </h2>
+              <h2 className='min-w-44 max-w-96 flex-1 text-sm'>
+                {college["College Name"]}
+              </h2>
+              <h2 className='max-w-36 flex-1 text-sm pl-2'>
+                {college["Branch Code"]}
+              </h2>
               <h2 className='max-w-36 flex-1 text-sm'>
-                {college[`${searchCriteria.Category} - Cutoff`]}
+                {college[`${searchCriteria.Category} - ${filterBy}`]}
               </h2>
             </div>
           ))}
