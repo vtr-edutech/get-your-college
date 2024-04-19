@@ -1,7 +1,7 @@
 import { usePagination } from "@mantine/hooks";
 import colleges from "../utils/collegeData";
-import { useMemo, useState } from "react";
-import { Pagination, SegmentedControl } from "@mantine/core";
+import { useMemo } from "react";
+import { Pagination } from "@mantine/core";
 
 const PAGE_SIZE = 10;
 
@@ -40,13 +40,15 @@ const CollegesTable = ({ searchCriteria }) => {
 
   return (
     <>
-      <div className='flex flex-col w-full transition-all'>
-        <div className='flex justify-around items-center p-4 rounded-se-lg rounded-ss-lg outline outline-1 outline-gray-200 sticky top-0 bg-white shadow'>
-          <h2 className='flex-1 font-medium max-w-28'>S.No.</h2>
-          <h2 className='flex-1 font-medium max-w-36'>College Code</h2>
+      <div className='overflow-x-scroll md:overflow-hidden flex flex-col w-full transition-all'>
+        <div className='flex justify-around min-w-fit md:min-w-[unset] md:mt-1 mx-1 items-center p-2 md:p-4 rounded-se-lg rounded-ss-lg outline outline-1 outline-gray-200 sticky top-0 bg-white shadow'>
+          <h2 className='flex-1 font-medium min-w-16 max-w-28'>S.No.</h2>
+          <h2 className='flex-1 font-medium min-w-20 max-w-36'>College Code</h2>
           <h2 className='min-w-44 max-w-96 flex-1 font-medium'>College Name</h2>
-          <h2 className='max-w-36 flex-1 font-medium'>Department Code</h2>
-          <h2 className='max-w-36 flex-1 font-medium'>
+          <h2 className='max-w-36 flex-1 font-medium min-w-28'>
+            Department Code
+          </h2>
+          <h2 className='max-w-36 flex-1 font-medium min-w-20'>
             {searchCriteria.Category} {searchCriteria.filterBy}
           </h2>
         </div>
@@ -61,22 +63,26 @@ const CollegesTable = ({ searchCriteria }) => {
               key={college["S.No"]}
               // onMouseOver={(e) => e.currentTarget.classList.replace('h-16', 'h-auto')}
               // onMouseOut={(e) => e.currentTarget.classList.replace('h-auto', 'h-16')}
-              className='flex transition-all justify-around items-center outline p-1 min-h-32 animate-fade-in overflow-hidden bg-white outline-1 outline-gray-200 last-of-type:rounded-ee-md last-of-type:rounded-es-md'
+              className='flex transition-all min-w-fit md:min-w-[unset] mx-1 justify-around items-center outline p-2 md:p-1 min-h-32 animate-fade-in overflow-hidden bg-white outline-1 outline-gray-200 last-of-type:rounded-ee-md last-of-type:mb-1 last-of-type:rounded-es-md'
             >
-              <h2 className='flex-1 text-sm max-w-28'>
+              <h2 className='flex-1 text-sm min-w-16 max-w-28'>
                 <p className='ml-2'>{i + 1}</p>
               </h2>
-              <h2 className='flex-1 text-sm max-w-36'>
+              <h2 className='flex-1 text-sm min-w-20 max-w-36'>
                 {college["College Code"]}
               </h2>
               <h2 className='min-w-44 max-w-96 flex-1 text-sm'>
                 {college["College Name"]}
               </h2>
-              <h2 className='max-w-36 flex-1 text-sm pl-2'>
+              <h2 className='max-w-36 flex-1 min-w-28 text-sm pl-2'>
                 {college["Branch Code"]}
               </h2>
-              <h2 className='max-w-36 flex-1 text-sm'>
-                {college[`${searchCriteria.Category} - ${searchCriteria.filterBy}`]}
+              <h2 className='max-w-36 flex-1 min-w-20 text-sm'>
+                {
+                  college[
+                    `${searchCriteria.Category} - ${searchCriteria.filterBy}`
+                  ]
+                }
               </h2>
             </div>
           ))}

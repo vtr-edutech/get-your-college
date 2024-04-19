@@ -58,7 +58,7 @@ const Home = () => {
         onSubmit={handleSubmit(searchSubmission)}
       >
         {/* Category and Years container */}
-        <div className='flex flex-col gap-2 justify-start items-start md:items-center md:gap-16'>
+        <div className='flex flex-col md:flex-row gap-2 justify-start items-start md:items-center md:gap-16'>
           {/* Cutoff Category choose */}
           <div className='flex flex-col justify-center gap-1'>
             <p className='font-normal text-sm'>Cutoff category:</p>
@@ -109,7 +109,7 @@ const Home = () => {
         </div>
 
         {/* Linear Search bar */}
-        <div className='grid grid-cols-2 grid-rows-2 gap-2 md:flex md:flex-col md:gap-1 md:justify-center md:items-center'>
+        <div className='grid grid-cols-2 grid-rows-2 gap-2 md:flex md:gap-0 md:justify-center md:items-center'>
           {/* Min cutoff */}
           <div className='flex flex-col gap-1 items-center relative'>
             <input
@@ -117,7 +117,7 @@ const Home = () => {
               name='starting-cutoff'
               id='starting-cutoff'
               placeholder='Starting Cut-Off'
-              className='bg-card p-2 max-w-40 md:w-44 rounded-ss-md rounded-es-md focus:outline-1 focus:outline-gray-200'
+              className='bg-card p-2 max-w-44 md:w-44 rounded-ss-md rounded-es-md focus:outline-1 focus:outline-gray-200'
               {...register("MinCutoff", {
                 required: { value: true, message: "This field is required" },
                 min: {
@@ -143,7 +143,7 @@ const Home = () => {
               name='ending-cutoff'
               id='ending-cutoff'
               placeholder='Ending Cut-Off'
-              className='bg-card p-2 max-w-40 md:w-44 focus:outline-1 focus:outline-gray-200'
+              className='bg-card p-2 max-w-44 md:w-44 focus:outline-1 focus:outline-gray-200'
               {...register("MaxCutoff", {
                 required: { value: true, message: "This field is required" },
                 min: {
@@ -241,13 +241,13 @@ const Home = () => {
       <div className='flex flex-col h-full w-full gap-4 items-center'>
         {searchCriteria?.MaxCutoff ? (
           <Suspense fallback={<SkeletonLoader />}>
-            <div className='flex w-full mt-6 justify-between items-center'>
+            <div className='flex md:flex-row flex-col w-full mt-6 gap-2 justify-between items-center'>
               <input
                 type='search'
                 name='searchKey'
                 placeholder='Search for college name, college code, etc.'
                 id='search'
-                className='py-2 px-3 w-[50%] outline outline-1 outline-gray-200 rounded-md focus:outline-1 focus:outline-gray-300'
+                className='py-2 px-3 md:w-[50%] w-full outline outline-1 placeholder:text-sm outline-gray-200 rounded-md focus:outline-1 focus:outline-gray-300'
                 onInput={(e) =>
                   setSearchCriteria({
                     ...searchCriteria,
@@ -258,6 +258,7 @@ const Home = () => {
               <SegmentedControl
                 label={"Filter By"}
                 value={searchCriteria.filterBy}
+                styles={{ root: { width: '100%' } }}
                 onChange={(value) =>
                   setSearchCriteria((prev) => ({ ...prev, filterBy: value }))
                 }
