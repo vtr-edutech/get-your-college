@@ -13,7 +13,7 @@ import { TbReportAnalytics } from "react-icons/tb";
 import { LuPhone } from "react-icons/lu";
 import { usePathname, useSearchParams } from "next/navigation";
 import { signOut, useSession } from "next-auth/react";
-import { Accordion, Combobox, Skeleton, useCombobox } from "@mantine/core";
+import { Accordion, Combobox, Menu, Skeleton, useCombobox } from "@mantine/core";
 import { useDispatch, useSelector } from "react-redux";
 import { selectCategory } from "@/store/collegeCategorySlice";
 import { COLLEGE_CATEGORIES } from "@/utils/nav_data";
@@ -21,7 +21,7 @@ import { cn } from "@/utils";
 
 const MENU_ITEMS = [
   {
-    name: "DISCOVER",
+    name: "HOME", // name was discover.. but was asked to change to home, but it never really redirects to this "home"
     icon: <IoCompassOutline size={22} />,
     to: "/discover",
   },
@@ -83,23 +83,87 @@ const Navbar = ({ modalOpen }) => {
   return window.innerWidth < 768 ? (
     <>
       <div className='fixed flex max-h-16 md:hidden justify-around items-center w-full bottom-0 z-50 px-2 py-2 shadow shadow-black/40 bg-white'>
-        {MENU_ITEMS.slice(0, 4).map((menu, i) => (
-          <Link
-            href={menu.to}
-            key={i}
-            className={cn(
-              "flex gap-1 flex-col items-center justify-center p-1.5 h-full rounded md:hidden",
-              { "bg-slate-100": currentPathName === menu.to }
-            )}
-          >
-            {menu.icon}
-            <p className='text-xs text-black/50'>{menu.name}</p>
-          </Link>
-        ))}
+        {MENU_ITEMS.slice(0, 4).map((menu, i) =>
+          menu.subcategoryFrom ? (
+            <Menu key={i}>
+              <Menu.Target>
+                <button
+                  href={menu.to}
+                  key={i}
+                  className={cn(
+                    "flex gap-1 flex-col items-center justify-center p-1.5 h-full rounded md:hidden",
+                    { "bg-slate-100": currentPathName === menu.to }
+                  )}
+                >
+                  {menu.icon}
+                  <p className='text-xs text-black/50'>{menu.name}</p>
+                </button>
+              </Menu.Target>
+              <Menu.Dropdown>
+                {COLLEGE_CATEGORIES.map((collegeCategory, k) => (
+                  <>
+                    <Menu.Label key={k}>{collegeCategory.name}</Menu.Label>
+                    {collegeCategory.subcategories.map((subCat, l) => (
+                      <Menu.Item key={l}>
+                        <Link
+                          href={{
+                            pathname: "/colleges",
+                            query: {
+                              t: subCat.value,
+                            },
+                          }}
+                          onClick={() => dispatch(selectCategory(collegeCategory.value))}
+                          prefetch={false}
+                        >
+                          {subCat.name}
+                        </Link>
+                      </Menu.Item>
+                    ))}
+                  </>
+                ))}
+              </Menu.Dropdown>
+            </Menu>
+          ) : (
+            <Link
+              href={menu.to}
+              key={i}
+              className={cn(
+                "flex gap-1 flex-col items-center justify-center p-1.5 h-full rounded md:hidden",
+                { "bg-slate-100": currentPathName === menu.to }
+              )}
+            >
+              {menu.icon}
+              <p className='text-xs text-black/50'>{menu.name}</p>
+            </Link>
+          )
+        )}
+
+        {/* Profile button */}
+        <button
+          className={cn(
+            "flex gap-1 flex-col items-center justify-center p-1.5 h-fullmd:hidden"
+          )}
+        >
+          <Skeleton visible={hasSessionLoaded === "loading"} radius={5}>
+            <div className='flex flex-col items-center justify-center p-1.5 h-full rounded md:hidden'>
+              <Image
+                src={session?.user?.image || "/profile-1.png"}
+                alt='profile image'
+                width={30}
+                height={30}
+              />
+              <p className='text-sm text-black/50'>
+                {session?.user?.name || "User"}
+              </p>
+            </div>
+          </Skeleton>
+        </button>
+
+        {/* Contact floating button */}
         <Link
           href={MENU_ITEMS[4].to}
           className={cn(
-            "flex absolute right-4 shadow shadow-black/10 rounded-full bottom-20 gap-1 flex-col items-center justify-center p-3 md:hidden",
+            "flex absolute right-4 shadow shadow-black/10 rounded-full bottom-20 gap-1 bg-white flex-col items-center justify-center p-3 md:hidden",
             { "bg-slate-100": currentPathName === "contact" }
           )}
         >

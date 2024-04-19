@@ -4,6 +4,7 @@ import { ALL_VALID_CATEGORIES } from "@/utils/nav_data";
 import { useDebouncedState } from "@mantine/hooks";
 import { useSearchParams } from "next/navigation";
 import React, { Suspense, lazy } from "react";
+import { useSelector } from "react-redux";
 
 const CollegeInfoTable = lazy(() => import('@/components/CollegeInfoTable'));
 
@@ -17,12 +18,18 @@ const Colleges = () => {
     (category) => currentSubCategoryType == category.value
   );
 
-  if (!currentSubCategoryType || subcategoryIndex === -1) return <h1>Invalid Subcategory Type. Please select a valid type </h1>
+  const selectedCollegeType = useSelector(state => state.collegeCategory)
+
+  if (!currentSubCategoryType || subcategoryIndex === -1) return (
+    <ContentCard>
+      <h1>Invalid Subcategory Type. Please select a valid type </h1>
+    </ContentCard>
+  )
   
   return (
     <>
       <h1 className='font-medium text-2xl'>
-        Search for a college in {ALL_VALID_CATEGORIES.at(subcategoryIndex).name}
+        Search for {selectedCollegeType} college in {ALL_VALID_CATEGORIES.at(subcategoryIndex).name}
       </h1>
       <input
         type='search'
