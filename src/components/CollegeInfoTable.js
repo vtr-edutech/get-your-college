@@ -50,7 +50,7 @@ const CollegeInfoTable = ({ searchCriteria }) => {
 
       {/* Table Header */}
       <div className='overflow-x-scroll md:overflow-x-hidden flex flex-col mt-6 w-full transition-all'>
-        <div className='flex justify-around min-w-fit md:min-w-[unset] items-center md:m-0 mt-1 mx-1 p-1.5 md:p-4 rounded-se-lg rounded-ss-lg outline outline-1 outline-gray-200 shadow sticky top-0 bg-white'>
+        <div className='flex justify-around min-w-fit md:min-w-[unset] items-center mt-1 mx-1 p-1.5 md:p-4 rounded-se-lg rounded-ss-lg outline outline-1 outline-gray-200 shadow sticky top-0 bg-white'>
           <h2 className='flex-1 font-medium max-w-28 min-w-16'>S.No.</h2>
           <h2 className='flex-1 font-medium max-w-36 min-w-16'>College Code</h2>
           <h2 className='min-w-44 max-w-96 flex-1 font-medium'>College Name</h2>
@@ -74,7 +74,7 @@ const CollegeInfoTable = ({ searchCriteria }) => {
           .map((college, i) => (
             <div
               key={college["S.No"]}
-              className='flex transition-all min-w-fit md:m-0 mx-1 md:min-w-[unset] justify-around items-center outline p-1.5 md:p-1 min-h-32 animate-fade-in overflow-hidden bg-white outline-1 outline-gray-200 last-of-type:rounded-ee-md last-of-type:rounded-es-md'
+              className='flex transition-all min-w-fit mx-1 md:min-w-[unset] justify-around items-center outline p-1.5 md:p-1 min-h-32 last-of-type:mb-1 animate-fade-in overflow-hidden bg-white outline-1 outline-gray-200 last-of-type:rounded-ee-md last-of-type:rounded-es-md'
             >
               <h2 className='flex-1 text-sm max-w-28 min-w-16'>
                 <p className='ml-2'>{i + 1}</p>

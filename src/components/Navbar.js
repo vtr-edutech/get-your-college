@@ -80,12 +80,12 @@ const Navbar = ({ modalOpen }) => {
     [selectedCollegeCategory]
   );
 
-  return window.innerWidth < 768 ? (
+  return window?.innerWidth < 768 ? (
     <>
-      <div className='fixed flex max-h-16 md:hidden justify-around items-center w-full bottom-0 z-50 px-2 py-2 shadow shadow-black/40 bg-white'>
+      <div className='fixed left-0 flex max-h-16 md:hidden justify-around items-center w-full bottom-0 z-50 px-2 py-2 shadow shadow-black/40 bg-white'>
         {MENU_ITEMS.slice(0, 4).map((menu, i) =>
           menu.subcategoryFrom ? (
-            <Menu key={i}>
+            <Menu key={i} width={125}>
               <Menu.Target>
                 <button
                   href={menu.to}
@@ -112,7 +112,9 @@ const Navbar = ({ modalOpen }) => {
                               t: subCat.value,
                             },
                           }}
-                          onClick={() => dispatch(selectCategory(collegeCategory.value))}
+                          onClick={() =>
+                            dispatch(selectCategory(collegeCategory.value))
+                          }
                           prefetch={false}
                         >
                           {subCat.name}
@@ -145,17 +147,34 @@ const Navbar = ({ modalOpen }) => {
           )}
         >
           <Skeleton visible={hasSessionLoaded === "loading"} radius={5}>
-            <div className='flex flex-col items-center justify-center p-1.5 h-full rounded md:hidden'>
-              <Image
-                src={session?.user?.image || "/profile-1.png"}
-                alt='profile image'
-                width={30}
-                height={30}
-              />
-              <p className='text-sm text-black/50'>
-                {session?.user?.name || "User"}
-              </p>
-            </div>
+            <Menu>
+              <Menu.Target>
+                <div className='flex flex-col items-center justify-center p-1.5 h-full rounded md:hidden'>
+                  <Image
+                    src={session?.user?.image || "/profile-1.png"}
+                    alt='profile image'
+                    width={30}
+                    height={30}
+                  />
+                  <p className='text-sm text-black/50'>
+                    {session?.user?.name || "User"}
+                  </p>
+                </div>
+              </Menu.Target>
+              <Menu.Dropdown>
+                <Menu.Label>Profile</Menu.Label>
+                <Menu.Item onClick={modalOpen}>
+                  <div className='flex items-center gap-1'>
+                    <IoSettingsOutline className='text-black cursor-pointer' />
+                    Settings
+                  </div>
+                </Menu.Item>
+                <Menu.Label> </Menu.Label>
+                <Menu.Item onClick={() => signOut()}>
+                  <p className='text-red-400'>Logout</p>
+                </Menu.Item>
+              </Menu.Dropdown>
+            </Menu>
           </Skeleton>
         </button>
 
