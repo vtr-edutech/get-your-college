@@ -4691,3 +4691,5 @@ export const districtData = [
     "NBA Accredited": "No",
   },
 ];
+
+export const ALL_DISTRICT = Array.from(new Set(districtData.map(district => district["District "])));

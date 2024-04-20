@@ -80,9 +80,12 @@ const Navbar = ({ modalOpen }) => {
     [selectedCollegeCategory]
   );
 
-  useEffect(() => {
-    if (!session?.user?.name) modalOpen() 
-  },[])
+  /* Disabling modal opening if not name found has been disabled for now bcs this "client" component apparently runs on server too
+   * when in server it does not know session, hence return null/undefind so modal opens .. hence its annoying 
+  */
+  // useEffect(() => {
+  //   if (!session?.user?.name) modalOpen() 
+  // },[])
 
   return (
     <>

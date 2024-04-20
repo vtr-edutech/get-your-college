@@ -38,17 +38,14 @@ const Login = () => {
 
       const mobileReq = await axios.post("/api/send-otp", { mobile: number });
       localStorage.setItem('mobile', number); // temporarily setting mobile number in localstorage, so i can fetch it in /otp page
-      
       router.push('/otp');
-
     } catch (error) {
-      
       console.log(error);
+      toast.error(error.response.data.error ?? error.message ?? 'Something went wrong')
+      mobileInputRef.current.value = '';
+    } finally {
       setReqStatus("error");
       setCanSubmit(true);
-      toast.error(error.response.data.error ?? error.message)
-      mobileInputRef.current.value = '';
-
     }
   }
 

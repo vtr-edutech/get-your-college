@@ -6,6 +6,10 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --mantine-color-blue-6: #228be6;
+  --mantine-color-blue-filled: var(--mantine-color-blue-6);
+  --mantine-primary-color-filled: var(--mantine-color-blue-filled);
+  --pagination-active-bg: var(--mantine-primary-color-filled);
 }
 
 
@@ -75,4 +79,8 @@ kendo-pdf-document .reorder-container {
 
 .mantine-datatable-empty-state, .mantine-datatable-loader {
   display: none !important;
+}
+
+.mantine-Pagination-control .mantine-active {
+  background-color: var(--pagination-active-bg) !important;
 }

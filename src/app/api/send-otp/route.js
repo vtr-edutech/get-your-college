@@ -23,7 +23,7 @@ export async function POST(req) {
         console.log("🚀 ~ POST ~ smsRequest:", smsRequest.data)
 
         if (!smsRequest.data.startsWith("SMS-SHOOT-ID")) {
-          return NextResponse.json({ message: "Server error in sending OTP" }, { status: 500 });
+          return NextResponse.json({ error: "Server error in sending OTP" }, { status: 500 });
         }
 
         const userData = await UserModel.findOneAndUpdate({ mobile: mobile }, { 

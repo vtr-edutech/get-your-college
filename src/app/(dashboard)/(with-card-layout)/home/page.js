@@ -1,11 +1,12 @@
 "use client";
 import Image from "next/image";
-import React, { Suspense, lazy, useRef, useState } from "react";
+import React, { Suspense, lazy, useMemo, useRef, useState } from "react";
 import { useForm } from "react-hook-form";
 import { LuSearch } from "react-icons/lu";
 import { UNIQUE_COURSE_NAMES } from '@/utils/collegeData'
-import { SegmentedControl, Select } from "@mantine/core";
+import { Combobox, SegmentedControl, Select, useCombobox } from "@mantine/core";
 import SkeletonLoader from "@/components/SkeletonLoader";
+import { ALL_DISTRICT } from "@/utils/collegeDistrictData";
 
 const CollegesTable = lazy(() => import("@/components/CollegesTable"));
 
@@ -20,9 +21,24 @@ const Home = () => {
   const cutoffCategoryRef = useRef();
 
   const [searchCriteria, setSearchCriteria] = useState({ cutoffCategory: 'GC', filterBy: 'Cutoff', searchKey: '', districtKey: '' });
-
+  const districtCombobox = useCombobox({
+    onDropdownClose: () => districtCombobox.resetSelectedOption(),
+    onDropdownOpen: (eventSource) => {
+      eventSource == "keyboard"
+        ? districtCombobox.selectActiveOption()
+        : districtCombobox.updateSelectedOptionIndex("active");
+    },
+  });
   console.log("🚀 ~ Home ~ searchCriteria:", searchCriteria)
-
+  const options = useMemo(
+    () =>
+      ALL_DISTRICT.filter(district => district.toLowerCase().trim().includes(searchCriteria.districtKey.toLowerCase().trim())).map((district, k) => (
+        <Combobox.Option key={k} value={district}>
+          {district}
+        </Combobox.Option>
+      )),
+    [searchCriteria.districtKey]
+  );
   const searchSubmission = async (data) => {
     if (Object.keys(data).length !== 0) {
       console.log(data);
@@ -235,6 +251,7 @@ const Home = () => {
         {searchCriteria?.MaxCutoff ? (
           <Suspense fallback={<SkeletonLoader />}>
             <div className='flex md:flex-row flex-col w-full mt-6 gap-2 justify-between items-center'>
+              {/* College name or code search */}
               <input
                 type='search'
                 name='searchKey'
@@ -248,19 +265,39 @@ const Home = () => {
                   })
                 }
               />
-              <input
-                type='search'
-                name='district'
-                placeholder='Search by district'
-                id='search-district'
-                className='py-2 px-3 w-full md:w-[20%] md:mr-auto outline outline-1 placeholder:text-sm outline-gray-300 focus:outline-gray-400 md:outline-gray-200 rounded-md focus:outline-1 md:focus:outline-gray-300'
-                onInput={(e) =>
-                  setSearchCriteria({
-                    ...searchCriteria,
-                    districtKey: e.currentTarget.value,
-                  })
-                }
-              />
+              {/* Combobox'd select for districts */}
+              <Combobox
+                store={districtCombobox}
+                shadow="md"
+                onOptionSubmit={(val) => {
+                  setSearchCriteria({ ...searchCriteria, districtKey: val })
+                  districtCombobox.closeDropdown();
+                }}
+              >
+                <Combobox.Target>
+                  <input
+                    type='search'
+                    name='district'
+                    placeholder='Search by district'
+                    id='search-district'
+                    className='py-2 px-3 w-full md:w-[20%] md:mr-auto outline outline-1 placeholder:text-sm outline-gray-300 focus:outline-gray-400 md:outline-gray-200 rounded-md focus:outline-1 md:focus:outline-gray-300'
+                    onClick={() => districtCombobox.toggleDropdown()}
+                    onChange={(e) => {
+                      setSearchCriteria({
+                        ...searchCriteria,
+                        districtKey: e.target.value,
+                      });
+                      districtCombobox.openDropdown()
+                    }}
+                    value={searchCriteria.districtKey}
+                  />
+                </Combobox.Target>
+                <Combobox.Dropdown>
+                  <Combobox.Options mah={200} styles={{ options: { overflowY: "scroll" } }}>
+                    {options}
+                  </Combobox.Options>
+                </Combobox.Dropdown>
+              </Combobox>
               <SegmentedControl
                 label={"Filter By"}
                 value={searchCriteria.filterBy}

@@ -45473,6 +45473,7 @@ const collegeData = [
 // const UNIQUE_COURSE_NAMES = new Set(collegeData.map(c => c["Branch Name"].replace(' ', ' ')));
 
 export const UNIQUE_COURSE_NAMES = [
+    "-ALL DEPARTMENTS",
   "BIO MEDICAL ENGINEERING  (SS)",
   "CIVIL  ENGINEERING",
   "COMPUTER SCIENCE AND ENGINEERING (SS)",

@@ -15,11 +15,15 @@ const CollegesTable = ({ searchCriteria }) => {
       colleges
         .filter(
           (college) =>
-            (college["Branch Name"] === searchCriteria?.Dept &&
-            college[`${searchCriteria.Category} - Cutoff`] >=
-              parseFloat(searchCriteria.MinCutoff) &&
-            college[`${searchCriteria.Category} - Cutoff`] <=
-              parseFloat(searchCriteria.MaxCutoff)) &&
+            ((searchCriteria?.Dept == "-ALL DEPARTMENTS" ? true: college["Branch Name"] === searchCriteria?.Dept) &&
+              college[`${searchCriteria.Category} - Cutoff`] >=
+                parseFloat(searchCriteria.MinCutoff) &&
+              college[`${searchCriteria.Category} - Cutoff`] <=
+                parseFloat(searchCriteria.MaxCutoff)
+            ) 
+              
+              &&
+
             ((college["College Name"]
               .toLowerCase()
               .replace(/\s+/g, "")
