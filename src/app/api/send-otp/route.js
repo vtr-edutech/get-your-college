@@ -1,5 +1,6 @@
 import { SMS_API_KEY, SMS_FROM } from "@/constants";
 import UserModel from "@/models/UserModel";
+import { generateOTP } from "@/utils";
 import dbConnect from "@/utils/db";
 import axios from "axios";
 import { NextResponse } from "next/server"
@@ -13,26 +14,21 @@ export async function POST(req) {
         await dbConnect();
         
         // Mock test send invalid number
-        if (mobile[0] == '8') return NextResponse.json({ error: 'Nah' }, { status: 403 });
+        if (!(/^[6-9]\d{9}$/.test(mobile))) return NextResponse.json({ error: 'Invalid mobile number' }, { status: 403 });
         
-        // verify mobile using regex 
-        const smsRequest = await axios.post(
-          "http://sms.textmysms.com/app/smsapi/index.php",
-          {
-            key: SMS_API_KEY,
-            campaign: 0,
-            routeid: 13,
-            type: "text",
-            contacts: '+919362667920',
-            senderid: SMS_FROM,
-            msg: encodeURIComponent(`Your OTP for Get Your College Login is 238742`),
-          }
+        const randomNumber = generateOTP();
+        const smsRequest = await axios.get(
+          `https://sms.textmysms.com/app/smsapi/index.php?key=${SMS_API_KEY}&campaign=0&routeid=13&type=text&contacts=${mobile}&senderid=${SMS_FROM}&msg=${encodeURIComponent(`GetYourCollege OTP for login is ${randomNumber} Hexcon`)}`
         );
-        console.log("🚀 ~ POST ~ smsRequest:", smsRequest)
+        console.log("🚀 ~ POST ~ smsRequest:", smsRequest.data)
+
+        if (!smsRequest.data.startsWith("SMS-SHOOT-ID")) {
+          return NextResponse.json({ message: "Server error in sending OTP" }, { status: 500 });
+        }
 
         const userData = await UserModel.findOneAndUpdate({ mobile: mobile }, { 
             mobile: mobile,
-            lastOTP: '000000'
+            lastOTP: randomNumber
         }, { new: true, upsert: true });
 
         return NextResponse.json({ message: "OTP has been sent!" }, { status: 200 });

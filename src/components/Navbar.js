@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useMemo } from "react";
+import React, { useEffect, useMemo } from "react";
 import {
   IoSettingsOutline,
   IoBookOutline,
@@ -79,6 +79,10 @@ const Navbar = ({ modalOpen }) => {
     () => COLLEGE_CATEGORIES.find((c) => c.value === selectedCollegeCategory),
     [selectedCollegeCategory]
   );
+
+  useEffect(() => {
+    if (!session?.user?.name) modalOpen() 
+  },[])
 
   return (
     <>

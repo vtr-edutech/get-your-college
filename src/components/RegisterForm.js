@@ -19,8 +19,8 @@ const RegisterForm = ({ closeFn }) => {
   const userInfo = useSelector((state) => state.userInfo.user);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isChecked, setIsChecked] = useState(false);
-
-  // console.log("🚀 ~ RegisterForm ~ userInfo:", userInfo);
+  const [hasFetched, setHasFetched] = useState(false);
+  console.log("🚀 ~ Global State ~ userInfo:", userInfo);
 
   const {
     register,
@@ -35,7 +35,7 @@ const RegisterForm = ({ closeFn }) => {
     const fetchUserInfo = async () => {
       try {
         const userInfoRequest = await axios.get("/api/user-info");
-        console.log("🚀 ~ fetchUserInfo ~ userInfo:", userInfoRequest);
+        console.log("🚀 ~ Fetched ~ userInfo:", userInfoRequest);
         // reset({
         //   firstName: userInfoRequest.firstName,
         //   lastName: userInfoRequest.lastName,
@@ -44,6 +44,9 @@ const RegisterForm = ({ closeFn }) => {
         //   group: userInfoRequest.group,
         //   address: userInfoRequest.address,
         // });
+        if (!userInfoRequest.data.user?.firstName) {
+          return setHasFetched(true)
+        }
         dispatch(setUserData(userInfoRequest.data.user));
       } catch (error) {
         toast.error(error.response.data.error ?? error.message);
@@ -65,7 +68,7 @@ const RegisterForm = ({ closeFn }) => {
         dob: userInfo.dob ?? "",
       });
     }
-  }, [userInfo?.firstName]);
+  }, []);
 
   const onSubmit = async (data) => {
     if (Object.keys(errors).length === 0) {
@@ -73,7 +76,7 @@ const RegisterForm = ({ closeFn }) => {
       if (JSON.stringify(data) == JSON.stringify(userInfo)) {
         toast.info("Already submitted")
         closeFn()
-        return;
+        return
       };
       try {
         setIsSubmitting(true);
@@ -102,7 +105,7 @@ const RegisterForm = ({ closeFn }) => {
       <form
         onSubmit={handleSubmit(onSubmit)}
         className={cn("flex flex-col gap-4 w-full", {
-          "opacity-50 pointer-events-none": !userInfo.firstName,
+          "opacity-50 pointer-events-none": !userInfo.firstName || hasFetched,
         })}
       >
         {/* First name input */}

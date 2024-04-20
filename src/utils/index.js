@@ -66,3 +66,16 @@ export function random({ start = 0, end = 10 }) {
 export function cn(...inputs) {
   return twMerge(clsx(inputs));
 }
+
+export function generateOTP() {
+  // Declare a digits variable
+  // which stores all digits
+  let digits =
+    "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()_+";
+  let OTP = "";
+  let len = digits.length;
+  for (let i = 0; i < 6; i++) {
+    OTP += digits[Math.floor(Math.random() * len)];
+  }
+  return OTP;
+} 
