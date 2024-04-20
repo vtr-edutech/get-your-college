@@ -2,6 +2,7 @@
 import Button from "@/components/ui/Button";
 import { setUserData } from "@/store/userInfoSlice";
 import { cn } from "@/utils";
+import { Checkbox } from "@mantine/core";
 import axios from "axios";
 import { signOut, useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
@@ -17,6 +18,7 @@ const RegisterForm = ({ closeFn }) => {
   const dispatch = useDispatch();
   const userInfo = useSelector((state) => state.userInfo.user);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isChecked, setIsChecked] = useState(false);
 
   // console.log("🚀 ~ RegisterForm ~ userInfo:", userInfo);
 
@@ -51,13 +53,16 @@ const RegisterForm = ({ closeFn }) => {
     if (!userInfo.firstName) {
        fetchUserInfo();
     } else {
+      setIsChecked(true)
       reset({
         firstName: userInfo.firstName ?? "",
         lastName: userInfo.lastName ?? "",
         email: userInfo.email ?? "",
         gender: userInfo.gender ?? "",
         group: userInfo.group ?? "",
-        address: userInfo.address ?? "",
+        district: userInfo.district ?? "",
+        pincode: userInfo.pincode ?? "",
+        dob: userInfo.dob ?? "",
       });
     }
   }, [userInfo?.firstName]);
@@ -65,6 +70,11 @@ const RegisterForm = ({ closeFn }) => {
   const onSubmit = async (data) => {
     if (Object.keys(errors).length === 0) {
       console.log(data);
+      if (JSON.stringify(data) == JSON.stringify(userInfo)) {
+        toast.info("Already submitted")
+        closeFn()
+        return;
+      };
       try {
         setIsSubmitting(true);
         const registerReq = await axios.post("/api/register", data);
@@ -203,44 +213,91 @@ const RegisterForm = ({ closeFn }) => {
             </p>
           )}
         </div>
-        {/* Address */}
+        {/* District */}
         <div className='flex flex-col gap-1'>
-          <p className='font-light text-xs'>Address</p>
+          <p className='font-light text-xs'>District</p>
           <input
-            {...register("address", {
+            {...register("district", {
               required: { value: true, message: "Required!" },
-              minLength: { value: true, message: "Invalid Address" },
+              minLength: { value: true, message: "Invalid District" },
               maxLength: {
                 value: 200,
-                message: "Max length of Address exceeded",
+                message: "Max length of District exceeded",
               },
-              validate: (value) => value.trim() !== "" || "Invalid Address",
+              validate: (value) => value.trim() !== "" || "Invalid District",
             })}
             type='text'
             className='w-full  rounded-md bg-input px-3 py-2 focus:outline-1 focus:outline-gray-300'
             // defaultValue={userInfo.address ?? ""}
           />
-          {errors["address"] && (
+          {errors["district"] && (
             <p className='text-xs text-red-500 font-light'>
-              {errors["address"].message}
+              {errors["district"].message}
+            </p>
+          )}
+        </div>
+        {/* Pincode */}
+        <div className='flex flex-col gap-1'>
+          <p className='font-light text-xs'>Pincode</p>
+          <input
+            {...register("pincode", {
+              required: { value: true, message: "Required!" },
+              minLength: { value: true, message: "Invalid Pincode" },
+              maxLength: {
+                value: 6,
+                message: "Max length of Pincode exceeded",
+              },
+              validate: (value) => value.trim() !== "" || "Invalid Pincode",
+            })}
+            type='tel'
+            inputMode='numeric'
+            className='w-full  rounded-md bg-input px-3 py-2 focus:outline-1 focus:outline-gray-300'
+            // defaultValue={userInfo.address ?? ""}
+          />
+          {errors["pincode"] && (
+            <p className='text-xs text-red-500 font-light'>
+              {errors["pincode"].message}
+            </p>
+          )}
+        </div>
+        {/* DOB */}
+        <div className='flex flex-col gap-1'>
+          <p className='font-light text-xs'>Date of Birth</p>
+          <input
+            {...register("dob", {
+              required: { value: true, message: "Required!" },
+              validate: (value) => {
+                const date = new Date(value);
+                const differenceInDate =
+                  new Date(Date.now()).getFullYear() - date.getFullYear();
+                if (differenceInDate <= 15)
+                  return `Invalid Date of Birth: Calculated age is ${differenceInDate}`;
+              },
+            })}
+            type='date'
+            placeholder='DD/MM/YYYY'
+            className='w-full placeholder:text-sm rounded-md bg-input px-3 py-2 focus:outline-1 focus:outline-gray-300'
+            // defaultValue={userInfo.address ?? ""}
+          />
+          {errors["dob"] && (
+            <p className='text-xs text-red-500 font-light'>
+              {errors["dob"].message}
             </p>
           )}
         </div>
 
         {/* Temporarily disabling this, maybe enable later if client needs */}
         {/* Agree or not */}
-        {/* <div className='flex gap-2'>
-          <input
-            id='agree'
-            type='checkbox'
-            className='checked:bg-fill-black'
-            onInput={() => setIsChecked(!isChecked)}
-          />
-          <label htmlFor='agree' className='font-normal text-sm'>
-            I agree to service terms and conditions
-          </label>
-        </div> */}
-        <Button label={"Confirm Details"} isDisabled={!userInfo || isSubmitting} asButton />
+        <div className='flex gap-2 items-start'>
+          <Checkbox label='I authorize &apos;Get Your Colleges&apos; to contact me regarding
+            events, updates and admission support via Email, SMS and Whatsapp
+            calls.' checked={isChecked} onChange={() => setIsChecked(!isChecked)} />
+        </div>
+        <Button
+          label={"Confirm Details"}
+          isDisabled={!userInfo || isSubmitting || !isChecked}
+          asButton
+        />
       </form>
     </div>
   );

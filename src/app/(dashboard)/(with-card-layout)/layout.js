@@ -18,7 +18,7 @@ const RootLayout = ({ children }) => {
       <ContentCard>
         {children}
       </ContentCard>
-      <Modal opened={opened} onClose={close} title="Edit User Information" centered>
+      <Modal opened={opened} onClose={close}  title="Edit User Information" centered>
         <RegisterForm closeFn={close} />
       </Modal>
     </main>

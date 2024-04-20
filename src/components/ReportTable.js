@@ -1,7 +1,7 @@
 import collegeData from "@/utils/collegeData";
 import { usePagination } from "@mantine/hooks";
 import { DataTable } from "mantine-datatable";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 
 const PAGE_SIZE = 10;
 
@@ -15,6 +15,7 @@ const addCollegeToList = (colleges, setSelectedColleges) => {
 
 const ReportTable = ({ searchCriteria }) => {
   const previouslySelectedCollegeIds = localStorage.getItem("colleges");
+  const [windowSize, setWindowSize] = useState(0);
   
   const previouslySelectedColleges = useMemo(
     () =>
@@ -63,6 +64,8 @@ const ReportTable = ({ searchCriteria }) => {
   
   useEffect(() => pagination.setPage(1), [searchCriteria.searchKey])
 
+  useEffect(() => setWindowSize(window.innerWidth), [])
+
   const collegesAfterSlicing = useMemo(
     () =>
       collegesAfterFiltering.slice(
@@ -96,9 +99,17 @@ const ReportTable = ({ searchCriteria }) => {
             render: (record) => collegesAfterSlicing.indexOf(record) + 1,
           },
           { accessor: "College Code", title: "College Code" },
-          { accessor: "College Name", title: "College Name", width: 200 },
+          {
+            accessor: "College Name",
+            title: "College Name",
+            width: windowSize < 768 ? 200 : "auto",
+          },
           { accessor: "Branch Code", title: "Branch Code" },
-          { accessor: "Branch Name", title: "Branch Name", width: 150 },
+          {
+            accessor: "Branch Name",
+            title: "Branch Name",
+            width: windowSize < 768 ? 150 : "auto",
+          },
           {
             accessor: `${searchCriteria?.Category} - Cutoff`,
             title: `${searchCriteria?.Category} - Cutoff`,
@@ -125,8 +136,7 @@ const ReportTable = ({ searchCriteria }) => {
           college(s) found
         </p>
         <p className='ml-2'>
-          ✅ {" "}
-          <span className='font-medium'>{selectedColleges.length}</span>{" "}
+          ✅ <span className='font-medium'>{selectedColleges.length}</span>{" "}
           college(s) selected
         </p>
         {/* <Pagination

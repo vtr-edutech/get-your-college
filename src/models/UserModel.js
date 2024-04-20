@@ -28,7 +28,9 @@ const UserSchema = new Schema(
       type: String,
       enum: ["BWM", "CS", "CWCS"],
     },
-    address: String,
+    district: String,
+    pincode: String,
+    dob: Date,
     imageURL: String
   },
   { timestamps: true }

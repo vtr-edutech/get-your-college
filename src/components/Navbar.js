@@ -58,7 +58,6 @@ const Vr = ({ mt }) => {
 
 const Navbar = ({ modalOpen }) => {
   const currentPathName = usePathname();
-  console.log("🚀 ~ Navbar ~ currentPathName:", currentPathName)
   const currentSubCategoryType = useSearchParams().get('t');
 
   const { data: session, status: hasSessionLoaded } = useSession();
@@ -135,7 +134,7 @@ const Navbar = ({ modalOpen }) => {
               className={cn(
                 "flex gap-1 flex-col items-center justify-center p-1.5 h-full rounded md:hidden",
                 {
-                  "bg-slate-100": currentPathName === menu.to,
+                  "bg-slate-100": currentPathName == '/report/generate' && menu.to == "/report"? true: currentPathName === menu.to,
                 }
               )}
             >

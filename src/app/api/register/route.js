@@ -7,7 +7,7 @@ import dbConnect from "@/utils/db";
 
 export async function POST(req) {
   try {
-    const { firstName, lastName, group, gender, email, address } =
+    const { firstName, lastName, group, gender, email, distrct, dob, pincode } =
       await req.json();
     // console.log(
     //   "🚀 ~ POST ~ firstName, lastName, group, gender, email, address:",
@@ -44,7 +44,9 @@ export async function POST(req) {
 
     userData.firstName = firstName;
     userData.lastName = lastName;
-    userData.address = address;
+    userData.distrct = distrct;
+    userData.pincode = pincode;
+    userData.dob = dob;
     userData.gender = gender;
     userData.group = group;
     userData.email = email;
