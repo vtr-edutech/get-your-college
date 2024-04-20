@@ -84,8 +84,8 @@ const Home = () => {
                   value: "SPF",
                 },
                 {
-                  label: "Occasional",
-                  value: "OCC",
+                  label: "Vocational",
+                  value: "VOC",
                 },
               ]}
             />
@@ -184,13 +184,6 @@ const Home = () => {
                   {course}
                 </option>
               ))}
-              {/* <option value='CSE'>CSE</option>
-              <option value='ECE'>ECE</option>
-              <option value='IT'>IT</option>
-              <option value='CCE'>CCE</option>
-              <option value='AIDS'>AIDS</option>
-              <option value='ICE'>ICE</option>
-              <option value='MECH'>MECH</option> */}
             </select>
             {errors["Dept"] && (
               <p className='text-xs text-red-500 font-light absolute -top-4 left-0'>
@@ -245,13 +238,26 @@ const Home = () => {
               <input
                 type='search'
                 name='searchKey'
-                placeholder='Search for college name, college code, etc.'
+                placeholder='Search by college name, college code, etc.'
                 id='search'
                 className='py-2 px-3 w-full md:w-[50%] outline outline-1 placeholder:text-sm outline-gray-200 rounded-md focus:outline-1 focus:outline-gray-300'
                 onInput={(e) =>
                   setSearchCriteria({
                     ...searchCriteria,
                     searchKey: e.currentTarget.value,
+                  })
+                }
+              />
+              <input
+                type='search'
+                name='district'
+                placeholder='Search by district'
+                id='search-district'
+                className='py-2 px-3 w-full md:w-[20%] md:mr-auto outline outline-1 placeholder:text-sm outline-gray-200 rounded-md focus:outline-1 focus:outline-gray-300'
+                onInput={(e) =>
+                  setSearchCriteria({
+                    ...searchCriteria,
+                    district: e.currentTarget.value,
                   })
                 }
               />

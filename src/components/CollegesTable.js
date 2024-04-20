@@ -11,21 +11,36 @@ const PAGE_SIZE = 10;
 const CollegesTable = ({ searchCriteria }) => {
   const collegesAfterFiltering = useMemo(
     () =>
-      colleges.filter(
-        (college) =>
-          (
-            college["Branch Name"] === searchCriteria?.Dept &&
+      colleges
+        .filter(
+          (college) =>
+            (college["Branch Name"] === searchCriteria?.Dept &&
             college[`${searchCriteria.Category} - Cutoff`] >=
               parseFloat(searchCriteria.MinCutoff) &&
             college[`${searchCriteria.Category} - Cutoff`] <=
-              parseFloat(searchCriteria.MaxCutoff)
-          ) 
-            &&
-          (
-            college["College Name"].toLowerCase().replace(/\s+/g, "").includes(searchCriteria.searchKey.toLowerCase().replace(/\s+/g, "")) ||
-            college["College Code"].toString().toLowerCase().replace(/\s+/g, "").includes(searchCriteria.searchKey.toLowerCase().replace(/\s+/g, ""))
-          )
-      ),
+              parseFloat(searchCriteria.MaxCutoff)) &&
+            ((college["College Name"]
+              .toLowerCase()
+              .replace(/\s+/g, "")
+              .includes(
+                searchCriteria.searchKey.toLowerCase().replace(/\s+/g, "")
+              ) ||
+              college["College Code"]
+                .toString()
+                .toLowerCase()
+                .replace(/\s+/g, "")
+                .includes(
+                  searchCriteria.searchKey.toLowerCase().replace(/\s+/g, "")
+                )) /* =&& (
+                  college[''] ----> District filter 
+                ) */
+            )
+        )
+        .sort(
+          (a, b) =>
+            parseInt(b[`${searchCriteria.Category} - Cutoff`]) -
+            parseInt(a[`${searchCriteria.Category} - Cutoff`])
+        ),
     [searchCriteria]
   );
 
@@ -87,12 +102,15 @@ const CollegesTable = ({ searchCriteria }) => {
             </div>
           ))}
       </div>
-      <div className='w-full self-end flex'>
+      <div className='w-full self-start flex md:flex-row flex-col'>
+        <p className="ml-2">
+          <span className="font-medium">{collegesAfterFiltering.length}</span> colleges found
+        </p>
         <Pagination
           total={parseInt(collegesAfterFiltering.length / PAGE_SIZE) + 1}
           value={pagination.active}
           onChange={pagination.setPage}
-          className='ml-auto'
+          className='md:ml-auto'
         />
       </div>
     </>

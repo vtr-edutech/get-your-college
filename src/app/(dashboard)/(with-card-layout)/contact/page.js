@@ -30,7 +30,7 @@ const contactDetails = [
 
 const ContactCard = ({ icon: Icon, label, value, proto }) => {
   return (
-    <Link className='flex items-center gap-4 rounded-md shadow p-2 px-8 outline outline-1 outline-gray-100' href={proto + value} target="_blank">
+    <Link className='flex md:w-[unset] w-full items-center gap-4 rounded-md shadow p-2 px-8 outline outline-1 outline-gray-100' href={proto + value} target="_blank">
       {Icon}
       <div className='flex flex-col'>
         <h1 className='font-medium text-lg text-primary/70 ml-1'>{label}</h1>
@@ -63,7 +63,7 @@ const Contact = () => {
       </h1>
 
       {/* Contact cards */}
-      <div className='flex gap-4 items-center mt-4'>
+      <div className='flex md:flex-row flex-col gap-4 items-center mt-4'>
         {contactDetails.map((c, i) => (
           <ContactCard
             key={i}
@@ -78,7 +78,7 @@ const Contact = () => {
       {/* Contact form */}
       <form
         onSubmit={handleSubmit(sendMessage)}
-        className='flex gap-3 mt-8 rounded outline outline-1 outline-gray-100 p-3 py-8 shadow'
+        className='flex md:gap-3 gap-5 md:flex-row flex-col mt-8 rounded outline outline-1 outline-gray-100 p-3 py-8 shadow'
       >
         {/* Name and email */}
         <div className='flex flex-col gap-6 items-center flex-1 w-full'>
@@ -129,7 +129,7 @@ const Contact = () => {
         </div>
 
         {/* Text area */}
-        <div className='flex flex-col gap-2 items-center flex-1 relative'>
+        <div className='flex flex-col gap-2 items-center flex-1 relative px-2 md:px-0'>
           <Textarea
             variant='filled'
             size='md'

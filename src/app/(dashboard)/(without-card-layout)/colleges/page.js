@@ -36,7 +36,7 @@ const Colleges = () => {
         onChange={(event) => setCollegeSearchKey(event.currentTarget.value)}
         name='college-search'
         id='search-input'
-        placeholder='Search for "sairam", "kundrathur", etc.'
+        placeholder='Search by College name, College code, Branch name, District'
         className='bg-white/60 px-3 py-2 rounded-md focus:outline-1 focus:outline-black/10 border-none shadow-sm'
       />
       <ContentCard>

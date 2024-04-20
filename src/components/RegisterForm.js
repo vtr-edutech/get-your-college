@@ -92,7 +92,7 @@ const RegisterForm = ({ closeFn }) => {
       <form
         onSubmit={handleSubmit(onSubmit)}
         className={cn("flex flex-col gap-4 w-full", {
-          "opacity-20 pointer-events-none": !userInfo.mobile,
+          "opacity-50 pointer-events-none": !userInfo.firstName,
         })}
       >
         {/* First name input */}

@@ -164,7 +164,7 @@ const Report = () => {
           <input type="search" name="searchKey" placeholder="Search for college name, branch name, etc." id="search" className="py-2 mt-6 px-3 w-full outline outline-1 outline-gray-100 rounded-md focus:outline-1 focus:outline-gray-200" onInput={(e) => setSearchCriteria({...searchCriteria, searchKey: e.currentTarget.value})} />
           <ReportTable searchCriteria={searchCriteria} />
           <div className="w-full flex">
-            <Button label={"Proceed"} to='/report/generate' className='ml-auto w-max px-6 py-2' />
+            <Button label={"Proceed"} to='/report/generate' className='md:ml-auto w-max px-6 py-2' />
           </div>
         </Suspense>
       ) : (

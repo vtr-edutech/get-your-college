@@ -17,7 +17,7 @@ const CollegeInfoTable = ({ searchCriteria }) => {
   const collegesAfterFiltering = useMemo(() => {
     if (!searchCriteria || searchCriteria?.searchKey == "") return colleges;
     return colleges.filter((college) =>
-      (college["College Name"] + college["Branch Name"])
+      (college["College Name"] + college["Branch Name"] + college['College Code'])
         .toLowerCase()
         .replace(/\s+/g, "")
         .includes(searchCriteria.searchKey.toLowerCase().replace(/\s+/g, ""))

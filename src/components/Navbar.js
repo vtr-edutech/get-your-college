@@ -80,8 +80,9 @@ const Navbar = ({ modalOpen }) => {
     [selectedCollegeCategory]
   );
 
-  return window?.innerWidth < 768 ? (
+  return (
     <>
+      {/* Mobile Nav */}
       <div className='fixed left-0 flex max-h-16 md:hidden justify-around items-center w-full bottom-0 z-50 px-2 py-2 shadow shadow-black/40 bg-white'>
         {MENU_ITEMS.slice(0, 4).map((menu, i) =>
           menu.subcategoryFrom ? (
@@ -104,8 +105,9 @@ const Navbar = ({ modalOpen }) => {
                   <>
                     <Menu.Label key={k}>{collegeCategory.name}</Menu.Label>
                     {collegeCategory.subcategories.map((subCat, l) => (
-                      <Menu.Item key={l}>
+                      <Menu.Item key={subCat.value}>
                         <Link
+                          key={l}
                           href={{
                             pathname: "/colleges",
                             query: {
@@ -153,8 +155,8 @@ const Navbar = ({ modalOpen }) => {
                   <Image
                     src={session?.user?.image || "/profile-2.png"}
                     alt='profile image'
-                    width={27}
-                    height={27}
+                    width={24}
+                    height={24}
                   />
                   <p className='text-sm text-black/50'>
                     {session?.user?.name || "User"}
@@ -189,9 +191,9 @@ const Navbar = ({ modalOpen }) => {
           {MENU_ITEMS[4].icon}
         </Link>
       </div>
-    </>
-  ) : (
-    <div className='hidden md:flex-col md:flex md:h-screen md:items-center md:w-72 md:bg-white md:fixed md:top-0 md:left-0'>
+
+      {/* Desktop Nav */}
+      <div className='hidden md:flex-col md:flex md:h-screen md:items-center md:w-72 md:bg-white md:fixed md:top-0 md:left-0'>
       {/* Profile Section */}
       <div className='flex flex-col gap-4 justify-center items-center p-10 w-full'>
         <div className='grid place-items-center w-20 h-20'>
@@ -256,10 +258,10 @@ const Navbar = ({ modalOpen }) => {
             <Combobox.Options>
               {COLLEGE_CATEGORIES.filter(
                 (cateogry) => cateogry.value !== selectedCollegeCategory
-              ).map((cateogry, i) => (
+              ).map((cateogry, j) => (
                 <Combobox.Option
                   className='flex items-center gap-2'
-                  key={i}
+                  key={j}
                   value={cateogry.value}
                   active={cateogry.value === selectedCollegeCategory}
                 >
@@ -274,11 +276,11 @@ const Navbar = ({ modalOpen }) => {
 
       {/* Menu Section */}
       <div className='flex flex-col gap-1 py-4 w-full overflow-x-hidden'>
-        {MENU_ITEMS.map((menu, i) =>
+        {MENU_ITEMS.map((menu, o) =>
           menu.subcategoryFrom ? (
             <Accordion
               chevronPosition='right'
-              key={i}
+              key={o}
               variant='filled'
               unstyled
               chevron={menu.icon}
@@ -307,7 +309,7 @@ const Navbar = ({ modalOpen }) => {
                     }`}
                   >
                     <Link
-                      key={i}
+                      key={o}
                       href={{
                         pathname: "/colleges",
                         query: { t: category.value },
@@ -323,7 +325,7 @@ const Navbar = ({ modalOpen }) => {
             </Accordion>
           ) : (
             <Link
-              key={i}
+              key={o}
               href={menu.to}
               prefetch={false}
               className={`font-medium flex gap-2 items-center pl-4 py-4 ml-10 ${
@@ -351,8 +353,9 @@ const Navbar = ({ modalOpen }) => {
           LOGOUT
         </button>
       </div>
-    </div>
-  );
+      </div>
+    </>
+  )
 };
 
 export default Navbar;

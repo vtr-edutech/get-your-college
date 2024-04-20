@@ -66,21 +66,23 @@ const Generate = () => {
             paperSize={"A4"}
             margin='1cm'
           >
-            <div className='flex justify-around items-center p-4 rounded-se-lg rounded-ss-lg outline outline-1 outline-gray-200 reorder-header'>
-              <h2 className='flex-1 font-medium max-w-28'>Choice Order</h2>
-              <h2 className='flex-1 font-medium max-w-36'>College Code</h2>
-              <h2 className='min-w-44 max-w-96 flex-1 font-medium'>
-                College Name
-              </h2>
-              <h2 className='max-w-36 flex-1 font-medium'>Branch Name</h2>
-              <h2 className='max-w-36 flex-1 font-medium'>
-                {selectedCategory} - Cutoff
-              </h2>
+            <div className="flex flex-col overflow-x-scroll w-full md:overflow-x-hidden">
+              <div className='flex min-w-fit md:min-w-[unset] justify-around items-center p-2 mx-1 mt-1 md:p-4 rounded-se-lg rounded-ss-lg outline outline-1 outline-gray-200 reorder-header'>
+                <h2 className='flex-1 font-medium min-w-16 max-w-28'>Choice Order</h2>
+                <h2 className='flex-1 font-medium min-w-20 max-w-36'>College Code</h2>
+                <h2 className='min-w-44 max-w-96 flex-1 font-medium'>
+                  College Name
+                </h2>
+                <h2 className='max-w-36 flex-1 font-medium min-w-32'>Branch Name</h2>
+                <h2 className='max-w-36 flex-1 font-medium min-w-20'>
+                  {selectedCategory} - Cutoff
+                </h2>
+              </div>
+              <ReOrderTable
+                collegPrefernces={collegPrefernces}
+                setCollegPrefernces={setCollegPrefernces}
+              />
             </div>
-            <ReOrderTable
-              collegPrefernces={collegPrefernces}
-              setCollegPrefernces={setCollegPrefernces}
-            />
           </PDFExport>
           <Button
             label={

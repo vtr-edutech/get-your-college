@@ -12,12 +12,8 @@ export const COLLEGE_CATEGORIES = [
     icon: <MdEngineering size={18} />,
     subcategories: [
       {
-        name: "JEE Mains",
-        value: "jee-mains",
-      },
-      {
-        name: "Category X",
-        value: "cat-x",
+        name: "TNEA Colleges",
+        value: "tnea",
       },
     ],
   },
