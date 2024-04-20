@@ -1,31 +1,11 @@
 "use client";
 import AuthCard from "@/components/AuthCard";
-import { cn } from "@/utils";
-import axios from "axios";
-import { OTPInput } from "input-otp";
+import { PinInput } from "@mantine/core";
 import { signIn } from "next-auth/react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import React, { useEffect, useRef, useState } from "react";
 import { toast } from "react-toastify";
-
-const FakeCaret = () => (
-  <div className='absolute pointer-events-none inset-0 flex items-center justify-center animate-caret-blink'>
-    <div className='w-px h-8 bg-black' />
-  </div>
-);
-
-const InputSlot = (props) => (
-  <div
-    className={cn(
-      "w-10 h-10 rounded-md bg-input px-3 py-2",
-      {"outline-1 outline-black-200": props.isActive}
-    )}
-  >
-    {props.char !== null && props.char}
-    {/* {props.hasFakeCaret && <FakeCaret />} */}
-  </div>
-);
 
 const Login = () => {
   const router = useRouter();
@@ -41,7 +21,7 @@ const Login = () => {
       // toast.success(verifyOTPRequest.data.message);
       // if (verifyOTPRequest.status == 200) return router.replace('/home');
       // router.push('/register'); // just sending to any of the auth routes and it automatically send back if cookie to /home
-
+      setIsOTPProvided(true)
       const testing = await signIn('credentials', { mobile, otp, redirect: false });
       if (!testing.ok) return toast.error('Mobile or OTP Invalid. Please try again!');
       if (testing.ok) router.refresh();
@@ -49,6 +29,7 @@ const Login = () => {
     } catch (error) {
       console.log(error);
       toast.error(error.response.data.error ?? error.message);
+    } finally {
       setIsOTPProvided(false);
     }
   };
@@ -73,23 +54,16 @@ const Login = () => {
       </h2>
       <div className='flex flex-col gap-5'>
         <p className='font-light text-xs'>We&apos;ve sent an OTP to {mobile} <br /> <Link href={'/login'} className="underline">Not your number?</Link> </p>
-        <OTPInput
-          ref={OTPInputRef}
-          inputMode='numeric'
-          onComplete={(otp) => {
-            setIsOTPProvided(!isOTPProvided);
-            handleOTPSubmit(otp);
-          }}
-          containerClassName={`group flex items-center has-[:disabled]:opacity-30`}
-          disabled={isOTPProvided}
-          maxLength={6}
-          render={({ slots }) => (
-            <div className='flex gap-2 w-full'>
-              {slots.map((slot, i) => (
-                <InputSlot {...slot} key={i} />
-              ))}
-            </div>
-          )}
+        <PinInput oneTimeCode inputMode="numeric" length={6} inputType="tel" placeholder="-" styles={{
+            input: {
+              fontFamily: "inherit"
+            },
+            root: {
+              opacity: isOTPProvided ? '60%': '100%',
+              alignSelf: "center"
+            }
+          }} 
+          onComplete={handleOTPSubmit}
         />
       </div>
     </AuthCard>

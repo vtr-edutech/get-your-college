@@ -85,7 +85,7 @@ const Navbar = ({ modalOpen }) => {
       <div className='fixed left-0 flex max-h-16 md:hidden justify-around items-center w-full bottom-0 z-50 px-2 py-2 shadow shadow-black/40 bg-white'>
         {MENU_ITEMS.slice(0, 4).map((menu, i) =>
           menu.subcategoryFrom ? (
-            <Menu key={i} width={125}>
+            <Menu key={i} width={125} shadow="lg" withArrow>
               <Menu.Target>
                 <button
                   href={menu.to}
@@ -146,15 +146,15 @@ const Navbar = ({ modalOpen }) => {
             "flex gap-1 flex-col items-center justify-center p-1.5 h-fullmd:hidden"
           )}
         >
-          <Skeleton visible={hasSessionLoaded === "loading"} radius={5}>
-            <Menu>
+          <Skeleton visible={hasSessionLoaded === "loading"} height={'50%'} radius={5}>
+            <Menu shadow="lg" withArrow>
               <Menu.Target>
                 <div className='flex flex-col items-center justify-center p-1.5 h-full rounded md:hidden'>
                   <Image
-                    src={session?.user?.image || "/profile-1.png"}
+                    src={session?.user?.image || "/profile-2.png"}
                     alt='profile image'
-                    width={30}
-                    height={30}
+                    width={27}
+                    height={27}
                   />
                   <p className='text-sm text-black/50'>
                     {session?.user?.name || "User"}
@@ -197,7 +197,7 @@ const Navbar = ({ modalOpen }) => {
         <div className='grid place-items-center w-20 h-20'>
           <Skeleton visible={hasSessionLoaded === "loading"} circle>
             <Image
-              src={session?.user?.image || "/profile-1.png"}
+              src={session?.user?.image || "/profile-2.png"}
               alt='profile image'
               width={200}
               height={200}

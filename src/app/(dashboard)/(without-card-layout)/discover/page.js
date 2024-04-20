@@ -4,7 +4,7 @@ import React from 'react'
 const Discover = () => {
   return (
     <div className='flex flex-col gap-4'>
-      <div className='flex gap-4'>
+      <div className='flex md:flex-row flex-col gap-4'>
         {/* Updates div */}
         <div className='flex flex-col p-6 min-w-[60%] max-w-md rounded-md shadow-sm shadow-black/10 bg-white'>
           <h1 className='font-semibold text-xl'>Updates</h1>
@@ -29,8 +29,8 @@ const Discover = () => {
             <a href='https://facebook.com' target='_blank' className='m-5'>
               <Image
                 src={"/fb.png"}
-                width={80}
-                height={80}
+                width={70}
+                height={70}
                 alt='Facebook - Know your College'
               />
             </a>
@@ -41,13 +41,14 @@ const Discover = () => {
             >
               <Image
                 src={"/wp.png"}
-                width={80}
-                height={80}
+                width={70}
+                height={70}
                 alt='WhatsApp - Know your College'
               />
             </a>
           </div>
         </div>
+
         {/* Topics div */}
         <div className='flex flex-col p-6 flex-1 rounded-md shadow-sm shadow-black/10 bg-white'>
           <h1 className='font-semibold text-xl'>Topics</h1>
@@ -67,6 +68,7 @@ const Discover = () => {
           </div>
         </div>
       </div>
+
       {/* News */}
       <div className='flex flex-col rounded-md bg-white shadow-sm shadow-black/10 w-full p-6'>
         <h1 className='font-semibold text-xl'>News</h1>

@@ -5,13 +5,14 @@ import React, { Suspense } from "react";
 import { useDisclosure } from '@mantine/hooks';
 import { Modal } from '@mantine/core';
 import RegisterForm from "@/components/RegisterForm";
+import NavBarLoader from "@/components/NavBarLoader";
 
 const RootLayout = ({ children }) => {
   const [opened, { open, close }] = useDisclosure(false);
 
   return (
     <main className='flex min-h-screen justify-center w-full relative md:pt-12 p-2 md:pb-0 pb-16 md:pl-80 md:pr-12'>
-      <Suspense fallback={'Loading...'}>
+      <Suspense fallback={<NavBarLoader />}>
         <Navbar modalOpen={open} />
       </Suspense>
       <ContentCard>

@@ -1,7 +1,7 @@
 import collegeData from "@/utils/collegeData";
 import { usePagination } from "@mantine/hooks";
 import { DataTable } from "mantine-datatable";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 const PAGE_SIZE = 10;
 
@@ -30,29 +30,38 @@ const ReportTable = ({ searchCriteria }) => {
       collegeData
         .filter(
           (college) =>
-            college[`${searchCriteria?.Category} - Cutoff`] >=
+            (college[`${searchCriteria?.Category} - Cutoff`] >=
               parseFloat(searchCriteria.MinCutoff) &&
             college[`${searchCriteria?.Category} - Cutoff`] <=
-              parseFloat(searchCriteria.MaxCutoff)
-        )
-        .filter((college) =>
-          searchCriteria.searchKey && searchCriteria.searchKey.trim()
-            ? college["College Name"]
-                .toLowerCase()
-                .replace(/\s+/g, "")
-                .includes(
-                  searchCriteria.searchKey.toLowerCase().replace(/\s+/g, "")
-                )
-            : true
+              parseFloat(searchCriteria.MaxCutoff)) && (
+                searchCriteria.searchKey && searchCriteria.searchKey.trim()
+                  ? (college["College Name"]
+                      .toLowerCase()
+                      .replace(/\s+/g, "")
+                      .includes(
+                        searchCriteria.searchKey.toLowerCase().replace(/\s+/g, "")
+                      ) ||
+                    college["Branch Name"]
+                      .toLowerCase()
+                      .replace(/\s+/g, "")
+                      .includes(
+                        searchCriteria.searchKey.toLowerCase().replace(/\s+/g, "")
+                      )
+                    )
+                  : true
+              )
         ),
     [searchCriteria]
   );
 
+  
   const pagination = usePagination({
     total: parseInt(collegesAfterFiltering.length / PAGE_SIZE) + 1,
     initialPage: 1,
     siblings: 1,
   });
+  
+  useEffect(() => pagination.setPage(1), [searchCriteria.searchKey])
 
   const collegesAfterSlicing = useMemo(
     () =>
@@ -87,9 +96,9 @@ const ReportTable = ({ searchCriteria }) => {
             render: (record) => collegesAfterSlicing.indexOf(record) + 1,
           },
           { accessor: "College Code", title: "College Code" },
-          { accessor: "College Name", title: "College Name" },
+          { accessor: "College Name", title: "College Name", width: 200 },
           { accessor: "Branch Code", title: "Branch Code" },
-          { accessor: "Branch Name", title: "Branch Name" },
+          { accessor: "Branch Name", title: "Branch Name", width: 150 },
           {
             accessor: `${searchCriteria?.Category} - Cutoff`,
             title: `${searchCriteria?.Category} - Cutoff`,
@@ -107,7 +116,7 @@ const ReportTable = ({ searchCriteria }) => {
         selectionTrigger='cell'
         selectionColumnClassName='cursor-pointer'
         selectionCheckboxProps={{ className: "cursor-pointer" }}
-        rowClassName={'h-28 max-h-28'}
+        rowClassName={'h-28 max-h-28 mx-1'}
       />
       {/* <div className='w-full self-end flex'> */}
       {/* <Pagination

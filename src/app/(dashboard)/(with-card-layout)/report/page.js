@@ -64,7 +64,9 @@ const Report = () => {
         Search colleges and add to your preference list
       </h1>
       <form
-        className='flex mt-12 w-full h-[10vh] justify-center items-center flex-wrap'
+        className='md:flex mt-12 md:w-full md:h-[10vh] md:justify-center md:items-center md:flex-wrap
+          grid grid-cols-2 gap-2 md:gap-0 grid-rows-3
+        '
         onSubmit={handleSubmit(searchSubmission)}
       >
         {/* Min cutoff */}
@@ -74,7 +76,7 @@ const Report = () => {
             name='starting-cutoff'
             id='starting-cutoff'
             placeholder='Starting Cut-Off'
-            className='bg-card p-2 w-44 rounded-ss-md rounded-es-md focus:outline-1 focus:outline-gray-200'
+            className='bg-card p-2 max-w-44 md:w-44 rounded-ss-md rounded-es-md focus:outline-1 focus:outline-gray-200'
             {...register("MinCutoff", {
               required: { value: true, message: "This field is required" },
               min: {
@@ -100,7 +102,7 @@ const Report = () => {
             name='ending-cutoff'
             id='ending-cutoff'
             placeholder='Ending Cut-Off'
-            className='bg-card p-2  w-44 focus:outline-1 focus:outline-gray-200'
+            className='bg-card p-2 max-w-44 md:w-44 focus:outline-1 focus:outline-gray-200'
             {...register("MaxCutoff", {
               required: { value: true, message: "This field is required" },
               min: {
@@ -120,11 +122,11 @@ const Report = () => {
           )}
         </div>
         {/* Category */}
-        <div className='flex flex-col gap-1 items-center relative'>
+        <div className='flex col-span-2 flex-col gap-1 items-center relative'>
           <select
             name='category'
             defaultValue={"Select"}
-            className='bg-card p-2 py-2.5 pr-8 rounded-ee-md rounded-se-md focus:outline-1 focus:outline-gray-200'
+            className='bg-card p-2 py-2.5 w-full pr-8 rounded-ee-md rounded-se-md focus:outline-1 focus:outline-gray-200'
             id='category'
             {...register("Category", {
               required: { value: true, message: "This field is required" },
@@ -151,7 +153,7 @@ const Report = () => {
             </p>
           )}
         </div>
-        <button className='bg-fill-black px-6 py-1.5 text-lg rounded flex gap-2 text-white items-center ml-2'>
+        <button className='bg-fill-black px-6 md:col-span-[unset] col-span-2 md:w-[unset] w-full justify-center py-1.5 text-lg rounded flex gap-2 text-white items-center md:ml-2'>
           <LuSearch />
           Go
         </button>
@@ -181,8 +183,6 @@ const Report = () => {
           </div>
         </>
       )}
-
-      <Link href={"/report/generate"}>Test: Go to Report Generate page</Link>
     </>
   );
 };

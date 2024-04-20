@@ -230,7 +230,7 @@ const Home = () => {
               </p>
             )}
           </div>
-          <button className='bg-fill-black text-center w-full md:px-6 py-1.5 text-lg rounded flex gap-2 text-white items-center justify-center md:ml-2'>
+          <button className='bg-fill-black text-center col-span-2 w-full md:px-6 py-1.5 text-lg rounded flex gap-2 text-white items-center justify-center md:ml-2'>
             <LuSearch />
             <p>Go</p>
           </button>
