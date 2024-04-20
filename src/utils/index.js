@@ -71,7 +71,7 @@ export function generateOTP() {
   // Declare a digits variable
   // which stores all digits
   let digits =
-    "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()_+";
+    "0123456789";
   let OTP = "";
   let len = digits.length;
   for (let i = 0; i < 6; i++) {
