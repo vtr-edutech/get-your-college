@@ -1,5 +1,6 @@
 'use client';
 import ContentCard from "@/components/ContentCard";
+import SkeletonLoader from "@/components/SkeletonLoader";
 import { ALL_VALID_CATEGORIES } from "@/utils/nav_data";
 import { useDebouncedState } from "@mantine/hooks";
 import { useSearchParams } from "next/navigation";
@@ -40,7 +41,7 @@ const Colleges = () => {
         className='bg-white/60 px-3 py-2 rounded-md focus:outline-1 focus:outline-black/10 border-none shadow-sm'
       />
       <ContentCard>
-        <Suspense fallback={'Loading data...'}>
+        <Suspense fallback={<SkeletonLoader rows={10} />}>
           <CollegeInfoTable searchCriteria={{ searchKey: collegeSearchKey }} />
         </Suspense>
       </ContentCard>

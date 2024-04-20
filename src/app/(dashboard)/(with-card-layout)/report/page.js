@@ -161,7 +161,7 @@ const Report = () => {
 
       {searchCriteria?.MinCutoff ? (
         <Suspense fallback={<SkeletonLoader />}>
-          <input type="search" name="searchKey" placeholder="Search for college name, branch name, etc." id="search" className="py-2 mt-6 px-3 w-full outline outline-1 outline-gray-100 rounded-md focus:outline-1 focus:outline-gray-200" onInput={(e) => setSearchCriteria({...searchCriteria, searchKey: e.currentTarget.value})} />
+          <input type="search" name="searchKey" placeholder="Search for college name, branch name, etc." id="search" className="py-2 mt-6 px-3 w-full outline outline-1 outline-gray-300 focus:outline-gray-400 placeholder:text-sm md:outline-gray-200 rounded-md focus:outline-1 md:focus:outline-gray-300" onInput={(e) => setSearchCriteria({...searchCriteria, searchKey: e.currentTarget.value})} />
           <ReportTable searchCriteria={searchCriteria} />
           <div className="w-full flex">
             <Button label={"Proceed"} to='/report/generate' className='md:ml-auto w-max px-6 py-2' />

@@ -1,7 +1,8 @@
 import { usePagination } from "@mantine/hooks";
 import colleges from "../utils/collegeData";
-import { useMemo } from "react";
+import { useEffect, useMemo } from "react";
 import { Pagination } from "@mantine/core";
+import { districtData } from "@/utils/collegeDistrictData";
 
 const PAGE_SIZE = 10;
 
@@ -36,6 +37,18 @@ const CollegesTable = ({ searchCriteria }) => {
                 ) */
             )
         )
+        .filter(college => (
+          (searchCriteria.districtKey.trim() != '') ? 
+            districtData.find(collegeMiscData => 
+              collegeMiscData["District "]
+              .toLowerCase()
+              .replace(/\s+/g, "")
+              .includes(
+                searchCriteria.districtKey.toLowerCase().replace(/s\+/g, "")
+              ) && collegeMiscData['COLLEGE CODE'] == college['College Code']
+            ) ? true: false
+            : true
+        ))
         .sort(
           (a, b) =>
             parseInt(b[`${searchCriteria.Category} - Cutoff`]) -
@@ -50,7 +63,8 @@ const CollegesTable = ({ searchCriteria }) => {
     siblings: 1,
   });
 
-  // console.log("🚀 ~ CollegesTable ~ pagination:", collegesAfterFiltering)
+  useEffect(() => pagination.setPage(1), [searchCriteria.searchKey]);
+
   if (!searchCriteria.Dept) return <p>Invalid Search Criteria!</p>;
 
   return (
@@ -104,7 +118,7 @@ const CollegesTable = ({ searchCriteria }) => {
       </div>
       <div className='w-full self-start flex md:flex-row flex-col'>
         <p className="ml-2">
-          <span className="font-medium">{collegesAfterFiltering.length}</span> colleges found
+          <span className="font-medium">{collegesAfterFiltering.length}</span> college(s) found
         </p>
         <Pagination
           total={parseInt(collegesAfterFiltering.length / PAGE_SIZE) + 1}

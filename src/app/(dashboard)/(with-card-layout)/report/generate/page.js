@@ -30,7 +30,7 @@ const Generate = () => {
   }, []);
   // console.log("🚀 ~ Generate ~ preferredColleges:", preferredColleges)
 
-  if (!selectedCategory) return <SkeletonLoader rows={7} />;
+  if (!selectedCategory) return <SkeletonLoader rows={10} />;
 
   return (
     <>
@@ -50,7 +50,9 @@ const Generate = () => {
             quality={95}
             alt='Empty Selection'
           />
-          <p className="text-primary/50">No colleges selected! Go back and select colleges in Report Page</p>
+          <p className='text-primary/50'>
+            No colleges selected! Go back and select colleges in Report Page
+          </p>
         </div>
       ) : (
         <>
@@ -66,14 +68,20 @@ const Generate = () => {
             paperSize={"A4"}
             margin='1cm'
           >
-            <div className="flex flex-col overflow-x-scroll w-full md:overflow-x-hidden">
+            <div className='flex flex-col overflow-x-scroll w-full md:overflow-x-hidden'>
               <div className='flex min-w-fit md:min-w-[unset] justify-around items-center p-2 mx-1 mt-1 md:p-4 rounded-se-lg rounded-ss-lg outline outline-1 outline-gray-200 reorder-header'>
-                <h2 className='flex-1 font-medium min-w-16 max-w-28'>Choice Order</h2>
-                <h2 className='flex-1 font-medium min-w-20 max-w-36'>College Code</h2>
-                <h2 className='min-w-44 max-w-96 flex-1 font-medium'>
+                <h2 className='flex-1 font-medium min-w-16 max-w-28'>
+                  Choice Order
+                </h2>
+                <h2 className='flex-1 font-medium min-w-20 max-w-36'>
+                  College Code
+                </h2>
+                <h2 className='min-w-44 max-w-96 flex-1 font-medium md:m-0 mx-2'>
                   College Name
                 </h2>
-                <h2 className='max-w-36 flex-1 font-medium min-w-32'>Branch Name</h2>
+                <h2 className='max-w-36 flex-1 font-medium min-w-32 md:m-0 mx-2'>
+                  Branch Name
+                </h2>
                 <h2 className='max-w-36 flex-1 font-medium min-w-20'>
                   {selectedCategory} - Cutoff
                 </h2>

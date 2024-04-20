@@ -8725,7 +8725,7 @@ const collegeData = [
  {
   "id": 562,
   "College Code": 1398,
-  "College Name": "#N\/A",
+  "College Name": "Chennai Institute of Technology and Applied Research Sarathy Nagar Puthuper Village Kundrathur Chennai 600069",
   "Branch Code": "AD",
   "Branch Name": "ARTIFICIAL INTELLIGENCE AND DATA SCIENCE",
   "OC - Cutoff": 187.5,
@@ -8744,7 +8744,7 @@ const collegeData = [
  {
   "id": 563,
   "College Code": 1398,
-  "College Name": "#N\/A",
+  "College Name": "Chennai Institute of Technology and Applied Research Sarathy Nagar Puthuper Village Kundrathur Chennai 600069",
   "Branch Code": "CS",
   "Branch Name": "COMPUTER SCIENCE AND ENGINEERING",
   "OC - Cutoff": 186.5,
@@ -8765,7 +8765,7 @@ const collegeData = [
  {
   "id": 564,
   "College Code": 1398,
-  "College Name": "#N\/A",
+  "College Name": "Chennai Institute of Technology and Applied Research Sarathy Nagar Puthuper Village Kundrathur Chennai 600069",
   "Branch Code": "EC",
   "Branch Name": "ELECTRONICS AND COMMUNICATION ENGINEERING",
   "OC - Cutoff": 186,
@@ -8782,7 +8782,7 @@ const collegeData = [
  {
   "id": 565,
   "College Code": 1398,
-  "College Name": "#N\/A",
+  "College Name": "Chennai Institute of Technology and Applied Research Sarathy Nagar Puthuper Village Kundrathur Chennai 600069",
   "Branch Code": "EE",
   "Branch Name": "ELECTRICAL AND ELECTRONICS ENGINEERING",
   "OC - Cutoff": 180,
@@ -21279,7 +21279,7 @@ const collegeData = [
  {
   "id": 1380,
   "College Code": 2640,
-  "College Name": "#N\/A",
+  "College Name": "Jayalakshmi Institute of Technology, NH 7, Salem Main Rd, T.Kanigarahalli, Thoppur, Dharmapuri, Tamil Nadu 636352",
   "Branch Code": "AD",
   "Branch Name": "ARTIFICIAL INTELLIGENCE AND DATA SCIENCE",
   "OC - Cutoff": 95.5,
@@ -21288,7 +21288,7 @@ const collegeData = [
  {
   "id": 1381,
   "College Code": 2640,
-  "College Name": "#N\/A",
+  "College Name": "Jayalakshmi Institute of Technology, NH 7, Salem Main Rd, T.Kanigarahalli, Thoppur, Dharmapuri, Tamil Nadu 636352",
   "Branch Code": "AG",
   "Branch Name": "AGRICULTURAL ENGINEERING",
   "OC - Cutoff": 109,
@@ -21297,7 +21297,7 @@ const collegeData = [
  {
   "id": 1382,
   "College Code": 2640,
-  "College Name": "#N\/A",
+  "College Name": "Jayalakshmi Institute of Technology, NH 7, Salem Main Rd, T.Kanigarahalli, Thoppur, Dharmapuri, Tamil Nadu 636352",
   "Branch Code": "CE",
   "Branch Name": "CIVIL  ENGINEERING",
   "OC - Cutoff": 109.5,
@@ -21306,7 +21306,7 @@ const collegeData = [
  {
   "id": 1383,
   "College Code": 2640,
-  "College Name": "#N\/A",
+  "College Name": "Jayalakshmi Institute of Technology, NH 7, Salem Main Rd, T.Kanigarahalli, Thoppur, Dharmapuri, Tamil Nadu 636352",
   "Branch Code": "CS",
   "Branch Name": "COMPUTER SCIENCE AND ENGINEERING",
   "OC - Cutoff": 80,
@@ -21315,7 +21315,7 @@ const collegeData = [
  {
   "id": 1384,
   "College Code": 2640,
-  "College Name": "#N\/A",
+  "College Name": "Jayalakshmi Institute of Technology, NH 7, Salem Main Rd, T.Kanigarahalli, Thoppur, Dharmapuri, Tamil Nadu 636352",
   "Branch Code": "EC",
   "Branch Name": "ELECTRONICS AND COMMUNICATION ENGINEERING",
   "OC - Cutoff": 87,
@@ -21324,7 +21324,7 @@ const collegeData = [
  {
   "id": 1385,
   "College Code": 2640,
-  "College Name": "#N\/A",
+  "College Name": "Jayalakshmi Institute of Technology, NH 7, Salem Main Rd, T.Kanigarahalli, Thoppur, Dharmapuri, Tamil Nadu 636352",
   "Branch Code": "EE",
   "Branch Name": "ELECTRICAL AND ELECTRONICS ENGINEERING",
   "OC - Cutoff": 95,
@@ -21333,7 +21333,7 @@ const collegeData = [
  {
   "id": 1386,
   "College Code": 2640,
-  "College Name": "#N\/A",
+  "College Name": "Jayalakshmi Institute of Technology, NH 7, Salem Main Rd, T.Kanigarahalli, Thoppur, Dharmapuri, Tamil Nadu 636352",
   "Branch Code": "IT",
   "Branch Name": "INFORMATION TECHNOLOGY",
   "OC - Cutoff": 117,
@@ -21342,7 +21342,7 @@ const collegeData = [
  {
   "id": 1387,
   "College Code": 2640,
-  "College Name": "#N\/A",
+  "College Name": "Jayalakshmi Institute of Technology, NH 7, Salem Main Rd, T.Kanigarahalli, Thoppur, Dharmapuri, Tamil Nadu 636352",
   "Branch Code": "ME",
   "Branch Name": "MECHANICAL ENGINEERING",
   "OC - Cutoff": 107.5,
@@ -34280,7 +34280,7 @@ const collegeData = [
  {
   "id": 2199,
   "College Code": 3813,
-  "College Name": "#N\/A",
+  "College Name": "Oxford Engineering College, Karumandapam, Pirattiyur, Trichy 620 009",
   "Branch Code": "CE",
   "Branch Name": "CIVIL  ENGINEERING",
   "OC - Cutoff": 80,
@@ -34289,7 +34289,7 @@ const collegeData = [
  {
   "id": 2200,
   "College Code": 3813,
-  "College Name": "#N\/A",
+  "College Name": "Oxford Engineering College, Karumandapam, Pirattiyur, Trichy 620 009",
   "Branch Code": "CS",
   "Branch Name": "COMPUTER SCIENCE AND ENGINEERING",
   "OC - Cutoff": 106.5,
@@ -34298,7 +34298,7 @@ const collegeData = [
  {
   "id": 2201,
   "College Code": 3813,
-  "College Name": "#N\/A",
+  "College Name": "Oxford Engineering College, Karumandapam, Pirattiyur, Trichy 620 009",
   "Branch Code": "EC",
   "Branch Name": "ELECTRONICS AND COMMUNICATION ENGINEERING",
   "OC - Cutoff": 91.5,
@@ -34307,7 +34307,7 @@ const collegeData = [
  {
   "id": 2202,
   "College Code": 3813,
-  "College Name": "#N\/A",
+  "College Name": "Oxford Engineering College, Karumandapam, Pirattiyur, Trichy 620 009",
   "Branch Code": "IT",
   "Branch Name": "INFORMATION TECHNOLOGY",
   "OC - Cutoff": 105,
@@ -34318,7 +34318,7 @@ const collegeData = [
  {
   "id": 2203,
   "College Code": 3813,
-  "College Name": "#N\/A",
+  "College Name": "Oxford Engineering College, Karumandapam, Pirattiyur, Trichy 620 009",
   "Branch Code": "ME",
   "Branch Name": "MECHANICAL ENGINEERING",
   "OC - Cutoff": 88.5,
@@ -38214,7 +38214,7 @@ const collegeData = [
  {
   "id": 2499,
   "College Code": 4925,
-  "College Name": "#N\/A",
+  "College Name": "Sun College of Engineering and Technology Ammandivilai & Post  Kanyakumari District - 62920",
   "Branch Code": "AD",
   "Branch Name": "ARTIFICIAL INTELLIGENCE AND DATA SCIENCE",
   "OC - Cutoff": 98.5,
@@ -38223,7 +38223,7 @@ const collegeData = [
  {
   "id": 2500,
   "College Code": 4925,
-  "College Name": "#N\/A",
+  "College Name": "Sun College of Engineering and Technology Ammandivilai & Post  Kanyakumari District - 62920",
   "Branch Code": "PC",
   "Branch Name": "PETRO CHEMICAL TECHNOLOGY",
   "OC - Cutoff": 110,
@@ -38232,7 +38232,7 @@ const collegeData = [
  {
   "id": 2501,
   "College Code": 4925,
-  "College Name": "#N\/A",
+  "College Name": "Sun College of Engineering and Technology Ammandivilai & Post  Kanyakumari District - 62920",
   "Branch Code": "PH",
   "Branch Name": "PHARMACEUTICAL TECHNOLOGY",
   "OC - Cutoff": 108.5,
@@ -38700,7 +38700,7 @@ const collegeData = [
  {
   "id": 2541,
   "College Code": 4943,
-  "College Name": "#N\/A",
+  "College Name": "Satyam College of Engineering and Technology, Satyam Nagar, Aralvoimozhi, Kanyakumari-629301",
   "Branch Code": "AE",
   "Branch Name": "AERONAUTICAL ENGINEERING",
   "OC - Cutoff": 145,
@@ -38709,7 +38709,7 @@ const collegeData = [
  {
   "id": 2542,
   "College Code": 4943,
-  "College Name": "#N\/A",
+  "College Name": "Satyam College of Engineering and Technology, Satyam Nagar, Aralvoimozhi, Kanyakumari-629301",
   "Branch Code": "CS",
   "Branch Name": "COMPUTER SCIENCE AND ENGINEERING",
   "OC - Cutoff": 116.5,
@@ -38718,7 +38718,7 @@ const collegeData = [
  {
   "id": 2543,
   "College Code": 4943,
-  "College Name": "#N\/A",
+  "College Name": "Satyam College of Engineering and Technology, Satyam Nagar, Aralvoimozhi, Kanyakumari-629301",
   "Branch Code": "EC",
   "Branch Name": "ELECTRONICS AND COMMUNICATION ENGINEERING",
   "OC - Cutoff": 85,
@@ -38727,7 +38727,7 @@ const collegeData = [
  {
   "id": 2544,
   "College Code": 4943,
-  "College Name": "#N\/A",
+  "College Name": "Satyam College of Engineering and Technology, Satyam Nagar, Aralvoimozhi, Kanyakumari-629301",
   "Branch Code": "EE",
   "Branch Name": "ELECTRICAL AND ELECTRONICS ENGINEERING",
   "OC - Cutoff": 93,
@@ -38736,7 +38736,7 @@ const collegeData = [
  {
   "id": 2545,
   "College Code": 4943,
-  "College Name": "#N\/A",
+  "College Name": "Satyam College of Engineering and Technology, Satyam Nagar, Aralvoimozhi, Kanyakumari-629301",
   "Branch Code": "ME",
   "Branch Name": "MECHANICAL ENGINEERING",
   "OC - Cutoff": 83.75,
@@ -41049,7 +41049,7 @@ const collegeData = [
  {
   "id": 2714,
   "College Code": 4978,
-  "College Name": "#N\/A",
+  "College Name": "Udaya School of Engineering,   Ammandivilai Post, Kanyakumari District 629204",
   "Branch Code": "AE",
   "Branch Name": "AERONAUTICAL ENGINEERING",
   "OC - Cutoff": 107.5,
@@ -41058,7 +41058,7 @@ const collegeData = [
  {
   "id": 2715,
   "College Code": 4978,
-  "College Name": "#N\/A",
+  "College Name": "Udaya School of Engineering,   Ammandivilai Post, Kanyakumari District 629204",
   "Branch Code": "AG",
   "Branch Name": "AGRICULTURAL ENGINEERING",
   "OC - Cutoff": 117.5,
@@ -41067,7 +41067,7 @@ const collegeData = [
  {
   "id": 2716,
   "College Code": 4978,
-  "College Name": "#N\/A",
+  "College Name": "Udaya School of Engineering,   Ammandivilai Post, Kanyakumari District 629204",
   "Branch Code": "AM",
   "Branch Name": "COMPUTER SCIENCE AND ENGINEERING (ARTIFICIAL INTELLIGENCE AND MACHINE LEARNING)",
   "OC - Cutoff": 83,
@@ -41076,7 +41076,7 @@ const collegeData = [
  {
   "id": 2717,
   "College Code": 4978,
-  "College Name": "#N\/A",
+  "College Name": "Udaya School of Engineering,   Ammandivilai Post, Kanyakumari District 629204",
   "Branch Code": "BM",
   "Branch Name": "BIO MEDICAL ENGINEERING",
   "OC - Cutoff": 84,
@@ -41085,7 +41085,7 @@ const collegeData = [
  {
   "id": 2718,
   "College Code": 4978,
-  "College Name": "#N\/A",
+  "College Name": "Udaya School of Engineering,   Ammandivilai Post, Kanyakumari District 629204",
   "Branch Code": "BT",
   "Branch Name": "BIO TECHNOLOGY",
   "OC - Cutoff": 93.5,
@@ -41094,7 +41094,7 @@ const collegeData = [
  {
   "id": 2719,
   "College Code": 4978,
-  "College Name": "#N\/A",
+  "College Name": "Udaya School of Engineering,   Ammandivilai Post, Kanyakumari District 629204",
   "Branch Code": "CS",
   "Branch Name": "COMPUTER SCIENCE AND ENGINEERING",
   "OC - Cutoff": 95.5,
@@ -41107,7 +41107,7 @@ const collegeData = [
  {
   "id": 2720,
   "College Code": 4978,
-  "College Name": "#N\/A",
+  "College Name": "Udaya School of Engineering,   Ammandivilai Post, Kanyakumari District 629204",
   "Branch Code": "EC",
   "Branch Name": "ELECTRONICS AND COMMUNICATION ENGINEERING",
   "OC - Cutoff": 92,
@@ -41116,7 +41116,7 @@ const collegeData = [
  {
   "id": 2721,
   "College Code": 4978,
-  "College Name": "#N\/A",
+  "College Name": "Udaya School of Engineering,   Ammandivilai Post, Kanyakumari District 629204",
   "Branch Code": "EE",
   "Branch Name": "ELECTRICAL AND ELECTRONICS ENGINEERING",
   "OC - Cutoff": 98,
@@ -41125,7 +41125,7 @@ const collegeData = [
  {
   "id": 2722,
   "College Code": 4978,
-  "College Name": "#N\/A",
+  "College Name": "Udaya School of Engineering,   Ammandivilai Post, Kanyakumari District 629204",
   "Branch Code": "ME",
   "Branch Name": "MECHANICAL ENGINEERING",
   "OC - Cutoff": 93.5,
@@ -41134,7 +41134,7 @@ const collegeData = [
  {
   "id": 2723,
   "College Code": 4978,
-  "College Name": "#N\/A",
+  "College Name": "Udaya School of Engineering,   Ammandivilai Post, Kanyakumari District 629204",
   "Branch Code": "SC",
   "Branch Name": "Computer Science and Engineering (Cyber Security)",
   "OC - Cutoff": 87,
@@ -41473,7 +41473,7 @@ const collegeData = [
  {
   "id": 2752,
   "College Code": 4986,
-  "College Name": "#N\/A",
+  "College Name": "Noorul Islam College of Engineering and Technology, No.10/47, Haji Manzil Main Road, Thuckalay, Kanyakumari 629175",
   "Branch Code": "AD",
   "Branch Name": "ARTIFICIAL INTELLIGENCE AND DATA SCIENCE",
   "OC - Cutoff": 118.5,
@@ -41482,7 +41482,7 @@ const collegeData = [
  {
   "id": 2753,
   "College Code": 4986,
-  "College Name": "#N\/A",
+  "College Name": "Noorul Islam College of Engineering and Technology, No.10/47, Haji Manzil Main Road, Thuckalay, Kanyakumari 629175",
   "Branch Code": "CS",
   "Branch Name": "COMPUTER SCIENCE AND ENGINEERING",
   "OC - Cutoff": 108,
@@ -41491,7 +41491,7 @@ const collegeData = [
  {
   "id": 2754,
   "College Code": 4986,
-  "College Name": "#N\/A",
+  "College Name": "Noorul Islam College of Engineering and Technology, No.10/47, Haji Manzil Main Road, Thuckalay, Kanyakumari 629175",
   "Branch Code": "IT",
   "Branch Name": "INFORMATION TECHNOLOGY",
   "OC - Cutoff": 108,
@@ -41500,7 +41500,7 @@ const collegeData = [
  {
   "id": 2755,
   "College Code": 4986,
-  "College Name": "#N\/A",
+  "College Name": "Noorul Islam College of Engineering and Technology, No.10/47, Haji Manzil Main Road, Thuckalay, Kanyakumari 629175",
   "Branch Code": "ME",
   "Branch Name": "MECHANICAL ENGINEERING",
   "OC - Cutoff": 104,

@@ -1,6 +1,6 @@
 import { usePagination } from "@mantine/hooks";
 import colleges from "../utils/collegeData";
-import { useMemo } from "react";
+import { useEffect, useMemo } from "react";
 import { Pagination } from "@mantine/core";
 
 const PAGE_SIZE = 10;
@@ -30,7 +30,7 @@ const CollegeInfoTable = ({ searchCriteria }) => {
     siblings: 1,
   });
 
-  // console.log("🚀 ~ CollegeInfoTable ~ pagination:", collegesAfterFiltering.slice(0, 3));
+  useEffect(() => pagination.setPage(1), [searchCriteria.searchKey])
 
   return (
     <>
@@ -50,15 +50,18 @@ const CollegeInfoTable = ({ searchCriteria }) => {
 
       {/* Table Header */}
       <div className='overflow-x-scroll md:overflow-x-hidden flex flex-col mt-6 w-full transition-all'>
-        <div className='flex justify-around min-w-fit md:min-w-[unset] items-center mt-1 mx-1 p-1.5 md:p-4 rounded-se-lg rounded-ss-lg outline outline-1 outline-gray-200 shadow sticky top-0 bg-white'>
-          <h2 className='flex-1 font-medium max-w-28 min-w-16'>S.No.</h2>
-          <h2 className='flex-1 font-medium max-w-36 min-w-16'>College Code</h2>
-          <h2 className='min-w-44 max-w-96 flex-1 font-medium'>College Name</h2>
+        <div className='flex justify-around min-w-fit md:min-w-[unset] items-center mt-1 mx-1 p-1.5 md:p-3 rounded-se-lg rounded-ss-lg outline outline-1 outline-gray-200 shadow sticky top-0 bg-white'>
+          <h2 className='flex-1 font-medium max-w-20 min-w-16'>S.No.</h2>
+          <h2 className='flex-1 font-medium max-w-32 min-w-16'>College Code</h2>
+          <h2 className='min-w-48 max-w-96 flex-1 font-medium'>College Name</h2>
           <h2 className='max-w-40 flex-1 font-medium min-w-36'>
             Branch Name
           </h2>
           <h2 className='max-w-36 flex-1 font-medium min-w-16'>
             Branch Code
+          </h2>
+          <h2 className='max-w-36 flex-1 font-medium min-w-24'>
+            Cutoff
           </h2>
           {/* <h2 className='max-w-36 flex-1 font-medium'>
             {searchCriteria.Category} Cutoff
@@ -73,31 +76,36 @@ const CollegeInfoTable = ({ searchCriteria }) => {
           )
           .map((college, i) => (
             <div
-              key={college["S.No"]}
+              key={i}
               className='flex transition-all min-w-fit mx-1 md:min-w-[unset] justify-around items-center outline p-1.5 md:p-1 min-h-32 last-of-type:mb-1 animate-fade-in overflow-hidden bg-white outline-1 outline-gray-200 last-of-type:rounded-ee-md last-of-type:rounded-es-md'
             >
-              <h2 className='flex-1 text-sm max-w-28 min-w-16'>
+              <h2 className='flex-1 text-sm max-w-20 min-w-16'>
                 <p className='ml-2'>{i + 1}</p>
               </h2>
-              <h2 className='flex-1 text-sm max-w-36 min-w-16'>
+              <h2 className='flex-1 text-sm max-w-32 min-w-16'>
                 {college["College Code"]}
               </h2>
-              <h2 className='min-w-44 max-w-96 flex-1 text-sm'>
+              <h2 className='min-w-48 max-w-96 flex-1 text-sm'>
                 {college["College Name"]}
               </h2>
-              <h2 className='max-w-40 flex-1 text-sm pl-2 min-w-36 break-words'>
+              <h2 className='max-w-40 flex-1 text-sm min-w-36 break-words'>
                 {college["Branch Name"]}
               </h2>
-              <h2 className='max-w-36 flex-1 text-sm pl-2 min-w-16'>
+              <h2 className='max-w-36 flex-1 text-sm min-w-16'>
                 {college["Branch Code"]}
               </h2>
-              {/* <h2 className='max-w-36 flex-1 text-sm'>
-                {college[`${searchCriteria.Category} - Cutoff`]}
-              </h2> */}
+              <h2 className='max-w-36 flex-1 text-xs min-w-24'>
+                {
+                  Object.keys(college).filter(key => key.includes('Cutoff')).map((key, i) => (
+                    <p key={i} className="mb-1">{key.split("-")[0]} — {college[key]}</p>
+                  ))
+                }
+              </h2>
             </div>
           ))}
       </div>
-      <div className='w-full self-end flex'>
+      <div className='w-full md:self-end self-start md:flex-row flex-col flex'>
+        {searchCriteria.searchKey.trim() !== '' && <p className="ml-2"><span className="font-medium">{collegesAfterFiltering.length}</span> college(s) found</p>}
         <Pagination
           total={parseInt(collegesAfterFiltering.length / PAGE_SIZE) + 1}
           value={pagination.active}

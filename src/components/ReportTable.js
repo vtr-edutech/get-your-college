@@ -116,17 +116,26 @@ const ReportTable = ({ searchCriteria }) => {
         selectionTrigger='cell'
         selectionColumnClassName='cursor-pointer'
         selectionCheckboxProps={{ className: "cursor-pointer" }}
-        rowClassName={'h-28 max-h-28 mx-1'}
+        rowClassName={"h-28 max-h-28 mx-1"}
       />
-      {/* <div className='w-full self-end flex'> */}
-      {/* <Pagination
+      <div className='w-full flex md:flex-row flex-col md:justify-between'>
+        <p className='ml-2'>
+          🔍{" "}
+          <span className='font-medium'>{collegesAfterFiltering.length}</span>{" "}
+          college(s) found
+        </p>
+        <p className='ml-2'>
+          ✅ {" "}
+          <span className='font-medium'>{selectedColleges.length}</span>{" "}
+          college(s) selected
+        </p>
+        {/* <Pagination
           total={parseInt(collegesAfterFiltering.length / PAGE_SIZE) + 1}
           value={pagination.active}
           onChange={pagination.setPage}
           className='ml-auto'
         /> */}
-
-      {/* </div> */}
+      </div>
     </>
   );
 };

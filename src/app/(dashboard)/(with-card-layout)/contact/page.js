@@ -6,6 +6,7 @@ import { useForm } from "react-hook-form";
 import { FiPhoneCall } from "react-icons/fi";
 import { HiOutlineMail } from "react-icons/hi";
 import { toast } from "react-toastify";
+import { GoPaperAirplane } from "react-icons/go";
 
 const contactDetails = [
   {
@@ -140,15 +141,22 @@ const Contact = () => {
             minRows={5}
             rows={5}
             {...register("mess", {
-              required: { value: true, message: 'Message can\'t be empty' },
+              required: { value: true, message: "Message can't be empty" },
             })}
-            />
+          />
           {errors["mess"] && (
             <p className='text-xs text-red-500 font-light w-full text-left'>
               {errors["mess"].message}
             </p>
           )}
-          <Button label={"Send message 🚀"} asButton />
+          <Button
+            label={
+              <div className="flex items-center justify-center gap-3">
+                Send message <GoPaperAirplane />
+              </div>
+            }
+            asButton
+          />
         </div>
       </form>
     </>
