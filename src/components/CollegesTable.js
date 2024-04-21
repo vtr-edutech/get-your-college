@@ -15,16 +15,14 @@ const CollegesTable = ({ searchCriteria }) => {
       colleges
         .filter(
           (college) =>
-            ((searchCriteria?.Dept == "-ALL DEPARTMENTS" ? true: college["Branch Name"] === searchCriteria?.Dept) &&
-              college[`${searchCriteria.Category} - Cutoff`] >=
-                parseFloat(searchCriteria.MinCutoff) &&
-              college[`${searchCriteria.Category} - Cutoff`] <=
-                parseFloat(searchCriteria.MaxCutoff)
-            ) 
-              
-              &&
-
-            ((college["College Name"]
+            (searchCriteria?.Dept == "All departments"
+              ? true
+              : college["Branch Name"] === searchCriteria?.Dept) &&
+            college[`${searchCriteria.Category} - Cutoff`] >=
+              parseFloat(searchCriteria.MinCutoff) &&
+            college[`${searchCriteria.Category} - Cutoff`] <=
+              parseFloat(searchCriteria.MaxCutoff) &&
+            (college["College Name"]
               .toLowerCase()
               .replace(/\s+/g, "")
               .includes(
@@ -39,20 +37,25 @@ const CollegesTable = ({ searchCriteria }) => {
                 )) /* =&& (
                   college[''] ----> District filter 
                 ) */
-            )
         )
-        .filter(college => (
-          (searchCriteria.districtKey.trim() != '') ? 
-            districtData.find(collegeMiscData => 
-              collegeMiscData["District "]
-              .toLowerCase()
-              .replace(/\s+/g, "")
-              .includes(
-                searchCriteria.districtKey.toLowerCase().replace(/s\+/g, "")
-              ) && collegeMiscData['COLLEGE CODE'] == college['College Code']
-            ) ? true: false
+        .filter((college) =>
+          searchCriteria.districtKey.trim() != ""
+            ? districtData.find(
+                (collegeMiscData) =>
+                  collegeMiscData["District "]
+                    .toLowerCase()
+                    .replace(/\s+/g, "")
+                    .includes(
+                      searchCriteria.districtKey
+                        .toLowerCase()
+                        .replace(/s\+/g, "")
+                    ) &&
+                  collegeMiscData["COLLEGE CODE"] == college["College Code"]
+              )
+              ? true
+              : false
             : true
-        ))
+        )
         .sort(
           (a, b) =>
             parseInt(b[`${searchCriteria.Category} - Cutoff`]) -

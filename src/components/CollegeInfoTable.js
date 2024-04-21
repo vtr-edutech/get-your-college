@@ -2,8 +2,12 @@ import { usePagination } from "@mantine/hooks";
 import colleges from "../utils/collegeData";
 import { useEffect, useMemo } from "react";
 import { Pagination } from "@mantine/core";
+import { districtData } from "@/utils/collegeDistrictData";
 
 const PAGE_SIZE = 10;
+const allCasteCategories = Object.keys(colleges[0]).filter((key) =>
+  key.includes("Cutoff")
+);
 
 /* if sorting is needed, then create an object right here that says */
 
@@ -15,13 +19,32 @@ const CollegeInfoTable = ({ searchCriteria }) => {
       3. else, default checking like as already implemented
   */
   const collegesAfterFiltering = useMemo(() => {
-    if (!searchCriteria || searchCriteria?.searchKey == "") return colleges;
-    return colleges.filter((college) =>
-      (college["College Name"] + college["Branch Name"] + college['College Code'])
+    var collegeData = [];
+    if (!searchCriteria || searchCriteria?.searchKey == "") collegeData = colleges;
+    collegeData = colleges.filter((college) =>
+      (
+        college["College Name"] +
+        college["Branch Name"] +
+        college["College Code"]
+      )
         .toLowerCase()
         .replace(/\s+/g, "")
         .includes(searchCriteria.searchKey.toLowerCase().replace(/\s+/g, ""))
     );
+    return collegeData
+      .map((college) => {
+        const collegeMiscDetails = districtData.find(
+          (collegeMisc) =>
+            collegeMisc["COLLEGE CODE"] == college["College Code"]
+        );
+        // console.log("misc: ", collegeMiscDetails, college["College Code"]);
+        if (!collegeMiscDetails) return college;
+        return {
+          ...college,
+          "COLLEGE STATUS": collegeMiscDetails["College Status"],
+          "MINORITY STATUS": collegeMiscDetails["Minority Status"],
+        };
+      });
   }, [searchCriteria]);
 
   const pagination = usePagination({
@@ -29,6 +52,8 @@ const CollegeInfoTable = ({ searchCriteria }) => {
     initialPage: 1,
     siblings: 1,
   });
+
+  // console.log(collegesAfterFiltering.slice(0, 10));
 
   useEffect(() => pagination.setPage(1), [searchCriteria.searchKey])
 
@@ -51,21 +76,25 @@ const CollegeInfoTable = ({ searchCriteria }) => {
       {/* Table Header */}
       <div className='overflow-x-scroll md:overflow-x-hidden flex flex-col mt-6 w-full transition-all'>
         <div className='flex justify-around min-w-fit md:min-w-[unset] items-center mt-1 mx-1 p-1.5 md:p-3 rounded-se-lg rounded-ss-lg outline outline-1 outline-gray-200 shadow sticky top-0 bg-white'>
-          <h2 className='flex-1 font-medium max-w-20 min-w-16'>S.No.</h2>
-          <h2 className='flex-1 font-medium max-w-32 min-w-16'>College Code</h2>
-          <h2 className='min-w-48 max-w-96 flex-1 font-medium'>College Name</h2>
+          <h2 className='flex-1 font-medium max-w-16 min-w-14'>S.No.</h2>
+          <h2 className='flex-1 font-medium max-w-24 min-w-16'>College Code</h2>
+          <h2 className='min-w-48 max-w-96 flex-1 font-medium md:m-0 mx-2'>College Name</h2>
           <h2 className='max-w-40 flex-1 font-medium min-w-36'>
             Branch Name
           </h2>
-          <h2 className='max-w-36 flex-1 font-medium min-w-16'>
+          <h2 className='max-w-28 flex-1 font-medium min-w-16'>
             Branch Code
           </h2>
-          <h2 className='max-w-36 flex-1 font-medium min-w-24'>
+          {/* <h2 className='max-w-36 flex-1 font-medium min-w-24'>
             Cutoff
-          </h2>
-          {/* <h2 className='max-w-36 flex-1 font-medium'>
-            {searchCriteria.Category} Cutoff
           </h2> */}
+          {
+            allCasteCategories.map((cat, i) => (
+              <h2 key={i} className='max-w-16 flex-1 font-medium min-w-12'>
+                {cat.split("-")[0]}
+              </h2>
+            ))
+          }
         </div>
 
         {/* Table body */}
@@ -79,28 +108,33 @@ const CollegeInfoTable = ({ searchCriteria }) => {
               key={i}
               className='flex transition-all min-w-fit mx-1 md:min-w-[unset] justify-around items-center outline p-1.5 md:p-1 min-h-32 last-of-type:mb-1 animate-fade-in overflow-hidden bg-white outline-1 outline-gray-200 last-of-type:rounded-ee-md last-of-type:rounded-es-md'
             >
-              <h2 className='flex-1 text-sm max-w-20 min-w-16'>
+              <h2 className='flex-1 text-sm max-w-16 min-w-14'>
                 <p className='ml-2'>{i + 1}</p>
               </h2>
-              <h2 className='flex-1 text-sm max-w-32 min-w-16'>
+              <h2 className='flex-1 text-sm max-w-24 min-w-16'>
                 {college["College Code"]}
               </h2>
-              <h2 className='min-w-48 max-w-96 flex-1 text-sm'>
+              <h2 className='min-w-48 max-w-96 flex-1 md:m-0 mx-2 text-sm'>
                 {college["College Name"]}
+                <br />
+                <div className="flex h-fit gap-1 flex-wrap">
+                  {<p className="px-1.5 py-3/4 rounded-full text-xs text-cyan-600 bg-cyan-50 w-fit h-fit">{college['COLLEGE STATUS'] === "Autonomous"? 'autonomous': 'non-autonomous'}</p>}
+                  {<p className="px-1.5 py-3/4 rounded-full text-xs text-amber-500 bg-amber-50 w-fit h-fit">{college['MINORITY STATUS'] === "YES"? 'minority': 'non-minority'}</p>}
+                </div>
               </h2>
               <h2 className='max-w-40 flex-1 text-sm min-w-36 break-words'>
                 {college["Branch Name"]}
               </h2>
-              <h2 className='max-w-36 flex-1 text-sm min-w-16'>
+              <h2 className='max-w-28 flex-1 text-sm min-w-16'>
                 {college["Branch Code"]}
               </h2>
-              <h2 className='max-w-36 flex-1 text-xs min-w-24'>
-                {
-                  Object.keys(college).filter(key => key.includes('Cutoff')).map((key, i) => (
-                    <p key={i} className="mb-1">{key.split("-")[0]} — {college[key]}</p>
-                  ))
-                }
-              </h2>
+              {
+                allCasteCategories.map((key, i) => (
+                  <h2 key={i} className='max-w-16 flex-1 text-sm min-w-12'>
+                    {college[key]? (college[key].toString().includes(".")? college[key].toFixed(1): college[key]): ' '}
+                  </h2>
+                ))
+              }
             </div>
           ))}
       </div>

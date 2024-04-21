@@ -167,7 +167,7 @@ const Navbar = ({ modalOpen }) => {
               <Menu.Target>
                 <div className='flex flex-col items-center justify-center p-1.5 h-full rounded md:hidden'>
                   <Image
-                    src={session?.user?.image || "/profile-2.png"}
+                    src={session?.user?.image || "/profile-4.png"}
                     alt='profile image'
                     width={24}
                     height={24}
@@ -213,7 +213,7 @@ const Navbar = ({ modalOpen }) => {
           <div className='grid place-items-center w-20 h-20'>
             <Skeleton visible={hasSessionLoaded === "loading"} circle>
               <Image
-                src={session?.user?.image || "/profile-2.png"}
+                src={session?.user?.image || "/profile-4.png"}
                 alt='profile image'
                 width={200}
                 height={200}

@@ -188,12 +188,15 @@ const Home = () => {
               {...register("Dept", {
                 required: { value: true, message: "This field is required" },
                 validate: (value) =>
-                  (value !== "select" && UNIQUE_COURSE_NAMES.includes(value)) ||
+                  (value !== "select" && (UNIQUE_COURSE_NAMES.includes(value) || value === "All departments")) ||
                   "Invalid value selected!",
               })}
             >
               <option className='break-words w-52' value='select'>
                 Select Department
+              </option>
+              <option className='break-words w-52' value='All departments'>
+                All Departments
               </option>
               {UNIQUE_COURSE_NAMES.map((course, i) => (
                 <option className='break-words w-52' key={i} value={course}>
