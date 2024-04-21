@@ -7,35 +7,42 @@ import { FiPhoneCall } from "react-icons/fi";
 import { HiOutlineMail } from "react-icons/hi";
 import { toast } from "react-toastify";
 import { GoPaperAirplane } from "react-icons/go";
+import Image from "next/image";
+import { IoLocationOutline } from "react-icons/io5";
 
 const contactDetails = [
   {
     label: "Phone",
-    value: "+91 9392043023",
+    value: "+91 8946082559",
     icon: <FiPhoneCall size={20} />,
-    proto: 'tel:'
-  },
-  {
-    label: "Phone",
-    value: "+91 8746323626",
-    icon: <FiPhoneCall size={20} />,
-    proto: 'tel:'
+    proto: "tel:",
   },
   {
     label: "E-mail",
-    value: "example@gmail.com",
+    value: "getyourcollege.vtr@gmail.com",
     icon: <HiOutlineMail size={22} />,
-    proto: 'mailto:'
+    proto: "mailto:",
+  },
+  {
+    label: "Location",
+    sublabel: 'VTR Edu Solutions',
+    value: `No.135/A, P.H. Road, Maduravoyal, Chennai - 600 095`,
+    icon: <IoLocationOutline size={22} />,
+    proto: "https://maps.app.goo.gl/g9uN6NXpnJWqW8Ys6",
   },
 ];
 
-const ContactCard = ({ icon: Icon, label, value, proto }) => {
+const ContactCard = ({ icon: Icon, label, sublabel = null, value, proto }) => {
   return (
-    <Link className='flex md:w-[unset] w-full items-center gap-4 rounded-md shadow p-2 px-8 outline outline-1 outline-gray-100' href={proto + value} target="_blank">
+    <Link className='flex md:w-[unset] w-full items-center md:h-full gap-4 rounded-md shadow p-2 px-8 outline outline-1 outline-gray-100' 
+      href={(label == "Location")? proto: proto + value} target="_blank">
       {Icon}
       <div className='flex flex-col'>
         <h1 className='font-medium text-lg text-primary/70 ml-1'>{label}</h1>
-        <h1 className='font-normal text-base text-primary/50'>{value}</h1>
+        {
+          sublabel && <h1 className='font-medium text-base text-primary/70 ml-1'>{sublabel}</h1>
+        }
+        <h1 className={`font-normal ${sublabel ? 'text-sm': 'text-base'}  text-primary/50`}>{value}</h1>
       </div>
     </Link>
   );
@@ -72,8 +79,53 @@ const Contact = () => {
             value={c.value}
             icon={c.icon}
             proto={c.proto}
+            sublabel={c.sublabel}
           />
         ))}
+      </div>
+
+      {/* Social Links */}
+      <div className='flex gap-4 w-full items-center justify-center flex-wrap shrink-0'>
+        <a
+          href='https://www.youtube.com/@A2KDK'
+          target='_blank'
+          className='m-5'
+        >
+          <Image
+            src={"/yt.png"}
+            width={60}
+            height={60}
+            alt='Youtube Channel - Know your College'
+          />
+        </a>
+        <a href='https://instagram.com' target='_blank' className='m-5'>
+          <Image
+            src={"/ig.png"}
+            width={60}
+            height={60}
+            alt='Instagram - Know your College'
+          />
+        </a>
+        <a href='https://facebook.com' target='_blank' className='m-5'>
+          <Image
+            src={"/fb.png"}
+            width={70}
+            height={70}
+            alt='Facebook - Know your College'
+          />
+        </a>
+        <a
+          href='https://web.whatsapp.com/send?phone=8946082559&text&app_absent=0'
+          target='_blank'
+          className='m-5'
+        >
+          <Image
+            src={"/wp.png"}
+            width={70}
+            height={70}
+            alt='WhatsApp - Know your College'
+          />
+        </a>
       </div>
 
       {/* Contact form */}
@@ -151,7 +203,7 @@ const Contact = () => {
           )}
           <Button
             label={
-              <div className="flex items-center justify-center gap-3">
+              <div className='flex items-center justify-center gap-3'>
                 Send message <GoPaperAirplane />
               </div>
             }

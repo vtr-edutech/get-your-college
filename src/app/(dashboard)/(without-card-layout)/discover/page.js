@@ -1,3 +1,4 @@
+import CutoffCalculator from '@/components/CutoffCalculator';
 import Image from 'next/image'
 import React from 'react'
 
@@ -6,47 +7,10 @@ const Discover = () => {
     <div className='flex flex-col gap-4'>
       <div className='flex md:flex-row flex-col gap-4'>
         {/* Updates div */}
-        <div className='flex flex-col p-6 min-w-[60%] max-w-md rounded-md shadow-sm shadow-black/10 bg-white'>
-          <h1 className='font-semibold text-xl'>Updates</h1>
-          Connect with any of our socials to get latest updates
-          <div className='flex gap-4 w-full items-center justify-center flex-wrap shrink-0'>
-            <a href='https://youtube.com' target='_blank' className='m-5'>
-              <Image
-                src={"/yt.png"}
-                width={60}
-                height={60}
-                alt='Youtube Channel - Know your College'
-              />
-            </a>
-            <a href='https://instagram.com' target='_blank' className='m-5'>
-              <Image
-                src={"/ig.png"}
-                width={60}
-                height={60}
-                alt='Instagram - Know your College'
-              />
-            </a>
-            <a href='https://facebook.com' target='_blank' className='m-5'>
-              <Image
-                src={"/fb.png"}
-                width={70}
-                height={70}
-                alt='Facebook - Know your College'
-              />
-            </a>
-            <a
-              href='https://web.whatsapp.com/send?phone=9362667920&text&app_absent=0'
-              target='_blank'
-              className='m-5'
-            >
-              <Image
-                src={"/wp.png"}
-                width={70}
-                height={70}
-                alt='WhatsApp - Know your College'
-              />
-            </a>
-          </div>
+        <div className='flex flex-col p-6 gap-3 min-w-[60%] max-w-md rounded-md shadow-sm shadow-black/10 bg-white'>
+          <h1 className='font-semibold text-xl'>Cutoff Calculator</h1>
+          Calculate your cutoff with Physics, Chemistry and Math marks
+          <CutoffCalculator />
         </div>
 
         {/* Topics div */}
@@ -76,6 +40,8 @@ const Discover = () => {
         {/* Invisible div for height */}
         <div className='h-64'></div>
       </div>
+
+      {/* Flaoting socials */}
     </div>
   );
 }

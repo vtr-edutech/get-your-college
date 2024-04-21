@@ -49,11 +49,14 @@ const CollegeInfoTable = ({ searchCriteria }) => {
             collegeMisc["COLLEGE CODE"] == college["College Code"]
         );
         const courseNBADetails = NBAdata.find(course => ((course["COLLEGE CODE"] == college['College Code']) && (course['BRANCH'] == college['Branch Code'])))
+        console.log(college["Branch Code"], college['College Code'], courseNBADetails);
         return {
           ...college,
           "COLLEGE STATUS": collegeMiscDetails ? collegeMiscDetails["College Status"]: 'N/A',
           "MINORITY STATUS": collegeMiscDetails ? collegeMiscDetails["Minority Status"]: 'N/A',
-          "NBA": (courseNBADetails && courseNBADetails['NBA Accredited'])? typeof courseNBADetails['NBA Accredited'] == 'number'? "yes": courseNBADetails['NBA Accredited'].toString().toLowerCase() == "yes": 'NO'
+          "NBA": (courseNBADetails && courseNBADetails['NBA Accredited'])? 
+            (typeof courseNBADetails['NBA Accredited'] == 'number'? "yes": 
+              courseNBADetails['NBA Accredited'].toString().toLowerCase() == "yes"? "yes": "no"): 'no'
         };
       });
   }, [searchCriteria]);
@@ -97,7 +100,9 @@ const CollegeInfoTable = ({ searchCriteria }) => {
           <h2 className='max-w-40 flex-1 font-medium min-w-36 mx-2'>
             Branch Name
           </h2>
-          <h2 className='max-w-28 flex-1 font-medium min-w-16 mx-2'>Branch Code</h2>
+          <h2 className='max-w-28 flex-1 font-medium min-w-16 mx-2'>
+            Branch Code
+          </h2>
           {/* <h2 className='max-w-36 flex-1 font-medium min-w-24'>
             Cutoff
           </h2> */}
@@ -144,7 +149,7 @@ const CollegeInfoTable = ({ searchCriteria }) => {
                   {
                     <p className='px-1.5 cursor-default py-3/4 rounded-full text-xs text-amber-500 bg-amber-50 w-fit h-fit'>
                       {college["MINORITY STATUS"] != "N/A"
-                        ? college["MINORITY STATUS"] === "YES"
+                        ? college["MINORITY STATUS"].toLowerCase() == "yes"
                           ? "Minority"
                           : "Non-Minority"
                         : "Unknown"}
@@ -154,15 +159,16 @@ const CollegeInfoTable = ({ searchCriteria }) => {
               </h2>
               <h2 className='max-w-40 flex-1 text-sm min-w-36 break-words mx-2'>
                 {college["Branch Name"]}
-              </h2>
-              <h2 className='max-w-28 flex-1 flex gap-1 items-center text-sm min-w-16 mx-2'>
-                {college["Branch Code"]}
-                {college["NBA"] ? (
-                  <Tooltip label='NBA Accredited' withArrow styles={{
-                    tooltip: {
-                      fontSize: '12px',
-                    }
-                  }}>
+                {college["NBA"] != "no" ? (
+                  <Tooltip
+                    label='NBA Accredited'
+                    withArrow
+                    styles={{
+                      tooltip: {
+                        fontSize: "12px",
+                      },
+                    }}
+                  >
                     <p className='px-1.5 py-3/4 rounded-full text-xs text-violet-500 bg-violet-50 w-fit h-fit cursor-default'>
                       NBA
                     </p>
@@ -170,6 +176,9 @@ const CollegeInfoTable = ({ searchCriteria }) => {
                 ) : (
                   <></>
                 )}
+              </h2>
+              <h2 className='max-w-28 flex-1 flex gap-1 items-center text-sm min-w-16 mx-2'>
+                {college["Branch Code"]}
               </h2>
               {allCasteCategories.map((key, i) => (
                 <h2
