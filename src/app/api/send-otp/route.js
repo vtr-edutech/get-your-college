@@ -8,19 +8,15 @@ import { NextResponse } from "next/server"
 export async function POST(req) {
     try {
         const { mobile } = await req.json();
-
-        console.log(mobile);
-
         await dbConnect();
         
-        // Mock test send invalid number
         if (!(/^[6-9]\d{9}$/.test(mobile))) return NextResponse.json({ error: 'Invalid mobile number' }, { status: 403 });
         
         const randomNumber = generateOTP();
         const smsRequest = await axios.get(
           `https://sms.textmysms.com/app/smsapi/index.php?key=${SMS_API_KEY}&campaign=0&routeid=13&type=text&contacts=${mobile}&senderid=${SMS_FROM}&msg=${encodeURIComponent(`GetYourCollege OTP for login is ${randomNumber} Hexcon`)}`
         );
-        console.log("🚀 ~ POST ~ smsRequest:", smsRequest.data)
+        console.log("🚀 ~ POST ~ smsRequest:", smsRequest.data, " for ", mobile);
 
         if (!smsRequest.data.startsWith("SMS-SHOOT-ID")) {
           return NextResponse.json({ error: "Server error in sending OTP" }, { status: 500 });

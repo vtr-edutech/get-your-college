@@ -7,17 +7,8 @@ import dbConnect from "@/utils/db";
 
 export async function POST(req) {
   try {
-    const { firstName, lastName, group, gender, email, distrct, dob, pincode } =
+    const { firstName, lastName, group, gender, email, district, dob, pincode } =
       await req.json();
-    // console.log(
-    //   "🚀 ~ POST ~ firstName, lastName, group, gender, email, address:",
-    //   firstName,
-    //   lastName,
-    //   group,
-    //   gender,
-    //   email,
-    //   address
-    // );
 
     const userSession = await getServerSession(authOptions);
     const userId = userSession?.user?.id;
@@ -33,7 +24,7 @@ export async function POST(req) {
     await dbConnect();
 
     const userData = await UserModel.findOne({ _id: userId });
-    console.log("🚀 ~ POST ~ userData:", userData)
+    console.log("🚀 ~ POST ~ userData:", userData.mobile, " has updated info")
     if (!userData)
       return NextResponse.json(
         {
@@ -44,7 +35,7 @@ export async function POST(req) {
 
     userData.firstName = firstName;
     userData.lastName = lastName;
-    userData.distrct = distrct;
+    userData.distrct = district;
     userData.pincode = pincode;
     userData.dob = dob;
     userData.gender = gender;

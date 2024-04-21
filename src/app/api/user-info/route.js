@@ -32,7 +32,7 @@ export async function GET() {
   } catch (error) {
     console.log("🚀 ~ GET ~ error:", error);
     return NextResponse.json(
-      { message: "Server error in getting user info. Please try again later." },
+      { error: "Server error in getting user info. Please try again later." },
       { status: 500 }
     );
   }

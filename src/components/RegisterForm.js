@@ -49,14 +49,16 @@ const RegisterForm = ({ closeFn }) => {
         }
         dispatch(setUserData(userInfoRequest.data.user));
       } catch (error) {
-        toast.error(error.response.data.error ?? error.message);
+        toast.error(error.response.data.error ?? error.error);
       }
     };
     console.log(userInfo);
-    if (!userInfo.firstName) {
+    if (!userInfo.firstName && !hasFetched) {
        fetchUserInfo();
     } else {
-      setIsChecked(true)
+      const dob = userInfo.dob? new Date(userInfo.dob): '';
+      const dobToSet = dob? `${new Date(userInfo.dob).getFullYear()}-${new Date(userInfo.dob).getMonth()+1}-${new Date(userInfo.dob).getDate().toString().padStart(2, '0')}`: '';
+      console.log('DOB: ', dobToSet);
       reset({
         firstName: userInfo.firstName ?? "",
         lastName: userInfo.lastName ?? "",
@@ -65,10 +67,11 @@ const RegisterForm = ({ closeFn }) => {
         group: userInfo.group ?? "",
         district: userInfo.district ?? "",
         pincode: userInfo.pincode ?? "",
-        dob: userInfo.dob ?? "",
+        dob: dobToSet
       });
+      setIsChecked(true)
     }
-  }, []);
+  }, [userInfo.firstName]);
 
   const onSubmit = async (data) => {
     if (Object.keys(errors).length === 0) {
@@ -280,7 +283,7 @@ const RegisterForm = ({ closeFn }) => {
             type='date'
             placeholder='DD/MM/YYYY'
             className='w-full placeholder:text-sm rounded-md bg-input px-3 py-2 focus:outline-1 focus:outline-gray-300'
-            // defaultValue={userInfo.address ?? ""}
+            // defaultValue={userInfo.dob ? `: ''}
           />
           {errors["dob"] && (
             <p className='text-xs text-red-500 font-light'>
