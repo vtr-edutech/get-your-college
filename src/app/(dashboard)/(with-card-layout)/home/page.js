@@ -51,7 +51,7 @@ const Home = () => {
           },
           { shouldFocus: true }
         );
-        setSearchCriteria(null);
+        // setSearchCriteria(null);
         return;
       }
       const chosenYear = yearInputRef.current.value;

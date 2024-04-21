@@ -49,6 +49,7 @@ const Report = () => {
           },
           { shouldFocus: true }
         );
+        return
       }
       typeof window !== "undefined" && localStorage.setItem("Cat", data.Category);
       setSearchCriteria(data);
