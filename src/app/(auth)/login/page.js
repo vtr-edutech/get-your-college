@@ -63,7 +63,7 @@ const Login = () => {
           Provide your mobile number to send OTP
         </p>
         <input
-          type='text'
+          type='tel'
           inputMode='numeric'
           ref={mobileInputRef}
           onInput={(e) =>

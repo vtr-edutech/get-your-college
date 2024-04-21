@@ -5,22 +5,17 @@ import { cn } from "@/utils";
 import { Checkbox } from "@mantine/core";
 import axios from "axios";
 import { signOut, useSession } from "next-auth/react";
-import { useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { useDispatch, useSelector } from "react-redux";
 import { toast } from "react-toastify";
 
 const RegisterForm = ({ closeFn }) => {
-  // console.log("🚀 ~ RegisterForm ~ closeFn:", closeFn)
-  const router = useRouter();
-
   const dispatch = useDispatch();
   const userInfo = useSelector((state) => state.userInfo.user);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isChecked, setIsChecked] = useState(false);
   const [hasFetched, setHasFetched] = useState(false);
-  console.log("🚀 ~ Global State ~ userInfo:", userInfo);
 
   const {
     register,
@@ -45,7 +40,7 @@ const RegisterForm = ({ closeFn }) => {
         //   address: userInfoRequest.address,
         // });
         if (!userInfoRequest.data.user?.firstName) {
-          return setHasFetched(true)
+          return setHasFetched(true);
         }
         dispatch(setUserData(userInfoRequest.data.user));
       } catch (error) {
@@ -54,11 +49,15 @@ const RegisterForm = ({ closeFn }) => {
     };
     console.log(userInfo);
     if (!userInfo.firstName && !hasFetched) {
-       fetchUserInfo();
+      fetchUserInfo();
     } else {
-      const dob = userInfo.dob? new Date(userInfo.dob): '';
-      const dobToSet = dob? `${new Date(userInfo.dob).getFullYear()}-${new Date(userInfo.dob).getMonth()+1}-${new Date(userInfo.dob).getDate().toString().padStart(2, '0')}`: '';
-      console.log('DOB: ', dobToSet);
+      const dob = userInfo.dob ? new Date(userInfo.dob) : "";
+      const dobToSet = dob
+        ? `${new Date(userInfo.dob).getFullYear()}-${
+            new Date(userInfo.dob).getMonth() + 1
+          }-${new Date(userInfo.dob).getDate().toString().padStart(2, "0")}`
+        : "";
+      console.log("DOB: ", dobToSet);
       reset({
         firstName: userInfo.firstName ?? "",
         lastName: userInfo.lastName ?? "",
@@ -67,9 +66,9 @@ const RegisterForm = ({ closeFn }) => {
         group: userInfo.group ?? "",
         district: userInfo.district ?? "",
         pincode: userInfo.pincode ?? "",
-        dob: dobToSet
+        dob: dobToSet,
       });
-      setIsChecked(true)
+      setIsChecked(true);
     }
   }, [userInfo.firstName]);
 
@@ -77,10 +76,10 @@ const RegisterForm = ({ closeFn }) => {
     if (Object.keys(errors).length === 0) {
       console.log(data);
       if (JSON.stringify(data) == JSON.stringify(userInfo)) {
-        toast.info("Already submitted")
-        closeFn()
-        return
-      };
+        toast.info("Already submitted");
+        closeFn();
+        return;
+      }
       try {
         setIsSubmitting(true);
         const registerReq = await axios.post("/api/register", data);
@@ -295,9 +294,13 @@ const RegisterForm = ({ closeFn }) => {
         {/* Temporarily disabling this, maybe enable later if client needs */}
         {/* Agree or not */}
         <div className='flex gap-2 items-start'>
-          <Checkbox label='I authorize &apos;Get Your Colleges&apos; to contact me regarding
+          <Checkbox
+            label="I authorize 'Get Your Colleges' to contact me regarding
             events, updates and admission support via Email, SMS and Whatsapp
-            calls.' checked={isChecked} onChange={() => setIsChecked(!isChecked)} />
+            calls."
+            checked={isChecked}
+            onChange={() => setIsChecked(!isChecked)}
+          />
         </div>
         <Button
           label={"Confirm Details"}

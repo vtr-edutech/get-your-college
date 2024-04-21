@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useEffect, useMemo } from "react";
+import React, { useMemo } from "react";
 import {
   IoSettingsOutline,
   IoBookOutline,
@@ -12,7 +12,7 @@ import { GoSearch } from "react-icons/go";
 import { TbReportAnalytics } from "react-icons/tb";
 import { LuPhone } from "react-icons/lu";
 import { usePathname, useSearchParams } from "next/navigation";
-import { signOut, useSession } from "next-auth/react";
+import { useSession } from "next-auth/react";
 import { Accordion, Combobox, Menu, Skeleton, useCombobox } from "@mantine/core";
 import { useDispatch, useSelector } from "react-redux";
 import { selectCategory } from "@/store/collegeCategorySlice";
@@ -56,7 +56,7 @@ const Vr = ({ mt }) => {
   );
 };
 
-const Navbar = ({ modalOpen }) => {
+const Navbar = ({ modalOpen, logoutOpen }) => {
   const currentPathName = usePathname();
   const currentSubCategoryType = useSearchParams().get('t');
 
@@ -186,7 +186,7 @@ const Navbar = ({ modalOpen }) => {
                   </div>
                 </Menu.Item>
                 <Menu.Label> </Menu.Label>
-                <Menu.Item onClick={() => signOut()}>
+                <Menu.Item onClick={logoutOpen}>
                   <p className='text-red-400'>Logout</p>
                 </Menu.Item>
               </Menu.Dropdown>
@@ -362,7 +362,7 @@ const Navbar = ({ modalOpen }) => {
         {/* Logout */}
         <div className='flex p-5'>
           <button
-            onClick={() => signOut()}
+            onClick={logoutOpen}
             className='flex gap-2 text-red-400 font-medium items-center'
           >
             <MdLogout size={18} />

@@ -1,13 +1,24 @@
 import { usePagination } from "@mantine/hooks";
 import colleges from "../utils/collegeData";
 import { useEffect, useMemo } from "react";
-import { Pagination } from "@mantine/core";
+import { Pagination, Tooltip } from "@mantine/core";
 import { districtData } from "@/utils/collegeDistrictData";
+import { NBAdata } from "@/utils/collegeCourseNBAData";
 
 const PAGE_SIZE = 10;
-const allCasteCategories = Object.keys(colleges[0]).filter((key) =>
+const allCasteCategories = Object.keys(colleges[1]).filter((key) =>
   key.includes("Cutoff")
 );
+
+const communityColors = [
+  'text-amber-500',
+  'text-cyan-500',
+  'text-fuchsia-500',
+  'text-lime-500',
+  'text-yellow-500',
+  'text-emerald-500',
+  'text-blue-500',
+]
 
 /* if sorting is needed, then create an object right here that says */
 
@@ -37,12 +48,12 @@ const CollegeInfoTable = ({ searchCriteria }) => {
           (collegeMisc) =>
             collegeMisc["COLLEGE CODE"] == college["College Code"]
         );
-        // console.log("misc: ", collegeMiscDetails, college["College Code"]);
-        if (!collegeMiscDetails) return college;
+        const courseNBADetails = NBAdata.find(course => ((course["COLLEGE CODE"] == college['College Code']) && (course['BRANCH'] == college['Branch Code'])))
         return {
           ...college,
-          "COLLEGE STATUS": collegeMiscDetails["College Status"],
-          "MINORITY STATUS": collegeMiscDetails["Minority Status"],
+          "COLLEGE STATUS": collegeMiscDetails ? collegeMiscDetails["College Status"]: 'N/A',
+          "MINORITY STATUS": collegeMiscDetails ? collegeMiscDetails["Minority Status"]: 'N/A',
+          "NBA": (courseNBADetails && courseNBADetails['NBA Accredited'])? typeof courseNBADetails['NBA Accredited'] == 'number'? "yes": courseNBADetails['NBA Accredited'].toString().toLowerCase() == "yes": 'NO'
         };
       });
   }, [searchCriteria]);
@@ -77,24 +88,27 @@ const CollegeInfoTable = ({ searchCriteria }) => {
       <div className='overflow-x-scroll md:overflow-x-hidden flex flex-col mt-6 w-full transition-all'>
         <div className='flex justify-around min-w-fit md:min-w-[unset] items-center mt-1 mx-1 p-1.5 md:p-3 rounded-se-lg rounded-ss-lg outline outline-1 outline-gray-200 shadow sticky top-0 bg-white'>
           <h2 className='flex-1 font-medium max-w-16 min-w-14'>S.No.</h2>
-          <h2 className='flex-1 font-medium max-w-24 min-w-16'>College Code</h2>
-          <h2 className='min-w-48 max-w-96 flex-1 font-medium md:m-0 mx-2'>College Name</h2>
-          <h2 className='max-w-40 flex-1 font-medium min-w-36'>
+          <h2 className='flex-1 font-medium max-w-24 min-w-16 md:mx-2'>
+            College Code
+          </h2>
+          <h2 className='min-w-52 max-w-96 flex-1 font-medium md:m-0 mx-2'>
+            College Name
+          </h2>
+          <h2 className='max-w-40 flex-1 font-medium min-w-36 mx-2'>
             Branch Name
           </h2>
-          <h2 className='max-w-28 flex-1 font-medium min-w-16'>
-            Branch Code
-          </h2>
+          <h2 className='max-w-28 flex-1 font-medium min-w-16 mx-2'>Branch Code</h2>
           {/* <h2 className='max-w-36 flex-1 font-medium min-w-24'>
             Cutoff
           </h2> */}
-          {
-            allCasteCategories.map((cat, i) => (
-              <h2 key={i} className='max-w-16 flex-1 font-medium min-w-12'>
-                {cat.split("-")[0]}
-              </h2>
-            ))
-          }
+          {allCasteCategories.map((cat, i) => (
+            <h2
+              key={i}
+              className={`max-w-16 flex-1 font-medium min-w-12 ${communityColors[i]}`}
+            >
+              {cat.split("-")[0]}
+            </h2>
+          ))}
         </div>
 
         {/* Table body */}
@@ -111,35 +125,74 @@ const CollegeInfoTable = ({ searchCriteria }) => {
               <h2 className='flex-1 text-sm max-w-16 min-w-14'>
                 <p className='ml-2'>{i + 1}</p>
               </h2>
-              <h2 className='flex-1 text-sm max-w-24 min-w-16'>
+              <h2 className='flex-1 text-sm max-w-24 min-w-16 md:mx-2'>
                 {college["College Code"]}
               </h2>
-              <h2 className='min-w-48 max-w-96 flex-1 md:m-0 mx-2 text-sm'>
+              <h2 className='min-w-52 max-w-96 flex-1 md:m-0 mx-2 text-sm'>
                 {college["College Name"]}
                 <br />
-                <div className="flex h-fit gap-1 flex-wrap">
-                  {<p className="px-1.5 py-3/4 rounded-full text-xs text-cyan-600 bg-cyan-50 w-fit h-fit">{college['COLLEGE STATUS'] === "Autonomous"? 'autonomous': 'non-autonomous'}</p>}
-                  {<p className="px-1.5 py-3/4 rounded-full text-xs text-amber-500 bg-amber-50 w-fit h-fit">{college['MINORITY STATUS'] === "YES"? 'minority': 'non-minority'}</p>}
+                <div className='flex h-fit gap-1 mt-1 flex-wrap'>
+                  {
+                    <p className='px-1.5 py-3/4 rounded-full text-xs text-cyan-600 bg-cyan-50 w-fit h-fit cursor-default'>
+                      {college["COLLEGE STATUS"] != "N/A"
+                        ? college["COLLEGE STATUS"] === "Autonomous"
+                          ? "Autonomous"
+                          : "Non-Autonomous"
+                        : "Unknown"}
+                    </p>
+                  }
+                  {
+                    <p className='px-1.5 cursor-default py-3/4 rounded-full text-xs text-amber-500 bg-amber-50 w-fit h-fit'>
+                      {college["MINORITY STATUS"] != "N/A"
+                        ? college["MINORITY STATUS"] === "YES"
+                          ? "Minority"
+                          : "Non-Minority"
+                        : "Unknown"}
+                    </p>
+                  }
                 </div>
               </h2>
-              <h2 className='max-w-40 flex-1 text-sm min-w-36 break-words'>
+              <h2 className='max-w-40 flex-1 text-sm min-w-36 break-words mx-2'>
                 {college["Branch Name"]}
               </h2>
-              <h2 className='max-w-28 flex-1 text-sm min-w-16'>
+              <h2 className='max-w-28 flex-1 flex gap-1 items-center text-sm min-w-16 mx-2'>
                 {college["Branch Code"]}
+                {college["NBA"] ? (
+                  <Tooltip label='NBA Accredited' withArrow styles={{
+                    tooltip: {
+                      fontSize: '12px',
+                    }
+                  }}>
+                    <p className='px-1.5 py-3/4 rounded-full text-xs text-violet-500 bg-violet-50 w-fit h-fit cursor-default'>
+                      NBA
+                    </p>
+                  </Tooltip>
+                ) : (
+                  <></>
+                )}
               </h2>
-              {
-                allCasteCategories.map((key, i) => (
-                  <h2 key={i} className='max-w-16 flex-1 text-sm min-w-12'>
-                    {college[key]? (college[key].toString().includes(".")? college[key].toFixed(1): college[key]): ' '}
-                  </h2>
-                ))
-              }
+              {allCasteCategories.map((key, i) => (
+                <h2
+                  key={i}
+                  className={`max-w-16 flex-1 text-sm min-w-12 ${communityColors[i]}`}
+                >
+                  {college[key]
+                    ? college[key].toString().includes(".")
+                      ? college[key].toFixed(1)
+                      : college[key]
+                    : " "}
+                </h2>
+              ))}
             </div>
           ))}
       </div>
       <div className='w-full md:self-end self-start md:flex-row flex-col flex'>
-        {searchCriteria.searchKey.trim() !== '' && <p className="ml-2"><span className="font-medium">{collegesAfterFiltering.length}</span> college(s) found</p>}
+        {searchCriteria.searchKey.trim() !== "" && (
+          <p className='ml-2'>
+            <span className='font-medium'>{collegesAfterFiltering.length}</span>{" "}
+            college(s) found
+          </p>
+        )}
         <Pagination
           total={parseInt(collegesAfterFiltering.length / PAGE_SIZE) + 1}
           value={pagination.active}

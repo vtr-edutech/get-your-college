@@ -70,7 +70,7 @@ const Home = () => {
         Enter 12th Cut-Off marks and choose Category
       </h3>
       <form
-        className='flex flex-col mt-2 md:w-full md:px-28 gap-6 justify-start'
+        className='flex flex-col mt-2 md:w-full md:px-[7.5rem] gap-6 justify-start'
         onSubmit={handleSubmit(searchSubmission)}
       >
         {/* Category and Years container */}
@@ -242,7 +242,7 @@ const Home = () => {
               </p>
             )}
           </div>
-          <button className='bg-fill-black text-center col-span-2 w-full md:px-6 py-1.5 text-lg rounded flex gap-2 text-white items-center justify-center md:ml-2'>
+          <button className='bg-fill-black text-center col-span-2 w-full md:w-fit md:px-6 py-1.5 text-lg rounded flex gap-2 text-white items-center justify-center md:ml-2'>
             <LuSearch />
             <p>Go</p>
           </button>
