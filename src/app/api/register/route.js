@@ -35,7 +35,7 @@ export async function POST(req) {
 
     userData.firstName = firstName;
     userData.lastName = lastName;
-    userData.distrct = district;
+    userData.district = district;
     userData.pincode = pincode;
     userData.dob = dob;
     userData.gender = gender;

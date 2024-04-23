@@ -34,7 +34,7 @@ const contactDetails = [
 
 const ContactCard = ({ icon: Icon, label, sublabel = null, value, proto }) => {
   return (
-    <Link className='flex md:w-[unset] w-full items-center md:h-full gap-4 rounded-md shadow p-2 px-8 outline outline-1 outline-gray-100' 
+    <Link className='flex md:w-[unset] shrink-0 w-full items-center md:h-full gap-4 rounded-md shadow p-2 px-3 md:px-8 outline outline-1 outline-gray-100' 
       href={(label == "Location")? proto: proto + value} target="_blank">
       {Icon}
       <div className='flex flex-col'>

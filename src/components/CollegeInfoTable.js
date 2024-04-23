@@ -6,7 +6,7 @@ import { districtData } from "@/utils/collegeDistrictData";
 import { NBAdata } from "@/utils/collegeCourseNBAData";
 
 const PAGE_SIZE = 10;
-const allCasteCategories = Object.keys(colleges[1]).filter((key) =>
+const allCasteCategories = Object.keys(colleges['GC'][1]).filter((key) =>
   key.includes("Cutoff")
 );
 
@@ -28,11 +28,14 @@ const CollegeInfoTable = ({ searchCriteria }) => {
       1. break each word, check if each word is in the college['college name'] and college['branch name'] combined,
       2. if not check if either of the split words are in college['college name'] and college['branch name'] 
       3. else, default checking like as already implemented
-  */
+      */
+  // console.log("criteria file: ",searchCriteria);
   const collegesAfterFiltering = useMemo(() => {
     var collegeData = [];
-    if (!searchCriteria || searchCriteria?.searchKey == "") collegeData = colleges;
-    collegeData = colleges.filter((college) =>
+    // console.log("criteria memo: ",searchCriteria);
+    if (!searchCriteria || !searchCriteria?.cutoffCategory) return collegeData;
+    if (!searchCriteria || searchCriteria?.searchKey == "") collegeData = colleges[searchCriteria.cutoffCategory];
+    collegeData = colleges[searchCriteria.cutoffCategory].filter((college) =>
       (
         college["College Name"] +
         college["Branch Name"] +
@@ -49,11 +52,11 @@ const CollegeInfoTable = ({ searchCriteria }) => {
             collegeMisc["COLLEGE CODE"] == college["College Code"]
         );
         const courseNBADetails = NBAdata.find(course => ((course["COLLEGE CODE"] == college['College Code']) && (course['BRANCH'] == college['Branch Code'])))
-        console.log(college["Branch Code"], college['College Code'], courseNBADetails);
+        // console.log(college["Branch Code"], college['College Code'], courseNBADetails);
         return {
           ...college,
           "COLLEGE STATUS": collegeMiscDetails ? collegeMiscDetails["College Status"]: 'N/A',
-          "MINORITY STATUS": collegeMiscDetails ? collegeMiscDetails["Minority Status"]: 'N/A',
+          "MINORITY STATUS": (collegeMiscDetails && collegeMiscDetails['Minority Status']) ? collegeMiscDetails["Minority Status"]: 'N/A',
           "NBA": (courseNBADetails && courseNBADetails['NBA Accredited'])? 
             (typeof courseNBADetails['NBA Accredited'] == 'number'? "yes": 
               courseNBADetails['NBA Accredited'].toString().toLowerCase() == "yes"? "yes": "no"): 'no'
@@ -94,7 +97,7 @@ const CollegeInfoTable = ({ searchCriteria }) => {
           <h2 className='flex-1 font-medium max-w-24 min-w-16 md:mx-2'>
             College Code
           </h2>
-          <h2 className='min-w-52 max-w-96 flex-1 font-medium md:m-0 mx-2'>
+          <h2 className='min-w-52 max-w-96 flex-1 font-medium mx-2'>
             College Name
           </h2>
           <h2 className='max-w-40 flex-1 font-medium min-w-36 mx-2'>
@@ -133,7 +136,7 @@ const CollegeInfoTable = ({ searchCriteria }) => {
               <h2 className='flex-1 text-sm max-w-24 min-w-16 md:mx-2'>
                 {college["College Code"]}
               </h2>
-              <h2 className='min-w-52 max-w-96 flex-1 md:m-0 mx-2 text-sm'>
+              <h2 className='min-w-52 max-w-96 flex-1 mx-2 text-sm'>
                 {college["College Name"]}
                 <br />
                 <div className='flex h-fit gap-1 mt-1 flex-wrap'>

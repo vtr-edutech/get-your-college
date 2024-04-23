@@ -273,6 +273,7 @@ export const districtData = [
       "J N N Institute of Engineering  Ushaa Garden  Kannigaipair Village  Uthukottai Taluk  Thiruvallur District 601102",
     "District ": "Thiruvallur",
     "College Status": "No",
+    "Minority Status": "Yes"
   },
   {
     "S.No": 27,
@@ -821,6 +822,17 @@ export const districtData = [
     "College Status": "No",
     "Minority Status": "No",
     "Year of Starting": 2009,
+    "NBA Accredited": "No",
+  },
+  {
+    "S.No": 78.5,
+    "COLLEGE CODE": 1398,
+    "COLLEGE NAME":
+      "Chennai Institute of Technology and Applied Research Sarathy Nagar Puthuper Village Kundrathur Chennai 600069",
+    "District ": "Kancheepuram",
+    "College Status": "Non-Autonomous",
+    "Minority Status": "Yes",
+    "Year of Starting": 2010,
     "NBA Accredited": "No",
   },
   {

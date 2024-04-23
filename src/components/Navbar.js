@@ -110,7 +110,7 @@ const Navbar = ({ modalOpen, logoutOpen }) => {
               <Menu.Dropdown>
                 {COLLEGE_CATEGORIES.map((collegeCategory, k) => (
                   <>
-                    <Menu.Label key={k}>{collegeCategory.name}</Menu.Label>
+                    <Menu.Label key={k+10}>{collegeCategory.name}</Menu.Label>
                     {collegeCategory.subcategories.map((subCat, l) => (
                       <Menu.Item key={subCat.value}>
                         <Link

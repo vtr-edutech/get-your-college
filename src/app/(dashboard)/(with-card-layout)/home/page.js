@@ -1,12 +1,12 @@
 "use client";
 import Image from "next/image";
-import React, { Suspense, lazy, useMemo, useRef, useState } from "react";
+import React, { Suspense, lazy, useEffect, useMemo, useRef, useState } from "react";
 import { useForm } from "react-hook-form";
 import { LuSearch } from "react-icons/lu";
 import { UNIQUE_COURSE_NAMES } from '@/utils/collegeData'
 import { Combobox, SegmentedControl, Select, useCombobox } from "@mantine/core";
 import SkeletonLoader from "@/components/SkeletonLoader";
-import { ALL_DISTRICT } from "@/utils/collegeDistrictData";
+import { ALL_DISTRICT } from "@/utils/collegeDistrictData";import { getWindowSize } from "@/utils";
 
 const CollegesTable = lazy(() => import("@/components/CollegesTable"));
 
@@ -19,6 +19,11 @@ const Home = () => {
   } = useForm();
   const yearInputRef = useRef();
   const cutoffCategoryRef = useRef();
+
+  /* setting window height to this because it doesn make huge diff between 100% and 20rem, so phone la 100% also ok, 20rem also ok
+   * but it sucks when initially window size is less than 768, if so, there is a jerk when actual size is calculated in useffect 
+  */
+  const [windowSize, setwindowSize] = useState({ width: 1230, height: 1234 })
 
   const [searchCriteria, setSearchCriteria] = useState({ cutoffCategory: 'GC', filterBy: 'Cutoff', searchKey: '', districtKey: '' });
   const districtCombobox = useCombobox({
@@ -39,6 +44,11 @@ const Home = () => {
       )),
     [searchCriteria.districtKey]
   );
+
+  useEffect(() => {
+    setwindowSize(getWindowSize())
+  }, [])
+
   const searchSubmission = async (data) => {
     if (Object.keys(data).length !== 0) {
       console.log(data);
@@ -55,9 +65,9 @@ const Home = () => {
         return;
       }
       const chosenYear = yearInputRef.current.value;
-      const chosenCutoffCategory = cutoffCategoryRef.current;
-      console.log("🚀 ~ searchSubmission ~ chosenCutoffCategory:", chosenCutoffCategory)
-      setSearchCriteria({ ...searchCriteria, ...data, year: chosenYear,});
+      // const chosenCutoffCategory = cutoffCategoryRef.current;
+      // console.log("🚀 ~ searchSubmission ~ chosenCutoffCategory:", chosenCutoffCategory)
+      setSearchCriteria({ ...searchCriteria, ...data, year: chosenYear });
     }
   };
 
@@ -76,12 +86,12 @@ const Home = () => {
         {/* Category and Years container */}
         <div className='flex flex-col md:flex-row gap-2 justify-start items-start md:items-center md:gap-16'>
           {/* Cutoff Category choose */}
-          <div className='flex flex-col justify-center gap-1'>
+          <div className='flex flex-col justify-center gap-1 w-full md:w-[unset]'>
             <p className='font-normal text-sm'>Cutoff category:</p>
             <SegmentedControl
               ref={cutoffCategoryRef}
               withItemsBorders={false}
-              styles={{ root: { width: "20rem" } }}
+              styles={{ root: { width: (windowSize.width != -1 && windowSize.width < 768)? "100%": "20rem" } }}
               value={searchCriteria?.cutoffCategory || "GC"}
               onChange={(value) =>
                 setSearchCriteria((prev) => ({
@@ -102,6 +112,7 @@ const Home = () => {
                 {
                   label: "Vocational",
                   value: "VOC",
+                  disabled: true
                 },
               ]}
             />

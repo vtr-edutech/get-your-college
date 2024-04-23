@@ -16,6 +16,8 @@ const RegisterForm = ({ closeFn }) => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isChecked, setIsChecked] = useState(false);
   const [hasFetched, setHasFetched] = useState(false);
+  console.log("🚀 ~ RegisterForm ~ userInfo:", userInfo)
+  console.log("🚀 ~ RegisterForm ~ hasFetched:", hasFetched)
 
   const {
     register,
@@ -31,23 +33,22 @@ const RegisterForm = ({ closeFn }) => {
       try {
         const userInfoRequest = await axios.get("/api/user-info");
         console.log("🚀 ~ Fetched ~ userInfo:", userInfoRequest);
-        // reset({
-        //   firstName: userInfoRequest.firstName,
-        //   lastName: userInfoRequest.lastName,
-        //   email: userInfoRequest.email,
-        //   gender: userInfoRequest.gender,
-        //   group: userInfoRequest.group,
-        //   address: userInfoRequest.address,
-        // });
-        if (!userInfoRequest.data.user?.firstName) {
-          return setHasFetched(true);
+        
+        if (userInfoRequest.data.user && !(userInfoRequest.data.user.firstName)) {
+          console.log("DB la new user");
+        } else {
+          dispatch(setUserData(userInfoRequest.data.user));
         }
-        dispatch(setUserData(userInfoRequest.data.user));
       } catch (error) {
         toast.error(error.response.data.error ?? error.error);
+      } finally {
+        console.log("finally set true");
+        setHasFetched(true);
       }
     };
-    console.log(userInfo);
+
+    console.log("inside effect", userInfo);
+
     if (!userInfo.firstName && !hasFetched) {
       fetchUserInfo();
     } else {
@@ -57,20 +58,21 @@ const RegisterForm = ({ closeFn }) => {
             new Date(userInfo.dob).getMonth() + 1
           }-${new Date(userInfo.dob).getDate().toString().padStart(2, "0")}`
         : "";
-      console.log("DOB: ", dobToSet);
-      reset({
-        firstName: userInfo.firstName ?? "",
-        lastName: userInfo.lastName ?? "",
-        email: userInfo.email ?? "",
-        gender: userInfo.gender ?? "",
-        group: userInfo.group ?? "",
-        district: userInfo.district ?? "",
-        pincode: userInfo.pincode ?? "",
-        dob: dobToSet,
-      });
-      setIsChecked(true);
+        setIsChecked(true);
+        setHasFetched(true);
+        reset({
+          firstName: userInfo.firstName ?? "",
+          lastName: userInfo.lastName ?? "",
+          email: userInfo.email ?? "",
+          gender: userInfo.gender ?? "",
+          group: userInfo.group ?? "",
+          district: userInfo.district ?? "",
+          pincode: userInfo.pincode ?? "",
+          dob: dobToSet,
+        });
+        console.log("has been reset");
     }
-  }, [userInfo.firstName]);
+  }, [userInfo]);
 
   const onSubmit = async (data) => {
     if (Object.keys(errors).length === 0) {
@@ -106,9 +108,9 @@ const RegisterForm = ({ closeFn }) => {
     <div className='flex flex-col items-center w-full'>
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className={cn("flex flex-col gap-4 w-full", {
-          "opacity-50 pointer-events-none": !userInfo.firstName || hasFetched,
-        })}
+        className={`flex flex-col gap-4 w-full ${
+          (!hasFetched) ? 'opacity-50 pointer-events-none': ''
+        }`}
       >
         {/* First name input */}
         <div className='flex flex-col gap-1'>

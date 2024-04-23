@@ -28,7 +28,7 @@ const ReportTable = ({ searchCriteria }) => {
 
   const collegesAfterFiltering = useMemo(
     () =>
-      collegeData
+      collegeData['GC'] // for now its GC, later keep it as selectable
         .filter(
           (college) =>
             (college[`${searchCriteria?.Category} - Cutoff`] >=

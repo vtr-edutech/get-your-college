@@ -78,4 +78,12 @@ export function generateOTP() {
     OTP += digits[Math.floor(Math.random() * len)];
   }
   return OTP;
-} 
+}
+
+export const getWindowSize = () => {
+  const isWindowDefined = typeof window !== "undefined";
+  return {
+    height: isWindowDefined ? window.innerHeight : -1,
+    width: isWindowDefined ? window.innerWidth : -1,
+  };
+};

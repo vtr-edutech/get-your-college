@@ -9,7 +9,7 @@ function CutoffCalculator() {
   const mRef = useRef();
   return (
     <>
-      <div className='flex gap-2 h-min'>
+      <div className='md:flex md:gap-2 md:h-min md:flex-row grid grid-rows-2 grid-cols-3 gap-2'>
         <input
           type='number'
           className='bg-card p-2 md:w-40 h-min max-w-44  rounded-md focus:outline-1 focus:outline-gray-200'
@@ -36,7 +36,7 @@ function CutoffCalculator() {
         />
         <Button
           label={"Calculate"}
-          className='py-1'
+          className='py-1 col-span-3'
           asButton
           onClick={() => {
             setCutoff(((parseFloat(pRef.current.value)/2) + (parseFloat(cRef.current.value)/2) + parseFloat(mRef.current.value)).toFixed(2))

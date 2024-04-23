@@ -42,7 +42,7 @@ const Colleges = () => {
       />
       <ContentCard>
         <Suspense fallback={<SkeletonLoader rows={10} />}>
-          <CollegeInfoTable searchCriteria={{ searchKey: collegeSearchKey }} />
+          <CollegeInfoTable searchCriteria={{ searchKey: collegeSearchKey, cutoffCategory: 'GC' }} />
         </Suspense>
       </ContentCard>
     </>
