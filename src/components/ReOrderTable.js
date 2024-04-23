@@ -2,7 +2,7 @@ import { Reorder } from "framer-motion";
 import React from "react";
 
 const ReOrderTable = ({ collegPrefernces, setCollegPrefernces }) => {
-
+  
   return (
     <Reorder.Group
       axis='y'
@@ -10,7 +10,7 @@ const ReOrderTable = ({ collegPrefernces, setCollegPrefernces }) => {
       onReorder={setCollegPrefernces}
       className='reorder-container flex flex-col gap-1 reorder-container'
     >
-      {collegPrefernces.map((college, i) => (
+      {(collegPrefernces.length > 0 && typeof collegPrefernces[0] !== "undefined") ? collegPrefernces.map((college, i) => (
         <Reorder.Item
           key={college["id"]}
           value={college}
@@ -26,13 +26,18 @@ const ReOrderTable = ({ collegPrefernces, setCollegPrefernces }) => {
             {college["College Name"]}
           </h2>
           <h2 className='max-w-36 flex-1 text-sm pl-2 min-w-32 md:m-0 mx-2'>
-            {college["Branch Name"]}
+            {college["Branch Name"]}<br />
+            <span className="font-semibold">(Code: {college["Branch Code"]})</span>
           </h2>
           <h2 className='max-w-36 flex-1 text-sm min-w-20'>
             {college[`${localStorage.getItem("Cat")} - Cutoff`]}
           </h2>
         </Reorder.Item>
-      ))}
+      )): 
+      <>
+      <h2>No data found!</h2>
+      <p>Go back to select colleges</p>
+      </>}
     </Reorder.Group>
   );
 };

@@ -1,30 +1,37 @@
 import collegeData from "@/utils/collegeData";
 import { usePagination } from "@mantine/hooks";
 import { DataTable } from "mantine-datatable";
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
+import Button from "./ui/Button";
 
 const PAGE_SIZE = 10;
 
 const addCollegeToList = (colleges, setSelectedColleges) => {
-  localStorage.setItem(
-    "colleges",
-    colleges.map((college) => college.id)
-  );
+  if (colleges.length < 1) {
+    localStorage.removeItem("colleges");
+  } else {
+    localStorage.setItem(
+      "colleges",
+      colleges.map((college) => college.id)
+    );
+  }
   setSelectedColleges(colleges);
 };
 
 const ReportTable = ({ searchCriteria }) => {
   const previouslySelectedCollegeIds = localStorage.getItem("colleges");
+  console.log(previouslySelectedCollegeIds)
   const [windowSize, setWindowSize] = useState(0);
   
   const previouslySelectedColleges = useMemo(
     () =>
-      previouslySelectedCollegeIds &&
+      previouslySelectedCollegeIds ?
       previouslySelectedCollegeIds
         .split(",")
-        .map((id) => collegeData.find((college) => college.id == id)),
+        .map((id) => collegeData['GC'].find((college) => college.id == id)): [],
     [previouslySelectedCollegeIds]
   ); 
+  // console.log("🚀 ~ ReportTable ~ previouslySelectedColleges:", typeof previouslySelectedColleges)
 
   const collegesAfterFiltering = useMemo(
     () =>
@@ -78,6 +85,7 @@ const ReportTable = ({ searchCriteria }) => {
   const [selectedColleges, setSelectedColleges] = useState(
     previouslySelectedColleges ?? []
   );
+  // console.log("🚀 ~ ReportTable ~ selectedColleges:", typeof selectedColleges)
 
   if (!searchCriteria.Category) return <p>Invalid search parameters!</p>;
 
@@ -145,6 +153,13 @@ const ReportTable = ({ searchCriteria }) => {
           onChange={pagination.setPage}
           className='ml-auto'
         /> */}
+      </div>
+      <div className='w-full flex'>
+        <Button
+          label={"Proceed"}
+          to='/report/generate'
+          className='md:ml-auto w-max px-6 py-2'
+        />
       </div>
     </>
   );

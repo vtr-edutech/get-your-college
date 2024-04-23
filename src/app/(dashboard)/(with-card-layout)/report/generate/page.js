@@ -22,8 +22,9 @@ const Generate = () => {
     const preferredCollegesId = localStorage.getItem("colleges")?.split(",");
     if (preferredCollegesId) {
       const preferredColleges = preferredCollegesId.map((id) =>
-        collegeData.find((college) => college.id == id)
+        collegeData['GC'].find((college) => college.id == id)
       );
+      console.log("🚀 ~ useEffect ~ preferredColleges:", preferredColleges)
       setCollegPrefernces(preferredColleges);
     }
     setSelectedCategory(localStorage.getItem("Cat") ?? "NA");
@@ -80,7 +81,7 @@ const Generate = () => {
                   College Name
                 </h2>
                 <h2 className='max-w-36 flex-1 font-medium min-w-32 md:m-0 mx-2'>
-                  Branch Name
+                  Branch
                 </h2>
                 <h2 className='max-w-36 flex-1 font-medium min-w-20'>
                   {selectedCategory} - Cutoff

@@ -34,7 +34,7 @@ const Home = () => {
         : districtCombobox.updateSelectedOptionIndex("active");
     },
   });
-  console.log("🚀 ~ Home ~ searchCriteria:", searchCriteria)
+  // console.log("🚀 ~ Home ~ searchCriteria:", searchCriteria)
   const options = useMemo(
     () =>
       ALL_DISTRICT.filter(district => district.toLowerCase().trim().includes(searchCriteria.districtKey.toLowerCase().trim())).map((district, k) => (
