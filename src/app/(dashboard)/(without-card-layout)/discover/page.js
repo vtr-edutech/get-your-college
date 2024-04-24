@@ -7,7 +7,7 @@ const Discover = () => {
     <div className='flex flex-col gap-4'>
       <div className='flex md:flex-row flex-col gap-4'>
         {/* Updates div */}
-        <div className='flex flex-col p-6 gap-3 min-w-[60%] max-w-md rounded-md shadow-sm shadow-black/10 bg-white'>
+        <div className='flex flex-col p-6 gap-3 min-w-[30%] max-w-md rounded-md shadow-sm shadow-black/10 bg-white'>
           <h1 className='font-semibold text-xl'>Cutoff Calculator</h1>
           Calculate your cutoff with Physics, Chemistry and Math marks
           <CutoffCalculator />
@@ -17,7 +17,7 @@ const Discover = () => {
         <div className='flex flex-col p-6 flex-1 rounded-md shadow-sm shadow-black/10 bg-white'>
           <h1 className='font-semibold text-xl'>Topics</h1>
           Connect with any of our socials to get latest updates
-          <div className='flex w-full relative'>
+          <div className='flex w-full relative justify-center'>
             <Image
               src={"/Empty-pana.png"}
               height={180}

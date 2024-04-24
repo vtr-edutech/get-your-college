@@ -93,7 +93,7 @@ const Navbar = ({ modalOpen, logoutOpen }) => {
       <div className='fixed left-0 flex max-h-16 md:hidden justify-around items-center w-full bottom-0 z-50 px-2 py-2 shadow shadow-black/40 bg-white'>
         {MENU_ITEMS.slice(0, 4).map((menu, i) =>
           menu.subcategoryFrom ? (
-            <Menu key={i} width={125} shadow='lg' withArrow>
+            <Menu key={i+872} width={125} shadow='lg' withArrow>
               <Menu.Target>
                 <button
                   href={menu.to}
@@ -112,9 +112,9 @@ const Navbar = ({ modalOpen, logoutOpen }) => {
                   <>
                     <Menu.Label key={k+10}>{collegeCategory.name}</Menu.Label>
                     {collegeCategory.subcategories.map((subCat, l) => (
-                      <Menu.Item key={subCat.value}>
+                      <Menu.Item disabled={collegeCategory.disabled} key={subCat.value}>
                         <Link
-                          key={l}
+                          key={l+38}
                           href={{
                             pathname: "/colleges",
                             query: {
@@ -137,7 +137,7 @@ const Navbar = ({ modalOpen, logoutOpen }) => {
           ) : (
             <Link
               href={menu.to}
-              key={i}
+              key={i+873}
               className={cn(
                 "flex gap-1 flex-col items-center justify-center p-1.5 h-full rounded md:hidden",
                 {
@@ -274,7 +274,8 @@ const Navbar = ({ modalOpen, logoutOpen }) => {
                   (cateogry) => cateogry.value !== selectedCollegeCategory
                 ).map((cateogry, j) => (
                   <Combobox.Option
-                    className='flex items-center gap-2'
+                    disabled={cateogry.disabled}
+                    className='flex items-center gap-2 text-balance'
                     key={j}
                     value={cateogry.value}
                     active={cateogry.value === selectedCollegeCategory}

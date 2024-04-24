@@ -10,6 +10,7 @@ export const COLLEGE_CATEGORIES = [
     name: "Engineering",
     value: "engineering",
     icon: <MdEngineering size={18} />,
+    disabled: false,
     subcategories: [
       {
         name: "TNEA Colleges",
@@ -18,9 +19,10 @@ export const COLLEGE_CATEGORIES = [
     ],
   },
   {
-    name: "Medical",
+    name: "Medical (Coming soon)",
     value: "medical",
     icon: <FaBookMedical size={16} />,
+    disabled: true,
     subcategories: [
       {
         name: "Category-Y",
