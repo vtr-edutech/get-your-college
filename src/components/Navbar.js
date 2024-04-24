@@ -163,7 +163,7 @@ const Navbar = ({ modalOpen, logoutOpen }) => {
             width={"120%"}
             radius={5}
           >
-            <Menu shadow='lg' withArrow>
+            <Menu shadow='lg' withArrow offset={{mainAxis: 10, crossAxis: -20}}>
               <Menu.Target>
                 <div className='flex flex-col items-center justify-center p-1.5 h-full rounded md:hidden'>
                   <Image

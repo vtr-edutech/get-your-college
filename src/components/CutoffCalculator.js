@@ -1,9 +1,15 @@
 'use client'
 import React, { useRef, useState } from "react";
 import Button from "./ui/Button";
+import { toast } from "react-toastify";
+
+ const regNoLength = 7;
 
 function CutoffCalculator() {
   const [cutoff, setCutoff] = useState(0);
+  const [regNo, setRegNo] = useState("")
+
+  const regRef = useRef()
   const pRef = useRef();
   const cRef = useRef();
   const mRef = useRef();
@@ -23,6 +29,28 @@ function CutoffCalculator() {
     <>
       <div className='md:flex md:gap-2 md:h-min md:flex-col flex flex-col gap-2'>
         <div className='flex items-center justify-between'>
+          <h2>12th Register No.</h2>
+          <input
+            type='text'
+            className='bg-card p-2 md:w-40 h-min max-w-44  rounded-md focus:outline-1 focus:outline-gray-200'
+            name='regno'
+            id='regno'
+            placeholder='10 digit no.'
+            ref={regRef}
+            onInput={(e) => {
+              if (/^[0-9]{1,10}$/.test(e.currentTarget.value)) {
+                if (e.currentTarget.value.length == regNoLength) {
+                  pRef.current.focus();
+                  // make api call to save reg no.
+                }
+                setRegNo(e.currentTarget.value);
+              } else {
+                e.currentTarget.value = '';
+              }
+            }}
+          />
+        </div>
+        <div className='flex items-center justify-between'>
           <h2>Physics</h2>
           <input
             type='number'
@@ -33,8 +61,14 @@ function CutoffCalculator() {
             ref={pRef}
             onInput={(e) => {
               const phyMarks = e.currentTarget.value;
-              if (phyMarks.length == 2 && parseFloat(phyMarks) < 100) {
+              if (regNo.length != regNoLength) {
+                toast.error("Please enter valid 12th registration marks");
+                regRef.current.focus();
+                return;
+              }
+              if (phyMarks.length == 2) {
                 cRef.current.focus();
+                handleCutoff();
               }
             }}
           />
@@ -49,8 +83,14 @@ function CutoffCalculator() {
             ref={cRef}
             onInput={(e) => {
               const chemMarks = e.currentTarget.value;
-              if (chemMarks.length == 2 && parseFloat(chemMarks) < 100) {
+              if (regNo.length != regNoLength) {
+                toast.error("Please enter valid 12th registration marks");
+                regRef.current.focus();
+                return;
+              }
+              if (chemMarks.length == 2) {
                 mRef.current.focus();
+                handleCutoff();
               }
             }}
             placeholder='Max 100'
@@ -66,7 +106,12 @@ function CutoffCalculator() {
             id='math'
             onInput={(e) => {
               const mathMarks = e.currentTarget.value;
-              if (mathMarks.length == 2 && parseFloat(mathMarks) < 100) {
+             if (regNo.length != regNoLength) {
+                toast.error("Please enter valid 12th registration marks");
+                regRef.current.focus();
+                return;
+              }
+              if (mathMarks.length == 2) {
                 handleCutoff();
               }
             }}
@@ -83,7 +128,6 @@ function CutoffCalculator() {
             name='cutoff'
             id='cutoff'
             value={cutoff}
-            placeholder='Max 100'
           />
         </div>
         <Button
