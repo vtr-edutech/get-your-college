@@ -35,7 +35,7 @@ function CutoffCalculator() {
             className='bg-card p-2 md:w-40 h-min max-w-44  rounded-md focus:outline-1 focus:outline-gray-200'
             name='regno'
             id='regno'
-            placeholder='10 digit no.'
+            placeholder='7 digit no.'
             ref={regRef}
             onInput={(e) => {
               if (/^[0-9]{1,10}$/.test(e.currentTarget.value)) {
