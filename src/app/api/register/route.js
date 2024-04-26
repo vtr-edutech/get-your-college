@@ -41,7 +41,7 @@ export async function POST(req) {
     userData.gender = gender;
     userData.group = group;
     userData.email = email;
-    await userData.save();
+    await userData.save({ validateBeforeSave: false });
     
     return NextResponse.json(
       { message: "Registered succesfully" },

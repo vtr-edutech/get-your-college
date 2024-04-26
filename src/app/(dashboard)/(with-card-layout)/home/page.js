@@ -4,9 +4,11 @@ import React, { Suspense, lazy, useEffect, useMemo, useRef, useState } from "rea
 import { useForm } from "react-hook-form";
 import { LuSearch } from "react-icons/lu";
 import { UNIQUE_COURSE_NAMES } from '@/utils/collegeData'
-import { Combobox, SegmentedControl, Select, useCombobox } from "@mantine/core";
+import { Combobox, Modal, SegmentedControl, Select, useCombobox } from "@mantine/core";
 import SkeletonLoader from "@/components/SkeletonLoader";
 import { ALL_DISTRICT } from "@/utils/collegeDistrictData";import { getWindowSize } from "@/utils";
+import { useDisclosure } from "@mantine/hooks";
+import CutoffCalculator from "@/components/CutoffCalculator";
 
 const CollegesTable = lazy(() => import("@/components/CollegesTable"));
 
@@ -23,7 +25,10 @@ const Home = () => {
   /* setting window height to this because it doesn make huge diff between 100% and 20rem, so phone la 100% also ok, 20rem also ok
    * but it sucks when initially window size is less than 768, if so, there is a jerk when actual size is calculated in useffect 
   */
-  const [windowSize, setwindowSize] = useState({ width: 1230, height: 1234 })
+  const [windowSize, setwindowSize] = useState({ width: 1230, height: 1234 });
+
+  /* for modal */
+  const [opened, { open, close } ] = useDisclosure()
 
   const [searchCriteria, setSearchCriteria] = useState({ cutoffCategory: 'GC', filterBy: 'Cutoff', searchKey: '', districtKey: '' });
   const districtCombobox = useCombobox({
@@ -73,6 +78,9 @@ const Home = () => {
 
   return (
     <>
+      <Modal opened={opened} transitionProps={{ transition:"pop" }} onClose={close} centered title="Cut-off Calculator">
+        <CutoffCalculator />
+      </Modal>
       <h1 className='font-medium text-2xl'>
         Let&apos;s get the right college for you
       </h1>
@@ -162,6 +170,7 @@ const Home = () => {
                 {errors["MinCutoff"].message}
               </p>
             )}
+            <p className="underline text-xs absolute cursor-pointer top-[110%] left-1" onClick={open}>Not sure about cutoff?</p>
           </div>
           {/* Max cutoff */}
           <div className='flex flex-col gap-1 items-center relative'>

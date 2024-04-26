@@ -19,6 +19,7 @@ const UserSchema = new Schema(
       enum: ["male", "female", "other"],
     },
     email: String,
+    registerNo: String,
     emailVerified: {
       type: Boolean,
       default: false,
@@ -26,7 +27,11 @@ const UserSchema = new Schema(
     category: String,
     group: {
       type: String,
-      enum: ["BWM", "CS", "CWCS"],
+      enum: ["BWM", "CS", "VOC"],
+    },
+    boardOfStudy: {
+      type: String,
+      enum: ["TN", "CBSE", "ICSE", "AP", "OTHER"],  
     },
     district: String,
     pincode: String,

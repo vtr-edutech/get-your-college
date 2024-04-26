@@ -1,4 +1,3 @@
-"use client";
 import Button from "@/components/ui/Button";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import { IoBookOutline } from "react-icons/io5";

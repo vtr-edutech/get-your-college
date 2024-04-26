@@ -16,10 +16,13 @@ export const authOptions = {
           await dbConnect();
           const user = await UserModel.findOne({ mobile, lastOTP: otp });
           console.log("🚀 ~ authorize ~ user:", user);
-
+          
           if (!user) {
             return null;
           }
+          
+          user.isMobileVerified = true;
+          await user.save()
 
           if (user.isMobileVerified && user.firstName) {
             console.log("already user");
