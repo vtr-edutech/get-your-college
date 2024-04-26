@@ -16,8 +16,8 @@ const RegisterForm = ({ closeFn }) => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isChecked, setIsChecked] = useState(false);
   const [hasFetched, setHasFetched] = useState(false);
-  console.log("🚀 ~ RegisterForm ~ userInfo:", userInfo)
-  console.log("🚀 ~ RegisterForm ~ hasFetched:", hasFetched)
+  // console.log("🚀 ~ RegisterForm ~ userInfo:", userInfo)
+  // console.log("🚀 ~ RegisterForm ~ hasFetched:", hasFetched)
 
   const {
     register,
@@ -42,12 +42,12 @@ const RegisterForm = ({ closeFn }) => {
       } catch (error) {
         toast.error(error.response.data.error ?? error.error);
       } finally {
-        console.log("finally set true");
+        // console.log("finally set true");
         setHasFetched(true);
       }
     };
 
-    console.log("inside effect", userInfo);
+    // console.log("inside effect", userInfo);
 
     if (!userInfo.firstName && !hasFetched) {
       fetchUserInfo();
@@ -70,7 +70,7 @@ const RegisterForm = ({ closeFn }) => {
           pincode: userInfo.pincode ?? "",
           dob: dobToSet,
         });
-        console.log("has been reset");
+        // console.log("has been reset");
     }
   }, [userInfo]);
 
@@ -127,7 +127,7 @@ const RegisterForm = ({ closeFn }) => {
               validate: (value) => value.trim() !== "" || "Invalid First name",
             })}
             type='text'
-            className='w-full rounded-md bg-input px-3 py-2 focus:outline-1 focus:outline-gray-300'
+            className='w-full rounded-md bg-input outline-gray-200 px-3 py-2 outline outline-1 focus:outline-gray-300'
             // defaultValue={userInfo.firstName ?? ""}
           />
           {errors["firstName"] && (
@@ -149,7 +149,7 @@ const RegisterForm = ({ closeFn }) => {
               validate: (value) => value.trim() !== "" || "Invalid Last name",
             })}
             type='text'
-            className='w-full  rounded-md bg-input px-3 py-2 focus:outline-1 focus:outline-gray-300'
+            className='w-full  rounded-md bg-input outline-gray-200 px-3 py-2 outline outline-1 focus:outline-gray-300'
             // defaultValue={userInfo.lastName ?? ""}
           />
           {errors["lastName"] && (
@@ -167,7 +167,7 @@ const RegisterForm = ({ closeFn }) => {
               pattern: { value: /^\S+@\S+$/i, message: "Invalid Email" },
             })}
             type='text'
-            className='w-full  rounded-md bg-input px-3 py-2 focus:outline-1 focus:outline-gray-300'
+            className='w-full  rounded-md bg-input outline-gray-200 px-3 py-2 outline outline-1 focus:outline-gray-300'
             // defaultValue={userInfo.email ?? ""}
           />
           {errors["email"] && (
@@ -185,7 +185,7 @@ const RegisterForm = ({ closeFn }) => {
               validate: (value) =>
                 ["male", "female", "other"].includes(value) || "Invalid Gender",
             })}
-            className='w-full  rounded-md bg-input px-3 py-2 focus:outline-1 focus:outline-gray-300'
+            className='w-full  rounded-md bg-input outline-gray-200 px-3 py-2 outline outline-1 focus:outline-gray-300'
             // defaultValue={userInfo.gender ?? ""}
           >
             <option value={"male"}>Male</option>
@@ -207,12 +207,12 @@ const RegisterForm = ({ closeFn }) => {
               validate: (value) =>
                 ["BWM", "CS", "CWCS"].includes(value) || "Invalid group",
             })}
-            className='w-full  rounded-md bg-input px-3 py-2 focus:outline-1 focus:outline-gray-300'
+            className='w-full  rounded-md bg-input outline-gray-200 px-3 py-2 outline outline-1 focus:outline-gray-300'
             // defaultValue={userInfo.group ?? ""}
           >
             <option value={"BWM"}>Bio with Math</option>
             <option value={"CS"}>Computer Science</option>
-            <option value={"CWCS"}>Commerce with Computer Science</option>
+            <option value={"VOC"}>Vocational</option>
           </select>
           {errors["group"] && (
             <p className='text-xs text-red-500 font-light'>
@@ -234,7 +234,7 @@ const RegisterForm = ({ closeFn }) => {
               validate: (value) => value.trim() !== "" || "Invalid District",
             })}
             type='text'
-            className='w-full  rounded-md bg-input px-3 py-2 focus:outline-1 focus:outline-gray-300'
+            className='w-full  rounded-md bg-input outline-gray-200 px-3 py-2 outline outline-1 focus:outline-gray-300'
             // defaultValue={userInfo.address ?? ""}
           />
           {errors["district"] && (
@@ -258,7 +258,7 @@ const RegisterForm = ({ closeFn }) => {
             })}
             type='tel'
             inputMode='numeric'
-            className='w-full  rounded-md bg-input px-3 py-2 focus:outline-1 focus:outline-gray-300'
+            className='w-full  rounded-md bg-input outline-gray-200 px-3 py-2 outline outline-1 focus:outline-gray-300'
             // defaultValue={userInfo.address ?? ""}
           />
           {errors["pincode"] && (
@@ -283,7 +283,7 @@ const RegisterForm = ({ closeFn }) => {
             })}
             type='date'
             placeholder='DD/MM/YYYY'
-            className='w-full placeholder:text-sm rounded-md bg-input px-3 py-2 focus:outline-1 focus:outline-gray-300'
+            className='w-full placeholder:text-sm rounded-md bg-input outline-gray-200 px-3 py-2 outline outline-1 focus:outline-gray-300'
             // defaultValue={userInfo.dob ? `: ''}
           />
           {errors["dob"] && (
@@ -305,7 +305,7 @@ const RegisterForm = ({ closeFn }) => {
           />
         </div>
         <Button
-          label={"Confirm Details"}
+          label={"Submit"}
           isDisabled={!userInfo || isSubmitting || !isChecked}
           asButton
         />

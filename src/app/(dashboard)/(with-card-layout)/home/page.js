@@ -9,8 +9,14 @@ import SkeletonLoader from "@/components/SkeletonLoader";
 import { ALL_DISTRICT } from "@/utils/collegeDistrictData";import { getWindowSize } from "@/utils";
 import { useDisclosure } from "@mantine/hooks";
 import CutoffCalculator from "@/components/CutoffCalculator";
+import resolveConfig from "tailwindcss/resolveConfig"
+import tailwindConfig from "../../../../../tailwind.config";
+import { Inter } from "next/font/google";
 
 const CollegesTable = lazy(() => import("@/components/CollegesTable"));
+
+const tw = resolveConfig(tailwindConfig);
+const inter = Inter({ subsets: ["latin"] })
 
 const Home = () => {
   const {
@@ -78,7 +84,13 @@ const Home = () => {
 
   return (
     <>
-      <Modal opened={opened} transitionProps={{ transition:"pop" }} onClose={close} centered title="Cut-off Calculator">
+      <Modal
+        opened={opened}
+        transitionProps={{ transition: "pop" }}
+        onClose={close}
+        centered
+        title='Cut-off Calculator'
+      >
         <CutoffCalculator />
       </Modal>
       <h1 className='font-medium text-2xl'>
@@ -99,7 +111,18 @@ const Home = () => {
             <SegmentedControl
               ref={cutoffCategoryRef}
               withItemsBorders={false}
-              styles={{ root: { width: (windowSize.width != -1 && windowSize.width < 768)? "100%": "20rem" } }}
+              color='blue'
+              styles={{
+                root: {
+                  width:
+                    windowSize.width != -1 && windowSize.width < 768
+                      ? "100%"
+                      : "20rem",
+                },
+                innerLabel: (value) => {
+                  return value && { color: "white" };
+                },
+              }}
               value={searchCriteria?.cutoffCategory || "GC"}
               onChange={(value) =>
                 setSearchCriteria((prev) => ({
@@ -120,7 +143,7 @@ const Home = () => {
                 {
                   label: "Vocational",
                   value: "VOC",
-                  disabled: true
+                  disabled: true,
                 },
               ]}
             />
@@ -133,8 +156,10 @@ const Home = () => {
               defaultValue='2023'
               allowDeselect={false}
               checkIconPosition='right'
-              styles={{ root: { width: "8rem" } }}
-              style={{ fontFamily: "Inter" }}
+              styles={{
+                root: { width: "8rem" },
+                input: { fontFamily: inter.style.fontFamily },
+              }}
               onChange={(value) =>
                 setSearchCriteria((prev) => ({ ...prev, year: value }))
               }
@@ -144,7 +169,7 @@ const Home = () => {
         </div>
 
         {/* Linear Search bar */}
-        <div className='grid grid-cols-2 grid-rows-2 gap-2 md:flex md:gap-0 md:justify-center md:items-center'>
+        <div className='grid grid-cols-2 grid-rows-2 gap-2 md:flex md:gap-2 md:justify-center md:items-center'>
           {/* Min cutoff */}
           <div className='flex flex-col gap-1 items-center relative'>
             <input
@@ -152,12 +177,12 @@ const Home = () => {
               name='starting-cutoff'
               id='starting-cutoff'
               placeholder='Starting Cut-Off'
-              className='bg-card p-2 max-w-44 md:w-44 rounded-ss-md rounded-es-md focus:outline-1 focus:outline-gray-200'
+              className='bg-card/10 outline p-2 max-w-44 md:w-44 rounded-md outline-1 outline-gray-200 placeholder:text-sm focus:outline-sky-500/60'
               {...register("MinCutoff", {
                 required: { value: true, message: "This field is required" },
                 min: {
-                  value: 0,
-                  message: "Minimum cutoff should be greater than 0",
+                  value: 70,
+                  message: "Minimum cutoff should be greater than 70",
                 },
                 max: {
                   value: 200,
@@ -170,7 +195,12 @@ const Home = () => {
                 {errors["MinCutoff"].message}
               </p>
             )}
-            <p className="underline text-xs absolute cursor-pointer top-[110%] left-1" onClick={open}>Not sure about cutoff?</p>
+            <p
+              className='underline text-xs absolute cursor-pointer top-[110%] left-1'
+              onClick={open}
+            >
+              Not sure about cutoff?
+            </p>
           </div>
           {/* Max cutoff */}
           <div className='flex flex-col gap-1 items-center relative'>
@@ -179,12 +209,12 @@ const Home = () => {
               name='ending-cutoff'
               id='ending-cutoff'
               placeholder='Ending Cut-Off'
-              className='bg-card p-2 max-w-44 md:w-44 focus:outline-1 focus:outline-gray-200'
+              className='bg-card/10 outline p-2 max-w-44 md:w-44 rounded-md outline-1 outline-gray-200 placeholder:text-sm focus:outline-sky-500/60'
               {...register("MaxCutoff", {
                 required: { value: true, message: "This field is required" },
                 min: {
-                  value: 0,
-                  message: "Maximum cutoff should be greater than 0",
+                  value: 70,
+                  message: "Maximum cutoff should be greater than 70",
                 },
                 max: {
                   value: 200,
@@ -203,12 +233,14 @@ const Home = () => {
             <select
               name='category'
               defaultValue={"select"}
-              className='bg-card p-2 py-2.5 w-full md:w-52 pr-8 focus:outline-1 focus:outline-gray-200'
+              className='bg-card/10 outline rounded-md outline-1 p-2 py-2.5 w-full md:w-52 pr-8 outline-gray-200 placeholder:text-sm focus:outline-sky-500/60'
               id='category'
               {...register("Dept", {
                 required: { value: true, message: "This field is required" },
                 validate: (value) =>
-                  (value !== "select" && (UNIQUE_COURSE_NAMES.includes(value) || value === "All departments")) ||
+                  (value !== "select" &&
+                    (UNIQUE_COURSE_NAMES.includes(value) ||
+                      value === "All departments")) ||
                   "Invalid value selected!",
               })}
             >
@@ -235,7 +267,7 @@ const Home = () => {
             <select
               name='category'
               defaultValue={"Select"}
-              className='bg-card p-2 py-2.5 pr-8 rounded-ee-md rounded-se-md focus:outline-1 focus:outline-gray-200'
+              className='bg-card/10 outline p-2 py-2.5 pr-8 rounded-md outline-[0.8px] outline-gray-200 placeholder:text-sm focus:outline-sky-500/60'
               id='category'
               {...register("Category", {
                 required: { value: true, message: "This field is required" },
@@ -262,7 +294,7 @@ const Home = () => {
               </p>
             )}
           </div>
-          <button className='bg-fill-black text-center col-span-2 w-full md:w-fit md:px-6 py-1.5 text-lg rounded flex gap-2 text-white items-center justify-center md:ml-2'>
+          <button className='bg-blue-500 text-center col-span-2 w-full md:w-fit md:px-6 py-1.5 text-lg rounded flex gap-2 text-white items-center justify-center md:ml-2'>
             <LuSearch />
             <p>Go</p>
           </button>
@@ -280,7 +312,7 @@ const Home = () => {
                 name='searchKey'
                 placeholder='Search by college name, college code, etc.'
                 id='search'
-                className='py-2 px-3 w-full md:w-[50%] outline outline-1 placeholder:text-sm outline-gray-300 focus:outline-gray-400 md:outline-gray-200 rounded-md focus:outline-1 md:focus:outline-gray-300'
+                className='py-2 px-3 w-full md:w-[50%] outline outline-1 placeholder:text-sm outline-gray-300 focus:outline-gray-400 md:outline-gray-200 rounded-md focus:outline-1 md:focus:outline-sky-500/60'
                 onInput={(e) =>
                   setSearchCriteria({
                     ...searchCriteria,
@@ -291,9 +323,9 @@ const Home = () => {
               {/* Combobox'd select for districts */}
               <Combobox
                 store={districtCombobox}
-                shadow="md"
+                shadow='md'
                 onOptionSubmit={(val) => {
-                  setSearchCriteria({ ...searchCriteria, districtKey: val })
+                  setSearchCriteria({ ...searchCriteria, districtKey: val });
                   districtCombobox.closeDropdown();
                 }}
               >
@@ -303,20 +335,23 @@ const Home = () => {
                     name='district'
                     placeholder='Search by district'
                     id='search-district'
-                    className='py-2 px-3 w-full md:w-[20%] md:mr-auto outline outline-1 placeholder:text-sm outline-gray-300 focus:outline-gray-400 md:outline-gray-200 rounded-md focus:outline-1 md:focus:outline-gray-300'
+                    className='py-2 px-3 w-full md:w-[20%] md:mr-auto outline outline-1 placeholder:text-sm outline-gray-300 focus:outline-gray-400 md:outline-gray-200 rounded-md focus:outline-1 md:focus:outline-sky-500/60'
                     onClick={() => districtCombobox.toggleDropdown()}
                     onChange={(e) => {
                       setSearchCriteria({
                         ...searchCriteria,
                         districtKey: e.target.value,
                       });
-                      districtCombobox.openDropdown()
+                      districtCombobox.openDropdown();
                     }}
                     value={searchCriteria.districtKey}
                   />
                 </Combobox.Target>
                 <Combobox.Dropdown>
-                  <Combobox.Options mah={200} styles={{ options: { overflowY: "scroll" } }}>
+                  <Combobox.Options
+                    mah={200}
+                    styles={{ options: { overflowY: "scroll" } }}
+                  >
                     {options}
                   </Combobox.Options>
                 </Combobox.Dropdown>

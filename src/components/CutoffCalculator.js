@@ -27,12 +27,12 @@ function CutoffCalculator() {
 
   return (
     <>
-      <div className='md:flex md:gap-2 md:h-min md:flex-col flex flex-col gap-2'>
+      <div className='md:flex md:gap-3 md:h-min md:flex-col flex flex-col gap-2 md:py-2'>
         <div className='flex items-center justify-between'>
           <h2>12th Register No.</h2>
           <input
             type='text'
-            className='bg-card p-2 md:w-40 h-min max-w-44  rounded-md focus:outline-1 focus:outline-gray-200'
+            className='bg-card p-2 md:w-40 h-min max-w-44  rounded-md outline outline-1 outline-gray-200 focus:outline-1 focus:outline-sky-500/60'
             name='regno'
             id='regno'
             placeholder='7 digit no.'
@@ -54,7 +54,7 @@ function CutoffCalculator() {
           <h2>Physics</h2>
           <input
             type='number'
-            className='bg-card p-2 md:w-40 h-min max-w-44  rounded-md focus:outline-1 focus:outline-gray-200'
+            className='bg-card p-2 md:w-40 h-min max-w-44  rounded-md outline outline-1 outline-gray-200 focus:outline-1 focus:outline-sky-500/60'
             name='physics'
             id='physics'
             placeholder='Max 100'
@@ -77,7 +77,7 @@ function CutoffCalculator() {
           <h2>Chemistry</h2>
           <input
             type='number'
-            className='bg-card p-2 md:w-40 h-min max-w-44 rounded-md focus:outline-1 focus:outline-gray-200'
+            className='bg-card p-2 md:w-40 h-min max-w-44 rounded-md outline outline-1 outline-gray-200 focus:outline-1 focus:outline-sky-500/60'
             name='chemistry'
             id='chemistry'
             ref={cRef}
@@ -101,7 +101,7 @@ function CutoffCalculator() {
           <input
             ref={mRef}
             type='number'
-            className='bg-card p-2 md:w-40 h-min max-w-44 rounded-md focus:outline-1 focus:outline-gray-200'
+            className='bg-card p-2 md:w-40 h-min max-w-44 rounded-md outline outline-1 outline-gray-200 focus:outline-1 focus:outline-sky-500/60'
             name='math'
             id='math'
             onInput={(e) => {
@@ -124,7 +124,7 @@ function CutoffCalculator() {
             readOnly
             ref={cutoffRef}
             type='number'
-            className='bg-card p-2 md:w-40 h-min max-w-44 rounded-md focus:outline-1 focus:outline-gray-200'
+            className='bg-card p-2 md:w-40 h-min max-w-44 rounded-md outline outline-sky-500/60'
             name='cutoff'
             id='cutoff'
             value={cutoff}
@@ -132,7 +132,7 @@ function CutoffCalculator() {
         </div>
         <Button
           label={"Calculate"}
-          className='py-2 col-span-3'
+          className='py-2 col-span-3 bg-blue-600/80'
           asButton
           onClick={handleCutoff}
         />

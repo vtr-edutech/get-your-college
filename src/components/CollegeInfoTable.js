@@ -161,7 +161,7 @@ const CollegeInfoTable = ({ searchCriteria }) => {
                 </div>
               </h2>
               <h2 className='max-w-40 flex-1 text-sm min-w-36 break-words mx-2'>
-                {college["Branch Name"]}
+                {college["Branch Name"].toUpperCase()}
                 {college["NBA"] != "no" ? (
                   <Tooltip
                     label='NBA Accredited'

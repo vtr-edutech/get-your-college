@@ -26,7 +26,7 @@ const ReOrderTable = ({ collegPrefernces, setCollegPrefernces }) => {
             {college["College Name"]}
           </h2>
           <h2 className='max-w-36 flex-1 text-sm pl-2 min-w-32 md:m-0 mx-2'>
-            {college["Branch Name"]}<br />
+            {college["Branch Name"].toUpperCase()}<br />
             <span className="font-semibold">(Code: {college["Branch Code"]})</span>
           </h2>
           <h2 className='max-w-36 flex-1 text-sm min-w-20'>

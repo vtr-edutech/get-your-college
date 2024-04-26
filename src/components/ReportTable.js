@@ -117,6 +117,7 @@ const ReportTable = ({ searchCriteria }) => {
             accessor: "Branch Name",
             title: "Branch Name",
             width: windowSize < 768 ? 150 : "auto",
+            render: (value) => value['Branch Name'].toUpperCase()
           },
           {
             accessor: `${searchCriteria?.Category} - Cutoff`,

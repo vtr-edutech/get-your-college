@@ -76,6 +76,10 @@ const CollegesTable = ({ searchCriteria }) => {
 
   return (
     <>
+      <p className='ml-2 w-full text-left'>
+        <span className='font-medium'>{collegesAfterFiltering.length}</span>{" "}
+        college(s) found
+      </p>
       <div className='overflow-x-scroll md:overflow-hidden flex flex-col w-full transition-all'>
         <div className='flex justify-around min-w-fit md:min-w-[unset] mt-1 mx-1 items-center p-2 md:p-4 rounded-se-lg rounded-ss-lg outline outline-1 outline-gray-200 sticky top-0 bg-white shadow'>
           <h2 className='flex-1 font-medium min-w-16 max-w-28'>S.No.</h2>
@@ -111,7 +115,7 @@ const CollegesTable = ({ searchCriteria }) => {
                 {college["College Name"]}
               </h2>
               <h2 className='max-w-44 flex-1 min-w-36 text-sm mx-2 text-balance'>
-                {college["Branch Name"] + ` (Code: ${college["Branch Code"]})`}
+                {college["Branch Name"].toUpperCase()}
               </h2>
               <h2 className='max-w-36 flex-1 min-w-20 text-sm'>
                 {
@@ -124,8 +128,9 @@ const CollegesTable = ({ searchCriteria }) => {
           ))}
       </div>
       <div className='w-full self-start flex md:flex-row flex-col'>
-        <p className="ml-2">
-          <span className="font-medium">{collegesAfterFiltering.length}</span> college(s) found
+        <p className='ml-2'>
+          <span className='font-medium'>{collegesAfterFiltering.length}</span>{" "}
+          college(s) found
         </p>
         <Pagination
           total={parseInt(collegesAfterFiltering.length / PAGE_SIZE) + 1}

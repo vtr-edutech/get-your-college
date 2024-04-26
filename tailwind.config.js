@@ -12,7 +12,7 @@ module.exports = {
         background: "#EDEDED",
         "fill-black": "#3c3c3c",
         "fill-white": "#F0F0F0",
-        input: "#EAEAEA",
+        input: "#f2f2f21a",
       },
       textColor: {
         primary: "#3c3c3c",
