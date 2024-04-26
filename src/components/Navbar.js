@@ -93,7 +93,7 @@ const Navbar = ({ modalOpen, logoutOpen }) => {
       <div className='fixed left-0 flex max-h-16 md:hidden justify-around items-center w-full bottom-0 z-50 px-2 py-2 shadow shadow-black/40 bg-white'>
         {MENU_ITEMS.slice(0, 4).map((menu, i) =>
           menu.subcategoryFrom ? (
-            <Menu key={i+872} width={125} shadow='lg' withArrow>
+            <Menu key={i+87} width={125} shadow='lg' withArrow>
               <Menu.Target>
                 <button
                   href={menu.to}

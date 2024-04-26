@@ -31,7 +31,6 @@ const UserSchema = new Schema(
     },
     boardOfStudy: {
       type: String,
-      enum: ["TN", "CBSE", "ICSE", "AP", "OTHER"],  
     },
     district: String,
     pincode: String,

@@ -1,4 +1,4 @@
-'use server'
+"use server";
 import UserModel from "@/models/UserModel";
 import { getServerSession } from "next-auth";
 import { NextResponse } from "next/server";
@@ -7,12 +7,22 @@ import dbConnect from "@/utils/db";
 
 export async function POST(req) {
   try {
-    const { firstName, lastName, group, gender, email, district, dob, pincode } =
-      await req.json();
+    const {
+      firstName,
+      lastName,
+      group,
+      gender,
+      email,
+      district,
+      dob,
+      pincode,
+      BOS,
+      registerNo
+    } = await req.json();
 
     const userSession = await getServerSession(authOptions);
     const userId = userSession?.user?.id;
-    
+
     if (!userSession || !userId)
       return NextResponse.json(
         { error: "We could not authenticate you, please login again" },
@@ -20,11 +30,11 @@ export async function POST(req) {
       );
 
     console.log(userId);
-    
+
     await dbConnect();
 
     const userData = await UserModel.findOne({ _id: userId });
-    console.log("🚀 ~ POST ~ userData:", userData.mobile, " has updated info")
+    console.log("🚀 ~ POST ~ userData:", userData.mobile, " has updated info");
     if (!userData)
       return NextResponse.json(
         {
@@ -32,6 +42,17 @@ export async function POST(req) {
         },
         { status: 404 }
       );
+
+    
+    /* Im not reallly gonna validate this field because it can be any value, so i trust client to send only valid data */
+    // if (!["TN", "CBSE", "ICSE", "AP"].includes(BOS.trim())) {
+    //   return NextResponse.json(
+    //     {
+    //       error: "Invalid Board of Study!",
+    //     },
+    //     { status: 403 }
+    //   );
+    // }
 
     userData.firstName = firstName;
     userData.lastName = lastName;
@@ -41,8 +62,11 @@ export async function POST(req) {
     userData.gender = gender;
     userData.group = group;
     userData.email = email;
+    userData.boardOfStudy = BOS;
+    userData.registerNo = registerNo;
+
     await userData.save({ validateBeforeSave: false });
-    
+    // console.log(userData);
     return NextResponse.json(
       { message: "Registered succesfully" },
       { status: 200 }

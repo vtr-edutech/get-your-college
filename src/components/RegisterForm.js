@@ -2,7 +2,7 @@
 import Button from "@/components/ui/Button";
 import { setUserData } from "@/store/userInfoSlice";
 import { cn } from "@/utils";
-import { Checkbox } from "@mantine/core";
+import { Checkbox, Combobox, useCombobox } from "@mantine/core";
 import axios from "axios";
 import { signOut, useSession } from "next-auth/react";
 import React, { useEffect, useState } from "react";
@@ -10,12 +10,23 @@ import { useForm } from "react-hook-form";
 import { useDispatch, useSelector } from "react-redux";
 import { toast } from "react-toastify";
 
+const boardOfStudies = [{ value: "TN", label: "TN (Samacheer Kalvi)"}, { value: "CBSE", label: "CBSE (Central Govt.)"}, { value: "ICSE", label: "ICSE"}, { value: "AP", label: "AP (Andhra Pradhesh)"}, { value: "OTHER", label: "OTHER (Please mention)"}];
+
 const RegisterForm = ({ closeFn }) => {
   const dispatch = useDispatch();
   const userInfo = useSelector((state) => state.userInfo.user);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isChecked, setIsChecked] = useState(false);
   const [hasFetched, setHasFetched] = useState(false);
+
+  const bosCombobox = useCombobox({
+    onDropdownClose: () => bosCombobox.resetSelectedOption(),
+    onDropdownOpen: (eventSource) => {
+      eventSource == "keyboard"
+        ? bosCombobox.selectActiveOption()
+        : bosCombobox.updateSelectedOptionIndex("active");
+    },
+  });
   // console.log("🚀 ~ RegisterForm ~ userInfo:", userInfo)
   // console.log("🚀 ~ RegisterForm ~ hasFetched:", hasFetched)
 
@@ -23,6 +34,8 @@ const RegisterForm = ({ closeFn }) => {
     register,
     handleSubmit,
     reset,
+    setValue, 
+    getValues,
     formState: { errors },
   } = useForm();
 
@@ -69,6 +82,8 @@ const RegisterForm = ({ closeFn }) => {
           district: userInfo.district ?? "",
           pincode: userInfo.pincode ?? "",
           dob: dobToSet,
+          BOS: (userInfo.boardOfStudy || userInfo.BOS) ?? "",
+          registerNo: userInfo.registerNo ?? ""
         });
         // console.log("has been reset");
     }
@@ -77,6 +92,10 @@ const RegisterForm = ({ closeFn }) => {
   const onSubmit = async (data) => {
     if (Object.keys(errors).length === 0) {
       console.log(data);
+      if (data.BOS == "OTHER") {
+        toast.error("Please enter Board of Study")
+        return;
+      }
       if (JSON.stringify(data) == JSON.stringify(userInfo)) {
         toast.info("Already submitted");
         closeFn();
@@ -109,7 +128,7 @@ const RegisterForm = ({ closeFn }) => {
       <form
         onSubmit={handleSubmit(onSubmit)}
         className={`flex flex-col gap-4 w-full ${
-          (!hasFetched) ? 'opacity-50 pointer-events-none': ''
+          !hasFetched ? "opacity-50 pointer-events-none" : ""
         }`}
       >
         {/* First name input */}
@@ -133,6 +152,35 @@ const RegisterForm = ({ closeFn }) => {
           {errors["firstName"] && (
             <p className='text-xs text-red-500 font-light'>
               {errors["firstName"].message}
+            </p>
+          )}
+        </div>
+        {/* 12th register No */}
+        <div className='flex flex-col gap-1'>
+          <p className='font-light text-xs'>12th Register Number</p>
+          <input
+            {...register("registerNo", {
+              required: { value: true, message: "Can't be empty" },
+              maxLength: {
+                value: 7,
+                message: "Max length is 7 characters only",
+              },
+              validate: (value) =>
+                value.trim() !== "" || "Invalid REgister No.",
+            })}
+            type='text'
+            onInput={(e) =>
+              (e.currentTarget.value = e.currentTarget.value.replace(
+                /[^0-9]/g,
+                ""
+              ))
+            }
+            className='w-full rounded-md bg-input outline-gray-200 px-3 py-2 outline outline-1 focus:outline-gray-300'
+            // defaultValue={userInfo.registerNo ?? ""}
+          />
+          {errors["registerNo"] && (
+            <p className='text-xs text-red-500 font-light'>
+              {errors["registerNo"].message}
             </p>
           )}
         </div>
@@ -205,7 +253,7 @@ const RegisterForm = ({ closeFn }) => {
             {...register("group", {
               required: true,
               validate: (value) =>
-                ["BWM", "CS", "CWCS"].includes(value) || "Invalid group",
+                ["BWM", "CS", "VOC"].includes(value) || "Invalid group",
             })}
             className='w-full  rounded-md bg-input outline-gray-200 px-3 py-2 outline outline-1 focus:outline-gray-300'
             // defaultValue={userInfo.group ?? ""}
@@ -220,6 +268,78 @@ const RegisterForm = ({ closeFn }) => {
             </p>
           )}
         </div>
+        {/* Board of study */}
+        <div className='flex flex-col gap-1'>
+          <p className='font-light text-xs'>Board of Study</p>
+          <Combobox
+            store={bosCombobox}
+            shadow='md'
+            onOptionSubmit={(value) => {
+              setValue("BOS", value);
+              bosCombobox.closeDropdown();
+            }}
+          >
+            <Combobox.Target>
+              <input
+                className='w-full  rounded-md bg-input outline-gray-200 px-3 py-2 outline outline-1 focus:outline-gray-300'
+                onInput={(e) => (e.currentTarget.value = null)}
+                onClick={() => bosCombobox.toggleDropdown()}
+                value={getValues("BOS")}
+                {...register("BOS", {
+                  required: { value: true, message: "Required!" },
+                  minLength: { value: true, message: "Invalid Board of Study" },
+                  maxLength: {
+                    value: 200,
+                    message: "Max length of Board of Study exceeded",
+                  },
+                  validate: (value) =>
+                    value.trim() !== "" || "Invalid Board of Study",
+                })}
+              />
+            </Combobox.Target>
+            <Combobox.Dropdown>
+              <Combobox.Options>
+                {boardOfStudies.map((board, i) => (
+                  <Combobox.Option value={board.value} key={i + 8223}>
+                    {board.label}
+                  </Combobox.Option>
+                ))}
+              </Combobox.Options>
+            </Combobox.Dropdown>
+          </Combobox>
+          {errors["BOS"] && (
+            <p className='text-xs text-red-500 font-light'>
+              {errors["BOS"].message}
+            </p>
+          )}
+        </div>
+        {/* If others please mention */}
+        {getValues("BOS") == "OTHER" && (
+          <div className='flex flex-col gap-1'>
+            <p className='font-light text-xs'>Mention board of study</p>
+            <input
+              {...register("BOS", {
+                required: { value: true, message: "Required!" },
+                minLength: { value: true, message: "Invalid Board of Study" },
+                maxLength: {
+                  value: 200,
+                  message: "Max length of Board of Study exceeded",
+                },
+                validate: (value) =>
+                  value.trim() !== "" || "Invalid Board of Study",
+              })}
+              type='text'
+              className='w-full  rounded-md bg-input outline-gray-200 px-3 py-2 outline outline-1 focus:outline-gray-300'
+              value={""}
+              // defaultValue={userInfo.address ?? ""}
+            />
+            {errors["BOS"] && (
+              <p className='text-xs text-red-500 font-light'>
+                {errors["BOS"].message}
+              </p>
+            )}
+          </div>
+        )}
         {/* District */}
         <div className='flex flex-col gap-1'>
           <p className='font-light text-xs'>District</p>
@@ -293,7 +413,6 @@ const RegisterForm = ({ closeFn }) => {
           )}
         </div>
 
-        {/* Temporarily disabling this, maybe enable later if client needs */}
         {/* Agree or not */}
         <div className='flex gap-2 items-start'>
           <Checkbox
