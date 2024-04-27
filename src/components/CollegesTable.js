@@ -103,7 +103,7 @@ const CollegesTable = ({ searchCriteria }) => {
               key={college["S.No"]}
               // onMouseOver={(e) => e.currentTarget.classList.replace('h-16', 'h-auto')}
               // onMouseOut={(e) => e.currentTarget.classList.replace('h-auto', 'h-16')}
-              className='flex transition-all min-w-fit md:min-w-[unset] mx-1 justify-around items-center outline p-2 md:p-1 min-h-32 animate-fade-in overflow-hidden bg-white outline-1 outline-gray-200 last-of-type:rounded-ee-md last-of-type:mb-1 last-of-type:rounded-es-md'
+              className={`flex transition-all min-w-fit md:min-w-[unset] mx-1 justify-around items-center outline p-2 md:p-1 min-h-32 animate-fade-in overflow-hidden ${i%2 != 0? 'bg-white': 'bg-blue-50/70'} outline-1 outline-gray-200 last-of-type:rounded-ee-md last-of-type:mb-1 last-of-type:rounded-es-md`}
             >
               <h2 className='flex-1 text-sm min-w-16 max-w-28'>
                 <p className='ml-2'>{i + 1}</p>

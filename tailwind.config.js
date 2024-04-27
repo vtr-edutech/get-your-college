@@ -13,6 +13,7 @@ module.exports = {
         "fill-black": "#3c3c3c",
         "fill-white": "#F0F0F0",
         input: "#f1f5f95a",
+        "mantine-blue": "#228be6"
       },
       textColor: {
         primary: "#3c3c3c",

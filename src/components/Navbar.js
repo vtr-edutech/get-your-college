@@ -97,7 +97,7 @@ const Navbar = ({ modalOpen, logoutOpen }) => {
               <Menu.Target>
                 <button
                   href={menu.to}
-                  key={i}
+                  // key={i}
                   className={cn(
                     "flex gap-1 flex-col items-center justify-center p-1.5 h-full rounded md:hidden",
                     { "bg-slate-100": currentPathName === menu.to }
@@ -114,7 +114,7 @@ const Navbar = ({ modalOpen, logoutOpen }) => {
                     {collegeCategory.subcategories.map((subCat, l) => (
                       <Menu.Item disabled={collegeCategory.disabled} key={subCat.value}>
                         <Link
-                          key={l+38}
+                          // key={l+38}
                           href={{
                             pathname: "/colleges",
                             query: {
@@ -276,7 +276,7 @@ const Navbar = ({ modalOpen, logoutOpen }) => {
                   <Combobox.Option
                     disabled={cateogry.disabled}
                     className='flex items-center gap-2 text-balance'
-                    key={j}
+                    key={Math.random()}
                     value={cateogry.value}
                     active={cateogry.value === selectedCollegeCategory}
                   >
@@ -295,7 +295,7 @@ const Navbar = ({ modalOpen, logoutOpen }) => {
             menu.subcategoryFrom ? (
               <Accordion
                 chevronPosition='right'
-                key={o}
+                key={Math.random()}
                 variant='filled'
                 unstyled
                 chevron={menu.icon}
@@ -326,7 +326,7 @@ const Navbar = ({ modalOpen, logoutOpen }) => {
                       }`}
                     >
                       <Link
-                        key={o}
+                        key={Math.random()}
                         href={{
                           pathname: "/colleges",
                           query: { t: category.value },

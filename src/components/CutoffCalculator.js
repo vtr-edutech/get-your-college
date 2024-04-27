@@ -132,7 +132,7 @@ function CutoffCalculator() {
         </div>
         <Button
           label={"Calculate"}
-          className='py-2 col-span-3 bg-blue-600/80'
+          className='py-2 col-span-3 bg-mantine-blue'
           asButton
           onClick={handleCutoff}
         />
