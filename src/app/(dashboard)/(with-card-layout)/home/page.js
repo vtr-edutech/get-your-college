@@ -4,7 +4,7 @@ import React, { Suspense, lazy, useEffect, useMemo, useRef, useState } from "rea
 import { useForm } from "react-hook-form";
 import { LuSearch } from "react-icons/lu";
 import { UNIQUE_COURSE_NAMES } from '@/utils/collegeData'
-import { Combobox, Modal, SegmentedControl, Select, useCombobox } from "@mantine/core";
+import { Combobox, Modal, MultiSelect, SegmentedControl, Select, useCombobox } from "@mantine/core";
 import SkeletonLoader from "@/components/SkeletonLoader";
 import { ALL_DISTRICT } from "@/utils/collegeDistrictData";import { getWindowSize } from "@/utils";
 import { useDisclosure } from "@mantine/hooks";
@@ -25,7 +25,9 @@ const Home = () => {
     handleSubmit,
     register,
     setError,
-    setValue
+    setValue,
+    getValues,
+    clearErrors
   } = useForm();
   const yearInputRef = useRef();
   const cutoffCategoryRef = useRef();
@@ -40,6 +42,30 @@ const Home = () => {
 
   const [searchCriteria, setSearchCriteria] = useState({ cutoffCategory: 'GC', filterBy: 'Cutoff', searchKey: '', districtKey: '' });
   const [courseGroup, setCourseGroup] = useState('ALL');
+  const [currentDepts, setCurrentDepts] = useState();
+
+  console.log("🚀 ~ Home ~ courseGroup:", courseGroup)
+
+  const courseGroupsDropdownData = useMemo(
+    () =>
+      courseGroup === "ALL"
+        ? [{ group: "ALL DEPARTMENTS", items: [ "ALL" ] }].concat(Object.keys(collegeCourseGroups)
+            .map((group) => ({
+              group: group,
+              items: collegeCourseGroups[group].map(
+                (course) => course["Branch Name"]
+              ),
+            })))
+        : [{ group: "ALL DEPARTMENTS", items: [ "ALL" ] }].concat(Object.keys(collegeCourseGroups)
+            .filter((group) => group == courseGroup)
+            .map((group) => ({
+              group: group,
+              items: collegeCourseGroups[group].map(
+                (course) => course["Branch Name"]
+              ),
+            }))),
+    [courseGroup]
+  );
 
   const districtCombobox = useCombobox({
     onDropdownClose: () => districtCombobox.resetSelectedOption(),
@@ -76,8 +102,22 @@ const Home = () => {
   }, [])
 
   const searchSubmission = async (data) => {
+    console.log("submit data", data);
     if (Object.keys(data).length !== 0) {
-      console.log(data);
+      // if (!data.Dept || (typeof data.Dept == "string" && data.Dept != "ALL") || (typeof data.Dept == "object" && data.Dept.length < 1)) {
+      //   console.log("Empty dept");
+      //   setError(
+      //     "Dept",
+      //     {
+      //       type: "validate",
+      //       message: "This field is required!",
+      //     },
+      //   );
+      //   return;
+      // } else {
+      //   console.log("dept error null")
+      //   clearErrors("Dept")
+      // }
       if (parseInt(data.MinCutoff) > parseInt(data.MaxCutoff)) {
         setError(
           "MinCutoff",
@@ -115,242 +155,300 @@ const Home = () => {
         Enter 12th Cut-Off marks and choose Category
       </h3>
       <form
-        className='flex flex-col mt-2 md:w-full md:px-24 gap-6 justify-start'
+        className='flex flex-col mt-2 md:w-full md:pl-[5vw] md:items-center gap-6 justify-start'
         onSubmit={handleSubmit(searchSubmission)}
       >
-        {/* Category and Years container */}
-        <div className='flex flex-col md:flex-row gap-2 justify-start items-start md:items-center md:gap-16 md:flex-wrap'>
-          {/* Cutoff Category choose */}
-          <div className='flex flex-col justify-center gap-1 w-full md:w-[unset]'>
-            <p className='font-normal text-sm'>Cutoff category:</p>
-            <SegmentedControl
-              ref={cutoffCategoryRef}
-              withItemsBorders={false}
-              color='blue'
-              styles={{
-                root: {
-                  width:
-                    windowSize.width != -1 && windowSize.width < 768
-                      ? "100%"
-                      : "20rem",
-                },
-                innerLabel: (value) => {
-                  return value && { color: "white" };
-                },
-              }}
-              value={searchCriteria?.cutoffCategory || "GC"}
-              onChange={(value) =>
-                setSearchCriteria((prev) => ({
-                  ...prev,
-                  cutoffCategory: value,
-                }))
-              }
-              radius='xs'
-              data={[
-                {
-                  label: "General Cutoff",
-                  value: "GC",
-                },
-                {
-                  label: "7.5% Cutoff",
-                  value: "SPF",
-                },
-                {
-                  label: "Vocational",
-                  value: "VOC",
-                  disabled: true,
-                },
-              ]}
-            />
+        <div className='flex flex-col gap-4'>
+          {/* Category and Years container */}
+          <div className='flex flex-col md:flex-row gap-2 justify-center md:justify-start md:gap-16 md:flex-wrap'>
+            {/* Cutoff Category choose */}
+            <div className='flex flex-col justify-center gap-1 w-full md:w-[unset]'>
+              <p className='font-normal text-sm'>Cutoff category:</p>
+              <SegmentedControl
+                ref={cutoffCategoryRef}
+                withItemsBorders={false}
+                color='blue'
+                styles={{
+                  root: {
+                    width:
+                      windowSize.width != -1 && windowSize.width < 768
+                        ? "100%"
+                        : "20rem",
+                  },
+                  innerLabel: (value) => {
+                    return value && { color: "white" };
+                  },
+                }}
+                value={searchCriteria?.cutoffCategory || "GC"}
+                onChange={(value) =>
+                  setSearchCriteria((prev) => ({
+                    ...prev,
+                    cutoffCategory: value,
+                  }))
+                }
+                radius='xs'
+                data={[
+                  {
+                    label: "General Cutoff",
+                    value: "GC",
+                  },
+                  {
+                    label: "7.5% Cutoff",
+                    value: "SPF",
+                  },
+                  {
+                    label: "Vocational",
+                    value: "VOC",
+                    disabled: true,
+                  },
+                ]}
+              />
+            </div>
+            {/* Groups choose */}
+            <div className='flex flex-col justify-center gap-1'>
+              <p className='font-normal text-sm'>Course Group:</p>
+              <Select
+                defaultValue='ALL'
+                allowDeselect={false}
+                checkIconPosition='left'
+                title={courseGroup}
+                styles={{
+                  root: { width: windowSize.width < 768 ? "100%" : "12rem" },
+                  input: {
+                    fontFamily: inter.style.fontFamily,
+                    borderColor: tw.theme.colors.gray[200],
+                  },
+                }}
+                onChange={(value) => setCourseGroup(value)}
+                data={["ALL", ...Object.keys(collegeCourseGroups)]} // for now only year 2023 is available. later add 2021 and 2022 too
+              />
+            </div>
+            {/* Year choose */}
+            <div className='flex flex-col justify-center gap-1'>
+              <p className='font-normal text-sm'>Search year:</p>
+              <Select
+                ref={yearInputRef}
+                defaultValue='2023'
+                allowDeselect={false}
+                checkIconPosition='right'
+                styles={{
+                  root: { width: "8rem" },
+                  input: {
+                    fontFamily: inter.style.fontFamily,
+                    borderColor: tw.theme.colors.gray[200],
+                  },
+                }}
+                onChange={(value) =>
+                  setSearchCriteria((prev) => ({ ...prev, year: value }))
+                }
+                data={["2023"]} // for now only year 2023 is available. later add 2021 and 2022 too
+              />
+            </div>
           </div>
-          {/* Groups choose */}
-          <div className='flex flex-col justify-center gap-1'>
-            <p className='font-normal text-sm'>Course Group:</p>
-            <Select
-              defaultValue='ALL'
-              allowDeselect={false}
-              checkIconPosition='left'
-              title={courseGroup}
-              styles={{
-                root: { width: windowSize.width < 768 ? "100%" : "12rem" },
-                input: { fontFamily: inter.style.fontFamily },
-              }}
-              onChange={(value) => setCourseGroup(value)}
-              data={["ALL", ...Object.keys(collegeCourseGroups)]} // for now only year 2023 is available. later add 2021 and 2022 too
-            />
-          </div>
-          {/* Year choose */}
-          <div className='flex flex-col justify-center gap-1'>
-            <p className='font-normal text-sm'>Search year:</p>
-            <Select
-              ref={yearInputRef}
-              defaultValue='2023'
-              allowDeselect={false}
-              checkIconPosition='right'
-              styles={{
-                root: { width: "8rem" },
-                input: { fontFamily: inter.style.fontFamily },
-              }}
-              onChange={(value) =>
-                setSearchCriteria((prev) => ({ ...prev, year: value }))
-              }
-              data={["2023"]} // for now only year 2023 is available. later add 2021 and 2022 too
-            />
-          </div>
-        </div>
 
-        {/* Linear Search bar */}
-        <div className='grid grid-cols-2 grid-rows-2 gap-2 md:flex md:gap-2 md:justify-center md:items-center md:flex-wrap'>
-          {/* Min cutoff */}
-          <div className='flex flex-col gap-1 items-center relative'>
-            <input
-              type='number'
-              name='starting-cutoff'
-              id='starting-cutoff'
-              placeholder='Starting Cut-Off'
-              className='bg-card/10 outline p-2 max-w-44 md:w-44 md:mb-0 mb-3 rounded-md outline-1 outline-gray-200 placeholder:text-sm focus:outline-sky-500/60'
-              {...register("MinCutoff", {
-                required: { value: true, message: "This field is required" },
-                min: {
-                  value: 70,
-                  message: "Minimum cutoff should be greater than 70",
-                },
-                max: {
-                  value: 200,
-                  message: "Minimum cutoff should be less than 200",
-                },
-              })}
-            />
-            {errors["MinCutoff"] && (
-              <p className='text-xs text-red-500 font-light absolute -top-4 left-0'>
-                {errors["MinCutoff"].message}
+          {/* Linear Search bar */}
+          <div className='grid grid-cols-2 grid-rows-2 gap-2 md:flex md:gap-2 md:justify-start md:items-center md:flex-wrap'>
+            {/* Min cutoff */}
+            <div className='flex flex-col gap-1 items-center relative'>
+              <input
+                type='number'
+                name='starting-cutoff'
+                id='starting-cutoff'
+                placeholder='Starting Cut-Off'
+                className='bg-card/10 outline p-2 max-w-44 md:w-[8.5rem] placeholder:text-[13px] md:mb-0 mb-3 rounded-md outline-1 outline-gray-200 focus:outline-sky-500/60'
+                {...register("MinCutoff", {
+                  required: { value: true, message: "This field is required" },
+                  min: {
+                    value: 70,
+                    message: "Minimum cutoff should be greater than 70",
+                  },
+                  max: {
+                    value: 200,
+                    message: "Minimum cutoff should be less than 200",
+                  },
+                })}
+              />
+              {errors["MinCutoff"] && (
+                <p className='text-xs text-red-500 font-light absolute -top-4 left-0'>
+                  {errors["MinCutoff"].message}
+                </p>
+              )}
+              <p
+                className='underline text-xs absolute cursor-pointer top-[80%] md:top-[110%] left-1'
+                onClick={open}
+              >
+                Not sure about cutoff?
               </p>
-            )}
-            <p
-              className='underline text-xs absolute cursor-pointer top-[80%] md:top-[110%] left-1'
-              onClick={open}
-            >
-              Not sure about cutoff?
-            </p>
-          </div>
-          {/* Max cutoff */}
-          <div className='flex flex-col gap-1 items-center relative'>
-            <input
-              type='number'
-              name='ending-cutoff'
-              id='ending-cutoff'
-              placeholder='Ending Cut-Off'
-              className='bg-card/10 outline p-2 max-w-44 md:w-44 md:mb-0 mb-3 rounded-md outline-1 outline-gray-200 placeholder:text-sm focus:outline-sky-500/60'
-              {...register("MaxCutoff", {
-                required: { value: true, message: "This field is required" },
-                min: {
-                  value: 70,
-                  message: "Maximum cutoff should be greater than 70",
-                },
-                max: {
-                  value: 200,
-                  message: "Maximum cutoff should be less than 200",
-                },
-              })}
-            />
-            {errors["MaxCutoff"] && (
-              <p className='text-xs text-red-500 font-light absolute -top-4 left-0'>
-                {errors["MaxCutoff"].message}
-              </p>
-            )}
-          </div>
-          {/* Dept */}
-          <div className='grid col-span-2 md:flex md:flex-col md:gap-1 md:items-center relative'>
-            <select
-              name='category'
-              defaultValue={"select"}
-              className='bg-card/10 outline rounded-md outline-1 p-2 py-2.5 w-full md:w-52 pr-8 outline-gray-200 placeholder:text-sm focus:outline-sky-500/60'
-              id='category'
-              {...register("Dept", {
-                required: { value: true, message: "This field is required" },
-                validate: (value) =>
-                  (value !== "select" &&
-                    (UNIQUE_COURSE_NAMES.includes(value) ||
-                      value === "All departments")) ||
-                  "Invalid value selected!",
-              })}
-            >
-              <option className='break-words w-52' value='select'>
-                Select Department
-              </option>
-              <option className='break-words w-52' value='All departments'>
-                All Departments
-              </option>
-              {UNIQUE_COURSE_NAMES.map((course, i) => (
-                <option className='break-words w-52' key={i} value={course}>
-                  {course}
+            </div>
+            {/* Max cutoff */}
+            <div className='flex flex-col gap-1 items-center relative'>
+              <input
+                type='number'
+                name='ending-cutoff'
+                id='ending-cutoff'
+                placeholder='Ending Cut-Off'
+                className='bg-card/10 outline p-2 max-w-44 md:w-[8.5rem] placeholder:text-[13px] md:mb-0 mb-3 rounded-md outline-1 outline-gray-200 focus:outline-sky-500/60'
+                {...register("MaxCutoff", {
+                  required: { value: true, message: "This field is required" },
+                  min: {
+                    value: 70,
+                    message: "Maximum cutoff should be greater than 70",
+                  },
+                  max: {
+                    value: 200,
+                    message: "Maximum cutoff should be less than 200",
+                  },
+                })}
+              />
+              {errors["MaxCutoff"] && (
+                <p className='text-xs text-red-500 font-light absolute -top-4 left-0'>
+                  {errors["MaxCutoff"].message}
+                </p>
+              )}
+            </div>
+            {/* Dept */}
+            <div className='grid col-span-2 md:flex md:flex-col md:gap-1 md:items-center relative'>
+              {/* For now we are using multi select, maybe revert or use combo later */}
+              {/* <select
+                name='category'
+                defaultValue={"select"}
+                className='bg-card/10 outline rounded-md outline-1 p-2 py-2.5 w-full md:w-52 pr-8 outline-gray-200 placeholder:text-sm focus:outline-sky-500/60'
+                id='category'
+                {...register("Dept", {
+                  required: { value: true, message: "This field is required" },
+                  validate: (value) =>
+                    (value !== "select" &&
+                      (UNIQUE_COURSE_NAMES.includes(value) ||
+                        value === "All departments")) ||
+                    "Invalid value selected!",
+                })}
+              >
+                <option className='break-words w-52' value='select'>
+                  Select Department
                 </option>
-              ))}
-            </select>
-            {/* <Combobox
-              store={departmentCombobox}
-              onOptionSubmit={(value) => {
-                setValue("Dept", value)
-              }}
-            >
-              <Combobox.Target>
-                <input
-                  type='text'
-                  className='py-2 px-3 w-full md:w-[50%] outline outline-1 placeholder:text-sm outline-gray-300 focus:outline-gray-400 md:outline-gray-200 rounded-md focus:outline-1 md:focus:outline-sky-500/60'
-                  onClick={() => {
-                    departmentCombobox.openDropdown();
-                  }}
-                />
-                <Combobox.Chevron />
-              </Combobox.Target>
-              <Combobox.Dropdown>
-                <Combobox.Options>
+                <option className='break-words w-52' value='All departments'>
+                  All Departments
+                </option>
+                {UNIQUE_COURSE_NAMES.map((course, i) => (
+                  <option className='break-words w-52' key={i} value={course}>
+                    {course}
+                  </option>
+                ))}
+              </select> */}
+              {/* <Combobox
+                store={departmentCombobox}
+                onOptionSubmit={(value) => {
+                  setValue("Dept", value)
+                }}
+              >
+                <Combobox.Target>
+                  <input
+                    type='text'
+                    className='py-2 px-3 w-full md:w-[50%] outline outline-1 placeholder:text-sm outline-gray-300 focus:outline-gray-400 md:outline-gray-200 rounded-md focus:outline-1 md:focus:outline-sky-500/60'
+                    onClick={() => {
+                      departmentCombobox.openDropdown();
+                    }}
+                  />
+                  <Combobox.Chevron />
+                </Combobox.Target>
+                <Combobox.Dropdown>
+                  <Combobox.Options>
 
-                </Combobox.Options>
-              </Combobox.Dropdown>
-            </Combobox> */}
-            {errors["Dept"] && (
-              <p className='text-xs text-red-500 font-light absolute -top-4 left-0'>
-                {errors["Dept"].message}
-              </p>
-            )}
+                  </Combobox.Options>
+                </Combobox.Dropdown>
+              </Combobox> */}
+
+              <MultiSelect
+                searchable
+                placeholder='Select department'
+                data={courseGroupsDropdownData}
+                hiddenInputProps={{
+                  ...register("Dept", {
+                    required: {
+                      value: true,
+                      message: "This field is required",
+                    },
+                    validate: (value) => value != "" || "Invalid value selected!",
+                  }),
+                }}
+                onChange={(values) => {
+                  if (values.includes("ALL") && values.length > 1) {
+                    setValue("Dept","ALL");
+                  } else {
+                    setValue("Dept",
+                      values.map((value) => value.replace(/\s+/g, ""))
+                    );
+                  }
+                }}
+                styles={{
+                  root: {
+                    width: windowSize.width < 768 ? "100%" : "16rem",
+                  },
+                  input: {
+                    paddingTop: "0.55rem",
+                    paddingBottom: "0.55rem",
+                    borderRadius: "0.4rem",
+                    fontFamily: inter.style.fontFamily,
+                    fontWeight: inter.style.fontWeight,
+                    borderColor: tw.theme.colors.gray[200],
+                  },
+                  pill: {
+                    maxWidth: "5rem",
+                    fontSize: "0.7rem",
+                  },
+                  option: {
+                    fontSize: "0.8rem",
+                  },
+                  groupLabel: {
+                    fontSize: "0.7rem",
+                    padding: 3,
+                  },
+                }}
+                comboboxProps={{ withArrow: true }}
+              />
+              {errors["Dept"] && (
+                <p className='text-xs text-red-500 font-light absolute -top-4 left-0'>
+                  {errors["Dept"].message}
+                </p>
+              )}
+            </div>
+            {/* Category */}
+            <div className='grid col-span-2 md:flex md:flex-col md:gap-1 md:items-center relative'>
+              <select
+                name='category'
+                defaultValue={"Select"}
+                className='bg-card/10 outline p-2 py-2.5 pr-8 rounded-md outline-[0.8px] outline-gray-200 placeholder:text-sm focus:outline-sky-500/60'
+                id='category'
+                {...register("Category", {
+                  required: { value: true, message: "This field is required" },
+                  validate: (value) =>
+                    (value !== "select" &&
+                      ["OC", "BC", "BCM", "MBC", "SC", "ST", "SCA"].includes(
+                        value
+                      )) ||
+                    "Invalid value selected!",
+                })}
+              >
+                <option value='select'>Select Category</option>
+                <option value='OC'>OC</option>
+                <option value='BC'>BC</option>
+                <option value='BCM'>BCM</option>
+                <option value='MBC'>MBC</option>
+                <option value='SC'>SC</option>
+                <option value='ST'>ST</option>
+                <option value='SCA'>SCA</option>
+              </select>
+              {errors["Category"] && (
+                <p className='text-xs text-red-500 font-light absolute -top-4 left-0'>
+                  {errors["Category"].message}
+                </p>
+              )}
+            </div>
+            <button className='bg-mantine-blue text-center col-span-2 w-full md:w-fit md:px-6 py-1.5 text-lg rounded flex gap-2 text-white items-center justify-center md:ml-2'>
+              <LuSearch />
+              <p>Go</p>
+            </button>
           </div>
-          {/* Category */}
-          <div className='grid col-span-2 md:flex md:flex-col md:gap-1 md:items-center relative'>
-            <select
-              name='category'
-              defaultValue={"Select"}
-              className='bg-card/10 outline p-2 py-2.5 pr-8 rounded-md outline-[0.8px] outline-gray-200 placeholder:text-sm focus:outline-sky-500/60'
-              id='category'
-              {...register("Category", {
-                required: { value: true, message: "This field is required" },
-                validate: (value) =>
-                  (value !== "select" &&
-                    ["OC", "BC", "BCM", "MBC", "SC", "ST", "SCA"].includes(
-                      value
-                    )) ||
-                  "Invalid value selected!",
-              })}
-            >
-              <option value='select'>Select Category</option>
-              <option value='OC'>OC</option>
-              <option value='BC'>BC</option>
-              <option value='BCM'>BCM</option>
-              <option value='MBC'>MBC</option>
-              <option value='SC'>SC</option>
-              <option value='ST'>ST</option>
-              <option value='SCA'>SCA</option>
-            </select>
-            {errors["Category"] && (
-              <p className='text-xs text-red-500 font-light absolute -top-4 left-0'>
-                {errors["Category"].message}
-              </p>
-            )}
-          </div>
-          <button className='bg-mantine-blue text-center col-span-2 w-full md:w-fit md:px-6 py-1.5 text-lg rounded flex gap-2 text-white items-center justify-center md:ml-2'>
-            <LuSearch />
-            <p>Go</p>
-          </button>
         </div>
       </form>
 

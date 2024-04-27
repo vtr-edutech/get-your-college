@@ -15,28 +15,25 @@ const CollegesTable = ({ searchCriteria }) => {
       ['GC', 'SPF', 'VOC'].includes(searchCriteria.cutoffCategory)? colleges[searchCriteria.cutoffCategory]
         .filter(
           (college) =>
-            (searchCriteria?.Dept == "All departments"
+            (searchCriteria?.Dept == "ALL"
               ? true
-              : college["Branch Name"] === searchCriteria?.Dept) &&
-            college[`${searchCriteria.Category} - Cutoff`] >=
-              parseFloat(searchCriteria.MinCutoff) &&
-            college[`${searchCriteria.Category} - Cutoff`] <=
-              parseFloat(searchCriteria.MaxCutoff) &&
-            (college["College Name"]
-              .toLowerCase()
-              .replace(/\s+/g, "")
-              .includes(
-                searchCriteria.searchKey.toLowerCase().replace(/\s+/g, "")
-              ) ||
-              college["College Code"]
-                .toString()
-                .toLowerCase()
-                .replace(/\s+/g, "")
-                .includes(
-                  searchCriteria.searchKey.toLowerCase().replace(/\s+/g, "")
-                )) /* =&& (
-                  college[''] ----> District filter 
-                ) */
+              : searchCriteria?.Dept.includes(college["Branch Name"].replace(/\s+/g, '').toUpperCase())
+            ) &&
+              college[`${searchCriteria.Category} - Cutoff`] >= parseFloat(searchCriteria.MinCutoff) &&
+              college[`${searchCriteria.Category} - Cutoff`] <= parseFloat(searchCriteria.MaxCutoff) &&
+                (college["College Name"]
+                  .toLowerCase()
+                  .replace(/\s+/g, "")
+                  .includes(
+                    searchCriteria.searchKey.toLowerCase().replace(/\s+/g, "")
+                  ) ||
+                  college["College Code"]
+                    .toString()
+                    .toLowerCase()
+                    .replace(/\s+/g, "")
+                    .includes(
+                      searchCriteria.searchKey.toLowerCase().replace(/\s+/g, "")
+                ))
         )
         .filter((college) =>
           searchCriteria.districtKey.trim() != ""
