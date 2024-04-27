@@ -159,7 +159,7 @@ const Home = () => {
         className='flex flex-col mt-2 md:w-full md:items-center gap-6 justify-start'
         onSubmit={handleSubmit(searchSubmission)}
       >
-        <div className='flex flex-col gap-8 md:gap-4'>
+        <div className='flex flex-col gap-8'>
           {/* Category and Years container */}
           <div className='flex flex-col md:flex-row gap-7 justify-center md:justify-start md:gap-16 md:flex-wrap'>
             {/* Cutoff Category choose */}
@@ -187,7 +187,6 @@ const Home = () => {
                     cutoffCategory: value,
                   }))
                 }
-                radius='xs'
                 data={[
                   {
                     label: "General Cutoff",
@@ -252,8 +251,8 @@ const Home = () => {
           <div className='grid grid-cols-2 grid-rows-2 gap-2 gap-y-7 md:flex md:gap-2 md:justify-start md:items-center md:flex-wrap'>
             {/* Min cutoff */}
             <div className='flex flex-col gap-1 items-center relative'>
-              <p className='md:hidden text-sm w-full text-left'>
-                Minimum Cut-off
+              <p className='font-normal text-sm w-full text-left'>
+                Minimum Cut-off:
               </p>
               <input
                 type='number'
@@ -272,6 +271,7 @@ const Home = () => {
                     message: "Minimum cutoff should be less than 200",
                   },
                 })}
+                defaultValue={70}
               />
               {errors["MinCutoff"] && (
                 <p className='text-xs text-red-500 font-light absolute -top-4 left-0'>
@@ -287,8 +287,8 @@ const Home = () => {
             </div>
             {/* Max cutoff */}
             <div className='flex flex-col gap-1 items-center relative'>
-              <p className='md:hidden text-sm w-full text-left'>
-                Maximum Cut-off
+              <p className='font-normal text-sm w-full text-left'>
+                Maximum Cut-off:
               </p>
               <input
                 type='number'
@@ -365,7 +365,9 @@ const Home = () => {
                   </Combobox.Options>
                 </Combobox.Dropdown>
               </Combobox> */}
-
+              <p className='font-normal text-sm w-full text-left'>
+                Department:
+              </p>
               <MultiSelect
                 searchable
                 placeholder='Select department'
@@ -428,6 +430,7 @@ const Home = () => {
             </div>
             {/* Category */}
             <div className='grid col-span-2 md:flex md:flex-col md:gap-1 md:items-center relative'>
+              <p className='font-normal text-sm w-full text-left'>Community:</p>
               <select
                 name='category'
                 defaultValue={"Select"}
@@ -458,10 +461,14 @@ const Home = () => {
                 </p>
               )}
             </div>
-            <button className='bg-mantine-blue text-center col-span-2 w-full md:w-fit md:px-6 py-1.5 text-lg rounded flex gap-2 text-white items-center justify-center md:ml-2'>
-              <LuSearch />
-              <p>Go</p>
-            </button>
+            <div className='grid col-span-2 md:flex md:flex-col md:gap-1 md:items-center relative'>
+              <p className='font-normal text-sm w-full text-white text-left'>&nbsp;
+              </p>
+              <button className='bg-mantine-blue text-center col-span-2 w-full md:w-fit md:px-6 py-1.5 text-lg rounded flex gap-2 text-white items-center justify-center md:ml-2'>
+                <LuSearch />
+                <p>Go</p>
+              </button>
+            </div>
           </div>
         </div>
       </form>
@@ -527,6 +534,7 @@ const Home = () => {
               <SegmentedControl
                 label={"Filter By"}
                 value={searchCriteria.filterBy}
+                color='blue'
                 styles={{
                   root: { width: window.innerWidth < 768 ? "100%" : "unset" },
                 }}

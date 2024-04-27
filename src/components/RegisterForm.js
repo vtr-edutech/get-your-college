@@ -1,10 +1,11 @@
 "use client";
 import Button from "@/components/ui/Button";
 import { setUserData } from "@/store/userInfoSlice";
+import { ALL_DISTRICT } from "@/utils/collegeDistrictData";
 import { Checkbox, Combobox, useCombobox } from "@mantine/core";
 import axios from "axios";
 import { signOut, useSession } from "next-auth/react";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { useForm } from "react-hook-form";
 import { useDispatch, useSelector } from "react-redux";
 import { toast } from "react-toastify";
@@ -33,6 +34,7 @@ const RegisterForm = ({ closeFn }) => {
   const [isChecked, setIsChecked] = useState(false);
   const [hasFetched, setHasFetched] = useState(false);
   const [group, setGroup] = useState()
+  const [districtKey, setDistrictKey] = useState('')
 
   const bosCombobox = useCombobox({
     onDropdownClose: () => bosCombobox.resetSelectedOption(),
@@ -42,6 +44,16 @@ const RegisterForm = ({ closeFn }) => {
         : bosCombobox.updateSelectedOptionIndex("active");
     },
   });
+
+  const districtCombobox = useCombobox({
+    onDropdownClose: () => districtCombobox.resetSelectedOption(),
+    onDropdownOpen: (eventSource) => {
+      eventSource == "keyboard"
+        ? districtCombobox.selectActiveOption()
+        : districtCombobox.updateSelectedOptionIndex("active");
+    },
+  });
+
   // console.log("🚀 ~ RegisterForm ~ userInfo:", userInfo)
   // console.log("🚀 ~ RegisterForm ~ hasFetched:", hasFetched)
 
@@ -53,6 +65,18 @@ const RegisterForm = ({ closeFn }) => {
     getValues,
     formState: { errors },
   } = useForm();
+
+  const options = useMemo(
+    () =>
+      ALL_DISTRICT.concat("OTHER").filter((district) =>
+        district.toLowerCase().trim().includes(districtKey.toLowerCase().trim())
+      ).map((district, k) => (
+        <Combobox.Option key={k} value={district}>
+          {district}
+        </Combobox.Option>
+      )),
+    [districtKey]
+  );
 
   const { update } = useSession();
 
@@ -148,7 +172,9 @@ const RegisterForm = ({ closeFn }) => {
       >
         {/* First name input */}
         <div className='flex flex-col gap-1'>
-          <p className='font-light text-xs'>First Name</p>
+          <p className='font-light text-xs'>
+            First Name<span className='text-red-500 text-sm'> *</span>
+          </p>
           <input
             {...register("firstName", {
               required: { value: true, message: "Can't be empty" },
@@ -172,7 +198,9 @@ const RegisterForm = ({ closeFn }) => {
         </div>
         {/* 12th register No */}
         <div className='flex flex-col gap-1'>
-          <p className='font-light text-xs'>12th Register Number</p>
+          <p className='font-light text-xs'>
+            12th Register Number<span className='text-red-500 text-sm'> *</span>
+          </p>
           <input
             {...register("registerNo", {
               required: { value: true, message: "Can't be empty" },
@@ -239,7 +267,9 @@ const RegisterForm = ({ closeFn }) => {
         </div>
         {/* Gender */}
         <div className='flex flex-col gap-1'>
-          <p className='font-light text-xs'>Gender</p>
+          <p className='font-light text-xs'>
+            Gender<span className='text-red-500 text-sm'> *</span>
+          </p>
           <select
             {...register("gender", {
               required: true,
@@ -260,17 +290,23 @@ const RegisterForm = ({ closeFn }) => {
         </div>
         {/* Current pursuit */}
         <div className='flex flex-col gap-1'>
-          <p className='font-light text-xs'>Group</p>
+          <p className='font-light text-xs'>
+            Group<span className='text-red-500 text-sm'> *</span>
+          </p>
           <select
             {...register("group", {
               required: true,
-              validate: (value) =>
-                higherSecGroup.map((grp) => grp.value).includes(value) ||
-                "Invalid group",
+              // validate: (value) =>
+              //   higherSecGroup.map((grp) => grp.value).includes(value) ||
+              //   "Invalid group",
             })}
-            onChange={(e) => setGroup(e.currentTarget.value)}
+            onChange={(e) => {
+              setValue("group", e.currentTarget.value)
+              setGroup(e.currentTarget.value)
+            }}
             className='w-full  rounded-md bg-slate-50 outline-gray-200 px-3 py-2 outline outline-1 focus:outline-mantine-blue'
-            value={group}
+            value={!higherSecGroup.map(grp => grp.value).includes(getValues("group")) ? "000": getValues("group")}
+            defaultValue={getValues("group")}
           >
             {higherSecGroup.map((grp) => (
               <option value={grp.value} key={Math.random()}>
@@ -287,7 +323,9 @@ const RegisterForm = ({ closeFn }) => {
         {/* Optional other for group */}
         {group == "000" && (
           <div className='flex flex-col gap-1'>
-            <p className='font-light text-xs'>Mention Group</p>
+            <p className='font-light text-xs'>
+              Mention Group<span className='text-red-500 text-sm'> *</span>
+            </p>
             <input
               {...register("group", {
                 required: { value: true, message: "Required!" },
@@ -299,8 +337,8 @@ const RegisterForm = ({ closeFn }) => {
                 validate: (value) => value.trim() !== "" || "Invalid Group",
               })}
               type='text'
-              className='w-full  rounded-md bg-slate-50 outline-gray-200 px-3 py-2 outline outline-1 focus:outline-mantine-blue'
-              value={group}
+              defaultValue={getValues("group")}
+              className='w-full rounded-md bg-slate-50 outline-gray-200 px-3 py-2 outline outline-1 focus:outline-mantine-blue'
             />
             {errors["group"] && (
               <p className='text-xs text-red-500 font-light'>
@@ -311,7 +349,9 @@ const RegisterForm = ({ closeFn }) => {
         )}
         {/* Board of study */}
         <div className='flex flex-col gap-1'>
-          <p className='font-light text-xs'>Board of Study</p>
+          <p className='font-light text-xs'>
+            Board of Study<span className='text-red-500 text-sm'> *</span>
+          </p>
           <Combobox
             store={bosCombobox}
             shadow='md'
@@ -322,7 +362,7 @@ const RegisterForm = ({ closeFn }) => {
           >
             <Combobox.Target>
               <input
-                className='w-full  rounded-md bg-slate-50 outline-gray-200 px-3 py-2 outline outline-1 focus:outline-mantine-blue'
+                className='w-full cursor-pointer rounded-md bg-slate-50 outline-gray-200 px-3 py-2 outline outline-1 focus:outline-mantine-blue'
                 onInput={(e) => (e.currentTarget.value = null)}
                 onClick={() => bosCombobox.toggleDropdown()}
                 value={getValues("BOS")}
@@ -357,7 +397,10 @@ const RegisterForm = ({ closeFn }) => {
         {/* If others please mention */}
         {getValues("BOS") == "OTHER" && (
           <div className='flex flex-col gap-1'>
-            <p className='font-light text-xs'>Mention board of study</p>
+            <p className='font-light text-xs'>
+              Mention board of study
+              <span className='text-red-500 text-sm'> *</span>
+            </p>
             <input
               {...register("BOS", {
                 required: { value: true, message: "Required!" },
@@ -383,35 +426,82 @@ const RegisterForm = ({ closeFn }) => {
         )}
         {/* District */}
         <div className='flex flex-col gap-1'>
-          <p className='font-light text-xs'>District</p>
-
+          <p className='font-light text-xs'>
+            District<span className='text-red-500 text-sm'> *</span>
+          </p>
+          <Combobox
+            store={districtCombobox}
+            shadow='md'
+            onOptionSubmit={(val) => {
+              setDistrictKey(val);
+              setValue("district", val);
+              districtCombobox.closeDropdown();
+            }}
+          >
+            <Combobox.Target>
+              <input
+                type='search'
+                name='district'
+                placeholder='Search by district'
+                id='search-district'
+                className='bg-slate-50 py-2 px-3 w-full outline outline-1 placeholder:text-sm outline-gray-300 focus:outline-mantine-blue md:outline-gray-200 rounded-md focus:outline-1 md:focus:outline-mantine-blue'
+                onClick={() => districtCombobox.toggleDropdown()}
+                {...register("district", {
+                  required: { value: true, message: "Required!" },
+                  minLength: { value: true, message: "Invalid District" },
+                  maxLength: {
+                    value: 200,
+                    message: "Max length of District exceeded",
+                  },
+                  validate: (value) =>
+                    value.trim() !== "" || "Invalid District",
+                })}
+                onInput={(e) => setDistrictKey(e.currentTarget.value)}
+                // value={dist}
+              />
+            </Combobox.Target>
+            <Combobox.Dropdown>
+              <Combobox.Options
+                mah={300}
+                styles={{ options: { overflowY: "scroll" } }}
+              >
+                {options}
+              </Combobox.Options>
+            </Combobox.Dropdown>
+          </Combobox>
         </div>
         {/* Optional District */}
-        <div className='flex flex-col gap-1'>
-          <p className='font-light text-xs'>Mention District</p>
-          <input
-            {...register("district", {
-              required: { value: true, message: "Required!" },
-              minLength: { value: true, message: "Invalid District" },
-              maxLength: {
-                value: 200,
-                message: "Max length of District exceeded",
-              },
-              validate: (value) => value.trim() !== "" || "Invalid District",
-            })}
-            type='text'
-            className='w-full  rounded-md bg-slate-50 outline-gray-200 px-3 py-2 outline outline-1 focus:outline-mantine-blue'
-            // defaultValue={userInfo.address ?? ""}
-          />
-          {errors["district"] && (
-            <p className='text-xs text-red-500 font-light'>
-              {errors["district"].message}
+        {districtKey == "OTHER" && (
+          <div className='flex flex-col gap-1'>
+            <p className='font-light text-xs'>
+              Mention District<span className='text-red-500 text-sm'> *</span>
             </p>
-          )}
-        </div>
+            <input
+              {...register("district", {
+                required: { value: true, message: "Required!" },
+                minLength: { value: true, message: "Invalid District" },
+                maxLength: {
+                  value: 200,
+                  message: "Max length of District exceeded",
+                },
+                validate: (value) => value.trim() !== "" || "Invalid District",
+              })}
+              type='text'
+              className='w-full  rounded-md bg-slate-50 outline-gray-200 px-3 py-2 outline outline-1 focus:outline-mantine-blue'
+              // defaultValue={userInfo.address ?? ""}
+            />
+            {errors["district"] && (
+              <p className='text-xs text-red-500 font-light'>
+                {errors["district"].message}
+              </p>
+            )}
+          </div>
+        )}
         {/* Pincode */}
         <div className='flex flex-col gap-1'>
-          <p className='font-light text-xs'>Pincode</p>
+          <p className='font-light text-xs'>
+            Pincode<span className='text-red-500 text-sm'> *</span>
+          </p>
           <input
             {...register("pincode", {
               required: { value: true, message: "Required!" },
@@ -435,7 +525,9 @@ const RegisterForm = ({ closeFn }) => {
         </div>
         {/* DOB */}
         <div className='flex flex-col gap-1'>
-          <p className='font-light text-xs'>Date of Birth</p>
+          <p className='font-light text-xs'>
+            Date of Birth<span className='text-red-500 text-sm'> *</span>
+          </p>
           <input
             {...register("dob", {
               required: { value: true, message: "Required!" },
@@ -462,9 +554,14 @@ const RegisterForm = ({ closeFn }) => {
         {/* Agree or not */}
         <div className='flex gap-2 items-start'>
           <Checkbox
-            label="I authorize 'Get Your Colleges' to contact me regarding
-            events, updates and admission support via Email, SMS and Whatsapp
-            calls."
+            label={
+              <>
+                I authorize &apos;Get Your College&apos; to contact me
+                regarding events, updates and admission support via Email, SMS
+                and Whatsapp calls.
+                <span className='text-red-500 text-sm'> *</span>
+              </>
+            }
             checked={isChecked}
             onChange={() => setIsChecked(!isChecked)}
           />
