@@ -23,7 +23,10 @@ const Login = () => {
       // router.push('/register'); // just sending to any of the auth routes and it automatically send back if cookie to /home
       setIsOTPProvided(true)
       const testing = await signIn('credentials', { mobile, otp, redirect: false });
-      if (!testing.ok) return toast.error('Mobile or OTP Invalid. Please try again!');
+      if (!testing.ok) {
+        alert(testing.error + '')
+        return toast.error('Mobile or OTP Invalid. Please try again!')
+      };
       if (testing.ok) router.refresh();
 
     } catch (error) {

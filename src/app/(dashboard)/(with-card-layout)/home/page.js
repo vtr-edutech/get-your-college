@@ -159,7 +159,7 @@ const Home = () => {
         className='flex flex-col mt-2 md:w-full md:items-center gap-6 justify-start'
         onSubmit={handleSubmit(searchSubmission)}
       >
-        <div className='flex flex-col gap-8'>
+        <div className='flex flex-col gap-12 md:gap-8'>
           {/* Category and Years container */}
           <div className='flex flex-col md:flex-row gap-7 justify-center md:justify-start md:gap-16 md:flex-wrap'>
             {/* Cutoff Category choose */}
@@ -217,7 +217,10 @@ const Home = () => {
                   root: { width: windowSize.width < 768 ? "100%" : "12rem" },
                   input: {
                     fontFamily: inter.style.fontFamily,
-                    borderColor: tw.theme.colors.gray[200],
+                    borderColor:
+                      windowSize.width < 768
+                        ? tw.theme.colors["mantine-blue"]
+                        : tw.theme.colors.gray[200],
                   },
                 }}
                 onChange={(value) => setCourseGroup(value)}
@@ -236,7 +239,10 @@ const Home = () => {
                   root: { width: "8rem" },
                   input: {
                     fontFamily: inter.style.fontFamily,
-                    borderColor: tw.theme.colors.gray[200],
+                    borderColor:
+                      windowSize.width < 768
+                        ? tw.theme.colors["mantine-blue"]
+                        : tw.theme.colors.gray[200],
                   },
                 }}
                 onChange={(value) =>
@@ -246,6 +252,8 @@ const Home = () => {
               />
             </div>
           </div>
+
+          <hr className='md:hidden self-center border-none border-0 bg-black/10 h-[1px] w-[90%]' />
 
           {/* Linear Search bar */}
           <div className='grid grid-cols-2 grid-rows-2 gap-2 gap-y-7 md:flex md:gap-2 md:justify-start md:items-center md:flex-wrap'>
@@ -259,7 +267,7 @@ const Home = () => {
                 name='starting-cutoff'
                 id='starting-cutoff'
                 placeholder='Starting Cut-Off'
-                className='bg-card/10 outline p-2 max-w-44 w-full md:w-[8.5rem] placeholder:text-sm md:mb-0 mb-3 rounded-md outline-1 outline-gray-200 focus:outline-mantine-blue/60'
+                className='bg-card/10 outline p-2 max-w-44 w-full md:w-[8.5rem] placeholder:text-sm md:mb-0 mb-3 rounded-md outline-1 md:focus:outline-1 focus:outline-2 outline-mantine-blue/50 md:outline-gray-200 focus:outline-mantine-blue'
                 {...register("MinCutoff", {
                   required: { value: true, message: "This field is required" },
                   min: {
@@ -295,7 +303,7 @@ const Home = () => {
                 name='ending-cutoff'
                 id='ending-cutoff'
                 placeholder='Ending Cut-Off'
-                className='bg-card/10 outline p-2 max-w-44 w-full md:w-[8.5rem] placeholder:text-sm md:mb-0 mb-3 rounded-md outline-1 outline-gray-200 focus:outline-mantine-blue/60'
+                className='bg-card/10 outline p-2 max-w-44 w-full md:w-[8.5rem] placeholder:text-sm md:mb-0 mb-3 rounded-md outline-1 md:focus:outline-1 focus:outline-2 outline-mantine-blue/50 md:outline-gray-200 focus:outline-mantine-blue/60'
                 {...register("MaxCutoff", {
                   required: { value: true, message: "This field is required" },
                   min: {
@@ -320,7 +328,7 @@ const Home = () => {
               {/* <select
                 name='category'
                 defaultValue={"select"}
-                className='bg-card/10 outline rounded-md outline-1 p-2 py-2.5 w-full md:w-52 pr-8 outline-gray-200 placeholder:text-sm focus:outline-mantine-blue/60'
+                className='bg-card/10 outline rounded-md outline-1 p-2 py-2.5 w-full md:w-52 pr-8 md:focus:outline-1 focus:outline-2 outline-mantine-blue/50 md:outline-gray-200 placeholder:text-sm focus:outline-mantine-blue/60'
                 id='category'
                 {...register("Dept", {
                   required: { value: true, message: "This field is required" },
@@ -352,7 +360,7 @@ const Home = () => {
                 <Combobox.Target>
                   <input
                     type='text'
-                    className='py-2 px-3 w-full md:w-[50%] outline outline-1 placeholder:text-sm outline-gray-300 focus:outline-gray-400 md:outline-gray-200 rounded-md focus:outline-1 md:focus:outline-mantine-blue/60'
+                    className='py-2 px-3 w-full md:w-[50%] outline outline-1 placeholder:text-sm outline-gray-300 focus:outline-gray-400 md:md:focus:outline-1 focus:outline-2 outline-mantine-blue/50 md:outline-gray-200 rounded-md focus:outline-1 md:focus:outline-mantine-blue/60'
                     onClick={() => {
                       departmentCombobox.openDropdown();
                     }}
@@ -402,7 +410,13 @@ const Home = () => {
                     borderRadius: "0.4rem",
                     fontFamily: inter.style.fontFamily,
                     fontWeight: inter.style.fontWeight,
-                    borderColor: tw.theme.colors.gray[200],
+                    borderColor:
+                      windowSize.width < 768
+                        ? tw.theme.colors["mantine-blue"]
+                        : tw.theme.colors.gray[200],
+                    "md": {
+                      borderColor: "black"
+                    }
                   },
                   pill: {
                     maxWidth: "5rem",
@@ -434,7 +448,7 @@ const Home = () => {
               <select
                 name='category'
                 defaultValue={"Select"}
-                className='bg-card/10 outline p-2 py-2.5 pr-8 rounded-md outline-[0.8px] outline-gray-200 placeholder:text-sm focus:outline-mantine-blue/60'
+                className='bg-card/10 outline p-2 py-2.5 pr-8 rounded-md outline-[0.8px] md:focus:outline-1 focus:outline-2 outline-mantine-blue/50 md:outline-gray-200 placeholder:text-sm focus:outline-mantine-blue/60'
                 id='category'
                 {...register("Category", {
                   required: { value: true, message: "This field is required" },
@@ -461,8 +475,10 @@ const Home = () => {
                 </p>
               )}
             </div>
+            {/* Submit Button */}
             <div className='grid col-span-2 md:flex md:flex-col md:gap-1 md:items-center relative'>
-              <p className='font-normal text-sm w-full text-white text-left'>&nbsp;
+              <p className='font-normal text-sm w-full text-white text-left'>
+                &nbsp;
               </p>
               <button className='bg-mantine-blue text-center col-span-2 w-full md:w-fit md:px-6 py-1.5 text-lg rounded flex gap-2 text-white items-center justify-center md:ml-2'>
                 <LuSearch />

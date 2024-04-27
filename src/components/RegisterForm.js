@@ -196,6 +196,27 @@ const RegisterForm = ({ closeFn }) => {
             </p>
           )}
         </div>
+        {/* Last name */}
+        <div className='flex flex-col gap-1'>
+          <p className='font-light text-xs'>Last Name</p>
+          <input
+            {...register("lastName", {
+              // required: { value: true, message: "Can't be empty" },
+              maxLength: {
+                value: 80,
+                message: "Max length is 100 characters only",
+              },
+              // validate: (value) => value.trim() !== "" || "Invalid Last name",
+            })}
+            type='text'
+            className='w-full  rounded-md bg-slate-50 outline-gray-200 px-3 py-2 outline outline-1 focus:outline-mantine-blue'
+          />
+          {errors["lastName"] && (
+            <p className='text-xs text-red-500 font-light'>
+              {errors["lastName"].message}
+            </p>
+          )}
+        </div>
         {/* 12th register No */}
         <div className='flex flex-col gap-1'>
           <p className='font-light text-xs'>
@@ -224,27 +245,6 @@ const RegisterForm = ({ closeFn }) => {
           {errors["registerNo"] && (
             <p className='text-xs text-red-500 font-light'>
               {errors["registerNo"].message}
-            </p>
-          )}
-        </div>
-        {/* Last name */}
-        <div className='flex flex-col gap-1'>
-          <p className='font-light text-xs'>Last Name</p>
-          <input
-            {...register("lastName", {
-              // required: { value: true, message: "Can't be empty" },
-              maxLength: {
-                value: 80,
-                message: "Max length is 100 characters only",
-              },
-              // validate: (value) => value.trim() !== "" || "Invalid Last name",
-            })}
-            type='text'
-            className='w-full  rounded-md bg-slate-50 outline-gray-200 px-3 py-2 outline outline-1 focus:outline-mantine-blue'
-          />
-          {errors["lastName"] && (
-            <p className='text-xs text-red-500 font-light'>
-              {errors["lastName"].message}
             </p>
           )}
         </div>
@@ -301,11 +301,17 @@ const RegisterForm = ({ closeFn }) => {
               //   "Invalid group",
             })}
             onChange={(e) => {
-              setValue("group", e.currentTarget.value)
-              setGroup(e.currentTarget.value)
+              setValue("group", e.currentTarget.value);
+              setGroup(e.currentTarget.value);
             }}
             className='w-full  rounded-md bg-slate-50 outline-gray-200 px-3 py-2 outline outline-1 focus:outline-mantine-blue'
-            value={!higherSecGroup.map(grp => grp.value).includes(getValues("group")) ? "000": getValues("group")}
+            value={
+              !higherSecGroup
+                .map((grp) => grp.value)
+                .includes(getValues("group"))
+                ? "000"
+                : getValues("group")
+            }
             defaultValue={getValues("group")}
           >
             {higherSecGroup.map((grp) => (
@@ -556,9 +562,9 @@ const RegisterForm = ({ closeFn }) => {
           <Checkbox
             label={
               <>
-                I authorize &apos;Get Your College&apos; to contact me
-                regarding events, updates and admission support via Email, SMS
-                and Whatsapp calls.
+                I authorize &apos;Get Your College&apos; to contact me regarding
+                events, updates and admission support via Email, SMS and
+                Whatsapp calls.
                 <span className='text-red-500 text-sm'> *</span>
               </>
             }

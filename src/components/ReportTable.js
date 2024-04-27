@@ -4,7 +4,7 @@ import { DataTable } from "mantine-datatable";
 import { useEffect, useMemo, useState } from "react";
 import Button from "./ui/Button";
 
-const PAGE_SIZE = 10;
+const PAGE_SIZE = 25;
 
 const addCollegeToList = (colleges, setSelectedColleges) => {
   if (colleges.length < 1) {

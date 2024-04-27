@@ -5,7 +5,7 @@ import { Pagination, Tooltip } from "@mantine/core";
 import { districtData } from "@/utils/collegeDistrictData";
 import { NBAdata } from "@/utils/collegeCourseNBAData";
 
-const PAGE_SIZE = 10;
+const PAGE_SIZE = 25;
 const allCasteCategories = Object.keys(colleges['GC'][1]).filter((key) =>
   key.includes("Cutoff")
 ).map(key => key.split("-")[0].trim());

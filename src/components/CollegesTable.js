@@ -4,7 +4,7 @@ import { useEffect, useMemo } from "react";
 import { Pagination } from "@mantine/core";
 import { districtData } from "@/utils/collegeDistrictData";
 
-const PAGE_SIZE = 10;
+const PAGE_SIZE = 25;
 
 /* if sorting is needed, then create an object right here like { columnName: sortingFn, .... } */
 /* then on click, find the corresponding fn from this object and sort the rows based on the function and then return the filtered colleges */

@@ -22,7 +22,7 @@ export const authOptions = {
           }
           
           user.isMobileVerified = true;
-          await user.save()
+          await user.save({ validateBeforeSave: false })
 
           if (user.isMobileVerified && user.firstName) {
             console.log("already user");

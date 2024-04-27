@@ -1,6 +1,7 @@
 "use client";
 import SkeletonLoader from "@/components/SkeletonLoader";
 import Button from "@/components/ui/Button";
+import ErrorBoundary from "@/components/ui/ErrorBoundary";
 import Image from "next/image";
 import Link from "next/link";
 import React, { Suspense, lazy, useEffect, useState } from "react";
@@ -162,8 +163,10 @@ const Report = () => {
 
       {searchCriteria?.MinCutoff ? (
         <Suspense fallback={<SkeletonLoader />}>
-          <input type="search" name="searchKey" placeholder="Search for college name, branch name, etc." id="search" className="py-2 mt-6 px-3 w-full outline outline-1 outline-gray-300 focus:outline-gray-400 placeholder:text-sm md:outline-gray-200 rounded-md focus:outline-1 md:focus:outline-gray-300" onInput={(e) => setSearchCriteria({...searchCriteria, searchKey: e.currentTarget.value})} />
-          <ReportTable searchCriteria={searchCriteria} />
+          <ErrorBoundary>
+            <input type="search" name="searchKey" placeholder="Search for college name, branch name, etc." id="search" className="py-2 mt-6 px-3 w-full outline outline-1 outline-gray-300 focus:outline-gray-400 placeholder:text-sm md:outline-gray-200 rounded-md focus:outline-1 md:focus:outline-gray-300" onInput={(e) => setSearchCriteria({...searchCriteria, searchKey: e.currentTarget.value})} />
+            <ReportTable searchCriteria={searchCriteria} />
+          </ErrorBoundary>
         </Suspense>
       ) : (
         <>
