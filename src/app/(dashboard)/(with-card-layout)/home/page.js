@@ -156,12 +156,12 @@ const Home = () => {
         Enter 12th Cut-Off marks and choose Category
       </h3>
       <form
-        className='flex flex-col mt-2 md:w-full md:pl-[5vw] md:items-center gap-6 justify-start'
+        className='flex flex-col mt-2 md:w-full md:items-center gap-6 justify-start'
         onSubmit={handleSubmit(searchSubmission)}
       >
-        <div className='flex flex-col gap-4'>
+        <div className='flex flex-col gap-8 md:gap-4'>
           {/* Category and Years container */}
-          <div className='flex flex-col md:flex-row gap-2 justify-center md:justify-start md:gap-16 md:flex-wrap'>
+          <div className='flex flex-col md:flex-row gap-7 justify-center md:justify-start md:gap-16 md:flex-wrap'>
             {/* Cutoff Category choose */}
             <div className='flex flex-col justify-center gap-1 w-full md:w-[unset]'>
               <p className='font-normal text-sm'>Cutoff category:</p>
@@ -209,6 +209,7 @@ const Home = () => {
             <div className='flex flex-col justify-center gap-1'>
               <p className='font-normal text-sm'>Choose Domain:</p>
               <Select
+                comboboxProps={{ shadow: "md" }}
                 defaultValue='ALL'
                 allowDeselect={false}
                 checkIconPosition='left'
@@ -248,15 +249,18 @@ const Home = () => {
           </div>
 
           {/* Linear Search bar */}
-          <div className='grid grid-cols-2 grid-rows-2 gap-2 md:flex md:gap-2 md:justify-start md:items-center md:flex-wrap'>
+          <div className='grid grid-cols-2 grid-rows-2 gap-2 gap-y-7 md:flex md:gap-2 md:justify-start md:items-center md:flex-wrap'>
             {/* Min cutoff */}
             <div className='flex flex-col gap-1 items-center relative'>
+              <p className='md:hidden text-sm w-full text-left'>
+                Minimum Cut-off
+              </p>
               <input
                 type='number'
                 name='starting-cutoff'
                 id='starting-cutoff'
                 placeholder='Starting Cut-Off'
-                className='bg-card/10 outline p-2 max-w-44 md:w-[8.5rem] placeholder:text-sm md:mb-0 mb-3 rounded-md outline-1 outline-gray-200 focus:outline-sky-500/60'
+                className='bg-card/10 outline p-2 max-w-44 w-full md:w-[8.5rem] placeholder:text-sm md:mb-0 mb-3 rounded-md outline-1 outline-gray-200 focus:outline-mantine-blue/60'
                 {...register("MinCutoff", {
                   required: { value: true, message: "This field is required" },
                   min: {
@@ -275,7 +279,7 @@ const Home = () => {
                 </p>
               )}
               <p
-                className='underline text-xs absolute cursor-pointer top-[80%] md:top-[110%] left-1'
+                className='underline text-xs absolute cursor-pointer top-[90%] md:top-[110%] left-1'
                 onClick={open}
               >
                 Not sure about cutoff?
@@ -283,12 +287,15 @@ const Home = () => {
             </div>
             {/* Max cutoff */}
             <div className='flex flex-col gap-1 items-center relative'>
+              <p className='md:hidden text-sm w-full text-left'>
+                Maximum Cut-off
+              </p>
               <input
                 type='number'
                 name='ending-cutoff'
                 id='ending-cutoff'
                 placeholder='Ending Cut-Off'
-                className='bg-card/10 outline p-2 max-w-44 md:w-[8.5rem] placeholder:text-sm md:mb-0 mb-3 rounded-md outline-1 outline-gray-200 focus:outline-sky-500/60'
+                className='bg-card/10 outline p-2 max-w-44 w-full md:w-[8.5rem] placeholder:text-sm md:mb-0 mb-3 rounded-md outline-1 outline-gray-200 focus:outline-mantine-blue/60'
                 {...register("MaxCutoff", {
                   required: { value: true, message: "This field is required" },
                   min: {
@@ -313,7 +320,7 @@ const Home = () => {
               {/* <select
                 name='category'
                 defaultValue={"select"}
-                className='bg-card/10 outline rounded-md outline-1 p-2 py-2.5 w-full md:w-52 pr-8 outline-gray-200 placeholder:text-sm focus:outline-sky-500/60'
+                className='bg-card/10 outline rounded-md outline-1 p-2 py-2.5 w-full md:w-52 pr-8 outline-gray-200 placeholder:text-sm focus:outline-mantine-blue/60'
                 id='category'
                 {...register("Dept", {
                   required: { value: true, message: "This field is required" },
@@ -345,7 +352,7 @@ const Home = () => {
                 <Combobox.Target>
                   <input
                     type='text'
-                    className='py-2 px-3 w-full md:w-[50%] outline outline-1 placeholder:text-sm outline-gray-300 focus:outline-gray-400 md:outline-gray-200 rounded-md focus:outline-1 md:focus:outline-sky-500/60'
+                    className='py-2 px-3 w-full md:w-[50%] outline outline-1 placeholder:text-sm outline-gray-300 focus:outline-gray-400 md:outline-gray-200 rounded-md focus:outline-1 md:focus:outline-mantine-blue/60'
                     onClick={() => {
                       departmentCombobox.openDropdown();
                     }}
@@ -369,21 +376,23 @@ const Home = () => {
                       value: true,
                       message: "This field is required",
                     },
-                    validate: (value) => value != "" || "Invalid value selected!",
+                    validate: (value) =>
+                      value != "" || "Invalid value selected!",
                   }),
                 }}
                 onChange={(values) => {
                   if (values.includes("ALL") && values.length > 1) {
-                    setValue("Dept","ALL");
+                    setValue("Dept", "ALL");
                   } else {
-                    setValue("Dept",
+                    setValue(
+                      "Dept",
                       values.map((value) => value.replace(/\s+/g, ""))
                     );
                   }
                 }}
                 styles={{
                   root: {
-                    width: windowSize.width < 768 ? "100%" : "16rem",
+                    width: windowSize.width < 768 ? "100%" : "20rem",
                   },
                   input: {
                     paddingTop: "0.55rem",
@@ -404,8 +413,12 @@ const Home = () => {
                     fontSize: "0.7rem",
                     padding: 3,
                   },
+                  pillsList: {
+                    maxHeight: "3rem",
+                    overflowY: "scroll",
+                  },
                 }}
-                comboboxProps={{ withArrow: true, offset: 0 }}
+                comboboxProps={{ withArrow: true, offset: 0, shadow: "xl" }}
               />
               {errors["Dept"] && (
                 <p className='text-xs text-red-500 font-light absolute -top-4 left-0'>
@@ -418,7 +431,7 @@ const Home = () => {
               <select
                 name='category'
                 defaultValue={"Select"}
-                className='bg-card/10 outline p-2 py-2.5 pr-8 rounded-md outline-[0.8px] outline-gray-200 placeholder:text-sm focus:outline-sky-500/60'
+                className='bg-card/10 outline p-2 py-2.5 pr-8 rounded-md outline-[0.8px] outline-gray-200 placeholder:text-sm focus:outline-mantine-blue/60'
                 id='category'
                 {...register("Category", {
                   required: { value: true, message: "This field is required" },
@@ -464,7 +477,7 @@ const Home = () => {
                 name='searchKey'
                 placeholder='Search by college name, college code, etc.'
                 id='search'
-                className='py-2 px-3 w-full md:w-[50%] outline outline-1 placeholder:text-sm outline-gray-300 focus:outline-gray-400 md:outline-gray-200 rounded-md focus:outline-1 md:focus:outline-sky-500/60'
+                className='py-2 px-3 w-full md:w-[50%] outline outline-1 placeholder:text-sm outline-gray-300 focus:outline-gray-400 md:outline-gray-200 rounded-md focus:outline-1 md:focus:outline-mantine-blue/60'
                 onInput={(e) =>
                   setSearchCriteria({
                     ...searchCriteria,
@@ -478,20 +491,24 @@ const Home = () => {
                 shadow='md'
                 onOptionSubmit={(val) => {
                   setSearchCriteria({ ...searchCriteria, districtKey: val });
-                  setDistrictKey(val)
+                  setDistrictKey(val);
                   districtCombobox.closeDropdown();
                 }}
-                >
+              >
                 <Combobox.Target>
                   <input
                     type='search'
                     name='district'
                     placeholder='Search by district'
                     id='search-district'
-                    className='py-2 px-3 w-full md:w-[20%] md:mr-auto outline outline-1 placeholder:text-sm outline-gray-300 focus:outline-gray-400 md:outline-gray-200 rounded-md focus:outline-1 md:focus:outline-sky-500/60'
+                    className='py-2 px-3 w-full md:w-[20%] md:mr-auto outline outline-1 placeholder:text-sm outline-gray-300 focus:outline-gray-400 md:outline-gray-200 rounded-md focus:outline-1 md:focus:outline-mantine-blue/60'
                     onClick={() => districtCombobox.toggleDropdown()}
                     onInput={(e) => {
-                      if (e.target.value == '') setSearchCriteria({ ...searchCriteria, districtKey: '' });
+                      if (e.target.value == "")
+                        setSearchCriteria({
+                          ...searchCriteria,
+                          districtKey: "",
+                        });
                       setDistrictKey(e.target.value);
                       districtCombobox.openDropdown();
                     }}

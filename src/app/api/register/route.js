@@ -17,7 +17,7 @@ export async function POST(req) {
       dob,
       pincode,
       BOS,
-      registerNo
+      registerNo,
     } = await req.json();
 
     const userSession = await getServerSession(authOptions);
@@ -43,7 +43,6 @@ export async function POST(req) {
         { status: 404 }
       );
 
-    
     /* Im not reallly gonna validate this field because it can be any value, so i trust client to send only valid data */
     // if (!["TN", "CBSE", "ICSE", "AP"].includes(BOS.trim())) {
     //   return NextResponse.json(
@@ -53,6 +52,25 @@ export async function POST(req) {
     //     { status: 403 }
     //   );
     // }
+    // Yet again, same situation as above, no need to verify then
+    // if (!["101", "102", "103", "104", "105", "106"].includes(group.trim())) {
+    //   return NextResponse.json(
+    //     {
+    //       error: "Invalid Group!",
+    //     },
+    //     { status: 403 }
+    //   );
+    // }
+
+    /* reference
+     *  ["101", "102", "103", "104", "105", "106", "000"]
+     *  101 - PHY |CHE |STATS |MATHS
+        102 - PHY |CHE |COMP SCI |MATHS.
+        103 - PHY |CHE |BIO |MATHS
+        104 - PHY |CHE |BIO-CHEM |MATHS
+        105 - PHY |CHE |EEC |MATHS
+        106 - PHY |CHE |MATHS | HOME SCI |
+     */
 
     userData.firstName = firstName;
     userData.lastName = lastName;
@@ -71,7 +89,6 @@ export async function POST(req) {
       { message: "Registered succesfully" },
       { status: 200 }
     );
-
   } catch (error) {
     console.log("🚀 ~ POST ~ error register:", error);
     return NextResponse.json(

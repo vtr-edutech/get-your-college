@@ -27,7 +27,6 @@ const UserSchema = new Schema(
     category: String,
     group: {
       type: String,
-      enum: ["BWM", "CS", "VOC"],
     },
     boardOfStudy: {
       type: String,

@@ -1,6 +1,6 @@
 import { usePagination } from "@mantine/hooks";
 import colleges from "../utils/collegeData";
-import { useEffect, useMemo } from "react";
+import { useEffect, useMemo, useTransition } from "react";
 import { Pagination, Tooltip } from "@mantine/core";
 import { districtData } from "@/utils/collegeDistrictData";
 import { NBAdata } from "@/utils/collegeCourseNBAData";
@@ -8,7 +8,7 @@ import { NBAdata } from "@/utils/collegeCourseNBAData";
 const PAGE_SIZE = 10;
 const allCasteCategories = Object.keys(colleges['GC'][1]).filter((key) =>
   key.includes("Cutoff")
-);
+).map(key => key.split("-")[0].trim());
 
 const communityColors = [
   'text-amber-500',
@@ -23,6 +23,7 @@ const communityColors = [
 /* if sorting is needed, then create an object right here that says */
 
 const CollegeInfoTable = ({ searchCriteria }) => {
+
   /* for now leave the search as is. but in future implement each word word by word searching like in VSCode
     if search is "sairam information tech":
       1. break each word, check if each word is in the college['college name'] and college['branch name'] combined,
@@ -82,11 +83,6 @@ const CollegeInfoTable = ({ searchCriteria }) => {
           value={pagination.active}
           onChange={pagination.setPage}
           className='ml-auto'
-          classNames={{
-            control: {
-              opacity: "10%",
-            },
-          }}
         ></Pagination>
       </div>
 
@@ -112,7 +108,13 @@ const CollegeInfoTable = ({ searchCriteria }) => {
           {allCasteCategories.map((cat, i) => (
             <h2
               key={i}
-              className={`max-w-16 flex-1 font-medium min-w-12 ${communityColors[i]}`}
+              className={`flex-1 text-sm md:min-w-12 md:max-w-16 ${
+                communityColors[i]
+              } ${
+                searchCriteria.filterBy == "Rank"
+                  ? "min-w-16 max-w-20"
+                  : "min-w-12 max-w-16"
+              }`}
             >
               {cat.split("-")[0]}
             </h2>
@@ -128,7 +130,9 @@ const CollegeInfoTable = ({ searchCriteria }) => {
           .map((college, i) => (
             <div
               key={i}
-              className={`flex transition-all min-w-fit mx-1 md:min-w-[unset] justify-around items-center outline p-1.5 md:p-1 min-h-32 last-of-type:mb-1 animate-fade-in overflow-hidden ${i%2 != 0? 'bg-white': 'bg-blue-50/70'} outline-1 outline-gray-200 last-of-type:rounded-ee-md last-of-type:rounded-es-md`}
+              className={`flex transition-all min-w-fit mx-1 md:min-w-[unset] justify-around items-center outline p-1.5 md:p-1 min-h-32 last-of-type:mb-1 animate-fade-in overflow-hidden ${
+                i % 2 != 0 ? "bg-white" : "bg-blue-50/70"
+              } outline-1 outline-gray-200 last-of-type:rounded-ee-md last-of-type:rounded-es-md`}
             >
               <h2 className='flex-1 text-sm max-w-16 min-w-14'>
                 <p className='ml-2'>{i + 1}</p>
@@ -186,12 +190,22 @@ const CollegeInfoTable = ({ searchCriteria }) => {
               {allCasteCategories.map((key, i) => (
                 <h2
                   key={i}
-                  className={`max-w-16 flex-1 text-sm min-w-12 ${communityColors[i]}`}
+                  className={`flex-1 text-sm md:min-w-12 md:max-w-16 ${
+                    communityColors[i]
+                  } ${
+                    searchCriteria.filterBy == "Rank"
+                      ? "min-w-16 max-w-20"
+                      : "min-w-12 max-w-16"
+                  }`}
                 >
-                  {college[key]
-                    ? college[key].toString().includes(".")
-                      ? college[key].toFixed(1)
-                      : college[key]
+                  {college[`${key} - ${searchCriteria.filterBy}`]
+                    ? college[`${key} - ${searchCriteria.filterBy}`]
+                        .toString()
+                        .includes(".")
+                      ? college[`${key} - ${searchCriteria.filterBy}`].toFixed(
+                          1
+                        )
+                      : college[`${key} - ${searchCriteria.filterBy}`]
                     : " "}
                 </h2>
               ))}

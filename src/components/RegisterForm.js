@@ -1,7 +1,6 @@
 "use client";
 import Button from "@/components/ui/Button";
 import { setUserData } from "@/store/userInfoSlice";
-import { cn } from "@/utils";
 import { Checkbox, Combobox, useCombobox } from "@mantine/core";
 import axios from "axios";
 import { signOut, useSession } from "next-auth/react";
@@ -10,7 +9,22 @@ import { useForm } from "react-hook-form";
 import { useDispatch, useSelector } from "react-redux";
 import { toast } from "react-toastify";
 
-const boardOfStudies = [{ value: "TN", label: "TN (Samacheer Kalvi)"}, { value: "CBSE", label: "CBSE (Central Govt.)"}, { value: "ICSE", label: "ICSE"}, { value: "AP", label: "AP (Andhra Pradhesh)"}, { value: "OTHER", label: "OTHER (Please mention)"}];
+const boardOfStudies = [
+  { value: "TN", label: "TN (Samacheer Kalvi)" },
+  { value: "CBSE", label: "CBSE (Central Govt.)" },
+  { value: "ICSE", label: "ICSE" },
+  { value: "AP", label: "AP (Andhra Pradhesh)" },
+  { value: "OTHER", label: "OTHER (Please mention)" },
+];
+const higherSecGroup = [
+  { label: "PHY | CHE | STATS | MATHS", value: "101" },
+  { label: "PHY | CHE | COMP SCI | MATHS", value: "102" },
+  { label: "PHY | CHE | BIO | MATHS", value: "103" },
+  { label: "PHY | CHE | BIO-CHEM | MATHS", value: "104" },
+  { label: "PHY | CHE | EEC | MATHS", value: "105" },
+  { label: "PHY | CHE | MATHS | HOME SCI", value: "106" },
+  { label: "OTHER GROUPS", value: "000" },
+];
 
 const RegisterForm = ({ closeFn }) => {
   const dispatch = useDispatch();
@@ -18,6 +32,7 @@ const RegisterForm = ({ closeFn }) => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isChecked, setIsChecked] = useState(false);
   const [hasFetched, setHasFetched] = useState(false);
+  const [group, setGroup] = useState()
 
   const bosCombobox = useCombobox({
     onDropdownClose: () => bosCombobox.resetSelectedOption(),
@@ -34,7 +49,7 @@ const RegisterForm = ({ closeFn }) => {
     register,
     handleSubmit,
     reset,
-    setValue, 
+    setValue,
     getValues,
     formState: { errors },
   } = useForm();
@@ -46,8 +61,8 @@ const RegisterForm = ({ closeFn }) => {
       try {
         const userInfoRequest = await axios.get("/api/user-info");
         console.log("🚀 ~ Fetched ~ userInfo:", userInfoRequest);
-        
-        if (userInfoRequest.data.user && !(userInfoRequest.data.user.firstName)) {
+
+        if (userInfoRequest.data.user && !userInfoRequest.data.user.firstName) {
           console.log("DB la new user");
         } else {
           dispatch(setUserData(userInfoRequest.data.user));
@@ -71,21 +86,21 @@ const RegisterForm = ({ closeFn }) => {
             new Date(userInfo.dob).getMonth() + 1
           }-${new Date(userInfo.dob).getDate().toString().padStart(2, "0")}`
         : "";
-        setIsChecked(true);
-        setHasFetched(true);
-        reset({
-          firstName: userInfo.firstName ?? "",
-          lastName: userInfo.lastName ?? "",
-          email: userInfo.email ?? "",
-          gender: userInfo.gender ?? "",
-          group: userInfo.group ?? "",
-          district: userInfo.district ?? "",
-          pincode: userInfo.pincode ?? "",
-          dob: dobToSet,
-          BOS: (userInfo.boardOfStudy || userInfo.BOS) ?? "",
-          registerNo: userInfo.registerNo ?? ""
-        });
-        // console.log("has been reset");
+      setIsChecked(true);
+      setHasFetched(true);
+      reset({
+        firstName: userInfo.firstName ?? "",
+        lastName: userInfo.lastName ?? "",
+        email: userInfo.email ?? "",
+        gender: userInfo.gender ?? "",
+        group: userInfo.group ?? "",
+        district: userInfo.district ?? "",
+        pincode: userInfo.pincode ?? "",
+        dob: dobToSet,
+        BOS: (userInfo.boardOfStudy || userInfo.BOS) ?? "",
+        registerNo: userInfo.registerNo ?? "",
+      });
+      // console.log("has been reset");
     }
   }, [userInfo]);
 
@@ -93,7 +108,7 @@ const RegisterForm = ({ closeFn }) => {
     if (Object.keys(errors).length === 0) {
       console.log(data);
       if (data.BOS == "OTHER") {
-        toast.error("Please enter Board of Study")
+        toast.error("Please enter Board of Study");
         return;
       }
       if (JSON.stringify(data) == JSON.stringify(userInfo)) {
@@ -146,7 +161,7 @@ const RegisterForm = ({ closeFn }) => {
               validate: (value) => value.trim() !== "" || "Invalid First name",
             })}
             type='text'
-            className='w-full rounded-md bg-input outline-gray-200 px-3 py-2 outline outline-1 focus:outline-gray-300'
+            className='w-full rounded-md bg-slate-50 outline-gray-200 px-3 py-2 outline outline-1 focus:outline-mantine-blue'
             // defaultValue={userInfo.firstName ?? ""}
           />
           {errors["firstName"] && (
@@ -175,7 +190,7 @@ const RegisterForm = ({ closeFn }) => {
                 ""
               ))
             }
-            className='w-full rounded-md bg-input outline-gray-200 px-3 py-2 outline outline-1 focus:outline-gray-300'
+            className='w-full rounded-md bg-slate-50 outline-gray-200 px-3 py-2 outline outline-1 focus:outline-mantine-blue'
             // defaultValue={userInfo.registerNo ?? ""}
           />
           {errors["registerNo"] && (
@@ -188,16 +203,16 @@ const RegisterForm = ({ closeFn }) => {
         <div className='flex flex-col gap-1'>
           <p className='font-light text-xs'>Last Name</p>
           <input
-            // {...register("lastName", {
-            //   required: { value: true, message: "Can't be empty" },
-            //   maxLength: {
-            //     value: 80,
-            //     message: "Max length is 100 characters only",
-            //   },
-            //   validate: (value) => value.trim() !== "" || "Invalid Last name",
-            // })}
+            {...register("lastName", {
+              // required: { value: true, message: "Can't be empty" },
+              maxLength: {
+                value: 80,
+                message: "Max length is 100 characters only",
+              },
+              // validate: (value) => value.trim() !== "" || "Invalid Last name",
+            })}
             type='text'
-            className='w-full  rounded-md bg-input outline-gray-200 px-3 py-2 outline outline-1 focus:outline-gray-300'
+            className='w-full  rounded-md bg-slate-50 outline-gray-200 px-3 py-2 outline outline-1 focus:outline-mantine-blue'
           />
           {errors["lastName"] && (
             <p className='text-xs text-red-500 font-light'>
@@ -209,12 +224,12 @@ const RegisterForm = ({ closeFn }) => {
         <div className='flex flex-col gap-1'>
           <p className='font-light text-xs'>E-mail</p>
           <input
-            // {...register("email", {
-            //   required: { value: true, message: "Required!" },
-            //   pattern: { value: /^\S+@\S+$/i, message: "Invalid Email" },
-            // })}
+            {...register("email", {
+              // required: { value: true, message: "Required!" },
+              pattern: { value: /^\S+@\S+$/i, message: "Invalid Email" },
+            })}
             type='text'
-            className='w-full  rounded-md bg-input outline-gray-200 px-3 py-2 outline outline-1 focus:outline-gray-300'
+            className='w-full  rounded-md bg-slate-50 outline-gray-200 px-3 py-2 outline outline-1 focus:outline-mantine-blue'
           />
           {errors["email"] && (
             <p className='text-xs text-red-500 font-light'>
@@ -231,7 +246,7 @@ const RegisterForm = ({ closeFn }) => {
               validate: (value) =>
                 ["male", "female", "other"].includes(value) || "Invalid Gender",
             })}
-            className='w-full  rounded-md bg-input outline-gray-200 px-3 py-2 outline outline-1 focus:outline-gray-300'
+            className='w-full  rounded-md bg-slate-50 outline-gray-200 px-3 py-2 outline outline-1 focus:outline-mantine-blue'
           >
             <option value={"male"}>Male</option>
             <option value={"female"}>Female</option>
@@ -250,13 +265,18 @@ const RegisterForm = ({ closeFn }) => {
             {...register("group", {
               required: true,
               validate: (value) =>
-                ["BWM", "CS", "VOC"].includes(value) || "Invalid group",
+                higherSecGroup.map((grp) => grp.value).includes(value) ||
+                "Invalid group",
             })}
-            className='w-full  rounded-md bg-input outline-gray-200 px-3 py-2 outline outline-1 focus:outline-gray-300'
+            onChange={(e) => setGroup(e.currentTarget.value)}
+            className='w-full  rounded-md bg-slate-50 outline-gray-200 px-3 py-2 outline outline-1 focus:outline-mantine-blue'
+            value={group}
           >
-            <option value={"BWM"}>Bio with Math</option>
-            <option value={"CS"}>Computer Science</option>
-            <option value={"VOC"}>Vocational</option>
+            {higherSecGroup.map((grp) => (
+              <option value={grp.value} key={Math.random()}>
+                {grp.label}
+              </option>
+            ))}
           </select>
           {errors["group"] && (
             <p className='text-xs text-red-500 font-light'>
@@ -264,6 +284,31 @@ const RegisterForm = ({ closeFn }) => {
             </p>
           )}
         </div>
+        {/* Optional other for group */}
+        {group == "000" && (
+          <div className='flex flex-col gap-1'>
+            <p className='font-light text-xs'>Mention Group</p>
+            <input
+              {...register("group", {
+                required: { value: true, message: "Required!" },
+                minLength: { value: true, message: "Invalid Group" },
+                maxLength: {
+                  value: 200,
+                  message: "Max length of Group exceeded",
+                },
+                validate: (value) => value.trim() !== "" || "Invalid Group",
+              })}
+              type='text'
+              className='w-full  rounded-md bg-slate-50 outline-gray-200 px-3 py-2 outline outline-1 focus:outline-mantine-blue'
+              value={group}
+            />
+            {errors["group"] && (
+              <p className='text-xs text-red-500 font-light'>
+                {errors["group"].message}
+              </p>
+            )}
+          </div>
+        )}
         {/* Board of study */}
         <div className='flex flex-col gap-1'>
           <p className='font-light text-xs'>Board of Study</p>
@@ -277,7 +322,7 @@ const RegisterForm = ({ closeFn }) => {
           >
             <Combobox.Target>
               <input
-                className='w-full  rounded-md bg-input outline-gray-200 px-3 py-2 outline outline-1 focus:outline-gray-300'
+                className='w-full  rounded-md bg-slate-50 outline-gray-200 px-3 py-2 outline outline-1 focus:outline-mantine-blue'
                 onInput={(e) => (e.currentTarget.value = null)}
                 onClick={() => bosCombobox.toggleDropdown()}
                 value={getValues("BOS")}
@@ -325,7 +370,7 @@ const RegisterForm = ({ closeFn }) => {
                   value.trim() !== "" || "Invalid Board of Study",
               })}
               type='text'
-              className='w-full  rounded-md bg-input outline-gray-200 px-3 py-2 outline outline-1 focus:outline-gray-300'
+              className='w-full  rounded-md bg-slate-50 outline-gray-200 px-3 py-2 outline outline-1 focus:outline-mantine-blue'
               value={""}
               // defaultValue={userInfo.address ?? ""}
             />
@@ -339,6 +384,11 @@ const RegisterForm = ({ closeFn }) => {
         {/* District */}
         <div className='flex flex-col gap-1'>
           <p className='font-light text-xs'>District</p>
+
+        </div>
+        {/* Optional District */}
+        <div className='flex flex-col gap-1'>
+          <p className='font-light text-xs'>Mention District</p>
           <input
             {...register("district", {
               required: { value: true, message: "Required!" },
@@ -350,7 +400,7 @@ const RegisterForm = ({ closeFn }) => {
               validate: (value) => value.trim() !== "" || "Invalid District",
             })}
             type='text'
-            className='w-full  rounded-md bg-input outline-gray-200 px-3 py-2 outline outline-1 focus:outline-gray-300'
+            className='w-full  rounded-md bg-slate-50 outline-gray-200 px-3 py-2 outline outline-1 focus:outline-mantine-blue'
             // defaultValue={userInfo.address ?? ""}
           />
           {errors["district"] && (
@@ -374,7 +424,7 @@ const RegisterForm = ({ closeFn }) => {
             })}
             type='tel'
             inputMode='numeric'
-            className='w-full  rounded-md bg-input outline-gray-200 px-3 py-2 outline outline-1 focus:outline-gray-300'
+            className='w-full  rounded-md bg-slate-50 outline-gray-200 px-3 py-2 outline outline-1 focus:outline-mantine-blue'
             // defaultValue={userInfo.address ?? ""}
           />
           {errors["pincode"] && (
@@ -399,7 +449,7 @@ const RegisterForm = ({ closeFn }) => {
             })}
             type='date'
             placeholder='DD/MM/YYYY'
-            className='w-full placeholder:text-sm rounded-md bg-input outline-gray-200 px-3 py-2 outline outline-1 focus:outline-gray-300'
+            className='w-full placeholder:text-sm rounded-md bg-slate-50 outline-gray-200 px-3 py-2 outline outline-1 focus:outline-mantine-blue'
             // defaultValue={userInfo.dob ? `: ''}
           />
           {errors["dob"] && (
@@ -423,6 +473,7 @@ const RegisterForm = ({ closeFn }) => {
           label={"Submit"}
           isDisabled={!userInfo || isSubmitting || !isChecked}
           asButton
+          className='bg-mantine-blue'
         />
       </form>
     </div>
