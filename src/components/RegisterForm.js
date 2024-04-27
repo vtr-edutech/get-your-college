@@ -188,17 +188,16 @@ const RegisterForm = ({ closeFn }) => {
         <div className='flex flex-col gap-1'>
           <p className='font-light text-xs'>Last Name</p>
           <input
-            {...register("lastName", {
-              required: { value: true, message: "Can't be empty" },
-              maxLength: {
-                value: 80,
-                message: "Max length is 100 characters only",
-              },
-              validate: (value) => value.trim() !== "" || "Invalid Last name",
-            })}
+            // {...register("lastName", {
+            //   required: { value: true, message: "Can't be empty" },
+            //   maxLength: {
+            //     value: 80,
+            //     message: "Max length is 100 characters only",
+            //   },
+            //   validate: (value) => value.trim() !== "" || "Invalid Last name",
+            // })}
             type='text'
             className='w-full  rounded-md bg-input outline-gray-200 px-3 py-2 outline outline-1 focus:outline-gray-300'
-            // defaultValue={userInfo.lastName ?? ""}
           />
           {errors["lastName"] && (
             <p className='text-xs text-red-500 font-light'>
@@ -210,13 +209,12 @@ const RegisterForm = ({ closeFn }) => {
         <div className='flex flex-col gap-1'>
           <p className='font-light text-xs'>E-mail</p>
           <input
-            {...register("email", {
-              required: { value: true, message: "Required!" },
-              pattern: { value: /^\S+@\S+$/i, message: "Invalid Email" },
-            })}
+            // {...register("email", {
+            //   required: { value: true, message: "Required!" },
+            //   pattern: { value: /^\S+@\S+$/i, message: "Invalid Email" },
+            // })}
             type='text'
             className='w-full  rounded-md bg-input outline-gray-200 px-3 py-2 outline outline-1 focus:outline-gray-300'
-            // defaultValue={userInfo.email ?? ""}
           />
           {errors["email"] && (
             <p className='text-xs text-red-500 font-light'>
@@ -234,7 +232,6 @@ const RegisterForm = ({ closeFn }) => {
                 ["male", "female", "other"].includes(value) || "Invalid Gender",
             })}
             className='w-full  rounded-md bg-input outline-gray-200 px-3 py-2 outline outline-1 focus:outline-gray-300'
-            // defaultValue={userInfo.gender ?? ""}
           >
             <option value={"male"}>Male</option>
             <option value={"female"}>Female</option>
@@ -256,7 +253,6 @@ const RegisterForm = ({ closeFn }) => {
                 ["BWM", "CS", "VOC"].includes(value) || "Invalid group",
             })}
             className='w-full  rounded-md bg-input outline-gray-200 px-3 py-2 outline outline-1 focus:outline-gray-300'
-            // defaultValue={userInfo.group ?? ""}
           >
             <option value={"BWM"}>Bio with Math</option>
             <option value={"CS"}>Computer Science</option>

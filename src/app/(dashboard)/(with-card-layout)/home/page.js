@@ -42,8 +42,9 @@ const Home = () => {
 
   const [searchCriteria, setSearchCriteria] = useState({ cutoffCategory: 'GC', filterBy: 'Cutoff', searchKey: '', districtKey: '' });
   const [courseGroup, setCourseGroup] = useState('ALL');
-  const [currentDepts, setCurrentDepts] = useState();
-
+  const [districtKey, setDistrictKey] = useState('');
+  
+  console.log("🚀 ~ Home ~ searchCriteria:", searchCriteria)
   console.log("🚀 ~ Home ~ courseGroup:", courseGroup)
 
   const courseGroupsDropdownData = useMemo(
@@ -89,12 +90,12 @@ const Home = () => {
   
   const options = useMemo(
     () =>
-      ALL_DISTRICT.filter(district => district.toLowerCase().trim().includes(searchCriteria.districtKey.toLowerCase().trim())).map((district, k) => (
+      ALL_DISTRICT.filter(district => district.toLowerCase().trim().includes(districtKey.toLowerCase().trim())).map((district, k) => (
         <Combobox.Option key={k} value={district}>
           {district}
         </Combobox.Option>
       )),
-    [searchCriteria.districtKey]
+    [districtKey]
   );
 
   useEffect(() => {
@@ -206,7 +207,7 @@ const Home = () => {
             </div>
             {/* Groups choose */}
             <div className='flex flex-col justify-center gap-1'>
-              <p className='font-normal text-sm'>Course Group:</p>
+              <p className='font-normal text-sm'>Choose Domain:</p>
               <Select
                 defaultValue='ALL'
                 allowDeselect={false}
@@ -255,7 +256,7 @@ const Home = () => {
                 name='starting-cutoff'
                 id='starting-cutoff'
                 placeholder='Starting Cut-Off'
-                className='bg-card/10 outline p-2 max-w-44 md:w-[8.5rem] placeholder:text-[13px] md:mb-0 mb-3 rounded-md outline-1 outline-gray-200 focus:outline-sky-500/60'
+                className='bg-card/10 outline p-2 max-w-44 md:w-[8.5rem] placeholder:text-sm md:mb-0 mb-3 rounded-md outline-1 outline-gray-200 focus:outline-sky-500/60'
                 {...register("MinCutoff", {
                   required: { value: true, message: "This field is required" },
                   min: {
@@ -287,7 +288,7 @@ const Home = () => {
                 name='ending-cutoff'
                 id='ending-cutoff'
                 placeholder='Ending Cut-Off'
-                className='bg-card/10 outline p-2 max-w-44 md:w-[8.5rem] placeholder:text-[13px] md:mb-0 mb-3 rounded-md outline-1 outline-gray-200 focus:outline-sky-500/60'
+                className='bg-card/10 outline p-2 max-w-44 md:w-[8.5rem] placeholder:text-sm md:mb-0 mb-3 rounded-md outline-1 outline-gray-200 focus:outline-sky-500/60'
                 {...register("MaxCutoff", {
                   required: { value: true, message: "This field is required" },
                   min: {
@@ -404,7 +405,7 @@ const Home = () => {
                     padding: 3,
                   },
                 }}
-                comboboxProps={{ withArrow: true }}
+                comboboxProps={{ withArrow: true, offset: 0 }}
               />
               {errors["Dept"] && (
                 <p className='text-xs text-red-500 font-light absolute -top-4 left-0'>
@@ -477,9 +478,10 @@ const Home = () => {
                 shadow='md'
                 onOptionSubmit={(val) => {
                   setSearchCriteria({ ...searchCriteria, districtKey: val });
+                  setDistrictKey(val)
                   districtCombobox.closeDropdown();
                 }}
-              >
+                >
                 <Combobox.Target>
                   <input
                     type='search'
@@ -488,14 +490,12 @@ const Home = () => {
                     id='search-district'
                     className='py-2 px-3 w-full md:w-[20%] md:mr-auto outline outline-1 placeholder:text-sm outline-gray-300 focus:outline-gray-400 md:outline-gray-200 rounded-md focus:outline-1 md:focus:outline-sky-500/60'
                     onClick={() => districtCombobox.toggleDropdown()}
-                    onChange={(e) => {
-                      setSearchCriteria({
-                        ...searchCriteria,
-                        districtKey: e.target.value,
-                      });
+                    onInput={(e) => {
+                      if (e.target.value == '') setSearchCriteria({ ...searchCriteria, districtKey: '' });
+                      setDistrictKey(e.target.value);
                       districtCombobox.openDropdown();
                     }}
-                    value={searchCriteria.districtKey}
+                    value={districtKey}
                   />
                 </Combobox.Target>
                 <Combobox.Dropdown>
