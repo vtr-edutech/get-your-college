@@ -93166,5 +93166,4 @@ const collegeData = {
 // const UNIQUE_COURSE_NAMES = new Set(collegeData.map(c => c["Branch Name"].replace(' ', ' ')));
 // export const COLLEGE_NAMES = Array.from(new Set(collegeData['GC'].map(c => c["College Name"].replace("\n", " "))))
 
-
 export default collegeData;

@@ -1,12 +1,29 @@
 "use client";
 import SkeletonLoader from "@/components/SkeletonLoader";
 import ErrorBoundary from "@/components/ui/ErrorBoundary";
+import { inter } from "@/utils";
+import { COLLEGE_CATEGORIES } from "@/utils/collegeChoiceListData";
+import { ALL_DISTRICT } from "@/utils/collegeDistrictData";
+import { COLLEGE_CODE_NAME } from "@/utils/collegeDistrictData";
+import { UNIQUE_COURSE_NAMES } from "@/utils/collegeNames";
+import { Select } from "@mantine/core";
 import Image from "next/image";
-import React, { Suspense, lazy, useEffect, useState } from "react";
+import React, { Suspense, lazy, useEffect, useRef, useState } from "react";
 import { useForm } from "react-hook-form";
 import { LuSearch } from "react-icons/lu";
 
 const ReportTable = lazy(() => import("@/components/ReportTable"));
+
+const collegeNameSearchFilter = ({ options, search }) => {
+  return options.filter(option => 
+    option.label.toLowerCase().replace(/\s+/g, '').includes(
+      search.toLowerCase().replace(/\s+/g, '')
+    )
+  )
+}
+
+const COLLEGE_NAMES = COLLEGE_CODE_NAME.map(coll => coll["College Name"])
+const COLLEGE_CODES = COLLEGE_CODE_NAME.map(coll => coll["College Code"].toString())
 
 const Report = () => {
   const {
@@ -16,8 +33,15 @@ const Report = () => {
     setError,
     reset
   } = useForm();
+  
+  const collegeNameRef = useRef()
+  const collegeCodeRef = useRef()
 
   const [searchCriteria, setSearchCriteria] = useState(null);
+  const [collegeName, setCollegeName] = useState()
+  const [collegeCode, setCollegeCode] = useState()
+  
+  console.log("🚀 ~ Report ~ searchCriteria:", searchCriteria)
 
   useEffect(() => {
     const searchCriteriaFromLS = localStorage.getItem('search');
@@ -36,6 +60,7 @@ const Report = () => {
   
 
   const searchSubmission = async (data) => {
+    console.log("🚀 ~ searchSubmission ~ data:", data)
     if (Object.keys(data).length !== 0) {
       console.log(data);
       localStorage.setItem('search', JSON.stringify(data));
@@ -51,7 +76,7 @@ const Report = () => {
         return
       }
       typeof window !== "undefined" && localStorage.setItem("Cat", data.Category);
-      setSearchCriteria(data);
+      setSearchCriteria((prev) => ({ ...prev, ...data }));
     }
   };
 
@@ -175,19 +200,122 @@ const Report = () => {
 
       {searchCriteria?.MinCutoff ? (
         <Suspense fallback={<SkeletonLoader />}>
-          <input
-            type='search'
-            name='searchKey'
-            placeholder='Search for college name, branch name, etc.'
-            id='search'
-            className='py-2 mt-6 px-3 w-full outline outline-1 outline-gray-300 focus:outline-gray-400 placeholder:text-sm md:outline-gray-200 rounded-md focus:outline-1 md:focus:outline-gray-300'
-            onInput={(e) =>
-              setSearchCriteria({
-                ...searchCriteria,
-                searchKey: e.currentTarget.value,
-              })
-            }
-          />
+          <div className='flex items-center gap-2 w-full mt-8'>
+            <Select
+              searchable
+              placeholder='Filter by College Name'
+              data={COLLEGE_NAMES}
+              ref={collegeNameRef}
+              value={collegeName}
+              onChange={(value) => {
+                if (value) {
+                  let currentCode = COLLEGE_CODE_NAME.find(
+                    (codeName) => codeName["College Name"] == value
+                  )["College Code"];
+                  setCollegeCode(currentCode);
+                  setSearchCriteria(prev => ({ ...prev, CollegeCode: currentCode }))
+                  setCollegeName(value)
+                  collegeCodeRef.current.value = currentCode;
+                }
+              }}
+              comboboxProps={{
+                withArrow: true,
+                shadow: "xl",
+              }}
+              filter={collegeNameSearchFilter}
+              styles={{
+                root: {
+                  minWidth: "50vw",
+                },
+                input: {
+                  fontFamily: inter.style.fontFamily,
+                },
+              }}
+            />
+            <Select
+              searchable
+              placeholder='Filter by College Code'
+              data={COLLEGE_CODES}
+              ref={collegeCodeRef}
+              value={collegeCode}
+              onChange={(value) => {
+                if (value) {
+                  let currentName = COLLEGE_CODE_NAME.find(
+                    (codeName) => codeName["College Code"] == value
+                  )["College Name"];
+                  setSearchCriteria((prev) => ({
+                    ...prev,
+                    CollegeCode: value,
+                  }));
+                  setCollegeName(currentName);
+                  setCollegeCode(value)
+                  collegeNameRef.current.value = currentName;
+                }
+              }}
+              comboboxProps={{
+                withArrow: true,
+                shadow: "xl",
+              }}
+              styles={{
+                root: {
+                  width: "100%",
+                },
+                input: {
+                  fontFamily: inter.style.fontFamily,
+                },
+              }}
+            />
+          </div>
+          <div className='md:grid md:grid-cols-3 md:grid-rows-1 md:gap-2 w-full'>
+            <Select
+              searchable
+              placeholder='Filter by Branch Name'
+              data={UNIQUE_COURSE_NAMES}
+              onChange={(value) => {
+                if (value) {
+                  setSearchCriteria(prev => ({ ...prev, BranchName: value.replace(/\s+/g, '').toLowerCase() }))
+                }
+              }}
+              comboboxProps={{
+                withArrow: true,
+                shadow: "xl",
+              }}
+              styles={{
+                input: {
+                  fontFamily: inter.style.fontFamily,
+                },
+              }}
+            />
+            <Select
+              searchable
+              placeholder='Filter by District'
+              data={ALL_DISTRICT}
+              comboboxProps={{
+                withArrow: true,
+                shadow: "xl",
+              }}
+              styles={{
+                input: {
+                  fontFamily: inter.style.fontFamily,
+                },
+              }}
+            />
+            <Select
+              searchable
+              placeholder='Filter by College Category'
+              data={COLLEGE_CATEGORIES}
+              onChange={(value) => {
+                if (value) {
+                  setSearchCriteria(prev => ({ ...prev, CollegeCategory: value }))
+                }
+              }}
+              styles={{
+                input: {
+                  fontFamily: inter.style.fontFamily,
+                },
+              }}
+            />
+          </div>
           <ErrorBoundary>
             <ReportTable searchCriteria={searchCriteria} />
           </ErrorBoundary>

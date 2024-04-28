@@ -43,21 +43,17 @@ const ReportTable = ({ searchCriteria }) => {
             (college[`${searchCriteria?.Category} - Cutoff`] >=
               parseFloat(searchCriteria.MinCutoff) &&
             college[`${searchCriteria?.Category} - Cutoff`] <=
-              parseFloat(searchCriteria.MaxCutoff)) && (
-                searchCriteria.searchKey && searchCriteria.searchKey.trim()
-                  ? (college["College Name"]
-                      .toLowerCase()
-                      .replace(/\s+/g, "")
-                      .includes(
-                        searchCriteria.searchKey.toLowerCase().replace(/\s+/g, "")
-                      ) ||
-                    college["Branch Name"]
-                      .toLowerCase()
-                      .replace(/\s+/g, "")
-                      .includes(
-                        searchCriteria.searchKey.toLowerCase().replace(/\s+/g, "")
-                      )
-                    )
+              parseFloat(searchCriteria?.MaxCutoff)) && (
+                searchCriteria?.CollegeCode
+                  ? (college["College Code"] == searchCriteria?.CollegeCode)
+                  : true
+              ) && (
+                searchCriteria?.BranchName ?
+                  (college['Branch Name'].replace(/\s+/g, '').toLowerCase().includes(searchCriteria?.BranchName))
+                  : true
+                ) && (
+                searchCriteria?.CollegeCategory ?
+                  (college['College Category'] == searchCriteria?.CollegeCategory)
                   : true
               )
         ),
@@ -153,6 +149,7 @@ const ReportTable = ({ searchCriteria }) => {
             accessor: `${searchCriteria?.Category} - Vacancy`,
             title: `${searchCriteria?.Category} - Vacancy`,
             width: windowSize < 768 ? 150 : "auto",
+            hidden: searchCriteria?.Category == "OC"
             // render: (value) => value['Branch Name'].toUpperCase()
           },
           {

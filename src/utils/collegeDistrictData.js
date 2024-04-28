@@ -4705,3 +4705,5 @@ export const districtData = [
 ];
 
 export const ALL_DISTRICT = Array.from(new Set(districtData.map(district => district["District "])));
+
+export const COLLEGE_CODE_NAME = districtData.map(college => ({ "College Code": college["COLLEGE CODE"], "College Name": college["COLLEGE NAME"] }))
