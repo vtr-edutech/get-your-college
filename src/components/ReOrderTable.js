@@ -1,8 +1,9 @@
 import { Reorder, useDragControls } from "framer-motion";
 import React from "react";
+import { BsChevronBarDown, BsChevronBarUp } from "react-icons/bs";
 import { FiTrash2 } from "react-icons/fi";
 
-const ReOrderTable = ({ collegPrefernces, setCollegPrefernces }) => {
+const ReOrderTable = ({ collegPrefernces, setCollegPrefernces, withCutoff = true }) => {
   const controls = useDragControls();
 
   return (
@@ -32,12 +33,20 @@ const ReOrderTable = ({ collegPrefernces, setCollegPrefernces }) => {
             <h2 className='max-w-36 flex-1 text-sm pl-2 min-w-32 md:m-0 mx-2'>
               {college["Branch Name"].toUpperCase()}
             </h2>
-            <h2 className='max-w-36 flex-1 text-sm min-w-20'>
-              {college[`${localStorage.getItem("Cat")} - Cutoff`]}
-            </h2>
-            <div className='max-w-14 flex-1 text-sm min-w-12'>
-              <FiTrash2 color="red" size={20} className="cursor-pointer" onClick={() => setCollegPrefernces(prev => prev.filter(state => state.id != college.id))} />
-            </div>
+            {
+              withCutoff && (
+                <>
+                  <h2 className='max-w-36 flex-1 text-sm min-w-20'>
+                    {college[`${localStorage.getItem("Cat")} - Cutoff`]}
+                  </h2>
+                  <div className='max-w-16 flex-1 flex flex-row items-center gap-2 text-sm min-w-12'>
+                    <BsChevronBarUp size={20} />
+                    <BsChevronBarDown size={20} />
+                    <FiTrash2 color="red" size={20} className="cursor-pointer" onClick={() => setCollegPrefernces(prev => prev.filter(state => state.id != college.id))} />
+                  </div>
+                </>
+              )
+            }
           </Reorder.Item>
         ))
       ) : (

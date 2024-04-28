@@ -8398,7 +8398,7 @@ export const NBAdata = [
  {
   "S.No": 721,
   "COLLEGE CODE": 1419,
-  "COLLEGE NAME": "Sri Sai Ram Enginering College (Autonomous)  West\nTambaram  Chennai 600044",
+  "COLLEGE NAME": "Sri Sai Ram Engineering College (Autonomous)  West\nTambaram  Chennai 600044",
   "BRANCH": "AD",
   "BRANCH NAME": "ARTIFICIAL INTELLIGENCE\nAND DATA SCIENCE",
   "College Status": "Autonomous",
@@ -8410,7 +8410,7 @@ export const NBAdata = [
  {
   "S.No": 722,
   "COLLEGE CODE": 1419,
-  "COLLEGE NAME": "Sri Sai Ram Enginering College (Autonomous)  West Tambaram  Chennai 600044",
+  "COLLEGE NAME": "Sri Sai Ram Engineering College (Autonomous)  West Tambaram  Chennai 600044",
   "BRANCH": "AM",
   "BRANCH NAME": "COMPUTER SCIENCE AND ENGINEERING (ARTIFICIAL INTELLIGENCE AND\nMACHINE LEARNING)",
   "College Status": "Autonomous",
@@ -8422,7 +8422,7 @@ export const NBAdata = [
  {
   "S.No": 723,
   "COLLEGE CODE": 1419,
-  "COLLEGE NAME": "Sri Sai Ram Enginering College (Autonomous)  West\nTambaram  Chennai 600044",
+  "COLLEGE NAME": "Sri Sai Ram Engineering College (Autonomous)  West\nTambaram  Chennai 600044",
   "BRANCH": "CB",
   "BRANCH NAME": "COMPUTER SCIENCE AND\nBUSSINESS SYSTEM",
   "College Status": "Autonomous",
@@ -8434,7 +8434,7 @@ export const NBAdata = [
  {
   "S.No": 724,
   "COLLEGE CODE": 1419,
-  "COLLEGE NAME": "Sri Sai Ram Enginering College (Autonomous)  West\nTambaram  Chennai 600044",
+  "COLLEGE NAME": "Sri Sai Ram Engineering College (Autonomous)  West\nTambaram  Chennai 600044",
   "BRANCH": "CE",
   "BRANCH NAME": "CIVIL  ENGINEERING",
   "College Status": "Autonomous",
@@ -8446,7 +8446,7 @@ export const NBAdata = [
  {
   "S.No": 725,
   "COLLEGE CODE": 1419,
-  "COLLEGE NAME": "Sri Sai Ram Enginering College (Autonomous)  West Tambaram  Chennai 600044",
+  "COLLEGE NAME": "Sri Sai Ram Engineering College (Autonomous)  West Tambaram  Chennai 600044",
   "BRANCH": "CI",
   "BRANCH NAME": "Computer Science and\nEngineering (Internet of Things)",
   "College Status": "Autonomous",
@@ -8458,7 +8458,7 @@ export const NBAdata = [
  {
   "S.No": 726,
   "COLLEGE CODE": 1419,
-  "COLLEGE NAME": "Sri Sai Ram Enginering College (Autonomous)  West Tambaram  Chennai 600044",
+  "COLLEGE NAME": "Sri Sai Ram Engineering College (Autonomous)  West Tambaram  Chennai 600044",
   "BRANCH": "CJ",
   "BRANCH NAME": "M.Tech. Computer Science\nand Engineering (Integrated 5 years)",
   "College Status": "Autonomous",
@@ -8470,7 +8470,7 @@ export const NBAdata = [
  {
   "S.No": 727,
   "COLLEGE CODE": 1419,
-  "COLLEGE NAME": "Sri Sai Ram Enginering College (Autonomous)  West\nTambaram  Chennai 600044",
+  "COLLEGE NAME": "Sri Sai Ram Engineering College (Autonomous)  West\nTambaram  Chennai 600044",
   "BRANCH": "CS",
   "BRANCH NAME": "COMPUTER SCIENCE AND\nENGINEERING",
   "College Status": "Autonomous",
@@ -8482,7 +8482,7 @@ export const NBAdata = [
  {
   "S.No": 728,
   "COLLEGE CODE": 1419,
-  "COLLEGE NAME": "Sri Sai Ram Enginering College (Autonomous)  West Tambaram  Chennai 600044",
+  "COLLEGE NAME": "Sri Sai Ram Engineering College (Autonomous)  West Tambaram  Chennai 600044",
   "BRANCH": "EC",
   "BRANCH NAME": "ELECTRONICS AND COMMUNICATION\nENGINEERING",
   "College Status": "Autonomous",
@@ -8494,7 +8494,7 @@ export const NBAdata = [
  {
   "S.No": 729,
   "COLLEGE CODE": 1419,
-  "COLLEGE NAME": "Sri Sai Ram Enginering College (Autonomous)  West Tambaram  Chennai 600044",
+  "COLLEGE NAME": "Sri Sai Ram Engineering College (Autonomous)  West Tambaram  Chennai 600044",
   "BRANCH": "EE",
   "BRANCH NAME": "ELECTRICAL AND ELECTRONICS\nENGINEERING",
   "College Status": "Autonomous",
@@ -8506,7 +8506,7 @@ export const NBAdata = [
  {
   "S.No": 730,
   "COLLEGE CODE": 1419,
-  "COLLEGE NAME": "Sri Sai Ram Enginering College (Autonomous)  West Tambaram  Chennai 600044",
+  "COLLEGE NAME": "Sri Sai Ram Engineering College (Autonomous)  West Tambaram  Chennai 600044",
   "BRANCH": "EI",
   "BRANCH NAME": "ELECTRONICS AND\nINSTRUMENTATION ENGINEERING",
   "College Status": "Autonomous",
@@ -8518,7 +8518,7 @@ export const NBAdata = [
  {
   "S.No": 731,
   "COLLEGE CODE": 1419,
-  "COLLEGE NAME": "Sri Sai Ram Enginering College (Autonomous)  West\nTambaram  Chennai 600044",
+  "COLLEGE NAME": "Sri Sai Ram Engineering College (Autonomous)  West\nTambaram  Chennai 600044",
   "BRANCH": "IC",
   "BRANCH NAME": "INSTRUMENTATION AND\nCONTROL ENGINEERING",
   "College Status": "Autonomous",
@@ -8530,7 +8530,7 @@ export const NBAdata = [
  {
   "S.No": 732,
   "COLLEGE CODE": 1419,
-  "COLLEGE NAME": "Sri Sai Ram Enginering College (Autonomous)  West\nTambaram  Chennai 600044",
+  "COLLEGE NAME": "Sri Sai Ram Engineering College (Autonomous)  West\nTambaram  Chennai 600044",
   "BRANCH": "IT",
   "BRANCH NAME": "INFORMATION\nTECHNOLOGY",
   "College Status": "Autonomous",
@@ -8542,7 +8542,7 @@ export const NBAdata = [
  {
   "S.No": 733,
   "COLLEGE CODE": 1419,
-  "COLLEGE NAME": "Sri Sai Ram Enginering College (Autonomous)  West\nTambaram  Chennai 600044",
+  "COLLEGE NAME": "Sri Sai Ram Engineering College (Autonomous)  West\nTambaram  Chennai 600044",
   "BRANCH": "ME",
   "BRANCH NAME": "MECHANICAL\nENGINEERING",
   "College Status": "Autonomous",
@@ -8554,7 +8554,7 @@ export const NBAdata = [
  {
   "S.No": 734,
   "COLLEGE CODE": 1419,
-  "COLLEGE NAME": "Sri Sai Ram Enginering College (Autonomous)  West Tambaram  Chennai 600044",
+  "COLLEGE NAME": "Sri Sai Ram Engineering College (Autonomous)  West Tambaram  Chennai 600044",
   "BRANCH": "MU",
   "BRANCH NAME": "MECHANICAL AND\nAUTOMATION ENGINEERING",
   "College Status": "Autonomous",
@@ -21184,7 +21184,7 @@ export const NBAdata = [
  {
   "S.No": 1791,
   "COLLEGE CODE": 2718,
-  "COLLEGE NAME": "Sri Krishna College of Enginering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
+  "COLLEGE NAME": "Sri Krishna College of Engineering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
   "BRANCH": "AD",
   "BRANCH NAME": "ARTIFICIAL INTELLIGENCE AND DATA SCIENCE",
   "College Status": "Autonomous",
@@ -21196,7 +21196,7 @@ export const NBAdata = [
  {
   "S.No": 1792,
   "COLLEGE CODE": 2718,
-  "COLLEGE NAME": "Sri Krishna College of Enginering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
+  "COLLEGE NAME": "Sri Krishna College of Engineering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
   "BRANCH": "CB",
   "BRANCH NAME": "COMPUTER SCIENCE AND BUSSINESS SYSTEM",
   "College Status": "Autonomous",
@@ -21208,7 +21208,7 @@ export const NBAdata = [
  {
   "S.No": 1793,
   "COLLEGE CODE": 2718,
-  "COLLEGE NAME": "Sri Krishna College of Enginering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
+  "COLLEGE NAME": "Sri Krishna College of Engineering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
   "BRANCH": "CD",
   "BRANCH NAME": "COMPUTER SCIENCE AND DESIGN",
   "College Status": "Autonomous",
@@ -21220,7 +21220,7 @@ export const NBAdata = [
  {
   "S.No": 1794,
   "COLLEGE CODE": 2718,
-  "COLLEGE NAME": "Sri Krishna College of Enginering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
+  "COLLEGE NAME": "Sri Krishna College of Engineering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
   "BRANCH": "CE",
   "BRANCH NAME": "CIVIL  ENGINEERING",
   "College Status": "Autonomous",
@@ -21232,7 +21232,7 @@ export const NBAdata = [
  {
   "S.No": 1795,
   "COLLEGE CODE": 2718,
-  "COLLEGE NAME": "Sri Krishna College of Enginering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
+  "COLLEGE NAME": "Sri Krishna College of Engineering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
   "BRANCH": "CJ",
   "BRANCH NAME": "M.Tech. Computer Science\nand Engineering (Integrated 5 years)",
   "College Status": "Autonomous",
@@ -21244,7 +21244,7 @@ export const NBAdata = [
  {
   "S.No": 1796,
   "COLLEGE CODE": 2718,
-  "COLLEGE NAME": "Sri Krishna College of Enginering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
+  "COLLEGE NAME": "Sri Krishna College of Engineering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
   "BRANCH": "CS",
   "BRANCH NAME": "COMPUTER SCIENCE AND ENGINEERING",
   "College Status": "Autonomous",
@@ -21256,7 +21256,7 @@ export const NBAdata = [
  {
   "S.No": 1797,
   "COLLEGE CODE": 2718,
-  "COLLEGE NAME": "Sri Krishna College of Enginering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
+  "COLLEGE NAME": "Sri Krishna College of Engineering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
   "BRANCH": "EC",
   "BRANCH NAME": "ELECTRONICS AND\nCOMMUNICATION ENGINEERING",
   "College Status": "Autonomous",
@@ -21268,7 +21268,7 @@ export const NBAdata = [
  {
   "S.No": 1798,
   "COLLEGE CODE": 2718,
-  "COLLEGE NAME": "Sri Krishna College of Enginering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
+  "COLLEGE NAME": "Sri Krishna College of Engineering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
   "BRANCH": "EE",
   "BRANCH NAME": "ELECTRICAL AND ELECTRONICS\nENGINEERING",
   "College Status": "Autonomous",
@@ -21280,7 +21280,7 @@ export const NBAdata = [
  {
   "S.No": 1799,
   "COLLEGE CODE": 2718,
-  "COLLEGE NAME": "Sri Krishna College of Enginering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
+  "COLLEGE NAME": "Sri Krishna College of Engineering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
   "BRANCH": "IT",
   "BRANCH NAME": "INFORMATION TECHNOLOGY",
   "College Status": "Autonomous",
@@ -21292,7 +21292,7 @@ export const NBAdata = [
  {
   "S.No": 1800,
   "COLLEGE CODE": 2718,
-  "COLLEGE NAME": "Sri Krishna College of Enginering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
+  "COLLEGE NAME": "Sri Krishna College of Engineering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
   "BRANCH": "ME",
   "BRANCH NAME": "MECHANICAL ENGINEERING",
   "College Status": "Autonomous",
@@ -21304,7 +21304,7 @@ export const NBAdata = [
  {
   "S.No": 1801,
   "COLLEGE CODE": 2718,
-  "COLLEGE NAME": "Sri Krishna College of Enginering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
+  "COLLEGE NAME": "Sri Krishna College of Engineering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
   "BRANCH": "MZ",
   "BRANCH NAME": "Mechatronics Engineering",
   "College Status": "Autonomous",
@@ -21316,7 +21316,7 @@ export const NBAdata = [
  {
   "S.No": 1802,
   "COLLEGE CODE": 2718,
-  "COLLEGE NAME": "Sri Krishna College of Enginering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
+  "COLLEGE NAME": "Sri Krishna College of Engineering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
   "BRANCH": "SC",
   "BRANCH NAME": "Computer Science and Engineering (Cyber\nSecurity)",
   "College Status": "Autonomous",

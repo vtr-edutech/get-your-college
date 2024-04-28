@@ -10890,7 +10890,7 @@ const collegeData = {
       id: 664,
       "College Code": 1419,
       "College Name":
-        "Sri Sai Ram Enginering College (Autonomous)  West Tambaram  Chennai 600044",
+        "Sri Sai Ram Engineering College (Autonomous)  West Tambaram  Chennai 600044",
       "Branch Code": "AD",
       "Branch Name": "ARTIFICIAL INTELLIGENCE AND DATA SCIENCE",
       "OC - Cutoff": 180,
@@ -10910,7 +10910,7 @@ const collegeData = {
       id: 665,
       "College Code": 1419,
       "College Name":
-        "Sri Sai Ram Enginering College (Autonomous)  West Tambaram  Chennai 600044",
+        "Sri Sai Ram Engineering College (Autonomous)  West Tambaram  Chennai 600044",
       "Branch Code": "AM",
       "Branch Name":
         "COMPUTER SCIENCE AND ENGINEERING (ARTIFICIAL INTELLIGENCE AND MACHINE LEARNING)",
@@ -10933,7 +10933,7 @@ const collegeData = {
       id: 666,
       "College Code": 1419,
       "College Name":
-        "Sri Sai Ram Enginering College (Autonomous)  West Tambaram  Chennai 600044",
+        "Sri Sai Ram Engineering College (Autonomous)  West Tambaram  Chennai 600044",
       "Branch Code": "CB",
       "Branch Name": "COMPUTER SCIENCE AND BUSSINESS SYSTEM",
       "OC - Cutoff": 176.5,
@@ -10951,7 +10951,7 @@ const collegeData = {
       id: 667,
       "College Code": 1419,
       "College Name":
-        "Sri Sai Ram Enginering College (Autonomous)  West Tambaram  Chennai 600044",
+        "Sri Sai Ram Engineering College (Autonomous)  West Tambaram  Chennai 600044",
       "Branch Code": "CE",
       "Branch Name": "CIVIL  ENGINEERING",
       "OC - Cutoff": 153,
@@ -10969,7 +10969,7 @@ const collegeData = {
       id: 668,
       "College Code": 1419,
       "College Name":
-        "Sri Sai Ram Enginering College (Autonomous)  West Tambaram  Chennai 600044",
+        "Sri Sai Ram Engineering College (Autonomous)  West Tambaram  Chennai 600044",
       "Branch Code": "CI",
       "Branch Name": "Computer Science and Engineering (Internet of Things)",
       "OC - Cutoff": 174,
@@ -10987,7 +10987,7 @@ const collegeData = {
       id: 669,
       "College Code": 1419,
       "College Name":
-        "Sri Sai Ram Enginering College (Autonomous)  West Tambaram  Chennai 600044",
+        "Sri Sai Ram Engineering College (Autonomous)  West Tambaram  Chennai 600044",
       "Branch Code": "CJ",
       "Branch Name":
         "M.Tech. Computer Science and Engineering (Integrated 5 years)",
@@ -11006,7 +11006,7 @@ const collegeData = {
       id: 670,
       "College Code": 1419,
       "College Name":
-        "Sri Sai Ram Enginering College (Autonomous)  West Tambaram  Chennai 600044",
+        "Sri Sai Ram Engineering College (Autonomous)  West Tambaram  Chennai 600044",
       "Branch Code": "CS",
       "Branch Name": "COMPUTER SCIENCE AND ENGINEERING",
       "OC - Cutoff": 185,
@@ -11028,7 +11028,7 @@ const collegeData = {
       id: 671,
       "College Code": 1419,
       "College Name":
-        "Sri Sai Ram Enginering College (Autonomous)  West Tambaram  Chennai 600044",
+        "Sri Sai Ram Engineering College (Autonomous)  West Tambaram  Chennai 600044",
       "Branch Code": "EC",
       "Branch Name": "ELECTRONICS AND COMMUNICATION ENGINEERING",
       "OC - Cutoff": 179,
@@ -11050,7 +11050,7 @@ const collegeData = {
       id: 672,
       "College Code": 1419,
       "College Name":
-        "Sri Sai Ram Enginering College (Autonomous)  West Tambaram  Chennai 600044",
+        "Sri Sai Ram Engineering College (Autonomous)  West Tambaram  Chennai 600044",
       "Branch Code": "EE",
       "Branch Name": "ELECTRICAL AND ELECTRONICS ENGINEERING",
       "OC - Cutoff": 169,
@@ -11068,7 +11068,7 @@ const collegeData = {
       id: 673,
       "College Code": 1419,
       "College Name":
-        "Sri Sai Ram Enginering College (Autonomous)  West Tambaram  Chennai 600044",
+        "Sri Sai Ram Engineering College (Autonomous)  West Tambaram  Chennai 600044",
       "Branch Code": "EI",
       "Branch Name": "ELECTRONICS AND INSTRUMENTATION ENGINEERING",
       "OC - Cutoff": 163.5,
@@ -11086,7 +11086,7 @@ const collegeData = {
       id: 674,
       "College Code": 1419,
       "College Name":
-        "Sri Sai Ram Enginering College (Autonomous)  West Tambaram  Chennai 600044",
+        "Sri Sai Ram Engineering College (Autonomous)  West Tambaram  Chennai 600044",
       "Branch Code": "IC",
       "Branch Name": "INSTRUMENTATION AND CONTROL ENGINEERING",
       "OC - Cutoff": 155.5,
@@ -11104,7 +11104,7 @@ const collegeData = {
       id: 675,
       "College Code": 1419,
       "College Name":
-        "Sri Sai Ram Enginering College (Autonomous)  West Tambaram  Chennai 600044",
+        "Sri Sai Ram Engineering College (Autonomous)  West Tambaram  Chennai 600044",
       "Branch Code": "IT",
       "Branch Name": "INFORMATION TECHNOLOGY",
       "OC - Cutoff": 180.5,
@@ -11124,7 +11124,7 @@ const collegeData = {
       id: 676,
       "College Code": 1419,
       "College Name":
-        "Sri Sai Ram Enginering College (Autonomous)  West Tambaram  Chennai 600044",
+        "Sri Sai Ram Engineering College (Autonomous)  West Tambaram  Chennai 600044",
       "Branch Code": "ME",
       "Branch Name": "MECHANICAL ENGINEERING",
       "OC - Cutoff": 158,
@@ -11144,7 +11144,7 @@ const collegeData = {
       id: 677,
       "College Code": 1419,
       "College Name":
-        "Sri Sai Ram Enginering College (Autonomous)  West Tambaram  Chennai 600044",
+        "Sri Sai Ram Engineering College (Autonomous)  West Tambaram  Chennai 600044",
       "Branch Code": "MU",
       "Branch Name": "MECHANICAL AND AUTOMATION ENGINEERING",
       "OC - Cutoff": 151.5,
@@ -27434,7 +27434,7 @@ const collegeData = {
       id: 1659,
       "College Code": 2718,
       "College Name":
-        "Sri Krishna College of Enginering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
+        "Sri Krishna College of Engineering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
       "Branch Code": "AD",
       "Branch Name": "ARTIFICIAL INTELLIGENCE AND DATA SCIENCE",
       "OC - Cutoff": 191,
@@ -27456,7 +27456,7 @@ const collegeData = {
       id: 1660,
       "College Code": 2718,
       "College Name":
-        "Sri Krishna College of Enginering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
+        "Sri Krishna College of Engineering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
       "Branch Code": "CB",
       "Branch Name": "COMPUTER SCIENCE AND BUSSINESS SYSTEM",
       "OC - Cutoff": 187,
@@ -27476,7 +27476,7 @@ const collegeData = {
       id: 1661,
       "College Code": 2718,
       "College Name":
-        "Sri Krishna College of Enginering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
+        "Sri Krishna College of Engineering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
       "Branch Code": "CD",
       "Branch Name": "COMPUTER SCIENCE AND DESIGN",
       "OC - Cutoff": 185.5,
@@ -27496,7 +27496,7 @@ const collegeData = {
       id: 1662,
       "College Code": 2718,
       "College Name":
-        "Sri Krishna College of Enginering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
+        "Sri Krishna College of Engineering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
       "Branch Code": "CE",
       "Branch Name": "CIVIL  ENGINEERING",
       "OC - Cutoff": 163,
@@ -27518,7 +27518,7 @@ const collegeData = {
       id: 1663,
       "College Code": 2718,
       "College Name":
-        "Sri Krishna College of Enginering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
+        "Sri Krishna College of Engineering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
       "Branch Code": "CJ",
       "Branch Name":
         "M.Tech. Computer Science and Engineering (Integrated 5 years)",
@@ -27537,7 +27537,7 @@ const collegeData = {
       id: 1664,
       "College Code": 2718,
       "College Name":
-        "Sri Krishna College of Enginering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
+        "Sri Krishna College of Engineering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
       "Branch Code": "CS",
       "Branch Name": "COMPUTER SCIENCE AND ENGINEERING",
       "OC - Cutoff": 192.5,
@@ -27559,7 +27559,7 @@ const collegeData = {
       id: 1665,
       "College Code": 2718,
       "College Name":
-        "Sri Krishna College of Enginering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
+        "Sri Krishna College of Engineering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
       "Branch Code": "EC",
       "Branch Name": "ELECTRONICS AND COMMUNICATION ENGINEERING",
       "OC - Cutoff": 189.5,
@@ -27581,7 +27581,7 @@ const collegeData = {
       id: 1666,
       "College Code": 2718,
       "College Name":
-        "Sri Krishna College of Enginering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
+        "Sri Krishna College of Engineering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
       "Branch Code": "EE",
       "Branch Name": "ELECTRICAL AND ELECTRONICS ENGINEERING",
       "OC - Cutoff": 184.5,
@@ -27601,7 +27601,7 @@ const collegeData = {
       id: 1667,
       "College Code": 2718,
       "College Name":
-        "Sri Krishna College of Enginering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
+        "Sri Krishna College of Engineering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
       "Branch Code": "IT",
       "Branch Name": "INFORMATION TECHNOLOGY",
       "OC - Cutoff": 189,
@@ -27623,7 +27623,7 @@ const collegeData = {
       id: 1668,
       "College Code": 2718,
       "College Name":
-        "Sri Krishna College of Enginering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
+        "Sri Krishna College of Engineering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
       "Branch Code": "ME",
       "Branch Name": "MECHANICAL ENGINEERING",
       "OC - Cutoff": 169,
@@ -27645,7 +27645,7 @@ const collegeData = {
       id: 1669,
       "College Code": 2718,
       "College Name":
-        "Sri Krishna College of Enginering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
+        "Sri Krishna College of Engineering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
       "Branch Code": "MZ",
       "Branch Name": "Mechatronics Engineering",
       "OC - Cutoff": 172,
@@ -27665,7 +27665,7 @@ const collegeData = {
       id: 1670,
       "College Code": 2718,
       "College Name":
-        "Sri Krishna College of Enginering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
+        "Sri Krishna College of Engineering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
       "Branch Code": "SC",
       "Branch Name": "Computer Science and Engineering (Cyber Security)",
       "OC - Cutoff": 187.5,
@@ -58469,7 +58469,7 @@ const collegeData = {
       "S.No": 727,
       "College Code": 1419,
       "College Name":
-        "Sri Sai Ram Enginering College (Autonomous)  West\nTambaram  Chennai 600044",
+        "Sri Sai Ram Engineering College (Autonomous)  West\nTambaram  Chennai 600044",
       "Branch Code": "AD",
       "Branch Name": "ARTIFICIAL INTELLIGENCE AND DATA SCIENCE",
       "OC - Cutoff": 176.5,
@@ -58487,7 +58487,7 @@ const collegeData = {
       "S.No": 728,
       "College Code": 1419,
       "College Name":
-        "Sri Sai Ram Enginering College (Autonomous)  West\nTambaram  Chennai 600044",
+        "Sri Sai Ram Engineering College (Autonomous)  West\nTambaram  Chennai 600044",
       "Branch Code": "AM",
       "Branch Name":
         "COMPUTER SCIENCE AND ENGINEERING (ARTIFICIAL INTELLIGENCE AND MACHINE LEARNING)",
@@ -58506,7 +58506,7 @@ const collegeData = {
       "S.No": 729,
       "College Code": 1419,
       "College Name":
-        "Sri Sai Ram Enginering College (Autonomous)  West\nTambaram  Chennai 600044",
+        "Sri Sai Ram Engineering College (Autonomous)  West\nTambaram  Chennai 600044",
       "Branch Code": "CB",
       "Branch Name": "COMPUTER SCIENCE AND BUSSINESS SYSTEM",
       "OC - Cutoff": 170.5,
@@ -58522,7 +58522,7 @@ const collegeData = {
       "S.No": 730,
       "College Code": 1419,
       "College Name":
-        "Sri Sai Ram Enginering College (Autonomous)  West\nTambaram  Chennai 600044",
+        "Sri Sai Ram Engineering College (Autonomous)  West\nTambaram  Chennai 600044",
       "Branch Code": "CE",
       "Branch Name": "CIVIL  ENGINEERING",
       "OC - Cutoff": 156,
@@ -58536,7 +58536,7 @@ const collegeData = {
       "S.No": 731,
       "College Code": 1419,
       "College Name":
-        "Sri Sai Ram Enginering College (Autonomous)  West\nTambaram  Chennai 600044",
+        "Sri Sai Ram Engineering College (Autonomous)  West\nTambaram  Chennai 600044",
       "Branch Code": "CI",
       "Branch Name": "Computer Science and Engineering (Internet of\nThings)",
       "BC - Cutoff": 165.5,
@@ -58550,7 +58550,7 @@ const collegeData = {
       "S.No": 732,
       "College Code": 1419,
       "College Name":
-        "Sri Sai Ram Enginering College (Autonomous)  West\nTambaram  Chennai 600044",
+        "Sri Sai Ram Engineering College (Autonomous)  West\nTambaram  Chennai 600044",
       "Branch Code": "CJ",
       "Branch Name":
         "M.Tech. Computer Science and Engineering (Integrated\n5 years)",
@@ -58565,7 +58565,7 @@ const collegeData = {
       "S.No": 733,
       "College Code": 1419,
       "College Name":
-        "Sri Sai Ram Enginering College (Autonomous)  West\nTambaram  Chennai 600044",
+        "Sri Sai Ram Engineering College (Autonomous)  West\nTambaram  Chennai 600044",
       "Branch Code": "CS",
       "Branch Name": "COMPUTER SCIENCE AND ENGINEERING",
       "OC - Cutoff": 182.5,
@@ -58583,7 +58583,7 @@ const collegeData = {
       "S.No": 734,
       "College Code": 1419,
       "College Name":
-        "Sri Sai Ram Enginering College (Autonomous)  West\nTambaram  Chennai 600044",
+        "Sri Sai Ram Engineering College (Autonomous)  West\nTambaram  Chennai 600044",
       "Branch Code": "EC",
       "Branch Name": "ELECTRONICS AND COMMUNICATION ENGINEERING",
       "OC - Cutoff": 174,
@@ -58601,7 +58601,7 @@ const collegeData = {
       "S.No": 735,
       "College Code": 1419,
       "College Name":
-        "Sri Sai Ram Enginering College (Autonomous)  West\nTambaram  Chennai 600044",
+        "Sri Sai Ram Engineering College (Autonomous)  West\nTambaram  Chennai 600044",
       "Branch Code": "EE",
       "Branch Name": "ELECTRICAL AND ELECTRONICS ENGINEERING",
       "OC - Cutoff": 165.5,
@@ -58617,7 +58617,7 @@ const collegeData = {
       "S.No": 736,
       "College Code": 1419,
       "College Name":
-        "Sri Sai Ram Enginering College (Autonomous)  West\nTambaram  Chennai 600044",
+        "Sri Sai Ram Engineering College (Autonomous)  West\nTambaram  Chennai 600044",
       "Branch Code": "EI",
       "Branch Name": "ELECTRONICS AND INSTRUMENTATION\nENGINEERING",
       "OC - Cutoff": 164,
@@ -58633,7 +58633,7 @@ const collegeData = {
       "S.No": 737,
       "College Code": 1419,
       "College Name":
-        "Sri Sai Ram Enginering College (Autonomous)  West\nTambaram  Chennai 600044",
+        "Sri Sai Ram Engineering College (Autonomous)  West\nTambaram  Chennai 600044",
       "Branch Code": "IC",
       "Branch Name": "INSTRUMENTATION AND\nCONTROL ENGINEERING",
       "OC - Cutoff": 168.5,
@@ -58643,7 +58643,7 @@ const collegeData = {
       "S.No": 738,
       "College Code": 1419,
       "College Name":
-        "Sri Sai Ram Enginering College (Autonomous)  West\nTambaram  Chennai 600044",
+        "Sri Sai Ram Engineering College (Autonomous)  West\nTambaram  Chennai 600044",
       "Branch Code": "IT",
       "Branch Name": "INFORMATION TECHNOLOGY",
       "OC - Cutoff": 175.5,
@@ -58661,7 +58661,7 @@ const collegeData = {
       "S.No": 739,
       "College Code": 1419,
       "College Name":
-        "Sri Sai Ram Enginering College (Autonomous)  West\nTambaram  Chennai 600044",
+        "Sri Sai Ram Engineering College (Autonomous)  West\nTambaram  Chennai 600044",
       "Branch Code": "ME",
       "Branch Name": "MECHANICAL ENGINEERING",
       "OC - Cutoff": 160,
@@ -58677,7 +58677,7 @@ const collegeData = {
       "S.No": 740,
       "College Code": 1419,
       "College Name":
-        "Sri Sai Ram Enginering College (Autonomous)  West\nTambaram  Chennai 600044",
+        "Sri Sai Ram Engineering College (Autonomous)  West\nTambaram  Chennai 600044",
       "Branch Code": "MU",
       "Branch Name": "MECHANICAL AND AUTOMATION ENGINEERING",
       "OC - Cutoff": 154.5,
@@ -73440,7 +73440,7 @@ const collegeData = {
       "S.No": 1796,
       "College Code": 2718,
       "College Name":
-        "Sri Krishna College of Enginering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
+        "Sri Krishna College of Engineering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
       "Branch Code": "AD",
       "Branch Name": "ARTIFICIAL INTELLIGENCE AND DATA SCIENCE",
       "OC - Cutoff": 186.5,
@@ -73456,7 +73456,7 @@ const collegeData = {
       "S.No": 1797,
       "College Code": 2718,
       "College Name":
-        "Sri Krishna College of Enginering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
+        "Sri Krishna College of Engineering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
       "Branch Code": "CB",
       "Branch Name": "COMPUTER SCIENCE AND BUSSINESS SYSTEM",
       "OC - Cutoff": 180,
@@ -73470,7 +73470,7 @@ const collegeData = {
       "S.No": 1798,
       "College Code": 2718,
       "College Name":
-        "Sri Krishna College of Enginering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
+        "Sri Krishna College of Engineering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
       "Branch Code": "CD",
       "Branch Name": "COMPUTER SCIENCE AND DESIGN",
       "OC - Cutoff": 179.5,
@@ -73484,7 +73484,7 @@ const collegeData = {
       "S.No": 1799,
       "College Code": 2718,
       "College Name":
-        "Sri Krishna College of Enginering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
+        "Sri Krishna College of Engineering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
       "Branch Code": "CE",
       "Branch Name": "CIVIL  ENGINEERING",
       "OC - Cutoff": 167.5,
@@ -73498,7 +73498,7 @@ const collegeData = {
       "S.No": 1800,
       "College Code": 2718,
       "College Name":
-        "Sri Krishna College of Enginering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
+        "Sri Krishna College of Engineering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
       "Branch Code": "CJ",
       "Branch Name":
         "M.Tech. Computer Science and Engineering (Integrated\n5 years)",
@@ -73513,7 +73513,7 @@ const collegeData = {
       "S.No": 1801,
       "College Code": 2718,
       "College Name":
-        "Sri Krishna College of Enginering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
+        "Sri Krishna College of Engineering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
       "Branch Code": "CS",
       "Branch Name": "COMPUTER SCIENCE AND ENGINEERING",
       "OC - Cutoff": 187.5,
@@ -73529,7 +73529,7 @@ const collegeData = {
       "S.No": 1802,
       "College Code": 2718,
       "College Name":
-        "Sri Krishna College of Enginering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
+        "Sri Krishna College of Engineering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
       "Branch Code": "EC",
       "Branch Name": "ELECTRONICS AND COMMUNICATION ENGINEERING",
       "OC - Cutoff": 181,
@@ -73549,7 +73549,7 @@ const collegeData = {
       "S.No": 1803,
       "College Code": 2718,
       "College Name":
-        "Sri Krishna College of Enginering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
+        "Sri Krishna College of Engineering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
       "Branch Code": "EE",
       "Branch Name": "ELECTRICAL AND ELECTRONICS ENGINEERING",
       "OC - Cutoff": 177,
@@ -73565,7 +73565,7 @@ const collegeData = {
       "S.No": 1804,
       "College Code": 2718,
       "College Name":
-        "Sri Krishna College of Enginering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
+        "Sri Krishna College of Engineering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
       "Branch Code": "IT",
       "Branch Name": "INFORMATION TECHNOLOGY",
       "OC - Cutoff": 183,
@@ -73583,7 +73583,7 @@ const collegeData = {
       "S.No": 1805,
       "College Code": 2718,
       "College Name":
-        "Sri Krishna College of Enginering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
+        "Sri Krishna College of Engineering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
       "Branch Code": "ME",
       "Branch Name": "MECHANICAL ENGINEERING",
       "OC - Cutoff": 170.5,
@@ -73601,7 +73601,7 @@ const collegeData = {
       "S.No": 1806,
       "College Code": 2718,
       "College Name":
-        "Sri Krishna College of Enginering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
+        "Sri Krishna College of Engineering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
       "Branch Code": "MZ",
       "Branch Name": "Mechatronics Engineering",
       "OC - Cutoff": 170,
@@ -73619,7 +73619,7 @@ const collegeData = {
       "S.No": 1807,
       "College Code": 2718,
       "College Name":
-        "Sri Krishna College of Enginering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
+        "Sri Krishna College of Engineering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
       "Branch Code": "SC",
       "Branch Name": "Computer Science and Engineering (Cyber Security)",
       "OC - Cutoff": 187,

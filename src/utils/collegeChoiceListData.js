@@ -16077,7 +16077,7 @@ export const reportTableData = [
     "id":664,
     "College Code": 1419,
     "College Name":
-      "Sri Sai Ram Enginering College (Autonomous)  West Tambaram  Chennai 600044",
+      "Sri Sai Ram Engineering College (Autonomous)  West Tambaram  Chennai 600044",
     "Branch Code": "AD",
     "Branch Name": "ARTIFICIAL INTELLIGENCE AND DATA SCIENCE",
     "OC - Cutoff": 180,
@@ -16105,7 +16105,7 @@ export const reportTableData = [
     "id":665,
     "College Code": 1419,
     "College Name":
-      "Sri Sai Ram Enginering College (Autonomous)  West Tambaram  Chennai 600044",
+      "Sri Sai Ram Engineering College (Autonomous)  West Tambaram  Chennai 600044",
     "Branch Code": "AM",
     "Branch Name":
       "COMPUTER SCIENCE AND ENGINEERING (ARTIFICIAL INTELLIGENCE AND MACHINE LEARNING)",
@@ -16136,7 +16136,7 @@ export const reportTableData = [
     "id":666,
     "College Code": 1419,
     "College Name":
-      "Sri Sai Ram Enginering College (Autonomous)  West Tambaram  Chennai 600044",
+      "Sri Sai Ram Engineering College (Autonomous)  West Tambaram  Chennai 600044",
     "Branch Code": "CB",
     "Branch Name": "COMPUTER SCIENCE AND BUSSINESS SYSTEM",
     "OC - Cutoff": 176.5,
@@ -16162,7 +16162,7 @@ export const reportTableData = [
     "id":667,
     "College Code": 1419,
     "College Name":
-      "Sri Sai Ram Enginering College (Autonomous)  West Tambaram  Chennai 600044",
+      "Sri Sai Ram Engineering College (Autonomous)  West Tambaram  Chennai 600044",
     "Branch Code": "CE",
     "Branch Name": "CIVIL  ENGINEERING",
     "OC - Cutoff": 153,
@@ -16188,7 +16188,7 @@ export const reportTableData = [
     "id":668,
     "College Code": 1419,
     "College Name":
-      "Sri Sai Ram Enginering College (Autonomous)  West Tambaram  Chennai 600044",
+      "Sri Sai Ram Engineering College (Autonomous)  West Tambaram  Chennai 600044",
     "Branch Code": "CI",
     "Branch Name": "Computer Science and Engineering (Internet of Things)",
     "OC - Cutoff": 174,
@@ -16214,7 +16214,7 @@ export const reportTableData = [
     "id":669,
     "College Code": 1419,
     "College Name":
-      "Sri Sai Ram Enginering College (Autonomous)  West Tambaram  Chennai 600044",
+      "Sri Sai Ram Engineering College (Autonomous)  West Tambaram  Chennai 600044",
     "Branch Code": "CJ",
     "Branch Name":
       "M.Tech. Computer Science and Engineering (Integrated 5 years)",
@@ -16241,7 +16241,7 @@ export const reportTableData = [
     "id":670,
     "College Code": 1419,
     "College Name":
-      "Sri Sai Ram Enginering College (Autonomous)  West Tambaram  Chennai 600044",
+      "Sri Sai Ram Engineering College (Autonomous)  West Tambaram  Chennai 600044",
     "Branch Code": "CS",
     "Branch Name": "COMPUTER SCIENCE AND ENGINEERING",
     "OC - Cutoff": 185,
@@ -16271,7 +16271,7 @@ export const reportTableData = [
     "id":671,
     "College Code": 1419,
     "College Name":
-      "Sri Sai Ram Enginering College (Autonomous)  West Tambaram  Chennai 600044",
+      "Sri Sai Ram Engineering College (Autonomous)  West Tambaram  Chennai 600044",
     "Branch Code": "EC",
     "Branch Name": "ELECTRONICS AND COMMUNICATION ENGINEERING",
     "OC - Cutoff": 179,
@@ -16301,7 +16301,7 @@ export const reportTableData = [
     "id":672,
     "College Code": 1419,
     "College Name":
-      "Sri Sai Ram Enginering College (Autonomous)  West Tambaram  Chennai 600044",
+      "Sri Sai Ram Engineering College (Autonomous)  West Tambaram  Chennai 600044",
     "Branch Code": "EE",
     "Branch Name": "ELECTRICAL AND ELECTRONICS ENGINEERING",
     "OC - Cutoff": 169,
@@ -16327,7 +16327,7 @@ export const reportTableData = [
     "id":673,
     "College Code": 1419,
     "College Name":
-      "Sri Sai Ram Enginering College (Autonomous)  West Tambaram  Chennai 600044",
+      "Sri Sai Ram Engineering College (Autonomous)  West Tambaram  Chennai 600044",
     "Branch Code": "EI",
     "Branch Name": "ELECTRONICS AND INSTRUMENTATION ENGINEERING",
     "OC - Cutoff": 163.5,
@@ -16353,7 +16353,7 @@ export const reportTableData = [
     "id":674,
     "College Code": 1419,
     "College Name":
-      "Sri Sai Ram Enginering College (Autonomous)  West Tambaram  Chennai 600044",
+      "Sri Sai Ram Engineering College (Autonomous)  West Tambaram  Chennai 600044",
     "Branch Code": "IC",
     "Branch Name": "INSTRUMENTATION AND CONTROL ENGINEERING",
     "OC - Cutoff": 155.5,
@@ -16379,7 +16379,7 @@ export const reportTableData = [
     "id":675,
     "College Code": 1419,
     "College Name":
-      "Sri Sai Ram Enginering College (Autonomous)  West Tambaram  Chennai 600044",
+      "Sri Sai Ram Engineering College (Autonomous)  West Tambaram  Chennai 600044",
     "Branch Code": "IT",
     "Branch Name": "INFORMATION TECHNOLOGY",
     "OC - Cutoff": 180.5,
@@ -16407,7 +16407,7 @@ export const reportTableData = [
     "id":676,
     "College Code": 1419,
     "College Name":
-      "Sri Sai Ram Enginering College (Autonomous)  West Tambaram  Chennai 600044",
+      "Sri Sai Ram Engineering College (Autonomous)  West Tambaram  Chennai 600044",
     "Branch Code": "ME",
     "Branch Name": "MECHANICAL ENGINEERING",
     "OC - Cutoff": 158,
@@ -16435,7 +16435,7 @@ export const reportTableData = [
     "id":677,
     "College Code": 1419,
     "College Name":
-      "Sri Sai Ram Enginering College (Autonomous)  West Tambaram  Chennai 600044",
+      "Sri Sai Ram Engineering College (Autonomous)  West Tambaram  Chennai 600044",
     "Branch Code": "MU",
     "Branch Name": "MECHANICAL AND AUTOMATION ENGINEERING",
     "OC - Cutoff": 151.5,
@@ -40510,7 +40510,7 @@ export const reportTableData = [
     "id":1659,
     "College Code": 2718,
     "College Name":
-      "Sri Krishna College of Enginering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
+      "Sri Krishna College of Engineering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
     "Branch Code": "AD",
     "Branch Name": "ARTIFICIAL INTELLIGENCE AND DATA SCIENCE",
     "OC - Cutoff": 191,
@@ -40540,7 +40540,7 @@ export const reportTableData = [
     "id":1660,
     "College Code": 2718,
     "College Name":
-      "Sri Krishna College of Enginering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
+      "Sri Krishna College of Engineering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
     "Branch Code": "CB",
     "Branch Name": "COMPUTER SCIENCE AND BUSSINESS SYSTEM",
     "OC - Cutoff": 187,
@@ -40568,7 +40568,7 @@ export const reportTableData = [
     "id":1661,
     "College Code": 2718,
     "College Name":
-      "Sri Krishna College of Enginering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
+      "Sri Krishna College of Engineering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
     "Branch Code": "CD",
     "Branch Name": "COMPUTER SCIENCE AND DESIGN",
     "OC - Cutoff": 185.5,
@@ -40596,7 +40596,7 @@ export const reportTableData = [
     "id":1662,
     "College Code": 2718,
     "College Name":
-      "Sri Krishna College of Enginering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
+      "Sri Krishna College of Engineering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
     "Branch Code": "CE",
     "Branch Name": "CIVIL  ENGINEERING",
     "OC - Cutoff": 163,
@@ -40626,7 +40626,7 @@ export const reportTableData = [
     "id":1663,
     "College Code": 2718,
     "College Name":
-      "Sri Krishna College of Enginering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
+      "Sri Krishna College of Engineering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
     "Branch Code": "CJ",
     "Branch Name":
       "M.Tech. Computer Science and Engineering (Integrated 5 years)",
@@ -40653,7 +40653,7 @@ export const reportTableData = [
     "id":1664,
     "College Code": 2718,
     "College Name":
-      "Sri Krishna College of Enginering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
+      "Sri Krishna College of Engineering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
     "Branch Code": "CS",
     "Branch Name": "COMPUTER SCIENCE AND ENGINEERING",
     "OC - Cutoff": 192.5,
@@ -40683,7 +40683,7 @@ export const reportTableData = [
     "id":1665,
     "College Code": 2718,
     "College Name":
-      "Sri Krishna College of Enginering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
+      "Sri Krishna College of Engineering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
     "Branch Code": "EC",
     "Branch Name": "ELECTRONICS AND COMMUNICATION ENGINEERING",
     "OC - Cutoff": 189.5,
@@ -40713,7 +40713,7 @@ export const reportTableData = [
     "id":1666,
     "College Code": 2718,
     "College Name":
-      "Sri Krishna College of Enginering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
+      "Sri Krishna College of Engineering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
     "Branch Code": "EE",
     "Branch Name": "ELECTRICAL AND ELECTRONICS ENGINEERING",
     "OC - Cutoff": 184.5,
@@ -40741,7 +40741,7 @@ export const reportTableData = [
     "id":1667,
     "College Code": 2718,
     "College Name":
-      "Sri Krishna College of Enginering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
+      "Sri Krishna College of Engineering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
     "Branch Code": "IT",
     "Branch Name": "INFORMATION TECHNOLOGY",
     "OC - Cutoff": 189,
@@ -40771,7 +40771,7 @@ export const reportTableData = [
     "id":1668,
     "College Code": 2718,
     "College Name":
-      "Sri Krishna College of Enginering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
+      "Sri Krishna College of Engineering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
     "Branch Code": "ME",
     "Branch Name": "MECHANICAL ENGINEERING",
     "OC - Cutoff": 169,
@@ -40801,7 +40801,7 @@ export const reportTableData = [
     "id":1669,
     "College Code": 2718,
     "College Name":
-      "Sri Krishna College of Enginering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
+      "Sri Krishna College of Engineering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
     "Branch Code": "MZ",
     "Branch Name": "Mechatronics Engineering",
     "OC - Cutoff": 172,
@@ -40829,7 +40829,7 @@ export const reportTableData = [
     "id":1670,
     "College Code": 2718,
     "College Name":
-      "Sri Krishna College of Enginering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
+      "Sri Krishna College of Engineering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
     "Branch Code": "SC",
     "Branch Name": "Computer Science and Engineering (Cyber Security)",
     "OC - Cutoff": 187.5,

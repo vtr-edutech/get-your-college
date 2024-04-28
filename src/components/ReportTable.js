@@ -105,15 +105,17 @@ const ReportTable = ({ searchCriteria }) => {
     ]
   );
 
+  useEffect(() => pagination.setPage(1) ,[searchCriteria])
+
   const [bodyRef] = useAutoAnimate();
 
-  // console.log("🚀 ~ ReportTable ~ selectedColleges:", typeof selectedColleges)
+  console.log("🚀 ~ ReportTable ~ selectedColleges:", collegesAfterSlicing)
 
   if (!searchCriteria.Category) return <p>Invalid search parameters!</p>;
 
   return (
     <>
-      <p className='ml-2 w-full text-left'>
+      <p className='ml-2 w-full text-left mt-7'>
         🔍 <span className='font-medium'>{collegesAfterFiltering.length}</span>{" "}
         college(s) found
       </p>
@@ -122,7 +124,8 @@ const ReportTable = ({ searchCriteria }) => {
         pinFirstColumn
         highlightOnHover
         height={500}
-        scrollAreaProps={{ type: "scroll", h: 500 }}
+        rowBackgroundColor={"white"}
+        scrollAreaProps={{ type: "always", h: 500 }}
         // noRecordsIcon={}
         noRecordsText='Could not find any colleges'
         emptyState={<>{""}</>}
@@ -155,21 +158,42 @@ const ReportTable = ({ searchCriteria }) => {
           },
           {
             accessor: "OC - Vacancy",
-            title: "OC Vacany",
+            title: "OC Vacancy",
             width: windowSize < 768 ? 100 : "auto",
-            // render: (value) => value['Branch Name'].toUpperCase()
+            render: (value) => (
+              <p
+                className={`${
+                  (!value["OC - Vacancy"] || value["OC - Vacancy"] == 0)
+                    ? "text-red-500"
+                    : "text-green-500"
+                }`}
+              >
+                {value["OC - Vacancy"]}
+              </p>
+            ),
           },
           {
             accessor: `${searchCriteria?.Category} - Vacancy`,
             title: `${searchCriteria?.Category} - Vacancy`,
             width: windowSize < 768 ? 100 : "auto",
             hidden: searchCriteria?.Category == "OC",
-            // render: (value) => value['Branch Name'].toUpperCase()
+            render: (value) => (
+              <p
+                className={`${
+                  (!value[`${searchCriteria?.Category} - Vacancy`] ||
+                  value[`${searchCriteria?.Category} - Vacancy`] == 0)
+                    ? "text-red-500"
+                    : "text-green-500"
+                }`}
+              >
+                {value[`${searchCriteria?.Category} - Vacancy`]}
+              </p>
+            ),
           },
           {
             accessor: `${searchCriteria?.Category} - Cutoff`,
             title: `${searchCriteria?.Category} - Cutoff (Reference)`,
-            width: 100
+            width: 100,
           },
         ]}
         records={collegesAfterSlicing}
@@ -207,7 +231,7 @@ const ReportTable = ({ searchCriteria }) => {
         <Button
           label={"Proceed"}
           to='/report/generate'
-          className='md:ml-auto w-max px-6 py-2'
+          className='md:ml-auto w-max bg-mantine-blue px-6 py-2'
         />
       </div>
     </>

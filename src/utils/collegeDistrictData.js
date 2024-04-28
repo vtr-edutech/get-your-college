@@ -981,7 +981,7 @@ export const districtData = [
     "S.No": 92,
     "COLLEGE CODE": 1419,
     "COLLEGE NAME":
-      "Sri Sai Ram Enginering College (Autonomous)  West Tambaram  Chennai 600044",
+      "Sri Sai Ram Engineering College (Autonomous)  West Tambaram  Chennai 600044",
     "District ": "Kancheepuram",
     "College Status": "Autonomous",
     "Minority Status": "No",
@@ -2435,7 +2435,7 @@ export const districtData = [
     "S.No": 225,
     "COLLEGE CODE": 2718,
     "COLLEGE NAME":
-      "Sri Krishna College of Enginering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
+      "Sri Krishna College of Engineering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
     "District ": "Coimbatore",
     "College Status": "Autonomous",
     "Minority Status": "No",

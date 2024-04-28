@@ -48,7 +48,7 @@ kendo-pdf-document .reorder-header {
     padding: 6px;
 }
 
-kendo-pdf-document h2 {
+kendo-pdf-document h2, a, p {
   font-family: Inter, Arial, Helvetica, sans-serif;
 }
 
@@ -75,6 +75,15 @@ kendo-pdf-document .reorder-item > h2 {
 
 kendo-pdf-document .reorder-container {
   gap: 0px !important;
+}
+
+kendo-pdf-document a{
+  font-size: 8px;
+  line-height: 12px;
+}
+
+.k-pdf-report .to-remove {
+  display: none;
 }
 
 .mantine-datatable-empty-state, .mantine-datatable-loader {

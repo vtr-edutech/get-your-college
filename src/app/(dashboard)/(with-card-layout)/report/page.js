@@ -205,6 +205,7 @@ const Report = () => {
         <Suspense fallback={<SkeletonLoader />}>
           <div className='flex md:flex-row flex-col md:items-center gap-2 w-full mt-8'>
             <Select
+              clearable
               label="College Name:"
               searchable
               placeholder='Filter by College Name'
@@ -223,7 +224,7 @@ const Report = () => {
                 let currentCode = COLLEGE_CODE_NAME.find(
                   (codeName) => codeName["College Name"] == value
                 )["College Code"];
-                setCollegeCode(currentCode);
+                setCollegeCode(currentCode.toString());
                 setSearchCriteria((prev) => ({
                   ...prev,
                   CollegeCode: currentCode,
@@ -252,6 +253,7 @@ const Report = () => {
               }}
             />
             <Select
+              clearable
               label="College Code:"
               searchable
               placeholder='Filter by College Code'
@@ -300,6 +302,7 @@ const Report = () => {
           </div>
           <div className='md:grid md:grid-cols-3 md:grid-rows-1 flex flex-col gap-2 md:mt-3 w-full'>
             <Select
+              clearable
               label="Branch Name:"
               searchable
               placeholder='Filter by Branch Name'
@@ -329,6 +332,7 @@ const Report = () => {
               }}
             />
             <Select
+              clearable
               label="District:"
               searchable
               placeholder='Filter by District'
@@ -353,6 +357,7 @@ const Report = () => {
               }}
             />
             <Select
+              clearable
               label="College Category:"
               searchable
               placeholder='Filter by College Category'
