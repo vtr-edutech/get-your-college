@@ -42,7 +42,7 @@ const Report = () => {
   const [collegeCode, setCollegeCode] = useState()
   const [windowSize, setWindowSize] = useState({ width: 1093, height: 1293 })
   
-  console.log("🚀 ~ Report ~ searchCriteria:", searchCriteria)
+
 
   useEffect(() => {
     const searchCriteriaFromLS = localStorage.getItem('search');

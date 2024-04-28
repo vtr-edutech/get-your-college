@@ -73,8 +73,6 @@ const ReportTable = ({ searchCriteria }) => {
     initialPage: 1,
     siblings: 1,
   });
-  
-  useEffect(() => pagination.setPage(1), [searchCriteria.searchKey])
 
   useEffect(() => setWindowSize(window.innerWidth), [])
   
@@ -121,10 +119,13 @@ const ReportTable = ({ searchCriteria }) => {
       </p>
       <DataTable
         bodyRef={bodyRef}
-        pinFirstColumn
         highlightOnHover
         height={500}
-        rowBackgroundColor={"white"}
+        styles={{
+          table: {
+            background: "white"
+          }
+        }}
         scrollAreaProps={{ type: "always", h: 500 }}
         // noRecordsIcon={}
         noRecordsText='Could not find any colleges'

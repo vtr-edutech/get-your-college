@@ -247,6 +247,10 @@ const Navbar = ({ modalOpen, logoutOpen }) => {
             store={collegeCategorySelect}
             resetSelectionOnOptionHover
             withinPortal={false}
+            shadow="md"
+            transitionProps={{
+              transition: "pop"
+            }}
             onOptionSubmit={(v) => {
               dispatch(selectCategory(v));
               collegeCategorySelect.updateSelectedOptionIndex("active");

@@ -11,7 +11,8 @@ import { useSession } from "next-auth/react";
 import Image from "next/image";
 import Link from "next/link";
 import { BsChevronLeft } from "react-icons/bs";
-
+import { useUserInfo } from "@/utils/hooks";
+import { toast } from "react-toastify";
 export const dynamic = "force-dynamic";
 
 const Generate = () => {
@@ -19,6 +20,7 @@ const Generate = () => {
   const [selectedCategory, setSelectedCategory] = useState();
   const pdfComponentRef = useRef();
   const { data } = useSession();
+  const { loading, userInfo } = useUserInfo()
 
   useEffect(() => {
     const preferredCollegesId = localStorage.getItem("colleges")?.split(",");
@@ -28,6 +30,9 @@ const Generate = () => {
       );
       console.log("🚀 ~ useEffect ~ preferredColleges:", preferredColleges)
       setCollegPrefernces(preferredColleges);
+    }
+    if (!userInfo.firstName || !userInfo.lastName || !userInfo.registerNo) {
+      toast.error("Please enter details in settings to continue");
     }
     setSelectedCategory(localStorage.getItem("Cat") ?? "NA");
   }, []);
@@ -84,7 +89,7 @@ const Generate = () => {
                     />
                   </a>
                 </div>
-                <p style={{ fontSize: "10px", marginLeft: "6px", fontWeight: "semibold" }}>Name: {data?.user?.name || 'Student'}</p>
+                <p style={{ fontSize: "10px", marginLeft: "6px", fontWeight: "semibold" }}>Name: {userInfo?.firstName + ' ' + userInfo?.lastName}</p>
                 <p style={{ fontSize: "10px", marginLeft: "6px" }}>Registration No.: </p>
                 <div className='flex min-w-fit md:min-w-[unset] justify-around items-center p-2 mx-1 mt-1 md:p-4 rounded-se-lg rounded-ss-lg outline outline-1 outline-gray-200 reorder-header'>
                   <h2 className='flex-1 font-medium min-w-16 max-w-28'>

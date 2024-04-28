@@ -2,12 +2,13 @@
 import Button from "@/components/ui/Button";
 import { setUserData } from "@/store/userInfoSlice";
 import { ALL_DISTRICT } from "@/utils/collegeDistrictData";
+import { useUserInfo } from "@/utils/hooks";
 import { Checkbox, Combobox, useCombobox } from "@mantine/core";
 import axios from "axios";
 import { signOut, useSession } from "next-auth/react";
 import React, { useEffect, useMemo, useState } from "react";
 import { useForm } from "react-hook-form";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { toast } from "react-toastify";
 
 const boardOfStudies = [
@@ -29,10 +30,9 @@ const higherSecGroup = [
 
 const RegisterForm = ({ closeFn }) => {
   const dispatch = useDispatch();
-  const userInfo = useSelector((state) => state.userInfo.user);
+  const { loading, userInfo } = useUserInfo();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isChecked, setIsChecked] = useState(false);
-  const [hasFetched, setHasFetched] = useState(false);
   const [group, setGroup] = useState()
   const [districtKey, setDistrictKey] = useState('')
 
@@ -81,29 +81,7 @@ const RegisterForm = ({ closeFn }) => {
   const { update } = useSession();
 
   useEffect(() => {
-    const fetchUserInfo = async () => {
-      try {
-        const userInfoRequest = await axios.get("/api/user-info");
-        console.log("🚀 ~ Fetched ~ userInfo:", userInfoRequest);
-
-        if (userInfoRequest.data.user && !userInfoRequest.data.user.firstName) {
-          console.log("DB la new user");
-        } else {
-          dispatch(setUserData(userInfoRequest.data.user));
-        }
-      } catch (error) {
-        toast.error(error.response.data.error ?? error.error);
-      } finally {
-        // console.log("finally set true");
-        setHasFetched(true);
-      }
-    };
-
-    // console.log("inside effect", userInfo);
-
-    if (!userInfo.firstName && !hasFetched) {
-      fetchUserInfo();
-    } else {
+    if (userInfo._id) {
       const dob = userInfo.dob ? new Date(userInfo.dob) : "";
       const dobToSet = dob
         ? `${new Date(userInfo.dob).getFullYear()}-${
@@ -111,7 +89,6 @@ const RegisterForm = ({ closeFn }) => {
           }-${new Date(userInfo.dob).getDate().toString().padStart(2, "0")}`
         : "";
       setIsChecked(true);
-      setHasFetched(true);
       reset({
         firstName: userInfo.firstName ?? "",
         lastName: userInfo.lastName ?? "",
@@ -124,17 +101,16 @@ const RegisterForm = ({ closeFn }) => {
         BOS: (userInfo.boardOfStudy || userInfo.BOS) ?? "",
         registerNo: userInfo.registerNo ?? "",
       });
-      // console.log("has been reset");
     }
   }, [userInfo]);
 
   const onSubmit = async (data) => {
     if (Object.keys(errors).length === 0) {
       console.log(data);
-      if (data.BOS == "OTHER") {
-        toast.error("Please enter Board of Study");
-        return;
-      }
+      // if (data.BOS == "OTHER") {
+      //   toast.error("Please enter Board of Study");
+      //   return;
+      // }
       if (JSON.stringify(data) == JSON.stringify(userInfo)) {
         toast.info("Already submitted");
         closeFn();
@@ -146,7 +122,7 @@ const RegisterForm = ({ closeFn }) => {
         console.log("🚀 ~ onSubmit ~ registerReq:", registerReq);
         toast.success(registerReq.data.message);
         await update({ name: data.firstName });
-        dispatch(setUserData(data));
+        dispatch(setUserData({ ...userInfo, ...data }));
         closeFn();
       } catch (error) {
         console.log("🚀 ~ onSubmit ~ error:", error);
@@ -167,7 +143,7 @@ const RegisterForm = ({ closeFn }) => {
       <form
         onSubmit={handleSubmit(onSubmit)}
         className={`flex flex-col gap-4 w-full ${
-          !hasFetched ? "opacity-50 pointer-events-none" : ""
+          loading ? "opacity-50 pointer-events-none" : ""
         }`}
       >
         {/* First name input */}
@@ -306,9 +282,9 @@ const RegisterForm = ({ closeFn }) => {
             }}
             className='w-full  rounded-md bg-slate-50 outline-gray-200 px-3 py-2 outline outline-1 focus:outline-mantine-blue'
             value={
-              !higherSecGroup
+              !(higherSecGroup
                 .map((grp) => grp.value)
-                .includes(getValues("group"))
+                .includes(getValues("group")))
                 ? "000"
                 : getValues("group")
             }
@@ -327,7 +303,7 @@ const RegisterForm = ({ closeFn }) => {
           )}
         </div>
         {/* Optional other for group */}
-        {group == "000" && (
+        {/* {getValues("group") == "000" && (
           <div className='flex flex-col gap-1'>
             <p className='font-light text-xs'>
               Mention Group<span className='text-red-500 text-sm'> *</span>
@@ -343,6 +319,10 @@ const RegisterForm = ({ closeFn }) => {
                 validate: (value) => value.trim() !== "" || "Invalid Group",
               })}
               type='text'
+              onInput={(e) => {
+                setGroup(e.currentTarget.value)
+              }}
+              value={group}
               defaultValue={getValues("group")}
               className='w-full rounded-md bg-slate-50 outline-gray-200 px-3 py-2 outline outline-1 focus:outline-mantine-blue'
             />
@@ -352,7 +332,7 @@ const RegisterForm = ({ closeFn }) => {
               </p>
             )}
           </div>
-        )}
+        )} */}
         {/* Board of study */}
         <div className='flex flex-col gap-1'>
           <p className='font-light text-xs'>
@@ -401,7 +381,7 @@ const RegisterForm = ({ closeFn }) => {
           )}
         </div>
         {/* If others please mention */}
-        {getValues("BOS") == "OTHER" && (
+        {/* {getValues("BOS") == "OTHER" && (
           <div className='flex flex-col gap-1'>
             <p className='font-light text-xs'>
               Mention board of study
@@ -429,7 +409,7 @@ const RegisterForm = ({ closeFn }) => {
               </p>
             )}
           </div>
-        )}
+        )} */}
         {/* District */}
         <div className='flex flex-col gap-1'>
           <p className='font-light text-xs'>
