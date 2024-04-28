@@ -4,6 +4,7 @@ import { DataTable } from "mantine-datatable";
 import { useEffect, useMemo, useState } from "react";
 import Button from "./ui/Button";
 import { useAutoAnimate } from "@formkit/auto-animate/react";
+import { reportTableData } from "@/utils/collegeChoiceListData";
 
 const PAGE_SIZE = 25;
 
@@ -32,11 +33,11 @@ const ReportTable = ({ searchCriteria }) => {
         .map((id) => collegeData['GC'].find((college) => college.id == id)): [],
     [previouslySelectedCollegeIds]
   ); 
-  // console.log("🚀 ~ ReportTable ~ previouslySelectedColleges:", typeof previouslySelectedColleges)
+  // console.log("🚀 ~ ReportTable ~ previouslySelectedColleges:", collegeData['GC'])
 
   const collegesAfterFiltering = useMemo(
     () =>
-      collegeData['GC'] // for now its GC, later keep it as selectable
+      reportTableData // for now its GC, later keep it as selectable
         .filter(
           (college) =>
             (college[`${searchCriteria?.Category} - Cutoff`] >=
@@ -112,8 +113,8 @@ const ReportTable = ({ searchCriteria }) => {
       <DataTable
         bodyRef={bodyRef}
         highlightOnHover
-        noRecordsIcon={<>{""}</>}
-        noRecordsText=''
+        // noRecordsIcon={}
+        noRecordsText='Could not find any colleges'
         emptyState={<>{""}</>}
         minHeight={280}
         mah={"450px"}
@@ -122,8 +123,13 @@ const ReportTable = ({ searchCriteria }) => {
         columns={[
           {
             accessor: "S.No",
-            title: "S.No",
-            render: (record) => collegesAfterSlicing.indexOf(record) + 1,
+            title: "Choice Order",
+            render: (record) => {
+              let x = selectedColleges.indexOf(record);
+              return x == -1 ? "" : x + 1;
+            },
+            cellsClassName: "font-semibold",
+            width: 100,
           },
           { accessor: "College Code", title: "College Code" },
           {
@@ -131,16 +137,27 @@ const ReportTable = ({ searchCriteria }) => {
             title: "College Name",
             width: windowSize < 768 ? 200 : "auto",
           },
-          { accessor: "Branch Code", title: "Branch Code" },
           {
             accessor: "Branch Name",
             title: "Branch Name",
             width: windowSize < 768 ? 150 : "auto",
-            render: (value) => value['Branch Name'].toUpperCase()
+            render: (value) => value["Branch Name"].toUpperCase(),
+          },
+          {
+            accessor: "OC - Vacancy",
+            title: "OC Vacany",
+            width: windowSize < 768 ? 150 : "auto",
+            // render: (value) => value['Branch Name'].toUpperCase()
+          },
+          {
+            accessor: `${searchCriteria?.Category} - Vacancy`,
+            title: `${searchCriteria?.Category} - Vacancy`,
+            width: windowSize < 768 ? 150 : "auto",
+            // render: (value) => value['Branch Name'].toUpperCase()
           },
           {
             accessor: `${searchCriteria?.Category} - Cutoff`,
-            title: `${searchCriteria?.Category} - Cutoff`,
+            title: `${searchCriteria?.Category} - Cutoff (Reference)`,
           },
         ]}
         records={collegesAfterSlicing}

@@ -3,7 +3,7 @@ import Image from "next/image";
 import React, { Suspense, lazy, useEffect, useMemo, useRef, useState } from "react";
 import { useForm } from "react-hook-form";
 import { LuSearch } from "react-icons/lu";
-import { UNIQUE_COURSE_NAMES } from '@/utils/collegeData'
+import { UNIQUE_COURSE_NAMES } from '@/utils/collegeNames'
 import { Combobox, Modal, MultiSelect, SegmentedControl, Select, useCombobox } from "@mantine/core";
 import SkeletonLoader from "@/components/SkeletonLoader";
 import { ALL_DISTRICT } from "@/utils/collegeDistrictData";import { getWindowSize, inter, tw } from "@/utils";

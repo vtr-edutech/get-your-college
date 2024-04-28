@@ -1,9 +1,7 @@
 "use client";
 import SkeletonLoader from "@/components/SkeletonLoader";
-import Button from "@/components/ui/Button";
 import ErrorBoundary from "@/components/ui/ErrorBoundary";
 import Image from "next/image";
-import Link from "next/link";
 import React, { Suspense, lazy, useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { LuSearch } from "react-icons/lu";
