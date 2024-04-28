@@ -71,6 +71,9 @@ const Generate = () => {
           >
             <div className='flex flex-col overflow-x-scroll w-full md:overflow-x-hidden'>
               <div className='flex min-w-fit md:min-w-[unset] justify-around items-center p-2 mx-1 mt-1 md:p-4 rounded-se-lg rounded-ss-lg outline outline-1 outline-gray-200 reorder-header'>
+                <h2 className='max-w-14 flex-1 font-medium min-w-12'>
+                  Actions
+                </h2>
                 <h2 className='flex-1 font-medium min-w-16 max-w-28'>
                   Choice Order
                 </h2>

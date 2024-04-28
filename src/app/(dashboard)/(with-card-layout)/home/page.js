@@ -284,7 +284,7 @@ const Home = () => {
                 className='underline text-xs absolute cursor-pointer top-[90%] md:top-[110%] left-1'
                 onClick={open}
               >
-                Not sure about cutoff?
+                Calculate my Cut-off?
               </p>
             </div>
             {/* Max cutoff */}

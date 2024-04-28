@@ -3,6 +3,7 @@ import { usePagination } from "@mantine/hooks";
 import { DataTable } from "mantine-datatable";
 import { useEffect, useMemo, useState } from "react";
 import Button from "./ui/Button";
+import { useAutoAnimate } from "@formkit/auto-animate/react";
 
 const PAGE_SIZE = 25;
 
@@ -72,19 +73,36 @@ const ReportTable = ({ searchCriteria }) => {
   useEffect(() => pagination.setPage(1), [searchCriteria.searchKey])
 
   useEffect(() => setWindowSize(window.innerWidth), [])
-
-  const collegesAfterSlicing = useMemo(
-    () =>
-      collegesAfterFiltering.slice(
-        (pagination.active - 1) * PAGE_SIZE,
-        pagination.active * PAGE_SIZE
-      ),
-    [pagination.active, collegesAfterFiltering]
-  );
-
+  
   const [selectedColleges, setSelectedColleges] = useState(
     previouslySelectedColleges ?? []
   );
+  console.log("🚀 ~ ReportTable ~ selectedColleges:", selectedColleges)
+
+  const collegesAfterSlicing = useMemo(
+    () =>
+      selectedColleges.concat(
+        collegesAfterFiltering
+          .filter((college) =>
+            previouslySelectedCollegeIds
+              ? !previouslySelectedCollegeIds.includes(college.id)
+              : true
+          )
+        )
+        .slice(
+          (pagination.active - 1) * PAGE_SIZE,
+          pagination.active * PAGE_SIZE
+        ),
+    [
+      pagination.active,
+      collegesAfterFiltering,
+      selectedColleges,
+      previouslySelectedCollegeIds,
+    ]
+  );
+
+  const [bodyRef] = useAutoAnimate();
+
   // console.log("🚀 ~ ReportTable ~ selectedColleges:", typeof selectedColleges)
 
   if (!searchCriteria.Category) return <p>Invalid search parameters!</p>;
@@ -92,6 +110,7 @@ const ReportTable = ({ searchCriteria }) => {
   return (
     <>
       <DataTable
+        bodyRef={bodyRef}
         highlightOnHover
         noRecordsIcon={<>{""}</>}
         noRecordsText=''
