@@ -1,10 +1,10 @@
-import collegeData from "@/utils/collegeData";
 import { usePagination } from "@mantine/hooks";
 import { DataTable } from "mantine-datatable";
 import { useEffect, useMemo, useState } from "react";
 import Button from "./ui/Button";
 import { useAutoAnimate } from "@formkit/auto-animate/react";
 import { reportTableData } from "@/utils/collegeChoiceListData";
+import { districtData } from "@/utils/collegeDistrictData";
 
 const PAGE_SIZE = 25;
 
@@ -30,7 +30,7 @@ const ReportTable = ({ searchCriteria }) => {
       previouslySelectedCollegeIds ?
       previouslySelectedCollegeIds
         .split(",")
-        .map((id) => collegeData['GC'].find((college) => college.id == id)): [],
+        .map((id) => reportTableData.find((college) => college['id'] == id)): [],
     [previouslySelectedCollegeIds]
   ); 
   // console.log("🚀 ~ ReportTable ~ previouslySelectedColleges:", collegeData['GC'])
@@ -41,7 +41,7 @@ const ReportTable = ({ searchCriteria }) => {
         .filter(
           (college) =>
             (college[`${searchCriteria?.Category} - Cutoff`] >=
-              parseFloat(searchCriteria.MinCutoff) &&
+              parseFloat(searchCriteria?.MinCutoff) &&
             college[`${searchCriteria?.Category} - Cutoff`] <=
               parseFloat(searchCriteria?.MaxCutoff)) && (
                 searchCriteria?.CollegeCode
@@ -56,7 +56,14 @@ const ReportTable = ({ searchCriteria }) => {
                   (college['College Category'] == searchCriteria?.CollegeCategory)
                   : true
               )
-        ),
+        ).filter(
+          college => 
+          searchCriteria?.District ?
+            districtData.find(
+              (dist) => (dist["District "] == searchCriteria?.District) && (dist["COLLEGE CODE"] == college["College Code"]) 
+            ) : true
+        )
+        ,
     [searchCriteria]
   );
 
@@ -106,14 +113,21 @@ const ReportTable = ({ searchCriteria }) => {
 
   return (
     <>
+      <p className='ml-2 w-full text-left'>
+        🔍 <span className='font-medium'>{collegesAfterFiltering.length}</span>{" "}
+        college(s) found
+      </p>
       <DataTable
         bodyRef={bodyRef}
+        pinFirstColumn
         highlightOnHover
+        height={500}
+        scrollAreaProps={{ type: "scroll", h: 500 }}
         // noRecordsIcon={}
         noRecordsText='Could not find any colleges'
         emptyState={<>{""}</>}
-        minHeight={280}
-        mah={"450px"}
+        // minHeight={280}
+        // mah={"450px"}
         customLoader={<>{""}</>}
         loaderSize={"xs"}
         columns={[
@@ -125,7 +139,7 @@ const ReportTable = ({ searchCriteria }) => {
               return x == -1 ? "" : x + 1;
             },
             cellsClassName: "font-semibold",
-            width: 100,
+            width: 60,
           },
           { accessor: "College Code", title: "College Code" },
           {
@@ -142,19 +156,20 @@ const ReportTable = ({ searchCriteria }) => {
           {
             accessor: "OC - Vacancy",
             title: "OC Vacany",
-            width: windowSize < 768 ? 150 : "auto",
+            width: windowSize < 768 ? 100 : "auto",
             // render: (value) => value['Branch Name'].toUpperCase()
           },
           {
             accessor: `${searchCriteria?.Category} - Vacancy`,
             title: `${searchCriteria?.Category} - Vacancy`,
-            width: windowSize < 768 ? 150 : "auto",
-            hidden: searchCriteria?.Category == "OC"
+            width: windowSize < 768 ? 100 : "auto",
+            hidden: searchCriteria?.Category == "OC",
             // render: (value) => value['Branch Name'].toUpperCase()
           },
           {
             accessor: `${searchCriteria?.Category} - Cutoff`,
             title: `${searchCriteria?.Category} - Cutoff (Reference)`,
+            width: 100
           },
         ]}
         records={collegesAfterSlicing}
@@ -171,7 +186,7 @@ const ReportTable = ({ searchCriteria }) => {
         selectionCheckboxProps={{ className: "cursor-pointer" }}
         rowClassName={"h-28 max-h-28 mx-1"}
       />
-      <div className='w-full flex md:flex-row flex-col md:justify-between'>
+      <div className='w-full flex md:flex-row flex-col md:justify-between mt-16'>
         <p className='ml-2'>
           🔍{" "}
           <span className='font-medium'>{collegesAfterFiltering.length}</span>{" "}

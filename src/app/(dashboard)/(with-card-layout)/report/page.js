@@ -1,7 +1,7 @@
 "use client";
 import SkeletonLoader from "@/components/SkeletonLoader";
 import ErrorBoundary from "@/components/ui/ErrorBoundary";
-import { inter } from "@/utils";
+import { getWindowSize, inter } from "@/utils";
 import { COLLEGE_CATEGORIES } from "@/utils/collegeChoiceListData";
 import { ALL_DISTRICT } from "@/utils/collegeDistrictData";
 import { COLLEGE_CODE_NAME } from "@/utils/collegeDistrictData";
@@ -40,6 +40,7 @@ const Report = () => {
   const [searchCriteria, setSearchCriteria] = useState(null);
   const [collegeName, setCollegeName] = useState()
   const [collegeCode, setCollegeCode] = useState()
+  const [windowSize, setWindowSize] = useState({ width: 1093, height: 1293 })
   
   console.log("🚀 ~ Report ~ searchCriteria:", searchCriteria)
 
@@ -57,6 +58,8 @@ const Report = () => {
     // if (searchCriteriaFromLS) setSearchCriteria(searchCriteriaFromLS);
     // searchSubmission({ searchCriteria });
   }, [])
+
+  useEffect(() => setWindowSize(getWindowSize()) ,[])
   
 
   const searchSubmission = async (data) => {
@@ -200,23 +203,33 @@ const Report = () => {
 
       {searchCriteria?.MinCutoff ? (
         <Suspense fallback={<SkeletonLoader />}>
-          <div className='flex items-center gap-2 w-full mt-8'>
+          <div className='flex md:flex-row flex-col md:items-center gap-2 w-full mt-8'>
             <Select
+              label="College Name:"
               searchable
               placeholder='Filter by College Name'
               data={COLLEGE_NAMES}
               ref={collegeNameRef}
               value={collegeName}
               onChange={(value) => {
-                if (value) {
-                  let currentCode = COLLEGE_CODE_NAME.find(
-                    (codeName) => codeName["College Name"] == value
-                  )["College Code"];
-                  setCollegeCode(currentCode);
-                  setSearchCriteria(prev => ({ ...prev, CollegeCode: currentCode }))
-                  setCollegeName(value)
-                  collegeCodeRef.current.value = currentCode;
+                if (!value) {
+                  setCollegeName(null);
+                  setCollegeCode(null);
+                  return setSearchCriteria((prev) => ({
+                    ...prev,
+                    CollegeCode: null,
+                  }));
                 }
+                let currentCode = COLLEGE_CODE_NAME.find(
+                  (codeName) => codeName["College Name"] == value
+                )["College Code"];
+                setCollegeCode(currentCode);
+                setSearchCriteria((prev) => ({
+                  ...prev,
+                  CollegeCode: currentCode,
+                }));
+                setCollegeName(value);
+                collegeCodeRef.current.value = currentCode;
               }}
               comboboxProps={{
                 withArrow: true,
@@ -225,32 +238,45 @@ const Report = () => {
               filter={collegeNameSearchFilter}
               styles={{
                 root: {
-                  minWidth: "50vw",
+                  minWidth: windowSize.width < 768? "100%": "50vw",
+                },
+                label: {
+                  fontStyle: inter.style.fontStyle,
+                  fontWeight: 400,
                 },
                 input: {
                   fontFamily: inter.style.fontFamily,
+                  paddingTop: "0.55rem",
+                  paddingBottom: "0.55rem",
                 },
               }}
             />
             <Select
+              label="College Code:"
               searchable
               placeholder='Filter by College Code'
               data={COLLEGE_CODES}
               ref={collegeCodeRef}
               value={collegeCode}
               onChange={(value) => {
-                if (value) {
-                  let currentName = COLLEGE_CODE_NAME.find(
-                    (codeName) => codeName["College Code"] == value
-                  )["College Name"];
-                  setSearchCriteria((prev) => ({
+                if (!value) {
+                  setCollegeName(null);
+                  setCollegeCode(null);
+                  return setSearchCriteria((prev) => ({
                     ...prev,
-                    CollegeCode: value,
+                    CollegeCode: null,
                   }));
-                  setCollegeName(currentName);
-                  setCollegeCode(value)
-                  collegeNameRef.current.value = currentName;
                 }
+                let currentName = COLLEGE_CODE_NAME.find(
+                  (codeName) => codeName["College Code"] == value
+                )["College Name"];
+                setSearchCriteria((prev) => ({
+                  ...prev,
+                  CollegeCode: value,
+                }));
+                setCollegeName(currentName);
+                setCollegeCode(value);
+                collegeNameRef.current.value = currentName;
               }}
               comboboxProps={{
                 withArrow: true,
@@ -260,59 +286,97 @@ const Report = () => {
                 root: {
                   width: "100%",
                 },
+                label: {
+                  fontStyle: inter.style.fontStyle,
+                  fontWeight: 400,
+                },
                 input: {
                   fontFamily: inter.style.fontFamily,
+                  paddingTop: "0.55rem",
+                  paddingBottom: "0.55rem",
                 },
               }}
             />
           </div>
-          <div className='md:grid md:grid-cols-3 md:grid-rows-1 md:gap-2 w-full'>
+          <div className='md:grid md:grid-cols-3 md:grid-rows-1 flex flex-col gap-2 md:mt-3 w-full'>
             <Select
+              label="Branch Name:"
               searchable
               placeholder='Filter by Branch Name'
               data={UNIQUE_COURSE_NAMES}
               onChange={(value) => {
-                if (value) {
-                  setSearchCriteria(prev => ({ ...prev, BranchName: value.replace(/\s+/g, '').toLowerCase() }))
-                }
+                setSearchCriteria((prev) => ({
+                  ...prev,
+                  BranchName: value
+                    ? value.replace(/\s+/g, "").toLowerCase()
+                    : null,
+                }));
               }}
               comboboxProps={{
                 withArrow: true,
                 shadow: "xl",
               }}
               styles={{
+                label: {
+                  fontStyle: inter.style.fontStyle,
+                  fontWeight: 400,
+                },
                 input: {
                   fontFamily: inter.style.fontFamily,
+                  paddingTop: "0.55rem",
+                  paddingBottom: "0.55rem",
                 },
               }}
             />
             <Select
+              label="District:"
               searchable
               placeholder='Filter by District'
               data={ALL_DISTRICT}
+              onChange={(value) => {
+                setSearchCriteria(prev => ({ ...prev, District: value }))
+              }}
               comboboxProps={{
                 withArrow: true,
                 shadow: "xl",
               }}
               styles={{
+                label: {
+                  fontStyle: inter.style.fontStyle,
+                  fontWeight: 400,
+                },
                 input: {
                   fontFamily: inter.style.fontFamily,
+                  paddingTop: "0.55rem",
+                  paddingBottom: "0.55rem",
                 },
               }}
             />
             <Select
+              label="College Category:"
               searchable
               placeholder='Filter by College Category'
               data={COLLEGE_CATEGORIES}
               onChange={(value) => {
-                if (value) {
-                  setSearchCriteria(prev => ({ ...prev, CollegeCategory: value }))
-                }
+                setSearchCriteria((prev) => ({
+                  ...prev,
+                  CollegeCategory: value,
+                }));
               }}
               styles={{
+                label: {
+                  fontStyle: inter.style.fontStyle,
+                  fontWeight: 400,
+                },
                 input: {
                   fontFamily: inter.style.fontFamily,
+                  paddingTop: "0.55rem",
+                  paddingBottom: "0.55rem",
                 },
+              }}
+              comboboxProps={{
+                withArrow: true,
+                shadow: "xl",
               }}
             />
           </div>
