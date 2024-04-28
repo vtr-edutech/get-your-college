@@ -66,24 +66,28 @@ const Report = () => {
         Search colleges and add to your preference list
       </h1>
       <form
-        className='md:flex mt-12 md:w-full md:h-[10vh] md:justify-center md:items-center md:flex-wrap
-          grid grid-cols-2 gap-2 md:gap-0 grid-rows-3
+        className='md:flex mt-12 md:mt-7 md:w-full md:h-[10vh] md:justify-center md:items-center md:flex-wrap
+          grid grid-cols-2 gap-2 md:gap-3 grid-rows-3
         '
         onSubmit={handleSubmit(searchSubmission)}
       >
         {/* Min cutoff */}
         <div className='flex flex-col gap-1 items-center relative'>
+          <p className='font-normal text-sm w-full text-left'>
+            Minimum Cut-off:
+          </p>
           <input
             type='number'
             name='starting-cutoff'
             id='starting-cutoff'
             placeholder='Starting Cut-Off'
-            className='bg-card p-2 max-w-44 md:w-44 rounded-ss-md rounded-es-md focus:outline-1 focus:outline-gray-200'
+            className='bg-card/10 outline p-2 max-w-44 w-full md:w-[8.5rem] placeholder:text-sm md:mb-0 mb-3 rounded-md outline-1 md:focus:outline-1 focus:outline-2 outline-mantine-blue/50 md:outline-gray-200 focus:outline-mantine-blue'
+            defaultValue={70}
             {...register("MinCutoff", {
               required: { value: true, message: "This field is required" },
               min: {
-                value: 0,
-                message: "Minimum cutoff should be greater than 0",
+                value: 70,
+                message: "Minimum cutoff should be greater than 70",
               },
               max: {
                 value: 200,
@@ -99,17 +103,20 @@ const Report = () => {
         </div>
         {/* Max cutoff */}
         <div className='flex flex-col gap-1 items-center relative'>
+          <p className='font-normal text-sm w-full text-left'>
+            Maximum Cut-off:
+          </p>
           <input
             type='number'
             name='ending-cutoff'
             id='ending-cutoff'
             placeholder='Ending Cut-Off'
-            className='bg-card p-2 max-w-44 md:w-44 focus:outline-1 focus:outline-gray-200'
+            className='bg-card/10 outline p-2 max-w-44 w-full md:w-[8.5rem] placeholder:text-sm md:mb-0 mb-3 rounded-md outline-1 md:focus:outline-1 focus:outline-2 outline-mantine-blue/50 md:outline-gray-200 focus:outline-mantine-blue/60'
             {...register("MaxCutoff", {
               required: { value: true, message: "This field is required" },
               min: {
-                value: 0,
-                message: "Maximum cutoff should be greater than 0",
+                value: 70,
+                message: "Maximum cutoff should be greater than 70",
               },
               max: {
                 value: 200,
@@ -125,10 +132,11 @@ const Report = () => {
         </div>
         {/* Category */}
         <div className='flex col-span-2 flex-col gap-1 items-center relative'>
+          <p className='font-normal text-sm w-full text-left'>Community:</p>
           <select
             name='category'
             defaultValue={"Select"}
-            className='bg-card p-2 py-2.5 w-full pr-8 rounded-ee-md rounded-se-md focus:outline-1 focus:outline-gray-200'
+            className='bg-card/10 outline p-2 py-2.5 pr-8 md:w-[unset] w-full text-sm rounded-md outline-[0.8px] md:focus:outline-1 focus:outline-2 outline-mantine-blue/50 md:outline-gray-200 placeholder:text-sm focus:outline-mantine-blue/60'
             id='category'
             {...register("Category", {
               required: { value: true, message: "This field is required" },
@@ -155,16 +163,34 @@ const Report = () => {
             </p>
           )}
         </div>
-        <button className='bg-fill-black px-6 md:col-span-[unset] col-span-2 md:w-[unset] w-full justify-center py-1.5 text-lg rounded flex gap-2 text-white items-center md:ml-2'>
-          <LuSearch />
-          Go
-        </button>
+        {/* Button */}
+        <div className='grid col-span-2 md:flex md:flex-col md:gap-1 md:items-center relative'>
+          <p className='font-normal text-sm w-full text-white text-left'>
+            &nbsp;
+          </p>
+          <button className='bg-mantine-blue text-center col-span-2 w-full md:w-fit md:px-6 py-1.5 text-lg rounded flex gap-2 text-white items-center justify-center md:ml-2'>
+            <LuSearch />
+            <p>Go</p>
+          </button>
+        </div>
       </form>
 
       {searchCriteria?.MinCutoff ? (
         <Suspense fallback={<SkeletonLoader />}>
+          <input
+            type='search'
+            name='searchKey'
+            placeholder='Search for college name, branch name, etc.'
+            id='search'
+            className='py-2 mt-6 px-3 w-full outline outline-1 outline-gray-300 focus:outline-gray-400 placeholder:text-sm md:outline-gray-200 rounded-md focus:outline-1 md:focus:outline-gray-300'
+            onInput={(e) =>
+              setSearchCriteria({
+                ...searchCriteria,
+                searchKey: e.currentTarget.value,
+              })
+            }
+          />
           <ErrorBoundary>
-            <input type="search" name="searchKey" placeholder="Search for college name, branch name, etc." id="search" className="py-2 mt-6 px-3 w-full outline outline-1 outline-gray-300 focus:outline-gray-400 placeholder:text-sm md:outline-gray-200 rounded-md focus:outline-1 md:focus:outline-gray-300" onInput={(e) => setSearchCriteria({...searchCriteria, searchKey: e.currentTarget.value})} />
             <ReportTable searchCriteria={searchCriteria} />
           </ErrorBoundary>
         </Suspense>

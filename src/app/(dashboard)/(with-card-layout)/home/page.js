@@ -6,18 +6,12 @@ import { LuSearch } from "react-icons/lu";
 import { UNIQUE_COURSE_NAMES } from '@/utils/collegeData'
 import { Combobox, Modal, MultiSelect, SegmentedControl, Select, useCombobox } from "@mantine/core";
 import SkeletonLoader from "@/components/SkeletonLoader";
-import { ALL_DISTRICT } from "@/utils/collegeDistrictData";import { getWindowSize } from "@/utils";
+import { ALL_DISTRICT } from "@/utils/collegeDistrictData";import { getWindowSize, inter, tw } from "@/utils";
 import { useDisclosure } from "@mantine/hooks";
 import CutoffCalculator from "@/components/CutoffCalculator";
-import resolveConfig from "tailwindcss/resolveConfig"
-import tailwindConfig from "../../../../../tailwind.config";
-import { Inter } from "next/font/google";
 import { collegeCourseGroups } from "@/utils/collegeCourseGroups";
 
 const CollegesTable = lazy(() => import("@/components/CollegesTable"));
-
-const tw = resolveConfig(tailwindConfig);
-const inter = Inter({ subsets: ["latin"] })
 
 const Home = () => {
   const {
@@ -448,7 +442,7 @@ const Home = () => {
               <select
                 name='category'
                 defaultValue={"Select"}
-                className='bg-card/10 outline p-2 py-2.5 pr-8 rounded-md outline-[0.8px] md:focus:outline-1 focus:outline-2 outline-mantine-blue/50 md:outline-gray-200 placeholder:text-sm focus:outline-mantine-blue/60'
+                className='bg-card/10 outline p-2 py-2.5 text-sm pr-8 rounded-md outline-[0.8px] md:focus:outline-1 focus:outline-2 outline-mantine-blue/50 md:outline-gray-200 placeholder:text-sm focus:outline-mantine-blue/60'
                 id='category'
                 {...register("Category", {
                   required: { value: true, message: "This field is required" },

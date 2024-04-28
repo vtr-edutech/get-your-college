@@ -7,6 +7,7 @@ import { Modal } from '@mantine/core';
 import RegisterForm from "@/components/RegisterForm";
 import NavBarLoader from "@/components/NavBarLoader";
 import { signOut } from "next-auth/react";
+import ErrorBoundary from "@/components/ui/ErrorBoundary";
 
 const RootLayout = ({ children }) => {
   const [opened, { open, close }] = useDisclosure(false);
@@ -17,7 +18,9 @@ const RootLayout = ({ children }) => {
       <Suspense fallback={<NavBarLoader />}>
         <Navbar modalOpen={open} logoutOpen={logoutHandlers.open} />
       </Suspense>
-      <ContentCard>{children}</ContentCard>
+      <ErrorBoundary>
+        <ContentCard>{children}</ContentCard>
+      </ErrorBoundary>
       <Modal
         opened={opened}
         transitionProps={{ transition: "pop" }}

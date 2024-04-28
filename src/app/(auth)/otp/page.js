@@ -1,5 +1,6 @@
 "use client";
 import AuthCard from "@/components/AuthCard";
+import { inter } from "@/utils";
 import { PinInput } from "@mantine/core";
 import { signIn } from "next-auth/react";
 import Link from "next/link";
@@ -56,16 +57,28 @@ const Login = () => {
         Enter OTP to continue
       </h2>
       <div className='flex flex-col gap-5'>
-        <p className='font-light text-xs'>We&apos;ve sent an OTP to {mobile} <br /> <Link href={'/login'} className="underline">Not your number?</Link> </p>
-        <PinInput oneTimeCode inputMode="numeric" length={6} inputType="tel" placeholder="-" styles={{
+        <p className='font-light text-xs'>
+          We&apos;ve sent an OTP to {mobile} <br />{" "}
+          <Link href={"/login"} className='underline'>
+            Not your number?
+          </Link>{" "}
+        </p>
+        <PinInput
+          oneTimeCode
+          inputMode='numeric'
+          length={6}
+          inputType='tel'
+          placeholder=''
+          styles={{
             input: {
-              fontFamily: "inherit"
+              fontFamily: inter.style.fontFamily,
+              borderRadius: 8,
             },
             root: {
-              opacity: isOTPProvided ? '60%': '100%',
-              alignSelf: "center"
-            }
-          }} 
+              opacity: isOTPProvided ? "40%" : "100%",
+              alignSelf: "center",
+            },
+          }}
           onComplete={handleOTPSubmit}
         />
       </div>

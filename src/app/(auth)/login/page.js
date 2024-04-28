@@ -73,10 +73,17 @@ const Login = () => {
           }
           onKeyUp={handleEnterKeyPress}
           placeholder='+91'
-          className={`md:w-[22rem] rounded-md bg-input px-3 py-2 focus:outline-1 focus:outline-gray-300 ${reqStatus === 'loading' && 'opacity-30'}`}
+          className={`md:w-[22rem] rounded-md bg-input px-3 py-2 outline outline-1 outline-gray-300 focus:outline-mantine-blue ${
+            reqStatus === "loading" && "opacity-30"
+          }`}
         />
       </div>
-      <Button label={"Get OTP"} isDisabled={!canSubmit} onClick={handleSubmit} />
+      <Button
+        label={"Get OTP"}
+        isDisabled={!canSubmit}
+        onClick={handleSubmit}
+        className="bg-mantine-blue"
+      />
     </AuthCard>
   );
 };

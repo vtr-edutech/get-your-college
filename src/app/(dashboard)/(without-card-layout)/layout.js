@@ -6,6 +6,7 @@ import { Modal } from '@mantine/core';
 import RegisterForm from "@/components/RegisterForm";
 import NavBarLoader from "@/components/NavBarLoader";
 import { signOut } from "next-auth/react";
+import ErrorBoundary from "@/components/ui/ErrorBoundary";
 
 const RootLayout = ({ children }) => {
 const [opened, { open, close }] = useDisclosure(false);
@@ -15,7 +16,9 @@ const [logoutOpened, logoutHandlers] = useDisclosure(false);
       <Suspense fallback={<NavBarLoader />}>
         <Navbar modalOpen={open} transitionProps={{ transition: "pop" }} logoutOpen={logoutHandlers.open} />
       </Suspense>
-      {children}
+      <ErrorBoundary>
+        {children}
+      </ErrorBoundary>
       <Modal opened={opened} onClose={close} key={'ihusa'} title="Edit User Information" centered>
         <RegisterForm closeFn={close} />
       </Modal>

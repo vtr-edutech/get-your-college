@@ -22,6 +22,7 @@ export async function POST(req) {
 
     const userSession = await getServerSession(authOptions);
     const userId = userSession?.user?.id;
+    console.log("🚀 ~ userinfo registering attempt for userId:", userId)
 
     if (!userSession || !userId)
       return NextResponse.json(
@@ -34,14 +35,14 @@ export async function POST(req) {
     await dbConnect();
 
     const userData = await UserModel.findOne({ _id: userId });
-    console.log("🚀 ~ POST ~ userData:", userData.mobile, " has updated info");
     if (!userData)
       return NextResponse.json(
         {
-          error: "We could not find your registration, please register again!",
+          error: "We could not find your registration, please logout and login again!",
         },
         { status: 404 }
       );
+    console.log("🚀 ~ user Id:", userData._id, " - ",  userData.mobile, " has request update");
 
     /* Im not reallly gonna validate this field because it can be any value, so i trust client to send only valid data */
     // if (!["TN", "CBSE", "ICSE", "AP"].includes(BOS.trim())) {
@@ -84,7 +85,14 @@ export async function POST(req) {
     userData.registerNo = registerNo;
 
     await userData.save({ validateBeforeSave: false });
-    // console.log(userData);
+        console.log(
+          "🚀 ~ user Id:",
+          userData._id,
+          " - ",
+          userData.mobile,
+          " has updated info"
+        );
+
     return NextResponse.json(
       { message: "Registered succesfully" },
       { status: 200 }

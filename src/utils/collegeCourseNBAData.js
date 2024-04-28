@@ -8477,7 +8477,7 @@ export const NBAdata = [
   "Minority Status": "No",
   "Approved Intake": 240,
   "Year of Starting": 1998,
-  "NBA Accredited": "No"
+  "NBA Accredited": "Yes"
  },
  {
   "S.No": 728,

@@ -10,7 +10,7 @@ const Button = ({ label, to = "", onClick = () => null, isDisabled, asButton = f
       className={cn(
         `bg-fill-black w-full py-[10px] rounded text-center transition-opacity text-fill-white `,
         {
-          "opacity-20 pointer-events-none": isDisabled,
+          "opacity-30 pointer-events-none": isDisabled,
         },
         className
       )}
@@ -23,7 +23,7 @@ const Button = ({ label, to = "", onClick = () => null, isDisabled, asButton = f
       className={cn(
         `bg-fill-black w-full py-[10px] rounded text-center transition-opacity text-fill-white `,
         {
-          "opacity-20 pointer-events-none": isDisabled,
+          "opacity-30 pointer-events-none": isDisabled,
         },
         className
       )}

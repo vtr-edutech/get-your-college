@@ -1,6 +1,9 @@
 import * as jose from "jose";
 import { clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
+import { Inter } from "next/font/google";
+import resolveConfig from "tailwindcss/resolveConfig";
+import tailwindConfig from "../../tailwind.config";
 
 export function testNumber(number) {
   const regex = /^[5-9]\d{9}$/;
@@ -87,3 +90,6 @@ export const getWindowSize = () => {
     width: isWindowDefined ? window.innerWidth : -1,
   };
 };
+
+export const tw = resolveConfig(tailwindConfig);
+export const inter = Inter({ subsets: ["latin"] });

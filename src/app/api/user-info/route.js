@@ -23,7 +23,7 @@ export async function GET() {
     if (!userData)
       return NextResponse.json(
         {
-          error: "We could not find your registration, please register again!",
+          error: "We could not find your registration, please logout and login again!",
         },
         { status: 404 }
       );
