@@ -1,3 +1,4 @@
+import { COLLEGE_CODE_NAME } from "@/utils/collegeDistrictData";
 export const reportTableData = [
   {
     "id":1,

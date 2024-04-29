@@ -105,9 +105,9 @@ const ReportTable = ({ searchCriteria }) => {
 
   useEffect(() => pagination.setPage(1) ,[searchCriteria])
 
-  const [bodyRef] = useAutoAnimate();
+  const [bodyRef] = useAutoAnimate({easing: "ease-in-out", duration: 500});
 
-  console.log("🚀 ~ ReportTable ~ selectedColleges:", collegesAfterSlicing)
+  console.log("🚀 ~ ReportTable ~ collegesAfterSclicing:", collegesAfterSlicing)
 
   if (!searchCriteria.Category) return <p>Invalid search parameters!</p>;
 

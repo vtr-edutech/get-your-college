@@ -31,14 +31,21 @@ const Generate = () => {
       console.log("🚀 ~ useEffect ~ preferredColleges:", preferredColleges)
       setCollegPrefernces(preferredColleges);
     }
-    if (!userInfo.firstName || !userInfo.lastName || !userInfo.registerNo) {
-      toast.error("Please enter details in settings to continue");
-    }
     setSelectedCategory(localStorage.getItem("Cat") ?? "NA");
   }, []);
   // console.log("🚀 ~ Generate ~ preferredColleges:", preferredColleges)
+  
+  useEffect(() => {
+    if (
+      !loading &&
+      (!userInfo.firstName || !userInfo.lastName || !userInfo.registerNo)
+    ) {
+      toast.error("Please enter details in settings to continue");
+    }
+  }, [userInfo, loading]);
 
   if (!selectedCategory) return <SkeletonLoader rows={10} />;
+  
 
   return (
     <>
@@ -89,8 +96,8 @@ const Generate = () => {
                     />
                   </a>
                 </div>
-                <p style={{ fontSize: "10px", marginLeft: "6px", fontWeight: "semibold" }}>Name: {userInfo?.firstName + ' ' + userInfo?.lastName}</p>
-                <p style={{ fontSize: "10px", marginLeft: "6px" }}>Registration No.: </p>
+                <p style={{ fontSize: "10px", marginLeft: "6px", fontWeight: "semibold" }}>Name: {userInfo?.firstName? (userInfo.firstName + ' ' + userInfo?.lastName ?? ''): 'Student'}</p>
+                <p style={{ fontSize: "10px", marginLeft: "6px" }}>Registration No.: {userInfo?.registerNo ?? 'Not given'} </p>
                 <div className='flex min-w-fit md:min-w-[unset] justify-around items-center p-2 mx-1 mt-1 md:p-4 rounded-se-lg rounded-ss-lg outline outline-1 outline-gray-200 reorder-header'>
                   <h2 className='flex-1 font-medium min-w-16 max-w-28'>
                     Choice Order

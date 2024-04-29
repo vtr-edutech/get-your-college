@@ -2,13 +2,14 @@
 import SkeletonLoader from "@/components/SkeletonLoader";
 import ErrorBoundary from "@/components/ui/ErrorBoundary";
 import { getWindowSize, inter } from "@/utils";
+import { collegeCategoryData } from "@/utils/collegeCategoryData";
 import { COLLEGE_CATEGORIES } from "@/utils/collegeChoiceListData";
 import { ALL_DISTRICT } from "@/utils/collegeDistrictData";
 import { COLLEGE_CODE_NAME } from "@/utils/collegeDistrictData";
 import { UNIQUE_COURSE_NAMES } from "@/utils/collegeNames";
 import { Select } from "@mantine/core";
 import Image from "next/image";
-import React, { Suspense, lazy, useEffect, useRef, useState } from "react";
+import React, { Suspense, lazy, useEffect, useMemo, useRef, useState } from "react";
 import { useForm } from "react-hook-form";
 import { LuSearch } from "react-icons/lu";
 
@@ -40,9 +41,11 @@ const Report = () => {
   const [searchCriteria, setSearchCriteria] = useState(null);
   const [collegeName, setCollegeName] = useState()
   const [collegeCode, setCollegeCode] = useState()
+  const [collegeCategory, setCollegeCategory] = useState()
   const [windowSize, setWindowSize] = useState({ width: 1093, height: 1293 })
   
-
+  console.log("🚀 ~ Report ~ searchCriteria:", searchCriteria)
+  // console.log(X);
 
   useEffect(() => {
     const searchCriteriaFromLS = localStorage.getItem('search');
@@ -204,6 +207,7 @@ const Report = () => {
       {searchCriteria?.MinCutoff ? (
         <Suspense fallback={<SkeletonLoader />}>
           <div className='flex md:flex-row flex-col md:items-center gap-2 w-full mt-8'>
+            {/* College Name Filter */}
             <Select
               clearable
               label="College Name:"
@@ -216,6 +220,7 @@ const Report = () => {
                 if (!value) {
                   setCollegeName(null);
                   setCollegeCode(null);
+                  setCollegeCategory(null);
                   return setSearchCriteria((prev) => ({
                     ...prev,
                     CollegeCode: null,
@@ -224,6 +229,11 @@ const Report = () => {
                 let currentCode = COLLEGE_CODE_NAME.find(
                   (codeName) => codeName["College Name"] == value
                 )["College Code"];
+                let currCat = collegeCategoryData.find(
+                  (cat) => cat["TNEA CODE"] == currentCode
+                )["College Category"];
+                console.log("🚀 ~ Report ~ currCat:", currCat)
+                setCollegeCategory(currCat)
                 setCollegeCode(currentCode.toString());
                 setSearchCriteria((prev) => ({
                   ...prev,
@@ -252,6 +262,7 @@ const Report = () => {
                 },
               }}
             />
+            {/* College Code Filter */}
             <Select
               clearable
               label="College Code:"
@@ -264,6 +275,7 @@ const Report = () => {
                 if (!value) {
                   setCollegeName(null);
                   setCollegeCode(null);
+                  setCollegeCategory(null);
                   return setSearchCriteria((prev) => ({
                     ...prev,
                     CollegeCode: null,
@@ -278,6 +290,11 @@ const Report = () => {
                 }));
                 setCollegeName(currentName);
                 setCollegeCode(value);
+                setCollegeCategory(
+                  collegeCategoryData.find(
+                    (cat) => cat["TNEA CODE"] == value
+                  )["College Category"]
+                );
                 collegeNameRef.current.value = currentName;
               }}
               comboboxProps={{
@@ -301,6 +318,7 @@ const Report = () => {
             />
           </div>
           <div className='md:grid md:grid-cols-3 md:grid-rows-1 flex flex-col gap-2 md:mt-3 w-full'>
+            {/* Branch Name filter */}
             <Select
               clearable
               label="Branch Name:"
@@ -331,6 +349,7 @@ const Report = () => {
                 },
               }}
             />
+            {/* District */}
             <Select
               clearable
               label="District:"
@@ -356,16 +375,22 @@ const Report = () => {
                 },
               }}
             />
+            {/* College Category */}
             <Select
               clearable
               label="College Category:"
               searchable
               placeholder='Filter by College Category'
               data={COLLEGE_CATEGORIES}
+              value={collegeCategory}
               onChange={(value) => {
+                setCollegeCode(null)
+                setCollegeName('')
+                setCollegeCategory(value)
                 setSearchCriteria((prev) => ({
                   ...prev,
                   CollegeCategory: value,
+                  CollegeCode: null,
                 }));
               }}
               styles={{
