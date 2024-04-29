@@ -25,16 +25,16 @@ export const COLLEGE_CATEGORIES = [
     disabled: false,
     subcategories: [
       {
-        name: "Category-Y",
-        value: "cat-y",
+        name: "Govt. College",
+        value: "govt",
       },
       {
-        name: "Category Z",
-        value: "cat-z",
+        name: "Self-Financing",
+        value: "self",
       },
       {
-        name: "Category A",
-        value: "cat-a",
+        name: "Deemed University",
+        value: "deemed",
       },
     ],
   },

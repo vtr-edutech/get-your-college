@@ -105,7 +105,6 @@ export default function Med() {
         onSubmit={handleSubmit(searchSubmission)}
       >
         <div className='flex flex-col gap-12 md:gap-8'>
-          
           {/* Category and Years container */}
           <div className='flex flex-col md:flex-row gap-7 justify-center md:justify-start md:gap-16 md:flex-wrap'>
             {/* Medical cutoff category choose */}
@@ -126,8 +125,17 @@ export default function Med() {
                     return value && { color: "white" };
                   },
                 }}
-                value={searchCriteria?.counsellingCategory?? "STATE"}
-                onChange={(value) => setSearchCriteria(prev => ({ ...prev, counsellingCategory: value, communityCategory: value == "STATE"? COUNSELLING_CATEGORY.STATE[0]: COUNSELLING_CATEGORY.MCC[0] }))}
+                value={searchCriteria?.counsellingCategory ?? "STATE"}
+                onChange={(value) =>
+                  setSearchCriteria((prev) => ({
+                    ...prev,
+                    counsellingCategory: value,
+                    communityCategory:
+                      value == "STATE"
+                        ? COUNSELLING_CATEGORY.STATE[0]
+                        : COUNSELLING_CATEGORY.MCC[0],
+                  }))
+                }
                 data={[
                   {
                     label: "State",
@@ -144,13 +152,20 @@ export default function Med() {
             <div className='flex flex-col justify-center gap-1'>
               <p className='font-normal text-sm'>Community Category:</p>
               <Select
+                allowDeselect={false}
                 comboboxProps={{ shadow: "md" }}
                 value={searchCriteria?.communityCategory}
                 onChange={(value) => {
-                    setSearchCriteria(prev => ({ ...prev, communityCategory: value }))
+                  setSearchCriteria((prev) => ({
+                    ...prev,
+                    communityCategory: value,
+                  }));
                 }}
-                allowDeselect={false}
-                data={COUNSELLING_CATEGORY[searchCriteria?.counsellingCategory ?? "STATE"]}
+                data={
+                  COUNSELLING_CATEGORY[
+                    searchCriteria?.counsellingCategory ?? "STATE"
+                  ]
+                }
                 checkIconPosition='left'
                 styles={{
                   root: { width: windowSize.width < 768 ? "100%" : "12rem" },
@@ -191,7 +206,6 @@ export default function Med() {
 
           {/* Linear Search bar */}
           <div className='grid grid-cols-2 grid-rows-2 gap-2 gap-y-7 md:flex md:gap-2 md:justify-start md:items-center md:flex-wrap'>
-            
             <div className='flex flex-col gap-1 items-center relative'>
               <p className='font-normal text-sm w-full text-left'>
                 Minimum Cut-off:
@@ -216,12 +230,12 @@ export default function Med() {
                 defaultValue={170}
               />
               {errors["MinNEET"] && (
-                <p className='text-xs text-red-500 font-light absolute -top-4 left-0'>
+                <p className='text-xs text-red-500 font-light absolute -bottom-4 left-0'>
                   {errors["MinNEET"].message}
                 </p>
               )}
             </div>
-            
+
             <div className='flex flex-col gap-1 items-center relative'>
               <p className='font-normal text-sm w-full text-left'>
                 NEET Score:
@@ -245,18 +259,18 @@ export default function Med() {
                 })}
               />
               {errors["MaxNEET"] && (
-                <p className='text-xs text-red-500 font-light absolute -top-4 left-0'>
+                <p className='text-xs text-red-500 font-light absolute -bottom-4 left-0'>
                   {errors["MaxNEET"].message}
                 </p>
               )}
             </div>
-            
+
             <div className='grid col-span-2 md:flex md:flex-col md:gap-1 md:items-center relative'>
               <p className='font-normal text-sm w-full text-left'>
                 Course Name:
               </p>
               <Select
-                searchable
+                allowDeselect={false}
                 placeholder='Select department'
                 data={["MBBS", "BDS"]}
                 hiddenInputProps={{
@@ -270,15 +284,15 @@ export default function Med() {
                   }),
                 }}
                 onChange={(value) => {
-                  setValue("Course", value)
+                  setValue("Course", value);
                 }}
                 styles={{
                   root: {
                     width: windowSize.width < 768 ? "100%" : "20rem",
                   },
                   input: {
-                    paddingTop: "0.55rem",
-                    paddingBottom: "0.55rem",
+                    paddingTop: "0.7rem",
+                    paddingBottom: "0.7rem",
                     borderRadius: "0.4rem",
                     fontFamily: inter.style.fontFamily,
                     fontWeight: inter.style.fontWeight,
@@ -290,31 +304,23 @@ export default function Med() {
                       borderColor: "black",
                     },
                   },
-                  pill: {
-                    maxWidth: "5rem",
-                    fontSize: "0.7rem",
+                  section: {
+                    paddingTop: "0.7rem",
+                    paddingBottom: "0.7rem",
                   },
                   option: {
                     fontSize: "0.8rem",
-                  },
-                  groupLabel: {
-                    fontSize: "0.7rem",
-                    padding: 3,
-                  },
-                  pillsList: {
-                    maxHeight: "3rem",
-                    overflowY: "scroll",
                   },
                 }}
                 comboboxProps={{ withArrow: true, offset: 0, shadow: "xl" }}
               />
               {errors["Course"] && (
-                <p className='text-xs text-red-500 font-light absolute -top-4 left-0'>
+                <p className='text-xs text-red-500 font-light absolute -bottom-4 left-0'>
                   {errors["Course"].message}
                 </p>
               )}
             </div>
-            
+
             <div className='grid col-span-2 md:flex md:flex-col md:gap-1 md:items-center relative'>
               <p className='font-normal text-sm w-full text-left'>Community:</p>
               <select
@@ -326,9 +332,7 @@ export default function Med() {
                   required: { value: true, message: "This field is required" },
                   validate: (value) =>
                     (value !== "select" &&
-                      ["OC", "OBC", "SC", "ST", "EWS"].includes(
-                        value
-                      )) ||
+                      ["OC", "OBC", "SC", "ST", "EWS"].includes(value)) ||
                     "Invalid value selected!",
                 })}
               >
@@ -340,12 +344,12 @@ export default function Med() {
                 <option value='EWS'>EWS</option>
               </select>
               {errors["Category"] && (
-                <p className='text-xs text-red-500 font-light absolute -top-4 left-0'>
+                <p className='text-xs text-red-500 font-light absolute -bottom-4 left-0'>
                   {errors["Category"].message}
                 </p>
               )}
             </div>
-            
+
             <div className='grid col-span-2 md:flex md:flex-col md:gap-1 md:items-center relative'>
               <p className='font-normal text-sm w-full text-white text-left'>
                 &nbsp;
