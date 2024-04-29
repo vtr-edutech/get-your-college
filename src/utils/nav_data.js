@@ -19,10 +19,10 @@ export const COLLEGE_CATEGORIES = [
     ],
   },
   {
-    name: "Medical (Coming soon)",
+    name: "Medical",
     value: "medical",
     icon: <FaBookMedical size={16} />,
-    disabled: true,
+    disabled: false,
     subcategories: [
       {
         name: "Category-Y",
