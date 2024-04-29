@@ -385,7 +385,7 @@ const Report = () => {
               value={collegeCategory}
               onChange={(value) => {
                 setCollegeCode(null)
-                setCollegeName('')
+                setCollegeName(null)
                 setCollegeCategory(value)
                 setSearchCriteria((prev) => ({
                   ...prev,

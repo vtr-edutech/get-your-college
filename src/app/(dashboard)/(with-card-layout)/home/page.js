@@ -140,6 +140,11 @@ const Home = () => {
         onClose={close}
         centered
         title='Cut-off Calculator'
+        styles={{
+          content: {
+            overflow: "hidden"
+          }
+        }}
       >
         <CutoffCalculator />
       </Modal>

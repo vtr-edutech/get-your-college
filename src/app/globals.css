@@ -48,7 +48,7 @@ kendo-pdf-document .reorder-header {
     padding: 6px;
 }
 
-kendo-pdf-document h2, a, p {
+kendo-pdf-document h2, kendo-pdf-document a, kendo-pdf-document p, kendo-pdf-document table {
   font-family: Inter, Arial, Helvetica, sans-serif;
 }
 
