@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
           </StoreProvider>
         </AuthProvider>
         <ToastContainer
-          position='bottom-right'
+          position='top-right'
           autoClose={5000}
           hideProgressBar
           newestOnTop

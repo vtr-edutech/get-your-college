@@ -56,7 +56,7 @@ const Generate = () => {
         Feel free to re-order according to your preference
       </h1>
       {/* Table for Next Page */}
-      {selectedCategory === "NA" ? (
+      {(selectedCategory === "NA") || (collegPrefernces.length < 1) ? (
         <div className='flex w-full flex-col justify-center items-center'>
           <Image
             src='/Empty-pana.png'
@@ -111,12 +111,6 @@ const Generate = () => {
                   <h2 className='max-w-36 flex-1 font-medium min-w-32 md:m-0 mx-2'>
                     Branch
                   </h2>
-                  {/* <h2 className='to-remove max-w-36 flex-1 font-medium min-w-20'>
-                    {selectedCategory} - Cutoff
-                  </h2>
-                  <h2 className='max-w-14 flex-1 font-medium min-w-12'>
-                    Actions
-                  </h2> */}
                 </div>
                 <ReOrderTable
                   collegPrefernces={collegPrefernces}
@@ -178,8 +172,10 @@ const Generate = () => {
             className='w-fit px-4 bg-mantine-blue ml-auto py-2'
             asButton
             onClick={() => {
-              console.log("Saving PDF?", pdfComponentRef.current);
-              pdfComponentRef.current.save();
+              setTimeout(() => {
+                console.log("Saving PDF?", pdfComponentRef.current);
+                pdfComponentRef.current.save();
+              }, 300);
             }}
           />
         </>
