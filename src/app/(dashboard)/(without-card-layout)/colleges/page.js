@@ -13,11 +13,11 @@ export default function Page() {
     throw new Error("College Type Should be: Engineering or Medical");
   }
   return currentCollegeType === "engineering" ? (
-    <Suspense fallback={<ContentCardLoader />}>
+    <Suspense fallback={<ContentCardLoader withContainerCard />}>
       <EngineeringCollegesPage />
     </Suspense>
   ) : (
-    <Suspense fallback={<ContentCardLoader />}>
+    <Suspense fallback={<ContentCardLoader withContainerCard />}>
       <MedicalCollegesPage />
     </Suspense>
   );

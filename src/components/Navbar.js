@@ -242,7 +242,7 @@ const Navbar = ({ modalOpen, logoutOpen }) => {
         <Vr />
 
         {/* College Type selection */}
-        <div className='p-1 mt-3 grid place-items-center'>
+        <div className='p-1 mt-3 grid place-items-center collge-type-selector'>
           <Combobox
             store={collegeCategorySelect}
             resetSelectionOnOptionHover
