@@ -322,7 +322,7 @@ function CutoffCalculator() {
                     fontSize: "14px"
                   }}
                 >
-                  Total
+                  Cutoff
                 </td>
                 <td
                   style={{

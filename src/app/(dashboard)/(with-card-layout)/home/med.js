@@ -143,7 +143,7 @@ export default function Med() {
             </div>
             {/* Category based on cutoff category */}
             <div className='flex flex-col justify-center gap-1'>
-              <p className='font-normal text-sm'>Community Category:</p>
+              <p className='font-normal text-sm'>Quota:</p>
               <Select
                 allowDeselect={false}
                 comboboxProps={{ shadow: "md" }}
@@ -213,14 +213,14 @@ export default function Med() {
                   required: { value: true, message: "This field is required" },
                   min: {
                     value: 70,
-                    message: "Minimum cutoff should be greater than 170",
+                    message: "Minimum cutoff should be greater than 107",
                   },
                   max: {
                     value: 200,
                     message: "Minimum cutoff should be less than 720",
                   },
                 })}
-                defaultValue={170}
+                defaultValue={107}
               />
               {errors["MinNEET"] && (
                 <p className='text-xs text-red-500 font-light absolute -bottom-4 left-0'>
@@ -242,8 +242,8 @@ export default function Med() {
                 {...register("MaxNEET", {
                   required: { value: true, message: "This field is required" },
                   min: {
-                    value: 170,
-                    message: "Maximum cutoff should be greater than 170",
+                    value: 107,
+                    message: "Maximum cutoff should be greater than 107",
                   },
                   max: {
                     value: 720,
@@ -265,7 +265,7 @@ export default function Med() {
               <Select
                 allowDeselect={false}
                 placeholder='Select department'
-                data={["MBBS", "BDS"]}
+                data={[{ label: "MBBS", value: "MBBS"}, { label: "BDS", value: "BDS", disabled: true }]}
                 hiddenInputProps={{
                   ...register("Course", {
                     required: {

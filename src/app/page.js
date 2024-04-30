@@ -10,6 +10,9 @@ import { FiCheckCircle } from "react-icons/fi";
 import { BsListCheck } from "react-icons/bs";
 import { cn } from "@/utils";
 import { Tooltip } from "@mantine/core";
+import Image from "next/image";
+import svv from " engg.svg"
+
 const FEATURES = [
   {
     icon: ({ color }) => <CiSearch className={color} size={20} />,
@@ -65,7 +68,28 @@ export default function Home() {
       {/* Header */}
       <header className='flex w-full items-center justify-between md:px-8 px-5 py-4 md:py-6'>
         {/* Logo here */}
-        <h1 className='md:text-3xl text-xl font-medium'>Get Your College</h1>
+        {/* <Image
+          src={'/logo_new.png'}
+          width={125}
+          height={125}
+          quality={100}
+          alt="Get Your College logo"
+        /> */}
+        <div className='flex gap-6'>
+          <Image
+            src={"/logo.png"}
+            width={45}
+            height={45}
+            quality={100}
+            alt='Get Your College logo'
+          />
+          <h1 className='text-2xl flex flex-col font-semibold'>
+            Get Your College
+            <span className='font-normal text-base'>
+              Quantum shift to your career
+            </span>
+          </h1>
+        </div>
         {/* Login button */}
         <Button
           label={
@@ -75,7 +99,7 @@ export default function Home() {
             </div>
           }
           to='/login'
-          className='bg-sky-600 w-fit px-4 py-2 md:px-7 md:py-2'
+          className='bg-mantine-blue w-fit px-4 py-2 md:px-7 md:py-2'
         />
       </header>
 
@@ -89,6 +113,7 @@ export default function Home() {
           <h1 className='md:text-6xl text-5xl text-center font-bold'>
             <span className='relative text-sky-500'>
               Engineering{" "}
+              <img src={svv} className="absolute top-0 left-0" alt="" />
               {/* <span className='text-lg absolute top-0 left-[95%] text-sky-600'>
               (TNEA)
             </span> */}
