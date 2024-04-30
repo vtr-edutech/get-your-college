@@ -32,6 +32,24 @@ function CutoffCalculator() {
     );
   };
 
+  const handleMarkEntry = (e, inputRef, subjName, nextFocusRef) => {
+    const marks = e.currentTarget.value;
+    if (parseFloat(marks) < 0) {
+      toast.error(`Set ${subjName} cutoff greater than 0`);
+      e.currentTarget.value = "";
+      return;
+    }
+    if (marks.length == 3 && parseFloat(marks) != 100) {
+      toast.error(`Set ${subjName} cutoff less than or equal to 100`);
+      e.currentTarget.value = "";
+      return;
+    }
+    if (marks.length == 2) {
+      nextFocusRef.current.focus();
+    }
+    handleCutoff();
+  }
+
   useEffect(() => {
     if (
       !loading &&
@@ -104,18 +122,7 @@ function CutoffCalculator() {
             id='physics'
             placeholder='Max 100'
             ref={pRef}
-            onInput={(e) => {
-              const phyMarks = e.currentTarget.value;
-              // if (regNo.length != regNoLength) {
-              //   toast.error("Please enter valid 12th registration marks");
-              //   regRef.current.focus();
-              //   return;
-              // }
-              if (phyMarks.length == 2) {
-                cRef.current.focus();
-                handleCutoff();
-              }
-            }}
+            onInput={(e) => handleMarkEntry(e, pRef, "Physics", cRef)}
           />
         </div>
         <div className='flex items-center justify-between'>
@@ -126,18 +133,7 @@ function CutoffCalculator() {
             name='chemistry'
             id='chemistry'
             ref={cRef}
-            onInput={(e) => {
-              const chemMarks = e.currentTarget.value;
-              // if (regNo.length != regNoLength) {
-              //   toast.error("Please enter valid 12th registration marks");
-              //   regRef.current.focus();
-              //   return;
-              // }
-              if (chemMarks.length == 2) {
-                mRef.current.focus();
-                handleCutoff();
-              }
-            }}
+            onInput={(e) => handleMarkEntry(e, cRef, "Chemistry", mRef)}
             placeholder='Max 100'
           />
         </div>
@@ -149,17 +145,7 @@ function CutoffCalculator() {
             className='bg-card p-2 md:w-40 h-min max-w-44 rounded-md outline outline-1 outline-gray-200 focus:outline-1 focus:outline-sky-500/60'
             name='maths'
             id='maths'
-            onInput={(e) => {
-              const mathMarks = e.currentTarget.value;
-              //  if (regNo.length != regNoLength) {
-              //     toast.error("Please enter valid 12th registration marks");
-              //     regRef.current.focus();
-              //     return;
-              //   }
-              if (mathMarks.length == 2) {
-                handleCutoff();
-              }
-            }}
+            onInput={(e) => handleMarkEntry(e, mRef, "Math", cutoffRef)}
             placeholder='Max 100'
           />
         </div>

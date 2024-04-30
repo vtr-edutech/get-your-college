@@ -25,6 +25,7 @@
     "mongoose": "^8.2.0",
     "next": "14.1.1",
     "next-auth": "^4.24.7",
+    "next-transition-bar": "^1.1.1",
     "react": "^18",
     "react-dom": "^18",
     "react-hook-form": "^7.51.0",

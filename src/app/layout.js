@@ -8,6 +8,7 @@ import { ColorSchemeScript, MantineProvider } from "@mantine/core";
 import "@mantine/core/styles.css";
 import StoreProvider from "./StoreProvider";
 import TourProvider from "./TourProvider";
+import TransitionBar from "./TransitionBar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,7 +27,10 @@ export default function RootLayout({ children }) {
         <AuthProvider>
           <StoreProvider>
             <TourProvider>
-              <MantineProvider>{children}</MantineProvider>
+              <MantineProvider>
+                <TransitionBar />
+                {children}
+              </MantineProvider>
             </TourProvider>
           </StoreProvider>
         </AuthProvider>
