@@ -7,6 +7,7 @@ import { AuthProvider } from "@/app/AuthProvider";
 import { ColorSchemeScript, MantineProvider } from "@mantine/core";
 import "@mantine/core/styles.css";
 import StoreProvider from "./StoreProvider";
+import TourProvider from "./TourProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,7 +25,9 @@ export default function RootLayout({ children }) {
       <body className={inter.className + ` bg-background`}>
         <AuthProvider>
           <StoreProvider>
-            <MantineProvider>{children}</MantineProvider>
+            <TourProvider>
+              <MantineProvider>{children}</MantineProvider>
+            </TourProvider>
           </StoreProvider>
         </AuthProvider>
         <ToastContainer

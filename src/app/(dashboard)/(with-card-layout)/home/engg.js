@@ -24,6 +24,7 @@ import { getWindowSize, inter, tw } from "@/utils";
 import { useDisclosure } from "@mantine/hooks";
 import CutoffCalculator from "@/components/CutoffCalculator";
 import { collegeCourseGroups } from "@/utils/collegeCourseGroups";
+import { useTour } from "@reactour/tour";
 
 const CollegesTable = lazy(() => import("@/components/CollegesTable"));
 
@@ -115,6 +116,16 @@ const Home = () => {
       )),
     [districtKey]
   );
+
+  const { currentStep, isOpen, setCurrentStep, setIsOpen } = useTour();
+  // current step ah depend ah paathu, if currstep not 1 or 0, then open if localstorageHomeTour is false
+  useEffect(() => {
+    const hasHomeFilterTourPlayed = localStorage.getItem("hasHomeFilterPlayed");
+    if (!isOpen && currentStep == 1 && (!hasHomeFilterTourPlayed || hasHomeFilterTourPlayed != "true")) {
+      setIsOpen(true);
+      setCurrentStep(2);
+    }
+  }, [currentStep, isOpen]);
 
   useEffect(() => {
     setwindowSize(getWindowSize());

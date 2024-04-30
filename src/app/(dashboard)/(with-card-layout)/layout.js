@@ -8,7 +8,6 @@ import RegisterForm from "@/components/RegisterForm";
 import NavBarLoader from "@/components/NavBarLoader";
 import { signOut } from "next-auth/react";
 import ErrorBoundary from "@/components/ui/ErrorBoundary";
-import { TourProvider, useTour } from "@reactour/tour";
 
 const RootLayout = ({ children }) => {
   const [opened, { open, close }] = useDisclosure(false);
@@ -16,28 +15,6 @@ const RootLayout = ({ children }) => {
   // const { setCurrentStep, currentStep } = useTour();
   return (
     <main className='flex min-h-screen justify-center w-full relative md:pt-12 p-2 md:pb-0 pb-16 md:pl-80 md:pr-12'>
-      <TourProvider
-        steps={[
-          {
-            selector: "body",
-            content: "Let's start a quick tour to guide you through!",
-            position: "center",
-          },
-          {
-            selector: ".collge-type-selector",
-            content: "Select the type of college you are searching for",
-            position: "right",
-          },
-          {
-            selector: ".initial-filters",
-            content: "Use these filters to select your colleges",
-            position: "bottom"
-          },
-        ]}
-        disableDotsNavigation
-        onClickClose={false}
-        nextButton={({currentStep, setCurrentStep}) => <button onClick={() => setCurrentStep(currentStep + 1)}>Next ›</button>}
-      >
         <Suspense fallback={<NavBarLoader />}>
           <Navbar modalOpen={open} logoutOpen={logoutHandlers.open} />
         </Suspense>
@@ -77,7 +54,6 @@ const RootLayout = ({ children }) => {
             </button>
           </div>
         </Modal>
-      </TourProvider>
     </main>
   );
 };

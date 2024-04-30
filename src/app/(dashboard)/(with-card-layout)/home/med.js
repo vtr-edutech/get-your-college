@@ -7,6 +7,8 @@ import {
   Select,
   useCombobox,
 } from "@mantine/core";
+import { useLocalStorage } from "@mantine/hooks";
+import { useTour } from "@reactour/tour";
 import { useEffect, useRef, useState } from "react";
 import { useForm } from "react-hook-form";
 import { LuSearch } from "react-icons/lu";
@@ -40,7 +42,10 @@ export default function Med() {
   const stateInputRef = useRef();
   const cutoffCategoryRef = useRef();
   
-  const [windowSize, setwindowSize] = useState({ width: 1230, height: 1234 });3
+  const [windowSize, setwindowSize] = useState({ width: 1230, height: 1234 });
+
+  const { setIsOpen, setCurrentStep, isOpen } = useTour();
+  const [hasMedicalTourPlayed, setHasMedicalTourPlayed] = useLocalStorage({ key: "hasMedicalPlayed", defaultValue: false })
 
   const [searchCriteria, setSearchCriteria] = useState({
     counsellingCategory: "STATE",
@@ -49,25 +54,12 @@ export default function Med() {
     districtKey: "",
   });
 
-
-
-//   const districtCombobox = useCombobox({
-//     onDropdownClose: () => districtCombobox.resetSelectedOption(),
-//     onDropdownOpen: (eventSource) => {
-//       eventSource == "keyboard"
-//         ? districtCombobox.selectActiveOption()
-//         : districtCombobox.updateSelectedOptionIndex("active");
-//     },
-//   });
-
-//   const departmentCombobox = useCombobox({
-//     onDropdownClose: () => departmentCombobox.resetSelectedOption(),
-//     onDropdownOpen: (eventSource) => {
-//       eventSource == "keyboard"
-//         ? departmentCombobox.selectActiveOption()
-//         : departmentCombobox.updateSelectedOptionIndex("active");
-//     },
-//   });
+  useEffect(() => {
+    if (!hasMedicalTourPlayed || hasMedicalTourPlayed != "true" && !isOpen) {
+      setCurrentStep(3);
+      setIsOpen(true);
+    }
+  }, [])
 
   useEffect(() => {
     setwindowSize(getWindowSize());
@@ -101,7 +93,7 @@ export default function Med() {
         Enter NEET Score and choose filter options
       </h3>
       <form
-        className='flex flex-col mt-2 md:w-full md:items-center gap-6 justify-start'
+        className='medical-intial-filters flex flex-col mt-2 md:w-full md:items-center gap-6 justify-start'
         onSubmit={handleSubmit(searchSubmission)}
       >
         <div className='flex flex-col gap-12 md:gap-8'>

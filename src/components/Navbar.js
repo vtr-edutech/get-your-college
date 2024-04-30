@@ -19,6 +19,8 @@ import { selectCategory } from "@/store/collegeCategorySlice";
 import { COLLEGE_CATEGORIES } from "@/utils/nav_data";
 import { cn } from "@/utils";
 import { useTour } from "@reactour/tour";
+import { GoQuestion } from "react-icons/go";
+import { useLocalStorage } from "@mantine/hooks";
 
 const MENU_ITEMS = [
   {
@@ -81,8 +83,11 @@ const Navbar = ({ modalOpen, logoutOpen }) => {
     [selectedCollegeCategory]
   );
 
-  const { setIsOpen } = useTour();
-
+  const { setIsOpen, setCurrentStep } = useTour();
+  const [hasNavTourBeenPlayed, setHasNavTourBeenPlayed] = useLocalStorage({
+    key: "hasNavTourPlayed",
+    defaultValue: "false",
+  });
   /* Disabling modal opening if not name found has been disabled for now bcs this "client" component apparently runs on server too
    * when in server it does not know session, hence return null/undefind so modal opens .. hence its annoying 
   */
@@ -91,9 +96,14 @@ const Navbar = ({ modalOpen, logoutOpen }) => {
   // },[])
 
   useEffect(() => {
-    const timeoutForOpen = setTimeout(() => {
-      setIsOpen(true)
-    }, 1000);
+    const hasTourBeenPlayed = localStorage.getItem("hasNavTourPlayed");
+    let timeoutForOpen;
+    if (!hasTourBeenPlayed || hasTourBeenPlayed !== "true") {
+      timeoutForOpen = setTimeout(() => {
+        setIsOpen(true);
+        setCurrentStep(0);
+      }, 1000);
+    }
 
     return () => clearTimeout(timeoutForOpen)
   },[])
@@ -264,7 +274,7 @@ const Navbar = ({ modalOpen, logoutOpen }) => {
         <Vr />
 
         {/* College Type selection */}
-        <div className='p-1 mt-3 grid place-items-center collge-type-selector'>
+        <div className='p-1 mt-3 grid place-items-center relative collge-type-selector'>
           <Combobox
             store={collegeCategorySelect}
             resetSelectionOnOptionHover
@@ -313,6 +323,11 @@ const Navbar = ({ modalOpen, logoutOpen }) => {
               </Combobox.Options>
             </Combobox.Dropdown>
           </Combobox>
+          <GoQuestion onClick={() => {
+            setHasNavTourBeenPlayed(false);
+            setIsOpen(true);
+            setCurrentStep(0);
+          }} className="absolute cursor-pointer -right-1 top-0 opacity-60" />
         </div>
 
         {/* Menu Section */}
