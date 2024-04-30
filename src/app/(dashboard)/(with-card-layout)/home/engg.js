@@ -182,7 +182,7 @@ const Home = () => {
         className='flex flex-col mt-2 md:w-full md:items-center gap-6 justify-start'
         onSubmit={handleSubmit(searchSubmission)}
       >
-        <div className='flex flex-col gap-12 md:gap-8'>
+        <div className='flex flex-col gap-12 md:gap-8 initial-filters'>
           {/* Category and Years container */}
           <div className='flex flex-col md:flex-row gap-7 justify-center md:justify-start md:gap-16 md:flex-wrap'>
             {/* Cutoff Category choose */}

@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useMemo } from "react";
+import React, { useEffect, useMemo } from "react";
 import {
   IoSettingsOutline,
   IoBookOutline,
@@ -18,6 +18,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { selectCategory } from "@/store/collegeCategorySlice";
 import { COLLEGE_CATEGORIES } from "@/utils/nav_data";
 import { cn } from "@/utils";
+import { useTour } from "@reactour/tour";
 
 const MENU_ITEMS = [
   {
@@ -80,6 +81,8 @@ const Navbar = ({ modalOpen, logoutOpen }) => {
     [selectedCollegeCategory]
   );
 
+  const { setIsOpen } = useTour();
+
   /* Disabling modal opening if not name found has been disabled for now bcs this "client" component apparently runs on server too
    * when in server it does not know session, hence return null/undefind so modal opens .. hence its annoying 
   */
@@ -87,13 +90,21 @@ const Navbar = ({ modalOpen, logoutOpen }) => {
   //   if (!session?.user?.name) modalOpen() 
   // },[])
 
+  useEffect(() => {
+    const timeoutForOpen = setTimeout(() => {
+      setIsOpen(true)
+    }, 1000);
+
+    return () => clearTimeout(timeoutForOpen)
+  },[])
+
   return (
     <>
       {/* Mobile Nav */}
       <div className='fixed left-0 flex max-h-16 md:hidden justify-around items-center w-full bottom-0 z-50 px-2 py-2 shadow shadow-black/40 bg-white'>
         {MENU_ITEMS.slice(0, 4).map((menu, i) =>
           menu.subcategoryFrom ? (
-            <Menu key={i+87} width={125} shadow='lg' withArrow>
+            <Menu key={i + 87} width={125} shadow='lg' withArrow>
               <Menu.Target>
                 <button
                   href={menu.to}
@@ -110,9 +121,12 @@ const Navbar = ({ modalOpen, logoutOpen }) => {
               <Menu.Dropdown>
                 {COLLEGE_CATEGORIES.map((collegeCategory, k) => (
                   <>
-                    <Menu.Label key={k+10}>{collegeCategory.name}</Menu.Label>
+                    <Menu.Label key={k + 10}>{collegeCategory.name}</Menu.Label>
                     {collegeCategory.subcategories.map((subCat, l) => (
-                      <Menu.Item disabled={collegeCategory.disabled} key={subCat.value}>
+                      <Menu.Item
+                        disabled={collegeCategory.disabled}
+                        key={subCat.value}
+                      >
                         <Link
                           // key={l+38}
                           href={{
@@ -137,11 +151,15 @@ const Navbar = ({ modalOpen, logoutOpen }) => {
           ) : (
             <Link
               href={menu.to}
-              key={i+873}
+              key={i + 873}
               className={cn(
                 "flex gap-1 flex-col items-center justify-center p-1.5 h-full rounded md:hidden",
                 {
-                  "bg-slate-100": currentPathName == '/report/generate' && menu.to == "/report"? true: currentPathName === menu.to,
+                  "bg-slate-100":
+                    currentPathName == "/report/generate" &&
+                    menu.to == "/report"
+                      ? true
+                      : currentPathName === menu.to,
                 }
               )}
             >
@@ -163,7 +181,11 @@ const Navbar = ({ modalOpen, logoutOpen }) => {
             width={"120%"}
             radius={5}
           >
-            <Menu shadow='lg' withArrow offset={{mainAxis: 10, crossAxis: -20}}>
+            <Menu
+              shadow='lg'
+              withArrow
+              offset={{ mainAxis: 10, crossAxis: -20 }}
+            >
               <Menu.Target>
                 <div className='flex flex-col items-center justify-center p-1.5 h-full rounded md:hidden'>
                   <Image
@@ -247,9 +269,9 @@ const Navbar = ({ modalOpen, logoutOpen }) => {
             store={collegeCategorySelect}
             resetSelectionOnOptionHover
             withinPortal={false}
-            shadow="md"
+            shadow='md'
             transitionProps={{
-              transition: "pop"
+              transition: "pop",
             }}
             onOptionSubmit={(v) => {
               dispatch(selectCategory(v));
