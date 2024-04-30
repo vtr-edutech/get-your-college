@@ -11,7 +11,6 @@ import { BsListCheck } from "react-icons/bs";
 import { cn } from "@/utils";
 import { Tooltip } from "@mantine/core";
 import Image from "next/image";
-import svv from " engg.svg"
 
 const FEATURES = [
   {
@@ -113,7 +112,6 @@ export default function Home() {
           <h1 className='md:text-6xl text-5xl text-center font-bold'>
             <span className='relative text-sky-500'>
               Engineering{" "}
-              <img src={svv} className="absolute top-0 left-0" alt="" />
               {/* <span className='text-lg absolute top-0 left-[95%] text-sky-600'>
               (TNEA)
             </span> */}
