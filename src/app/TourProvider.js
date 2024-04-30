@@ -15,7 +15,7 @@ export default function TourProvider({ children }) {
 
   const [hasNavTourBeenPlayed, setHasNavTourBeenPlayed] = useLocalStorage({
     key: "hasNavTourPlayed",
-    defaultValue: "false",
+    defaultValue: false,
   });
 
   return (
@@ -100,13 +100,7 @@ export default function TourProvider({ children }) {
               <p>Use these filters to choose your medical college</p>
               <div className='flex justify-between items-center'>
                 <button
-                  onClick={() => {
-                    setCurrentStep(1);
-                  }}
-                >
-                  ‹ Prev
-                </button>
-                <button
+                  className="ml-auto"
                   onClick={() => {
                     setIsOpen(false);
                     setHasMedicalTourPlayed(true);

@@ -55,7 +55,8 @@ export default function Med() {
   });
 
   useEffect(() => {
-    if (!hasMedicalTourPlayed || hasMedicalTourPlayed != "true" && !isOpen) {
+    const hasMedicalTourPlayed = localStorage.getItem("hasMedicalPlayed");
+    if ((!hasMedicalTourPlayed || hasMedicalTourPlayed != "true") && !isOpen) {
       setCurrentStep(3);
       setIsOpen(true);
     }
