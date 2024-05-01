@@ -12,6 +12,7 @@ import axios from "axios";
 function CutoffCalculator() {
   const [cutoff, setCutoff] = useState(0);
   const { loading, userInfo } = useUserInfo();
+  const [downloading, setDownloading] = useState(false)
 
   const pRef = useRef();
   const cRef = useRef();
@@ -35,6 +36,7 @@ function CutoffCalculator() {
 
   const handlePDF = async () => {
     try {
+      setDownloading(true);
       const response = await axios({
         url: "/api/generate-pdf",
         method: "POST",
@@ -56,14 +58,23 @@ function CutoffCalculator() {
       const url = window.URL.createObjectURL(blob);
       const a = document.createElement("a");
       a.href = url;
-      a.download = "example.pdf";
+      a.download = `${
+        userInfo?.firstName
+          ? userInfo.firstName + " " + (userInfo.lastName ?? "")
+          : "Student"
+      } - Cutoff Calculation.pdf`;
       document.body.appendChild(a);
       a.click();
       document.body.removeChild(a);
-
     } catch (error) {
       console.log("🚀 ~ handlePDF ~ error:", error);
-      toast.error("Server erro");
+      toast.error(
+        error.response?.data?.error ??
+          error.message ??
+          "Unexpected error in generating PDF!"
+      );
+    } finally {
+      setDownloading(false)
     }
   };
 
@@ -81,6 +92,11 @@ function CutoffCalculator() {
     }
     if (marks.length == 2) {
       nextFocusRef.current.focus();
+    }
+    if (parseFloat(marks) > 100) {
+      e.currentTarget.value = "";
+      toast.error("Invalid marks!");
+      return;
     }
     handleCutoff();
   };
@@ -210,7 +226,7 @@ function CutoffCalculator() {
               Download Report
             </div>
           }
-          className='py-2 col-span-3 bg-mantine-blue'
+          className={`py-2 col-span-3 bg-mantine-blue ${downloading? 'opacity-60 pointer-events-none': ''}`}
           asButton
           onClick={handlePDF}
         />
