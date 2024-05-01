@@ -38,12 +38,20 @@ function CutoffCalculator() {
       const response = await axios({
         url: "/api/generate-pdf",
         method: "POST",
+        responseType: "blob",
         data: {
-          hi: "hel;",
+          name: userInfo?.firstName
+            ? userInfo.firstName + " " + (userInfo.lastName ?? "")
+            : "Student",
+          registerNo: userInfo?.registerNo ?? "",
+          physics: pRef.current.value ?? 0,
+          chemistry: cRef.current.value ?? 0,
+          maths: mRef.current.value ?? 0,
+          cutoff: cutoff,
+          type: "cutoff",
         },
-        responseType: "blob"
       });
-
+      console.log(response);
       const blob = new Blob([response.data], { type: "application/pdf" });
       const url = window.URL.createObjectURL(blob);
       const a = document.createElement("a");
