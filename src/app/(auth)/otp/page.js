@@ -33,8 +33,7 @@ const Login = () => {
     } catch (error) {
       console.log(error);
       toast.error(error.response.data.error ?? error.message);
-    } finally {
-      setIsOTPProvided(false);
+      setIsOTPProvided(false)
     }
   };
 

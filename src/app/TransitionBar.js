@@ -3,5 +3,5 @@
 import NextTransitionBar from "next-transition-bar"
 
 export default function TransitionBar() {
-    return <NextTransitionBar />
+    return <NextTransitionBar height={5} />
 }

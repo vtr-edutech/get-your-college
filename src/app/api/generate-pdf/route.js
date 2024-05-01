@@ -223,6 +223,7 @@ export async function POST(req) {
     }
 
     if (data.type === "choice") {
+        // console.log(data.colleges)
         buffer = await renderToBuffer(
           <Document
             author='Get Your College'
@@ -276,7 +277,7 @@ export async function POST(req) {
                 <Text
                   style={{
                     fontWeight: "medium",
-                    fontSize: "9px",
+                    fontSize: "10px",
                     textAlign: "left",
                     width: "11%",
                     paddingLeft: "5px",
@@ -287,7 +288,7 @@ export async function POST(req) {
                 <Text
                   style={{
                     fontWeight: "medium",
-                    fontSize: "9px",
+                    fontSize: "10px",
                     textAlign: "left",
                     width: "45%",
                     paddingLeft: "5px",
@@ -298,7 +299,7 @@ export async function POST(req) {
                 <Text
                   style={{
                     fontWeight: "medium",
-                    fontSize: "9px",
+                    fontSize: "10px",
                     textAlign: "left",
                     width: "33%",
                     paddingLeft: "5px",
@@ -307,63 +308,84 @@ export async function POST(req) {
                   Branch Name
                 </Text>
               </View>
-              <View
-                style={{
-                  display: "flex",
-                  flexDirection: "row",
-                  width: "100%",
-                  justifyContent: "space-around",
-                  alignItems: "center",
-                  padding: "5px",
-                  borderBottom: "1px solid #e2e8f0",
-                  backgroundColor: "white",
-                }}
-              >
-                <Text
+              {data.colleges.map((college, i) => (
+                <View
                   style={{
-                    fontWeight: "medium",
-                    fontSize: "8px",
-                    textAlign: "left",
-                    width: "11%",
-                    paddingLeft: "5px",
+                    display: "flex",
+                    flexDirection: "row",
+                    width: "100%",
+                    justifyContent: "space-around",
+                    alignItems: "center",
+                    padding: "5px",
+                    borderBottom: "1px solid #e2e8f0",
+                    backgroundColor: "white",
                   }}
+                  key={i}
                 >
-                  1
-                </Text>
-                <Text
-                  style={{
-                    fontWeight: "medium",
+                  <Text
+                    style={{
+                      fontWeight: "medium",
+                      fontSize: "9px",
+                      textAlign: "left",
+                      width: "11%",
+                      paddingLeft: "5px",
+                    }}
+                  >
+                    {i + 1}
+                  </Text>
+                  <Text
+                    style={{
+                      fontWeight: "medium",
+                      fontSize: "9px",
+                      textAlign: "left",
+                      width: "11%",
+                      paddingLeft: "5px",
+                    }}
+                  >
+                    {college["College Code"]}
+                  </Text>
+                  <Text
+                    style={{
+                      fontWeight: "medium",
+                      fontSize: "9px",
+                      textAlign: "left",
+                      width: "45%",
+                      paddingLeft: "5px",
+                    }}
+                  >
+                    {college["College Name"]}
+                  </Text>
+                  <Text
+                    style={{
+                      fontWeight: "medium",
+                      fontSize: "9px",
+                      textAlign: "left",
+                      width: "33%",
+                      paddingLeft: "5px",
+                    }}
+                  >
+                    {college["Branch Name"]}
+                  </Text>
+                </View>
+              ))}
+              <Link src='https://www.youtube.com/c/A2KDK' style={{
+                display: "flex",
+                alignItems: "center",
+                marginTop: "10px",
+                flexDirection: "row"
+              }}>
+                <Image alt='YT' style={{
+                    width: 22,
+                    height: 15
+                }} src={"https://www.getyourcollege.com/yt.png"} />
+                <Text color="blue" style={{
                     fontSize: "8px",
-                    textAlign: "left",
-                    width: "11%",
-                    paddingLeft: "5px",
-                  }}
-                >
-                  1
+                }}>
+                  {" "}
+                  Official Youtube Channel | Admission & Counselling - Guides,
+                  Updates
                 </Text>
-                <Text
-                  style={{
-                    fontWeight: "medium",
-                    fontSize: "8px",
-                    textAlign: "left",
-                    width: "45%",
-                    paddingLeft: "5px",
-                  }}
-                >
-                  Anna University Group of studies blah blah blah, Chennai, CEG campus
-                </Text>
-                <Text
-                  style={{
-                    fontWeight: "medium",
-                    fontSize: "8px",
-                    textAlign: "left",
-                    width: "33%",
-                    paddingLeft: "5px",
-                  }}
-                >
-                  INFORMATION TECHNOLOGY (SS)
-                </Text>
-              </View>
+              </Link>
             </Page>
           </Document>
         );

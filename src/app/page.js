@@ -74,17 +74,18 @@ export default function Home() {
           quality={100}
           alt="Get Your College logo"
         /> */}
-        <div className='flex gap-6'>
+        <div className='flex gap-10 md:justify-start justify-center items-center md:gap-6'>
           <Image
             src={"/logo.png"}
             width={45}
             height={45}
             quality={100}
+            className="md:w-[unset] md:h-[unset] w-[15%] h-full"
             alt='Get Your College logo'
           />
-          <h1 className='text-2xl flex flex-col font-semibold'>
+          <h1 className='md:text-2xl text-lg text-center flex flex-col font-semibold'>
             Get Your College
-            <span className='font-normal text-base'>
+            <span className='font-normal text-sm md:text-base'>
               Quantum shift to your career
             </span>
           </h1>
@@ -98,7 +99,7 @@ export default function Home() {
             </div>
           }
           to='/login'
-          className='bg-mantine-blue w-fit px-4 py-2 md:px-7 md:py-2'
+          className='bg-mantine-blue w-fit hidden md:block px-4 py-2 md:px-7 md:py-2'
         />
       </header>
 

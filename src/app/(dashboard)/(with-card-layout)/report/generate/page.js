@@ -13,11 +13,13 @@ import Link from "next/link";
 import { BsChevronLeft } from "react-icons/bs";
 import { useUserInfo } from "@/utils/hooks";
 import { toast } from "react-toastify";
+import axios from "axios";
 export const dynamic = "force-dynamic";
 
 const Generate = () => {
   const [collegPrefernces, setCollegPrefernces] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState();
+  const [downloading, setDownloading] = useState(false);
   const pdfComponentRef = useRef();
   const { data } = useSession();
   const { loading, userInfo } = useUserInfo()
@@ -33,7 +35,47 @@ const Generate = () => {
     }
     setSelectedCategory(localStorage.getItem("Cat") ?? "NA");
   }, []);
-  // console.log("🚀 ~ Generate ~ preferredColleges:", preferredColleges)
+  
+  const handlePDF = async () => {
+    try {
+      setDownloading(true);
+      const response = await axios({
+        url: "/api/generate-pdf",
+        method: "POST",
+        responseType: "blob",
+        data: {
+          name: userInfo?.firstName
+            ? userInfo.firstName + " " + (userInfo.lastName ?? "")
+            : "Student",
+          registerNo: userInfo?.registerNo ?? '',
+          colleges: collegPrefernces,
+          type: "choice",
+        },
+      });
+      console.log(response);
+      const blob = new Blob([response.data], { type: "application/pdf" });
+      const url = window.URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = `${
+        userInfo?.firstName
+          ? userInfo.firstName + " " + (userInfo.lastName ?? "")
+          : "Student"
+      } - Choice List.pdf`;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+    } catch (error) {
+      console.log("🚀 ~ handlePDF ~ error:", error);
+      toast.error(
+        error.response?.data?.error ??
+          error.message ??
+          "Unexpected error in generating PDF!"
+      );
+    } finally {
+      setDownloading(false);
+    }
+  };
   
   useEffect(() => {
     if (
@@ -71,7 +113,7 @@ const Generate = () => {
         </div>
       ) : (
         <>
-          <div className='fixed left-full'>
+          {/* <div className='fixed left-full'>
             <PDFExport
               ref={pdfComponentRef}
               fileName={
@@ -134,7 +176,8 @@ const Generate = () => {
                 </a>
               </div>
             </PDFExport>
-          </div>
+          </div> */}
+
           <Link href='/report' className="text-blue-600 font-medium flex gap-2 items-center text-base">
             <BsChevronLeft size={14} /> Edit Colleges List
           </Link>
@@ -169,14 +212,9 @@ const Generate = () => {
                 Download Report
               </span>
             }
-            className='w-fit px-4 bg-mantine-blue ml-auto py-2'
+            className={`${downloading? 'opacity-60 pointer-events-none': ''} w-fit px-4 bg-mantine-blue ml-auto py-2`}
             asButton
-            onClick={() => {
-              setTimeout(() => {
-                console.log("Saving PDF?", pdfComponentRef.current);
-                pdfComponentRef.current.save();
-              }, 300);
-            }}
+            onClick={handlePDF}
           />
         </>
       )}
