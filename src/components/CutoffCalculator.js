@@ -7,6 +7,7 @@ import { toast } from "react-toastify";
 import { PDFExport } from "@progress/kendo-react-pdf";
 import { GrDocumentDownload } from "react-icons/gr";
 import Image from "next/image";
+import axios from "axios";
 
 function CutoffCalculator() {
   const [cutoff, setCutoff] = useState(0);
@@ -32,6 +33,32 @@ function CutoffCalculator() {
     );
   };
 
+  const handlePDF = async () => {
+    try {
+      const response = await axios({
+        url: "/api/generate-pdf",
+        method: "POST",
+        data: {
+          hi: "hel;",
+        },
+        responseType: "blob"
+      });
+
+      const blob = new Blob([response.data], { type: "application/pdf" });
+      const url = window.URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "example.pdf";
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+
+    } catch (error) {
+      console.log("🚀 ~ handlePDF ~ error:", error);
+      toast.error("Server erro");
+    }
+  };
+
   const handleMarkEntry = (e, inputRef, subjName, nextFocusRef) => {
     const marks = e.currentTarget.value;
     if (parseFloat(marks) < 0) {
@@ -48,7 +75,7 @@ function CutoffCalculator() {
       nextFocusRef.current.focus();
     }
     handleCutoff();
-  }
+  };
 
   useEffect(() => {
     if (
@@ -177,14 +204,12 @@ function CutoffCalculator() {
           }
           className='py-2 col-span-3 bg-mantine-blue'
           asButton
-          onClick={() => {
-            pdfRef.current.save();
-          }}
+          onClick={handlePDF}
         />
       </div>
 
       {/* For PDF */}
-      <div className='fixed left-full'>
+      {/* <div className='fixed left-full'>
         <PDFExport
           ref={pdfRef}
           margin={"1cm"}
@@ -338,7 +363,7 @@ function CutoffCalculator() {
             </tbody>
           </table>
         </PDFExport>
-      </div>
+      </div> */}
     </>
   );
 }
