@@ -34,7 +34,14 @@ const UserSchema = new Schema(
     district: String,
     pincode: String,
     dob: Date,
-    imageURL: String
+    imageURL: String,
+    cutoff: [
+      {
+        physics: Number,
+        chemistry: Number,
+        maths: Number
+      }
+    ]
   },
   { timestamps: true }
 );

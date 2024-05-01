@@ -1,18 +1,33 @@
 'use client'
 import ContentCard from "@/components/ContentCard";
 import Navbar from "@/components/Navbar";
-import React, { Suspense } from "react";
+import React, { Suspense, useEffect } from "react";
 import { useDisclosure } from '@mantine/hooks';
 import { Modal } from '@mantine/core';
 import RegisterForm from "@/components/RegisterForm";
 import NavBarLoader from "@/components/NavBarLoader";
 import { signOut } from "next-auth/react";
 import ErrorBoundary from "@/components/ui/ErrorBoundary";
+import { useUserInfo } from "@/utils/hooks";
+import { toast } from "react-toastify";
 
 const RootLayout = ({ children }) => {
   const [opened, { open, close }] = useDisclosure(false);
   const [logoutOpened, logoutHandlers] = useDisclosure(false);
-  // const { setCurrentStep, currentStep } = useTour();
+  const { loading, userInfo } = useUserInfo();
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      console.log("Interval being checked");
+      if (!loading && (!userInfo.firstName || !userInfo.registerNo)) {
+        toast.info("Please continue to register your details so we could guide you better!");
+        open();
+      }
+    }, 1000 * 60);
+
+    return () => clearInterval(interval)
+  },[userInfo, loading])
+
   return (
     <main className='flex min-h-screen justify-center w-full relative md:pt-12 p-2 md:pb-0 pb-16 md:pl-80 md:pr-12'>
         <Suspense fallback={<NavBarLoader />}>

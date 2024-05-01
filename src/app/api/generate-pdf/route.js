@@ -8,13 +8,21 @@ import {
   View,
   renderToBuffer
 } from "@joshuajaco/react-pdf-renderer-bundled";
+import { getServerSession } from "next-auth";
+import { authOptions } from "../auth/[...nextauth]/route";
+import UserModel from "@/models/UserModel";
+import ChoiceListModel from "@/models/ChoiceListModel";
 
 export async function POST(req) {
   try {
     const data = await req.json();
 
+    const userSession = await getServerSession(authOptions);
+    const userId = await userSession?.user?.id;
+
     let buffer;
     if (data.type === "cutoff") {
+        
         buffer = await renderToBuffer(
           <Document
             author="Get Your College"
@@ -220,10 +228,28 @@ export async function POST(req) {
             </Page>
           </Document>
         );
+
+        UserModel.findByIdAndUpdate(userId, {
+          $push: {
+            cutoff: {
+              physics: data.physics,
+              chemistry: data.chemistry,
+              maths: data.maths
+            }
+          }
+        }).then(result => {
+          if (result) {
+            console.log("CUTOFF: ", data.name + ' cutoff updated!');
+          } else {
+            console.log("CUTOFF: ", data.name + ' cutoff was not updated!');
+          }
+        }).catch(error => {
+          console.error("CUTOFF: ", data.firstName + ' ' + data.lastName + ' cutoff update failed!' + err);
+        });
     }
 
     if (data.type === "choice") {
-        // console.log(data.colleges)
+
         buffer = await renderToBuffer(
           <Document
             author='Get Your College'
@@ -398,6 +424,20 @@ export async function POST(req) {
             </Page>
           </Document>
         );
+
+        ChoiceListModel.create({
+          userId: userId,
+          list: data.colleges.map(college => ({
+            collegeCode: college["College Code"],
+            branchCode: college["Branch Code"]
+          }))
+        }).then(res => {
+          if (res) {
+            console.log("CHOICE: ", data.name + ' choice list updated!');
+          }
+        }).catch(err => {
+          console.error("CHOICE: ", data.name + ' choice list failed to update!' + err);
+        });
     }
 
     const headers = new Headers();
