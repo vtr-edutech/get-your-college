@@ -80,7 +80,7 @@ const Generate = () => {
   useEffect(() => {
     if (
       !loading &&
-      (!userInfo.firstName || !userInfo.lastName || !userInfo.registerNo)
+      (!userInfo.firstName || !userInfo.registerNo)
     ) {
       toast.error("Please enter details in settings to continue");
     }

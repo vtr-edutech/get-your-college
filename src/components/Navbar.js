@@ -204,8 +204,8 @@ const Navbar = ({ modalOpen, logoutOpen }) => {
                     width={24}
                     height={24}
                   />
-                  <p className='text-sm text-black/50'>
-                    {session?.user?.name || "User"}
+                  <p className='text-sm text-black/50 truncate max-w-16'>
+                    {session?.user?.name?.split(" ")[0] || "User"}
                   </p>
                 </div>
               </Menu.Target>
@@ -260,7 +260,7 @@ const Navbar = ({ modalOpen, logoutOpen }) => {
               // width={86}
             >
               <h4 className='text-ellipsis w-fit'>
-                Hi, {session?.user?.name || "User"}
+                Hi, {session?.user?.name?.split(" ")[0] || "User"}
               </h4>
             </Skeleton>
             <IoSettingsOutline
@@ -323,11 +323,14 @@ const Navbar = ({ modalOpen, logoutOpen }) => {
               </Combobox.Options>
             </Combobox.Dropdown>
           </Combobox>
-          <GoQuestion onClick={() => {
-            setHasNavTourBeenPlayed(false);
-            setIsOpen(true);
-            setCurrentStep(0);
-          }} className="absolute cursor-pointer -right-1 top-0 opacity-60" />
+          <GoQuestion
+            onClick={() => {
+              setHasNavTourBeenPlayed(false);
+              setIsOpen(true);
+              setCurrentStep(0);
+            }}
+            className='absolute cursor-pointer -right-1 top-0 opacity-60'
+          />
         </div>
 
         {/* Menu Section */}

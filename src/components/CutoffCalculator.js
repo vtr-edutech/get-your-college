@@ -4,9 +4,7 @@ import Button from "./ui/Button";
 import { useUserInfo } from "@/utils/hooks";
 import { Skeleton } from "@mantine/core";
 import { toast } from "react-toastify";
-import { PDFExport } from "@progress/kendo-react-pdf";
 import { GrDocumentDownload } from "react-icons/gr";
-import Image from "next/image";
 import axios from "axios";
 
 function CutoffCalculator() {
@@ -104,7 +102,7 @@ function CutoffCalculator() {
   useEffect(() => {
     if (
       !loading &&
-      (!userInfo.firstName || !userInfo.lastName || !userInfo.registerNo)
+      (!userInfo.firstName || !userInfo.registerNo)
     ) {
       toast.error("Please enter details in settings to continue");
     }

@@ -386,6 +386,12 @@ export async function POST(req) {
                   Updates
                 </Text>
               </Link>
+              <Text style={{
+                  fontSize: "8px",
+                  marginTop: "5px"
+              }}>
+                NOTE: This data is based on 2023 TNEA Vacancy list. Data available in this PDF may not exactly correspond to TNEA choice list
+              </Text>
             </Page>
           </Document>
         );
