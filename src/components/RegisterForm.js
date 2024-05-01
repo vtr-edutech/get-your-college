@@ -83,12 +83,16 @@ const RegisterForm = ({ closeFn }) => {
 
   useEffect(() => {
     if (userInfo._id) {
+      let dobToSet;
       const dob = userInfo.dob ? new Date(userInfo.dob) : "";
-      const dobToSet = dob
-        ? `${new Date(userInfo.dob).getFullYear()}-${
-            new Date(userInfo.dob).getMonth() + 1
-          }-${new Date(userInfo.dob).getDate().toString().padStart(2, "0")}`
-        : "";
+      if (dob) {
+        const now = new Date(dob);
+  
+        const day = ("0" + now.getDate()).slice(-2);
+        const month = ("0" + (now.getMonth() + 1)).slice(-2);
+  
+        dobToSet = now.getFullYear() + "-" + month + "-" + day;
+      }
       setIsChecked(true);
       reset({
         firstName: userInfo.firstName ?? "",

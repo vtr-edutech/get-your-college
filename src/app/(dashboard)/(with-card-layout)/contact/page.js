@@ -9,6 +9,7 @@ import { toast } from "react-toastify";
 import { GoPaperAirplane } from "react-icons/go";
 import Image from "next/image";
 import { IoLocationOutline } from "react-icons/io5";
+import { FaFacebook, FaInstagram, FaWhatsapp, FaYoutube } from "react-icons/fa6";
 
 const contactDetails = [
   {
@@ -85,53 +86,33 @@ const Contact = () => {
       </div>
 
       {/* Social Links */}
-      <div className='flex gap-4 w-full items-center justify-center flex-wrap shrink-0'>
+      <div className='flex md:gap-4 w-full items-center justify-center md:flex-wrap shrink-0'>
         <a
           href='https://www.youtube.com/@A2KDK'
           target='_blank'
           className='m-5'
         >
-          <Image
-            src={"/yt.png"}
-            width={60}
-            height={60}
-            alt='Youtube Channel - Know your College'
-          />
+          <FaYoutube size={32} color="#228be6" />
         </a>
         <a href='https://instagram.com' target='_blank' className='m-5'>
-          <Image
-            src={"/ig.png"}
-            width={60}
-            height={60}
-            alt='Instagram - Know your College'
-          />
+          <FaInstagram size={32} color="#228be6" />
         </a>
         <a href='https://facebook.com' target='_blank' className='m-5'>
-          <Image
-            src={"/fb.png"}
-            width={70}
-            height={70}
-            alt='Facebook - Know your College'
-          />
+          <FaFacebook size={32} color="#228be6" />
         </a>
         <a
           href='https://web.whatsapp.com/send?phone=8946082559&text&app_absent=0'
           target='_blank'
           className='m-5'
         >
-          <Image
-            src={"/wp.png"}
-            width={70}
-            height={70}
-            alt='WhatsApp - Know your College'
-          />
+          <FaWhatsapp size={32} color="#228be6" />
         </a>
       </div>
 
       {/* Contact form */}
       <form
         onSubmit={handleSubmit(sendMessage)}
-        className='flex md:gap-3 gap-5 md:flex-row flex-col mt-8 rounded outline outline-1 outline-gray-100 p-3 py-8 shadow'
+        className='flex md:gap-3 gap-5 md:flex-row flex-col mt-8 rounded md:outline md:outline-1 md:outline-gray-100 md:p-3 py-8 md:shadow'
       >
         {/* Name and email */}
         <div className='flex flex-col gap-6 items-center flex-1 w-full'>
@@ -207,6 +188,7 @@ const Contact = () => {
                 Send message <GoPaperAirplane />
               </div>
             }
+            className="bg-mantine-blue"
             asButton
           />
         </div>
