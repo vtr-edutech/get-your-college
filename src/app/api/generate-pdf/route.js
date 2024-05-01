@@ -390,7 +390,10 @@ export async function POST(req) {
                   fontSize: "8px",
                   marginTop: "5px"
               }}>
-                NOTE: This data is based on 2023 TNEA Vacancy list. Data available in this PDF may not exactly correspond to TNEA choice list
+                NOTE: This data is based on 2023 TNEA Vacancy list. 
+                Data available in this PDF may not exactly correspond to TNEA choice list that you may have generated.
+                Consider this PDF as a trial and a point of reference only. Make careful choices when selecting choice list 
+                during the time of couselling. Consider this choice list generation through Get Your College as a trial.
               </Text>
             </Page>
           </Document>

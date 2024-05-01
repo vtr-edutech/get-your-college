@@ -316,7 +316,7 @@ const Home = () => {
                 defaultValue={70}
               />
               {errors["MinCutoff"] && (
-                <p className='text-xs text-red-500 font-light absolute -top-4 left-0'>
+                <p className='text-xs text-red-500 font-light absolute -top-7 left-0'>
                   {errors["MinCutoff"].message}
                 </p>
               )}
