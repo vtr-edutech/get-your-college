@@ -195,10 +195,10 @@ function CutoffCalculator() {
             <div className='flex w-full justify-center items-center flex-col px-4'>
               <a href='https://getyourcollege.com'>
                 <Image
-                  src={"/logo.png"}
-                  width={175}
+                  src={"/logo_pdf.png"}
+                  width={200}
                   alt='Get Your College Logo'
-                  height={175}
+                  height={200}
                 />
               </a>
             </div>

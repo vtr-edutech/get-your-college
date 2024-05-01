@@ -89,7 +89,7 @@ const Generate = () => {
                 <div className='flex w-full justify-center items-center flex-col px-4'>
                   <a href='https://getyourcollege.com'>
                     <Image
-                      src={"/logo.png"}
+                      src={"/logo_pdf.png"}
                       width={175}
                       alt='Get Your College Logo'
                       height={175}

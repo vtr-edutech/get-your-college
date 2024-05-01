@@ -12,16 +12,17 @@ import { useDispatch } from "react-redux";
 import { toast } from "react-toastify";
 
 const boardOfStudies = [
-  { value: "TN", label: "TN (Samacheer Kalvi)" },
-  { value: "CBSE", label: "CBSE (Central Govt.)" },
+  { value: "TN", label: "State Board (TN State)" },
+  { value: "CBSE", label: "Central Board (CBSE)" },
   { value: "ICSE", label: "ICSE" },
-  { value: "AP", label: "AP (Andhra Pradhesh)" },
-  { value: "OTHER", label: "OTHER (Please mention)" },
+  { value: "AP", label: "Intermediate (AP State)" },
+  { value: "TG", label: "Andhra (Telangana)" },
+  { value: "OTHER", label: "Others (Please mention)" },
 ];
 const higherSecGroup = [
-  { label: "PHY | CHE | STATS | MATHS", value: "101" },
-  { label: "PHY | CHE | COMP SCI | MATHS", value: "102" },
   { label: "PHY | CHE | BIO | MATHS", value: "103" },
+  { label: "PHY | CHE | COMP SCI | MATHS", value: "102" },
+  { label: "PHY | CHE | STATS | MATHS", value: "101" },
   { label: "PHY | CHE | BIO-CHEM | MATHS", value: "104" },
   { label: "PHY | CHE | EEC | MATHS", value: "105" },
   { label: "PHY | CHE | MATHS | HOME SCI", value: "106" },
@@ -202,8 +203,8 @@ const RegisterForm = ({ closeFn }) => {
             {...register("registerNo", {
               required: { value: true, message: "Can't be empty" },
               maxLength: {
-                value: 7,
-                message: "Max length is 7 characters only",
+                value: 12,
+                message: "Max length is 12 characters only",
               },
               validate: (value) =>
                 value.trim() !== "" || "Invalid REgister No.",

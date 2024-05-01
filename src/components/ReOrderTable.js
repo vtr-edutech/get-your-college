@@ -6,6 +6,26 @@ import { FiTrash2 } from "react-icons/fi";
 const ReOrderTable = ({ collegPrefernces, setCollegPrefernces, withCutoff = true }) => {
   const controls = useDragControls();
 
+  const moveUp = (index) => {
+    if (index > 0) {
+      const newData = [...collegPrefernces];
+      const temp = newData[index - 1];
+      newData[index - 1] = newData[index];
+      newData[index] = temp;
+      setCollegPrefernces(newData);
+    }
+  };
+
+  const moveDown = (index) => {
+    if (index < collegPrefernces.length - 1) {
+      const newData = [...collegPrefernces];
+      const temp = newData[index + 1];
+      newData[index + 1] = newData[index];
+      newData[index] = temp;
+      setCollegPrefernces(newData);
+    }
+  };
+
   return (
     <Reorder.Group
       axis='y'
@@ -40,8 +60,8 @@ const ReOrderTable = ({ collegPrefernces, setCollegPrefernces, withCutoff = true
                     {college[`${localStorage.getItem("Cat")} - Cutoff`]}
                   </h2>
                   <div className='max-w-16 flex-1 flex flex-row items-center gap-2 text-sm min-w-12'>
-                    <BsChevronBarUp size={20} />
-                    <BsChevronBarDown size={20} />
+                    <BsChevronBarUp size={20} onClick={() => moveUp(i)} className={`cursor-pointer ${i == 0? 'opacity-30 pointer-events-none': ''}`} />
+                    <BsChevronBarDown size={20} onClick={() => moveDown(i)} className={`cursor-pointer ${i == collegPrefernces.length -1? 'opacity-30 pointer-events-none': ''}`} />
                     <FiTrash2 color="red" size={20} className="cursor-pointer" onClick={() => setCollegPrefernces(prev => prev.filter(state => state.id != college.id))} />
                   </div>
                 </>
