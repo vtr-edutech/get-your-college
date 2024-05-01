@@ -1,18 +1,21 @@
 import { Schema, model, models } from "mongoose";
 
-const ChoiceList = new Schema({
+const ChoiceList = new Schema(
+  {
     userId: {
-        type: Schema.Types.ObjectId,
-        ref: 'user'
+      type: Schema.Types.ObjectId,
+      ref: "user",
     },
     list: [
-        {
-            collegeCode: String,
-            branchCode: String,
-        }
-    ]
-});
+      {
+        collegeCode: String,
+        branchCode: String,
+      },
+    ],
+  },
+  { timestamps: true }
+);
 
-const ChoiceListModel = models['choicelist'] || model('choicelist', ChoiceList);
+const ChoiceListModel = models["choicelist"] || model("choicelist", ChoiceList);
 
 export default ChoiceListModel;

@@ -359,54 +359,7 @@ const Home = () => {
             {/* Dept */}
             <div className='grid col-span-2 md:flex md:flex-col md:gap-1 md:items-center relative'>
               {/* For now we are using multi select, maybe revert or use combo later */}
-              {/* <select
-                name='category'
-                defaultValue={"select"}
-                className='bg-card/10 outline rounded-md outline-1 p-2 py-2.5 w-full md:w-52 pr-8 md:focus:outline-1 focus:outline-2 outline-mantine-blue/50 md:outline-gray-200 placeholder:text-sm focus:outline-mantine-blue/60'
-                id='category'
-                {...register("Dept", {
-                  required: { value: true, message: "This field is required" },
-                  validate: (value) =>
-                    (value !== "select" &&
-                      (UNIQUE_COURSE_NAMES.includes(value) ||
-                        value === "All departments")) ||
-                    "Invalid value selected!",
-                })}
-              >
-                <option className='break-words w-52' value='select'>
-                  Select Department
-                </option>
-                <option className='break-words w-52' value='All departments'>
-                  All Departments
-                </option>
-                {UNIQUE_COURSE_NAMES.map((course, i) => (
-                  <option className='break-words w-52' key={i} value={course}>
-                    {course}
-                  </option>
-                ))}
-              </select> */}
-              {/* <Combobox
-                store={departmentCombobox}
-                onOptionSubmit={(value) => {
-                  setValue("Dept", value)
-                }}
-              >
-                <Combobox.Target>
-                  <input
-                    type='text'
-                    className='py-2 px-3 w-full md:w-[50%] outline outline-1 placeholder:text-sm outline-gray-300 focus:outline-gray-400 md:md:focus:outline-1 focus:outline-2 outline-mantine-blue/50 md:outline-gray-200 rounded-md focus:outline-1 md:focus:outline-mantine-blue/60'
-                    onClick={() => {
-                      departmentCombobox.openDropdown();
-                    }}
-                  />
-                  <Combobox.Chevron />
-                </Combobox.Target>
-                <Combobox.Dropdown>
-                  <Combobox.Options>
-
-                  </Combobox.Options>
-                </Combobox.Dropdown>
-              </Combobox> */}
+              {/* Deleted previous versions of multiselec.. venuma na, old repo landhu edthuko */}
               <p className='font-normal text-sm w-full text-left'>
                 Department:
               </p>

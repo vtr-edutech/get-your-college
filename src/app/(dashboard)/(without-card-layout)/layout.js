@@ -7,12 +7,14 @@ import RegisterForm from "@/components/RegisterForm";
 import NavBarLoader from "@/components/NavBarLoader";
 import { signOut } from "next-auth/react";
 import ErrorBoundary from "@/components/ui/ErrorBoundary";
+import MobileCategorySelector from "@/components/MobileCategorySelector";
 
 const RootLayout = ({ children }) => {
 const [opened, { open, close }] = useDisclosure(false);
 const [logoutOpened, logoutHandlers] = useDisclosure(false);
   return (
-    <main className='flex flex-col min-h-screen gap-4 w-full relative md:pt-12 p-2 md:pb-0 pb-12 md:pl-80 md:pr-12'>
+    <main className='flex flex-col min-h-screen gap-4 w-full relative pt-12 p-2 md:pb-0 pb-12 md:pl-80 md:pr-12'>
+      <MobileCategorySelector />
       <Suspense fallback={<NavBarLoader />}>
         <Navbar modalOpen={open} transitionProps={{ transition: "pop" }} logoutOpen={logoutHandlers.open} />
       </Suspense>

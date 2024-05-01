@@ -1,5 +1,6 @@
 "use client";
 
+import SkeletonLoader from "@/components/SkeletonLoader";
 import { getWindowSize, inter, tw } from "@/utils";
 import {
   MultiSelect,
@@ -9,7 +10,8 @@ import {
 } from "@mantine/core";
 import { useLocalStorage } from "@mantine/hooks";
 import { useTour } from "@reactour/tour";
-import { useEffect, useRef, useState } from "react";
+import Image from "next/image";
+import { Suspense, lazy, useEffect, useRef, useState } from "react";
 import { useForm } from "react-hook-form";
 import { LuSearch } from "react-icons/lu";
 
@@ -21,12 +23,21 @@ const COUNSELLING_CATEGORY = {
         "TN-MQ Telugu Minority",
         "TN-MQ Christian Minority",
         "TN-MQ Malayalam",
+        "TN-MQ NRI",
+        "TN-MQ NRI Lapsed",
     ],
     "MCC": [
         "AIQ",
         "Deemed"
     ]
 }
+
+const COMMUNITY = {
+  "STATE": ["OC", "BC", "BCM", "MBC & DNC", "SC", "SCA",	"ST"],
+  "MCC": ["OC", "OBC", "SC", "ST", "EWS"]
+}
+
+const MedicalCutoffTable = lazy(() => import("@/components/tables/MedicalCollegeCutoffTable"));
 
 export default function Med() {
   const {
@@ -50,8 +61,10 @@ export default function Med() {
   const [searchCriteria, setSearchCriteria] = useState({
     counsellingCategory: "STATE",
     state: "TN",
+    year: "2023",
     searchKey: "",
     districtKey: "",
+    filterBy: "NEET Mark"
   });
 
   useEffect(() => {
@@ -99,7 +112,7 @@ export default function Med() {
       >
         <div className='flex flex-col gap-12 md:gap-8'>
           {/* Category and Years container */}
-          <div className='flex flex-col md:flex-row gap-7 justify-center md:justify-start md:gap-16 md:flex-wrap'>
+          <div className='flex flex-col md:flex-row gap-7 justify-center md:justify-start md:gap-10 md:flex-wrap'>
             {/* Medical cutoff category choose */}
             <div className='flex flex-col justify-center gap-1 w-full md:w-[unset]'>
               <p className='font-normal text-sm'>Counselling category:</p>
@@ -147,7 +160,12 @@ export default function Med() {
               <Select
                 allowDeselect={false}
                 comboboxProps={{ shadow: "md" }}
-                value={searchCriteria?.communityCategory}
+                value={
+                  searchCriteria?.communityCategory ??
+                  COUNSELLING_CATEGORY[
+                    searchCriteria?.counsellingCategory ?? "STATE"
+                  ][0]
+                }
                 onChange={(value) => {
                   setSearchCriteria((prev) => ({
                     ...prev,
@@ -193,6 +211,31 @@ export default function Med() {
                 data={[{ label: "Tamil Nadu", value: "TN" }]} // for now only year 2023 is available. later add 2021 and 2022 too
               />
             </div>
+            {/* Year choose */}
+            <div className='flex flex-col justify-center gap-1'>
+              <p className='font-normal text-sm'>Year:</p>
+              <Select
+                ref={stateInputRef}
+                defaultValue='2023'
+                value={searchCriteria?.year}
+                onChange={(value) =>
+                  setSearchCriteria((prev) => ({ ...prev, year: value }))
+                }
+                allowDeselect={false}
+                checkIconPosition='right'
+                styles={{
+                  root: { width: "8rem" },
+                  input: {
+                    fontFamily: inter.style.fontFamily,
+                    borderColor:
+                      windowSize.width < 768
+                        ? tw.theme.colors["mantine-blue"]
+                        : tw.theme.colors.gray[200],
+                  },
+                }}
+                data={["2023"]} // for now only year 2023 is available. later add 2021 and 2022 too
+              />
+            </div>
           </div>
 
           <hr className='md:hidden self-center border-none border-0 bg-black/10 h-[1px] w-[90%]' />
@@ -201,7 +244,7 @@ export default function Med() {
           <div className='grid grid-cols-2 grid-rows-2 gap-2 gap-y-7 md:flex md:gap-2 md:justify-start md:items-center md:flex-wrap'>
             <div className='flex flex-col gap-1 items-center relative'>
               <p className='font-normal text-sm w-full text-left'>
-                Minimum Cut-off:
+                Minimum NEET Score:
               </p>
               <input
                 type='number'
@@ -265,7 +308,10 @@ export default function Med() {
               <Select
                 allowDeselect={false}
                 placeholder='Select department'
-                data={[{ label: "MBBS", value: "MBBS"}, { label: "BDS", value: "BDS", disabled: true }]}
+                data={[
+                  { label: "MBBS", value: "MBBS" },
+                  { label: "BDS", value: "BDS", disabled: true },
+                ]}
                 hiddenInputProps={{
                   ...register("Course", {
                     required: {
@@ -317,28 +363,32 @@ export default function Med() {
             <div className='grid col-span-2 md:flex md:flex-col md:gap-1 md:items-center relative'>
               <p className='font-normal text-sm w-full text-left'>Community:</p>
               <select
-                name='category'
+                name='community'
                 defaultValue={"Select"}
+                // value={getValues("community")}
+                // onChange={({ currentTarget: { value: x }}) =>
+                //   setValue("community", x)
+                // }
                 className='bg-card/10 outline p-2 py-2.5 text-sm pr-8 rounded-md outline-[0.8px] md:focus:outline-1 focus:outline-2 outline-mantine-blue/50 md:outline-gray-200 placeholder:text-sm focus:outline-mantine-blue/60'
-                id='category'
-                {...register("Category", {
+                id='community'
+                {...register("community", {
                   required: { value: true, message: "This field is required" },
                   validate: (value) =>
-                    (value !== "select" &&
-                      ["OC", "OBC", "SC", "ST", "EWS"].includes(value)) ||
-                    "Invalid value selected!",
+                    value !== "select" || "Invalid value selected!",
                 })}
               >
                 <option value='select'>Select Category</option>
-                <option value='OC'>OC</option>
-                <option value='OBC'>OBC</option>
-                <option value='SC'>SC</option>
-                <option value='ST'>ST</option>
-                <option value='EWS'>EWS</option>
+                {COMMUNITY[searchCriteria?.counsellingCategory ?? "STATE"].map(
+                  (cat) => (
+                    <option key={Math.random()} value={cat}>
+                      {cat}
+                    </option>
+                  )
+                )}
               </select>
-              {errors["Category"] && (
+              {errors["community"] && (
                 <p className='text-xs text-red-500 font-light absolute -bottom-4 left-0'>
-                  {errors["Category"].message}
+                  {errors["community"].message}
                 </p>
               )}
             </div>
@@ -355,6 +405,65 @@ export default function Med() {
           </div>
         </div>
       </form>
+
+      {/* Results table */}
+      <div className='flex flex-col h-full w-full gap-4 items-center md:mt-2'>
+        {searchCriteria?.community ? (
+          <Suspense fallback={<SkeletonLoader />}>
+            <div className='flex md:flex-row flex-col w-full mt-8 gap-2 justify-between items-center'>
+              {/* College name or code search */}
+              <input
+                type='search'
+                name='searchKey'
+                placeholder='Search by college name, college code, etc.'
+                id='search'
+                className='py-2 px-3 w-full md:w-[50%] outline outline-1 placeholder:text-sm outline-gray-300 focus:outline-gray-400 md:outline-gray-200 rounded-md focus:outline-1 md:focus:outline-mantine-blue/60'
+                onInput={(e) =>
+                  setSearchCriteria({
+                    ...searchCriteria,
+                    searchKey: e.currentTarget.value,
+                  })
+                }
+              />
+              <SegmentedControl
+                label={"Filter By"}
+                value={searchCriteria.filterBy}
+                color='blue'
+                styles={{
+                  root: { width: window.innerWidth < 768 ? "100%" : "unset" },
+                }}
+                onChange={(value) =>
+                  setSearchCriteria((prev) => ({ ...prev, filterBy: value }))
+                }
+                data={[
+                  {
+                    label: "By State Rank",
+                    value: "State Rank",
+                  },
+                  {
+                    label: "By NEET Mark",
+                    value: "NEET Mark",
+                  },
+                ]}
+              />
+            </div>
+            <MedicalCutoffTable searchCriteria={searchCriteria} />
+          </Suspense>
+        ) : (
+          <>
+            <p className='text-sm font-light text-gray-500 mt-4'>
+              Begin search by entering details and Go
+            </p>
+            <Image
+              src={"/home-illustration.png"}
+              width={220}
+              height={0}
+              className='outline'
+              alt='Illustration Search'
+            />
+          </>
+        )}
+      </div>
     </>
   );
 }

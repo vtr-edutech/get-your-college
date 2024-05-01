@@ -63,7 +63,7 @@ const FeatureCard = ({ icon: Icon, title, color }) => {
 
 export default function Home() {
   return (
-    <main className='flex min-h-screen flex-col items-center w-full'>
+    <main className='flex min-h-screen flex-col items-center w-full bg-[url("/bg.jpg")] bg-no-repeat bg-fixed bg-opacity-30'>
       {/* Header */}
       <header className='flex w-full items-center justify-between md:px-8 px-5 py-4 md:py-6'>
         {/* Logo here */}

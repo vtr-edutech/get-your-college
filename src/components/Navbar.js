@@ -129,12 +129,13 @@ const Navbar = ({ modalOpen, logoutOpen }) => {
                 </button>
               </Menu.Target>
               <Menu.Dropdown>
-                {COLLEGE_CATEGORIES.map((collegeCategory, k) => (
+                <Menu.Label>
+                  {collegeCategoryDisplay.name}
+                </Menu.Label>
                   <>
-                    <Menu.Label key={k + 10}>{collegeCategory.name}</Menu.Label>
-                    {collegeCategory.subcategories.map((subCat, l) => (
+                    {collegeCategoryDisplay.subcategories.map((subCat, l) => (
                       <Menu.Item
-                        disabled={collegeCategory.disabled}
+                        disabled={collegeCategoryDisplay.disabled}
                         key={subCat.value}
                       >
                         <Link
@@ -145,9 +146,6 @@ const Navbar = ({ modalOpen, logoutOpen }) => {
                               t: subCat.value,
                             },
                           }}
-                          onClick={() =>
-                            dispatch(selectCategory(collegeCategory.value))
-                          }
                           prefetch={false}
                         >
                           {subCat.name}
@@ -155,7 +153,7 @@ const Navbar = ({ modalOpen, logoutOpen }) => {
                       </Menu.Item>
                     ))}
                   </>
-                ))}
+                {/* {COLLEGE_CATEGORIES.map((collegeCategory, k) => ( */}
               </Menu.Dropdown>
             </Menu>
           ) : (
