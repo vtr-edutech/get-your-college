@@ -9,12 +9,46 @@ import "@mantine/core/styles.css";
 import StoreProvider from "./StoreProvider";
 import TourProvider from "./TourProvider";
 import TransitionBar from "./TransitionBar";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: `${PROJECT_NAME_TITLE_CASE} | You deserve the best`,
-  description: "Search best colleges for you quicker!",
+  description: "Your complete guidance for Engineering & Medical College Counselling",
+  generator: "Next.js",
+  applicationName: "Get Your College",
+  // referrer: "origin-when-cross-origin",
+  keywords: [
+    "TNEA",
+    "Get Your College",
+    "College",
+    "Medical",
+    "Engineering",
+    "Colleges",
+    "Dinesh Kumar",
+    "Counselling",
+  ],
+  authors: [
+    { name: "Kartheeshwaran" },
+    { name: "Dinesh Kumar", url: "https://www.youtube.com/c/A2KDK" },
+  ],
+  creator: "Sachin",
+  publisher: "Sachin",
+  metadataBase: new URL("https://www.getyourcollege.com"),
+  robots: {
+    index: false,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: false,
+      noimageindex: false,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -30,6 +64,7 @@ export default function RootLayout({ children }) {
               <MantineProvider>
                 <TransitionBar />
                 {children}
+                <Analytics />
               </MantineProvider>
             </TourProvider>
           </StoreProvider>

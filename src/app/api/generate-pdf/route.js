@@ -424,7 +424,7 @@ export async function POST(req) {
             </Page>
           </Document>
         );
-
+        
         ChoiceListModel.create({
           userId: userId,
           list: data.colleges.map(college => ({
