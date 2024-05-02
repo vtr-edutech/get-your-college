@@ -19,13 +19,20 @@ const RootLayout = ({ children }) => {
   const { loading, userInfo } = useUserInfo();
 
   useEffect(() => {
-    const interval = setInterval(() => {
+    let interval;
+
+    const intervalFunc = () => {
       console.log("Interval being checked");
       if (!loading && (!userInfo.firstName || !userInfo.registerNo)) {
         toast.info("Please continue to register your details so we could guide you better!");
         open();
+      } else {
+        console.log("Stopping interval as user data is present");
+        clearInterval(interval);
       }
-    }, 1000 * 60);
+    }
+
+    interval = setInterval(intervalFunc, 1000 * 60);
 
     return () => clearInterval(interval)
   },[userInfo, loading]);

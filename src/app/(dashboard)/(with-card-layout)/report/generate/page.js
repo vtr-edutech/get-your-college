@@ -26,7 +26,7 @@ const Generate = () => {
       const preferredColleges = preferredCollegesId.map((id) =>
         collegeData['GC'].find((college) => college.id == id)
       );
-      console.log("🚀 ~ useEffect ~ preferredColleges:", preferredColleges)
+      
       setCollegPrefernces(preferredColleges);
     }
     setSelectedCategory(localStorage.getItem("Cat") ?? "NA");
@@ -48,7 +48,7 @@ const Generate = () => {
           type: "choice",
         },
       });
-      console.log(response);
+      
       const blob = new Blob([response.data], { type: "application/pdf" });
       const url = window.URL.createObjectURL(blob);
       const a = document.createElement("a");

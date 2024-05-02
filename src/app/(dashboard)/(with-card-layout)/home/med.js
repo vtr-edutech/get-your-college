@@ -3,10 +3,8 @@
 import SkeletonLoader from "@/components/SkeletonLoader";
 import { getWindowSize, inter, tw } from "@/utils";
 import {
-  MultiSelect,
   SegmentedControl,
   Select,
-  useCombobox,
 } from "@mantine/core";
 import { useLocalStorage } from "@mantine/hooks";
 import { useTour } from "@reactour/tour";
@@ -17,14 +15,14 @@ import { LuSearch } from "react-icons/lu";
 
 const COUNSELLING_CATEGORY = {
     "STATE": [
-        "TN-GQ 92.5",
-        "TN-GQ 7.5",
-        "TN-MQ General",
-        "TN-MQ Telugu Minority",
-        "TN-MQ Christian Minority",
-        "TN-MQ Malayalam",
-        "TN-MQ NRI",
-        "TN-MQ NRI Lapsed",
+        { label: "TN-GQ 92.5", value: "GQ 92.5" },
+        { label: "TN-GQ 7.5", value: "GQ 7.5", disabled: true },
+        { label: "TN-MQ General", value: "MQ General" },
+        { label: "TN-MQ Telugu Minority", value: "MQ Telugu" },
+        { label: "TN-MQ Christian Minority", value: "MQ Christian" },
+        { label: "TN-MQ Malayalam", value: "MQ Malayalam" },
+        { label: "TN-MQ NRI", value: "MQ NRI" },
+        { label: "TN-MQ NRI Lapsed", value: "MQ NRI Lapsed" },
     ],
     "MCC": [
         "AIQ",
@@ -136,9 +134,10 @@ export default function Med() {
                   setSearchCriteria((prev) => ({
                     ...prev,
                     counsellingCategory: value,
+                    filterBy: value == "STATE" ? "NEET Mark" : "All India Rank",
                     communityCategory:
                       value == "STATE"
-                        ? COUNSELLING_CATEGORY.STATE[0]
+                        ? COUNSELLING_CATEGORY.STATE[0].value
                         : COUNSELLING_CATEGORY.MCC[0],
                   }))
                 }
@@ -164,7 +163,7 @@ export default function Med() {
                   searchCriteria?.communityCategory ??
                   COUNSELLING_CATEGORY[
                     searchCriteria?.counsellingCategory ?? "STATE"
-                  ][0]
+                  ][0].value
                 }
                 onChange={(value) => {
                   setSearchCriteria((prev) => ({
@@ -198,6 +197,7 @@ export default function Med() {
                 defaultValue='TN'
                 allowDeselect={false}
                 checkIconPosition='right'
+                comboboxProps={{ shadow: "xl" }}
                 styles={{
                   root: { width: "8rem" },
                   input: {
@@ -217,6 +217,7 @@ export default function Med() {
               <Select
                 ref={stateInputRef}
                 defaultValue='2023'
+                comboboxProps={{ shadow: "xl" }}
                 value={searchCriteria?.year}
                 onChange={(value) =>
                   setSearchCriteria((prev) => ({ ...prev, year: value }))
@@ -427,7 +428,11 @@ export default function Med() {
               />
               <SegmentedControl
                 label={"Filter By"}
-                value={searchCriteria.filterBy}
+                value={
+                  searchCriteria?.counsellingCategory == "STATE"
+                    ? searchCriteria.filterBy
+                    : "All India Rank"
+                }
                 color='blue'
                 styles={{
                   root: { width: window.innerWidth < 768 ? "100%" : "unset" },
@@ -435,16 +440,20 @@ export default function Med() {
                 onChange={(value) =>
                   setSearchCriteria((prev) => ({ ...prev, filterBy: value }))
                 }
-                data={[
-                  {
-                    label: "By State Rank",
-                    value: "State Rank",
-                  },
-                  {
-                    label: "By NEET Mark",
-                    value: "NEET Mark",
-                  },
-                ]}
+                data={
+                  searchCriteria?.counsellingCategory == "STATE"
+                    ? [
+                        {
+                          label: "By State Rank",
+                          value: "State Rank",
+                        },
+                        {
+                          label: "By NEET Mark",
+                          value: "NEET Mark",
+                        },
+                      ]
+                    : ["All India Rank"]
+                }
               />
             </div>
             <MedicalCutoffTable searchCriteria={searchCriteria} />

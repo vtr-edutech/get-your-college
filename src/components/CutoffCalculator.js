@@ -17,8 +17,6 @@ function CutoffCalculator() {
   const mRef = useRef();
   const cutoffRef = useRef();
 
-  const pdfRef = useRef(null);
-
   const handleCutoff = () => {
     const answer = (
       parseFloat(pRef.current.value ?? 0) / 2 +
@@ -34,6 +32,18 @@ function CutoffCalculator() {
 
   const handlePDF = async () => {
     try {
+      if (
+        !parseFloat(pRef.current.value) ||
+        pRef.current.value == 0 ||
+        !parseFloat(cRef.current.value) ||
+        cRef.current.value == 0 ||
+        !parseFloat(mRef.current.value) ||
+        mRef.current.value == 0 ||
+        cutoff == 0
+      ) {
+        toast.error("Please check your subject marks");
+        return;
+      } 
       setDownloading(true);
       const response = await axios({
         url: "/api/generate-pdf",
@@ -44,14 +54,14 @@ function CutoffCalculator() {
             ? userInfo.firstName + " " + (userInfo.lastName ?? "")
             : "Student",
           registerNo: userInfo?.registerNo ?? "",
-          physics: pRef.current.value ?? 0,
-          chemistry: cRef.current.value ?? 0,
-          maths: mRef.current.value ?? 0,
+          physics: parseFloat(pRef.current.value ?? 0),
+          chemistry: parseFloat(cRef.current.value ?? 0),
+          maths: parseFloat(mRef.current.value ?? 0),
           cutoff: cutoff,
           type: "cutoff",
         },
       });
-      console.log(response);
+      
       const blob = new Blob([response.data], { type: "application/pdf" });
       const url = window.URL.createObjectURL(blob);
       const a = document.createElement("a");

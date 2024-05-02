@@ -9,7 +9,7 @@ const RootLayout = async ({ children }) => {
   if (session) redirect("/home");
 
   return (
-    <main className='flex min-h-screen flex-col items-center justify-center w-full'>
+    <main className='flex min-h-screen flex-col items-center justify-center w-full bg-[url("/bg.webp")] bg-[length:80%] bg-fixed'>
       {children}
     </main>
   );

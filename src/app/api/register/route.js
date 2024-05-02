@@ -73,16 +73,16 @@ export async function POST(req) {
         106 - PHY |CHE |MATHS | HOME SCI |
      */
 
-    userData.firstName = firstName;
-    userData.lastName = lastName;
-    userData.district = district;
-    userData.pincode = pincode;
+    userData.firstName = firstName?.trim();
+    userData.lastName = lastName?.trim();
+    userData.district = district?.trim();
+    userData.pincode = pincode?.trim();
     userData.dob = dob;
-    userData.gender = gender;
-    userData.group = group;
-    userData.email = email;
-    userData.boardOfStudy = BOS;
-    userData.registerNo = registerNo;
+    userData.gender = gender?.trim();
+    userData.group = group?.trim();
+    userData.email = email?.trim();
+    userData.boardOfStudy = BOS?.trim();
+    userData.registerNo = registerNo?.trim();
 
     await userData.save({ validateBeforeSave: false });
         console.log(

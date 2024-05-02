@@ -17,44 +17,100 @@ const CollegeSchema = new Schema({
       "SELF FINANCING ENGINEERING COLLEGES",
     ],
   },
-  cutoffCategory: {
-    type: String,
-    enum: ["GC", "SPF", "VOC"]
-  },
   courses: [
     {
-        courseCode: String,
-        courseName: String,
-        NBA: Boolean,
-        cutoff: {
-            OC: Number,
-            BC: Number,
-            BCM: Number,
-            MBC: Number,
-            SC: Number,
-            SCA: Number,
-            ST: Number
+      courseCode: String,
+      courseName: String,
+      NBA: Boolean,
+      cutoff: {
+        GC: {
+          OC: Number,
+          BC: Number,
+          BCM: Number,
+          MBC: Number,
+          SC: Number,
+          SCA: Number,
+          ST: Number,
         },
-        rank: {
-            OC: Number,
-            BC: Number,
-            BCM: Number,
-            MBC: Number,
-            SC: Number,
-            SCA: Number,
-            ST: Number
+        SPF: {
+          OC: Number,
+          BC: Number,
+          BCM: Number,
+          MBC: Number,
+          SC: Number,
+          SCA: Number,
+          ST: Number,
         },
-        vacancy: {
-            OC: Number,
-            BC: Number,
-            BCM: Number,
-            MBC: Number,
-            SC: Number,
-            SCA: Number,
-            ST: Number
+        VOC: {
+          OC: Number,
+          BC: Number,
+          BCM: Number,
+          MBC: Number,
+          SC: Number,
+          SCA: Number,
+          ST: Number,
         },
-    }
-  ]
+      },
+      rank: {
+        GC: {
+          OC: Number,
+          BC: Number,
+          BCM: Number,
+          MBC: Number,
+          SC: Number,
+          SCA: Number,
+          ST: Number,
+        },
+        SPF: {
+          OC: Number,
+          BC: Number,
+          BCM: Number,
+          MBC: Number,
+          SC: Number,
+          SCA: Number,
+          ST: Number,
+        },
+        VOC: {
+          OC: Number,
+          BC: Number,
+          BCM: Number,
+          MBC: Number,
+          SC: Number,
+          SCA: Number,
+          ST: Number,
+        },
+      },
+      vacancy: {
+        GC: {
+          OC: Number,
+          BC: Number,
+          BCM: Number,
+          MBC: Number,
+          SC: Number,
+          SCA: Number,
+          ST: Number,
+        },
+        SPF: {
+          OC: Number,
+          BC: Number,
+          BCM: Number,
+          MBC: Number,
+          SC: Number,
+          SCA: Number,
+          ST: Number,
+        },
+        VOC: {
+          OC: Number,
+          BC: Number,
+          BCM: Number,
+          MBC: Number,
+          SC: Number,
+          SCA: Number,
+          ST: Number,
+        },
+      },
+    },
+  ],
 });
 
 const CollegesModel = models["colleges"] || model("colleges", CollegeSchema);

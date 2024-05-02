@@ -1,0 +1,218 @@
+export const medicalMQData = [
+  {
+    "College Name":
+      "TRICHY SRM MEDICAL COLLEGE HOSPITAL & RESEARCH CENTRE, TRICHY",
+    "MQ Telugu - State Rank": 7788,
+    "MQ Telugu - NEET Mark": 267,
+    "MQ NRI - State Rank": 13148,
+    "MQ NRI - NEET Mark": 107,
+    "MQ NRI Lapsed - State Rank": 8961,
+    "MQ NRI Lapsed - NEET Mark": 232,
+  },
+  {
+    "College Name": "SRI MUTHUKUMARAN MEDICAL COLLEGE,CHENNAI",
+    "MQ Telugu - State Rank": 10062,
+    "MQ Telugu - NEET Mark": 199,
+    "MQ NRI Lapsed - State Rank": 13006,
+    "MQ NRI Lapsed - NEET Mark": 111,
+  },
+  {
+    "College Name":
+      "KARPAGAM FACULTY OF MEDICAL SCIENCES & RESEARCH, COIMBATORE",
+    "MQ Telugu - State Rank": 11296,
+    "MQ Telugu - NEET Mark": 163,
+    "MQ NRI - State Rank": 12757,
+    "MQ NRI - NEET Mark": 119,
+    "MQ NRI Lapsed - State Rank": 9686,
+    "MQ NRI Lapsed - NEET Mark": 210,
+  },
+  {
+    "College Name": "ARUNAI MEDICAL COLLEGE & HOSPITAL, TIRUVANNAMALAI",
+    "MQ Telugu - State Rank": 12194,
+    "MQ Telugu - NEET Mark": 137,
+    "MQ NRI Lapsed - State Rank": 13159,
+    "MQ NRI Lapsed - NEET Mark": 107,
+  },
+  {
+    "College Name":
+      "SRI VENKATESWARAA MEDICAL COLLEGE HOSPITAL AND RESEARCH INSTITUTE, CHENNAI  (PRIVATE UNIVERSITY)",
+    "MQ General - State Rank": 11092,
+    "MQ General - NEET Mark": 169,
+    "MQ Telugu - State Rank": 12939,
+    "MQ Telugu - NEET Mark": 113,
+  },
+  {
+    "College Name":
+      "SRINIVASAN MEDICAL COLLEGE & HOSPITAL, SAMAYAPURAM, TRICHY",
+    "MQ General - State Rank": 7562,
+    "MQ General - NEET Mark": 273,
+    "MQ Telugu - State Rank": 13024,
+    "MQ Telugu - NEET Mark": 111,
+    "MQ NRI - State Rank": 11905,
+    "MQ NRI - NEET Mark": 145,
+    "MQ NRI Lapsed - State Rank": 12703,
+    "MQ NRI Lapsed - NEET Mark": 121,
+  },
+  {
+    "College Name": "ANNAPOORNA MEDICAL COLLEGE & HOSPITAL, SALEM",
+    "MQ General - State Rank": 3777,
+    "MQ General - NEET Mark": 397,
+    "MQ Telugu - State Rank": 13093,
+    "MQ Telugu - NEET Mark": 109,
+    "MQ NRI Lapsed - State Rank": 12838,
+    "MQ NRI Lapsed - NEET Mark": 116,
+  },
+  {
+    "College Name":
+      "DHANALAKSHMI SRINIVASAN MEDICAL COLLEGE AND HOSPITAL, PERAMBALUR",
+    "MQ General - State Rank": 2512,
+    "MQ General - NEET Mark": 443,
+    "MQ Telugu - State Rank": 13116,
+    "MQ Telugu - NEET Mark": 108,
+    "MQ NRI - State Rank": 12218,
+    "MQ NRI - NEET Mark": 136,
+    "MQ NRI Lapsed - State Rank": 13157,
+    "MQ NRI Lapsed - NEET Mark": 107,
+  },
+  {
+    "College Name":
+      "DHANALAKSHMI SRINIVASAN INSTITUTE OF MEDICAL SCIENCES AND HOSPITAL, PERAMBALUR",
+    "MQ General - State Rank": 7515,
+    "MQ General - NEET Mark": 275,
+    "MQ Telugu - State Rank": 13116,
+    "MQ Telugu - NEET Mark": 108,
+    "MQ NRI Lapsed - State Rank": 11302,
+    "MQ NRI Lapsed - NEET Mark": 163,
+  },
+  {
+    "College Name": "PSG INSTITUTE OF MEDICAL SCIENCES, COIMBATORE",
+    "MQ General - State Rank": 1355,
+    "MQ General - NEET Mark": 496,
+    "MQ NRI - State Rank": 5269,
+    "MQ NRI - NEET Mark": 346,
+    "MQ NRI Lapsed - State Rank": 6268,
+    "MQ NRI Lapsed - NEET Mark": 315,
+  },
+  {
+    "College Name":
+      "KMCH INSTITUTE OF HEALTH SCIENCES AND RESEARCH, COIMBATORE",
+    "MQ General - State Rank": 1363,
+    "MQ General - NEET Mark": 495,
+    "MQ NRI - State Rank": 6727,
+    "MQ NRI - NEET Mark": 300,
+    "MQ NRI Lapsed - State Rank": 8264,
+    "MQ NRI Lapsed - NEET Mark": 253,
+  },
+  {
+    "College Name":
+      "VELAMMAL MEDICAL COLLEGE HOSPITAL AND RESEARCH INSTITUTE, MADURAI",
+    "MQ General - State Rank": 1482,
+    "MQ General - NEET Mark": 489,
+    "MQ NRI - State Rank": 9739,
+    "MQ NRI - NEET Mark": 208,
+    "MQ NRI Lapsed - State Rank": 12688,
+    "MQ NRI Lapsed - NEET Mark": 122,
+  },
+  {
+    "College Name":
+      "SREE MOOKAMBIKA INSTITUTE OF MEDICAL SCIENCES, KANYAKUMARI",
+    "MQ General - State Rank": 1840,
+    "MQ General - NEET Mark": 470,
+    "MQ Malayalam": 12006,
+    "MQ Malayalam - NEET Mark": 142,
+    "MQ NRI - State Rank": 13175,
+    "MQ NRI - NEET Mark": 107,
+    "MQ NRI Lapsed - State Rank": 10148,
+    "MQ NRI Lapsed - NEET Mark": 196,
+  },
+  {
+    "College Name":
+      "MELMARUVATHUR ADHIPARASAKTHI INSTITUTE OF MEDICAL SCIENCES AND RESEARCH, MELMARUVATHUR",
+    "MQ General - State Rank": 1934,
+    "MQ General - NEET Mark": 466,
+    "MQ NRI - State Rank": 11923,
+    "MQ NRI - NEET Mark": 144,
+    "MQ NRI Lapsed - State Rank": 13008,
+    "MQ NRI Lapsed - NEET Mark": 111,
+  },
+  {
+    "College Name":
+      "KARPAGA VINAYAGA INSTITUTE OF MEDICAL SCIENCES, MADURANTHAGAM",
+    "MQ General - State Rank": 2041,
+    "MQ General - NEET Mark": 461,
+    "MQ NRI - State Rank": 11983,
+    "MQ NRI - NEET Mark": 143,
+    "MQ NRI Lapsed - State Rank": 9851,
+    "MQ NRI Lapsed - NEET Mark": 204,
+  },
+  {
+    "College Name": "TAGORE MEDICAL COLLEGE AND HOSPITAL, CHENNAI",
+    "MQ General - State Rank": 2166,
+    "MQ General - NEET Mark": 456,
+    "MQ NRI Lapsed - State Rank": 13153,
+    "MQ NRI Lapsed - NEET Mark": 107,
+  },
+  {
+    "College Name":
+      "SWAMY VIVEKANANDHA MEDICAL COLLEGE HOSPITAL AND RESEARCH INSTITUTE",
+    "MQ General - State Rank": 2654,
+    "MQ General - NEET Mark": 438,
+    "MQ NRI Lapsed - State Rank": 10500,
+    "MQ NRI Lapsed - NEET Mark": 186,
+  },
+  {
+    "College Name":
+      "ST.PETERS MEDICAL COLLEGE  HOSPITAL AND RESEARCH INSTITUTE, KRISHNAGIRI",
+    "MQ General - State Rank": 2779,
+    "MQ General - NEET Mark": 433,
+    "MQ NRI Lapsed - State Rank": 12862,
+    "MQ NRI Lapsed - NEET Mark": 116,
+  },
+  {
+    "College Name": "NANDHA MEDICAL COLLEGE AND HOSPITAL, PERUNDURAI, ERODE",
+    "MQ General - State Rank": 3021,
+    "MQ General - NEET Mark": 424,
+    "MQ NRI - State Rank": 7355,
+    "MQ NRI - NEET Mark": 280,
+    "MQ NRI Lapsed - State Rank": 12891,
+    "MQ NRI Lapsed - NEET Mark": 115,
+  },
+  {
+    "College Name":
+      "PSP MEDICAL COLLEGE HOSPITAL AND RESEARCH INSTITUTE, KANCHEEPURAM",
+    "MQ General - State Rank": 3976,
+    "MQ General - NEET Mark": 389,
+    "MQ NRI Lapsed - State Rank": 12118,
+    "MQ NRI Lapsed - NEET Mark": 140,
+  },
+  {
+    "College Name": "INDIRA MEDICAL COLLEGE & HOSPITALS, THIRUVALLUR",
+    "MQ General - State Rank": 5198,
+    "MQ General - NEET Mark": 348,
+    "MQ NRI Lapsed - State Rank": 13034,
+    "MQ NRI Lapsed - NEET Mark": 111,
+  },
+  {
+    "College Name":
+      "DHANALAKSHMI SRINIVASAN INSTITUTE OFMEDICAL SCIENCES AND HOSPITAL, PERAMBALUR",
+    "MQ NRI Lapsed - State Rank": 8329,
+    "MQ NRI Lapsed - NEET Mark": 251,
+  },
+  {
+    "College Name": "MADHA MEDICAL COLLEGE AND HOSPITAL, THANDALAM, CHENNAI",
+    "MQ Christian - State Rank": 9466,
+    "MQ Christian - NEET Mark": 217,
+    "MQ NRI Lapsed - State Rank": 13177,
+    "MQ NRI Lapsed - NEET Mark": 107,
+  },
+  {
+    "College Name":
+      "PANIMALAR MEDICAL COLLEGE HOSPITAL & RESEARCH INSTITUTE, CHENNAI",
+    "MQ Christian - State Rank": 4643,
+    "MQ Christian - NEET Mark": 367,
+    "MQ NRI - State Rank": 13004,
+    "MQ NRI - NEET Mark": 111,
+    "MQ NRI Lapsed - State Rank": 7813,
+    "MQ NRI Lapsed - NEET Mark": 266,
+  },
+];
