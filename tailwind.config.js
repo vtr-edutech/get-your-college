@@ -9,7 +9,7 @@ module.exports = {
     extend: {
       colors: {
         card: "#F2F2F2",
-        background: "#EDEDED",
+        background: "#EFEFEF",
         "fill-black": "#3c3c3c",
         "fill-white": "#F0F0F0",
         input: "#f1f5f95a",

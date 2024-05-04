@@ -2,64 +2,11 @@ import Button from "@/components/ui/Button";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import { IoBookOutline } from "react-icons/io5";
 import { CiLogin } from "react-icons/ci";
-import { IoTimeOutline } from "react-icons/io5";
-import { LuMousePointerClick } from "react-icons/lu";
-import { TbHeartHandshake } from "react-icons/tb";
-import { CiSearch } from "react-icons/ci";
-import { FiCheckCircle } from "react-icons/fi";
-import { BsListCheck } from "react-icons/bs";
-import { cn } from "@/utils";
 import { Tooltip } from "@mantine/core";
 import Image from "next/image";
-
-const FEATURES = [
-  {
-    icon: ({ color }) => <CiSearch className={color} size={20} />,
-    title: "Cutoff & Ranking",
-    color: { text: "text-orange-500", bg: "bg-orange-200/40" },
-  },
-  {
-    icon: ({ color }) => <FiCheckCircle className={color} size={20} />,
-    title: "Predict Best College",
-    color: { text: "text-green-500", bg: "bg-green-200/40" },
-  },
-  {
-    icon: ({ color }) => <BsListCheck className={color} size={20} />,
-    title: "Choice List",
-    color: { text: "text-fuchsia-500", bg: "bg-fuchsia-200/40" },
-  },
-  {
-    icon: ({ color }) => <IoTimeOutline className={color} size={21} />,
-    title: "Timely updates",
-    color: { text: "text-sky-500", bg: "bg-sky-200/40" },
-  },
-  {
-    icon: ({ color }) => <LuMousePointerClick className={color} size={20} />,
-    title: "Ease of access",
-    color: { text: "text-red-500", bg: "bg-red-200/40" },
-  },
-  {
-    icon: ({ color }) => <TbHeartHandshake className={color} size={20} />,
-    title: "User-friendly interface",
-    color: { text: "text-teal-500", bg: "bg-teal-200/40" },
-  },
-];
-
-const FeatureCard = ({ icon: Icon, title, color }) => {
-  return (
-    <div
-      className={cn([
-        `flex items-center gap-4 md:gap-2 py-5 px-8 outline outline-1 outline-gray-200 shadow-sm rounded-md`,
-        color.bg,
-      ])}
-    >
-      <Icon color={color.text} />
-      <h3 className={"text-lg tracking-wide font-semibold text-black/60"}>
-        {title}
-      </h3>
-    </div>
-  );
-};
+import Link from "next/link";
+import WhyGYC from "@/components/WhySection";
+import SixFeatures from "@/components/SixFeatures";
 
 export default function Home() {
   return (
@@ -80,7 +27,7 @@ export default function Home() {
             width={45}
             height={45}
             quality={100}
-            className="md:w-[unset] md:h-[unset] w-[15%] h-full"
+            className='md:w-[unset] md:h-[unset] w-[15%] h-full'
             alt='Get Your College logo'
           />
           <h1 className='md:text-2xl text-lg text-center flex flex-col font-semibold'>
@@ -104,8 +51,8 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <div className='flex w-full min-h-[90vh] md:min-h-[80vh] items-center md:justify-center flex-col p-4 md:p-14 gap-6 md:gap-4'>
-        <h1 className='text-4xl md:text-6xl mt-4 font-bold text-center'>
+      <div className='flex w-full min-h-[90vh] md:min-h-[calc(95vh-8rem)] items-center md:justify-center flex-col p-4 md:p-14 gap-6 md:gap-4'>
+        <h1 className='text-4xl md:text-6xl font-bold text-center'>
           Your Complete Guidance for
         </h1>
 
@@ -230,24 +177,75 @@ export default function Home() {
       </div>
 
       {/* Why Get your college? */}
-      <div className='flex w-full min-h-screen md:min-h-[90vh] items-center flex-col p-4 md:p-14 gap-8'>
-        <h1 className='text-4xl md:text-5xl mt-4 font-bold text-center'>
-          Why choose <br /> Get Your College?
-        </h1>
-        <p className='text-lg'>
-          We provide compelling reasons for you to choose our service
-        </p>
+      <SixFeatures />
 
-        <div className='grid grid-cols-1 grid-flow-row md:grid-cols-3 md:grid-rows-2 gap-4 md:gap-12 md:w-[unset] w-full md:p-4'>
-          {FEATURES.map((feature, i) => (
-            <FeatureCard
-              key={i + 9831}
-              color={feature.color}
-              title={feature.title}
-              icon={feature.icon}
-            />
-          ))}
+      {/* Screenshots section */}
+      <WhyGYC />
+
+      {/* Meet him section */}
+
+      {/* What are you waiting for? */}
+      <div className='flex p-8 w-[80%] rounded-lg items-center justify-center flex-col gap-7 bg-card my-12'>
+        <p className='text-base'>What are you waiting for?</p>
+        <h1 className='text-4xl font-semibold'>
+          Kickstart your career with <br /> the best college for you!
+        </h1>
+        <Button
+          label={
+            <div className='flex gap-1 items-center group-hover:gap-2 transition-all'>
+              <MdOutlineArrowOutward />
+              <h2>Let&apos;s Get Started</h2>
+            </div>
+          }
+          className='rounded-sm group w-fit bg-sky-600 px-6 py-3 mt-8'
+          to='/login'
+        />
+      </div>
+
+      {/* Footer */}
+      <div className='bg-background/70 w-full mt-6 px-3 gap-12 justify-between items-start md:px-16 py-12 md:py-10 flex md:flex-row flex-col'>
+        <div className='grid place-items-center mt-4 h-full md:w-full'>
+          <Image
+            src={"/logo_new.png"}
+            width={180}
+            height={180}
+            quality={100}
+            alt='Get Your College logo'
+          />
         </div>
+
+        <div className='flex flex-col justify-center gap-8 mt-4 md:w-full'>
+          <h1 className='text-2xl font-semibold'>Get Your College</h1>
+          <div className='grid grid-cols-2 gap-2'>
+            <Link href={"/about"} className='hover:underline'>
+              About us ›
+            </Link>
+            <Link href={"/contact-us"} className='hover:underline'>
+              Contact us ›
+            </Link>
+            <Link href={"/privacy-policy"} className='hover:underline'>
+              Privacy Policy ›
+            </Link>
+            <Link href={"/terms"} className='hover:underline'>
+              Terms and Conditions›
+            </Link>
+          </div>
+        </div>
+
+        <div className='map grid w-full place-items-center md:max-w-[40%]'>
+          <iframe
+            src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.5327439932926!2d80.17000177484307!3d13.06537978725863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526165149482d5%3A0x5b78d8d1489b9dfc!2sVTR%20Edu%20Solutions!5e0!3m2!1sen!2sin!4v1714782617990!5m2!1sen!2sin'
+            width='100%'
+            height='300'
+            style={{ border: 0 }}
+            allowFullScreen=''
+            loading='lazy'
+            referrerPolicy='no-referrer-when-downgrade'
+          ></iframe>
+        </div>
+      </div>
+      <div className='div w-full grid place-items-center border-t-gray-300/80 py-3 border bg-background/50'>
+        <h1>© 2024 Get Your College™. All Rights Reserved.</h1>
       </div>
     </main>
   );

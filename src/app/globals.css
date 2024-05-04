@@ -12,11 +12,11 @@
   --pagination-active-bg: var(--mantine-primary-color-filled);
 }
 
-
 body {
   color: rgb(var(--foreground-rgb));
   overflow-y: scroll; /* Always show scrollbar, even if content doesn't overflow */
   margin-right: 0 !important; /* Ensure no right margin is added when scrollbar appears */
+  scroll-behavior: smooth;
 }
 
 @layer utilities {
@@ -35,7 +35,15 @@ body {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888; /* Color of the handle */
+  background: #a6a6a6c1; /* Color of the handle */
+}
+
+::-webkit-scrollbar-track-piece:start {
+  background: transparent;
+}
+
+::-webkit-scrollbar-track-piece:end {
+  background: transparent;
 }
 
 /* Handle on hover */
@@ -44,11 +52,14 @@ body {
 }
 
 kendo-pdf-document .reorder-header {
-    border: 1px dashed #e5e7eb;
-    padding: 6px;
+  border: 1px dashed #e5e7eb;
+  padding: 6px;
 }
 
-kendo-pdf-document h2, kendo-pdf-document a, kendo-pdf-document p, kendo-pdf-document table {
+kendo-pdf-document h2,
+kendo-pdf-document a,
+kendo-pdf-document p,
+kendo-pdf-document table {
   font-family: Inter, Arial, Helvetica, sans-serif;
 }
 
@@ -77,7 +88,7 @@ kendo-pdf-document .reorder-container {
   gap: 0px !important;
 }
 
-kendo-pdf-document a{
+kendo-pdf-document a {
   font-size: 8px;
   line-height: 12px;
 }
@@ -86,7 +97,8 @@ kendo-pdf-document a{
   display: none;
 }
 
-.mantine-datatable-empty-state, .mantine-datatable-loader {
+.mantine-datatable-empty-state,
+.mantine-datatable-loader {
   display: none !important;
 }
 

@@ -114,7 +114,7 @@ const Navbar = ({ modalOpen, logoutOpen }) => {
       <div className='fixed left-0 flex max-h-16 md:hidden justify-around items-center w-full bottom-0 z-50 px-2 py-2 shadow shadow-black/40 bg-white'>
         {MENU_ITEMS.slice(0, 4).map((menu, i) =>
           menu.subcategoryFrom ? (
-            <Menu key={i + 87} width={125} shadow='lg' withArrow>
+            <Menu key={Math.random()} width={125} shadow='lg' withArrow>
               <Menu.Target>
                 <button
                   href={menu.to}
@@ -129,37 +129,35 @@ const Navbar = ({ modalOpen, logoutOpen }) => {
                 </button>
               </Menu.Target>
               <Menu.Dropdown>
-                <Menu.Label>
-                  {collegeCategoryDisplay.name}
-                </Menu.Label>
-                  <>
-                    {collegeCategoryDisplay.subcategories.map((subCat, l) => (
-                      <Menu.Item
-                        disabled={collegeCategoryDisplay.disabled}
-                        key={subCat.value}
+                <Menu.Label>{collegeCategoryDisplay.name}</Menu.Label>
+                <>
+                  {collegeCategoryDisplay.subcategories.map((subCat, l) => (
+                    <Menu.Item
+                      disabled={collegeCategoryDisplay.disabled}
+                      key={subCat.value}
+                    >
+                      <Link
+                        // key={l+38}
+                        href={{
+                          pathname: "/colleges",
+                          query: {
+                            t: subCat.value,
+                          },
+                        }}
+                        prefetch={false}
                       >
-                        <Link
-                          // key={l+38}
-                          href={{
-                            pathname: "/colleges",
-                            query: {
-                              t: subCat.value,
-                            },
-                          }}
-                          prefetch={false}
-                        >
-                          {subCat.name}
-                        </Link>
-                      </Menu.Item>
-                    ))}
-                  </>
+                        {subCat.name}
+                      </Link>
+                    </Menu.Item>
+                  ))}
+                </>
                 {/* {COLLEGE_CATEGORIES.map((collegeCategory, k) => ( */}
               </Menu.Dropdown>
             </Menu>
           ) : (
             <Link
               href={menu.to}
-              key={i + 873}
+              key={Math.random()}
               className={cn(
                 "flex gap-1 flex-col items-center justify-center p-1.5 h-full rounded md:hidden",
                 {
@@ -360,7 +358,7 @@ const Navbar = ({ modalOpen, logoutOpen }) => {
                   </Accordion.Control>
                   {collegeCategoryDisplay.subcategories.map((category) => (
                     <Accordion.Panel
-                      key={category.value}
+                      key={Math.random()}
                       className={`${
                         currentSubCategoryType == category.value
                           ? "bg-blue-100 rounded-sm"
@@ -384,7 +382,7 @@ const Navbar = ({ modalOpen, logoutOpen }) => {
               </Accordion>
             ) : (
               <Link
-                key={o}
+                key={Math.random()}
                 href={menu.to}
                 prefetch={false}
                 className={`font-medium flex gap-2 items-center pl-4 py-4 ml-10 ${
