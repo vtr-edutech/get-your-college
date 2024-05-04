@@ -65,7 +65,7 @@ export default function WhyGYC() {
       </p>
 
       {/* Div of buttons */}
-      <div className='flex gap-3 items-center mt-3'>
+      <div className='flex gap-3 items-center mt-3 flex-wrap'>
         {screenshotsData.map((ss) => (
           <Button
             key={ss.id}
@@ -90,7 +90,7 @@ export default function WhyGYC() {
           key={currentData.id}
           alt={currentData.name}
         />
-        <div className='grid place-items-center absolute w-fit h-fit -top-[6%] right-[12%]'>
+        <div className='grid place-items-center absolute w-fit h-fit -top-[13%] right-0 md:-top-[6%] md:right-[12%]'>
           <CountdownCircleTimer
             isPlaying
             key={currentData.id}

@@ -51,7 +51,7 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <div className='flex w-full min-h-[90vh] md:min-h-[calc(95vh-8rem)] items-center md:justify-center flex-col p-4 md:p-14 gap-6 md:gap-4'>
+      <div className='flex w-full min-h-[90vh] md:min-h-[calc(95vh-8rem)] md:mt-0 mt-5 items-center md:justify-center flex-col p-4 md:p-14 gap-6 md:gap-4'>
         <h1 className='text-4xl md:text-6xl font-bold text-center'>
           Your Complete Guidance for
         </h1>
@@ -185,9 +185,9 @@ export default function Home() {
       {/* Meet him section */}
 
       {/* What are you waiting for? */}
-      <div className='flex p-8 w-[80%] rounded-lg items-center justify-center flex-col gap-7 bg-card my-12'>
+      <div className='flex p-8 md:h-[unset] h-[60vh] w-[90%] md:w-[80%] rounded-lg items-center justify-center flex-col gap-7 bg-card my-12'>
         <p className='text-base'>What are you waiting for?</p>
-        <h1 className='text-4xl font-semibold'>
+        <h1 className='md:text-4xl text-3xl font-semibold text-balance text-center'>
           Kickstart your career with <br /> the best college for you!
         </h1>
         <Button
@@ -204,7 +204,7 @@ export default function Home() {
 
       {/* Footer */}
       <div className='bg-background/70 w-full mt-6 px-3 gap-12 justify-between items-start md:px-16 py-12 md:py-10 flex md:flex-row flex-col'>
-        <div className='grid place-items-center mt-4 h-full md:w-full'>
+        <div className='grid place-items-center mt-4 h-full w-full'>
           <Image
             src={"/logo_new.png"}
             width={180}
