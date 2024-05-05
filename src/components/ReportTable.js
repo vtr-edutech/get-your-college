@@ -5,8 +5,23 @@ import Button from "./ui/Button";
 import { useAutoAnimate } from "@formkit/auto-animate/react";
 import { reportTableData } from "@/utils/collegeChoiceListData";
 import { districtData } from "@/utils/collegeDistrictData";
+import { collegeChoiceListR2 } from "@/utils/collegeChoiceListRound2";
+import { collegeChoiceListR3 } from "@/utils/collegeChoiceListRound3";
 
 const PAGE_SIZE = 25;
+
+const data = reportTableData.map((data) => {
+  return ({...data,
+  round_2: collegeChoiceListR2.find(
+    (coll) => coll["College Code"] == data["College Code"]
+  ),
+  round_3: collegeChoiceListR3.find(
+    (coll) => coll["College Code"] == data["College Code"]
+  ),
+})
+});
+
+console.log("🚀 ~ data ~ data:", data)
 
 const addCollegeToList = (colleges, setSelectedColleges) => {
   if (colleges.length < 1) {
@@ -21,6 +36,7 @@ const addCollegeToList = (colleges, setSelectedColleges) => {
 };
 
 const ReportTable = ({ searchCriteria }) => {
+  console.log("🚀 ~ ReportTable ~ searchCriteria:", searchCriteria)
   const previouslySelectedCollegeIds = localStorage.getItem("colleges");
   console.log(previouslySelectedCollegeIds)
   const [windowSize, setWindowSize] = useState(0);
@@ -37,7 +53,7 @@ const ReportTable = ({ searchCriteria }) => {
 
   const collegesAfterFiltering = useMemo(
     () =>
-      reportTableData // for now its GC, later keep it as selectable
+      data // for now its GC, later keep it as selectable
         .filter(
           (college) =>
             (college[`${searchCriteria?.Category} - Cutoff`] >=
@@ -66,7 +82,6 @@ const ReportTable = ({ searchCriteria }) => {
         ,
     [searchCriteria]
   );
-
   
   const pagination = usePagination({
     total: parseInt(collegesAfterFiltering.length / PAGE_SIZE) + 1,
@@ -113,7 +128,7 @@ const ReportTable = ({ searchCriteria }) => {
 
   return (
     <>
-      <p className='ml-2 w-full text-left mt-7'>
+      <p className='ml-2 w-full text-left mt-5 md:mt-2'>
         🔍 <span className='font-medium'>{collegesAfterFiltering.length}</span>{" "}
         college(s) found
       </p>
@@ -123,15 +138,18 @@ const ReportTable = ({ searchCriteria }) => {
         height={500}
         styles={{
           table: {
+            background: "white",
+          },
+          header: {
+            position: "sticky",
+            top: 0,
             background: "white"
-          }
+          },
         }}
         scrollAreaProps={{ type: "always", h: 500 }}
         // noRecordsIcon={}
         noRecordsText='Could not find any colleges'
         emptyState={<>{""}</>}
-        // minHeight={280}
-        // mah={"450px"}
         customLoader={<>{""}</>}
         loaderSize={"xs"}
         columns={[
@@ -142,7 +160,7 @@ const ReportTable = ({ searchCriteria }) => {
               let x = selectedColleges.indexOf(record);
               return x == -1 ? "" : x + 1;
             },
-            cellsClassName: "font-semibold",
+            cellsClassName: "font-semibold", // removed sticky and top-0 it works... but header epdi vekradhu
             width: 60,
           },
           { accessor: "College Code", title: "College Code" },
@@ -161,35 +179,55 @@ const ReportTable = ({ searchCriteria }) => {
             accessor: "OC - Vacancy",
             title: "OC Vacancy",
             width: windowSize < 768 ? 100 : "auto",
-            render: (value) => (
-              <p
-                className={`${
-                  (!value["OC - Vacancy"] || value["OC - Vacancy"] == 0)
-                    ? "text-red-500"
-                    : "text-green-500"
-                }`}
-              >
-                {value["OC - Vacancy"]}
-              </p>
-            ),
+            render: (value) => {
+              const whichRoundToSearch = value[searchCriteria.round];
+              return (
+                <p
+                  className={`${
+                    whichRoundToSearch
+                      ? !whichRoundToSearch["OC"] ||
+                        whichRoundToSearch["OC"] == 0
+                        ? "text-red-500"
+                        : "text-green-500"
+                      : !value["OC - Vacancy"] || value["OC - Vacancy"] == 0
+                      ? "text-red-500"
+                      : "text-green-500"
+                  }`}
+                >
+                  {whichRoundToSearch
+                    ? whichRoundToSearch["OC"]
+                    : value["OC - Vacancy"]}
+                </p>
+              );
+            },
           },
           {
             accessor: `${searchCriteria?.Category} - Vacancy`,
             title: `${searchCriteria?.Category} - Vacancy`,
             width: windowSize < 768 ? 100 : "auto",
             hidden: searchCriteria?.Category == "OC",
-            render: (value) => (
-              <p
-                className={`${
-                  (!value[`${searchCriteria?.Category} - Vacancy`] ||
-                  value[`${searchCriteria?.Category} - Vacancy`] == 0)
-                    ? "text-red-500"
-                    : "text-green-500"
-                }`}
-              >
-                {value[`${searchCriteria?.Category} - Vacancy`]}
-              </p>
-            ),
+            render: (value) => {
+              const whichRoundToSearch = value[searchCriteria.round];
+              return (
+                <p
+                  className={`${
+                    whichRoundToSearch
+                      ? !whichRoundToSearch[`${searchCriteria?.Category}`] ||
+                        whichRoundToSearch[`${searchCriteria?.Category}`] == 0
+                        ? "text-red-500"
+                        : "text-green-500"
+                      : !value[`${searchCriteria?.Category} - Vacancy`] ||
+                        value[`${searchCriteria?.Category} - Vacancy`] == 0
+                      ? "text-red-500"
+                      : "text-green-500"
+                  }`}
+                >
+                  {whichRoundToSearch
+                    ? whichRoundToSearch[`${searchCriteria?.Category}`]
+                    : value[`${searchCriteria?.Category} - Vacancy`]}
+                </p>
+              );
+            },
           },
           {
             accessor: `${searchCriteria?.Category} - Cutoff`,
@@ -198,6 +236,29 @@ const ReportTable = ({ searchCriteria }) => {
           },
         ]}
         records={collegesAfterSlicing}
+        isRecordSelectable={(x) => {
+          const isRound23 = x[searchCriteria.round];
+          if (isRound23) {
+            return parseInt(isRound23[searchCriteria.Category]) != 0;
+          } else {
+            return parseInt(x[`${searchCriteria.Category} - Vacancy`]) != 0;
+          }
+        }}
+        rowStyle={(x) => {
+          const isRound23 = x[searchCriteria.round];
+          let canFade = false;
+          if (isRound23) {
+            canFade = parseInt(isRound23[searchCriteria.Category]) == 0;
+          } else {
+            canFade = parseInt(x[`${searchCriteria.Category} - Vacancy`]) == 0;
+          }
+          if (canFade)
+            return {
+              opacity: 0.5,
+              pointerEvents: "none",
+              // background: ""
+            };
+        }}
         page={pagination.active}
         totalRecords={collegesAfterFiltering.length}
         recordsPerPage={PAGE_SIZE}

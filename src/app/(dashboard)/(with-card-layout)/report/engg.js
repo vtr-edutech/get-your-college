@@ -7,7 +7,7 @@ import { COLLEGE_CATEGORIES } from "@/utils/collegeChoiceListData";
 import { ALL_DISTRICT } from "@/utils/collegeDistrictData";
 import { COLLEGE_CODE_NAME } from "@/utils/collegeDistrictData";
 import { UNIQUE_COURSE_NAMES } from "@/utils/collegeNames";
-import { Select } from "@mantine/core";
+import { SegmentedControl, Select } from "@mantine/core";
 import Image from "next/image";
 import React, {
   Suspense,
@@ -417,6 +417,38 @@ const Report = () => {
               comboboxProps={{
                 withArrow: true,
                 shadow: "xl",
+              }}
+            />
+          </div>
+          <div className='flex w-full justify-end md:mt-3'>
+            <SegmentedControl
+              data={[
+                {
+                  label: "Round 1",
+                  value: "round_1",
+                },
+                {
+                  label: "Round 2",
+                  value: "round_2",
+                },
+                {
+                  label: "Round 3",
+                  value: "round_3",
+                },
+              ]}
+              onChange={(value) => setSearchCriteria(prev => ({ ...prev, round: value }))}
+              color='blue'
+              withItemsBorders={false}
+              styles={{
+                root: {
+                  width:
+                    windowSize.width != -1 && windowSize.width < 768
+                      ? "100%"
+                      : "22rem",
+                },
+                innerLabel: (value) => {
+                  return value && { color: "white" };
+                },
               }}
             />
           </div>

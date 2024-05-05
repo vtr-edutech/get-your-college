@@ -1,6 +1,6 @@
 export const collegeChoiceListR2 = [
   {
-    "COLLEGE CODE": 1,
+    "College Code": 1,
     "COLLEGE NMAE":
       "University Departments of Anna University  Chennai - CEG Campus  Sardar Patel Road  Guindy  Chennai 600 025",
     "BRANCH CODE": "BY",
@@ -14,7 +14,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1,
+    "College Code": 1,
     "COLLEGE NMAE":
       "University Departments of Anna University  Chennai - CEG Campus  Sardar Patel Road  Guindy  Chennai 600 025",
     "BRANCH CODE": "CE",
@@ -28,7 +28,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1,
+    "College Code": 1,
     "COLLEGE NMAE":
       "University Departments of Anna University  Chennai - CEG Campus  Sardar Patel Road  Guindy  Chennai 600 025",
     "BRANCH CODE": "CM",
@@ -42,7 +42,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1,
+    "College Code": 1,
     "COLLEGE NMAE":
       "University Departments of Anna University  Chennai - CEG Campus  Sardar Patel Road  Guindy  Chennai 600 025",
     "BRANCH CODE": "CS",
@@ -56,7 +56,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1,
+    "College Code": 1,
     "COLLEGE NMAE":
       "University Departments of Anna University  Chennai - CEG Campus  Sardar Patel Road  Guindy  Chennai 600 025",
     "BRANCH CODE": "EC",
@@ -70,7 +70,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1,
+    "College Code": 1,
     "COLLEGE NMAE":
       "University Departments of Anna University  Chennai - CEG Campus  Sardar Patel Road  Guindy  Chennai 600 025",
     "BRANCH CODE": "EE",
@@ -84,7 +84,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1,
+    "College Code": 1,
     "COLLEGE NMAE":
       "University Departments of Anna University  Chennai - CEG Campus  Sardar Patel Road  Guindy  Chennai 600 025",
     "BRANCH CODE": "EM",
@@ -98,7 +98,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1,
+    "College Code": 1,
     "COLLEGE NMAE":
       "University Departments of Anna University  Chennai - CEG Campus  Sardar Patel Road  Guindy  Chennai 600 025",
     "BRANCH CODE": "GI",
@@ -112,7 +112,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1,
+    "College Code": 1,
     "COLLEGE NMAE":
       "University Departments of Anna University  Chennai - CEG Campus  Sardar Patel Road  Guindy  Chennai 600 025",
     "BRANCH CODE": "IE",
@@ -126,7 +126,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1,
+    "College Code": 1,
     "COLLEGE NMAE":
       "University Departments of Anna University  Chennai - CEG Campus  Sardar Patel Road  Guindy  Chennai 600 025",
     "BRANCH CODE": "IM",
@@ -140,7 +140,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1,
+    "College Code": 1,
     "COLLEGE NMAE":
       "University Departments of Anna University  Chennai - CEG Campus  Sardar Patel Road  Guindy  Chennai 600 025",
     "BRANCH CODE": "MA",
@@ -154,7 +154,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1,
+    "College Code": 1,
     "COLLEGE NMAE":
       "University Departments of Anna University  Chennai - CEG Campus  Sardar Patel Road  Guindy  Chennai 600 025",
     "BRANCH CODE": "ME",
@@ -168,7 +168,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1,
+    "College Code": 1,
     "COLLEGE NMAE":
       "University Departments of Anna University  Chennai - CEG Campus  Sardar Patel Road  Guindy  Chennai 600 025",
     "BRANCH CODE": "MI",
@@ -182,7 +182,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1,
+    "College Code": 1,
     "COLLEGE NMAE":
       "University Departments of Anna University  Chennai - CEG Campus  Sardar Patel Road  Guindy  Chennai 600 025",
     "BRANCH CODE": "MN",
@@ -196,7 +196,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1,
+    "College Code": 1,
     "COLLEGE NMAE":
       "University Departments of Anna University  Chennai - CEG Campus  Sardar Patel Road  Guindy  Chennai 600 025",
     "BRANCH CODE": "PT",
@@ -210,7 +210,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1,
+    "College Code": 1,
     "COLLEGE NMAE":
       "University Departments of Anna University  Chennai - CEG Campus  Sardar Patel Road  Guindy  Chennai 600 025",
     "BRANCH CODE": "XC",
@@ -224,7 +224,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1,
+    "College Code": 1,
     "COLLEGE NMAE":
       "University Departments of Anna University  Chennai - CEG Campus  Sardar Patel Road  Guindy  Chennai 600 025",
     "BRANCH CODE": "XM",
@@ -238,7 +238,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2,
+    "College Code": 2,
     "COLLEGE NMAE":
       "University Departments of Anna University  Chennai - ACT Campus  Sardar Patel Road  Guindy  Chennai 600 025",
     "BRANCH CODE": "AP",
@@ -252,7 +252,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2,
+    "College Code": 2,
     "COLLEGE NMAE":
       "University Departments of Anna University  Chennai - ACT Campus  Sardar Patel Road  Guindy  Chennai 600 025",
     "BRANCH CODE": "CH",
@@ -266,7 +266,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2,
+    "College Code": 2,
     "COLLEGE NMAE":
       "University Departments of Anna University  Chennai - ACT Campus  Sardar Patel Road  Guindy  Chennai 600 025",
     "BRANCH CODE": "CL",
@@ -280,7 +280,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2,
+    "College Code": 2,
     "COLLEGE NMAE":
       "University Departments of Anna University  Chennai - ACT Campus  Sardar Patel Road  Guindy  Chennai 600 025",
     "BRANCH CODE": "CR",
@@ -294,7 +294,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2,
+    "College Code": 2,
     "COLLEGE NMAE":
       "University Departments of Anna University  Chennai - ACT Campus  Sardar Patel Road  Guindy  Chennai 600 025",
     "BRANCH CODE": "FS",
@@ -308,7 +308,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2,
+    "College Code": 2,
     "COLLEGE NMAE":
       "University Departments of Anna University  Chennai - ACT Campus  Sardar Patel Road  Guindy  Chennai 600 025",
     "BRANCH CODE": "IB",
@@ -322,7 +322,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2,
+    "College Code": 2,
     "COLLEGE NMAE":
       "University Departments of Anna University  Chennai - ACT Campus  Sardar Patel Road  Guindy  Chennai 600 025",
     "BRANCH CODE": "IS",
@@ -336,7 +336,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2,
+    "College Code": 2,
     "COLLEGE NMAE":
       "University Departments of Anna University  Chennai - ACT Campus  Sardar Patel Road  Guindy  Chennai 600 025",
     "BRANCH CODE": "LE",
@@ -350,7 +350,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2,
+    "College Code": 2,
     "COLLEGE NMAE":
       "University Departments of Anna University  Chennai - ACT Campus  Sardar Patel Road  Guindy  Chennai 600 025",
     "BRANCH CODE": "PM",
@@ -364,7 +364,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2,
+    "College Code": 2,
     "COLLEGE NMAE":
       "University Departments of Anna University  Chennai - ACT Campus  Sardar Patel Road  Guindy  Chennai 600 025",
     "BRANCH CODE": "PP",
@@ -378,7 +378,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2,
+    "College Code": 2,
     "COLLEGE NMAE":
       "University Departments of Anna University  Chennai - ACT Campus  Sardar Patel Road  Guindy  Chennai 600 025",
     "BRANCH CODE": "TX",
@@ -392,7 +392,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3,
+    "College Code": 3,
     "COLLEGE NMAE":
       "School of Architecture and Planning  Anna University Chennai 600025",
     "BRANCH CODE": "BP",
@@ -406,7 +406,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4,
+    "College Code": 4,
     "COLLEGE NMAE":
       "University Departments of Anna University  Chennai - MIT Campus  Chrompet  Tambaram Taluk  Chengalpattu District 600 044",
     "BRANCH CODE": "AE",
@@ -420,7 +420,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4,
+    "College Code": 4,
     "COLLEGE NMAE":
       "University Departments of Anna University  Chennai - MIT Campus  Chrompet  Tambaram Taluk  Chengalpattu District 600 044",
     "BRANCH CODE": "AT",
@@ -434,7 +434,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4,
+    "College Code": 4,
     "COLLEGE NMAE":
       "University Departments of Anna University  Chennai - MIT Campus  Chrompet  Tambaram Taluk  Chengalpattu District 600 044",
     "BRANCH CODE": "AU",
@@ -448,7 +448,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4,
+    "College Code": 4,
     "COLLEGE NMAE":
       "University Departments of Anna University  Chennai - MIT Campus  Chrompet  Tambaram Taluk  Chengalpattu District 600 044",
     "BRANCH CODE": "CM",
@@ -462,7 +462,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4,
+    "College Code": 4,
     "COLLEGE NMAE":
       "University Departments of Anna University  Chennai - MIT Campus  Chrompet  Tambaram Taluk  Chengalpattu District 600 044",
     "BRANCH CODE": "CS",
@@ -476,7 +476,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4,
+    "College Code": 4,
     "COLLEGE NMAE":
       "University Departments of Anna University  Chennai - MIT Campus  Chrompet  Tambaram Taluk  Chengalpattu District 600 044",
     "BRANCH CODE": "EC",
@@ -490,7 +490,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4,
+    "College Code": 4,
     "COLLEGE NMAE":
       "University Departments of Anna University  Chennai - MIT Campus  Chrompet  Tambaram Taluk  Chengalpattu District 600 044",
     "BRANCH CODE": "EI",
@@ -504,7 +504,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4,
+    "College Code": 4,
     "COLLEGE NMAE":
       "University Departments of Anna University  Chennai - MIT Campus  Chrompet  Tambaram Taluk  Chengalpattu District 600 044",
     "BRANCH CODE": "EM",
@@ -518,7 +518,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4,
+    "College Code": 4,
     "COLLEGE NMAE":
       "University Departments of Anna University  Chennai - MIT Campus  Chrompet  Tambaram Taluk  Chengalpattu District 600 044",
     "BRANCH CODE": "IM",
@@ -532,7 +532,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4,
+    "College Code": 4,
     "COLLEGE NMAE":
       "University Departments of Anna University  Chennai - MIT Campus  Chrompet  Tambaram Taluk  Chengalpattu District 600 044",
     "BRANCH CODE": "PR",
@@ -546,7 +546,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4,
+    "College Code": 4,
     "COLLEGE NMAE":
       "University Departments of Anna University  Chennai - MIT Campus  Chrompet  Tambaram Taluk  Chengalpattu District 600 044",
     "BRANCH CODE": "RA",
@@ -560,7 +560,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4,
+    "College Code": 4,
     "COLLEGE NMAE":
       "University Departments of Anna University  Chennai - MIT Campus  Chrompet  Tambaram Taluk  Chengalpattu District 600 044",
     "BRANCH CODE": "RP",
@@ -574,7 +574,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5,
+    "College Code": 5,
     "COLLEGE NMAE":
       "Annamalai University Faculty of Engineering and Technology Annamalai nagar Cuddalore",
     "BRANCH CODE": "AM",
@@ -589,7 +589,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5,
+    "College Code": 5,
     "COLLEGE NMAE":
       "Annamalai University Faculty of Engineering and Technology Annamalai nagar Cuddalore",
     "BRANCH CODE": "CE",
@@ -603,7 +603,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5,
+    "College Code": 5,
     "COLLEGE NMAE":
       "Annamalai University Faculty of Engineering and Technology Annamalai nagar Cuddalore",
     "BRANCH CODE": "CF",
@@ -617,7 +617,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5,
+    "College Code": 5,
     "COLLEGE NMAE":
       "Annamalai University Faculty of Engineering and Technology Annamalai nagar Cuddalore",
     "BRANCH CODE": "CH",
@@ -631,7 +631,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5,
+    "College Code": 5,
     "COLLEGE NMAE":
       "Annamalai University Faculty of Engineering and Technology Annamalai nagar Cuddalore",
     "BRANCH CODE": "CS",
@@ -645,7 +645,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5,
+    "College Code": 5,
     "COLLEGE NMAE":
       "Annamalai University Faculty of Engineering and Technology Annamalai nagar Cuddalore",
     "BRANCH CODE": "CZ",
@@ -659,7 +659,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5,
+    "College Code": 5,
     "COLLEGE NMAE":
       "Annamalai University Faculty of Engineering and Technology Annamalai nagar Cuddalore",
     "BRANCH CODE": "EC",
@@ -673,7 +673,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5,
+    "College Code": 5,
     "COLLEGE NMAE":
       "Annamalai University Faculty of Engineering and Technology Annamalai nagar Cuddalore",
     "BRANCH CODE": "EE",
@@ -687,7 +687,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5,
+    "College Code": 5,
     "COLLEGE NMAE":
       "Annamalai University Faculty of Engineering and Technology Annamalai nagar Cuddalore",
     "BRANCH CODE": "EI",
@@ -701,7 +701,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5,
+    "College Code": 5,
     "COLLEGE NMAE":
       "Annamalai University Faculty of Engineering and Technology Annamalai nagar Cuddalore",
     "BRANCH CODE": "IT",
@@ -715,7 +715,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5,
+    "College Code": 5,
     "COLLEGE NMAE":
       "Annamalai University Faculty of Engineering and Technology Annamalai nagar Cuddalore",
     "BRANCH CODE": "ME",
@@ -729,7 +729,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5,
+    "College Code": 5,
     "COLLEGE NMAE":
       "Annamalai University Faculty of Engineering and Technology Annamalai nagar Cuddalore",
     "BRANCH CODE": "MM",
@@ -743,7 +743,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1013,
+    "College Code": 1013,
     "COLLEGE NMAE":
       "University College of Engineering  Villupuram  Kakuppam Villupuram District 605103",
     "BRANCH CODE": "CS",
@@ -757,7 +757,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1013,
+    "College Code": 1013,
     "COLLEGE NMAE":
       "University College of Engineering  Villupuram  Kakuppam Villupuram District 605103",
     "BRANCH CODE": "EC",
@@ -771,7 +771,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1013,
+    "College Code": 1013,
     "COLLEGE NMAE":
       "University College of Engineering  Villupuram  Kakuppam Villupuram District 605103",
     "BRANCH CODE": "IT",
@@ -785,7 +785,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1013,
+    "College Code": 1013,
     "COLLEGE NMAE":
       "University College of Engineering  Villupuram  Kakuppam Villupuram District 605103",
     "BRANCH CODE": "ME",
@@ -799,7 +799,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1013,
+    "College Code": 1013,
     "COLLEGE NMAE":
       "University College of Engineering  Villupuram  Kakuppam Villupuram District 605103",
     "BRANCH CODE": "XM",
@@ -813,7 +813,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1014,
+    "College Code": 1014,
     "COLLEGE NMAE":
       "University College of Engineering  Tindivanam  Melpakkam Tindivanam  Villupuram District 604001",
     "BRANCH CODE": "CE",
@@ -827,7 +827,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1014,
+    "College Code": 1014,
     "COLLEGE NMAE":
       "University College of Engineering  Tindivanam  Melpakkam Tindivanam  Villupuram District 604001",
     "BRANCH CODE": "CS",
@@ -841,7 +841,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1014,
+    "College Code": 1014,
     "COLLEGE NMAE":
       "University College of Engineering  Tindivanam  Melpakkam Tindivanam  Villupuram District 604001",
     "BRANCH CODE": "EC",
@@ -855,7 +855,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1014,
+    "College Code": 1014,
     "COLLEGE NMAE":
       "University College of Engineering  Tindivanam  Melpakkam Tindivanam  Villupuram District 604001",
     "BRANCH CODE": "IT",
@@ -869,7 +869,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1014,
+    "College Code": 1014,
     "COLLEGE NMAE":
       "University College of Engineering  Tindivanam  Melpakkam Tindivanam  Villupuram District 604001",
     "BRANCH CODE": "XC",
@@ -883,7 +883,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1015,
+    "College Code": 1015,
     "COLLEGE NMAE":
       "University College of Engineering  Arni  Arni to Devikapuram Road  Thatchur  Arni  Thiruvannamalai District 632326",
     "BRANCH CODE": "CS",
@@ -897,7 +897,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1015,
+    "College Code": 1015,
     "COLLEGE NMAE":
       "University College of Engineering  Arni  Arni to Devikapuram Road  Thatchur  Arni  Thiruvannamalai District 632326",
     "BRANCH CODE": "EC",
@@ -911,7 +911,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1015,
+    "College Code": 1015,
     "COLLEGE NMAE":
       "University College of Engineering  Arni  Arni to Devikapuram Road  Thatchur  Arni  Thiruvannamalai District 632326",
     "BRANCH CODE": "EE",
@@ -925,7 +925,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1015,
+    "College Code": 1015,
     "COLLEGE NMAE":
       "University College of Engineering  Arni  Arni to Devikapuram Road  Thatchur  Arni  Thiruvannamalai District 632326",
     "BRANCH CODE": "ME",
@@ -939,7 +939,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1015,
+    "College Code": 1015,
     "COLLEGE NMAE":
       "University College of Engineering  Arni  Arni to Devikapuram Road  Thatchur  Arni  Thiruvannamalai District 632326",
     "BRANCH CODE": "XM",
@@ -953,7 +953,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1026,
+    "College Code": 1026,
     "COLLEGE NMAE":
       "University College of Engineering  Kancheepuram Ponnerikarai Campus  NH4  Chennai-Bangalore Highway Karaipettai Village & Post  Kancheepuram District 631552",
     "BRANCH CODE": "CS",
@@ -967,7 +967,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1026,
+    "College Code": 1026,
     "COLLEGE NMAE":
       "University College of Engineering  Kancheepuram Ponnerikarai Campus  NH4  Chennai-Bangalore Highway Karaipettai Village & Post  Kancheepuram District 631552",
     "BRANCH CODE": "EC",
@@ -981,7 +981,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1026,
+    "College Code": 1026,
     "COLLEGE NMAE":
       "University College of Engineering  Kancheepuram Ponnerikarai Campus  NH4  Chennai-Bangalore Highway Karaipettai Village & Post  Kancheepuram District 631552",
     "BRANCH CODE": "EE",
@@ -995,7 +995,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1026,
+    "College Code": 1026,
     "COLLEGE NMAE":
       "University College of Engineering  Kancheepuram Ponnerikarai Campus  NH4  Chennai-Bangalore Highway Karaipettai Village & Post  Kancheepuram District 631552",
     "BRANCH CODE": "ME",
@@ -1009,7 +1009,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1101,
+    "College Code": 1101,
     "COLLEGE NMAE":
       "Aalim Muhammed Salegh College of Engineering Muthapudupet  Avadi IAF  Chennai 600055",
     "BRANCH CODE": "AD",
@@ -1023,7 +1023,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1101,
+    "College Code": 1101,
     "COLLEGE NMAE":
       "Aalim Muhammed Salegh College of Engineering Muthapudupet  Avadi IAF  Chennai 600055",
     "BRANCH CODE": "CS",
@@ -1037,7 +1037,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1101,
+    "College Code": 1101,
     "COLLEGE NMAE":
       "Aalim Muhammed Salegh College of Engineering Muthapudupet  Avadi IAF  Chennai 600055",
     "BRANCH CODE": "EC",
@@ -1051,7 +1051,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1101,
+    "College Code": 1101,
     "COLLEGE NMAE":
       "Aalim Muhammed Salegh College of Engineering Muthapudupet  Avadi IAF  Chennai 600055",
     "BRANCH CODE": "EE",
@@ -1065,7 +1065,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1101,
+    "College Code": 1101,
     "COLLEGE NMAE":
       "Aalim Muhammed Salegh College of Engineering Muthapudupet  Avadi IAF  Chennai 600055",
     "BRANCH CODE": "IT",
@@ -1079,7 +1079,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1101,
+    "College Code": 1101,
     "COLLEGE NMAE":
       "Aalim Muhammed Salegh College of Engineering Muthapudupet  Avadi IAF  Chennai 600055",
     "BRANCH CODE": "ME",
@@ -1093,7 +1093,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1106,
+    "College Code": 1106,
     "COLLEGE NMAE": "Jaya Engineering College  Thirunindravur  Chennai 602024",
     "BRANCH CODE": "AE",
     "BRANCH NAME": "AERONAUTICAL ENGINEERING",
@@ -1106,7 +1106,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1106,
+    "College Code": 1106,
     "COLLEGE NMAE": "Jaya Engineering College  Thirunindravur  Chennai 602024",
     "BRANCH CODE": "CB",
     "BRANCH NAME": "COMPUTER SCIENCE AND BUSSINESS SYSTEM",
@@ -1119,7 +1119,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1106,
+    "College Code": 1106,
     "COLLEGE NMAE": "Jaya Engineering College  Thirunindravur  Chennai 602024",
     "BRANCH CODE": "CE",
     "BRANCH NAME": "CIVIL  ENGINEERING",
@@ -1132,7 +1132,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1106,
+    "College Code": 1106,
     "COLLEGE NMAE": "Jaya Engineering College  Thirunindravur  Chennai 602024",
     "BRANCH CODE": "CS",
     "BRANCH NAME": "COMPUTER SCIENCE AND ENGINEERING",
@@ -1145,7 +1145,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1106,
+    "College Code": 1106,
     "COLLEGE NMAE": "Jaya Engineering College  Thirunindravur  Chennai 602024",
     "BRANCH CODE": "EC",
     "BRANCH NAME": "ELECTRONICS AND COMMUNICATION ENGINEERING",
@@ -1158,7 +1158,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1106,
+    "College Code": 1106,
     "COLLEGE NMAE": "Jaya Engineering College  Thirunindravur  Chennai 602024",
     "BRANCH CODE": "EE",
     "BRANCH NAME": "ELECTRICAL AND ELECTRONICS ENGINEERING",
@@ -1171,7 +1171,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1106,
+    "College Code": 1106,
     "COLLEGE NMAE": "Jaya Engineering College  Thirunindravur  Chennai 602024",
     "BRANCH CODE": "EI",
     "BRANCH NAME": "ELECTRONICS AND INSTRUMENTATION ENGINEERING",
@@ -1184,7 +1184,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1106,
+    "College Code": 1106,
     "COLLEGE NMAE": "Jaya Engineering College  Thirunindravur  Chennai 602024",
     "BRANCH CODE": "IT",
     "BRANCH NAME": "INFORMATION TECHNOLOGY",
@@ -1197,7 +1197,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1106,
+    "College Code": 1106,
     "COLLEGE NMAE": "Jaya Engineering College  Thirunindravur  Chennai 602024",
     "BRANCH CODE": "ME",
     "BRANCH NAME": "MECHANICAL ENGINEERING",
@@ -1210,7 +1210,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1106,
+    "College Code": 1106,
     "COLLEGE NMAE": "Jaya Engineering College  Thirunindravur  Chennai 602024",
     "BRANCH CODE": "TX",
     "BRANCH NAME": "TEXTILE TECHNOLOGY",
@@ -1223,7 +1223,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1107,
+    "College Code": 1107,
     "COLLEGE NMAE":
       "Jaya Institute of Technology  Kanchipadi Post  Thiruvallur- Tiruttani NH  Road  Thiruvallur District 631204",
     "BRANCH CODE": "CS",
@@ -1237,7 +1237,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1107,
+    "College Code": 1107,
     "COLLEGE NMAE":
       "Jaya Institute of Technology  Kanchipadi Post  Thiruvallur- Tiruttani NH  Road  Thiruvallur District 631204",
     "BRANCH CODE": "EC",
@@ -1251,7 +1251,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1107,
+    "College Code": 1107,
     "COLLEGE NMAE":
       "Jaya Institute of Technology  Kanchipadi Post  Thiruvallur- Tiruttani NH  Road  Thiruvallur District 631204",
     "BRANCH CODE": "EE",
@@ -1265,7 +1265,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1107,
+    "College Code": 1107,
     "COLLEGE NMAE":
       "Jaya Institute of Technology  Kanchipadi Post  Thiruvallur- Tiruttani NH  Road  Thiruvallur District 631204",
     "BRANCH CODE": "FD",
@@ -1279,7 +1279,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1107,
+    "College Code": 1107,
     "COLLEGE NMAE":
       "Jaya Institute of Technology  Kanchipadi Post  Thiruvallur- Tiruttani NH  Road  Thiruvallur District 631204",
     "BRANCH CODE": "ME",
@@ -1293,7 +1293,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1110,
+    "College Code": 1110,
     "COLLEGE NMAE":
       "Prathyusha Engineering college (Autonomous) Aranvoyalkuppam  Thiruvallur District 602025",
     "BRANCH CODE": "AD",
@@ -1307,7 +1307,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1110,
+    "College Code": 1110,
     "COLLEGE NMAE":
       "Prathyusha Engineering college (Autonomous) Aranvoyalkuppam  Thiruvallur District 602025",
     "BRANCH CODE": "AM",
@@ -1322,7 +1322,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1110,
+    "College Code": 1110,
     "COLLEGE NMAE":
       "Prathyusha Engineering college (Autonomous) Aranvoyalkuppam  Thiruvallur District 602025",
     "BRANCH CODE": "BT",
@@ -1336,7 +1336,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1110,
+    "College Code": 1110,
     "COLLEGE NMAE":
       "Prathyusha Engineering college (Autonomous) Aranvoyalkuppam  Thiruvallur District 602025",
     "BRANCH CODE": "CS",
@@ -1350,7 +1350,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1110,
+    "College Code": 1110,
     "COLLEGE NMAE":
       "Prathyusha Engineering college (Autonomous) Aranvoyalkuppam  Thiruvallur District 602025",
     "BRANCH CODE": "EC",
@@ -1364,7 +1364,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1110,
+    "College Code": 1110,
     "COLLEGE NMAE":
       "Prathyusha Engineering college (Autonomous) Aranvoyalkuppam  Thiruvallur District 602025",
     "BRANCH CODE": "EE",
@@ -1378,7 +1378,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1110,
+    "College Code": 1110,
     "COLLEGE NMAE":
       "Prathyusha Engineering college (Autonomous) Aranvoyalkuppam  Thiruvallur District 602025",
     "BRANCH CODE": "IT",
@@ -1392,7 +1392,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1110,
+    "College Code": 1110,
     "COLLEGE NMAE":
       "Prathyusha Engineering college (Autonomous) Aranvoyalkuppam  Thiruvallur District 602025",
     "BRANCH CODE": "SC",
@@ -1406,7 +1406,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1112,
+    "College Code": 1112,
     "COLLEGE NMAE":
       "R M D Engineering College (Autonomous)  Kavaraipettai Gummidipoondi  Thiruvallur District 601206",
     "BRANCH CODE": "AL",
@@ -1420,7 +1420,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1112,
+    "College Code": 1112,
     "COLLEGE NMAE":
       "R M D Engineering College (Autonomous)  Kavaraipettai Gummidipoondi  Thiruvallur District 601206",
     "BRANCH CODE": "CB",
@@ -1434,7 +1434,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1112,
+    "College Code": 1112,
     "COLLEGE NMAE":
       "R M D Engineering College (Autonomous)  Kavaraipettai Gummidipoondi  Thiruvallur District 601206",
     "BRANCH CODE": "CS",
@@ -1448,7 +1448,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1112,
+    "College Code": 1112,
     "COLLEGE NMAE":
       "R M D Engineering College (Autonomous)  Kavaraipettai Gummidipoondi  Thiruvallur District 601206",
     "BRANCH CODE": "EC",
@@ -1462,7 +1462,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1112,
+    "College Code": 1112,
     "COLLEGE NMAE":
       "R M D Engineering College (Autonomous)  Kavaraipettai Gummidipoondi  Thiruvallur District 601206",
     "BRANCH CODE": "IT",
@@ -1476,7 +1476,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1113,
+    "College Code": 1113,
     "COLLEGE NMAE":
       "R M K Engineering College (Autonomous)  Kavaraipettai Gummidipoondi  Thiruvallur District 601206",
     "BRANCH CODE": "AD",
@@ -1490,7 +1490,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1113,
+    "College Code": 1113,
     "COLLEGE NMAE":
       "R M K Engineering College (Autonomous)  Kavaraipettai Gummidipoondi  Thiruvallur District 601206",
     "BRANCH CODE": "CB",
@@ -1504,7 +1504,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1113,
+    "College Code": 1113,
     "COLLEGE NMAE":
       "R M K Engineering College (Autonomous)  Kavaraipettai Gummidipoondi  Thiruvallur District 601206",
     "BRANCH CODE": "CD",
@@ -1518,7 +1518,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1113,
+    "College Code": 1113,
     "COLLEGE NMAE":
       "R M K Engineering College (Autonomous)  Kavaraipettai Gummidipoondi  Thiruvallur District 601206",
     "BRANCH CODE": "CE",
@@ -1532,7 +1532,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1113,
+    "College Code": 1113,
     "COLLEGE NMAE":
       "R M K Engineering College (Autonomous)  Kavaraipettai Gummidipoondi  Thiruvallur District 601206",
     "BRANCH CODE": "CS",
@@ -1546,7 +1546,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1113,
+    "College Code": 1113,
     "COLLEGE NMAE":
       "R M K Engineering College (Autonomous)  Kavaraipettai Gummidipoondi  Thiruvallur District 601206",
     "BRANCH CODE": "EA",
@@ -1561,7 +1561,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1113,
+    "College Code": 1113,
     "COLLEGE NMAE":
       "R M K Engineering College (Autonomous)  Kavaraipettai Gummidipoondi  Thiruvallur District 601206",
     "BRANCH CODE": "EC",
@@ -1575,7 +1575,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1113,
+    "College Code": 1113,
     "COLLEGE NMAE":
       "R M K Engineering College (Autonomous)  Kavaraipettai Gummidipoondi  Thiruvallur District 601206",
     "BRANCH CODE": "EE",
@@ -1589,7 +1589,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1113,
+    "College Code": 1113,
     "COLLEGE NMAE":
       "R M K Engineering College (Autonomous)  Kavaraipettai Gummidipoondi  Thiruvallur District 601206",
     "BRANCH CODE": "EV",
@@ -1603,7 +1603,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1113,
+    "College Code": 1113,
     "COLLEGE NMAE":
       "R M K Engineering College (Autonomous)  Kavaraipettai Gummidipoondi  Thiruvallur District 601206",
     "BRANCH CODE": "IT",
@@ -1617,7 +1617,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1113,
+    "College Code": 1113,
     "COLLEGE NMAE":
       "R M K Engineering College (Autonomous)  Kavaraipettai Gummidipoondi  Thiruvallur District 601206",
     "BRANCH CODE": "ME",
@@ -1631,7 +1631,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1114,
+    "College Code": 1114,
     "COLLEGE NMAE":
       "S A Engineering College (Autonomous)  Thiruverkadu Chennai 600077",
     "BRANCH CODE": "AD",
@@ -1645,7 +1645,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1114,
+    "College Code": 1114,
     "COLLEGE NMAE":
       "S A Engineering College (Autonomous)  Thiruverkadu Chennai 600077",
     "BRANCH CODE": "AM",
@@ -1660,7 +1660,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1114,
+    "College Code": 1114,
     "COLLEGE NMAE":
       "S A Engineering College (Autonomous)  Thiruverkadu Chennai 600077",
     "BRANCH CODE": "CB",
@@ -1674,7 +1674,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1114,
+    "College Code": 1114,
     "COLLEGE NMAE":
       "S A Engineering College (Autonomous)  Thiruverkadu Chennai 600077",
     "BRANCH CODE": "CE",
@@ -1688,7 +1688,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1114,
+    "College Code": 1114,
     "COLLEGE NMAE":
       "S A Engineering College (Autonomous)  Thiruverkadu Chennai 600077",
     "BRANCH CODE": "CS",
@@ -1702,7 +1702,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1114,
+    "College Code": 1114,
     "COLLEGE NMAE":
       "S A Engineering College (Autonomous)  Thiruverkadu Chennai 600077",
     "BRANCH CODE": "EC",
@@ -1716,7 +1716,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1114,
+    "College Code": 1114,
     "COLLEGE NMAE":
       "S A Engineering College (Autonomous)  Thiruverkadu Chennai 600077",
     "BRANCH CODE": "EE",
@@ -1730,7 +1730,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1114,
+    "College Code": 1114,
     "COLLEGE NMAE":
       "S A Engineering College (Autonomous)  Thiruverkadu Chennai 600077",
     "BRANCH CODE": "EV",
@@ -1744,7 +1744,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1114,
+    "College Code": 1114,
     "COLLEGE NMAE":
       "S A Engineering College (Autonomous)  Thiruverkadu Chennai 600077",
     "BRANCH CODE": "IT",
@@ -1758,7 +1758,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1114,
+    "College Code": 1114,
     "COLLEGE NMAE":
       "S A Engineering College (Autonomous)  Thiruverkadu Chennai 600077",
     "BRANCH CODE": "ME",
@@ -1772,7 +1772,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1114,
+    "College Code": 1114,
     "COLLEGE NMAE":
       "S A Engineering College (Autonomous)  Thiruverkadu Chennai 600077",
     "BRANCH CODE": "SC",
@@ -1786,7 +1786,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1115,
+    "College Code": 1115,
     "COLLEGE NMAE":
       "Sri Ram Engineering College  Perumalpattu  Veppampattu (R S)  Thiruvallur District 602 024",
     "BRANCH CODE": "AD",
@@ -1800,7 +1800,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1115,
+    "College Code": 1115,
     "COLLEGE NMAE":
       "Sri Ram Engineering College  Perumalpattu  Veppampattu (R S)  Thiruvallur District 602 024",
     "BRANCH CODE": "AM",
@@ -1815,7 +1815,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1115,
+    "College Code": 1115,
     "COLLEGE NMAE":
       "Sri Ram Engineering College  Perumalpattu  Veppampattu (R S)  Thiruvallur District 602 024",
     "BRANCH CODE": "CB",
@@ -1829,7 +1829,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1115,
+    "College Code": 1115,
     "COLLEGE NMAE":
       "Sri Ram Engineering College  Perumalpattu  Veppampattu (R S)  Thiruvallur District 602 024",
     "BRANCH CODE": "CS",
@@ -1843,7 +1843,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1115,
+    "College Code": 1115,
     "COLLEGE NMAE":
       "Sri Ram Engineering College  Perumalpattu  Veppampattu (R S)  Thiruvallur District 602 024",
     "BRANCH CODE": "EC",
@@ -1857,7 +1857,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1115,
+    "College Code": 1115,
     "COLLEGE NMAE":
       "Sri Ram Engineering College  Perumalpattu  Veppampattu (R S)  Thiruvallur District 602 024",
     "BRANCH CODE": "EE",
@@ -1871,7 +1871,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1115,
+    "College Code": 1115,
     "COLLEGE NMAE":
       "Sri Ram Engineering College  Perumalpattu  Veppampattu (R S)  Thiruvallur District 602 024",
     "BRANCH CODE": "ME",
@@ -1885,7 +1885,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1115,
+    "College Code": 1115,
     "COLLEGE NMAE":
       "Sri Ram Engineering College  Perumalpattu  Veppampattu (R S)  Thiruvallur District 602 024",
     "BRANCH CODE": "SC",
@@ -1899,7 +1899,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1116,
+    "College Code": 1116,
     "COLLEGE NMAE":
       "Sri Venkateswara College of Engineering and Technology Thirupachur  Thiruvallur District 631203",
     "BRANCH CODE": "AD",
@@ -1913,7 +1913,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1116,
+    "College Code": 1116,
     "COLLEGE NMAE":
       "Sri Venkateswara College of Engineering and Technology Thirupachur  Thiruvallur District 631203",
     "BRANCH CODE": "AM",
@@ -1928,7 +1928,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1116,
+    "College Code": 1116,
     "COLLEGE NMAE":
       "Sri Venkateswara College of Engineering and Technology Thirupachur  Thiruvallur District 631203",
     "BRANCH CODE": "CE",
@@ -1942,7 +1942,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1116,
+    "College Code": 1116,
     "COLLEGE NMAE":
       "Sri Venkateswara College of Engineering and Technology Thirupachur  Thiruvallur District 631203",
     "BRANCH CODE": "CS",
@@ -1956,7 +1956,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1116,
+    "College Code": 1116,
     "COLLEGE NMAE":
       "Sri Venkateswara College of Engineering and Technology Thirupachur  Thiruvallur District 631203",
     "BRANCH CODE": "EC",
@@ -1970,7 +1970,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1116,
+    "College Code": 1116,
     "COLLEGE NMAE":
       "Sri Venkateswara College of Engineering and Technology Thirupachur  Thiruvallur District 631203",
     "BRANCH CODE": "EE",
@@ -1984,7 +1984,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1116,
+    "College Code": 1116,
     "COLLEGE NMAE":
       "Sri Venkateswara College of Engineering and Technology Thirupachur  Thiruvallur District 631203",
     "BRANCH CODE": "IT",
@@ -1998,7 +1998,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1116,
+    "College Code": 1116,
     "COLLEGE NMAE":
       "Sri Venkateswara College of Engineering and Technology Thirupachur  Thiruvallur District 631203",
     "BRANCH CODE": "ME",
@@ -2012,7 +2012,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1116,
+    "College Code": 1116,
     "COLLEGE NMAE":
       "Sri Venkateswara College of Engineering and Technology Thirupachur  Thiruvallur District 631203",
     "BRANCH CODE": "SC",
@@ -2026,7 +2026,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1118,
+    "College Code": 1118,
     "COLLEGE NMAE":
       "Vel Tech Multi Tech Dr. Rangarajan Dr. Sakunthala Engineering College (Autonomous)  Avadi-Alamathi Road Chennai 600 062",
     "BRANCH CODE": "AD",
@@ -2040,7 +2040,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1118,
+    "College Code": 1118,
     "COLLEGE NMAE":
       "Vel Tech Multi Tech Dr. Rangarajan Dr. Sakunthala Engineering College (Autonomous)  Avadi-Alamathi Road Chennai 600 062",
     "BRANCH CODE": "BM",
@@ -2054,7 +2054,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1118,
+    "College Code": 1118,
     "COLLEGE NMAE":
       "Vel Tech Multi Tech Dr. Rangarajan Dr. Sakunthala Engineering College (Autonomous)  Avadi-Alamathi Road Chennai 600 062",
     "BRANCH CODE": "CB",
@@ -2068,7 +2068,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1118,
+    "College Code": 1118,
     "COLLEGE NMAE":
       "Vel Tech Multi Tech Dr. Rangarajan Dr. Sakunthala Engineering College (Autonomous)  Avadi-Alamathi Road Chennai 600 062",
     "BRANCH CODE": "CS",
@@ -2082,7 +2082,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1118,
+    "College Code": 1118,
     "COLLEGE NMAE":
       "Vel Tech Multi Tech Dr. Rangarajan Dr. Sakunthala Engineering College (Autonomous)  Avadi-Alamathi Road Chennai 600 062",
     "BRANCH CODE": "EC",
@@ -2096,7 +2096,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1118,
+    "College Code": 1118,
     "COLLEGE NMAE":
       "Vel Tech Multi Tech Dr. Rangarajan Dr. Sakunthala Engineering College (Autonomous)  Avadi-Alamathi Road Chennai 600 062",
     "BRANCH CODE": "EE",
@@ -2110,7 +2110,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1118,
+    "College Code": 1118,
     "COLLEGE NMAE":
       "Vel Tech Multi Tech Dr. Rangarajan Dr. Sakunthala Engineering College (Autonomous)  Avadi-Alamathi Road Chennai 600 062",
     "BRANCH CODE": "IT",
@@ -2124,7 +2124,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1118,
+    "College Code": 1118,
     "COLLEGE NMAE":
       "Vel Tech Multi Tech Dr. Rangarajan Dr. Sakunthala Engineering College (Autonomous)  Avadi-Alamathi Road Chennai 600 062",
     "BRANCH CODE": "ME",
@@ -2138,7 +2138,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1120,
+    "College Code": 1120,
     "COLLEGE NMAE":
       "Velammal Engineering College (Autonomous)  Ambattur- Redhills Road  Chennai 600066",
     "BRANCH CODE": "AD",
@@ -2152,7 +2152,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1120,
+    "College Code": 1120,
     "COLLEGE NMAE":
       "Velammal Engineering College (Autonomous)  Ambattur- Redhills Road  Chennai 600066",
     "BRANCH CODE": "AU",
@@ -2166,7 +2166,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1120,
+    "College Code": 1120,
     "COLLEGE NMAE":
       "Velammal Engineering College (Autonomous)  Ambattur- Redhills Road  Chennai 600066",
     "BRANCH CODE": "CE",
@@ -2180,7 +2180,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1120,
+    "College Code": 1120,
     "COLLEGE NMAE":
       "Velammal Engineering College (Autonomous)  Ambattur- Redhills Road  Chennai 600066",
     "BRANCH CODE": "CS",
@@ -2194,7 +2194,7 @@ export const collegeChoiceListR2 = [
     ST: 2,
   },
   {
-    "COLLEGE CODE": 1120,
+    "College Code": 1120,
     "COLLEGE NMAE":
       "Velammal Engineering College (Autonomous)  Ambattur- Redhills Road  Chennai 600066",
     "BRANCH CODE": "EC",
@@ -2208,7 +2208,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1120,
+    "College Code": 1120,
     "COLLEGE NMAE":
       "Velammal Engineering College (Autonomous)  Ambattur- Redhills Road  Chennai 600066",
     "BRANCH CODE": "EE",
@@ -2222,7 +2222,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1120,
+    "College Code": 1120,
     "COLLEGE NMAE":
       "Velammal Engineering College (Autonomous)  Ambattur- Redhills Road  Chennai 600066",
     "BRANCH CODE": "EI",
@@ -2236,7 +2236,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1120,
+    "College Code": 1120,
     "COLLEGE NMAE":
       "Velammal Engineering College (Autonomous)  Ambattur- Redhills Road  Chennai 600066",
     "BRANCH CODE": "IT",
@@ -2250,7 +2250,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1120,
+    "College Code": 1120,
     "COLLEGE NMAE":
       "Velammal Engineering College (Autonomous)  Ambattur- Redhills Road  Chennai 600066",
     "BRANCH CODE": "ME",
@@ -2264,7 +2264,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1120,
+    "College Code": 1120,
     "COLLEGE NMAE":
       "Velammal Engineering College (Autonomous)  Ambattur- Redhills Road  Chennai 600066",
     "BRANCH CODE": "SC",
@@ -2278,7 +2278,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1121,
+    "College Code": 1121,
     "COLLEGE NMAE":
       "Sri Venkateswara Institute of Science and Technology Kozhundalur  Thiruvallur District 631203",
     "BRANCH CODE": "AD",
@@ -2292,7 +2292,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1121,
+    "College Code": 1121,
     "COLLEGE NMAE":
       "Sri Venkateswara Institute of Science and Technology Kozhundalur  Thiruvallur District 631203",
     "BRANCH CODE": "CE",
@@ -2306,7 +2306,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1121,
+    "College Code": 1121,
     "COLLEGE NMAE":
       "Sri Venkateswara Institute of Science and Technology Kozhundalur  Thiruvallur District 631203",
     "BRANCH CODE": "CS",
@@ -2320,7 +2320,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1121,
+    "College Code": 1121,
     "COLLEGE NMAE":
       "Sri Venkateswara Institute of Science and Technology Kozhundalur  Thiruvallur District 631203",
     "BRANCH CODE": "EC",
@@ -2334,7 +2334,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1121,
+    "College Code": 1121,
     "COLLEGE NMAE":
       "Sri Venkateswara Institute of Science and Technology Kozhundalur  Thiruvallur District 631203",
     "BRANCH CODE": "EE",
@@ -2348,7 +2348,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1121,
+    "College Code": 1121,
     "COLLEGE NMAE":
       "Sri Venkateswara Institute of Science and Technology Kozhundalur  Thiruvallur District 631203",
     "BRANCH CODE": "ME",
@@ -2362,7 +2362,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1121,
+    "College Code": 1121,
     "COLLEGE NMAE":
       "Sri Venkateswara Institute of Science and Technology Kozhundalur  Thiruvallur District 631203",
     "BRANCH CODE": "SC",
@@ -2376,7 +2376,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1122,
+    "College Code": 1122,
     "COLLEGE NMAE":
       "Vel Tech High Tech Dr. Rangarajan Dr. Sakunthala Engineering College (Autonomous)  Avadi-Alamathi Road Chennai 600 062",
     "BRANCH CODE": "AD",
@@ -2390,7 +2390,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1122,
+    "College Code": 1122,
     "COLLEGE NMAE":
       "Vel Tech High Tech Dr. Rangarajan Dr. Sakunthala Engineering College (Autonomous)  Avadi-Alamathi Road Chennai 600 062",
     "BRANCH CODE": "AM",
@@ -2405,7 +2405,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1122,
+    "College Code": 1122,
     "COLLEGE NMAE":
       "Vel Tech High Tech Dr. Rangarajan Dr. Sakunthala Engineering College (Autonomous)  Avadi-Alamathi Road Chennai 600 062",
     "BRANCH CODE": "BT",
@@ -2419,7 +2419,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1122,
+    "College Code": 1122,
     "COLLEGE NMAE":
       "Vel Tech High Tech Dr. Rangarajan Dr. Sakunthala Engineering College (Autonomous)  Avadi-Alamathi Road Chennai 600 062",
     "BRANCH CODE": "CE",
@@ -2433,7 +2433,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1122,
+    "College Code": 1122,
     "COLLEGE NMAE":
       "Vel Tech High Tech Dr. Rangarajan Dr. Sakunthala Engineering College (Autonomous)  Avadi-Alamathi Road Chennai 600 062",
     "BRANCH CODE": "CH",
@@ -2447,7 +2447,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1122,
+    "College Code": 1122,
     "COLLEGE NMAE":
       "Vel Tech High Tech Dr. Rangarajan Dr. Sakunthala Engineering College (Autonomous)  Avadi-Alamathi Road Chennai 600 062",
     "BRANCH CODE": "CS",
@@ -2461,7 +2461,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1122,
+    "College Code": 1122,
     "COLLEGE NMAE":
       "Vel Tech High Tech Dr. Rangarajan Dr. Sakunthala Engineering College (Autonomous)  Avadi-Alamathi Road Chennai 600 062",
     "BRANCH CODE": "EC",
@@ -2475,7 +2475,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1122,
+    "College Code": 1122,
     "COLLEGE NMAE":
       "Vel Tech High Tech Dr. Rangarajan Dr. Sakunthala Engineering College (Autonomous)  Avadi-Alamathi Road Chennai 600 062",
     "BRANCH CODE": "IT",
@@ -2489,7 +2489,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1122,
+    "College Code": 1122,
     "COLLEGE NMAE":
       "Vel Tech High Tech Dr. Rangarajan Dr. Sakunthala Engineering College (Autonomous)  Avadi-Alamathi Road Chennai 600 062",
     "BRANCH CODE": "ME",
@@ -2503,7 +2503,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1123,
+    "College Code": 1123,
     "COLLEGE NMAE":
       "Gojan School of Business and Technology  Alamathi Chennai 600062",
     "BRANCH CODE": "AD",
@@ -2517,7 +2517,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1123,
+    "College Code": 1123,
     "COLLEGE NMAE":
       "Gojan School of Business and Technology  Alamathi Chennai 600062",
     "BRANCH CODE": "AE",
@@ -2531,7 +2531,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1123,
+    "College Code": 1123,
     "COLLEGE NMAE":
       "Gojan School of Business and Technology  Alamathi Chennai 600062",
     "BRANCH CODE": "AM",
@@ -2546,7 +2546,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1123,
+    "College Code": 1123,
     "COLLEGE NMAE":
       "Gojan School of Business and Technology  Alamathi Chennai 600062",
     "BRANCH CODE": "CB",
@@ -2560,7 +2560,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1123,
+    "College Code": 1123,
     "COLLEGE NMAE":
       "Gojan School of Business and Technology  Alamathi Chennai 600062",
     "BRANCH CODE": "CO",
@@ -2574,7 +2574,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1123,
+    "College Code": 1123,
     "COLLEGE NMAE":
       "Gojan School of Business and Technology  Alamathi Chennai 600062",
     "BRANCH CODE": "CS",
@@ -2588,7 +2588,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1123,
+    "College Code": 1123,
     "COLLEGE NMAE":
       "Gojan School of Business and Technology  Alamathi Chennai 600062",
     "BRANCH CODE": "EC",
@@ -2602,7 +2602,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1123,
+    "College Code": 1123,
     "COLLEGE NMAE":
       "Gojan School of Business and Technology  Alamathi Chennai 600062",
     "BRANCH CODE": "IT",
@@ -2616,7 +2616,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1123,
+    "College Code": 1123,
     "COLLEGE NMAE":
       "Gojan School of Business and Technology  Alamathi Chennai 600062",
     "BRANCH CODE": "MD",
@@ -2630,7 +2630,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1123,
+    "College Code": 1123,
     "COLLEGE NMAE":
       "Gojan School of Business and Technology  Alamathi Chennai 600062",
     "BRANCH CODE": "MU",
@@ -2644,7 +2644,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1123,
+    "College Code": 1123,
     "COLLEGE NMAE":
       "Gojan School of Business and Technology  Alamathi Chennai 600062",
     "BRANCH CODE": "PH",
@@ -2658,7 +2658,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1123,
+    "College Code": 1123,
     "COLLEGE NMAE":
       "Gojan School of Business and Technology  Alamathi Chennai 600062",
     "BRANCH CODE": "SC",
@@ -2672,7 +2672,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1124,
+    "College Code": 1124,
     "COLLEGE NMAE":
       "SAMS College of Engineering and Technology Panappakkam  Chennai-Tirupathi Road  Uthukkottai Taluk Thiruvallur District 601102",
     "BRANCH CODE": "AD",
@@ -2686,7 +2686,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1124,
+    "College Code": 1124,
     "COLLEGE NMAE":
       "SAMS College of Engineering and Technology Panappakkam  Chennai-Tirupathi Road  Uthukkottai Taluk Thiruvallur District 601102",
     "BRANCH CODE": "AE",
@@ -2700,7 +2700,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1124,
+    "College Code": 1124,
     "COLLEGE NMAE":
       "SAMS College of Engineering and Technology Panappakkam  Chennai-Tirupathi Road  Uthukkottai Taluk Thiruvallur District 601102",
     "BRANCH CODE": "AM",
@@ -2715,7 +2715,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1124,
+    "College Code": 1124,
     "COLLEGE NMAE":
       "SAMS College of Engineering and Technology Panappakkam  Chennai-Tirupathi Road  Uthukkottai Taluk Thiruvallur District 601102",
     "BRANCH CODE": "CO",
@@ -2729,7 +2729,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1124,
+    "College Code": 1124,
     "COLLEGE NMAE":
       "SAMS College of Engineering and Technology Panappakkam  Chennai-Tirupathi Road  Uthukkottai Taluk Thiruvallur District 601102",
     "BRANCH CODE": "CS",
@@ -2743,7 +2743,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1124,
+    "College Code": 1124,
     "COLLEGE NMAE":
       "SAMS College of Engineering and Technology Panappakkam  Chennai-Tirupathi Road  Uthukkottai Taluk Thiruvallur District 601102",
     "BRANCH CODE": "ME",
@@ -2757,7 +2757,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1124,
+    "College Code": 1124,
     "COLLEGE NMAE":
       "SAMS College of Engineering and Technology Panappakkam  Chennai-Tirupathi Road  Uthukkottai Taluk Thiruvallur District 601102",
     "BRANCH CODE": "MR",
@@ -2771,7 +2771,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1124,
+    "College Code": 1124,
     "COLLEGE NMAE":
       "SAMS College of Engineering and Technology Panappakkam  Chennai-Tirupathi Road  Uthukkottai Taluk Thiruvallur District 601102",
     "BRANCH CODE": "SC",
@@ -2785,7 +2785,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1125,
+    "College Code": 1125,
     "COLLEGE NMAE": "PMR Engineering College Adayalampattu  Chennai-600095",
     "BRANCH CODE": "AD",
     "BRANCH NAME": "ARTIFICIAL INTELLIGENCE AND DATA SCIENCE",
@@ -2798,7 +2798,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1125,
+    "College Code": 1125,
     "COLLEGE NMAE": "PMR Engineering College Adayalampattu  Chennai-600095",
     "BRANCH CODE": "AE",
     "BRANCH NAME": "AERONAUTICAL ENGINEERING",
@@ -2811,7 +2811,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1125,
+    "College Code": 1125,
     "COLLEGE NMAE": "PMR Engineering College Adayalampattu  Chennai-600095",
     "BRANCH CODE": "CE",
     "BRANCH NAME": "CIVIL  ENGINEERING",
@@ -2824,7 +2824,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1125,
+    "College Code": 1125,
     "COLLEGE NMAE": "PMR Engineering College Adayalampattu  Chennai-600095",
     "BRANCH CODE": "CS",
     "BRANCH NAME": "COMPUTER SCIENCE AND ENGINEERING",
@@ -2837,7 +2837,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1125,
+    "College Code": 1125,
     "COLLEGE NMAE": "PMR Engineering College Adayalampattu  Chennai-600095",
     "BRANCH CODE": "EC",
     "BRANCH NAME": "ELECTRONICS AND COMMUNICATION ENGINEERING",
@@ -2850,7 +2850,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1125,
+    "College Code": 1125,
     "COLLEGE NMAE": "PMR Engineering College Adayalampattu  Chennai-600095",
     "BRANCH CODE": "EE",
     "BRANCH NAME": "ELECTRICAL AND ELECTRONICS ENGINEERING",
@@ -2863,7 +2863,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1125,
+    "College Code": 1125,
     "COLLEGE NMAE": "PMR Engineering College Adayalampattu  Chennai-600095",
     "BRANCH CODE": "ME",
     "BRANCH NAME": "MECHANICAL ENGINEERING",
@@ -2876,7 +2876,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1125,
+    "College Code": 1125,
     "COLLEGE NMAE": "PMR Engineering College Adayalampattu  Chennai-600095",
     "BRANCH CODE": "SC",
     "BRANCH NAME": "Computer Science and Engineering (Cyber Security)",
@@ -2889,7 +2889,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1126,
+    "College Code": 1126,
     "COLLEGE NMAE":
       "J N N Institute of Engineering (Autonomous) Ushaa Garden Kannigaipair Village Uthukottai Taluk  Thiruvallur District 601102",
     "BRANCH CODE": "AD",
@@ -2903,7 +2903,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1126,
+    "College Code": 1126,
     "COLLEGE NMAE":
       "J N N Institute of Engineering (Autonomous) Ushaa Garden Kannigaipair Village Uthukottai Taluk  Thiruvallur District 601102",
     "BRANCH CODE": "AG",
@@ -2917,7 +2917,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1126,
+    "College Code": 1126,
     "COLLEGE NMAE":
       "J N N Institute of Engineering (Autonomous) Ushaa Garden Kannigaipair Village Uthukottai Taluk  Thiruvallur District 601102",
     "BRANCH CODE": "BM",
@@ -2931,7 +2931,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1126,
+    "College Code": 1126,
     "COLLEGE NMAE":
       "J N N Institute of Engineering (Autonomous) Ushaa Garden Kannigaipair Village Uthukottai Taluk  Thiruvallur District 601102",
     "BRANCH CODE": "CS",
@@ -2945,7 +2945,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1126,
+    "College Code": 1126,
     "COLLEGE NMAE":
       "J N N Institute of Engineering (Autonomous) Ushaa Garden Kannigaipair Village Uthukottai Taluk  Thiruvallur District 601102",
     "BRANCH CODE": "EC",
@@ -2959,7 +2959,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1126,
+    "College Code": 1126,
     "COLLEGE NMAE":
       "J N N Institute of Engineering (Autonomous) Ushaa Garden Kannigaipair Village Uthukottai Taluk  Thiruvallur District 601102",
     "BRANCH CODE": "EV",
@@ -2973,7 +2973,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1126,
+    "College Code": 1126,
     "COLLEGE NMAE":
       "J N N Institute of Engineering (Autonomous) Ushaa Garden Kannigaipair Village Uthukottai Taluk  Thiruvallur District 601102",
     "BRANCH CODE": "RM",
@@ -2987,7 +2987,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1126,
+    "College Code": 1126,
     "COLLEGE NMAE":
       "J N N Institute of Engineering (Autonomous) Ushaa Garden Kannigaipair Village Uthukottai Taluk  Thiruvallur District 601102",
     "BRANCH CODE": "SC",
@@ -3001,7 +3001,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1127,
+    "College Code": 1127,
     "COLLEGE NMAE":
       "St. Peters College of Engineering and Technology  College Road  Avadi  Chennai 600 054",
     "BRANCH CODE": "AD",
@@ -3015,7 +3015,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1127,
+    "College Code": 1127,
     "COLLEGE NMAE":
       "St. Peters College of Engineering and Technology  College Road  Avadi  Chennai 600 054",
     "BRANCH CODE": "BT",
@@ -3029,7 +3029,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1127,
+    "College Code": 1127,
     "COLLEGE NMAE":
       "St. Peters College of Engineering and Technology  College Road  Avadi  Chennai 600 054",
     "BRANCH CODE": "CE",
@@ -3043,7 +3043,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1127,
+    "College Code": 1127,
     "COLLEGE NMAE":
       "St. Peters College of Engineering and Technology  College Road  Avadi  Chennai 600 054",
     "BRANCH CODE": "CH",
@@ -3057,7 +3057,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1127,
+    "College Code": 1127,
     "COLLEGE NMAE":
       "St. Peters College of Engineering and Technology  College Road  Avadi  Chennai 600 054",
     "BRANCH CODE": "CS",
@@ -3071,7 +3071,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1127,
+    "College Code": 1127,
     "COLLEGE NMAE":
       "St. Peters College of Engineering and Technology  College Road  Avadi  Chennai 600 054",
     "BRANCH CODE": "EC",
@@ -3085,7 +3085,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1127,
+    "College Code": 1127,
     "COLLEGE NMAE":
       "St. Peters College of Engineering and Technology  College Road  Avadi  Chennai 600 054",
     "BRANCH CODE": "EE",
@@ -3099,7 +3099,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1127,
+    "College Code": 1127,
     "COLLEGE NMAE":
       "St. Peters College of Engineering and Technology  College Road  Avadi  Chennai 600 054",
     "BRANCH CODE": "IT",
@@ -3113,7 +3113,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1127,
+    "College Code": 1127,
     "COLLEGE NMAE":
       "St. Peters College of Engineering and Technology  College Road  Avadi  Chennai 600 054",
     "BRANCH CODE": "ME",
@@ -3127,7 +3127,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1128,
+    "College Code": 1128,
     "COLLEGE NMAE":
       "R M K College of Engineering and Technology (Autonomous)  Puduvoyal  Gummidipoondi Taluk Thiruvallur District 601206",
     "BRANCH CODE": "AD",
@@ -3141,7 +3141,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1128,
+    "College Code": 1128,
     "COLLEGE NMAE":
       "R M K College of Engineering and Technology (Autonomous)  Puduvoyal  Gummidipoondi Taluk Thiruvallur District 601206",
     "BRANCH CODE": "CS",
@@ -3155,7 +3155,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1128,
+    "College Code": 1128,
     "COLLEGE NMAE":
       "R M K College of Engineering and Technology (Autonomous)  Puduvoyal  Gummidipoondi Taluk Thiruvallur District 601206",
     "BRANCH CODE": "EC",
@@ -3169,7 +3169,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1128,
+    "College Code": 1128,
     "COLLEGE NMAE":
       "R M K College of Engineering and Technology (Autonomous)  Puduvoyal  Gummidipoondi Taluk Thiruvallur District 601206",
     "BRANCH CODE": "SC",
@@ -3183,7 +3183,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1133,
+    "College Code": 1133,
     "COLLEGE NMAE":
       "Annai Veilankannis College of Engineering  Gandhi Road Nedungundram  Chennai 600048",
     "BRANCH CODE": "AD",
@@ -3197,7 +3197,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1133,
+    "College Code": 1133,
     "COLLEGE NMAE":
       "Annai Veilankannis College of Engineering  Gandhi Road Nedungundram  Chennai 600048",
     "BRANCH CODE": "CE",
@@ -3211,7 +3211,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1133,
+    "College Code": 1133,
     "COLLEGE NMAE":
       "Annai Veilankannis College of Engineering  Gandhi Road Nedungundram  Chennai 600048",
     "BRANCH CODE": "CS",
@@ -3225,7 +3225,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1133,
+    "College Code": 1133,
     "COLLEGE NMAE":
       "Annai Veilankannis College of Engineering  Gandhi Road Nedungundram  Chennai 600048",
     "BRANCH CODE": "EC",
@@ -3239,7 +3239,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1133,
+    "College Code": 1133,
     "COLLEGE NMAE":
       "Annai Veilankannis College of Engineering  Gandhi Road Nedungundram  Chennai 600048",
     "BRANCH CODE": "ME",
@@ -3253,7 +3253,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1137,
+    "College Code": 1137,
     "COLLEGE NMAE":
       "Annai Mira College of Engineering and Technology  Arcot Road  Arappakkam Village  Walaja Taulk  Ranipet District 632 517",
     "BRANCH CODE": "AD",
@@ -3267,7 +3267,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1137,
+    "College Code": 1137,
     "COLLEGE NMAE":
       "Annai Mira College of Engineering and Technology  Arcot Road  Arappakkam Village  Walaja Taulk  Ranipet District 632 517",
     "BRANCH CODE": "CE",
@@ -3281,7 +3281,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1137,
+    "College Code": 1137,
     "COLLEGE NMAE":
       "Annai Mira College of Engineering and Technology  Arcot Road  Arappakkam Village  Walaja Taulk  Ranipet District 632 517",
     "BRANCH CODE": "CS",
@@ -3295,7 +3295,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1137,
+    "College Code": 1137,
     "COLLEGE NMAE":
       "Annai Mira College of Engineering and Technology  Arcot Road  Arappakkam Village  Walaja Taulk  Ranipet District 632 517",
     "BRANCH CODE": "EC",
@@ -3309,7 +3309,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1137,
+    "College Code": 1137,
     "COLLEGE NMAE":
       "Annai Mira College of Engineering and Technology  Arcot Road  Arappakkam Village  Walaja Taulk  Ranipet District 632 517",
     "BRANCH CODE": "EE",
@@ -3323,7 +3323,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1137,
+    "College Code": 1137,
     "COLLEGE NMAE":
       "Annai Mira College of Engineering and Technology  Arcot Road  Arappakkam Village  Walaja Taulk  Ranipet District 632 517",
     "BRANCH CODE": "IT",
@@ -3337,7 +3337,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1137,
+    "College Code": 1137,
     "COLLEGE NMAE":
       "Annai Mira College of Engineering and Technology  Arcot Road  Arappakkam Village  Walaja Taulk  Ranipet District 632 517",
     "BRANCH CODE": "ME",
@@ -3351,7 +3351,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1140,
+    "College Code": 1140,
     "COLLEGE NMAE":
       "Jeppiaar Institute of Technology kunnam Village Sriperumpudur Taulk Kancheepuram District 631604",
     "BRANCH CODE": "AD",
@@ -3365,7 +3365,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1140,
+    "College Code": 1140,
     "COLLEGE NMAE":
       "Jeppiaar Institute of Technology kunnam Village Sriperumpudur Taulk Kancheepuram District 631604",
     "BRANCH CODE": "CB",
@@ -3379,7 +3379,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1140,
+    "College Code": 1140,
     "COLLEGE NMAE":
       "Jeppiaar Institute of Technology kunnam Village Sriperumpudur Taulk Kancheepuram District 631604",
     "BRANCH CODE": "CS",
@@ -3393,7 +3393,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1140,
+    "College Code": 1140,
     "COLLEGE NMAE":
       "Jeppiaar Institute of Technology kunnam Village Sriperumpudur Taulk Kancheepuram District 631604",
     "BRANCH CODE": "EC",
@@ -3407,7 +3407,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1140,
+    "College Code": 1140,
     "COLLEGE NMAE":
       "Jeppiaar Institute of Technology kunnam Village Sriperumpudur Taulk Kancheepuram District 631604",
     "BRANCH CODE": "IT",
@@ -3421,7 +3421,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1140,
+    "College Code": 1140,
     "COLLEGE NMAE":
       "Jeppiaar Institute of Technology kunnam Village Sriperumpudur Taulk Kancheepuram District 631604",
     "BRANCH CODE": "ME",
@@ -3435,7 +3435,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1149,
+    "College Code": 1149,
     "COLLEGE NMAE":
       "St. Joseph's Institute of Technology (Autonomous)  Jeppiaar Nagar  Old Mahabalipuram Road (OMR)  Chennai 600119",
     "BRANCH CODE": "AD",
@@ -3449,7 +3449,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1149,
+    "College Code": 1149,
     "COLLEGE NMAE":
       "St. Joseph's Institute of Technology (Autonomous)  Jeppiaar Nagar  Old Mahabalipuram Road (OMR)  Chennai 600119",
     "BRANCH CODE": "CS",
@@ -3463,7 +3463,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1149,
+    "College Code": 1149,
     "COLLEGE NMAE":
       "St. Joseph's Institute of Technology (Autonomous)  Jeppiaar Nagar  Old Mahabalipuram Road (OMR)  Chennai 600119",
     "BRANCH CODE": "EC",
@@ -3477,7 +3477,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1149,
+    "College Code": 1149,
     "COLLEGE NMAE":
       "St. Joseph's Institute of Technology (Autonomous)  Jeppiaar Nagar  Old Mahabalipuram Road (OMR)  Chennai 600119",
     "BRANCH CODE": "EE",
@@ -3491,7 +3491,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1149,
+    "College Code": 1149,
     "COLLEGE NMAE":
       "St. Joseph's Institute of Technology (Autonomous)  Jeppiaar Nagar  Old Mahabalipuram Road (OMR)  Chennai 600119",
     "BRANCH CODE": "IT",
@@ -3505,7 +3505,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1149,
+    "College Code": 1149,
     "COLLEGE NMAE":
       "St. Joseph's Institute of Technology (Autonomous)  Jeppiaar Nagar  Old Mahabalipuram Road (OMR)  Chennai 600119",
     "BRANCH CODE": "ME",
@@ -3519,7 +3519,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1150,
+    "College Code": 1150,
     "COLLEGE NMAE":
       "Sri Jayaram Institute of Engineering and Technology  51 N Elavur  58N  Natham  Gummidipoondi Taluk  Thiruvallur District 601201",
     "BRANCH CODE": "AD",
@@ -3533,7 +3533,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1150,
+    "College Code": 1150,
     "COLLEGE NMAE":
       "Sri Jayaram Institute of Engineering and Technology  51 N Elavur  58N  Natham  Gummidipoondi Taluk  Thiruvallur District 601201",
     "BRANCH CODE": "AG",
@@ -3547,7 +3547,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1150,
+    "College Code": 1150,
     "COLLEGE NMAE":
       "Sri Jayaram Institute of Engineering and Technology  51 N Elavur  58N  Natham  Gummidipoondi Taluk  Thiruvallur District 601201",
     "BRANCH CODE": "BM",
@@ -3561,7 +3561,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1150,
+    "College Code": 1150,
     "COLLEGE NMAE":
       "Sri Jayaram Institute of Engineering and Technology  51 N Elavur  58N  Natham  Gummidipoondi Taluk  Thiruvallur District 601201",
     "BRANCH CODE": "CS",
@@ -3575,7 +3575,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1150,
+    "College Code": 1150,
     "COLLEGE NMAE":
       "Sri Jayaram Institute of Engineering and Technology  51 N Elavur  58N  Natham  Gummidipoondi Taluk  Thiruvallur District 601201",
     "BRANCH CODE": "ME",
@@ -3589,7 +3589,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1202,
+    "College Code": 1202,
     "COLLEGE NMAE":
       "D M I College of Engineering  Palanchoor  Nazrethpet Chennai 602103",
     "BRANCH CODE": "AD",
@@ -3603,7 +3603,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1202,
+    "College Code": 1202,
     "COLLEGE NMAE":
       "D M I College of Engineering  Palanchoor  Nazrethpet Chennai 602103",
     "BRANCH CODE": "AM",
@@ -3618,7 +3618,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1202,
+    "College Code": 1202,
     "COLLEGE NMAE":
       "D M I College of Engineering  Palanchoor  Nazrethpet Chennai 602103",
     "BRANCH CODE": "CS",
@@ -3632,7 +3632,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1202,
+    "College Code": 1202,
     "COLLEGE NMAE":
       "D M I College of Engineering  Palanchoor  Nazrethpet Chennai 602103",
     "BRANCH CODE": "EC",
@@ -3646,7 +3646,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1202,
+    "College Code": 1202,
     "COLLEGE NMAE":
       "D M I College of Engineering  Palanchoor  Nazrethpet Chennai 602103",
     "BRANCH CODE": "EE",
@@ -3660,7 +3660,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1202,
+    "College Code": 1202,
     "COLLEGE NMAE":
       "D M I College of Engineering  Palanchoor  Nazrethpet Chennai 602103",
     "BRANCH CODE": "IT",
@@ -3674,7 +3674,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1202,
+    "College Code": 1202,
     "COLLEGE NMAE":
       "D M I College of Engineering  Palanchoor  Nazrethpet Chennai 602103",
     "BRANCH CODE": "ME",
@@ -3688,7 +3688,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1207,
+    "College Code": 1207,
     "COLLEGE NMAE":
       "Kings Engineering College  Sriperumpudur Taluk Kancheepuram District 602105",
     "BRANCH CODE": "AD",
@@ -3702,7 +3702,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1207,
+    "College Code": 1207,
     "COLLEGE NMAE":
       "Kings Engineering College  Sriperumpudur Taluk Kancheepuram District 602105",
     "BRANCH CODE": "AM",
@@ -3717,7 +3717,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1207,
+    "College Code": 1207,
     "COLLEGE NMAE":
       "Kings Engineering College  Sriperumpudur Taluk Kancheepuram District 602105",
     "BRANCH CODE": "BM",
@@ -3731,7 +3731,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1207,
+    "College Code": 1207,
     "COLLEGE NMAE":
       "Kings Engineering College  Sriperumpudur Taluk Kancheepuram District 602105",
     "BRANCH CODE": "CS",
@@ -3745,7 +3745,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1207,
+    "College Code": 1207,
     "COLLEGE NMAE":
       "Kings Engineering College  Sriperumpudur Taluk Kancheepuram District 602105",
     "BRANCH CODE": "EC",
@@ -3759,7 +3759,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1207,
+    "College Code": 1207,
     "COLLEGE NMAE":
       "Kings Engineering College  Sriperumpudur Taluk Kancheepuram District 602105",
     "BRANCH CODE": "IT",
@@ -3773,7 +3773,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1207,
+    "College Code": 1207,
     "COLLEGE NMAE":
       "Kings Engineering College  Sriperumpudur Taluk Kancheepuram District 602105",
     "BRANCH CODE": "ME",
@@ -3787,7 +3787,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1207,
+    "College Code": 1207,
     "COLLEGE NMAE":
       "Kings Engineering College  Sriperumpudur Taluk Kancheepuram District 602105",
     "BRANCH CODE": "RM",
@@ -3801,7 +3801,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1209,
+    "College Code": 1209,
     "COLLEGE NMAE":
       "Pallavan College of Engineering  Thimmasamudram Kancheepuram District 631502",
     "BRANCH CODE": "CE",
@@ -3815,7 +3815,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1209,
+    "College Code": 1209,
     "COLLEGE NMAE":
       "Pallavan College of Engineering  Thimmasamudram Kancheepuram District 631502",
     "BRANCH CODE": "CS",
@@ -3829,7 +3829,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1209,
+    "College Code": 1209,
     "COLLEGE NMAE":
       "Pallavan College of Engineering  Thimmasamudram Kancheepuram District 631502",
     "BRANCH CODE": "EC",
@@ -3843,7 +3843,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1209,
+    "College Code": 1209,
     "COLLEGE NMAE":
       "Pallavan College of Engineering  Thimmasamudram Kancheepuram District 631502",
     "BRANCH CODE": "EE",
@@ -3857,7 +3857,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1209,
+    "College Code": 1209,
     "COLLEGE NMAE":
       "Pallavan College of Engineering  Thimmasamudram Kancheepuram District 631502",
     "BRANCH CODE": "IT",
@@ -3871,7 +3871,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1209,
+    "College Code": 1209,
     "COLLEGE NMAE":
       "Pallavan College of Engineering  Thimmasamudram Kancheepuram District 631502",
     "BRANCH CODE": "ME",
@@ -3885,7 +3885,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1210,
+    "College Code": 1210,
     "COLLEGE NMAE":
       "Panimalar Engineering College (Autonomous)  Nazarethpet Poonamallee  Chennai 602123",
     "BRANCH CODE": "AD",
@@ -3899,7 +3899,7 @@ export const collegeChoiceListR2 = [
     ST: 2,
   },
   {
-    "COLLEGE CODE": 1210,
+    "College Code": 1210,
     "COLLEGE NMAE":
       "Panimalar Engineering College (Autonomous)  Nazarethpet Poonamallee  Chennai 602123",
     "BRANCH CODE": "AL",
@@ -3913,7 +3913,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1210,
+    "College Code": 1210,
     "COLLEGE NMAE":
       "Panimalar Engineering College (Autonomous)  Nazarethpet Poonamallee  Chennai 602123",
     "BRANCH CODE": "CB",
@@ -3927,7 +3927,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1210,
+    "College Code": 1210,
     "COLLEGE NMAE":
       "Panimalar Engineering College (Autonomous)  Nazarethpet Poonamallee  Chennai 602123",
     "BRANCH CODE": "CS",
@@ -3941,7 +3941,7 @@ export const collegeChoiceListR2 = [
     ST: 3,
   },
   {
-    "COLLEGE CODE": 1210,
+    "College Code": 1210,
     "COLLEGE NMAE":
       "Panimalar Engineering College (Autonomous)  Nazarethpet Poonamallee  Chennai 602123",
     "BRANCH CODE": "EC",
@@ -3955,7 +3955,7 @@ export const collegeChoiceListR2 = [
     ST: 3,
   },
   {
-    "COLLEGE CODE": 1210,
+    "College Code": 1210,
     "COLLEGE NMAE":
       "Panimalar Engineering College (Autonomous)  Nazarethpet Poonamallee  Chennai 602123",
     "BRANCH CODE": "EE",
@@ -3969,7 +3969,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1210,
+    "College Code": 1210,
     "COLLEGE NMAE":
       "Panimalar Engineering College (Autonomous)  Nazarethpet Poonamallee  Chennai 602123",
     "BRANCH CODE": "IT",
@@ -3983,7 +3983,7 @@ export const collegeChoiceListR2 = [
     ST: 2,
   },
   {
-    "COLLEGE CODE": 1210,
+    "College Code": 1210,
     "COLLEGE NMAE":
       "Panimalar Engineering College (Autonomous)  Nazarethpet Poonamallee  Chennai 602123",
     "BRANCH CODE": "ME",
@@ -3997,7 +3997,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1211,
+    "College Code": 1211,
     "COLLEGE NMAE":
       "Rajalakshmi Engineering College (Autonomous)  Thandalam Sriperumpudur Taluk  Kancheepuram District 602105",
     "BRANCH CODE": "AD",
@@ -4011,7 +4011,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1211,
+    "College Code": 1211,
     "COLLEGE NMAE":
       "Rajalakshmi Engineering College (Autonomous)  Thandalam Sriperumpudur Taluk  Kancheepuram District 602105",
     "BRANCH CODE": "AE",
@@ -4025,7 +4025,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1211,
+    "College Code": 1211,
     "COLLEGE NMAE":
       "Rajalakshmi Engineering College (Autonomous)  Thandalam Sriperumpudur Taluk  Kancheepuram District 602105",
     "BRANCH CODE": "AL",
@@ -4039,7 +4039,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1211,
+    "College Code": 1211,
     "COLLEGE NMAE":
       "Rajalakshmi Engineering College (Autonomous)  Thandalam Sriperumpudur Taluk  Kancheepuram District 602105",
     "BRANCH CODE": "AU",
@@ -4053,7 +4053,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1211,
+    "College Code": 1211,
     "COLLEGE NMAE":
       "Rajalakshmi Engineering College (Autonomous)  Thandalam Sriperumpudur Taluk  Kancheepuram District 602105",
     "BRANCH CODE": "BM",
@@ -4067,7 +4067,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1211,
+    "College Code": 1211,
     "COLLEGE NMAE":
       "Rajalakshmi Engineering College (Autonomous)  Thandalam Sriperumpudur Taluk  Kancheepuram District 602105",
     "BRANCH CODE": "BT",
@@ -4081,7 +4081,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1211,
+    "College Code": 1211,
     "COLLEGE NMAE":
       "Rajalakshmi Engineering College (Autonomous)  Thandalam Sriperumpudur Taluk  Kancheepuram District 602105",
     "BRANCH CODE": "CB",
@@ -4095,7 +4095,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1211,
+    "College Code": 1211,
     "COLLEGE NMAE":
       "Rajalakshmi Engineering College (Autonomous)  Thandalam Sriperumpudur Taluk  Kancheepuram District 602105",
     "BRANCH CODE": "CD",
@@ -4109,7 +4109,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1211,
+    "College Code": 1211,
     "COLLEGE NMAE":
       "Rajalakshmi Engineering College (Autonomous)  Thandalam Sriperumpudur Taluk  Kancheepuram District 602105",
     "BRANCH CODE": "CE",
@@ -4123,7 +4123,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1211,
+    "College Code": 1211,
     "COLLEGE NMAE":
       "Rajalakshmi Engineering College (Autonomous)  Thandalam Sriperumpudur Taluk  Kancheepuram District 602105",
     "BRANCH CODE": "CH",
@@ -4137,7 +4137,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1211,
+    "College Code": 1211,
     "COLLEGE NMAE":
       "Rajalakshmi Engineering College (Autonomous)  Thandalam Sriperumpudur Taluk  Kancheepuram District 602105",
     "BRANCH CODE": "CS",
@@ -4151,7 +4151,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1211,
+    "College Code": 1211,
     "COLLEGE NMAE":
       "Rajalakshmi Engineering College (Autonomous)  Thandalam Sriperumpudur Taluk  Kancheepuram District 602105",
     "BRANCH CODE": "EC",
@@ -4165,7 +4165,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1211,
+    "College Code": 1211,
     "COLLEGE NMAE":
       "Rajalakshmi Engineering College (Autonomous)  Thandalam Sriperumpudur Taluk  Kancheepuram District 602105",
     "BRANCH CODE": "EE",
@@ -4179,7 +4179,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1211,
+    "College Code": 1211,
     "COLLEGE NMAE":
       "Rajalakshmi Engineering College (Autonomous)  Thandalam Sriperumpudur Taluk  Kancheepuram District 602105",
     "BRANCH CODE": "FD",
@@ -4193,7 +4193,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1211,
+    "College Code": 1211,
     "COLLEGE NMAE":
       "Rajalakshmi Engineering College (Autonomous)  Thandalam Sriperumpudur Taluk  Kancheepuram District 602105",
     "BRANCH CODE": "IT",
@@ -4207,7 +4207,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1211,
+    "College Code": 1211,
     "COLLEGE NMAE":
       "Rajalakshmi Engineering College (Autonomous)  Thandalam Sriperumpudur Taluk  Kancheepuram District 602105",
     "BRANCH CODE": "ME",
@@ -4221,7 +4221,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1211,
+    "College Code": 1211,
     "COLLEGE NMAE":
       "Rajalakshmi Engineering College (Autonomous)  Thandalam Sriperumpudur Taluk  Kancheepuram District 602105",
     "BRANCH CODE": "MZ",
@@ -4235,7 +4235,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1211,
+    "College Code": 1211,
     "COLLEGE NMAE":
       "Rajalakshmi Engineering College (Autonomous)  Thandalam Sriperumpudur Taluk  Kancheepuram District 602105",
     "BRANCH CODE": "RM",
@@ -4249,7 +4249,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1211,
+    "College Code": 1211,
     "COLLEGE NMAE":
       "Rajalakshmi Engineering College (Autonomous)  Thandalam Sriperumpudur Taluk  Kancheepuram District 602105",
     "BRANCH CODE": "SC",
@@ -4263,7 +4263,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1212,
+    "College Code": 1212,
     "COLLEGE NMAE":
       "Rajiv Gandhi College of Engineering  Nemili  Sriperumpudur Taluk  Kancheepuram District 602105",
     "BRANCH CODE": "AU",
@@ -4277,7 +4277,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1212,
+    "College Code": 1212,
     "COLLEGE NMAE":
       "Rajiv Gandhi College of Engineering  Nemili  Sriperumpudur Taluk  Kancheepuram District 602105",
     "BRANCH CODE": "BM",
@@ -4291,7 +4291,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1212,
+    "College Code": 1212,
     "COLLEGE NMAE":
       "Rajiv Gandhi College of Engineering  Nemili  Sriperumpudur Taluk  Kancheepuram District 602105",
     "BRANCH CODE": "CS",
@@ -4305,7 +4305,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1212,
+    "College Code": 1212,
     "COLLEGE NMAE":
       "Rajiv Gandhi College of Engineering  Nemili  Sriperumpudur Taluk  Kancheepuram District 602105",
     "BRANCH CODE": "EC",
@@ -4319,7 +4319,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1212,
+    "College Code": 1212,
     "COLLEGE NMAE":
       "Rajiv Gandhi College of Engineering  Nemili  Sriperumpudur Taluk  Kancheepuram District 602105",
     "BRANCH CODE": "EE",
@@ -4333,7 +4333,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1212,
+    "College Code": 1212,
     "COLLEGE NMAE":
       "Rajiv Gandhi College of Engineering  Nemili  Sriperumpudur Taluk  Kancheepuram District 602105",
     "BRANCH CODE": "ME",
@@ -4347,7 +4347,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1212,
+    "College Code": 1212,
     "COLLEGE NMAE":
       "Rajiv Gandhi College of Engineering  Nemili  Sriperumpudur Taluk  Kancheepuram District 602105",
     "BRANCH CODE": "PE",
@@ -4361,7 +4361,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1213,
+    "College Code": 1213,
     "COLLEGE NMAE": "S K R Engineering College  Poonamallee  Chennai 600123",
     "BRANCH CODE": "BM",
     "BRANCH NAME": "BIO MEDICAL ENGINEERING",
@@ -4374,7 +4374,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1213,
+    "College Code": 1213,
     "COLLEGE NMAE": "S K R Engineering College  Poonamallee  Chennai 600123",
     "BRANCH CODE": "CB",
     "BRANCH NAME": "COMPUTER SCIENCE AND BUSSINESS SYSTEM",
@@ -4387,7 +4387,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1213,
+    "College Code": 1213,
     "COLLEGE NMAE": "S K R Engineering College  Poonamallee  Chennai 600123",
     "BRANCH CODE": "CS",
     "BRANCH NAME": "COMPUTER SCIENCE AND ENGINEERING",
@@ -4400,7 +4400,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1213,
+    "College Code": 1213,
     "COLLEGE NMAE": "S K R Engineering College  Poonamallee  Chennai 600123",
     "BRANCH CODE": "EC",
     "BRANCH NAME": "ELECTRONICS AND COMMUNICATION ENGINEERING",
@@ -4413,7 +4413,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1213,
+    "College Code": 1213,
     "COLLEGE NMAE": "S K R Engineering College  Poonamallee  Chennai 600123",
     "BRANCH CODE": "EE",
     "BRANCH NAME": "ELECTRICAL AND ELECTRONICS ENGINEERING",
@@ -4426,7 +4426,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1213,
+    "College Code": 1213,
     "COLLEGE NMAE": "S K R Engineering College  Poonamallee  Chennai 600123",
     "BRANCH CODE": "IT",
     "BRANCH NAME": "INFORMATION TECHNOLOGY",
@@ -4439,7 +4439,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1216,
+    "College Code": 1216,
     "COLLEGE NMAE":
       "Saveetha Engineering College (Autonomous)  Thandalam Sriperumpudur Taluk  Kancheepuram District 602105",
     "BRANCH CODE": "AD",
@@ -4453,7 +4453,7 @@ export const collegeChoiceListR2 = [
     ST: 2,
   },
   {
-    "COLLEGE CODE": 1216,
+    "College Code": 1216,
     "COLLEGE NMAE":
       "Saveetha Engineering College (Autonomous)  Thandalam Sriperumpudur Taluk  Kancheepuram District 602105",
     "BRANCH CODE": "AG",
@@ -4467,7 +4467,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1216,
+    "College Code": 1216,
     "COLLEGE NMAE":
       "Saveetha Engineering College (Autonomous)  Thandalam Sriperumpudur Taluk  Kancheepuram District 602105",
     "BRANCH CODE": "AL",
@@ -4481,7 +4481,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1216,
+    "College Code": 1216,
     "COLLEGE NMAE":
       "Saveetha Engineering College (Autonomous)  Thandalam Sriperumpudur Taluk  Kancheepuram District 602105",
     "BRANCH CODE": "BM",
@@ -4495,7 +4495,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1216,
+    "College Code": 1216,
     "COLLEGE NMAE":
       "Saveetha Engineering College (Autonomous)  Thandalam Sriperumpudur Taluk  Kancheepuram District 602105",
     "BRANCH CODE": "CE",
@@ -4509,7 +4509,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1216,
+    "College Code": 1216,
     "COLLEGE NMAE":
       "Saveetha Engineering College (Autonomous)  Thandalam Sriperumpudur Taluk  Kancheepuram District 602105",
     "BRANCH CODE": "CH",
@@ -4523,7 +4523,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1216,
+    "College Code": 1216,
     "COLLEGE NMAE":
       "Saveetha Engineering College (Autonomous)  Thandalam Sriperumpudur Taluk  Kancheepuram District 602105",
     "BRANCH CODE": "CI",
@@ -4537,7 +4537,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1216,
+    "College Code": 1216,
     "COLLEGE NMAE":
       "Saveetha Engineering College (Autonomous)  Thandalam Sriperumpudur Taluk  Kancheepuram District 602105",
     "BRANCH CODE": "CS",
@@ -4551,7 +4551,7 @@ export const collegeChoiceListR2 = [
     ST: 2,
   },
   {
-    "COLLEGE CODE": 1216,
+    "College Code": 1216,
     "COLLEGE NMAE":
       "Saveetha Engineering College (Autonomous)  Thandalam Sriperumpudur Taluk  Kancheepuram District 602105",
     "BRANCH CODE": "EC",
@@ -4565,7 +4565,7 @@ export const collegeChoiceListR2 = [
     ST: 2,
   },
   {
-    "COLLEGE CODE": 1216,
+    "College Code": 1216,
     "COLLEGE NMAE":
       "Saveetha Engineering College (Autonomous)  Thandalam Sriperumpudur Taluk  Kancheepuram District 602105",
     "BRANCH CODE": "EE",
@@ -4579,7 +4579,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1216,
+    "College Code": 1216,
     "COLLEGE NMAE":
       "Saveetha Engineering College (Autonomous)  Thandalam Sriperumpudur Taluk  Kancheepuram District 602105",
     "BRANCH CODE": "EI",
@@ -4593,7 +4593,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1216,
+    "College Code": 1216,
     "COLLEGE NMAE":
       "Saveetha Engineering College (Autonomous)  Thandalam Sriperumpudur Taluk  Kancheepuram District 602105",
     "BRANCH CODE": "IT",
@@ -4607,7 +4607,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1216,
+    "College Code": 1216,
     "COLLEGE NMAE":
       "Saveetha Engineering College (Autonomous)  Thandalam Sriperumpudur Taluk  Kancheepuram District 602105",
     "BRANCH CODE": "MD",
@@ -4621,7 +4621,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1216,
+    "College Code": 1216,
     "COLLEGE NMAE":
       "Saveetha Engineering College (Autonomous)  Thandalam Sriperumpudur Taluk  Kancheepuram District 602105",
     "BRANCH CODE": "ME",
@@ -4635,7 +4635,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1216,
+    "College Code": 1216,
     "COLLEGE NMAE":
       "Saveetha Engineering College (Autonomous)  Thandalam Sriperumpudur Taluk  Kancheepuram District 602105",
     "BRANCH CODE": "SC",
@@ -4649,7 +4649,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1217,
+    "College Code": 1217,
     "COLLEGE NMAE":
       "Sree Sastha Institute of Engineering and Technology Chembarambakkam  Chennai 600103",
     "BRANCH CODE": "AD",
@@ -4663,7 +4663,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1217,
+    "College Code": 1217,
     "COLLEGE NMAE":
       "Sree Sastha Institute of Engineering and Technology Chembarambakkam  Chennai 600103",
     "BRANCH CODE": "AM",
@@ -4678,7 +4678,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1217,
+    "College Code": 1217,
     "COLLEGE NMAE":
       "Sree Sastha Institute of Engineering and Technology Chembarambakkam  Chennai 600103",
     "BRANCH CODE": "AU",
@@ -4692,7 +4692,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1217,
+    "College Code": 1217,
     "COLLEGE NMAE":
       "Sree Sastha Institute of Engineering and Technology Chembarambakkam  Chennai 600103",
     "BRANCH CODE": "BM",
@@ -4706,7 +4706,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1217,
+    "College Code": 1217,
     "COLLEGE NMAE":
       "Sree Sastha Institute of Engineering and Technology Chembarambakkam  Chennai 600103",
     "BRANCH CODE": "BT",
@@ -4720,7 +4720,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1217,
+    "College Code": 1217,
     "COLLEGE NMAE":
       "Sree Sastha Institute of Engineering and Technology Chembarambakkam  Chennai 600103",
     "BRANCH CODE": "CB",
@@ -4734,7 +4734,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1217,
+    "College Code": 1217,
     "COLLEGE NMAE":
       "Sree Sastha Institute of Engineering and Technology Chembarambakkam  Chennai 600103",
     "BRANCH CODE": "CE",
@@ -4748,7 +4748,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1217,
+    "College Code": 1217,
     "COLLEGE NMAE":
       "Sree Sastha Institute of Engineering and Technology Chembarambakkam  Chennai 600103",
     "BRANCH CODE": "CS",
@@ -4762,7 +4762,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1217,
+    "College Code": 1217,
     "COLLEGE NMAE":
       "Sree Sastha Institute of Engineering and Technology Chembarambakkam  Chennai 600103",
     "BRANCH CODE": "EC",
@@ -4776,7 +4776,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1217,
+    "College Code": 1217,
     "COLLEGE NMAE":
       "Sree Sastha Institute of Engineering and Technology Chembarambakkam  Chennai 600103",
     "BRANCH CODE": "EE",
@@ -4790,7 +4790,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1217,
+    "College Code": 1217,
     "COLLEGE NMAE":
       "Sree Sastha Institute of Engineering and Technology Chembarambakkam  Chennai 600103",
     "BRANCH CODE": "FD",
@@ -4804,7 +4804,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1217,
+    "College Code": 1217,
     "COLLEGE NMAE":
       "Sree Sastha Institute of Engineering and Technology Chembarambakkam  Chennai 600103",
     "BRANCH CODE": "IT",
@@ -4818,7 +4818,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1217,
+    "College Code": 1217,
     "COLLEGE NMAE":
       "Sree Sastha Institute of Engineering and Technology Chembarambakkam  Chennai 600103",
     "BRANCH CODE": "MU",
@@ -4832,7 +4832,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1217,
+    "College Code": 1217,
     "COLLEGE NMAE":
       "Sree Sastha Institute of Engineering and Technology Chembarambakkam  Chennai 600103",
     "BRANCH CODE": "SC",
@@ -4846,7 +4846,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1218,
+    "College Code": 1218,
     "COLLEGE NMAE":
       "Sri Muthukumaran Institute of Technology  Near Mangadu Chennai 600069",
     "BRANCH CODE": "AD",
@@ -4860,7 +4860,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1218,
+    "College Code": 1218,
     "COLLEGE NMAE":
       "Sri Muthukumaran Institute of Technology  Near Mangadu Chennai 600069",
     "BRANCH CODE": "BM",
@@ -4874,7 +4874,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1218,
+    "College Code": 1218,
     "COLLEGE NMAE":
       "Sri Muthukumaran Institute of Technology  Near Mangadu Chennai 600069",
     "BRANCH CODE": "CE",
@@ -4888,7 +4888,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1218,
+    "College Code": 1218,
     "COLLEGE NMAE":
       "Sri Muthukumaran Institute of Technology  Near Mangadu Chennai 600069",
     "BRANCH CODE": "CS",
@@ -4902,7 +4902,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1218,
+    "College Code": 1218,
     "COLLEGE NMAE":
       "Sri Muthukumaran Institute of Technology  Near Mangadu Chennai 600069",
     "BRANCH CODE": "EC",
@@ -4916,7 +4916,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1218,
+    "College Code": 1218,
     "COLLEGE NMAE":
       "Sri Muthukumaran Institute of Technology  Near Mangadu Chennai 600069",
     "BRANCH CODE": "EE",
@@ -4930,7 +4930,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1218,
+    "College Code": 1218,
     "COLLEGE NMAE":
       "Sri Muthukumaran Institute of Technology  Near Mangadu Chennai 600069",
     "BRANCH CODE": "IT",
@@ -4944,7 +4944,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1218,
+    "College Code": 1218,
     "COLLEGE NMAE":
       "Sri Muthukumaran Institute of Technology  Near Mangadu Chennai 600069",
     "BRANCH CODE": "ME",
@@ -4958,7 +4958,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1218,
+    "College Code": 1218,
     "COLLEGE NMAE":
       "Sri Muthukumaran Institute of Technology  Near Mangadu Chennai 600069",
     "BRANCH CODE": "MZ",
@@ -4972,7 +4972,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1218,
+    "College Code": 1218,
     "COLLEGE NMAE":
       "Sri Muthukumaran Institute of Technology  Near Mangadu Chennai 600069",
     "BRANCH CODE": "PH",
@@ -4986,7 +4986,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1218,
+    "College Code": 1218,
     "COLLEGE NMAE":
       "Sri Muthukumaran Institute of Technology  Near Mangadu Chennai 600069",
     "BRANCH CODE": "RM",
@@ -5000,7 +5000,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1219,
+    "College Code": 1219,
     "COLLEGE NMAE":
       "Sri Venkateswara College of Engineering (Autonomous) Post Bag No.1  Chennai-Bengaluru High Road  Pennalur Irungattukottai S.O.  Sriperumbudur Taluk  Kancheepuram District 602105",
     "BRANCH CODE": "AD",
@@ -5014,7 +5014,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1219,
+    "College Code": 1219,
     "COLLEGE NMAE":
       "Sri Venkateswara College of Engineering (Autonomous) Post Bag No.1  Chennai-Bengaluru High Road  Pennalur Irungattukottai S.O.  Sriperumbudur Taluk  Kancheepuram District 602105",
     "BRANCH CODE": "AU",
@@ -5028,7 +5028,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1219,
+    "College Code": 1219,
     "COLLEGE NMAE":
       "Sri Venkateswara College of Engineering (Autonomous) Post Bag No.1  Chennai-Bengaluru High Road  Pennalur Irungattukottai S.O.  Sriperumbudur Taluk  Kancheepuram District 602105",
     "BRANCH CODE": "BT",
@@ -5042,7 +5042,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1219,
+    "College Code": 1219,
     "COLLEGE NMAE":
       "Sri Venkateswara College of Engineering (Autonomous) Post Bag No.1  Chennai-Bengaluru High Road  Pennalur Irungattukottai S.O.  Sriperumbudur Taluk  Kancheepuram District 602105",
     "BRANCH CODE": "CE",
@@ -5056,7 +5056,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1219,
+    "College Code": 1219,
     "COLLEGE NMAE":
       "Sri Venkateswara College of Engineering (Autonomous) Post Bag No.1  Chennai-Bengaluru High Road  Pennalur Irungattukottai S.O.  Sriperumbudur Taluk  Kancheepuram District 602105",
     "BRANCH CODE": "CH",
@@ -5070,7 +5070,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1219,
+    "College Code": 1219,
     "COLLEGE NMAE":
       "Sri Venkateswara College of Engineering (Autonomous) Post Bag No.1  Chennai-Bengaluru High Road  Pennalur Irungattukottai S.O.  Sriperumbudur Taluk  Kancheepuram District 602105",
     "BRANCH CODE": "CS",
@@ -5084,7 +5084,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1219,
+    "College Code": 1219,
     "COLLEGE NMAE":
       "Sri Venkateswara College of Engineering (Autonomous) Post Bag No.1  Chennai-Bengaluru High Road  Pennalur Irungattukottai S.O.  Sriperumbudur Taluk  Kancheepuram District 602105",
     "BRANCH CODE": "EC",
@@ -5098,7 +5098,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1219,
+    "College Code": 1219,
     "COLLEGE NMAE":
       "Sri Venkateswara College of Engineering (Autonomous) Post Bag No.1  Chennai-Bengaluru High Road  Pennalur Irungattukottai S.O.  Sriperumbudur Taluk  Kancheepuram District 602105",
     "BRANCH CODE": "EE",
@@ -5112,7 +5112,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1219,
+    "College Code": 1219,
     "COLLEGE NMAE":
       "Sri Venkateswara College of Engineering (Autonomous) Post Bag No.1  Chennai-Bengaluru High Road  Pennalur Irungattukottai S.O.  Sriperumbudur Taluk  Kancheepuram District 602105",
     "BRANCH CODE": "IT",
@@ -5126,7 +5126,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1219,
+    "College Code": 1219,
     "COLLEGE NMAE":
       "Sri Venkateswara College of Engineering (Autonomous) Post Bag No.1  Chennai-Bengaluru High Road  Pennalur Irungattukottai S.O.  Sriperumbudur Taluk  Kancheepuram District 602105",
     "BRANCH CODE": "ME",
@@ -5140,7 +5140,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1219,
+    "College Code": 1219,
     "COLLEGE NMAE":
       "Sri Venkateswara College of Engineering (Autonomous) Post Bag No.1  Chennai-Bengaluru High Road  Pennalur Irungattukottai S.O.  Sriperumbudur Taluk  Kancheepuram District 602105",
     "BRANCH CODE": "MR",
@@ -5154,7 +5154,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1219,
+    "College Code": 1219,
     "COLLEGE NMAE":
       "Sri Venkateswara College of Engineering (Autonomous) Post Bag No.1  Chennai-Bengaluru High Road  Pennalur Irungattukottai S.O.  Sriperumbudur Taluk  Kancheepuram District 602105",
     "BRANCH CODE": "MU",
@@ -5168,7 +5168,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1221,
+    "College Code": 1221,
     "COLLEGE NMAE":
       "Jaya College of Engineering and Technology  Parivakkam Poonamallee  Chennai 600056",
     "BRANCH CODE": "CS",
@@ -5182,7 +5182,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1221,
+    "College Code": 1221,
     "COLLEGE NMAE":
       "Jaya College of Engineering and Technology  Parivakkam Poonamallee  Chennai 600056",
     "BRANCH CODE": "EC",
@@ -5196,7 +5196,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1221,
+    "College Code": 1221,
     "COLLEGE NMAE":
       "Jaya College of Engineering and Technology  Parivakkam Poonamallee  Chennai 600056",
     "BRANCH CODE": "MD",
@@ -5210,7 +5210,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1221,
+    "College Code": 1221,
     "COLLEGE NMAE":
       "Jaya College of Engineering and Technology  Parivakkam Poonamallee  Chennai 600056",
     "BRANCH CODE": "ME",
@@ -5224,7 +5224,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1222,
+    "College Code": 1222,
     "COLLEGE NMAE":
       "P B College of Engineering  Irungkattukottai Sriperumpudur Taluk  Kancheepuram District 602117",
     "BRANCH CODE": "AD",
@@ -5238,7 +5238,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1222,
+    "College Code": 1222,
     "COLLEGE NMAE":
       "P B College of Engineering  Irungkattukottai Sriperumpudur Taluk  Kancheepuram District 602117",
     "BRANCH CODE": "AE",
@@ -5252,7 +5252,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1222,
+    "College Code": 1222,
     "COLLEGE NMAE":
       "P B College of Engineering  Irungkattukottai Sriperumpudur Taluk  Kancheepuram District 602117",
     "BRANCH CODE": "AU",
@@ -5266,7 +5266,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1222,
+    "College Code": 1222,
     "COLLEGE NMAE":
       "P B College of Engineering  Irungkattukottai Sriperumpudur Taluk  Kancheepuram District 602117",
     "BRANCH CODE": "CE",
@@ -5280,7 +5280,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1222,
+    "College Code": 1222,
     "COLLEGE NMAE":
       "P B College of Engineering  Irungkattukottai Sriperumpudur Taluk  Kancheepuram District 602117",
     "BRANCH CODE": "CS",
@@ -5294,7 +5294,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1222,
+    "College Code": 1222,
     "COLLEGE NMAE":
       "P B College of Engineering  Irungkattukottai Sriperumpudur Taluk  Kancheepuram District 602117",
     "BRANCH CODE": "EC",
@@ -5308,7 +5308,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1222,
+    "College Code": 1222,
     "COLLEGE NMAE":
       "P B College of Engineering  Irungkattukottai Sriperumpudur Taluk  Kancheepuram District 602117",
     "BRANCH CODE": "EE",
@@ -5322,7 +5322,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1222,
+    "College Code": 1222,
     "COLLEGE NMAE":
       "P B College of Engineering  Irungkattukottai Sriperumpudur Taluk  Kancheepuram District 602117",
     "BRANCH CODE": "IT",
@@ -5336,7 +5336,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1222,
+    "College Code": 1222,
     "COLLEGE NMAE":
       "P B College of Engineering  Irungkattukottai Sriperumpudur Taluk  Kancheepuram District 602117",
     "BRANCH CODE": "ME",
@@ -5350,7 +5350,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1222,
+    "College Code": 1222,
     "COLLEGE NMAE":
       "P B College of Engineering  Irungkattukottai Sriperumpudur Taluk  Kancheepuram District 602117",
     "BRANCH CODE": "SC",
@@ -5364,7 +5364,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1225,
+    "College Code": 1225,
     "COLLEGE NMAE":
       "Loyola Institute of Technology  Mevaloorkuppam  B Village Palanchoor  Nazarethpet Post  Chennai 600123",
     "BRANCH CODE": "AD",
@@ -5378,7 +5378,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1225,
+    "College Code": 1225,
     "COLLEGE NMAE":
       "Loyola Institute of Technology  Mevaloorkuppam  B Village Palanchoor  Nazarethpet Post  Chennai 600123",
     "BRANCH CODE": "CS",
@@ -5392,7 +5392,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1225,
+    "College Code": 1225,
     "COLLEGE NMAE":
       "Loyola Institute of Technology  Mevaloorkuppam  B Village Palanchoor  Nazarethpet Post  Chennai 600123",
     "BRANCH CODE": "EC",
@@ -5406,7 +5406,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1225,
+    "College Code": 1225,
     "COLLEGE NMAE":
       "Loyola Institute of Technology  Mevaloorkuppam  B Village Palanchoor  Nazarethpet Post  Chennai 600123",
     "BRANCH CODE": "EE",
@@ -5420,7 +5420,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1225,
+    "College Code": 1225,
     "COLLEGE NMAE":
       "Loyola Institute of Technology  Mevaloorkuppam  B Village Palanchoor  Nazarethpet Post  Chennai 600123",
     "BRANCH CODE": "IT",
@@ -5434,7 +5434,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1225,
+    "College Code": 1225,
     "COLLEGE NMAE":
       "Loyola Institute of Technology  Mevaloorkuppam  B Village Palanchoor  Nazarethpet Post  Chennai 600123",
     "BRANCH CODE": "ME",
@@ -5448,7 +5448,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1225,
+    "College Code": 1225,
     "COLLEGE NMAE":
       "Loyola Institute of Technology  Mevaloorkuppam  B Village Palanchoor  Nazarethpet Post  Chennai 600123",
     "BRANCH CODE": "SC",
@@ -5462,7 +5462,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1226,
+    "College Code": 1226,
     "COLLEGE NMAE":
       "P T Lee Chengalvaraya Naicker College of Engineering and Technology  Oovery  Veliyur Post  Kancheepuram District 631 502",
     "BRANCH CODE": "AD",
@@ -5476,7 +5476,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1226,
+    "College Code": 1226,
     "COLLEGE NMAE":
       "P T Lee Chengalvaraya Naicker College of Engineering and Technology  Oovery  Veliyur Post  Kancheepuram District 631 502",
     "BRANCH CODE": "CS",
@@ -5490,7 +5490,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1226,
+    "College Code": 1226,
     "COLLEGE NMAE":
       "P T Lee Chengalvaraya Naicker College of Engineering and Technology  Oovery  Veliyur Post  Kancheepuram District 631 502",
     "BRANCH CODE": "EC",
@@ -5504,7 +5504,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1226,
+    "College Code": 1226,
     "COLLEGE NMAE":
       "P T Lee Chengalvaraya Naicker College of Engineering and Technology  Oovery  Veliyur Post  Kancheepuram District 631 502",
     "BRANCH CODE": "EE",
@@ -5518,7 +5518,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1226,
+    "College Code": 1226,
     "COLLEGE NMAE":
       "P T Lee Chengalvaraya Naicker College of Engineering and Technology  Oovery  Veliyur Post  Kancheepuram District 631 502",
     "BRANCH CODE": "IT",
@@ -5532,7 +5532,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1226,
+    "College Code": 1226,
     "COLLEGE NMAE":
       "P T Lee Chengalvaraya Naicker College of Engineering and Technology  Oovery  Veliyur Post  Kancheepuram District 631 502",
     "BRANCH CODE": "ME",
@@ -5546,7 +5546,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1228,
+    "College Code": 1228,
     "COLLEGE NMAE":
       "Alpha College of Engineering  No.34  Udayavar Koil Street Poonamallee  Thirumazhisai  Chennai - 600124",
     "BRANCH CODE": "AD",
@@ -5560,7 +5560,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1228,
+    "College Code": 1228,
     "COLLEGE NMAE":
       "Alpha College of Engineering  No.34  Udayavar Koil Street Poonamallee  Thirumazhisai  Chennai - 600124",
     "BRANCH CODE": "BM",
@@ -5574,7 +5574,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1228,
+    "College Code": 1228,
     "COLLEGE NMAE":
       "Alpha College of Engineering  No.34  Udayavar Koil Street Poonamallee  Thirumazhisai  Chennai - 600124",
     "BRANCH CODE": "CS",
@@ -5588,7 +5588,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1228,
+    "College Code": 1228,
     "COLLEGE NMAE":
       "Alpha College of Engineering  No.34  Udayavar Koil Street Poonamallee  Thirumazhisai  Chennai - 600124",
     "BRANCH CODE": "EC",
@@ -5602,7 +5602,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1228,
+    "College Code": 1228,
     "COLLEGE NMAE":
       "Alpha College of Engineering  No.34  Udayavar Koil Street Poonamallee  Thirumazhisai  Chennai - 600124",
     "BRANCH CODE": "IT",
@@ -5616,7 +5616,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1228,
+    "College Code": 1228,
     "COLLEGE NMAE":
       "Alpha College of Engineering  No.34  Udayavar Koil Street Poonamallee  Thirumazhisai  Chennai - 600124",
     "BRANCH CODE": "ME",
@@ -5630,7 +5630,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1229,
+    "College Code": 1229,
     "COLLEGE NMAE":
       "Indira Institute of Engineering and Technology  VGR Gardens  Pandur  Thiruvallur District 631203",
     "BRANCH CODE": "AD",
@@ -5644,7 +5644,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1229,
+    "College Code": 1229,
     "COLLEGE NMAE":
       "Indira Institute of Engineering and Technology  VGR Gardens  Pandur  Thiruvallur District 631203",
     "BRANCH CODE": "CE",
@@ -5658,7 +5658,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1229,
+    "College Code": 1229,
     "COLLEGE NMAE":
       "Indira Institute of Engineering and Technology  VGR Gardens  Pandur  Thiruvallur District 631203",
     "BRANCH CODE": "CS",
@@ -5672,7 +5672,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1229,
+    "College Code": 1229,
     "COLLEGE NMAE":
       "Indira Institute of Engineering and Technology  VGR Gardens  Pandur  Thiruvallur District 631203",
     "BRANCH CODE": "EC",
@@ -5686,7 +5686,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1229,
+    "College Code": 1229,
     "COLLEGE NMAE":
       "Indira Institute of Engineering and Technology  VGR Gardens  Pandur  Thiruvallur District 631203",
     "BRANCH CODE": "EE",
@@ -5700,7 +5700,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1229,
+    "College Code": 1229,
     "COLLEGE NMAE":
       "Indira Institute of Engineering and Technology  VGR Gardens  Pandur  Thiruvallur District 631203",
     "BRANCH CODE": "ME",
@@ -5714,7 +5714,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1230,
+    "College Code": 1230,
     "COLLEGE NMAE":
       "Apollo Engineering College  Mevaloorkuppam  Valarpuram Post  Sriperumpudur  Kancheepuram District 602105",
     "BRANCH CODE": "AD",
@@ -5728,7 +5728,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1230,
+    "College Code": 1230,
     "COLLEGE NMAE":
       "Apollo Engineering College  Mevaloorkuppam  Valarpuram Post  Sriperumpudur  Kancheepuram District 602105",
     "BRANCH CODE": "AE",
@@ -5742,7 +5742,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1230,
+    "College Code": 1230,
     "COLLEGE NMAE":
       "Apollo Engineering College  Mevaloorkuppam  Valarpuram Post  Sriperumpudur  Kancheepuram District 602105",
     "BRANCH CODE": "CB",
@@ -5756,7 +5756,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1230,
+    "College Code": 1230,
     "COLLEGE NMAE":
       "Apollo Engineering College  Mevaloorkuppam  Valarpuram Post  Sriperumpudur  Kancheepuram District 602105",
     "BRANCH CODE": "CS",
@@ -5770,7 +5770,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1230,
+    "College Code": 1230,
     "COLLEGE NMAE":
       "Apollo Engineering College  Mevaloorkuppam  Valarpuram Post  Sriperumpudur  Kancheepuram District 602105",
     "BRANCH CODE": "EC",
@@ -5784,7 +5784,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1230,
+    "College Code": 1230,
     "COLLEGE NMAE":
       "Apollo Engineering College  Mevaloorkuppam  Valarpuram Post  Sriperumpudur  Kancheepuram District 602105",
     "BRANCH CODE": "EE",
@@ -5798,7 +5798,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1230,
+    "College Code": 1230,
     "COLLEGE NMAE":
       "Apollo Engineering College  Mevaloorkuppam  Valarpuram Post  Sriperumpudur  Kancheepuram District 602105",
     "BRANCH CODE": "ME",
@@ -5812,7 +5812,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1230,
+    "College Code": 1230,
     "COLLEGE NMAE":
       "Apollo Engineering College  Mevaloorkuppam  Valarpuram Post  Sriperumpudur  Kancheepuram District 602105",
     "BRANCH CODE": "SC",
@@ -5826,7 +5826,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1232,
+    "College Code": 1232,
     "COLLEGE NMAE":
       "A R M College of Engineering and Technology Sattamangalam  Maraimalainagar  Chengalpattu District 603209",
     "BRANCH CODE": "AD",
@@ -5840,7 +5840,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1232,
+    "College Code": 1232,
     "COLLEGE NMAE":
       "A R M College of Engineering and Technology Sattamangalam  Maraimalainagar  Chengalpattu District 603209",
     "BRANCH CODE": "CE",
@@ -5854,7 +5854,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1232,
+    "College Code": 1232,
     "COLLEGE NMAE":
       "A R M College of Engineering and Technology Sattamangalam  Maraimalainagar  Chengalpattu District 603209",
     "BRANCH CODE": "CS",
@@ -5868,7 +5868,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1232,
+    "College Code": 1232,
     "COLLEGE NMAE":
       "A R M College of Engineering and Technology Sattamangalam  Maraimalainagar  Chengalpattu District 603209",
     "BRANCH CODE": "EC",
@@ -5882,7 +5882,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1232,
+    "College Code": 1232,
     "COLLEGE NMAE":
       "A R M College of Engineering and Technology Sattamangalam  Maraimalainagar  Chengalpattu District 603209",
     "BRANCH CODE": "EE",
@@ -5896,7 +5896,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1232,
+    "College Code": 1232,
     "COLLEGE NMAE":
       "A R M College of Engineering and Technology Sattamangalam  Maraimalainagar  Chengalpattu District 603209",
     "BRANCH CODE": "IT",
@@ -5910,7 +5910,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1232,
+    "College Code": 1232,
     "COLLEGE NMAE":
       "A R M College of Engineering and Technology Sattamangalam  Maraimalainagar  Chengalpattu District 603209",
     "BRANCH CODE": "ME",
@@ -5924,7 +5924,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1232,
+    "College Code": 1232,
     "COLLEGE NMAE":
       "A R M College of Engineering and Technology Sattamangalam  Maraimalainagar  Chengalpattu District 603209",
     "BRANCH CODE": "SC",
@@ -5938,7 +5938,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1233,
+    "College Code": 1233,
     "COLLEGE NMAE":
       "Adhi College of Engineering and Technology Pazhayaseevaram  Madura Sankarapuram Village Kancheepuram District 631605",
     "BRANCH CODE": "AD",
@@ -5952,7 +5952,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1233,
+    "College Code": 1233,
     "COLLEGE NMAE":
       "Adhi College of Engineering and Technology Pazhayaseevaram  Madura Sankarapuram Village Kancheepuram District 631605",
     "BRANCH CODE": "CS",
@@ -5966,7 +5966,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1233,
+    "College Code": 1233,
     "COLLEGE NMAE":
       "Adhi College of Engineering and Technology Pazhayaseevaram  Madura Sankarapuram Village Kancheepuram District 631605",
     "BRANCH CODE": "EC",
@@ -5980,7 +5980,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1233,
+    "College Code": 1233,
     "COLLEGE NMAE":
       "Adhi College of Engineering and Technology Pazhayaseevaram  Madura Sankarapuram Village Kancheepuram District 631605",
     "BRANCH CODE": "EE",
@@ -5994,7 +5994,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1233,
+    "College Code": 1233,
     "COLLEGE NMAE":
       "Adhi College of Engineering and Technology Pazhayaseevaram  Madura Sankarapuram Village Kancheepuram District 631605",
     "BRANCH CODE": "IT",
@@ -6008,7 +6008,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1233,
+    "College Code": 1233,
     "COLLEGE NMAE":
       "Adhi College of Engineering and Technology Pazhayaseevaram  Madura Sankarapuram Village Kancheepuram District 631605",
     "BRANCH CODE": "ME",
@@ -6022,7 +6022,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1235,
+    "College Code": 1235,
     "COLLEGE NMAE":
       "Jei Mathaajee College of Engineering  Vishaandikuppam Karappettai (via)  Siruvakkam  Kancheepuram District 631 552",
     "BRANCH CODE": "CE",
@@ -6036,7 +6036,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1235,
+    "College Code": 1235,
     "COLLEGE NMAE":
       "Jei Mathaajee College of Engineering  Vishaandikuppam Karappettai (via)  Siruvakkam  Kancheepuram District 631 552",
     "BRANCH CODE": "CS",
@@ -6050,7 +6050,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1235,
+    "College Code": 1235,
     "COLLEGE NMAE":
       "Jei Mathaajee College of Engineering  Vishaandikuppam Karappettai (via)  Siruvakkam  Kancheepuram District 631 552",
     "BRANCH CODE": "EC",
@@ -6064,7 +6064,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1235,
+    "College Code": 1235,
     "COLLEGE NMAE":
       "Jei Mathaajee College of Engineering  Vishaandikuppam Karappettai (via)  Siruvakkam  Kancheepuram District 631 552",
     "BRANCH CODE": "EE",
@@ -6078,7 +6078,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1235,
+    "College Code": 1235,
     "COLLEGE NMAE":
       "Jei Mathaajee College of Engineering  Vishaandikuppam Karappettai (via)  Siruvakkam  Kancheepuram District 631 552",
     "BRANCH CODE": "IT",
@@ -6092,7 +6092,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1235,
+    "College Code": 1235,
     "COLLEGE NMAE":
       "Jei Mathaajee College of Engineering  Vishaandikuppam Karappettai (via)  Siruvakkam  Kancheepuram District 631 552",
     "BRANCH CODE": "ME",
@@ -6106,7 +6106,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1237,
+    "College Code": 1237,
     "COLLEGE NMAE":
       "Velammal Institute of Technology  Chennai-Kolkatta Highway  Panchetti Village  Ponneri Taluk  Thiruvallur District 601204",
     "BRANCH CODE": "AD",
@@ -6120,7 +6120,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1237,
+    "College Code": 1237,
     "COLLEGE NMAE":
       "Velammal Institute of Technology  Chennai-Kolkatta Highway  Panchetti Village  Ponneri Taluk  Thiruvallur District 601204",
     "BRANCH CODE": "CS",
@@ -6134,7 +6134,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1237,
+    "College Code": 1237,
     "COLLEGE NMAE":
       "Velammal Institute of Technology  Chennai-Kolkatta Highway  Panchetti Village  Ponneri Taluk  Thiruvallur District 601204",
     "BRANCH CODE": "EC",
@@ -6148,7 +6148,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1237,
+    "College Code": 1237,
     "COLLEGE NMAE":
       "Velammal Institute of Technology  Chennai-Kolkatta Highway  Panchetti Village  Ponneri Taluk  Thiruvallur District 601204",
     "BRANCH CODE": "EE",
@@ -6162,7 +6162,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1237,
+    "College Code": 1237,
     "COLLEGE NMAE":
       "Velammal Institute of Technology  Chennai-Kolkatta Highway  Panchetti Village  Ponneri Taluk  Thiruvallur District 601204",
     "BRANCH CODE": "IT",
@@ -6176,7 +6176,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1237,
+    "College Code": 1237,
     "COLLEGE NMAE":
       "Velammal Institute of Technology  Chennai-Kolkatta Highway  Panchetti Village  Ponneri Taluk  Thiruvallur District 601204",
     "BRANCH CODE": "ME",
@@ -6190,7 +6190,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1237,
+    "College Code": 1237,
     "COLLEGE NMAE":
       "Velammal Institute of Technology  Chennai-Kolkatta Highway  Panchetti Village  Ponneri Taluk  Thiruvallur District 601204",
     "BRANCH CODE": "MZ",
@@ -6204,7 +6204,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1238,
+    "College Code": 1238,
     "COLLEGE NMAE":
       "G R T Institute of Engineering and Technology  GRT Mahalakshmi Nagar  Chennai-Tirupathi Highway  Tiruttani Taluk  Thiruvallur District 631209",
     "BRANCH CODE": "AD",
@@ -6218,7 +6218,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1238,
+    "College Code": 1238,
     "COLLEGE NMAE":
       "G R T Institute of Engineering and Technology  GRT Mahalakshmi Nagar  Chennai-Tirupathi Highway  Tiruttani Taluk  Thiruvallur District 631209",
     "BRANCH CODE": "BM",
@@ -6232,7 +6232,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1238,
+    "College Code": 1238,
     "COLLEGE NMAE":
       "G R T Institute of Engineering and Technology  GRT Mahalakshmi Nagar  Chennai-Tirupathi Highway  Tiruttani Taluk  Thiruvallur District 631209",
     "BRANCH CODE": "CS",
@@ -6246,7 +6246,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1238,
+    "College Code": 1238,
     "COLLEGE NMAE":
       "G R T Institute of Engineering and Technology  GRT Mahalakshmi Nagar  Chennai-Tirupathi Highway  Tiruttani Taluk  Thiruvallur District 631209",
     "BRANCH CODE": "EC",
@@ -6260,7 +6260,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1238,
+    "College Code": 1238,
     "COLLEGE NMAE":
       "G R T Institute of Engineering and Technology  GRT Mahalakshmi Nagar  Chennai-Tirupathi Highway  Tiruttani Taluk  Thiruvallur District 631209",
     "BRANCH CODE": "EE",
@@ -6274,7 +6274,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1238,
+    "College Code": 1238,
     "COLLEGE NMAE":
       "G R T Institute of Engineering and Technology  GRT Mahalakshmi Nagar  Chennai-Tirupathi Highway  Tiruttani Taluk  Thiruvallur District 631209",
     "BRANCH CODE": "ME",
@@ -6288,7 +6288,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1241,
+    "College Code": 1241,
     "COLLEGE NMAE":
       "T J S Engineering College  Peruvoyal  Near Kavaraipettai Gummidipoondi Taluk  Thiruvallur District 601206",
     "BRANCH CODE": "AD",
@@ -6302,7 +6302,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1241,
+    "College Code": 1241,
     "COLLEGE NMAE":
       "T J S Engineering College  Peruvoyal  Near Kavaraipettai Gummidipoondi Taluk  Thiruvallur District 601206",
     "BRANCH CODE": "CS",
@@ -6316,7 +6316,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1241,
+    "College Code": 1241,
     "COLLEGE NMAE":
       "T J S Engineering College  Peruvoyal  Near Kavaraipettai Gummidipoondi Taluk  Thiruvallur District 601206",
     "BRANCH CODE": "EC",
@@ -6330,7 +6330,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1241,
+    "College Code": 1241,
     "COLLEGE NMAE":
       "T J S Engineering College  Peruvoyal  Near Kavaraipettai Gummidipoondi Taluk  Thiruvallur District 601206",
     "BRANCH CODE": "EE",
@@ -6344,7 +6344,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1241,
+    "College Code": 1241,
     "COLLEGE NMAE":
       "T J S Engineering College  Peruvoyal  Near Kavaraipettai Gummidipoondi Taluk  Thiruvallur District 601206",
     "BRANCH CODE": "ME",
@@ -6358,7 +6358,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1243,
+    "College Code": 1243,
     "COLLEGE NMAE":
       "Madha Institute of Engineering and Technology Erandamkattalai Village  Sadhananthapuram  Thandalam Post  Chennai  602101",
     "BRANCH CODE": "AD",
@@ -6372,7 +6372,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1243,
+    "College Code": 1243,
     "COLLEGE NMAE":
       "Madha Institute of Engineering and Technology Erandamkattalai Village  Sadhananthapuram  Thandalam Post  Chennai  602101",
     "BRANCH CODE": "CE",
@@ -6386,7 +6386,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1243,
+    "College Code": 1243,
     "COLLEGE NMAE":
       "Madha Institute of Engineering and Technology Erandamkattalai Village  Sadhananthapuram  Thandalam Post  Chennai  602101",
     "BRANCH CODE": "CS",
@@ -6400,7 +6400,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1243,
+    "College Code": 1243,
     "COLLEGE NMAE":
       "Madha Institute of Engineering and Technology Erandamkattalai Village  Sadhananthapuram  Thandalam Post  Chennai  602101",
     "BRANCH CODE": "EC",
@@ -6414,7 +6414,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1243,
+    "College Code": 1243,
     "COLLEGE NMAE":
       "Madha Institute of Engineering and Technology Erandamkattalai Village  Sadhananthapuram  Thandalam Post  Chennai  602101",
     "BRANCH CODE": "EE",
@@ -6428,7 +6428,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1243,
+    "College Code": 1243,
     "COLLEGE NMAE":
       "Madha Institute of Engineering and Technology Erandamkattalai Village  Sadhananthapuram  Thandalam Post  Chennai  602101",
     "BRANCH CODE": "IT",
@@ -6442,7 +6442,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1243,
+    "College Code": 1243,
     "COLLEGE NMAE":
       "Madha Institute of Engineering and Technology Erandamkattalai Village  Sadhananthapuram  Thandalam Post  Chennai  602101",
     "BRANCH CODE": "ME",
@@ -6456,7 +6456,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1243,
+    "College Code": 1243,
     "COLLEGE NMAE":
       "Madha Institute of Engineering and Technology Erandamkattalai Village  Sadhananthapuram  Thandalam Post  Chennai  602101",
     "BRANCH CODE": "SC",
@@ -6470,7 +6470,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1301,
+    "College Code": 1301,
     "COLLEGE NMAE":
       "Mohammed Sathak A J College of Engineering  Old Mahabalipuram Road (OMR)  Egattur  Chengalpattu District 603103",
     "BRANCH CODE": "AD",
@@ -6484,7 +6484,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1301,
+    "College Code": 1301,
     "COLLEGE NMAE":
       "Mohammed Sathak A J College of Engineering  Old Mahabalipuram Road (OMR)  Egattur  Chengalpattu District 603103",
     "BRANCH CODE": "CB",
@@ -6498,7 +6498,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1301,
+    "College Code": 1301,
     "COLLEGE NMAE":
       "Mohammed Sathak A J College of Engineering  Old Mahabalipuram Road (OMR)  Egattur  Chengalpattu District 603103",
     "BRANCH CODE": "CE",
@@ -6512,7 +6512,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1301,
+    "College Code": 1301,
     "COLLEGE NMAE":
       "Mohammed Sathak A J College of Engineering  Old Mahabalipuram Road (OMR)  Egattur  Chengalpattu District 603103",
     "BRANCH CODE": "CS",
@@ -6526,7 +6526,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1301,
+    "College Code": 1301,
     "COLLEGE NMAE":
       "Mohammed Sathak A J College of Engineering  Old Mahabalipuram Road (OMR)  Egattur  Chengalpattu District 603103",
     "BRANCH CODE": "EC",
@@ -6540,7 +6540,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1301,
+    "College Code": 1301,
     "COLLEGE NMAE":
       "Mohammed Sathak A J College of Engineering  Old Mahabalipuram Road (OMR)  Egattur  Chengalpattu District 603103",
     "BRANCH CODE": "EE",
@@ -6554,7 +6554,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1301,
+    "College Code": 1301,
     "COLLEGE NMAE":
       "Mohammed Sathak A J College of Engineering  Old Mahabalipuram Road (OMR)  Egattur  Chengalpattu District 603103",
     "BRANCH CODE": "IT",
@@ -6568,7 +6568,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1301,
+    "College Code": 1301,
     "COLLEGE NMAE":
       "Mohammed Sathak A J College of Engineering  Old Mahabalipuram Road (OMR)  Egattur  Chengalpattu District 603103",
     "BRANCH CODE": "ME",
@@ -6582,7 +6582,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1301,
+    "College Code": 1301,
     "COLLEGE NMAE":
       "Mohammed Sathak A J College of Engineering  Old Mahabalipuram Road (OMR)  Egattur  Chengalpattu District 603103",
     "BRANCH CODE": "SC",
@@ -6596,7 +6596,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1303,
+    "College Code": 1303,
     "COLLEGE NMAE":
       "Anand Institute of Higher Technology  Old Mahabalipuram Road (OMR)  Kazhipattur  Chengalpattu District  603103",
     "BRANCH CODE": "AD",
@@ -6610,7 +6610,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1303,
+    "College Code": 1303,
     "COLLEGE NMAE":
       "Anand Institute of Higher Technology  Old Mahabalipuram Road (OMR)  Kazhipattur  Chengalpattu District  603103",
     "BRANCH CODE": "AG",
@@ -6624,7 +6624,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1303,
+    "College Code": 1303,
     "COLLEGE NMAE":
       "Anand Institute of Higher Technology  Old Mahabalipuram Road (OMR)  Kazhipattur  Chengalpattu District  603103",
     "BRANCH CODE": "BT",
@@ -6638,7 +6638,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1303,
+    "College Code": 1303,
     "COLLEGE NMAE":
       "Anand Institute of Higher Technology  Old Mahabalipuram Road (OMR)  Kazhipattur  Chengalpattu District  603103",
     "BRANCH CODE": "CB",
@@ -6652,7 +6652,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1303,
+    "College Code": 1303,
     "COLLEGE NMAE":
       "Anand Institute of Higher Technology  Old Mahabalipuram Road (OMR)  Kazhipattur  Chengalpattu District  603103",
     "BRANCH CODE": "CS",
@@ -6666,7 +6666,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1303,
+    "College Code": 1303,
     "COLLEGE NMAE":
       "Anand Institute of Higher Technology  Old Mahabalipuram Road (OMR)  Kazhipattur  Chengalpattu District  603103",
     "BRANCH CODE": "EC",
@@ -6680,7 +6680,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1303,
+    "College Code": 1303,
     "COLLEGE NMAE":
       "Anand Institute of Higher Technology  Old Mahabalipuram Road (OMR)  Kazhipattur  Chengalpattu District  603103",
     "BRANCH CODE": "EE",
@@ -6694,7 +6694,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1303,
+    "College Code": 1303,
     "COLLEGE NMAE":
       "Anand Institute of Higher Technology  Old Mahabalipuram Road (OMR)  Kazhipattur  Chengalpattu District  603103",
     "BRANCH CODE": "IT",
@@ -6708,7 +6708,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1303,
+    "College Code": 1303,
     "COLLEGE NMAE":
       "Anand Institute of Higher Technology  Old Mahabalipuram Road (OMR)  Kazhipattur  Chengalpattu District  603103",
     "BRANCH CODE": "ME",
@@ -6722,7 +6722,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1304,
+    "College Code": 1304,
     "COLLEGE NMAE":
       "Easwari Engineering College (Autonomous)  Ramapuram Chennai 600089",
     "BRANCH CODE": "AD",
@@ -6736,7 +6736,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1304,
+    "College Code": 1304,
     "COLLEGE NMAE":
       "Easwari Engineering College (Autonomous)  Ramapuram Chennai 600089",
     "BRANCH CODE": "AM",
@@ -6751,7 +6751,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1304,
+    "College Code": 1304,
     "COLLEGE NMAE":
       "Easwari Engineering College (Autonomous)  Ramapuram Chennai 600089",
     "BRANCH CODE": "AU",
@@ -6765,7 +6765,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1304,
+    "College Code": 1304,
     "COLLEGE NMAE":
       "Easwari Engineering College (Autonomous)  Ramapuram Chennai 600089",
     "BRANCH CODE": "BM",
@@ -6779,7 +6779,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1304,
+    "College Code": 1304,
     "COLLEGE NMAE":
       "Easwari Engineering College (Autonomous)  Ramapuram Chennai 600089",
     "BRANCH CODE": "CE",
@@ -6793,7 +6793,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1304,
+    "College Code": 1304,
     "COLLEGE NMAE":
       "Easwari Engineering College (Autonomous)  Ramapuram Chennai 600089",
     "BRANCH CODE": "CS",
@@ -6807,7 +6807,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1304,
+    "College Code": 1304,
     "COLLEGE NMAE":
       "Easwari Engineering College (Autonomous)  Ramapuram Chennai 600089",
     "BRANCH CODE": "EC",
@@ -6821,7 +6821,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1304,
+    "College Code": 1304,
     "COLLEGE NMAE":
       "Easwari Engineering College (Autonomous)  Ramapuram Chennai 600089",
     "BRANCH CODE": "EE",
@@ -6835,7 +6835,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1304,
+    "College Code": 1304,
     "COLLEGE NMAE":
       "Easwari Engineering College (Autonomous)  Ramapuram Chennai 600089",
     "BRANCH CODE": "IT",
@@ -6849,7 +6849,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1304,
+    "College Code": 1304,
     "COLLEGE NMAE":
       "Easwari Engineering College (Autonomous)  Ramapuram Chennai 600089",
     "BRANCH CODE": "ME",
@@ -6863,7 +6863,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1304,
+    "College Code": 1304,
     "COLLEGE NMAE":
       "Easwari Engineering College (Autonomous)  Ramapuram Chennai 600089",
     "BRANCH CODE": "RM",
@@ -6877,7 +6877,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1304,
+    "College Code": 1304,
     "COLLEGE NMAE":
       "Easwari Engineering College (Autonomous)  Ramapuram Chennai 600089",
     "BRANCH CODE": "SC",
@@ -6891,7 +6891,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1306,
+    "College Code": 1306,
     "COLLEGE NMAE":
       "Jeppiaar Engineering College  Old Mahabalipuram Road (OMR)  Chennai 600119",
     "BRANCH CODE": "AD",
@@ -6905,7 +6905,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1306,
+    "College Code": 1306,
     "COLLEGE NMAE":
       "Jeppiaar Engineering College  Old Mahabalipuram Road (OMR)  Chennai 600119",
     "BRANCH CODE": "BT",
@@ -6919,7 +6919,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1306,
+    "College Code": 1306,
     "COLLEGE NMAE":
       "Jeppiaar Engineering College  Old Mahabalipuram Road (OMR)  Chennai 600119",
     "BRANCH CODE": "CS",
@@ -6933,7 +6933,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1306,
+    "College Code": 1306,
     "COLLEGE NMAE":
       "Jeppiaar Engineering College  Old Mahabalipuram Road (OMR)  Chennai 600119",
     "BRANCH CODE": "EC",
@@ -6947,7 +6947,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1306,
+    "College Code": 1306,
     "COLLEGE NMAE":
       "Jeppiaar Engineering College  Old Mahabalipuram Road (OMR)  Chennai 600119",
     "BRANCH CODE": "IT",
@@ -6961,7 +6961,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1306,
+    "College Code": 1306,
     "COLLEGE NMAE":
       "Jeppiaar Engineering College  Old Mahabalipuram Road (OMR)  Chennai 600119",
     "BRANCH CODE": "ME",
@@ -6975,7 +6975,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1307,
+    "College Code": 1307,
     "COLLEGE NMAE":
       "Jerusalem College of Engineering (Autonomous) Narayanapuram  Pallikaranai  Chennai 600 100",
     "BRANCH CODE": "AD",
@@ -6989,7 +6989,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1307,
+    "College Code": 1307,
     "COLLEGE NMAE":
       "Jerusalem College of Engineering (Autonomous) Narayanapuram  Pallikaranai  Chennai 600 100",
     "BRANCH CODE": "AM",
@@ -7004,7 +7004,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1307,
+    "College Code": 1307,
     "COLLEGE NMAE":
       "Jerusalem College of Engineering (Autonomous) Narayanapuram  Pallikaranai  Chennai 600 100",
     "BRANCH CODE": "BM",
@@ -7018,7 +7018,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1307,
+    "College Code": 1307,
     "COLLEGE NMAE":
       "Jerusalem College of Engineering (Autonomous) Narayanapuram  Pallikaranai  Chennai 600 100",
     "BRANCH CODE": "CB",
@@ -7032,7 +7032,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1307,
+    "College Code": 1307,
     "COLLEGE NMAE":
       "Jerusalem College of Engineering (Autonomous) Narayanapuram  Pallikaranai  Chennai 600 100",
     "BRANCH CODE": "CS",
@@ -7046,7 +7046,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1307,
+    "College Code": 1307,
     "COLLEGE NMAE":
       "Jerusalem College of Engineering (Autonomous) Narayanapuram  Pallikaranai  Chennai 600 100",
     "BRANCH CODE": "EC",
@@ -7060,7 +7060,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1307,
+    "College Code": 1307,
     "COLLEGE NMAE":
       "Jerusalem College of Engineering (Autonomous) Narayanapuram  Pallikaranai  Chennai 600 100",
     "BRANCH CODE": "EE",
@@ -7074,7 +7074,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1307,
+    "College Code": 1307,
     "COLLEGE NMAE":
       "Jerusalem College of Engineering (Autonomous) Narayanapuram  Pallikaranai  Chennai 600 100",
     "BRANCH CODE": "IT",
@@ -7088,7 +7088,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1307,
+    "College Code": 1307,
     "COLLEGE NMAE":
       "Jerusalem College of Engineering (Autonomous) Narayanapuram  Pallikaranai  Chennai 600 100",
     "BRANCH CODE": "SC",
@@ -7102,7 +7102,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1309,
+    "College Code": 1309,
     "COLLEGE NMAE":
       "Meenakshi Sundararajan Engineering College Kodambakkam  Chennai 600024",
     "BRANCH CODE": "AD",
@@ -7116,7 +7116,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1309,
+    "College Code": 1309,
     "COLLEGE NMAE":
       "Meenakshi Sundararajan Engineering College Kodambakkam  Chennai 600024",
     "BRANCH CODE": "CE",
@@ -7130,7 +7130,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1309,
+    "College Code": 1309,
     "COLLEGE NMAE":
       "Meenakshi Sundararajan Engineering College Kodambakkam  Chennai 600024",
     "BRANCH CODE": "CS",
@@ -7144,7 +7144,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1309,
+    "College Code": 1309,
     "COLLEGE NMAE":
       "Meenakshi Sundararajan Engineering College Kodambakkam  Chennai 600024",
     "BRANCH CODE": "EC",
@@ -7158,7 +7158,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1309,
+    "College Code": 1309,
     "COLLEGE NMAE":
       "Meenakshi Sundararajan Engineering College Kodambakkam  Chennai 600024",
     "BRANCH CODE": "EE",
@@ -7172,7 +7172,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1309,
+    "College Code": 1309,
     "COLLEGE NMAE":
       "Meenakshi Sundararajan Engineering College Kodambakkam  Chennai 600024",
     "BRANCH CODE": "IT",
@@ -7186,7 +7186,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1309,
+    "College Code": 1309,
     "COLLEGE NMAE":
       "Meenakshi Sundararajan Engineering College Kodambakkam  Chennai 600024",
     "BRANCH CODE": "ME",
@@ -7200,7 +7200,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1310,
+    "College Code": 1310,
     "COLLEGE NMAE":
       "Misrimal Navajee Munoth Jain Engineering College  Rajiv Gandhi Salai (OMR)  Thorappakkam  Chennai 600096",
     "BRANCH CODE": "AD",
@@ -7214,7 +7214,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1310,
+    "College Code": 1310,
     "COLLEGE NMAE":
       "Misrimal Navajee Munoth Jain Engineering College  Rajiv Gandhi Salai (OMR)  Thorappakkam  Chennai 600096",
     "BRANCH CODE": "CB",
@@ -7228,7 +7228,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1310,
+    "College Code": 1310,
     "COLLEGE NMAE":
       "Misrimal Navajee Munoth Jain Engineering College  Rajiv Gandhi Salai (OMR)  Thorappakkam  Chennai 600096",
     "BRANCH CODE": "CE",
@@ -7242,7 +7242,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1310,
+    "College Code": 1310,
     "COLLEGE NMAE":
       "Misrimal Navajee Munoth Jain Engineering College  Rajiv Gandhi Salai (OMR)  Thorappakkam  Chennai 600096",
     "BRANCH CODE": "CS",
@@ -7256,7 +7256,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1310,
+    "College Code": 1310,
     "COLLEGE NMAE":
       "Misrimal Navajee Munoth Jain Engineering College  Rajiv Gandhi Salai (OMR)  Thorappakkam  Chennai 600096",
     "BRANCH CODE": "EC",
@@ -7270,7 +7270,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1310,
+    "College Code": 1310,
     "COLLEGE NMAE":
       "Misrimal Navajee Munoth Jain Engineering College  Rajiv Gandhi Salai (OMR)  Thorappakkam  Chennai 600096",
     "BRANCH CODE": "EE",
@@ -7284,7 +7284,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1310,
+    "College Code": 1310,
     "COLLEGE NMAE":
       "Misrimal Navajee Munoth Jain Engineering College  Rajiv Gandhi Salai (OMR)  Thorappakkam  Chennai 600096",
     "BRANCH CODE": "IT",
@@ -7298,7 +7298,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1310,
+    "College Code": 1310,
     "COLLEGE NMAE":
       "Misrimal Navajee Munoth Jain Engineering College  Rajiv Gandhi Salai (OMR)  Thorappakkam  Chennai 600096",
     "BRANCH CODE": "ME",
@@ -7312,7 +7312,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1311,
+    "College Code": 1311,
     "COLLEGE NMAE":
       "K C G College of Technology (Autonomous) Karappakkam Chennai 600096",
     "BRANCH CODE": "AD",
@@ -7326,7 +7326,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1311,
+    "College Code": 1311,
     "COLLEGE NMAE":
       "K C G College of Technology (Autonomous) Karappakkam Chennai 600096",
     "BRANCH CODE": "AE",
@@ -7340,7 +7340,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1311,
+    "College Code": 1311,
     "COLLEGE NMAE":
       "K C G College of Technology (Autonomous) Karappakkam Chennai 600096",
     "BRANCH CODE": "AO",
@@ -7354,7 +7354,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1311,
+    "College Code": 1311,
     "COLLEGE NMAE":
       "K C G College of Technology (Autonomous) Karappakkam Chennai 600096",
     "BRANCH CODE": "AU",
@@ -7368,7 +7368,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1311,
+    "College Code": 1311,
     "COLLEGE NMAE":
       "K C G College of Technology (Autonomous) Karappakkam Chennai 600096",
     "BRANCH CODE": "CE",
@@ -7382,7 +7382,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1311,
+    "College Code": 1311,
     "COLLEGE NMAE":
       "K C G College of Technology (Autonomous) Karappakkam Chennai 600096",
     "BRANCH CODE": "CS",
@@ -7396,7 +7396,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1311,
+    "College Code": 1311,
     "COLLEGE NMAE":
       "K C G College of Technology (Autonomous) Karappakkam Chennai 600096",
     "BRANCH CODE": "EC",
@@ -7410,7 +7410,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1311,
+    "College Code": 1311,
     "COLLEGE NMAE":
       "K C G College of Technology (Autonomous) Karappakkam Chennai 600096",
     "BRANCH CODE": "EE",
@@ -7424,7 +7424,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1311,
+    "College Code": 1311,
     "COLLEGE NMAE":
       "K C G College of Technology (Autonomous) Karappakkam Chennai 600096",
     "BRANCH CODE": "FT",
@@ -7438,7 +7438,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1311,
+    "College Code": 1311,
     "COLLEGE NMAE":
       "K C G College of Technology (Autonomous) Karappakkam Chennai 600096",
     "BRANCH CODE": "IT",
@@ -7452,7 +7452,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1311,
+    "College Code": 1311,
     "COLLEGE NMAE":
       "K C G College of Technology (Autonomous) Karappakkam Chennai 600096",
     "BRANCH CODE": "ME",
@@ -7466,7 +7466,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1311,
+    "College Code": 1311,
     "COLLEGE NMAE":
       "K C G College of Technology (Autonomous) Karappakkam Chennai 600096",
     "BRANCH CODE": "MZ",
@@ -7480,7 +7480,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1311,
+    "College Code": 1311,
     "COLLEGE NMAE":
       "K C G College of Technology (Autonomous) Karappakkam Chennai 600096",
     "BRANCH CODE": "SC",
@@ -7494,7 +7494,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1313,
+    "College Code": 1313,
     "COLLEGE NMAE":
       "Shree Motilal Kanhaiyalal (SMK)Fomra Institute of Technology  Old Mahabalipuram Road (OMR) Kelambakkam  Chengalpattu District 603103",
     "BRANCH CODE": "AD",
@@ -7508,7 +7508,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1313,
+    "College Code": 1313,
     "COLLEGE NMAE":
       "Shree Motilal Kanhaiyalal (SMK)Fomra Institute of Technology  Old Mahabalipuram Road (OMR) Kelambakkam  Chengalpattu District 603103",
     "BRANCH CODE": "BM",
@@ -7522,7 +7522,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1313,
+    "College Code": 1313,
     "COLLEGE NMAE":
       "Shree Motilal Kanhaiyalal (SMK)Fomra Institute of Technology  Old Mahabalipuram Road (OMR) Kelambakkam  Chengalpattu District 603103",
     "BRANCH CODE": "CS",
@@ -7536,7 +7536,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1313,
+    "College Code": 1313,
     "COLLEGE NMAE":
       "Shree Motilal Kanhaiyalal (SMK)Fomra Institute of Technology  Old Mahabalipuram Road (OMR) Kelambakkam  Chengalpattu District 603103",
     "BRANCH CODE": "EC",
@@ -7550,7 +7550,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1313,
+    "College Code": 1313,
     "COLLEGE NMAE":
       "Shree Motilal Kanhaiyalal (SMK)Fomra Institute of Technology  Old Mahabalipuram Road (OMR) Kelambakkam  Chengalpattu District 603103",
     "BRANCH CODE": "EE",
@@ -7564,7 +7564,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1313,
+    "College Code": 1313,
     "COLLEGE NMAE":
       "Shree Motilal Kanhaiyalal (SMK)Fomra Institute of Technology  Old Mahabalipuram Road (OMR) Kelambakkam  Chengalpattu District 603103",
     "BRANCH CODE": "IT",
@@ -7578,7 +7578,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1313,
+    "College Code": 1313,
     "COLLEGE NMAE":
       "Shree Motilal Kanhaiyalal (SMK)Fomra Institute of Technology  Old Mahabalipuram Road (OMR) Kelambakkam  Chengalpattu District 603103",
     "BRANCH CODE": "ME",
@@ -7592,7 +7592,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1315,
+    "College Code": 1315,
     "COLLEGE NMAE":
       "Sri Sivasubramaniya Nadar College of Engineering (Autonomous)  Kalavakkam  Old Mahabalipuram Road (OMR)  Chengalpattu District 603110",
     "BRANCH CODE": "BM",
@@ -7606,7 +7606,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1315,
+    "College Code": 1315,
     "COLLEGE NMAE":
       "Sri Sivasubramaniya Nadar College of Engineering (Autonomous)  Kalavakkam  Old Mahabalipuram Road (OMR)  Chengalpattu District 603110",
     "BRANCH CODE": "CE",
@@ -7620,7 +7620,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1315,
+    "College Code": 1315,
     "COLLEGE NMAE":
       "Sri Sivasubramaniya Nadar College of Engineering (Autonomous)  Kalavakkam  Old Mahabalipuram Road (OMR)  Chengalpattu District 603110",
     "BRANCH CODE": "CH",
@@ -7634,7 +7634,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1315,
+    "College Code": 1315,
     "COLLEGE NMAE":
       "Sri Sivasubramaniya Nadar College of Engineering (Autonomous)  Kalavakkam  Old Mahabalipuram Road (OMR)  Chengalpattu District 603110",
     "BRANCH CODE": "CJ",
@@ -7649,7 +7649,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1315,
+    "College Code": 1315,
     "COLLEGE NMAE":
       "Sri Sivasubramaniya Nadar College of Engineering (Autonomous)  Kalavakkam  Old Mahabalipuram Road (OMR)  Chengalpattu District 603110",
     "BRANCH CODE": "CS",
@@ -7663,7 +7663,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1315,
+    "College Code": 1315,
     "COLLEGE NMAE":
       "Sri Sivasubramaniya Nadar College of Engineering (Autonomous)  Kalavakkam  Old Mahabalipuram Road (OMR)  Chengalpattu District 603110",
     "BRANCH CODE": "EC",
@@ -7677,7 +7677,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1315,
+    "College Code": 1315,
     "COLLEGE NMAE":
       "Sri Sivasubramaniya Nadar College of Engineering (Autonomous)  Kalavakkam  Old Mahabalipuram Road (OMR)  Chengalpattu District 603110",
     "BRANCH CODE": "EE",
@@ -7691,7 +7691,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1315,
+    "College Code": 1315,
     "COLLEGE NMAE":
       "Sri Sivasubramaniya Nadar College of Engineering (Autonomous)  Kalavakkam  Old Mahabalipuram Road (OMR)  Chengalpattu District 603110",
     "BRANCH CODE": "IT",
@@ -7705,7 +7705,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1315,
+    "College Code": 1315,
     "COLLEGE NMAE":
       "Sri Sivasubramaniya Nadar College of Engineering (Autonomous)  Kalavakkam  Old Mahabalipuram Road (OMR)  Chengalpattu District 603110",
     "BRANCH CODE": "ME",
@@ -7719,7 +7719,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1316,
+    "College Code": 1316,
     "COLLEGE NMAE":
       "Agni College of Technology  Old Mahabalipuram Road (OMR)  Thalambur Village  Chengalpattu District 603103",
     "BRANCH CODE": "AD",
@@ -7733,7 +7733,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1316,
+    "College Code": 1316,
     "COLLEGE NMAE":
       "Agni College of Technology  Old Mahabalipuram Road (OMR)  Thalambur Village  Chengalpattu District 603103",
     "BRANCH CODE": "BM",
@@ -7747,7 +7747,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1316,
+    "College Code": 1316,
     "COLLEGE NMAE":
       "Agni College of Technology  Old Mahabalipuram Road (OMR)  Thalambur Village  Chengalpattu District 603103",
     "BRANCH CODE": "CE",
@@ -7761,7 +7761,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1316,
+    "College Code": 1316,
     "COLLEGE NMAE":
       "Agni College of Technology  Old Mahabalipuram Road (OMR)  Thalambur Village  Chengalpattu District 603103",
     "BRANCH CODE": "CH",
@@ -7775,7 +7775,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1316,
+    "College Code": 1316,
     "COLLEGE NMAE":
       "Agni College of Technology  Old Mahabalipuram Road (OMR)  Thalambur Village  Chengalpattu District 603103",
     "BRANCH CODE": "CS",
@@ -7789,7 +7789,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1316,
+    "College Code": 1316,
     "COLLEGE NMAE":
       "Agni College of Technology  Old Mahabalipuram Road (OMR)  Thalambur Village  Chengalpattu District 603103",
     "BRANCH CODE": "EC",
@@ -7803,7 +7803,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1316,
+    "College Code": 1316,
     "COLLEGE NMAE":
       "Agni College of Technology  Old Mahabalipuram Road (OMR)  Thalambur Village  Chengalpattu District 603103",
     "BRANCH CODE": "EE",
@@ -7817,7 +7817,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1316,
+    "College Code": 1316,
     "COLLEGE NMAE":
       "Agni College of Technology  Old Mahabalipuram Road (OMR)  Thalambur Village  Chengalpattu District 603103",
     "BRANCH CODE": "IT",
@@ -7831,7 +7831,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1316,
+    "College Code": 1316,
     "COLLEGE NMAE":
       "Agni College of Technology  Old Mahabalipuram Road (OMR)  Thalambur Village  Chengalpattu District 603103",
     "BRANCH CODE": "ME",
@@ -7845,7 +7845,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1316,
+    "College Code": 1316,
     "COLLEGE NMAE":
       "Agni College of Technology  Old Mahabalipuram Road (OMR)  Thalambur Village  Chengalpattu District 603103",
     "BRANCH CODE": "MZ",
@@ -7859,7 +7859,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1317,
+    "College Code": 1317,
     "COLLEGE NMAE":
       "St. Joseph's College of Engineering (Autonomous)  Old Mahabalipuram Road (OMR)  Chennai 600 119",
     "BRANCH CODE": "AD",
@@ -7873,7 +7873,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1317,
+    "College Code": 1317,
     "COLLEGE NMAE":
       "St. Joseph's College of Engineering (Autonomous)  Old Mahabalipuram Road (OMR)  Chennai 600 119",
     "BRANCH CODE": "AL",
@@ -7887,7 +7887,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1317,
+    "College Code": 1317,
     "COLLEGE NMAE":
       "St. Joseph's College of Engineering (Autonomous)  Old Mahabalipuram Road (OMR)  Chennai 600 119",
     "BRANCH CODE": "BT",
@@ -7901,7 +7901,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1317,
+    "College Code": 1317,
     "COLLEGE NMAE":
       "St. Joseph's College of Engineering (Autonomous)  Old Mahabalipuram Road (OMR)  Chennai 600 119",
     "BRANCH CODE": "CH",
@@ -7915,7 +7915,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1317,
+    "College Code": 1317,
     "COLLEGE NMAE":
       "St. Joseph's College of Engineering (Autonomous)  Old Mahabalipuram Road (OMR)  Chennai 600 119",
     "BRANCH CODE": "CS",
@@ -7929,7 +7929,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1317,
+    "College Code": 1317,
     "COLLEGE NMAE":
       "St. Joseph's College of Engineering (Autonomous)  Old Mahabalipuram Road (OMR)  Chennai 600 119",
     "BRANCH CODE": "EC",
@@ -7943,7 +7943,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1317,
+    "College Code": 1317,
     "COLLEGE NMAE":
       "St. Joseph's College of Engineering (Autonomous)  Old Mahabalipuram Road (OMR)  Chennai 600 119",
     "BRANCH CODE": "EE",
@@ -7957,7 +7957,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1317,
+    "College Code": 1317,
     "COLLEGE NMAE":
       "St. Joseph's College of Engineering (Autonomous)  Old Mahabalipuram Road (OMR)  Chennai 600 119",
     "BRANCH CODE": "IT",
@@ -7971,7 +7971,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1317,
+    "College Code": 1317,
     "COLLEGE NMAE":
       "St. Joseph's College of Engineering (Autonomous)  Old Mahabalipuram Road (OMR)  Chennai 600 119",
     "BRANCH CODE": "ME",
@@ -7985,7 +7985,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1318,
+    "College Code": 1318,
     "COLLEGE NMAE": "T.J Institute of Technology  Karapakkam  Chennai - 600097",
     "BRANCH CODE": "AD",
     "BRANCH NAME": "ARTIFICIAL INTELLIGENCE AND DATA SCIENCE",
@@ -7998,7 +7998,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1318,
+    "College Code": 1318,
     "COLLEGE NMAE": "T.J Institute of Technology  Karapakkam  Chennai - 600097",
     "BRANCH CODE": "AM",
     "BRANCH NAME":
@@ -8012,7 +8012,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1318,
+    "College Code": 1318,
     "COLLEGE NMAE": "T.J Institute of Technology  Karapakkam  Chennai - 600097",
     "BRANCH CODE": "CE",
     "BRANCH NAME": "CIVIL  ENGINEERING",
@@ -8025,7 +8025,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1318,
+    "College Code": 1318,
     "COLLEGE NMAE": "T.J Institute of Technology  Karapakkam  Chennai - 600097",
     "BRANCH CODE": "CS",
     "BRANCH NAME": "COMPUTER SCIENCE AND ENGINEERING",
@@ -8038,7 +8038,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1318,
+    "College Code": 1318,
     "COLLEGE NMAE": "T.J Institute of Technology  Karapakkam  Chennai - 600097",
     "BRANCH CODE": "EC",
     "BRANCH NAME": "ELECTRONICS AND COMMUNICATION ENGINEERING",
@@ -8051,7 +8051,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1318,
+    "College Code": 1318,
     "COLLEGE NMAE": "T.J Institute of Technology  Karapakkam  Chennai - 600097",
     "BRANCH CODE": "EE",
     "BRANCH NAME": "ELECTRICAL AND ELECTRONICS ENGINEERING",
@@ -8064,7 +8064,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1318,
+    "College Code": 1318,
     "COLLEGE NMAE": "T.J Institute of Technology  Karapakkam  Chennai - 600097",
     "BRANCH CODE": "IT",
     "BRANCH NAME": "INFORMATION TECHNOLOGY",
@@ -8077,7 +8077,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1318,
+    "College Code": 1318,
     "COLLEGE NMAE": "T.J Institute of Technology  Karapakkam  Chennai - 600097",
     "BRANCH CODE": "ME",
     "BRANCH NAME": "MECHANICAL ENGINEERING",
@@ -8090,7 +8090,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1318,
+    "College Code": 1318,
     "COLLEGE NMAE": "T.J Institute of Technology  Karapakkam  Chennai - 600097",
     "BRANCH CODE": "SC",
     "BRANCH NAME": "Computer Science and Engineering (Cyber Security)",
@@ -8103,7 +8103,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1319,
+    "College Code": 1319,
     "COLLEGE NMAE":
       "Thangavelu Engineering College  Karappakkam  Chennai 600097",
     "BRANCH CODE": "AD",
@@ -8117,7 +8117,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1319,
+    "College Code": 1319,
     "COLLEGE NMAE":
       "Thangavelu Engineering College  Karappakkam  Chennai 600097",
     "BRANCH CODE": "CE",
@@ -8131,7 +8131,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1319,
+    "College Code": 1319,
     "COLLEGE NMAE":
       "Thangavelu Engineering College  Karappakkam  Chennai 600097",
     "BRANCH CODE": "CS",
@@ -8145,7 +8145,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1319,
+    "College Code": 1319,
     "COLLEGE NMAE":
       "Thangavelu Engineering College  Karappakkam  Chennai 600097",
     "BRANCH CODE": "EC",
@@ -8159,7 +8159,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1319,
+    "College Code": 1319,
     "COLLEGE NMAE":
       "Thangavelu Engineering College  Karappakkam  Chennai 600097",
     "BRANCH CODE": "EE",
@@ -8173,7 +8173,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1319,
+    "College Code": 1319,
     "COLLEGE NMAE":
       "Thangavelu Engineering College  Karappakkam  Chennai 600097",
     "BRANCH CODE": "EI",
@@ -8187,7 +8187,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1319,
+    "College Code": 1319,
     "COLLEGE NMAE":
       "Thangavelu Engineering College  Karappakkam  Chennai 600097",
     "BRANCH CODE": "IT",
@@ -8201,7 +8201,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1319,
+    "College Code": 1319,
     "COLLEGE NMAE":
       "Thangavelu Engineering College  Karappakkam  Chennai 600097",
     "BRANCH CODE": "ME",
@@ -8215,7 +8215,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1321,
+    "College Code": 1321,
     "COLLEGE NMAE":
       "Central Institute of Petrochemicals Engineering and Technology (Formerly Central Institute of Plastics Engineering and Technology) (CIPET)  Guindy  Chennai 600032",
     "BRANCH CODE": "MN",
@@ -8229,7 +8229,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1321,
+    "College Code": 1321,
     "COLLEGE NMAE":
       "Central Institute of Petrochemicals Engineering and Technology (Formerly Central Institute of Plastics Engineering and Technology) (CIPET)  Guindy  Chennai 600032",
     "BRANCH CODE": "PA",
@@ -8243,7 +8243,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1322,
+    "College Code": 1322,
     "COLLEGE NMAE":
       "Dhanalakshmi Srinivasan College of Engineering and Technology  East Coast Road  Poonjeri  Chennai 603104",
     "BRANCH CODE": "AD",
@@ -8257,7 +8257,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1322,
+    "College Code": 1322,
     "COLLEGE NMAE":
       "Dhanalakshmi Srinivasan College of Engineering and Technology  East Coast Road  Poonjeri  Chennai 603104",
     "BRANCH CODE": "AE",
@@ -8271,7 +8271,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1322,
+    "College Code": 1322,
     "COLLEGE NMAE":
       "Dhanalakshmi Srinivasan College of Engineering and Technology  East Coast Road  Poonjeri  Chennai 603104",
     "BRANCH CODE": "AG",
@@ -8285,7 +8285,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1322,
+    "College Code": 1322,
     "COLLEGE NMAE":
       "Dhanalakshmi Srinivasan College of Engineering and Technology  East Coast Road  Poonjeri  Chennai 603104",
     "BRANCH CODE": "BM",
@@ -8299,7 +8299,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1322,
+    "College Code": 1322,
     "COLLEGE NMAE":
       "Dhanalakshmi Srinivasan College of Engineering and Technology  East Coast Road  Poonjeri  Chennai 603104",
     "BRANCH CODE": "CE",
@@ -8313,7 +8313,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1322,
+    "College Code": 1322,
     "COLLEGE NMAE":
       "Dhanalakshmi Srinivasan College of Engineering and Technology  East Coast Road  Poonjeri  Chennai 603104",
     "BRANCH CODE": "CS",
@@ -8327,7 +8327,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1322,
+    "College Code": 1322,
     "COLLEGE NMAE":
       "Dhanalakshmi Srinivasan College of Engineering and Technology  East Coast Road  Poonjeri  Chennai 603104",
     "BRANCH CODE": "EC",
@@ -8341,7 +8341,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1322,
+    "College Code": 1322,
     "COLLEGE NMAE":
       "Dhanalakshmi Srinivasan College of Engineering and Technology  East Coast Road  Poonjeri  Chennai 603104",
     "BRANCH CODE": "EE",
@@ -8355,7 +8355,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1322,
+    "College Code": 1322,
     "COLLEGE NMAE":
       "Dhanalakshmi Srinivasan College of Engineering and Technology  East Coast Road  Poonjeri  Chennai 603104",
     "BRANCH CODE": "FD",
@@ -8369,7 +8369,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1322,
+    "College Code": 1322,
     "COLLEGE NMAE":
       "Dhanalakshmi Srinivasan College of Engineering and Technology  East Coast Road  Poonjeri  Chennai 603104",
     "BRANCH CODE": "IT",
@@ -8383,7 +8383,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1322,
+    "College Code": 1322,
     "COLLEGE NMAE":
       "Dhanalakshmi Srinivasan College of Engineering and Technology  East Coast Road  Poonjeri  Chennai 603104",
     "BRANCH CODE": "ME",
@@ -8397,7 +8397,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1322,
+    "College Code": 1322,
     "COLLEGE NMAE":
       "Dhanalakshmi Srinivasan College of Engineering and Technology  East Coast Road  Poonjeri  Chennai 603104",
     "BRANCH CODE": "SC",
@@ -8411,7 +8411,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1324,
+    "College Code": 1324,
     "COLLEGE NMAE":
       "Sri Sai Ram Institute of Technology (Autonomous)  West Tambaram  Chennai 600044",
     "BRANCH CODE": "AD",
@@ -8425,7 +8425,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1324,
+    "College Code": 1324,
     "COLLEGE NMAE":
       "Sri Sai Ram Institute of Technology (Autonomous)  West Tambaram  Chennai 600044",
     "BRANCH CODE": "CO",
@@ -8439,7 +8439,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1324,
+    "College Code": 1324,
     "COLLEGE NMAE":
       "Sri Sai Ram Institute of Technology (Autonomous)  West Tambaram  Chennai 600044",
     "BRANCH CODE": "CS",
@@ -8453,7 +8453,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1324,
+    "College Code": 1324,
     "COLLEGE NMAE":
       "Sri Sai Ram Institute of Technology (Autonomous)  West Tambaram  Chennai 600044",
     "BRANCH CODE": "EC",
@@ -8467,7 +8467,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1324,
+    "College Code": 1324,
     "COLLEGE NMAE":
       "Sri Sai Ram Institute of Technology (Autonomous)  West Tambaram  Chennai 600044",
     "BRANCH CODE": "EE",
@@ -8481,7 +8481,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1324,
+    "College Code": 1324,
     "COLLEGE NMAE":
       "Sri Sai Ram Institute of Technology (Autonomous)  West Tambaram  Chennai 600044",
     "BRANCH CODE": "IT",
@@ -8495,7 +8495,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1324,
+    "College Code": 1324,
     "COLLEGE NMAE":
       "Sri Sai Ram Institute of Technology (Autonomous)  West Tambaram  Chennai 600044",
     "BRANCH CODE": "ME",
@@ -8509,7 +8509,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1324,
+    "College Code": 1324,
     "COLLEGE NMAE":
       "Sri Sai Ram Institute of Technology (Autonomous)  West Tambaram  Chennai 600044",
     "BRANCH CODE": "SC",
@@ -8523,7 +8523,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1325,
+    "College Code": 1325,
     "COLLEGE NMAE":
       "St. Joseph College of Engineering  Trinity Campus  Nemili Sriperumpudur Taluk  Kancheepuram District 602105",
     "BRANCH CODE": "AD",
@@ -8537,7 +8537,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1325,
+    "College Code": 1325,
     "COLLEGE NMAE":
       "St. Joseph College of Engineering  Trinity Campus  Nemili Sriperumpudur Taluk  Kancheepuram District 602105",
     "BRANCH CODE": "CS",
@@ -8551,7 +8551,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1325,
+    "College Code": 1325,
     "COLLEGE NMAE":
       "St. Joseph College of Engineering  Trinity Campus  Nemili Sriperumpudur Taluk  Kancheepuram District 602105",
     "BRANCH CODE": "EC",
@@ -8565,7 +8565,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1325,
+    "College Code": 1325,
     "COLLEGE NMAE":
       "St. Joseph College of Engineering  Trinity Campus  Nemili Sriperumpudur Taluk  Kancheepuram District 602105",
     "BRANCH CODE": "IT",
@@ -8579,7 +8579,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1325,
+    "College Code": 1325,
     "COLLEGE NMAE":
       "St. Joseph College of Engineering  Trinity Campus  Nemili Sriperumpudur Taluk  Kancheepuram District 602105",
     "BRANCH CODE": "ME",
@@ -8593,7 +8593,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1334,
+    "College Code": 1334,
     "COLLEGE NMAE":
       "ARS College of Engineering  Maraimalai Nagar Post Chengalpattu District 603209",
     "BRANCH CODE": "CE",
@@ -8607,7 +8607,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1334,
+    "College Code": 1334,
     "COLLEGE NMAE":
       "ARS College of Engineering  Maraimalai Nagar Post Chengalpattu District 603209",
     "BRANCH CODE": "CS",
@@ -8621,7 +8621,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1334,
+    "College Code": 1334,
     "COLLEGE NMAE":
       "ARS College of Engineering  Maraimalai Nagar Post Chengalpattu District 603209",
     "BRANCH CODE": "EC",
@@ -8635,7 +8635,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1334,
+    "College Code": 1334,
     "COLLEGE NMAE":
       "ARS College of Engineering  Maraimalai Nagar Post Chengalpattu District 603209",
     "BRANCH CODE": "ME",
@@ -8649,7 +8649,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1335,
+    "College Code": 1335,
     "COLLEGE NMAE":
       "Sri Krishna Institute of Technology  Panapakkam  Padappai Chennai 601301",
     "BRANCH CODE": "AM",
@@ -8664,7 +8664,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1335,
+    "College Code": 1335,
     "COLLEGE NMAE":
       "Sri Krishna Institute of Technology  Panapakkam  Padappai Chennai 601301",
     "BRANCH CODE": "CE",
@@ -8678,7 +8678,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1335,
+    "College Code": 1335,
     "COLLEGE NMAE":
       "Sri Krishna Institute of Technology  Panapakkam  Padappai Chennai 601301",
     "BRANCH CODE": "EC",
@@ -8692,7 +8692,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1335,
+    "College Code": 1335,
     "COLLEGE NMAE":
       "Sri Krishna Institute of Technology  Panapakkam  Padappai Chennai 601301",
     "BRANCH CODE": "EE",
@@ -8706,7 +8706,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1335,
+    "College Code": 1335,
     "COLLEGE NMAE":
       "Sri Krishna Institute of Technology  Panapakkam  Padappai Chennai 601301",
     "BRANCH CODE": "ME",
@@ -8720,7 +8720,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1335,
+    "College Code": 1335,
     "COLLEGE NMAE":
       "Sri Krishna Institute of Technology  Panapakkam  Padappai Chennai 601301",
     "BRANCH CODE": "SC",
@@ -8734,7 +8734,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1398,
+    "College Code": 1398,
     "COLLEGE NMAE":
       "Chennai Institute of Technology and Applied Research Sarathy Nagar  Puthuper Village  Kundrathur Â ChennaiÂ 600069",
     "BRANCH CODE": "AD",
@@ -8748,7 +8748,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1398,
+    "College Code": 1398,
     "COLLEGE NMAE":
       "Chennai Institute of Technology and Applied Research Sarathy Nagar  Puthuper Village  Kundrathur Â ChennaiÂ 600069",
     "BRANCH CODE": "CS",
@@ -8762,7 +8762,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1398,
+    "College Code": 1398,
     "COLLEGE NMAE":
       "Chennai Institute of Technology and Applied Research Sarathy Nagar  Puthuper Village  Kundrathur Â ChennaiÂ 600069",
     "BRANCH CODE": "EC",
@@ -8776,7 +8776,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1398,
+    "College Code": 1398,
     "COLLEGE NMAE":
       "Chennai Institute of Technology and Applied Research Sarathy Nagar  Puthuper Village  Kundrathur Â ChennaiÂ 600069",
     "BRANCH CODE": "EE",
@@ -8790,7 +8790,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1399,
+    "College Code": 1399,
     "COLLEGE NMAE":
       "Chennai Institute of Technology (Autonomous) Puduper Village  Nandambakkam Post  Kundrathur  Chennai 600069",
     "BRANCH CODE": "AD",
@@ -8804,7 +8804,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1399,
+    "College Code": 1399,
     "COLLEGE NMAE":
       "Chennai Institute of Technology (Autonomous) Puduper Village  Nandambakkam Post  Kundrathur  Chennai 600069",
     "BRANCH CODE": "AM",
@@ -8819,7 +8819,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1399,
+    "College Code": 1399,
     "COLLEGE NMAE":
       "Chennai Institute of Technology (Autonomous) Puduper Village  Nandambakkam Post  Kundrathur  Chennai 600069",
     "BRANCH CODE": "BM",
@@ -8833,7 +8833,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1399,
+    "College Code": 1399,
     "COLLEGE NMAE":
       "Chennai Institute of Technology (Autonomous) Puduper Village  Nandambakkam Post  Kundrathur  Chennai 600069",
     "BRANCH CODE": "CB",
@@ -8847,7 +8847,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1399,
+    "College Code": 1399,
     "COLLEGE NMAE":
       "Chennai Institute of Technology (Autonomous) Puduper Village  Nandambakkam Post  Kundrathur  Chennai 600069",
     "BRANCH CODE": "CE",
@@ -8861,7 +8861,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1399,
+    "College Code": 1399,
     "COLLEGE NMAE":
       "Chennai Institute of Technology (Autonomous) Puduper Village  Nandambakkam Post  Kundrathur  Chennai 600069",
     "BRANCH CODE": "CS",
@@ -8875,7 +8875,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1399,
+    "College Code": 1399,
     "COLLEGE NMAE":
       "Chennai Institute of Technology (Autonomous) Puduper Village  Nandambakkam Post  Kundrathur  Chennai 600069",
     "BRANCH CODE": "EA",
@@ -8890,7 +8890,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1399,
+    "College Code": 1399,
     "COLLEGE NMAE":
       "Chennai Institute of Technology (Autonomous) Puduper Village  Nandambakkam Post  Kundrathur  Chennai 600069",
     "BRANCH CODE": "EC",
@@ -8904,7 +8904,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1399,
+    "College Code": 1399,
     "COLLEGE NMAE":
       "Chennai Institute of Technology (Autonomous) Puduper Village  Nandambakkam Post  Kundrathur  Chennai 600069",
     "BRANCH CODE": "EE",
@@ -8918,7 +8918,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1399,
+    "College Code": 1399,
     "COLLEGE NMAE":
       "Chennai Institute of Technology (Autonomous) Puduper Village  Nandambakkam Post  Kundrathur  Chennai 600069",
     "BRANCH CODE": "EV",
@@ -8932,7 +8932,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1399,
+    "College Code": 1399,
     "COLLEGE NMAE":
       "Chennai Institute of Technology (Autonomous) Puduper Village  Nandambakkam Post  Kundrathur  Chennai 600069",
     "BRANCH CODE": "IT",
@@ -8946,7 +8946,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1399,
+    "College Code": 1399,
     "COLLEGE NMAE":
       "Chennai Institute of Technology (Autonomous) Puduper Village  Nandambakkam Post  Kundrathur  Chennai 600069",
     "BRANCH CODE": "ME",
@@ -8960,7 +8960,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1399,
+    "College Code": 1399,
     "COLLEGE NMAE":
       "Chennai Institute of Technology (Autonomous) Puduper Village  Nandambakkam Post  Kundrathur  Chennai 600069",
     "BRANCH CODE": "MZ",
@@ -8974,7 +8974,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1399,
+    "College Code": 1399,
     "COLLEGE NMAE":
       "Chennai Institute of Technology (Autonomous) Puduper Village  Nandambakkam Post  Kundrathur  Chennai 600069",
     "BRANCH CODE": "SC",
@@ -8988,7 +8988,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1401,
+    "College Code": 1401,
     "COLLEGE NMAE":
       "Adhiparasakthi Engineering College  Melmaruvathur Chengalpattu District 603319",
     "BRANCH CODE": "AM",
@@ -9003,7 +9003,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1401,
+    "College Code": 1401,
     "COLLEGE NMAE":
       "Adhiparasakthi Engineering College  Melmaruvathur Chengalpattu District 603319",
     "BRANCH CODE": "CE",
@@ -9017,7 +9017,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1401,
+    "College Code": 1401,
     "COLLEGE NMAE":
       "Adhiparasakthi Engineering College  Melmaruvathur Chengalpattu District 603319",
     "BRANCH CODE": "CH",
@@ -9031,7 +9031,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1401,
+    "College Code": 1401,
     "COLLEGE NMAE":
       "Adhiparasakthi Engineering College  Melmaruvathur Chengalpattu District 603319",
     "BRANCH CODE": "CS",
@@ -9045,7 +9045,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1401,
+    "College Code": 1401,
     "COLLEGE NMAE":
       "Adhiparasakthi Engineering College  Melmaruvathur Chengalpattu District 603319",
     "BRANCH CODE": "EC",
@@ -9059,7 +9059,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1401,
+    "College Code": 1401,
     "COLLEGE NMAE":
       "Adhiparasakthi Engineering College  Melmaruvathur Chengalpattu District 603319",
     "BRANCH CODE": "EE",
@@ -9073,7 +9073,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1401,
+    "College Code": 1401,
     "COLLEGE NMAE":
       "Adhiparasakthi Engineering College  Melmaruvathur Chengalpattu District 603319",
     "BRANCH CODE": "IT",
@@ -9087,7 +9087,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1401,
+    "College Code": 1401,
     "COLLEGE NMAE":
       "Adhiparasakthi Engineering College  Melmaruvathur Chengalpattu District 603319",
     "BRANCH CODE": "ME",
@@ -9101,7 +9101,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1402,
+    "College Code": 1402,
     "COLLEGE NMAE":
       "Annai Teresa College of Engineering  Thirunavalur Kallakkurichi District 607204",
     "BRANCH CODE": "CS",
@@ -9115,7 +9115,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1402,
+    "College Code": 1402,
     "COLLEGE NMAE":
       "Annai Teresa College of Engineering  Thirunavalur Kallakkurichi District 607204",
     "BRANCH CODE": "EC",
@@ -9129,7 +9129,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1402,
+    "College Code": 1402,
     "COLLEGE NMAE":
       "Annai Teresa College of Engineering  Thirunavalur Kallakkurichi District 607204",
     "BRANCH CODE": "EE",
@@ -9143,7 +9143,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1402,
+    "College Code": 1402,
     "COLLEGE NMAE":
       "Annai Teresa College of Engineering  Thirunavalur Kallakkurichi District 607204",
     "BRANCH CODE": "ME",
@@ -9157,7 +9157,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1405,
+    "College Code": 1405,
     "COLLEGE NMAE":
       "Dhanalakshmi College of  Engineering  Manimangalam Chennai 601301",
     "BRANCH CODE": "AD",
@@ -9171,7 +9171,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1405,
+    "College Code": 1405,
     "COLLEGE NMAE":
       "Dhanalakshmi College of  Engineering  Manimangalam Chennai 601301",
     "BRANCH CODE": "CS",
@@ -9185,7 +9185,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1405,
+    "College Code": 1405,
     "COLLEGE NMAE":
       "Dhanalakshmi College of  Engineering  Manimangalam Chennai 601301",
     "BRANCH CODE": "EC",
@@ -9199,7 +9199,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1405,
+    "College Code": 1405,
     "COLLEGE NMAE":
       "Dhanalakshmi College of  Engineering  Manimangalam Chennai 601301",
     "BRANCH CODE": "EE",
@@ -9213,7 +9213,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1405,
+    "College Code": 1405,
     "COLLEGE NMAE":
       "Dhanalakshmi College of  Engineering  Manimangalam Chennai 601301",
     "BRANCH CODE": "ME",
@@ -9227,7 +9227,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1405,
+    "College Code": 1405,
     "COLLEGE NMAE":
       "Dhanalakshmi College of  Engineering  Manimangalam Chennai 601301",
     "BRANCH CODE": "SC",
@@ -9241,7 +9241,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1407,
+    "College Code": 1407,
     "COLLEGE NMAE":
       "G K M College of  Engineering and Technology  Alappakkam- Mappedu Road  Chennai 600063",
     "BRANCH CODE": "AD",
@@ -9255,7 +9255,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1407,
+    "College Code": 1407,
     "COLLEGE NMAE":
       "G K M College of  Engineering and Technology  Alappakkam- Mappedu Road  Chennai 600063",
     "BRANCH CODE": "AU",
@@ -9269,7 +9269,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1407,
+    "College Code": 1407,
     "COLLEGE NMAE":
       "G K M College of  Engineering and Technology  Alappakkam- Mappedu Road  Chennai 600063",
     "BRANCH CODE": "BM",
@@ -9283,7 +9283,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1407,
+    "College Code": 1407,
     "COLLEGE NMAE":
       "G K M College of  Engineering and Technology  Alappakkam- Mappedu Road  Chennai 600063",
     "BRANCH CODE": "CE",
@@ -9297,7 +9297,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1407,
+    "College Code": 1407,
     "COLLEGE NMAE":
       "G K M College of  Engineering and Technology  Alappakkam- Mappedu Road  Chennai 600063",
     "BRANCH CODE": "CS",
@@ -9311,7 +9311,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1407,
+    "College Code": 1407,
     "COLLEGE NMAE":
       "G K M College of  Engineering and Technology  Alappakkam- Mappedu Road  Chennai 600063",
     "BRANCH CODE": "EC",
@@ -9325,7 +9325,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1407,
+    "College Code": 1407,
     "COLLEGE NMAE":
       "G K M College of  Engineering and Technology  Alappakkam- Mappedu Road  Chennai 600063",
     "BRANCH CODE": "EE",
@@ -9339,7 +9339,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1407,
+    "College Code": 1407,
     "COLLEGE NMAE":
       "G K M College of  Engineering and Technology  Alappakkam- Mappedu Road  Chennai 600063",
     "BRANCH CODE": "IT",
@@ -9353,7 +9353,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1407,
+    "College Code": 1407,
     "COLLEGE NMAE":
       "G K M College of  Engineering and Technology  Alappakkam- Mappedu Road  Chennai 600063",
     "BRANCH CODE": "ME",
@@ -9367,7 +9367,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1407,
+    "College Code": 1407,
     "COLLEGE NMAE":
       "G K M College of  Engineering and Technology  Alappakkam- Mappedu Road  Chennai 600063",
     "BRANCH CODE": "MR",
@@ -9381,7 +9381,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1408,
+    "College Code": 1408,
     "COLLEGE NMAE":
       "I F E T College of Engineering  (Autonomous) Gangarampalayam  Villupuram District 605108",
     "BRANCH CODE": "AD",
@@ -9395,7 +9395,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1408,
+    "College Code": 1408,
     "COLLEGE NMAE":
       "I F E T College of Engineering  (Autonomous) Gangarampalayam  Villupuram District 605108",
     "BRANCH CODE": "AL",
@@ -9409,7 +9409,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1408,
+    "College Code": 1408,
     "COLLEGE NMAE":
       "I F E T College of Engineering  (Autonomous) Gangarampalayam  Villupuram District 605108",
     "BRANCH CODE": "CE",
@@ -9423,7 +9423,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1408,
+    "College Code": 1408,
     "COLLEGE NMAE":
       "I F E T College of Engineering  (Autonomous) Gangarampalayam  Villupuram District 605108",
     "BRANCH CODE": "CS",
@@ -9437,7 +9437,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1408,
+    "College Code": 1408,
     "COLLEGE NMAE":
       "I F E T College of Engineering  (Autonomous) Gangarampalayam  Villupuram District 605108",
     "BRANCH CODE": "EC",
@@ -9451,7 +9451,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1408,
+    "College Code": 1408,
     "COLLEGE NMAE":
       "I F E T College of Engineering  (Autonomous) Gangarampalayam  Villupuram District 605108",
     "BRANCH CODE": "EE",
@@ -9465,7 +9465,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1408,
+    "College Code": 1408,
     "COLLEGE NMAE":
       "I F E T College of Engineering  (Autonomous) Gangarampalayam  Villupuram District 605108",
     "BRANCH CODE": "IT",
@@ -9479,7 +9479,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1408,
+    "College Code": 1408,
     "COLLEGE NMAE":
       "I F E T College of Engineering  (Autonomous) Gangarampalayam  Villupuram District 605108",
     "BRANCH CODE": "ME",
@@ -9493,7 +9493,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1408,
+    "College Code": 1408,
     "COLLEGE NMAE":
       "I F E T College of Engineering  (Autonomous) Gangarampalayam  Villupuram District 605108",
     "BRANCH CODE": "SC",
@@ -9507,7 +9507,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1409,
+    "College Code": 1409,
     "COLLEGE NMAE":
       "Karpaga Vinayaga College of Engineering and Technology Palayanoor Post  Maduranthagam Taluk  Chengalpattu District 603308",
     "BRANCH CODE": "AD",
@@ -9521,7 +9521,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1409,
+    "College Code": 1409,
     "COLLEGE NMAE":
       "Karpaga Vinayaga College of Engineering and Technology Palayanoor Post  Maduranthagam Taluk  Chengalpattu District 603308",
     "BRANCH CODE": "AU",
@@ -9535,7 +9535,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1409,
+    "College Code": 1409,
     "COLLEGE NMAE":
       "Karpaga Vinayaga College of Engineering and Technology Palayanoor Post  Maduranthagam Taluk  Chengalpattu District 603308",
     "BRANCH CODE": "BM",
@@ -9549,7 +9549,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1409,
+    "College Code": 1409,
     "COLLEGE NMAE":
       "Karpaga Vinayaga College of Engineering and Technology Palayanoor Post  Maduranthagam Taluk  Chengalpattu District 603308",
     "BRANCH CODE": "BT",
@@ -9563,7 +9563,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1409,
+    "College Code": 1409,
     "COLLEGE NMAE":
       "Karpaga Vinayaga College of Engineering and Technology Palayanoor Post  Maduranthagam Taluk  Chengalpattu District 603308",
     "BRANCH CODE": "CE",
@@ -9577,7 +9577,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1409,
+    "College Code": 1409,
     "COLLEGE NMAE":
       "Karpaga Vinayaga College of Engineering and Technology Palayanoor Post  Maduranthagam Taluk  Chengalpattu District 603308",
     "BRANCH CODE": "CS",
@@ -9591,7 +9591,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1409,
+    "College Code": 1409,
     "COLLEGE NMAE":
       "Karpaga Vinayaga College of Engineering and Technology Palayanoor Post  Maduranthagam Taluk  Chengalpattu District 603308",
     "BRANCH CODE": "EC",
@@ -9605,7 +9605,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1409,
+    "College Code": 1409,
     "COLLEGE NMAE":
       "Karpaga Vinayaga College of Engineering and Technology Palayanoor Post  Maduranthagam Taluk  Chengalpattu District 603308",
     "BRANCH CODE": "EE",
@@ -9619,7 +9619,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1409,
+    "College Code": 1409,
     "COLLEGE NMAE":
       "Karpaga Vinayaga College of Engineering and Technology Palayanoor Post  Maduranthagam Taluk  Chengalpattu District 603308",
     "BRANCH CODE": "ME",
@@ -9633,7 +9633,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1409,
+    "College Code": 1409,
     "COLLEGE NMAE":
       "Karpaga Vinayaga College of Engineering and Technology Palayanoor Post  Maduranthagam Taluk  Chengalpattu District 603308",
     "BRANCH CODE": "RM",
@@ -9647,7 +9647,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1411,
+    "College Code": 1411,
     "COLLEGE NMAE": "Madha Engineering College  Kundrathur  Chennai 600069",
     "BRANCH CODE": "AD",
     "BRANCH NAME": "ARTIFICIAL INTELLIGENCE AND DATA SCIENCE",
@@ -9660,7 +9660,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1411,
+    "College Code": 1411,
     "COLLEGE NMAE": "Madha Engineering College  Kundrathur  Chennai 600069",
     "BRANCH CODE": "AE",
     "BRANCH NAME": "AERONAUTICAL ENGINEERING",
@@ -9673,7 +9673,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1411,
+    "College Code": 1411,
     "COLLEGE NMAE": "Madha Engineering College  Kundrathur  Chennai 600069",
     "BRANCH CODE": "BM",
     "BRANCH NAME": "BIO MEDICAL ENGINEERING",
@@ -9686,7 +9686,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1411,
+    "College Code": 1411,
     "COLLEGE NMAE": "Madha Engineering College  Kundrathur  Chennai 600069",
     "BRANCH CODE": "BT",
     "BRANCH NAME": "BIO TECHNOLOGY",
@@ -9699,7 +9699,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1411,
+    "College Code": 1411,
     "COLLEGE NMAE": "Madha Engineering College  Kundrathur  Chennai 600069",
     "BRANCH CODE": "CB",
     "BRANCH NAME": "COMPUTER SCIENCE AND BUSSINESS SYSTEM",
@@ -9712,7 +9712,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1411,
+    "College Code": 1411,
     "COLLEGE NMAE": "Madha Engineering College  Kundrathur  Chennai 600069",
     "BRANCH CODE": "CE",
     "BRANCH NAME": "CIVIL  ENGINEERING",
@@ -9725,7 +9725,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1411,
+    "College Code": 1411,
     "COLLEGE NMAE": "Madha Engineering College  Kundrathur  Chennai 600069",
     "BRANCH CODE": "CS",
     "BRANCH NAME": "COMPUTER SCIENCE AND ENGINEERING",
@@ -9738,7 +9738,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1411,
+    "College Code": 1411,
     "COLLEGE NMAE": "Madha Engineering College  Kundrathur  Chennai 600069",
     "BRANCH CODE": "EC",
     "BRANCH NAME": "ELECTRONICS AND COMMUNICATION ENGINEERING",
@@ -9751,7 +9751,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1411,
+    "College Code": 1411,
     "COLLEGE NMAE": "Madha Engineering College  Kundrathur  Chennai 600069",
     "BRANCH CODE": "EE",
     "BRANCH NAME": "ELECTRICAL AND ELECTRONICS ENGINEERING",
@@ -9764,7 +9764,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1411,
+    "College Code": 1411,
     "COLLEGE NMAE": "Madha Engineering College  Kundrathur  Chennai 600069",
     "BRANCH CODE": "IT",
     "BRANCH NAME": "INFORMATION TECHNOLOGY",
@@ -9777,7 +9777,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1411,
+    "College Code": 1411,
     "COLLEGE NMAE": "Madha Engineering College  Kundrathur  Chennai 600069",
     "BRANCH CODE": "ME",
     "BRANCH NAME": "MECHANICAL ENGINEERING",
@@ -9790,7 +9790,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1412,
+    "College Code": 1412,
     "COLLEGE NMAE":
       "Mailam Engineering College  Mailam  Villupuram District 604304",
     "BRANCH CODE": "AD",
@@ -9804,7 +9804,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1412,
+    "College Code": 1412,
     "COLLEGE NMAE":
       "Mailam Engineering College  Mailam  Villupuram District 604304",
     "BRANCH CODE": "CB",
@@ -9818,7 +9818,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1412,
+    "College Code": 1412,
     "COLLEGE NMAE":
       "Mailam Engineering College  Mailam  Villupuram District 604304",
     "BRANCH CODE": "CE",
@@ -9832,7 +9832,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1412,
+    "College Code": 1412,
     "COLLEGE NMAE":
       "Mailam Engineering College  Mailam  Villupuram District 604304",
     "BRANCH CODE": "CS",
@@ -9846,7 +9846,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1412,
+    "College Code": 1412,
     "COLLEGE NMAE":
       "Mailam Engineering College  Mailam  Villupuram District 604304",
     "BRANCH CODE": "EC",
@@ -9860,7 +9860,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1412,
+    "College Code": 1412,
     "COLLEGE NMAE":
       "Mailam Engineering College  Mailam  Villupuram District 604304",
     "BRANCH CODE": "EE",
@@ -9874,7 +9874,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1412,
+    "College Code": 1412,
     "COLLEGE NMAE":
       "Mailam Engineering College  Mailam  Villupuram District 604304",
     "BRANCH CODE": "IT",
@@ -9888,7 +9888,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1412,
+    "College Code": 1412,
     "COLLEGE NMAE":
       "Mailam Engineering College  Mailam  Villupuram District 604304",
     "BRANCH CODE": "ME",
@@ -9902,7 +9902,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1413,
+    "College Code": 1413,
     "COLLEGE NMAE":
       "Sri Venkateswaraa College of Technology  Sirukulathur Vadakkal Village  Pondur Post  Sriperumbudur Taluk Kancheepuram District 602105",
     "BRANCH CODE": "AD",
@@ -9916,7 +9916,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1413,
+    "College Code": 1413,
     "COLLEGE NMAE":
       "Sri Venkateswaraa College of Technology  Sirukulathur Vadakkal Village  Pondur Post  Sriperumbudur Taluk Kancheepuram District 602105",
     "BRANCH CODE": "CS",
@@ -9930,7 +9930,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1413,
+    "College Code": 1413,
     "COLLEGE NMAE":
       "Sri Venkateswaraa College of Technology  Sirukulathur Vadakkal Village  Pondur Post  Sriperumbudur Taluk Kancheepuram District 602105",
     "BRANCH CODE": "EC",
@@ -9944,7 +9944,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1413,
+    "College Code": 1413,
     "COLLEGE NMAE":
       "Sri Venkateswaraa College of Technology  Sirukulathur Vadakkal Village  Pondur Post  Sriperumbudur Taluk Kancheepuram District 602105",
     "BRANCH CODE": "EE",
@@ -9958,7 +9958,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1413,
+    "College Code": 1413,
     "COLLEGE NMAE":
       "Sri Venkateswaraa College of Technology  Sirukulathur Vadakkal Village  Pondur Post  Sriperumbudur Taluk Kancheepuram District 602105",
     "BRANCH CODE": "ME",
@@ -9972,7 +9972,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1413,
+    "College Code": 1413,
     "COLLEGE NMAE":
       "Sri Venkateswaraa College of Technology  Sirukulathur Vadakkal Village  Pondur Post  Sriperumbudur Taluk Kancheepuram District 602105",
     "BRANCH CODE": "SC",
@@ -9986,7 +9986,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1414,
+    "College Code": 1414,
     "COLLEGE NMAE":
       "Prince Shri Venkateshwara  Padmavathy Engineering College  (Autonomous) Ponmar  Chennai 600048",
     "BRANCH CODE": "CE",
@@ -10000,7 +10000,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1414,
+    "College Code": 1414,
     "COLLEGE NMAE":
       "Prince Shri Venkateshwara  Padmavathy Engineering College  (Autonomous) Ponmar  Chennai 600048",
     "BRANCH CODE": "CS",
@@ -10014,7 +10014,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1414,
+    "College Code": 1414,
     "COLLEGE NMAE":
       "Prince Shri Venkateshwara  Padmavathy Engineering College  (Autonomous) Ponmar  Chennai 600048",
     "BRANCH CODE": "EC",
@@ -10028,7 +10028,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1414,
+    "College Code": 1414,
     "COLLEGE NMAE":
       "Prince Shri Venkateshwara  Padmavathy Engineering College  (Autonomous) Ponmar  Chennai 600048",
     "BRANCH CODE": "EE",
@@ -10042,7 +10042,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1414,
+    "College Code": 1414,
     "COLLEGE NMAE":
       "Prince Shri Venkateshwara  Padmavathy Engineering College  (Autonomous) Ponmar  Chennai 600048",
     "BRANCH CODE": "IT",
@@ -10056,7 +10056,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1414,
+    "College Code": 1414,
     "COLLEGE NMAE":
       "Prince Shri Venkateshwara  Padmavathy Engineering College  (Autonomous) Ponmar  Chennai 600048",
     "BRANCH CODE": "ME",
@@ -10070,7 +10070,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1415,
+    "College Code": 1415,
     "COLLEGE NMAE":
       "T S M Jain College of Technology  Melur Village  Kallakurichi District 606201",
     "BRANCH CODE": "CE",
@@ -10084,7 +10084,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1415,
+    "College Code": 1415,
     "COLLEGE NMAE":
       "T S M Jain College of Technology  Melur Village  Kallakurichi District 606201",
     "BRANCH CODE": "CS",
@@ -10098,7 +10098,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1415,
+    "College Code": 1415,
     "COLLEGE NMAE":
       "T S M Jain College of Technology  Melur Village  Kallakurichi District 606201",
     "BRANCH CODE": "EC",
@@ -10112,7 +10112,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1415,
+    "College Code": 1415,
     "COLLEGE NMAE":
       "T S M Jain College of Technology  Melur Village  Kallakurichi District 606201",
     "BRANCH CODE": "EE",
@@ -10126,7 +10126,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1415,
+    "College Code": 1415,
     "COLLEGE NMAE":
       "T S M Jain College of Technology  Melur Village  Kallakurichi District 606201",
     "BRANCH CODE": "ME",
@@ -10140,7 +10140,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1416,
+    "College Code": 1416,
     "COLLEGE NMAE":
       "Jaya Sakthi Engineering College  Thirunindravur  Chennai 602024",
     "BRANCH CODE": "AD",
@@ -10154,7 +10154,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1416,
+    "College Code": 1416,
     "COLLEGE NMAE":
       "Jaya Sakthi Engineering College  Thirunindravur  Chennai 602024",
     "BRANCH CODE": "BM",
@@ -10168,7 +10168,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1416,
+    "College Code": 1416,
     "COLLEGE NMAE":
       "Jaya Sakthi Engineering College  Thirunindravur  Chennai 602024",
     "BRANCH CODE": "CS",
@@ -10182,7 +10182,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1416,
+    "College Code": 1416,
     "COLLEGE NMAE":
       "Jaya Sakthi Engineering College  Thirunindravur  Chennai 602024",
     "BRANCH CODE": "ME",
@@ -10196,7 +10196,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1416,
+    "College Code": 1416,
     "COLLEGE NMAE":
       "Jaya Sakthi Engineering College  Thirunindravur  Chennai 602024",
     "BRANCH CODE": "PH",
@@ -10210,7 +10210,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1416,
+    "College Code": 1416,
     "COLLEGE NMAE":
       "Jaya Sakthi Engineering College  Thirunindravur  Chennai 602024",
     "BRANCH CODE": "SC",
@@ -10224,7 +10224,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1419,
+    "College Code": 1419,
     "COLLEGE NMAE":
       "Sri Sai Ram Enginering College (Autonomous)  West Tambaram  Chennai 600044",
     "BRANCH CODE": "AD",
@@ -10238,7 +10238,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1419,
+    "College Code": 1419,
     "COLLEGE NMAE":
       "Sri Sai Ram Enginering College (Autonomous)  West Tambaram  Chennai 600044",
     "BRANCH CODE": "AM",
@@ -10253,7 +10253,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1419,
+    "College Code": 1419,
     "COLLEGE NMAE":
       "Sri Sai Ram Enginering College (Autonomous)  West Tambaram  Chennai 600044",
     "BRANCH CODE": "CB",
@@ -10267,7 +10267,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1419,
+    "College Code": 1419,
     "COLLEGE NMAE":
       "Sri Sai Ram Enginering College (Autonomous)  West Tambaram  Chennai 600044",
     "BRANCH CODE": "CE",
@@ -10281,7 +10281,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1419,
+    "College Code": 1419,
     "COLLEGE NMAE":
       "Sri Sai Ram Enginering College (Autonomous)  West Tambaram  Chennai 600044",
     "BRANCH CODE": "CI",
@@ -10295,7 +10295,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1419,
+    "College Code": 1419,
     "COLLEGE NMAE":
       "Sri Sai Ram Enginering College (Autonomous)  West Tambaram  Chennai 600044",
     "BRANCH CODE": "CJ",
@@ -10310,7 +10310,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1419,
+    "College Code": 1419,
     "COLLEGE NMAE":
       "Sri Sai Ram Enginering College (Autonomous)  West Tambaram  Chennai 600044",
     "BRANCH CODE": "CS",
@@ -10324,7 +10324,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1419,
+    "College Code": 1419,
     "COLLEGE NMAE":
       "Sri Sai Ram Enginering College (Autonomous)  West Tambaram  Chennai 600044",
     "BRANCH CODE": "EC",
@@ -10338,7 +10338,7 @@ export const collegeChoiceListR2 = [
     ST: 2,
   },
   {
-    "COLLEGE CODE": 1419,
+    "College Code": 1419,
     "COLLEGE NMAE":
       "Sri Sai Ram Enginering College (Autonomous)  West Tambaram  Chennai 600044",
     "BRANCH CODE": "EE",
@@ -10352,7 +10352,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1419,
+    "College Code": 1419,
     "COLLEGE NMAE":
       "Sri Sai Ram Enginering College (Autonomous)  West Tambaram  Chennai 600044",
     "BRANCH CODE": "EI",
@@ -10366,7 +10366,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1419,
+    "College Code": 1419,
     "COLLEGE NMAE":
       "Sri Sai Ram Enginering College (Autonomous)  West Tambaram  Chennai 600044",
     "BRANCH CODE": "IC",
@@ -10380,7 +10380,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1419,
+    "College Code": 1419,
     "COLLEGE NMAE":
       "Sri Sai Ram Enginering College (Autonomous)  West Tambaram  Chennai 600044",
     "BRANCH CODE": "IT",
@@ -10394,7 +10394,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1419,
+    "College Code": 1419,
     "COLLEGE NMAE":
       "Sri Sai Ram Enginering College (Autonomous)  West Tambaram  Chennai 600044",
     "BRANCH CODE": "ME",
@@ -10408,7 +10408,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1419,
+    "College Code": 1419,
     "COLLEGE NMAE":
       "Sri Sai Ram Enginering College (Autonomous)  West Tambaram  Chennai 600044",
     "BRANCH CODE": "MU",
@@ -10422,7 +10422,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1420,
+    "College Code": 1420,
     "COLLEGE NMAE":
       "Tagore Engineering College  Rathnamangalam  Vandalur Post  Chennai 600048",
     "BRANCH CODE": "AD",
@@ -10436,7 +10436,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1420,
+    "College Code": 1420,
     "COLLEGE NMAE":
       "Tagore Engineering College  Rathnamangalam  Vandalur Post  Chennai 600048",
     "BRANCH CODE": "AE",
@@ -10450,7 +10450,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1420,
+    "College Code": 1420,
     "COLLEGE NMAE":
       "Tagore Engineering College  Rathnamangalam  Vandalur Post  Chennai 600048",
     "BRANCH CODE": "CS",
@@ -10464,7 +10464,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1420,
+    "College Code": 1420,
     "COLLEGE NMAE":
       "Tagore Engineering College  Rathnamangalam  Vandalur Post  Chennai 600048",
     "BRANCH CODE": "EC",
@@ -10478,7 +10478,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1420,
+    "College Code": 1420,
     "COLLEGE NMAE":
       "Tagore Engineering College  Rathnamangalam  Vandalur Post  Chennai 600048",
     "BRANCH CODE": "IT",
@@ -10492,7 +10492,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1420,
+    "College Code": 1420,
     "COLLEGE NMAE":
       "Tagore Engineering College  Rathnamangalam  Vandalur Post  Chennai 600048",
     "BRANCH CODE": "ME",
@@ -10506,7 +10506,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1421,
+    "College Code": 1421,
     "COLLEGE NMAE":
       "V R S College of Engineering and Technology  Arasur Villupuram District 607107",
     "BRANCH CODE": "CE",
@@ -10520,7 +10520,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1421,
+    "College Code": 1421,
     "COLLEGE NMAE":
       "V R S College of Engineering and Technology  Arasur Villupuram District 607107",
     "BRANCH CODE": "CS",
@@ -10534,7 +10534,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1421,
+    "College Code": 1421,
     "COLLEGE NMAE":
       "V R S College of Engineering and Technology  Arasur Villupuram District 607107",
     "BRANCH CODE": "EC",
@@ -10548,7 +10548,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1421,
+    "College Code": 1421,
     "COLLEGE NMAE":
       "V R S College of Engineering and Technology  Arasur Villupuram District 607107",
     "BRANCH CODE": "EE",
@@ -10562,7 +10562,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1421,
+    "College Code": 1421,
     "COLLEGE NMAE":
       "V R S College of Engineering and Technology  Arasur Villupuram District 607107",
     "BRANCH CODE": "ME",
@@ -10576,7 +10576,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1422,
+    "College Code": 1422,
     "COLLEGE NMAE":
       "SRM Valliammai Engineering College (Autonomous) Kattankulathur  Chennai 603203",
     "BRANCH CODE": "AD",
@@ -10590,7 +10590,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1422,
+    "College Code": 1422,
     "COLLEGE NMAE":
       "SRM Valliammai Engineering College (Autonomous) Kattankulathur  Chennai 603203",
     "BRANCH CODE": "AG",
@@ -10604,7 +10604,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1422,
+    "College Code": 1422,
     "COLLEGE NMAE":
       "SRM Valliammai Engineering College (Autonomous) Kattankulathur  Chennai 603203",
     "BRANCH CODE": "CE",
@@ -10618,7 +10618,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1422,
+    "College Code": 1422,
     "COLLEGE NMAE":
       "SRM Valliammai Engineering College (Autonomous) Kattankulathur  Chennai 603203",
     "BRANCH CODE": "CS",
@@ -10632,7 +10632,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1422,
+    "College Code": 1422,
     "COLLEGE NMAE":
       "SRM Valliammai Engineering College (Autonomous) Kattankulathur  Chennai 603203",
     "BRANCH CODE": "CY",
@@ -10646,7 +10646,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1422,
+    "College Code": 1422,
     "COLLEGE NMAE":
       "SRM Valliammai Engineering College (Autonomous) Kattankulathur  Chennai 603203",
     "BRANCH CODE": "EC",
@@ -10660,7 +10660,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1422,
+    "College Code": 1422,
     "COLLEGE NMAE":
       "SRM Valliammai Engineering College (Autonomous) Kattankulathur  Chennai 603203",
     "BRANCH CODE": "EE",
@@ -10674,7 +10674,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1422,
+    "College Code": 1422,
     "COLLEGE NMAE":
       "SRM Valliammai Engineering College (Autonomous) Kattankulathur  Chennai 603203",
     "BRANCH CODE": "EI",
@@ -10688,7 +10688,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1422,
+    "College Code": 1422,
     "COLLEGE NMAE":
       "SRM Valliammai Engineering College (Autonomous) Kattankulathur  Chennai 603203",
     "BRANCH CODE": "IT",
@@ -10702,7 +10702,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1422,
+    "College Code": 1422,
     "COLLEGE NMAE":
       "SRM Valliammai Engineering College (Autonomous) Kattankulathur  Chennai 603203",
     "BRANCH CODE": "MD",
@@ -10716,7 +10716,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1422,
+    "College Code": 1422,
     "COLLEGE NMAE":
       "SRM Valliammai Engineering College (Autonomous) Kattankulathur  Chennai 603203",
     "BRANCH CODE": "ME",
@@ -10730,7 +10730,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1423,
+    "College Code": 1423,
     "COLLEGE NMAE":
       "Asan Memorial College of Engineering and Technology Chengalpattu-603 001.",
     "BRANCH CODE": "AD",
@@ -10744,7 +10744,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1423,
+    "College Code": 1423,
     "COLLEGE NMAE":
       "Asan Memorial College of Engineering and Technology Chengalpattu-603 001.",
     "BRANCH CODE": "CS",
@@ -10758,7 +10758,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1423,
+    "College Code": 1423,
     "COLLEGE NMAE":
       "Asan Memorial College of Engineering and Technology Chengalpattu-603 001.",
     "BRANCH CODE": "EC",
@@ -10772,7 +10772,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1423,
+    "College Code": 1423,
     "COLLEGE NMAE":
       "Asan Memorial College of Engineering and Technology Chengalpattu-603 001.",
     "BRANCH CODE": "IT",
@@ -10786,7 +10786,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1423,
+    "College Code": 1423,
     "COLLEGE NMAE":
       "Asan Memorial College of Engineering and Technology Chengalpattu-603 001.",
     "BRANCH CODE": "ME",
@@ -10800,7 +10800,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1423,
+    "College Code": 1423,
     "COLLEGE NMAE":
       "Asan Memorial College of Engineering and Technology Chengalpattu-603 001.",
     "BRANCH CODE": "RM",
@@ -10814,7 +10814,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1424,
+    "College Code": 1424,
     "COLLEGE NMAE":
       "Dhaanish Ahmed College of Engineering  Padappai  Chennai 601301",
     "BRANCH CODE": "AD",
@@ -10828,7 +10828,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1424,
+    "College Code": 1424,
     "COLLEGE NMAE":
       "Dhaanish Ahmed College of Engineering  Padappai  Chennai 601301",
     "BRANCH CODE": "CB",
@@ -10842,7 +10842,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1424,
+    "College Code": 1424,
     "COLLEGE NMAE":
       "Dhaanish Ahmed College of Engineering  Padappai  Chennai 601301",
     "BRANCH CODE": "CS",
@@ -10856,7 +10856,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1424,
+    "College Code": 1424,
     "COLLEGE NMAE":
       "Dhaanish Ahmed College of Engineering  Padappai  Chennai 601301",
     "BRANCH CODE": "EC",
@@ -10870,7 +10870,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1424,
+    "College Code": 1424,
     "COLLEGE NMAE":
       "Dhaanish Ahmed College of Engineering  Padappai  Chennai 601301",
     "BRANCH CODE": "EE",
@@ -10884,7 +10884,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1424,
+    "College Code": 1424,
     "COLLEGE NMAE":
       "Dhaanish Ahmed College of Engineering  Padappai  Chennai 601301",
     "BRANCH CODE": "ME",
@@ -10898,7 +10898,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1424,
+    "College Code": 1424,
     "COLLEGE NMAE":
       "Dhaanish Ahmed College of Engineering  Padappai  Chennai 601301",
     "BRANCH CODE": "PE",
@@ -10912,7 +10912,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1424,
+    "College Code": 1424,
     "COLLEGE NMAE":
       "Dhaanish Ahmed College of Engineering  Padappai  Chennai 601301",
     "BRANCH CODE": "RM",
@@ -10926,7 +10926,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1426,
+    "College Code": 1426,
     "COLLEGE NMAE":
       "Sri Ramanujar Engineering College  Vandalur  Kolappakkam Chennai 600127",
     "BRANCH CODE": "AD",
@@ -10940,7 +10940,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1426,
+    "College Code": 1426,
     "COLLEGE NMAE":
       "Sri Ramanujar Engineering College  Vandalur  Kolappakkam Chennai 600127",
     "BRANCH CODE": "CS",
@@ -10954,7 +10954,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1426,
+    "College Code": 1426,
     "COLLEGE NMAE":
       "Sri Ramanujar Engineering College  Vandalur  Kolappakkam Chennai 600127",
     "BRANCH CODE": "EC",
@@ -10968,7 +10968,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1426,
+    "College Code": 1426,
     "COLLEGE NMAE":
       "Sri Ramanujar Engineering College  Vandalur  Kolappakkam Chennai 600127",
     "BRANCH CODE": "EE",
@@ -10982,7 +10982,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1426,
+    "College Code": 1426,
     "COLLEGE NMAE":
       "Sri Ramanujar Engineering College  Vandalur  Kolappakkam Chennai 600127",
     "BRANCH CODE": "IT",
@@ -10996,7 +10996,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1426,
+    "College Code": 1426,
     "COLLEGE NMAE":
       "Sri Ramanujar Engineering College  Vandalur  Kolappakkam Chennai 600127",
     "BRANCH CODE": "ME",
@@ -11010,7 +11010,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1427,
+    "College Code": 1427,
     "COLLEGE NMAE":
       "Sri Krishna Engineering College  Panappakkam  Padappai Chennai 601301",
     "BRANCH CODE": "AD",
@@ -11024,7 +11024,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1427,
+    "College Code": 1427,
     "COLLEGE NMAE":
       "Sri Krishna Engineering College  Panappakkam  Padappai Chennai 601301",
     "BRANCH CODE": "CS",
@@ -11038,7 +11038,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1427,
+    "College Code": 1427,
     "COLLEGE NMAE":
       "Sri Krishna Engineering College  Panappakkam  Padappai Chennai 601301",
     "BRANCH CODE": "EC",
@@ -11052,7 +11052,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1427,
+    "College Code": 1427,
     "COLLEGE NMAE":
       "Sri Krishna Engineering College  Panappakkam  Padappai Chennai 601301",
     "BRANCH CODE": "EE",
@@ -11066,7 +11066,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1427,
+    "College Code": 1427,
     "COLLEGE NMAE":
       "Sri Krishna Engineering College  Panappakkam  Padappai Chennai 601301",
     "BRANCH CODE": "FT",
@@ -11080,7 +11080,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1427,
+    "College Code": 1427,
     "COLLEGE NMAE":
       "Sri Krishna Engineering College  Panappakkam  Padappai Chennai 601301",
     "BRANCH CODE": "IT",
@@ -11094,7 +11094,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1428,
+    "College Code": 1428,
     "COLLEGE NMAE":
       "E S COLLEGE OF ENGINEERING AND TECHNOLOGY  Chennai Trunk Road  Ayyankoilpattu  Villupuram District 605602",
     "BRANCH CODE": "AD",
@@ -11108,7 +11108,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1428,
+    "College Code": 1428,
     "COLLEGE NMAE":
       "E S COLLEGE OF ENGINEERING AND TECHNOLOGY  Chennai Trunk Road  Ayyankoilpattu  Villupuram District 605602",
     "BRANCH CODE": "CS",
@@ -11122,7 +11122,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1428,
+    "College Code": 1428,
     "COLLEGE NMAE":
       "E S COLLEGE OF ENGINEERING AND TECHNOLOGY  Chennai Trunk Road  Ayyankoilpattu  Villupuram District 605602",
     "BRANCH CODE": "EC",
@@ -11136,7 +11136,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1428,
+    "College Code": 1428,
     "COLLEGE NMAE":
       "E S COLLEGE OF ENGINEERING AND TECHNOLOGY  Chennai Trunk Road  Ayyankoilpattu  Villupuram District 605602",
     "BRANCH CODE": "IT",
@@ -11150,7 +11150,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1430,
+    "College Code": 1430,
     "COLLEGE NMAE":
       "Maha Bharathi Engineering College  A Vasudevanur Chinnasalem  Kallakurichi  District 606201",
     "BRANCH CODE": "CE",
@@ -11164,7 +11164,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1430,
+    "College Code": 1430,
     "COLLEGE NMAE":
       "Maha Bharathi Engineering College  A Vasudevanur Chinnasalem  Kallakurichi  District 606201",
     "BRANCH CODE": "CS",
@@ -11178,7 +11178,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1430,
+    "College Code": 1430,
     "COLLEGE NMAE":
       "Maha Bharathi Engineering College  A Vasudevanur Chinnasalem  Kallakurichi  District 606201",
     "BRANCH CODE": "EC",
@@ -11192,7 +11192,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1430,
+    "College Code": 1430,
     "COLLEGE NMAE":
       "Maha Bharathi Engineering College  A Vasudevanur Chinnasalem  Kallakurichi  District 606201",
     "BRANCH CODE": "EE",
@@ -11206,7 +11206,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1430,
+    "College Code": 1430,
     "COLLEGE NMAE":
       "Maha Bharathi Engineering College  A Vasudevanur Chinnasalem  Kallakurichi  District 606201",
     "BRANCH CODE": "ME",
@@ -11220,7 +11220,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1431,
+    "College Code": 1431,
     "COLLEGE NMAE":
       "New Prince Shri Bhavani College of Engineering and Technology  (Autonomous) Vengaivasal Main Road Gowrivakkam  Chennai 600073",
     "BRANCH CODE": "AD",
@@ -11234,7 +11234,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1431,
+    "College Code": 1431,
     "COLLEGE NMAE":
       "New Prince Shri Bhavani College of Engineering and Technology  (Autonomous) Vengaivasal Main Road Gowrivakkam  Chennai 600073",
     "BRANCH CODE": "CE",
@@ -11248,7 +11248,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1431,
+    "College Code": 1431,
     "COLLEGE NMAE":
       "New Prince Shri Bhavani College of Engineering and Technology  (Autonomous) Vengaivasal Main Road Gowrivakkam  Chennai 600073",
     "BRANCH CODE": "CS",
@@ -11262,7 +11262,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1431,
+    "College Code": 1431,
     "COLLEGE NMAE":
       "New Prince Shri Bhavani College of Engineering and Technology  (Autonomous) Vengaivasal Main Road Gowrivakkam  Chennai 600073",
     "BRANCH CODE": "EC",
@@ -11276,7 +11276,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1431,
+    "College Code": 1431,
     "COLLEGE NMAE":
       "New Prince Shri Bhavani College of Engineering and Technology  (Autonomous) Vengaivasal Main Road Gowrivakkam  Chennai 600073",
     "BRANCH CODE": "EE",
@@ -11290,7 +11290,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1431,
+    "College Code": 1431,
     "COLLEGE NMAE":
       "New Prince Shri Bhavani College of Engineering and Technology  (Autonomous) Vengaivasal Main Road Gowrivakkam  Chennai 600073",
     "BRANCH CODE": "IT",
@@ -11304,7 +11304,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1431,
+    "College Code": 1431,
     "COLLEGE NMAE":
       "New Prince Shri Bhavani College of Engineering and Technology  (Autonomous) Vengaivasal Main Road Gowrivakkam  Chennai 600073",
     "BRANCH CODE": "ME",
@@ -11318,7 +11318,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1431,
+    "College Code": 1431,
     "COLLEGE NMAE":
       "New Prince Shri Bhavani College of Engineering and Technology  (Autonomous) Vengaivasal Main Road Gowrivakkam  Chennai 600073",
     "BRANCH CODE": "SC",
@@ -11332,7 +11332,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1432,
+    "College Code": 1432,
     "COLLEGE NMAE":
       "Rajalakshmi Institute of Technology (Autonomous) Irulapalayam  Kuthampakkam Post  Kancheepuram District Chennai 600124",
     "BRANCH CODE": "AD",
@@ -11346,7 +11346,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1432,
+    "College Code": 1432,
     "COLLEGE NMAE":
       "Rajalakshmi Institute of Technology (Autonomous) Irulapalayam  Kuthampakkam Post  Kancheepuram District Chennai 600124",
     "BRANCH CODE": "AM",
@@ -11361,7 +11361,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1432,
+    "College Code": 1432,
     "COLLEGE NMAE":
       "Rajalakshmi Institute of Technology (Autonomous) Irulapalayam  Kuthampakkam Post  Kancheepuram District Chennai 600124",
     "BRANCH CODE": "CB",
@@ -11375,7 +11375,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1432,
+    "College Code": 1432,
     "COLLEGE NMAE":
       "Rajalakshmi Institute of Technology (Autonomous) Irulapalayam  Kuthampakkam Post  Kancheepuram District Chennai 600124",
     "BRANCH CODE": "CO",
@@ -11389,7 +11389,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1432,
+    "College Code": 1432,
     "COLLEGE NMAE":
       "Rajalakshmi Institute of Technology (Autonomous) Irulapalayam  Kuthampakkam Post  Kancheepuram District Chennai 600124",
     "BRANCH CODE": "CS",
@@ -11403,7 +11403,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1432,
+    "College Code": 1432,
     "COLLEGE NMAE":
       "Rajalakshmi Institute of Technology (Autonomous) Irulapalayam  Kuthampakkam Post  Kancheepuram District Chennai 600124",
     "BRANCH CODE": "EC",
@@ -11417,7 +11417,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1432,
+    "College Code": 1432,
     "COLLEGE NMAE":
       "Rajalakshmi Institute of Technology (Autonomous) Irulapalayam  Kuthampakkam Post  Kancheepuram District Chennai 600124",
     "BRANCH CODE": "ME",
@@ -11431,7 +11431,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1434,
+    "College Code": 1434,
     "COLLEGE NMAE":
       "Surya Group of Institutions  GST Road  Vikravandi Village Villupuram District 605652",
     "BRANCH CODE": "AD",
@@ -11445,7 +11445,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1434,
+    "College Code": 1434,
     "COLLEGE NMAE":
       "Surya Group of Institutions  GST Road  Vikravandi Village Villupuram District 605652",
     "BRANCH CODE": "AE",
@@ -11459,7 +11459,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1434,
+    "College Code": 1434,
     "COLLEGE NMAE":
       "Surya Group of Institutions  GST Road  Vikravandi Village Villupuram District 605652",
     "BRANCH CODE": "AG",
@@ -11473,7 +11473,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1434,
+    "College Code": 1434,
     "COLLEGE NMAE":
       "Surya Group of Institutions  GST Road  Vikravandi Village Villupuram District 605652",
     "BRANCH CODE": "AU",
@@ -11487,7 +11487,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1434,
+    "College Code": 1434,
     "COLLEGE NMAE":
       "Surya Group of Institutions  GST Road  Vikravandi Village Villupuram District 605652",
     "BRANCH CODE": "CE",
@@ -11501,7 +11501,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1434,
+    "College Code": 1434,
     "COLLEGE NMAE":
       "Surya Group of Institutions  GST Road  Vikravandi Village Villupuram District 605652",
     "BRANCH CODE": "CS",
@@ -11515,7 +11515,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1434,
+    "College Code": 1434,
     "COLLEGE NMAE":
       "Surya Group of Institutions  GST Road  Vikravandi Village Villupuram District 605652",
     "BRANCH CODE": "EC",
@@ -11529,7 +11529,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1434,
+    "College Code": 1434,
     "COLLEGE NMAE":
       "Surya Group of Institutions  GST Road  Vikravandi Village Villupuram District 605652",
     "BRANCH CODE": "EE",
@@ -11543,7 +11543,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1434,
+    "College Code": 1434,
     "COLLEGE NMAE":
       "Surya Group of Institutions  GST Road  Vikravandi Village Villupuram District 605652",
     "BRANCH CODE": "ME",
@@ -11557,7 +11557,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1434,
+    "College Code": 1434,
     "COLLEGE NMAE":
       "Surya Group of Institutions  GST Road  Vikravandi Village Villupuram District 605652",
     "BRANCH CODE": "SC",
@@ -11571,7 +11571,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1436,
+    "College Code": 1436,
     "COLLEGE NMAE":
       "A R Engineering College  Vadakuchipalayam Kappiyampuliyur Post  Villupuram District 605601",
     "BRANCH CODE": "AD",
@@ -11585,7 +11585,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1436,
+    "College Code": 1436,
     "COLLEGE NMAE":
       "A R Engineering College  Vadakuchipalayam Kappiyampuliyur Post  Villupuram District 605601",
     "BRANCH CODE": "CE",
@@ -11599,7 +11599,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1436,
+    "College Code": 1436,
     "COLLEGE NMAE":
       "A R Engineering College  Vadakuchipalayam Kappiyampuliyur Post  Villupuram District 605601",
     "BRANCH CODE": "CS",
@@ -11613,7 +11613,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1436,
+    "College Code": 1436,
     "COLLEGE NMAE":
       "A R Engineering College  Vadakuchipalayam Kappiyampuliyur Post  Villupuram District 605601",
     "BRANCH CODE": "EC",
@@ -11627,7 +11627,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1436,
+    "College Code": 1436,
     "COLLEGE NMAE":
       "A R Engineering College  Vadakuchipalayam Kappiyampuliyur Post  Villupuram District 605601",
     "BRANCH CODE": "EE",
@@ -11641,7 +11641,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1436,
+    "College Code": 1436,
     "COLLEGE NMAE":
       "A R Engineering College  Vadakuchipalayam Kappiyampuliyur Post  Villupuram District 605601",
     "BRANCH CODE": "ME",
@@ -11655,7 +11655,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1437,
+    "College Code": 1437,
     "COLLEGE NMAE":
       "Rrase College of Engineering  Padappai  Kancheepuram 601301",
     "BRANCH CODE": "AD",
@@ -11669,7 +11669,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1437,
+    "College Code": 1437,
     "COLLEGE NMAE":
       "Rrase College of Engineering  Padappai  Kancheepuram 601301",
     "BRANCH CODE": "AU",
@@ -11683,7 +11683,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1437,
+    "College Code": 1437,
     "COLLEGE NMAE":
       "Rrase College of Engineering  Padappai  Kancheepuram 601301",
     "BRANCH CODE": "CE",
@@ -11697,7 +11697,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1437,
+    "College Code": 1437,
     "COLLEGE NMAE":
       "Rrase College of Engineering  Padappai  Kancheepuram 601301",
     "BRANCH CODE": "CS",
@@ -11711,7 +11711,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1437,
+    "College Code": 1437,
     "COLLEGE NMAE":
       "Rrase College of Engineering  Padappai  Kancheepuram 601301",
     "BRANCH CODE": "EC",
@@ -11725,7 +11725,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1437,
+    "College Code": 1437,
     "COLLEGE NMAE":
       "Rrase College of Engineering  Padappai  Kancheepuram 601301",
     "BRANCH CODE": "EE",
@@ -11739,7 +11739,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1437,
+    "College Code": 1437,
     "COLLEGE NMAE":
       "Rrase College of Engineering  Padappai  Kancheepuram 601301",
     "BRANCH CODE": "IT",
@@ -11753,7 +11753,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1437,
+    "College Code": 1437,
     "COLLEGE NMAE":
       "Rrase College of Engineering  Padappai  Kancheepuram 601301",
     "BRANCH CODE": "ME",
@@ -11767,7 +11767,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1437,
+    "College Code": 1437,
     "COLLEGE NMAE":
       "Rrase College of Engineering  Padappai  Kancheepuram 601301",
     "BRANCH CODE": "SC",
@@ -11781,7 +11781,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1438,
+    "College Code": 1438,
     "COLLEGE NMAE":
       "Sree Krishna College of Engineering  Anaicut Post  Unnai Village  Vellore District 632101",
     "BRANCH CODE": "CE",
@@ -11795,7 +11795,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1438,
+    "College Code": 1438,
     "COLLEGE NMAE":
       "Sree Krishna College of Engineering  Anaicut Post  Unnai Village  Vellore District 632101",
     "BRANCH CODE": "CS",
@@ -11809,7 +11809,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1438,
+    "College Code": 1438,
     "COLLEGE NMAE":
       "Sree Krishna College of Engineering  Anaicut Post  Unnai Village  Vellore District 632101",
     "BRANCH CODE": "EC",
@@ -11823,7 +11823,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1438,
+    "College Code": 1438,
     "COLLEGE NMAE":
       "Sree Krishna College of Engineering  Anaicut Post  Unnai Village  Vellore District 632101",
     "BRANCH CODE": "EE",
@@ -11837,7 +11837,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1438,
+    "College Code": 1438,
     "COLLEGE NMAE":
       "Sree Krishna College of Engineering  Anaicut Post  Unnai Village  Vellore District 632101",
     "BRANCH CODE": "ME",
@@ -11851,7 +11851,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1441,
+    "College Code": 1441,
     "COLLEGE NMAE":
       "A K T Memorial College of Engineering and Technology Neelamangalam Village  Kallakurichi District 606202",
     "BRANCH CODE": "AD",
@@ -11865,7 +11865,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1441,
+    "College Code": 1441,
     "COLLEGE NMAE":
       "A K T Memorial College of Engineering and Technology Neelamangalam Village  Kallakurichi District 606202",
     "BRANCH CODE": "CE",
@@ -11879,7 +11879,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1441,
+    "College Code": 1441,
     "COLLEGE NMAE":
       "A K T Memorial College of Engineering and Technology Neelamangalam Village  Kallakurichi District 606202",
     "BRANCH CODE": "CS",
@@ -11893,7 +11893,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1441,
+    "College Code": 1441,
     "COLLEGE NMAE":
       "A K T Memorial College of Engineering and Technology Neelamangalam Village  Kallakurichi District 606202",
     "BRANCH CODE": "EC",
@@ -11907,7 +11907,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1441,
+    "College Code": 1441,
     "COLLEGE NMAE":
       "A K T Memorial College of Engineering and Technology Neelamangalam Village  Kallakurichi District 606202",
     "BRANCH CODE": "EE",
@@ -11921,7 +11921,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1441,
+    "College Code": 1441,
     "COLLEGE NMAE":
       "A K T Memorial College of Engineering and Technology Neelamangalam Village  Kallakurichi District 606202",
     "BRANCH CODE": "IT",
@@ -11935,7 +11935,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1441,
+    "College Code": 1441,
     "COLLEGE NMAE":
       "A K T Memorial College of Engineering and Technology Neelamangalam Village  Kallakurichi District 606202",
     "BRANCH CODE": "ME",
@@ -11949,7 +11949,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1442,
+    "College Code": 1442,
     "COLLEGE NMAE":
       "Prince Dr. K Vasudevan College of Engineering and Technology  Medavakkam-Mambakkam Road  Ponmar Chennai 600127",
     "BRANCH CODE": "AD",
@@ -11963,7 +11963,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1442,
+    "College Code": 1442,
     "COLLEGE NMAE":
       "Prince Dr. K Vasudevan College of Engineering and Technology  Medavakkam-Mambakkam Road  Ponmar Chennai 600127",
     "BRANCH CODE": "BM",
@@ -11977,7 +11977,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1442,
+    "College Code": 1442,
     "COLLEGE NMAE":
       "Prince Dr. K Vasudevan College of Engineering and Technology  Medavakkam-Mambakkam Road  Ponmar Chennai 600127",
     "BRANCH CODE": "CS",
@@ -11991,7 +11991,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1442,
+    "College Code": 1442,
     "COLLEGE NMAE":
       "Prince Dr. K Vasudevan College of Engineering and Technology  Medavakkam-Mambakkam Road  Ponmar Chennai 600127",
     "BRANCH CODE": "SC",
@@ -12005,7 +12005,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1444,
+    "College Code": 1444,
     "COLLEGE NMAE":
       "Chendu College of Engineering and Technology  Zamin Endathur Village  Madurantakam Taluk  Chengalpattu District 600127",
     "BRANCH CODE": "CE",
@@ -12019,7 +12019,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1444,
+    "College Code": 1444,
     "COLLEGE NMAE":
       "Chendu College of Engineering and Technology  Zamin Endathur Village  Madurantakam Taluk  Chengalpattu District 600127",
     "BRANCH CODE": "CS",
@@ -12033,7 +12033,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1444,
+    "College Code": 1444,
     "COLLEGE NMAE":
       "Chendu College of Engineering and Technology  Zamin Endathur Village  Madurantakam Taluk  Chengalpattu District 600127",
     "BRANCH CODE": "EC",
@@ -12047,7 +12047,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1444,
+    "College Code": 1444,
     "COLLEGE NMAE":
       "Chendu College of Engineering and Technology  Zamin Endathur Village  Madurantakam Taluk  Chengalpattu District 600127",
     "BRANCH CODE": "ME",
@@ -12061,7 +12061,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1445,
+    "College Code": 1445,
     "COLLEGE NMAE":
       "Sri Rangapoopathi College of Engineering  Alampoondi Village  Gingee  Villupuram District 604151",
     "BRANCH CODE": "CE",
@@ -12075,7 +12075,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1445,
+    "College Code": 1445,
     "COLLEGE NMAE":
       "Sri Rangapoopathi College of Engineering  Alampoondi Village  Gingee  Villupuram District 604151",
     "BRANCH CODE": "CS",
@@ -12089,7 +12089,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1445,
+    "College Code": 1445,
     "COLLEGE NMAE":
       "Sri Rangapoopathi College of Engineering  Alampoondi Village  Gingee  Villupuram District 604151",
     "BRANCH CODE": "EC",
@@ -12103,7 +12103,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1445,
+    "College Code": 1445,
     "COLLEGE NMAE":
       "Sri Rangapoopathi College of Engineering  Alampoondi Village  Gingee  Villupuram District 604151",
     "BRANCH CODE": "EE",
@@ -12117,7 +12117,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1445,
+    "College Code": 1445,
     "COLLEGE NMAE":
       "Sri Rangapoopathi College of Engineering  Alampoondi Village  Gingee  Villupuram District 604151",
     "BRANCH CODE": "ME",
@@ -12131,7 +12131,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1449,
+    "College Code": 1449,
     "COLLEGE NMAE":
       "Saraswathy College of Engineering and Technology  NH-45 Main Road  Olakkur  Tindivanam Taluk  Villupuram District 604307",
     "BRANCH CODE": "AG",
@@ -12145,7 +12145,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1449,
+    "College Code": 1449,
     "COLLEGE NMAE":
       "Saraswathy College of Engineering and Technology  NH-45 Main Road  Olakkur  Tindivanam Taluk  Villupuram District 604307",
     "BRANCH CODE": "CE",
@@ -12159,7 +12159,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1449,
+    "College Code": 1449,
     "COLLEGE NMAE":
       "Saraswathy College of Engineering and Technology  NH-45 Main Road  Olakkur  Tindivanam Taluk  Villupuram District 604307",
     "BRANCH CODE": "CS",
@@ -12173,7 +12173,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1449,
+    "College Code": 1449,
     "COLLEGE NMAE":
       "Saraswathy College of Engineering and Technology  NH-45 Main Road  Olakkur  Tindivanam Taluk  Villupuram District 604307",
     "BRANCH CODE": "EC",
@@ -12187,7 +12187,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1449,
+    "College Code": 1449,
     "COLLEGE NMAE":
       "Saraswathy College of Engineering and Technology  NH-45 Main Road  Olakkur  Tindivanam Taluk  Villupuram District 604307",
     "BRANCH CODE": "ME",
@@ -12201,7 +12201,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1450,
+    "College Code": 1450,
     "COLLEGE NMAE":
       "Loyola ICAM College of Engineering and Technology  Loyola College Campus  Nungambakkam  Chennai 600034",
     "BRANCH CODE": "CS",
@@ -12215,7 +12215,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1450,
+    "College Code": 1450,
     "COLLEGE NMAE":
       "Loyola ICAM College of Engineering and Technology  Loyola College Campus  Nungambakkam  Chennai 600034",
     "BRANCH CODE": "EC",
@@ -12229,7 +12229,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1450,
+    "College Code": 1450,
     "COLLEGE NMAE":
       "Loyola ICAM College of Engineering and Technology  Loyola College Campus  Nungambakkam  Chennai 600034",
     "BRANCH CODE": "EE",
@@ -12243,7 +12243,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1450,
+    "College Code": 1450,
     "COLLEGE NMAE":
       "Loyola ICAM College of Engineering and Technology  Loyola College Campus  Nungambakkam  Chennai 600034",
     "BRANCH CODE": "IT",
@@ -12257,7 +12257,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1450,
+    "College Code": 1450,
     "COLLEGE NMAE":
       "Loyola ICAM College of Engineering and Technology  Loyola College Campus  Nungambakkam  Chennai 600034",
     "BRANCH CODE": "ME",
@@ -12271,7 +12271,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1452,
+    "College Code": 1452,
     "COLLEGE NMAE":
       "PERI Institute of Technology  Mannivakkam  West Tambaram  Chennai 600048",
     "BRANCH CODE": "AD",
@@ -12285,7 +12285,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1452,
+    "College Code": 1452,
     "COLLEGE NMAE":
       "PERI Institute of Technology  Mannivakkam  West Tambaram  Chennai 600048",
     "BRANCH CODE": "AG",
@@ -12299,7 +12299,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1452,
+    "College Code": 1452,
     "COLLEGE NMAE":
       "PERI Institute of Technology  Mannivakkam  West Tambaram  Chennai 600048",
     "BRANCH CODE": "CB",
@@ -12313,7 +12313,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1452,
+    "College Code": 1452,
     "COLLEGE NMAE":
       "PERI Institute of Technology  Mannivakkam  West Tambaram  Chennai 600048",
     "BRANCH CODE": "CE",
@@ -12327,7 +12327,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1452,
+    "College Code": 1452,
     "COLLEGE NMAE":
       "PERI Institute of Technology  Mannivakkam  West Tambaram  Chennai 600048",
     "BRANCH CODE": "CS",
@@ -12341,7 +12341,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1452,
+    "College Code": 1452,
     "COLLEGE NMAE":
       "PERI Institute of Technology  Mannivakkam  West Tambaram  Chennai 600048",
     "BRANCH CODE": "EC",
@@ -12355,7 +12355,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1452,
+    "College Code": 1452,
     "COLLEGE NMAE":
       "PERI Institute of Technology  Mannivakkam  West Tambaram  Chennai 600048",
     "BRANCH CODE": "EE",
@@ -12369,7 +12369,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1452,
+    "College Code": 1452,
     "COLLEGE NMAE":
       "PERI Institute of Technology  Mannivakkam  West Tambaram  Chennai 600048",
     "BRANCH CODE": "IT",
@@ -12383,7 +12383,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1452,
+    "College Code": 1452,
     "COLLEGE NMAE":
       "PERI Institute of Technology  Mannivakkam  West Tambaram  Chennai 600048",
     "BRANCH CODE": "ME",
@@ -12397,7 +12397,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1501,
+    "College Code": 1501,
     "COLLEGE NMAE":
       "Adhiparasakthi College of Engineering  Kalavai  Ranipet District 632506",
     "BRANCH CODE": "CE",
@@ -12411,7 +12411,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1501,
+    "College Code": 1501,
     "COLLEGE NMAE":
       "Adhiparasakthi College of Engineering  Kalavai  Ranipet District 632506",
     "BRANCH CODE": "CS",
@@ -12425,7 +12425,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1501,
+    "College Code": 1501,
     "COLLEGE NMAE":
       "Adhiparasakthi College of Engineering  Kalavai  Ranipet District 632506",
     "BRANCH CODE": "EC",
@@ -12439,7 +12439,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1501,
+    "College Code": 1501,
     "COLLEGE NMAE":
       "Adhiparasakthi College of Engineering  Kalavai  Ranipet District 632506",
     "BRANCH CODE": "EE",
@@ -12453,7 +12453,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1501,
+    "College Code": 1501,
     "COLLEGE NMAE":
       "Adhiparasakthi College of Engineering  Kalavai  Ranipet District 632506",
     "BRANCH CODE": "IT",
@@ -12467,7 +12467,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1501,
+    "College Code": 1501,
     "COLLEGE NMAE":
       "Adhiparasakthi College of Engineering  Kalavai  Ranipet District 632506",
     "BRANCH CODE": "ME",
@@ -12481,7 +12481,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1503,
+    "College Code": 1503,
     "COLLEGE NMAE":
       "Arulmigu  Meenakshi Amman College of Engineering Vadamavandal Thiruvannamalai District 604410",
     "BRANCH CODE": "BT",
@@ -12495,7 +12495,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1503,
+    "College Code": 1503,
     "COLLEGE NMAE":
       "Arulmigu  Meenakshi Amman College of Engineering Vadamavandal Thiruvannamalai District 604410",
     "BRANCH CODE": "CE",
@@ -12509,7 +12509,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1503,
+    "College Code": 1503,
     "COLLEGE NMAE":
       "Arulmigu  Meenakshi Amman College of Engineering Vadamavandal Thiruvannamalai District 604410",
     "BRANCH CODE": "CH",
@@ -12523,7 +12523,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1503,
+    "College Code": 1503,
     "COLLEGE NMAE":
       "Arulmigu  Meenakshi Amman College of Engineering Vadamavandal Thiruvannamalai District 604410",
     "BRANCH CODE": "CS",
@@ -12537,7 +12537,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1503,
+    "College Code": 1503,
     "COLLEGE NMAE":
       "Arulmigu  Meenakshi Amman College of Engineering Vadamavandal Thiruvannamalai District 604410",
     "BRANCH CODE": "EC",
@@ -12551,7 +12551,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1503,
+    "College Code": 1503,
     "COLLEGE NMAE":
       "Arulmigu  Meenakshi Amman College of Engineering Vadamavandal Thiruvannamalai District 604410",
     "BRANCH CODE": "EE",
@@ -12565,7 +12565,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1503,
+    "College Code": 1503,
     "COLLEGE NMAE":
       "Arulmigu  Meenakshi Amman College of Engineering Vadamavandal Thiruvannamalai District 604410",
     "BRANCH CODE": "IC",
@@ -12579,7 +12579,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1503,
+    "College Code": 1503,
     "COLLEGE NMAE":
       "Arulmigu  Meenakshi Amman College of Engineering Vadamavandal Thiruvannamalai District 604410",
     "BRANCH CODE": "IT",
@@ -12593,7 +12593,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1503,
+    "College Code": 1503,
     "COLLEGE NMAE":
       "Arulmigu  Meenakshi Amman College of Engineering Vadamavandal Thiruvannamalai District 604410",
     "BRANCH CODE": "ME",
@@ -12607,7 +12607,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1504,
+    "College Code": 1504,
     "COLLEGE NMAE":
       "Arunai Engineering College  Mathur  Thiruvannamalai District 606603",
     "BRANCH CODE": "AD",
@@ -12621,7 +12621,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1504,
+    "College Code": 1504,
     "COLLEGE NMAE":
       "Arunai Engineering College  Mathur  Thiruvannamalai District 606603",
     "BRANCH CODE": "AG",
@@ -12635,7 +12635,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1504,
+    "College Code": 1504,
     "COLLEGE NMAE":
       "Arunai Engineering College  Mathur  Thiruvannamalai District 606603",
     "BRANCH CODE": "AM",
@@ -12650,7 +12650,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1504,
+    "College Code": 1504,
     "COLLEGE NMAE":
       "Arunai Engineering College  Mathur  Thiruvannamalai District 606603",
     "BRANCH CODE": "BT",
@@ -12664,7 +12664,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1504,
+    "College Code": 1504,
     "COLLEGE NMAE":
       "Arunai Engineering College  Mathur  Thiruvannamalai District 606603",
     "BRANCH CODE": "CE",
@@ -12678,7 +12678,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1504,
+    "College Code": 1504,
     "COLLEGE NMAE":
       "Arunai Engineering College  Mathur  Thiruvannamalai District 606603",
     "BRANCH CODE": "CH",
@@ -12692,7 +12692,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1504,
+    "College Code": 1504,
     "COLLEGE NMAE":
       "Arunai Engineering College  Mathur  Thiruvannamalai District 606603",
     "BRANCH CODE": "CS",
@@ -12706,7 +12706,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1504,
+    "College Code": 1504,
     "COLLEGE NMAE":
       "Arunai Engineering College  Mathur  Thiruvannamalai District 606603",
     "BRANCH CODE": "EC",
@@ -12720,7 +12720,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1504,
+    "College Code": 1504,
     "COLLEGE NMAE":
       "Arunai Engineering College  Mathur  Thiruvannamalai District 606603",
     "BRANCH CODE": "EE",
@@ -12734,7 +12734,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1504,
+    "College Code": 1504,
     "COLLEGE NMAE":
       "Arunai Engineering College  Mathur  Thiruvannamalai District 606603",
     "BRANCH CODE": "IT",
@@ -12748,7 +12748,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1504,
+    "College Code": 1504,
     "COLLEGE NMAE":
       "Arunai Engineering College  Mathur  Thiruvannamalai District 606603",
     "BRANCH CODE": "ME",
@@ -12762,7 +12762,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1504,
+    "College Code": 1504,
     "COLLEGE NMAE":
       "Arunai Engineering College  Mathur  Thiruvannamalai District 606603",
     "BRANCH CODE": "SC",
@@ -12776,7 +12776,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1505,
+    "College Code": 1505,
     "COLLEGE NMAE":
       "C Abdul Hakeem College of Engineering and Technology Melvisharam  Ranipet District 632509",
     "BRANCH CODE": "AD",
@@ -12790,7 +12790,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1505,
+    "College Code": 1505,
     "COLLEGE NMAE":
       "C Abdul Hakeem College of Engineering and Technology Melvisharam  Ranipet District 632509",
     "BRANCH CODE": "CE",
@@ -12804,7 +12804,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1505,
+    "College Code": 1505,
     "COLLEGE NMAE":
       "C Abdul Hakeem College of Engineering and Technology Melvisharam  Ranipet District 632509",
     "BRANCH CODE": "CS",
@@ -12818,7 +12818,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1505,
+    "College Code": 1505,
     "COLLEGE NMAE":
       "C Abdul Hakeem College of Engineering and Technology Melvisharam  Ranipet District 632509",
     "BRANCH CODE": "EC",
@@ -12832,7 +12832,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1505,
+    "College Code": 1505,
     "COLLEGE NMAE":
       "C Abdul Hakeem College of Engineering and Technology Melvisharam  Ranipet District 632509",
     "BRANCH CODE": "EE",
@@ -12846,7 +12846,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1505,
+    "College Code": 1505,
     "COLLEGE NMAE":
       "C Abdul Hakeem College of Engineering and Technology Melvisharam  Ranipet District 632509",
     "BRANCH CODE": "IT",
@@ -12860,7 +12860,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1505,
+    "College Code": 1505,
     "COLLEGE NMAE":
       "C Abdul Hakeem College of Engineering and Technology Melvisharam  Ranipet District 632509",
     "BRANCH CODE": "ME",
@@ -12874,7 +12874,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1507,
+    "College Code": 1507,
     "COLLEGE NMAE":
       "Ganadipathy TulsiÃ¯Â¿Â½s Jain Engineering College Kaniyambadi  Vellore District 632102",
     "BRANCH CODE": "AD",
@@ -12888,7 +12888,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1507,
+    "College Code": 1507,
     "COLLEGE NMAE":
       "Ganadipathy TulsiÃ¯Â¿Â½s Jain Engineering College Kaniyambadi  Vellore District 632102",
     "BRANCH CODE": "CB",
@@ -12902,7 +12902,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1507,
+    "College Code": 1507,
     "COLLEGE NMAE":
       "Ganadipathy TulsiÃ¯Â¿Â½s Jain Engineering College Kaniyambadi  Vellore District 632102",
     "BRANCH CODE": "CS",
@@ -12916,7 +12916,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1507,
+    "College Code": 1507,
     "COLLEGE NMAE":
       "Ganadipathy TulsiÃ¯Â¿Â½s Jain Engineering College Kaniyambadi  Vellore District 632102",
     "BRANCH CODE": "EC",
@@ -12930,7 +12930,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1507,
+    "College Code": 1507,
     "COLLEGE NMAE":
       "Ganadipathy TulsiÃ¯Â¿Â½s Jain Engineering College Kaniyambadi  Vellore District 632102",
     "BRANCH CODE": "EE",
@@ -12944,7 +12944,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1507,
+    "College Code": 1507,
     "COLLEGE NMAE":
       "Ganadipathy TulsiÃ¯Â¿Â½s Jain Engineering College Kaniyambadi  Vellore District 632102",
     "BRANCH CODE": "IT",
@@ -12958,7 +12958,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1507,
+    "College Code": 1507,
     "COLLEGE NMAE":
       "Ganadipathy TulsiÃ¯Â¿Â½s Jain Engineering College Kaniyambadi  Vellore District 632102",
     "BRANCH CODE": "ME",
@@ -12972,7 +12972,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1509,
+    "College Code": 1509,
     "COLLEGE NMAE":
       "Meenakshi College of Engineering  Vembuliamman Koil Street  K K Nagar (West)  Chennai 600078",
     "BRANCH CODE": "AD",
@@ -12986,7 +12986,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1509,
+    "College Code": 1509,
     "COLLEGE NMAE":
       "Meenakshi College of Engineering  Vembuliamman Koil Street  K K Nagar (West)  Chennai 600078",
     "BRANCH CODE": "AM",
@@ -13001,7 +13001,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1509,
+    "College Code": 1509,
     "COLLEGE NMAE":
       "Meenakshi College of Engineering  Vembuliamman Koil Street  K K Nagar (West)  Chennai 600078",
     "BRANCH CODE": "CE",
@@ -13015,7 +13015,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1509,
+    "College Code": 1509,
     "COLLEGE NMAE":
       "Meenakshi College of Engineering  Vembuliamman Koil Street  K K Nagar (West)  Chennai 600078",
     "BRANCH CODE": "CS",
@@ -13029,7 +13029,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1509,
+    "College Code": 1509,
     "COLLEGE NMAE":
       "Meenakshi College of Engineering  Vembuliamman Koil Street  K K Nagar (West)  Chennai 600078",
     "BRANCH CODE": "EC",
@@ -13043,7 +13043,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1509,
+    "College Code": 1509,
     "COLLEGE NMAE":
       "Meenakshi College of Engineering  Vembuliamman Koil Street  K K Nagar (West)  Chennai 600078",
     "BRANCH CODE": "EE",
@@ -13057,7 +13057,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1509,
+    "College Code": 1509,
     "COLLEGE NMAE":
       "Meenakshi College of Engineering  Vembuliamman Koil Street  K K Nagar (West)  Chennai 600078",
     "BRANCH CODE": "EI",
@@ -13071,7 +13071,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1509,
+    "College Code": 1509,
     "COLLEGE NMAE":
       "Meenakshi College of Engineering  Vembuliamman Koil Street  K K Nagar (West)  Chennai 600078",
     "BRANCH CODE": "IT",
@@ -13085,7 +13085,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1509,
+    "College Code": 1509,
     "COLLEGE NMAE":
       "Meenakshi College of Engineering  Vembuliamman Koil Street  K K Nagar (West)  Chennai 600078",
     "BRANCH CODE": "ME",
@@ -13099,7 +13099,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1510,
+    "College Code": 1510,
     "COLLEGE NMAE":
       "Priyadarshini Engineering College  Vaniyambadi Post Thiruppattur District 635751",
     "BRANCH CODE": "CE",
@@ -13113,7 +13113,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1510,
+    "College Code": 1510,
     "COLLEGE NMAE":
       "Priyadarshini Engineering College  Vaniyambadi Post Thiruppattur District 635751",
     "BRANCH CODE": "CS",
@@ -13127,7 +13127,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1510,
+    "College Code": 1510,
     "COLLEGE NMAE":
       "Priyadarshini Engineering College  Vaniyambadi Post Thiruppattur District 635751",
     "BRANCH CODE": "EC",
@@ -13141,7 +13141,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1510,
+    "College Code": 1510,
     "COLLEGE NMAE":
       "Priyadarshini Engineering College  Vaniyambadi Post Thiruppattur District 635751",
     "BRANCH CODE": "EE",
@@ -13155,7 +13155,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1510,
+    "College Code": 1510,
     "COLLEGE NMAE":
       "Priyadarshini Engineering College  Vaniyambadi Post Thiruppattur District 635751",
     "BRANCH CODE": "IT",
@@ -13169,7 +13169,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1510,
+    "College Code": 1510,
     "COLLEGE NMAE":
       "Priyadarshini Engineering College  Vaniyambadi Post Thiruppattur District 635751",
     "BRANCH CODE": "ME",
@@ -13183,7 +13183,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1511,
+    "College Code": 1511,
     "COLLEGE NMAE":
       "Ranipettai Engineering College  Thenkadappanthangal Ranipet District 632513",
     "BRANCH CODE": "CE",
@@ -13197,7 +13197,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1511,
+    "College Code": 1511,
     "COLLEGE NMAE":
       "Ranipettai Engineering College  Thenkadappanthangal Ranipet District 632513",
     "BRANCH CODE": "CS",
@@ -13211,7 +13211,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1511,
+    "College Code": 1511,
     "COLLEGE NMAE":
       "Ranipettai Engineering College  Thenkadappanthangal Ranipet District 632513",
     "BRANCH CODE": "EC",
@@ -13225,7 +13225,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1511,
+    "College Code": 1511,
     "COLLEGE NMAE":
       "Ranipettai Engineering College  Thenkadappanthangal Ranipet District 632513",
     "BRANCH CODE": "EE",
@@ -13239,7 +13239,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1511,
+    "College Code": 1511,
     "COLLEGE NMAE":
       "Ranipettai Engineering College  Thenkadappanthangal Ranipet District 632513",
     "BRANCH CODE": "ME",
@@ -13253,7 +13253,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1512,
+    "College Code": 1512,
     "COLLEGE NMAE":
       "S K P Engineering College  Thiruvannamalai District 606611",
     "BRANCH CODE": "AD",
@@ -13267,7 +13267,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1512,
+    "College Code": 1512,
     "COLLEGE NMAE":
       "S K P Engineering College  Thiruvannamalai District 606611",
     "BRANCH CODE": "CE",
@@ -13281,7 +13281,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1512,
+    "College Code": 1512,
     "COLLEGE NMAE":
       "S K P Engineering College  Thiruvannamalai District 606611",
     "BRANCH CODE": "CS",
@@ -13295,7 +13295,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1512,
+    "College Code": 1512,
     "COLLEGE NMAE":
       "S K P Engineering College  Thiruvannamalai District 606611",
     "BRANCH CODE": "EC",
@@ -13309,7 +13309,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1512,
+    "College Code": 1512,
     "COLLEGE NMAE":
       "S K P Engineering College  Thiruvannamalai District 606611",
     "BRANCH CODE": "EE",
@@ -13323,7 +13323,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1512,
+    "College Code": 1512,
     "COLLEGE NMAE":
       "S K P Engineering College  Thiruvannamalai District 606611",
     "BRANCH CODE": "IT",
@@ -13337,7 +13337,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1512,
+    "College Code": 1512,
     "COLLEGE NMAE":
       "S K P Engineering College  Thiruvannamalai District 606611",
     "BRANCH CODE": "ME",
@@ -13351,7 +13351,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1512,
+    "College Code": 1512,
     "COLLEGE NMAE":
       "S K P Engineering College  Thiruvannamalai District 606611",
     "BRANCH CODE": "SC",
@@ -13365,7 +13365,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1513,
+    "College Code": 1513,
     "COLLEGE NMAE":
       "Sri Balaji Chockalingam Engineering College  Arni Thiruvannamalai District 632317",
     "BRANCH CODE": "CS",
@@ -13379,7 +13379,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1513,
+    "College Code": 1513,
     "COLLEGE NMAE":
       "Sri Balaji Chockalingam Engineering College  Arni Thiruvannamalai District 632317",
     "BRANCH CODE": "EC",
@@ -13393,7 +13393,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1513,
+    "College Code": 1513,
     "COLLEGE NMAE":
       "Sri Balaji Chockalingam Engineering College  Arni Thiruvannamalai District 632317",
     "BRANCH CODE": "IT",
@@ -13407,7 +13407,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1514,
+    "College Code": 1514,
     "COLLEGE NMAE":
       "Sri Nandhanam College of Engineering and Technology Molagarampatti  Tirupattur  Vellore-635601",
     "BRANCH CODE": "BT",
@@ -13421,7 +13421,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1514,
+    "College Code": 1514,
     "COLLEGE NMAE":
       "Sri Nandhanam College of Engineering and Technology Molagarampatti  Tirupattur  Vellore-635601",
     "BRANCH CODE": "CS",
@@ -13435,7 +13435,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1514,
+    "College Code": 1514,
     "COLLEGE NMAE":
       "Sri Nandhanam College of Engineering and Technology Molagarampatti  Tirupattur  Vellore-635601",
     "BRANCH CODE": "EE",
@@ -13449,7 +13449,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1514,
+    "College Code": 1514,
     "COLLEGE NMAE":
       "Sri Nandhanam College of Engineering and Technology Molagarampatti  Tirupattur  Vellore-635601",
     "BRANCH CODE": "ME",
@@ -13463,7 +13463,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1514,
+    "College Code": 1514,
     "COLLEGE NMAE":
       "Sri Nandhanam College of Engineering and Technology Molagarampatti  Tirupattur  Vellore-635601",
     "BRANCH CODE": "MR",
@@ -13477,7 +13477,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1516,
+    "College Code": 1516,
     "COLLEGE NMAE":
       "Thanthai Periyar Government Institute of Technology Bagayam  Vellore District 632002",
     "BRANCH CODE": "CE",
@@ -13491,7 +13491,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1516,
+    "College Code": 1516,
     "COLLEGE NMAE":
       "Thanthai Periyar Government Institute of Technology Bagayam  Vellore District 632002",
     "BRANCH CODE": "CS",
@@ -13505,7 +13505,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1516,
+    "College Code": 1516,
     "COLLEGE NMAE":
       "Thanthai Periyar Government Institute of Technology Bagayam  Vellore District 632002",
     "BRANCH CODE": "EC",
@@ -13519,7 +13519,7 @@ export const collegeChoiceListR2 = [
     ST: 2,
   },
   {
-    "COLLEGE CODE": 1516,
+    "College Code": 1516,
     "COLLEGE NMAE":
       "Thanthai Periyar Government Institute of Technology Bagayam  Vellore District 632002",
     "BRANCH CODE": "EE",
@@ -13533,7 +13533,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1516,
+    "College Code": 1516,
     "COLLEGE NMAE":
       "Thanthai Periyar Government Institute of Technology Bagayam  Vellore District 632002",
     "BRANCH CODE": "ME",
@@ -13547,7 +13547,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1517,
+    "College Code": 1517,
     "COLLEGE NMAE":
       "Thirumalai Engineering College  Kilambi  Kancheepuram District 631551",
     "BRANCH CODE": "AD",
@@ -13561,7 +13561,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1517,
+    "College Code": 1517,
     "COLLEGE NMAE":
       "Thirumalai Engineering College  Kilambi  Kancheepuram District 631551",
     "BRANCH CODE": "CE",
@@ -13575,7 +13575,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1517,
+    "College Code": 1517,
     "COLLEGE NMAE":
       "Thirumalai Engineering College  Kilambi  Kancheepuram District 631551",
     "BRANCH CODE": "CS",
@@ -13589,7 +13589,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1517,
+    "College Code": 1517,
     "COLLEGE NMAE":
       "Thirumalai Engineering College  Kilambi  Kancheepuram District 631551",
     "BRANCH CODE": "EC",
@@ -13603,7 +13603,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1517,
+    "College Code": 1517,
     "COLLEGE NMAE":
       "Thirumalai Engineering College  Kilambi  Kancheepuram District 631551",
     "BRANCH CODE": "EE",
@@ -13617,7 +13617,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1517,
+    "College Code": 1517,
     "COLLEGE NMAE":
       "Thirumalai Engineering College  Kilambi  Kancheepuram District 631551",
     "BRANCH CODE": "IT",
@@ -13631,7 +13631,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1517,
+    "College Code": 1517,
     "COLLEGE NMAE":
       "Thirumalai Engineering College  Kilambi  Kancheepuram District 631551",
     "BRANCH CODE": "ME",
@@ -13645,7 +13645,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1518,
+    "College Code": 1518,
     "COLLEGE NMAE":
       "Thiruvalluvar College of Engineering and Technology Vandavasi  Thiruvannamalai District 604505",
     "BRANCH CODE": "AE",
@@ -13659,7 +13659,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1518,
+    "College Code": 1518,
     "COLLEGE NMAE":
       "Thiruvalluvar College of Engineering and Technology Vandavasi  Thiruvannamalai District 604505",
     "BRANCH CODE": "AM",
@@ -13674,7 +13674,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1518,
+    "College Code": 1518,
     "COLLEGE NMAE":
       "Thiruvalluvar College of Engineering and Technology Vandavasi  Thiruvannamalai District 604505",
     "BRANCH CODE": "AU",
@@ -13688,7 +13688,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1518,
+    "College Code": 1518,
     "COLLEGE NMAE":
       "Thiruvalluvar College of Engineering and Technology Vandavasi  Thiruvannamalai District 604505",
     "BRANCH CODE": "CE",
@@ -13702,7 +13702,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1518,
+    "College Code": 1518,
     "COLLEGE NMAE":
       "Thiruvalluvar College of Engineering and Technology Vandavasi  Thiruvannamalai District 604505",
     "BRANCH CODE": "CS",
@@ -13716,7 +13716,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1518,
+    "College Code": 1518,
     "COLLEGE NMAE":
       "Thiruvalluvar College of Engineering and Technology Vandavasi  Thiruvannamalai District 604505",
     "BRANCH CODE": "EC",
@@ -13730,7 +13730,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1518,
+    "College Code": 1518,
     "COLLEGE NMAE":
       "Thiruvalluvar College of Engineering and Technology Vandavasi  Thiruvannamalai District 604505",
     "BRANCH CODE": "EE",
@@ -13744,7 +13744,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1518,
+    "College Code": 1518,
     "COLLEGE NMAE":
       "Thiruvalluvar College of Engineering and Technology Vandavasi  Thiruvannamalai District 604505",
     "BRANCH CODE": "EI",
@@ -13758,7 +13758,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1518,
+    "College Code": 1518,
     "COLLEGE NMAE":
       "Thiruvalluvar College of Engineering and Technology Vandavasi  Thiruvannamalai District 604505",
     "BRANCH CODE": "IT",
@@ -13772,7 +13772,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1518,
+    "College Code": 1518,
     "COLLEGE NMAE":
       "Thiruvalluvar College of Engineering and Technology Vandavasi  Thiruvannamalai District 604505",
     "BRANCH CODE": "ME",
@@ -13786,7 +13786,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1518,
+    "College Code": 1518,
     "COLLEGE NMAE":
       "Thiruvalluvar College of Engineering and Technology Vandavasi  Thiruvannamalai District 604505",
     "BRANCH CODE": "PC",
@@ -13800,7 +13800,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1519,
+    "College Code": 1519,
     "COLLEGE NMAE":
       "Bharathidasan Engineering College  Nattrampalli Post Thiruppathur District 635854",
     "BRANCH CODE": "CE",
@@ -13814,7 +13814,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1519,
+    "College Code": 1519,
     "COLLEGE NMAE":
       "Bharathidasan Engineering College  Nattrampalli Post Thiruppathur District 635854",
     "BRANCH CODE": "CS",
@@ -13828,7 +13828,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1519,
+    "College Code": 1519,
     "COLLEGE NMAE":
       "Bharathidasan Engineering College  Nattrampalli Post Thiruppathur District 635854",
     "BRANCH CODE": "EC",
@@ -13842,7 +13842,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1519,
+    "College Code": 1519,
     "COLLEGE NMAE":
       "Bharathidasan Engineering College  Nattrampalli Post Thiruppathur District 635854",
     "BRANCH CODE": "EE",
@@ -13856,7 +13856,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1519,
+    "College Code": 1519,
     "COLLEGE NMAE":
       "Bharathidasan Engineering College  Nattrampalli Post Thiruppathur District 635854",
     "BRANCH CODE": "IT",
@@ -13870,7 +13870,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1519,
+    "College Code": 1519,
     "COLLEGE NMAE":
       "Bharathidasan Engineering College  Nattrampalli Post Thiruppathur District 635854",
     "BRANCH CODE": "ME",
@@ -13884,7 +13884,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1520,
+    "College Code": 1520,
     "COLLEGE NMAE":
       "Kingston Engineering College  Chithoor Main Road Christianpet Village  Katpadi Taluk   Vellore District 632059",
     "BRANCH CODE": "AD",
@@ -13898,7 +13898,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1520,
+    "College Code": 1520,
     "COLLEGE NMAE":
       "Kingston Engineering College  Chithoor Main Road Christianpet Village  Katpadi Taluk   Vellore District 632059",
     "BRANCH CODE": "CB",
@@ -13912,7 +13912,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1520,
+    "College Code": 1520,
     "COLLEGE NMAE":
       "Kingston Engineering College  Chithoor Main Road Christianpet Village  Katpadi Taluk   Vellore District 632059",
     "BRANCH CODE": "CS",
@@ -13926,7 +13926,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1520,
+    "College Code": 1520,
     "COLLEGE NMAE":
       "Kingston Engineering College  Chithoor Main Road Christianpet Village  Katpadi Taluk   Vellore District 632059",
     "BRANCH CODE": "EC",
@@ -13940,7 +13940,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1520,
+    "College Code": 1520,
     "COLLEGE NMAE":
       "Kingston Engineering College  Chithoor Main Road Christianpet Village  Katpadi Taluk   Vellore District 632059",
     "BRANCH CODE": "IT",
@@ -13954,7 +13954,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1520,
+    "College Code": 1520,
     "COLLEGE NMAE":
       "Kingston Engineering College  Chithoor Main Road Christianpet Village  Katpadi Taluk   Vellore District 632059",
     "BRANCH CODE": "ME",
@@ -13968,7 +13968,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1523,
+    "College Code": 1523,
     "COLLEGE NMAE":
       "Global Institute of Engineering and Technology  Bangalore- Chennai Highway  Melvisharam  Walajah Taluk  Ranipet District 632506",
     "BRANCH CODE": "AD",
@@ -13982,7 +13982,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1523,
+    "College Code": 1523,
     "COLLEGE NMAE":
       "Global Institute of Engineering and Technology  Bangalore- Chennai Highway  Melvisharam  Walajah Taluk  Ranipet District 632506",
     "BRANCH CODE": "AU",
@@ -13996,7 +13996,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1523,
+    "College Code": 1523,
     "COLLEGE NMAE":
       "Global Institute of Engineering and Technology  Bangalore- Chennai Highway  Melvisharam  Walajah Taluk  Ranipet District 632506",
     "BRANCH CODE": "CE",
@@ -14010,7 +14010,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1523,
+    "College Code": 1523,
     "COLLEGE NMAE":
       "Global Institute of Engineering and Technology  Bangalore- Chennai Highway  Melvisharam  Walajah Taluk  Ranipet District 632506",
     "BRANCH CODE": "CS",
@@ -14024,7 +14024,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1523,
+    "College Code": 1523,
     "COLLEGE NMAE":
       "Global Institute of Engineering and Technology  Bangalore- Chennai Highway  Melvisharam  Walajah Taluk  Ranipet District 632506",
     "BRANCH CODE": "EC",
@@ -14038,7 +14038,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1523,
+    "College Code": 1523,
     "COLLEGE NMAE":
       "Global Institute of Engineering and Technology  Bangalore- Chennai Highway  Melvisharam  Walajah Taluk  Ranipet District 632506",
     "BRANCH CODE": "EE",
@@ -14052,7 +14052,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1523,
+    "College Code": 1523,
     "COLLEGE NMAE":
       "Global Institute of Engineering and Technology  Bangalore- Chennai Highway  Melvisharam  Walajah Taluk  Ranipet District 632506",
     "BRANCH CODE": "IT",
@@ -14066,7 +14066,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1523,
+    "College Code": 1523,
     "COLLEGE NMAE":
       "Global Institute of Engineering and Technology  Bangalore- Chennai Highway  Melvisharam  Walajah Taluk  Ranipet District 632506",
     "BRANCH CODE": "ME",
@@ -14080,7 +14080,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1524,
+    "College Code": 1524,
     "COLLEGE NMAE":
       "Annamalaiar College of Engineering  Modaiyur Village Polur Taluk  Thiruvannamalai District 606902",
     "BRANCH CODE": "CE",
@@ -14094,7 +14094,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1524,
+    "College Code": 1524,
     "COLLEGE NMAE":
       "Annamalaiar College of Engineering  Modaiyur Village Polur Taluk  Thiruvannamalai District 606902",
     "BRANCH CODE": "CS",
@@ -14108,7 +14108,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1524,
+    "College Code": 1524,
     "COLLEGE NMAE":
       "Annamalaiar College of Engineering  Modaiyur Village Polur Taluk  Thiruvannamalai District 606902",
     "BRANCH CODE": "EC",
@@ -14122,7 +14122,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1524,
+    "College Code": 1524,
     "COLLEGE NMAE":
       "Annamalaiar College of Engineering  Modaiyur Village Polur Taluk  Thiruvannamalai District 606902",
     "BRANCH CODE": "EE",
@@ -14136,7 +14136,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1524,
+    "College Code": 1524,
     "COLLEGE NMAE":
       "Annamalaiar College of Engineering  Modaiyur Village Polur Taluk  Thiruvannamalai District 606902",
     "BRANCH CODE": "IT",
@@ -14150,7 +14150,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1524,
+    "College Code": 1524,
     "COLLEGE NMAE":
       "Annamalaiar College of Engineering  Modaiyur Village Polur Taluk  Thiruvannamalai District 606902",
     "BRANCH CODE": "ME",
@@ -14164,7 +14164,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1525,
+    "College Code": 1525,
     "COLLEGE NMAE":
       "Podhigai College of Engineering and Technology Vinayakapuram  Adiyur Post  Tirupattur District 635601",
     "BRANCH CODE": "CE",
@@ -14178,7 +14178,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1525,
+    "College Code": 1525,
     "COLLEGE NMAE":
       "Podhigai College of Engineering and Technology Vinayakapuram  Adiyur Post  Tirupattur District 635601",
     "BRANCH CODE": "CS",
@@ -14192,7 +14192,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1525,
+    "College Code": 1525,
     "COLLEGE NMAE":
       "Podhigai College of Engineering and Technology Vinayakapuram  Adiyur Post  Tirupattur District 635601",
     "BRANCH CODE": "EC",
@@ -14206,7 +14206,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1525,
+    "College Code": 1525,
     "COLLEGE NMAE":
       "Podhigai College of Engineering and Technology Vinayakapuram  Adiyur Post  Tirupattur District 635601",
     "BRANCH CODE": "EE",
@@ -14220,7 +14220,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1525,
+    "College Code": 1525,
     "COLLEGE NMAE":
       "Podhigai College of Engineering and Technology Vinayakapuram  Adiyur Post  Tirupattur District 635601",
     "BRANCH CODE": "IT",
@@ -14234,7 +14234,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1525,
+    "College Code": 1525,
     "COLLEGE NMAE":
       "Podhigai College of Engineering and Technology Vinayakapuram  Adiyur Post  Tirupattur District 635601",
     "BRANCH CODE": "ME",
@@ -14248,7 +14248,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1526,
+    "College Code": 1526,
     "COLLEGE NMAE":
       "Sri Krishna College of Engineering  Tiruttani High Road Arakkonam  Ranipet District 631003",
     "BRANCH CODE": "CE",
@@ -14262,7 +14262,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1526,
+    "College Code": 1526,
     "COLLEGE NMAE":
       "Sri Krishna College of Engineering  Tiruttani High Road Arakkonam  Ranipet District 631003",
     "BRANCH CODE": "CS",
@@ -14276,7 +14276,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1526,
+    "College Code": 1526,
     "COLLEGE NMAE":
       "Sri Krishna College of Engineering  Tiruttani High Road Arakkonam  Ranipet District 631003",
     "BRANCH CODE": "EC",
@@ -14290,7 +14290,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1526,
+    "College Code": 1526,
     "COLLEGE NMAE":
       "Sri Krishna College of Engineering  Tiruttani High Road Arakkonam  Ranipet District 631003",
     "BRANCH CODE": "EE",
@@ -14304,7 +14304,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1526,
+    "College Code": 1526,
     "COLLEGE NMAE":
       "Sri Krishna College of Engineering  Tiruttani High Road Arakkonam  Ranipet District 631003",
     "BRANCH CODE": "ME",
@@ -14318,7 +14318,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1529,
+    "College Code": 1529,
     "COLLEGE NMAE":
       "Oxford College of Engineering  Venmani Village Karaipoondi Post  Polur Taluk  Thiruvannamalai District 606803",
     "BRANCH CODE": "CE",
@@ -14332,7 +14332,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1529,
+    "College Code": 1529,
     "COLLEGE NMAE":
       "Oxford College of Engineering  Venmani Village Karaipoondi Post  Polur Taluk  Thiruvannamalai District 606803",
     "BRANCH CODE": "CS",
@@ -14346,7 +14346,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1529,
+    "College Code": 1529,
     "COLLEGE NMAE":
       "Oxford College of Engineering  Venmani Village Karaipoondi Post  Polur Taluk  Thiruvannamalai District 606803",
     "BRANCH CODE": "EC",
@@ -14360,7 +14360,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1529,
+    "College Code": 1529,
     "COLLEGE NMAE":
       "Oxford College of Engineering  Venmani Village Karaipoondi Post  Polur Taluk  Thiruvannamalai District 606803",
     "BRANCH CODE": "EE",
@@ -14374,7 +14374,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1529,
+    "College Code": 1529,
     "COLLEGE NMAE":
       "Oxford College of Engineering  Venmani Village Karaipoondi Post  Polur Taluk  Thiruvannamalai District 606803",
     "BRANCH CODE": "ME",
@@ -14388,7 +14388,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1605,
+    "College Code": 1605,
     "COLLEGE NMAE":
       "Idhaya Engineering College for Women  Chinnasalem Kallakkurichi District 606201",
     "BRANCH CODE": "CS",
@@ -14402,7 +14402,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1605,
+    "College Code": 1605,
     "COLLEGE NMAE":
       "Idhaya Engineering College for Women  Chinnasalem Kallakkurichi District 606201",
     "BRANCH CODE": "EC",
@@ -14416,7 +14416,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 1605,
+    "College Code": 1605,
     "COLLEGE NMAE":
       "Idhaya Engineering College for Women  Chinnasalem Kallakkurichi District 606201",
     "BRANCH CODE": "EE",
@@ -14430,7 +14430,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 1605,
+    "College Code": 1605,
     "COLLEGE NMAE":
       "Idhaya Engineering College for Women  Chinnasalem Kallakkurichi District 606201",
     "BRANCH CODE": "IT",
@@ -14444,7 +14444,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2005,
+    "College Code": 2005,
     "COLLEGE NMAE":
       "Government College of Technology (Autonomous) Thadagam Road  Coimbatore District 641013",
     "BRANCH CODE": "CE",
@@ -14458,7 +14458,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2005,
+    "College Code": 2005,
     "COLLEGE NMAE":
       "Government College of Technology (Autonomous) Thadagam Road  Coimbatore District 641013",
     "BRANCH CODE": "CS",
@@ -14472,7 +14472,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2005,
+    "College Code": 2005,
     "COLLEGE NMAE":
       "Government College of Technology (Autonomous) Thadagam Road  Coimbatore District 641013",
     "BRANCH CODE": "EC",
@@ -14486,7 +14486,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2005,
+    "College Code": 2005,
     "COLLEGE NMAE":
       "Government College of Technology (Autonomous) Thadagam Road  Coimbatore District 641013",
     "BRANCH CODE": "EE",
@@ -14500,7 +14500,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2005,
+    "College Code": 2005,
     "COLLEGE NMAE":
       "Government College of Technology (Autonomous) Thadagam Road  Coimbatore District 641013",
     "BRANCH CODE": "EI",
@@ -14514,7 +14514,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2005,
+    "College Code": 2005,
     "COLLEGE NMAE":
       "Government College of Technology (Autonomous) Thadagam Road  Coimbatore District 641013",
     "BRANCH CODE": "IB",
@@ -14528,7 +14528,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2005,
+    "College Code": 2005,
     "COLLEGE NMAE":
       "Government College of Technology (Autonomous) Thadagam Road  Coimbatore District 641013",
     "BRANCH CODE": "IT",
@@ -14542,7 +14542,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2005,
+    "College Code": 2005,
     "COLLEGE NMAE":
       "Government College of Technology (Autonomous) Thadagam Road  Coimbatore District 641013",
     "BRANCH CODE": "ME",
@@ -14556,7 +14556,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2005,
+    "College Code": 2005,
     "COLLEGE NMAE":
       "Government College of Technology (Autonomous) Thadagam Road  Coimbatore District 641013",
     "BRANCH CODE": "PR",
@@ -14570,7 +14570,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2006,
+    "College Code": 2006,
     "COLLEGE NMAE":
       "PSG College of Technology (Autonomous)  Peelamedu Coimbatore District 641004",
     "BRANCH CODE": "AS",
@@ -14584,7 +14584,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2006,
+    "College Code": 2006,
     "COLLEGE NMAE":
       "PSG College of Technology (Autonomous)  Peelamedu Coimbatore District 641004",
     "BRANCH CODE": "BS",
@@ -14598,7 +14598,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2006,
+    "College Code": 2006,
     "COLLEGE NMAE":
       "PSG College of Technology (Autonomous)  Peelamedu Coimbatore District 641004",
     "BRANCH CODE": "BY",
@@ -14612,7 +14612,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2006,
+    "College Code": 2006,
     "COLLEGE NMAE":
       "PSG College of Technology (Autonomous)  Peelamedu Coimbatore District 641004",
     "BRANCH CODE": "CE",
@@ -14626,7 +14626,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2006,
+    "College Code": 2006,
     "COLLEGE NMAE":
       "PSG College of Technology (Autonomous)  Peelamedu Coimbatore District 641004",
     "BRANCH CODE": "CG",
@@ -14641,7 +14641,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2006,
+    "College Code": 2006,
     "COLLEGE NMAE":
       "PSG College of Technology (Autonomous)  Peelamedu Coimbatore District 641004",
     "BRANCH CODE": "CM",
@@ -14655,7 +14655,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2006,
+    "College Code": 2006,
     "COLLEGE NMAE":
       "PSG College of Technology (Autonomous)  Peelamedu Coimbatore District 641004",
     "BRANCH CODE": "CN",
@@ -14669,7 +14669,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2006,
+    "College Code": 2006,
     "COLLEGE NMAE":
       "PSG College of Technology (Autonomous)  Peelamedu Coimbatore District 641004",
     "BRANCH CODE": "EC",
@@ -14683,7 +14683,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2006,
+    "College Code": 2006,
     "COLLEGE NMAE":
       "PSG College of Technology (Autonomous)  Peelamedu Coimbatore District 641004",
     "BRANCH CODE": "EE",
@@ -14697,7 +14697,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2006,
+    "College Code": 2006,
     "COLLEGE NMAE":
       "PSG College of Technology (Autonomous)  Peelamedu Coimbatore District 641004",
     "BRANCH CODE": "EM",
@@ -14711,7 +14711,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2006,
+    "College Code": 2006,
     "COLLEGE NMAE":
       "PSG College of Technology (Autonomous)  Peelamedu Coimbatore District 641004",
     "BRANCH CODE": "ES",
@@ -14725,7 +14725,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2006,
+    "College Code": 2006,
     "COLLEGE NMAE":
       "PSG College of Technology (Autonomous)  Peelamedu Coimbatore District 641004",
     "BRANCH CODE": "FY",
@@ -14739,7 +14739,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2006,
+    "College Code": 2006,
     "COLLEGE NMAE":
       "PSG College of Technology (Autonomous)  Peelamedu Coimbatore District 641004",
     "BRANCH CODE": "IM",
@@ -14753,7 +14753,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2006,
+    "College Code": 2006,
     "COLLEGE NMAE":
       "PSG College of Technology (Autonomous)  Peelamedu Coimbatore District 641004",
     "BRANCH CODE": "IY",
@@ -14767,7 +14767,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2006,
+    "College Code": 2006,
     "COLLEGE NMAE":
       "PSG College of Technology (Autonomous)  Peelamedu Coimbatore District 641004",
     "BRANCH CODE": "ME",
@@ -14781,7 +14781,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2006,
+    "College Code": 2006,
     "COLLEGE NMAE":
       "PSG College of Technology (Autonomous)  Peelamedu Coimbatore District 641004",
     "BRANCH CODE": "MF",
@@ -14795,7 +14795,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2006,
+    "College Code": 2006,
     "COLLEGE NMAE":
       "PSG College of Technology (Autonomous)  Peelamedu Coimbatore District 641004",
     "BRANCH CODE": "MS",
@@ -14809,7 +14809,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2006,
+    "College Code": 2006,
     "COLLEGE NMAE":
       "PSG College of Technology (Autonomous)  Peelamedu Coimbatore District 641004",
     "BRANCH CODE": "MT",
@@ -14823,7 +14823,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2006,
+    "College Code": 2006,
     "COLLEGE NMAE":
       "PSG College of Technology (Autonomous)  Peelamedu Coimbatore District 641004",
     "BRANCH CODE": "MY",
@@ -14837,7 +14837,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2006,
+    "College Code": 2006,
     "COLLEGE NMAE":
       "PSG College of Technology (Autonomous)  Peelamedu Coimbatore District 641004",
     "BRANCH CODE": "PN",
@@ -14851,7 +14851,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2006,
+    "College Code": 2006,
     "COLLEGE NMAE":
       "PSG College of Technology (Autonomous)  Peelamedu Coimbatore District 641004",
     "BRANCH CODE": "PR",
@@ -14865,7 +14865,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2006,
+    "College Code": 2006,
     "COLLEGE NMAE":
       "PSG College of Technology (Autonomous)  Peelamedu Coimbatore District 641004",
     "BRANCH CODE": "PS",
@@ -14879,7 +14879,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2006,
+    "College Code": 2006,
     "COLLEGE NMAE":
       "PSG College of Technology (Autonomous)  Peelamedu Coimbatore District 641004",
     "BRANCH CODE": "RA",
@@ -14893,7 +14893,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2006,
+    "College Code": 2006,
     "COLLEGE NMAE":
       "PSG College of Technology (Autonomous)  Peelamedu Coimbatore District 641004",
     "BRANCH CODE": "TT",
@@ -14907,7 +14907,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2006,
+    "College Code": 2006,
     "COLLEGE NMAE":
       "PSG College of Technology (Autonomous)  Peelamedu Coimbatore District 641004",
     "BRANCH CODE": "TX",
@@ -14921,7 +14921,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2007,
+    "College Code": 2007,
     "COLLEGE NMAE":
       "Coimbatore Institute of Technology (Autonomous)  Civil Aerodrome Post  Coimbatore District 641014",
     "BRANCH CODE": "AT",
@@ -14935,7 +14935,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2007,
+    "College Code": 2007,
     "COLLEGE NMAE":
       "Coimbatore Institute of Technology (Autonomous)  Civil Aerodrome Post  Coimbatore District 641014",
     "BRANCH CODE": "CE",
@@ -14949,7 +14949,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2007,
+    "College Code": 2007,
     "COLLEGE NMAE":
       "Coimbatore Institute of Technology (Autonomous)  Civil Aerodrome Post  Coimbatore District 641014",
     "BRANCH CODE": "CH",
@@ -14963,7 +14963,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2007,
+    "College Code": 2007,
     "COLLEGE NMAE":
       "Coimbatore Institute of Technology (Autonomous)  Civil Aerodrome Post  Coimbatore District 641014",
     "BRANCH CODE": "CL",
@@ -14977,7 +14977,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2007,
+    "College Code": 2007,
     "COLLEGE NMAE":
       "Coimbatore Institute of Technology (Autonomous)  Civil Aerodrome Post  Coimbatore District 641014",
     "BRANCH CODE": "CM",
@@ -14991,7 +14991,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2007,
+    "College Code": 2007,
     "COLLEGE NMAE":
       "Coimbatore Institute of Technology (Autonomous)  Civil Aerodrome Post  Coimbatore District 641014",
     "BRANCH CODE": "CN",
@@ -15005,7 +15005,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2007,
+    "College Code": 2007,
     "COLLEGE NMAE":
       "Coimbatore Institute of Technology (Autonomous)  Civil Aerodrome Post  Coimbatore District 641014",
     "BRANCH CODE": "CS",
@@ -15019,7 +15019,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2007,
+    "College Code": 2007,
     "COLLEGE NMAE":
       "Coimbatore Institute of Technology (Autonomous)  Civil Aerodrome Post  Coimbatore District 641014",
     "BRANCH CODE": "EC",
@@ -15033,7 +15033,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2007,
+    "College Code": 2007,
     "COLLEGE NMAE":
       "Coimbatore Institute of Technology (Autonomous)  Civil Aerodrome Post  Coimbatore District 641014",
     "BRANCH CODE": "EE",
@@ -15047,7 +15047,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2007,
+    "College Code": 2007,
     "COLLEGE NMAE":
       "Coimbatore Institute of Technology (Autonomous)  Civil Aerodrome Post  Coimbatore District 641014",
     "BRANCH CODE": "EM",
@@ -15061,7 +15061,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2007,
+    "College Code": 2007,
     "COLLEGE NMAE":
       "Coimbatore Institute of Technology (Autonomous)  Civil Aerodrome Post  Coimbatore District 641014",
     "BRANCH CODE": "EY",
@@ -15075,7 +15075,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2007,
+    "College Code": 2007,
     "COLLEGE NMAE":
       "Coimbatore Institute of Technology (Autonomous)  Civil Aerodrome Post  Coimbatore District 641014",
     "BRANCH CODE": "IM",
@@ -15089,7 +15089,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2007,
+    "College Code": 2007,
     "COLLEGE NMAE":
       "Coimbatore Institute of Technology (Autonomous)  Civil Aerodrome Post  Coimbatore District 641014",
     "BRANCH CODE": "ME",
@@ -15103,7 +15103,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2007,
+    "College Code": 2007,
     "COLLEGE NMAE":
       "Coimbatore Institute of Technology (Autonomous)  Civil Aerodrome Post  Coimbatore District 641014",
     "BRANCH CODE": "MF",
@@ -15117,7 +15117,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2025,
+    "College Code": 2025,
     "COLLEGE NMAE":
       "Anna University Regional Campus - Coimbatore Maruthamalai Main Road  Navavoor Bharathiyar University Post  Somayampalayam  Coimbatore District 641046",
     "BRANCH CODE": "AD",
@@ -15131,7 +15131,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2025,
+    "College Code": 2025,
     "COLLEGE NMAE":
       "Anna University Regional Campus - Coimbatore Maruthamalai Main Road  Navavoor Bharathiyar University Post  Somayampalayam  Coimbatore District 641046",
     "BRANCH CODE": "CS",
@@ -15145,7 +15145,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2025,
+    "College Code": 2025,
     "COLLEGE NMAE":
       "Anna University Regional Campus - Coimbatore Maruthamalai Main Road  Navavoor Bharathiyar University Post  Somayampalayam  Coimbatore District 641046",
     "BRANCH CODE": "EC",
@@ -15159,7 +15159,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2025,
+    "College Code": 2025,
     "COLLEGE NMAE":
       "Anna University Regional Campus - Coimbatore Maruthamalai Main Road  Navavoor Bharathiyar University Post  Somayampalayam  Coimbatore District 641046",
     "BRANCH CODE": "EE",
@@ -15173,7 +15173,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2025,
+    "College Code": 2025,
     "COLLEGE NMAE":
       "Anna University Regional Campus - Coimbatore Maruthamalai Main Road  Navavoor Bharathiyar University Post  Somayampalayam  Coimbatore District 641046",
     "BRANCH CODE": "ME",
@@ -15187,7 +15187,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2302,
+    "College Code": 2302,
     "COLLEGE NMAE":
       "Sri Shanmugha College of Engineering and Technology Morur Bit II Village  Salem District 637304",
     "BRANCH CODE": "AD",
@@ -15201,7 +15201,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2302,
+    "College Code": 2302,
     "COLLEGE NMAE":
       "Sri Shanmugha College of Engineering and Technology Morur Bit II Village  Salem District 637304",
     "BRANCH CODE": "AG",
@@ -15215,7 +15215,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2302,
+    "College Code": 2302,
     "COLLEGE NMAE":
       "Sri Shanmugha College of Engineering and Technology Morur Bit II Village  Salem District 637304",
     "BRANCH CODE": "BM",
@@ -15229,7 +15229,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2302,
+    "College Code": 2302,
     "COLLEGE NMAE":
       "Sri Shanmugha College of Engineering and Technology Morur Bit II Village  Salem District 637304",
     "BRANCH CODE": "CS",
@@ -15243,7 +15243,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2302,
+    "College Code": 2302,
     "COLLEGE NMAE":
       "Sri Shanmugha College of Engineering and Technology Morur Bit II Village  Salem District 637304",
     "BRANCH CODE": "EC",
@@ -15257,7 +15257,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2302,
+    "College Code": 2302,
     "COLLEGE NMAE":
       "Sri Shanmugha College of Engineering and Technology Morur Bit II Village  Salem District 637304",
     "BRANCH CODE": "IT",
@@ -15271,7 +15271,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2302,
+    "College Code": 2302,
     "COLLEGE NMAE":
       "Sri Shanmugha College of Engineering and Technology Morur Bit II Village  Salem District 637304",
     "BRANCH CODE": "ME",
@@ -15285,7 +15285,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2302,
+    "College Code": 2302,
     "COLLEGE NMAE":
       "Sri Shanmugha College of Engineering and Technology Morur Bit II Village  Salem District 637304",
     "BRANCH CODE": "SC",
@@ -15299,7 +15299,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2314,
+    "College Code": 2314,
     "COLLEGE NMAE":
       "Muthayammal College of Engineering  Kakkaveri Post Namakkal District 637408",
     "BRANCH CODE": "AD",
@@ -15313,7 +15313,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2314,
+    "College Code": 2314,
     "COLLEGE NMAE":
       "Muthayammal College of Engineering  Kakkaveri Post Namakkal District 637408",
     "BRANCH CODE": "AG",
@@ -15327,7 +15327,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2314,
+    "College Code": 2314,
     "COLLEGE NMAE":
       "Muthayammal College of Engineering  Kakkaveri Post Namakkal District 637408",
     "BRANCH CODE": "CS",
@@ -15341,7 +15341,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2314,
+    "College Code": 2314,
     "COLLEGE NMAE":
       "Muthayammal College of Engineering  Kakkaveri Post Namakkal District 637408",
     "BRANCH CODE": "EC",
@@ -15355,7 +15355,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2314,
+    "College Code": 2314,
     "COLLEGE NMAE":
       "Muthayammal College of Engineering  Kakkaveri Post Namakkal District 637408",
     "BRANCH CODE": "EE",
@@ -15369,7 +15369,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2327,
+    "College Code": 2327,
     "COLLEGE NMAE":
       "N S N College of Engineering and Technology  Karur- Madurai NH7  Manalmedu  Karur District 639003",
     "BRANCH CODE": "AD",
@@ -15383,7 +15383,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2327,
+    "College Code": 2327,
     "COLLEGE NMAE":
       "N S N College of Engineering and Technology  Karur- Madurai NH7  Manalmedu  Karur District 639003",
     "BRANCH CODE": "CE",
@@ -15397,7 +15397,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2327,
+    "College Code": 2327,
     "COLLEGE NMAE":
       "N S N College of Engineering and Technology  Karur- Madurai NH7  Manalmedu  Karur District 639003",
     "BRANCH CODE": "CS",
@@ -15411,7 +15411,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2327,
+    "College Code": 2327,
     "COLLEGE NMAE":
       "N S N College of Engineering and Technology  Karur- Madurai NH7  Manalmedu  Karur District 639003",
     "BRANCH CODE": "EC",
@@ -15425,7 +15425,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2327,
+    "College Code": 2327,
     "COLLEGE NMAE":
       "N S N College of Engineering and Technology  Karur- Madurai NH7  Manalmedu  Karur District 639003",
     "BRANCH CODE": "EE",
@@ -15439,7 +15439,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2327,
+    "College Code": 2327,
     "COLLEGE NMAE":
       "N S N College of Engineering and Technology  Karur- Madurai NH7  Manalmedu  Karur District 639003",
     "BRANCH CODE": "IT",
@@ -15453,7 +15453,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2327,
+    "College Code": 2327,
     "COLLEGE NMAE":
       "N S N College of Engineering and Technology  Karur- Madurai NH7  Manalmedu  Karur District 639003",
     "BRANCH CODE": "ME",
@@ -15467,7 +15467,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2328,
+    "College Code": 2328,
     "COLLEGE NMAE":
       "K S R Institute for Engineering and Technology (Autonomous) Thokkavadi  Namakkal District 637215",
     "BRANCH CODE": "BM",
@@ -15481,7 +15481,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2328,
+    "College Code": 2328,
     "COLLEGE NMAE":
       "K S R Institute for Engineering and Technology (Autonomous) Thokkavadi  Namakkal District 637215",
     "BRANCH CODE": "CS",
@@ -15495,7 +15495,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2328,
+    "College Code": 2328,
     "COLLEGE NMAE":
       "K S R Institute for Engineering and Technology (Autonomous) Thokkavadi  Namakkal District 637215",
     "BRANCH CODE": "EC",
@@ -15509,7 +15509,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2328,
+    "College Code": 2328,
     "COLLEGE NMAE":
       "K S R Institute for Engineering and Technology (Autonomous) Thokkavadi  Namakkal District 637215",
     "BRANCH CODE": "EE",
@@ -15523,7 +15523,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2328,
+    "College Code": 2328,
     "COLLEGE NMAE":
       "K S R Institute for Engineering and Technology (Autonomous) Thokkavadi  Namakkal District 637215",
     "BRANCH CODE": "IT",
@@ -15537,7 +15537,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2328,
+    "College Code": 2328,
     "COLLEGE NMAE":
       "K S R Institute for Engineering and Technology (Autonomous) Thokkavadi  Namakkal District 637215",
     "BRANCH CODE": "ME",
@@ -15551,7 +15551,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2328,
+    "College Code": 2328,
     "COLLEGE NMAE":
       "K S R Institute for Engineering and Technology (Autonomous) Thokkavadi  Namakkal District 637215",
     "BRANCH CODE": "SC",
@@ -15565,7 +15565,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2329,
+    "College Code": 2329,
     "COLLEGE NMAE":
       "Rathinam Technical Campus  (Autonomous)  Pollachi Road Eachanari  Coimbatore District 641021",
     "BRANCH CODE": "AD",
@@ -15579,7 +15579,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2329,
+    "College Code": 2329,
     "COLLEGE NMAE":
       "Rathinam Technical Campus  (Autonomous)  Pollachi Road Eachanari  Coimbatore District 641021",
     "BRANCH CODE": "AG",
@@ -15593,7 +15593,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2329,
+    "College Code": 2329,
     "COLLEGE NMAE":
       "Rathinam Technical Campus  (Autonomous)  Pollachi Road Eachanari  Coimbatore District 641021",
     "BRANCH CODE": "AM",
@@ -15608,7 +15608,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2329,
+    "College Code": 2329,
     "COLLEGE NMAE":
       "Rathinam Technical Campus  (Autonomous)  Pollachi Road Eachanari  Coimbatore District 641021",
     "BRANCH CODE": "BM",
@@ -15622,7 +15622,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2329,
+    "College Code": 2329,
     "COLLEGE NMAE":
       "Rathinam Technical Campus  (Autonomous)  Pollachi Road Eachanari  Coimbatore District 641021",
     "BRANCH CODE": "BT",
@@ -15636,7 +15636,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2329,
+    "College Code": 2329,
     "COLLEGE NMAE":
       "Rathinam Technical Campus  (Autonomous)  Pollachi Road Eachanari  Coimbatore District 641021",
     "BRANCH CODE": "CS",
@@ -15650,7 +15650,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2329,
+    "College Code": 2329,
     "COLLEGE NMAE":
       "Rathinam Technical Campus  (Autonomous)  Pollachi Road Eachanari  Coimbatore District 641021",
     "BRANCH CODE": "EC",
@@ -15664,7 +15664,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2329,
+    "College Code": 2329,
     "COLLEGE NMAE":
       "Rathinam Technical Campus  (Autonomous)  Pollachi Road Eachanari  Coimbatore District 641021",
     "BRANCH CODE": "IT",
@@ -15678,7 +15678,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2329,
+    "College Code": 2329,
     "COLLEGE NMAE":
       "Rathinam Technical Campus  (Autonomous)  Pollachi Road Eachanari  Coimbatore District 641021",
     "BRANCH CODE": "ME",
@@ -15692,7 +15692,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2329,
+    "College Code": 2329,
     "COLLEGE NMAE":
       "Rathinam Technical Campus  (Autonomous)  Pollachi Road Eachanari  Coimbatore District 641021",
     "BRANCH CODE": "XS",
@@ -15706,7 +15706,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2332,
+    "College Code": 2332,
     "COLLEGE NMAE":
       "Aishwarya College of Engineering and Technology Errattaikaradu Paruvachi Post  Anthiyur (Via)  Bhavani Taluk Erode District 638312",
     "BRANCH CODE": "AD",
@@ -15720,7 +15720,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2332,
+    "College Code": 2332,
     "COLLEGE NMAE":
       "Aishwarya College of Engineering and Technology Errattaikaradu Paruvachi Post  Anthiyur (Via)  Bhavani Taluk Erode District 638312",
     "BRANCH CODE": "CE",
@@ -15734,7 +15734,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2332,
+    "College Code": 2332,
     "COLLEGE NMAE":
       "Aishwarya College of Engineering and Technology Errattaikaradu Paruvachi Post  Anthiyur (Via)  Bhavani Taluk Erode District 638312",
     "BRANCH CODE": "CS",
@@ -15748,7 +15748,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2332,
+    "College Code": 2332,
     "COLLEGE NMAE":
       "Aishwarya College of Engineering and Technology Errattaikaradu Paruvachi Post  Anthiyur (Via)  Bhavani Taluk Erode District 638312",
     "BRANCH CODE": "EC",
@@ -15762,7 +15762,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2332,
+    "College Code": 2332,
     "COLLEGE NMAE":
       "Aishwarya College of Engineering and Technology Errattaikaradu Paruvachi Post  Anthiyur (Via)  Bhavani Taluk Erode District 638312",
     "BRANCH CODE": "EE",
@@ -15776,7 +15776,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2332,
+    "College Code": 2332,
     "COLLEGE NMAE":
       "Aishwarya College of Engineering and Technology Errattaikaradu Paruvachi Post  Anthiyur (Via)  Bhavani Taluk Erode District 638312",
     "BRANCH CODE": "ME",
@@ -15790,7 +15790,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2338,
+    "College Code": 2338,
     "COLLEGE NMAE":
       "Asian College of Engineering and Technology  Asian College Road  Kondayampalayam  Near Saravanampatti Coimbatore District 641110",
     "BRANCH CODE": "AD",
@@ -15804,7 +15804,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2338,
+    "College Code": 2338,
     "COLLEGE NMAE":
       "Asian College of Engineering and Technology  Asian College Road  Kondayampalayam  Near Saravanampatti Coimbatore District 641110",
     "BRANCH CODE": "AG",
@@ -15818,7 +15818,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2338,
+    "College Code": 2338,
     "COLLEGE NMAE":
       "Asian College of Engineering and Technology  Asian College Road  Kondayampalayam  Near Saravanampatti Coimbatore District 641110",
     "BRANCH CODE": "BM",
@@ -15832,7 +15832,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2338,
+    "College Code": 2338,
     "COLLEGE NMAE":
       "Asian College of Engineering and Technology  Asian College Road  Kondayampalayam  Near Saravanampatti Coimbatore District 641110",
     "BRANCH CODE": "CS",
@@ -15846,7 +15846,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2338,
+    "College Code": 2338,
     "COLLEGE NMAE":
       "Asian College of Engineering and Technology  Asian College Road  Kondayampalayam  Near Saravanampatti Coimbatore District 641110",
     "BRANCH CODE": "EE",
@@ -15860,7 +15860,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2338,
+    "College Code": 2338,
     "COLLEGE NMAE":
       "Asian College of Engineering and Technology  Asian College Road  Kondayampalayam  Near Saravanampatti Coimbatore District 641110",
     "BRANCH CODE": "IT",
@@ -15874,7 +15874,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2338,
+    "College Code": 2338,
     "COLLEGE NMAE":
       "Asian College of Engineering and Technology  Asian College Road  Kondayampalayam  Near Saravanampatti Coimbatore District 641110",
     "BRANCH CODE": "ME",
@@ -15888,7 +15888,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2341,
+    "College Code": 2341,
     "COLLEGE NMAE":
       "Ganesh College of Engineering  Attur Main Road Mettupatti  Salem District 636111",
     "BRANCH CODE": "AD",
@@ -15902,7 +15902,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2341,
+    "College Code": 2341,
     "COLLEGE NMAE":
       "Ganesh College of Engineering  Attur Main Road Mettupatti  Salem District 636111",
     "BRANCH CODE": "BM",
@@ -15916,7 +15916,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2341,
+    "College Code": 2341,
     "COLLEGE NMAE":
       "Ganesh College of Engineering  Attur Main Road Mettupatti  Salem District 636111",
     "BRANCH CODE": "CE",
@@ -15930,7 +15930,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2341,
+    "College Code": 2341,
     "COLLEGE NMAE":
       "Ganesh College of Engineering  Attur Main Road Mettupatti  Salem District 636111",
     "BRANCH CODE": "CS",
@@ -15944,7 +15944,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2341,
+    "College Code": 2341,
     "COLLEGE NMAE":
       "Ganesh College of Engineering  Attur Main Road Mettupatti  Salem District 636111",
     "BRANCH CODE": "EC",
@@ -15958,7 +15958,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2341,
+    "College Code": 2341,
     "COLLEGE NMAE":
       "Ganesh College of Engineering  Attur Main Road Mettupatti  Salem District 636111",
     "BRANCH CODE": "EE",
@@ -15972,7 +15972,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2341,
+    "College Code": 2341,
     "COLLEGE NMAE":
       "Ganesh College of Engineering  Attur Main Road Mettupatti  Salem District 636111",
     "BRANCH CODE": "IT",
@@ -15986,7 +15986,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2341,
+    "College Code": 2341,
     "COLLEGE NMAE":
       "Ganesh College of Engineering  Attur Main Road Mettupatti  Salem District 636111",
     "BRANCH CODE": "ME",
@@ -16000,7 +16000,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2342,
+    "College Code": 2342,
     "COLLEGE NMAE":
       "Sri Ranganathar Institute of Engineering and Technology Thudialur-Kovilpalay Road  Coimbatore District 641110",
     "BRANCH CODE": "AD",
@@ -16014,7 +16014,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2342,
+    "College Code": 2342,
     "COLLEGE NMAE":
       "Sri Ranganathar Institute of Engineering and Technology Thudialur-Kovilpalay Road  Coimbatore District 641110",
     "BRANCH CODE": "CE",
@@ -16028,7 +16028,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2342,
+    "College Code": 2342,
     "COLLEGE NMAE":
       "Sri Ranganathar Institute of Engineering and Technology Thudialur-Kovilpalay Road  Coimbatore District 641110",
     "BRANCH CODE": "CS",
@@ -16042,7 +16042,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2342,
+    "College Code": 2342,
     "COLLEGE NMAE":
       "Sri Ranganathar Institute of Engineering and Technology Thudialur-Kovilpalay Road  Coimbatore District 641110",
     "BRANCH CODE": "EC",
@@ -16056,7 +16056,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2342,
+    "College Code": 2342,
     "COLLEGE NMAE":
       "Sri Ranganathar Institute of Engineering and Technology Thudialur-Kovilpalay Road  Coimbatore District 641110",
     "BRANCH CODE": "EE",
@@ -16070,7 +16070,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2342,
+    "College Code": 2342,
     "COLLEGE NMAE":
       "Sri Ranganathar Institute of Engineering and Technology Thudialur-Kovilpalay Road  Coimbatore District 641110",
     "BRANCH CODE": "IT",
@@ -16084,7 +16084,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2342,
+    "College Code": 2342,
     "COLLEGE NMAE":
       "Sri Ranganathar Institute of Engineering and Technology Thudialur-Kovilpalay Road  Coimbatore District 641110",
     "BRANCH CODE": "ME",
@@ -16098,7 +16098,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2343,
+    "College Code": 2343,
     "COLLEGE NMAE":
       "Indian Institute of Handloom Technology  Foulke's Compound  Thillai Nagar  Salem District 636001",
     "BRANCH CODE": "HT",
@@ -16112,7 +16112,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2345,
+    "College Code": 2345,
     "COLLEGE NMAE":
       "Dhirajlal Gandhi College of Technology  Sikkanampatty (Opp. to Airport)  Omalur Taluk  Salem District 636309",
     "BRANCH CODE": "AD",
@@ -16126,7 +16126,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2345,
+    "College Code": 2345,
     "COLLEGE NMAE":
       "Dhirajlal Gandhi College of Technology  Sikkanampatty (Opp. to Airport)  Omalur Taluk  Salem District 636309",
     "BRANCH CODE": "AG",
@@ -16140,7 +16140,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2345,
+    "College Code": 2345,
     "COLLEGE NMAE":
       "Dhirajlal Gandhi College of Technology  Sikkanampatty (Opp. to Airport)  Omalur Taluk  Salem District 636309",
     "BRANCH CODE": "CE",
@@ -16154,7 +16154,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2345,
+    "College Code": 2345,
     "COLLEGE NMAE":
       "Dhirajlal Gandhi College of Technology  Sikkanampatty (Opp. to Airport)  Omalur Taluk  Salem District 636309",
     "BRANCH CODE": "CS",
@@ -16168,7 +16168,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2345,
+    "College Code": 2345,
     "COLLEGE NMAE":
       "Dhirajlal Gandhi College of Technology  Sikkanampatty (Opp. to Airport)  Omalur Taluk  Salem District 636309",
     "BRANCH CODE": "EC",
@@ -16182,7 +16182,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2345,
+    "College Code": 2345,
     "COLLEGE NMAE":
       "Dhirajlal Gandhi College of Technology  Sikkanampatty (Opp. to Airport)  Omalur Taluk  Salem District 636309",
     "BRANCH CODE": "EE",
@@ -16196,7 +16196,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2345,
+    "College Code": 2345,
     "COLLEGE NMAE":
       "Dhirajlal Gandhi College of Technology  Sikkanampatty (Opp. to Airport)  Omalur Taluk  Salem District 636309",
     "BRANCH CODE": "IT",
@@ -16210,7 +16210,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2345,
+    "College Code": 2345,
     "COLLEGE NMAE":
       "Dhirajlal Gandhi College of Technology  Sikkanampatty (Opp. to Airport)  Omalur Taluk  Salem District 636309",
     "BRANCH CODE": "ME",
@@ -16224,7 +16224,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2345,
+    "College Code": 2345,
     "COLLEGE NMAE":
       "Dhirajlal Gandhi College of Technology  Sikkanampatty (Opp. to Airport)  Omalur Taluk  Salem District 636309",
     "BRANCH CODE": "RM",
@@ -16238,7 +16238,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2346,
+    "College Code": 2346,
     "COLLEGE NMAE":
       "Shree Sathyam College of Engineering and Technology  NH- 47  Manjakkalpatti  Kuppanur Post  Sankari Taluk  Salem District 637301",
     "BRANCH CODE": "AD",
@@ -16252,7 +16252,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2346,
+    "College Code": 2346,
     "COLLEGE NMAE":
       "Shree Sathyam College of Engineering and Technology  NH- 47  Manjakkalpatti  Kuppanur Post  Sankari Taluk  Salem District 637301",
     "BRANCH CODE": "CE",
@@ -16266,7 +16266,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2346,
+    "College Code": 2346,
     "COLLEGE NMAE":
       "Shree Sathyam College of Engineering and Technology  NH- 47  Manjakkalpatti  Kuppanur Post  Sankari Taluk  Salem District 637301",
     "BRANCH CODE": "CS",
@@ -16280,7 +16280,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2346,
+    "College Code": 2346,
     "COLLEGE NMAE":
       "Shree Sathyam College of Engineering and Technology  NH- 47  Manjakkalpatti  Kuppanur Post  Sankari Taluk  Salem District 637301",
     "BRANCH CODE": "EC",
@@ -16294,7 +16294,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2346,
+    "College Code": 2346,
     "COLLEGE NMAE":
       "Shree Sathyam College of Engineering and Technology  NH- 47  Manjakkalpatti  Kuppanur Post  Sankari Taluk  Salem District 637301",
     "BRANCH CODE": "EE",
@@ -16308,7 +16308,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2346,
+    "College Code": 2346,
     "COLLEGE NMAE":
       "Shree Sathyam College of Engineering and Technology  NH- 47  Manjakkalpatti  Kuppanur Post  Sankari Taluk  Salem District 637301",
     "BRANCH CODE": "ME",
@@ -16322,7 +16322,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2347,
+    "College Code": 2347,
     "COLLEGE NMAE":
       "AVS College of Technology  Attur Main Road  Near AVS College of Arts & Science  Chinnagoundapuram  Salem District 636106",
     "BRANCH CODE": "AG",
@@ -16336,7 +16336,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2347,
+    "College Code": 2347,
     "COLLEGE NMAE":
       "AVS College of Technology  Attur Main Road  Near AVS College of Arts & Science  Chinnagoundapuram  Salem District 636106",
     "BRANCH CODE": "CS",
@@ -16350,7 +16350,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2347,
+    "College Code": 2347,
     "COLLEGE NMAE":
       "AVS College of Technology  Attur Main Road  Near AVS College of Arts & Science  Chinnagoundapuram  Salem District 636106",
     "BRANCH CODE": "EC",
@@ -16364,7 +16364,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2347,
+    "College Code": 2347,
     "COLLEGE NMAE":
       "AVS College of Technology  Attur Main Road  Near AVS College of Arts & Science  Chinnagoundapuram  Salem District 636106",
     "BRANCH CODE": "EE",
@@ -16378,7 +16378,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2347,
+    "College Code": 2347,
     "COLLEGE NMAE":
       "AVS College of Technology  Attur Main Road  Near AVS College of Arts & Science  Chinnagoundapuram  Salem District 636106",
     "BRANCH CODE": "IT",
@@ -16392,7 +16392,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2347,
+    "College Code": 2347,
     "COLLEGE NMAE":
       "AVS College of Technology  Attur Main Road  Near AVS College of Arts & Science  Chinnagoundapuram  Salem District 636106",
     "BRANCH CODE": "ME",
@@ -16406,7 +16406,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2349,
+    "College Code": 2349,
     "COLLEGE NMAE":
       "Dhaanish Ahmed Institute of Technology  Pichanur Post (Near K G Chavadi)  Coimbatore District 641105",
     "BRANCH CODE": "AD",
@@ -16420,7 +16420,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2349,
+    "College Code": 2349,
     "COLLEGE NMAE":
       "Dhaanish Ahmed Institute of Technology  Pichanur Post (Near K G Chavadi)  Coimbatore District 641105",
     "BRANCH CODE": "BM",
@@ -16434,7 +16434,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2349,
+    "College Code": 2349,
     "COLLEGE NMAE":
       "Dhaanish Ahmed Institute of Technology  Pichanur Post (Near K G Chavadi)  Coimbatore District 641105",
     "BRANCH CODE": "CS",
@@ -16448,7 +16448,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2349,
+    "College Code": 2349,
     "COLLEGE NMAE":
       "Dhaanish Ahmed Institute of Technology  Pichanur Post (Near K G Chavadi)  Coimbatore District 641105",
     "BRANCH CODE": "FD",
@@ -16462,7 +16462,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2349,
+    "College Code": 2349,
     "COLLEGE NMAE":
       "Dhaanish Ahmed Institute of Technology  Pichanur Post (Near K G Chavadi)  Coimbatore District 641105",
     "BRANCH CODE": "RM",
@@ -16476,7 +16476,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2350,
+    "College Code": 2350,
     "COLLEGE NMAE":
       "Jairupaa College of Engineering  Thottiapalayam Kathankanni Post  Kangayam  Tiruppur District 641 604",
     "BRANCH CODE": "CE",
@@ -16490,7 +16490,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2350,
+    "College Code": 2350,
     "COLLEGE NMAE":
       "Jairupaa College of Engineering  Thottiapalayam Kathankanni Post  Kangayam  Tiruppur District 641 604",
     "BRANCH CODE": "CS",
@@ -16504,7 +16504,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2350,
+    "College Code": 2350,
     "COLLEGE NMAE":
       "Jairupaa College of Engineering  Thottiapalayam Kathankanni Post  Kangayam  Tiruppur District 641 604",
     "BRANCH CODE": "EC",
@@ -16518,7 +16518,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2350,
+    "College Code": 2350,
     "COLLEGE NMAE":
       "Jairupaa College of Engineering  Thottiapalayam Kathankanni Post  Kangayam  Tiruppur District 641 604",
     "BRANCH CODE": "EE",
@@ -16532,7 +16532,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2350,
+    "College Code": 2350,
     "COLLEGE NMAE":
       "Jairupaa College of Engineering  Thottiapalayam Kathankanni Post  Kangayam  Tiruppur District 641 604",
     "BRANCH CODE": "ME",
@@ -16546,7 +16546,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2354,
+    "College Code": 2354,
     "COLLEGE NMAE":
       "Pollachi Institute of Engineering and Technology  Main Road  Poosaripatti  Pollachi Taluk  Coimbatore District 642205",
     "BRANCH CODE": "AD",
@@ -16560,7 +16560,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2354,
+    "College Code": 2354,
     "COLLEGE NMAE":
       "Pollachi Institute of Engineering and Technology  Main Road  Poosaripatti  Pollachi Taluk  Coimbatore District 642205",
     "BRANCH CODE": "CE",
@@ -16574,7 +16574,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2354,
+    "College Code": 2354,
     "COLLEGE NMAE":
       "Pollachi Institute of Engineering and Technology  Main Road  Poosaripatti  Pollachi Taluk  Coimbatore District 642205",
     "BRANCH CODE": "CS",
@@ -16588,7 +16588,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2354,
+    "College Code": 2354,
     "COLLEGE NMAE":
       "Pollachi Institute of Engineering and Technology  Main Road  Poosaripatti  Pollachi Taluk  Coimbatore District 642205",
     "BRANCH CODE": "EC",
@@ -16602,7 +16602,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2354,
+    "College Code": 2354,
     "COLLEGE NMAE":
       "Pollachi Institute of Engineering and Technology  Main Road  Poosaripatti  Pollachi Taluk  Coimbatore District 642205",
     "BRANCH CODE": "EE",
@@ -16616,7 +16616,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2354,
+    "College Code": 2354,
     "COLLEGE NMAE":
       "Pollachi Institute of Engineering and Technology  Main Road  Poosaripatti  Pollachi Taluk  Coimbatore District 642205",
     "BRANCH CODE": "ME",
@@ -16630,7 +16630,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2356,
+    "College Code": 2356,
     "COLLEGE NMAE":
       "Arulmurugan College of Engineering  Karvazhi Road Thennilai Post  Karur District 639206",
     "BRANCH CODE": "AD",
@@ -16644,7 +16644,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2356,
+    "College Code": 2356,
     "COLLEGE NMAE":
       "Arulmurugan College of Engineering  Karvazhi Road Thennilai Post  Karur District 639206",
     "BRANCH CODE": "CE",
@@ -16658,7 +16658,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2356,
+    "College Code": 2356,
     "COLLEGE NMAE":
       "Arulmurugan College of Engineering  Karvazhi Road Thennilai Post  Karur District 639206",
     "BRANCH CODE": "CS",
@@ -16672,7 +16672,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2356,
+    "College Code": 2356,
     "COLLEGE NMAE":
       "Arulmurugan College of Engineering  Karvazhi Road Thennilai Post  Karur District 639206",
     "BRANCH CODE": "EC",
@@ -16686,7 +16686,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2356,
+    "College Code": 2356,
     "COLLEGE NMAE":
       "Arulmurugan College of Engineering  Karvazhi Road Thennilai Post  Karur District 639206",
     "BRANCH CODE": "EE",
@@ -16700,7 +16700,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2356,
+    "College Code": 2356,
     "COLLEGE NMAE":
       "Arulmurugan College of Engineering  Karvazhi Road Thennilai Post  Karur District 639206",
     "BRANCH CODE": "ME",
@@ -16714,7 +16714,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2357,
+    "College Code": 2357,
     "COLLEGE NMAE":
       "V S B College of Engineering Technical Campus  Ealur Pirivu Solavampalayam Post  Coimbatore District 642109",
     "BRANCH CODE": "AD",
@@ -16728,7 +16728,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2357,
+    "College Code": 2357,
     "COLLEGE NMAE":
       "V S B College of Engineering Technical Campus  Ealur Pirivu Solavampalayam Post  Coimbatore District 642109",
     "BRANCH CODE": "AG",
@@ -16742,7 +16742,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2357,
+    "College Code": 2357,
     "COLLEGE NMAE":
       "V S B College of Engineering Technical Campus  Ealur Pirivu Solavampalayam Post  Coimbatore District 642109",
     "BRANCH CODE": "CE",
@@ -16756,7 +16756,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2357,
+    "College Code": 2357,
     "COLLEGE NMAE":
       "V S B College of Engineering Technical Campus  Ealur Pirivu Solavampalayam Post  Coimbatore District 642109",
     "BRANCH CODE": "CS",
@@ -16770,7 +16770,7 @@ export const collegeChoiceListR2 = [
     ST: 2,
   },
   {
-    "COLLEGE CODE": 2357,
+    "College Code": 2357,
     "COLLEGE NMAE":
       "V S B College of Engineering Technical Campus  Ealur Pirivu Solavampalayam Post  Coimbatore District 642109",
     "BRANCH CODE": "EC",
@@ -16784,7 +16784,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2357,
+    "College Code": 2357,
     "COLLEGE NMAE":
       "V S B College of Engineering Technical Campus  Ealur Pirivu Solavampalayam Post  Coimbatore District 642109",
     "BRANCH CODE": "EE",
@@ -16798,7 +16798,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2357,
+    "College Code": 2357,
     "COLLEGE NMAE":
       "V S B College of Engineering Technical Campus  Ealur Pirivu Solavampalayam Post  Coimbatore District 642109",
     "BRANCH CODE": "IT",
@@ -16812,7 +16812,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2357,
+    "College Code": 2357,
     "COLLEGE NMAE":
       "V S B College of Engineering Technical Campus  Ealur Pirivu Solavampalayam Post  Coimbatore District 642109",
     "BRANCH CODE": "ME",
@@ -16826,7 +16826,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2360,
+    "College Code": 2360,
     "COLLEGE NMAE":
       "Suguna College of Engineering  Kalappatti Road  Civil Aerodrome Post  Coimbatore District 641014",
     "BRANCH CODE": "AD",
@@ -16840,7 +16840,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2360,
+    "College Code": 2360,
     "COLLEGE NMAE":
       "Suguna College of Engineering  Kalappatti Road  Civil Aerodrome Post  Coimbatore District 641014",
     "BRANCH CODE": "AG",
@@ -16854,7 +16854,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2360,
+    "College Code": 2360,
     "COLLEGE NMAE":
       "Suguna College of Engineering  Kalappatti Road  Civil Aerodrome Post  Coimbatore District 641014",
     "BRANCH CODE": "CS",
@@ -16868,7 +16868,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2360,
+    "College Code": 2360,
     "COLLEGE NMAE":
       "Suguna College of Engineering  Kalappatti Road  Civil Aerodrome Post  Coimbatore District 641014",
     "BRANCH CODE": "EC",
@@ -16882,7 +16882,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2360,
+    "College Code": 2360,
     "COLLEGE NMAE":
       "Suguna College of Engineering  Kalappatti Road  Civil Aerodrome Post  Coimbatore District 641014",
     "BRANCH CODE": "IT",
@@ -16896,7 +16896,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2360,
+    "College Code": 2360,
     "COLLEGE NMAE":
       "Suguna College of Engineering  Kalappatti Road  Civil Aerodrome Post  Coimbatore District 641014",
     "BRANCH CODE": "ME",
@@ -16910,7 +16910,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2360,
+    "College Code": 2360,
     "COLLEGE NMAE":
       "Suguna College of Engineering  Kalappatti Road  Civil Aerodrome Post  Coimbatore District 641014",
     "BRANCH CODE": "MZ",
@@ -16924,7 +16924,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2367,
+    "College Code": 2367,
     "COLLEGE NMAE":
       "Arjun College of Technology  Chettiyakkapalayam Kinathukadavu  Coimbatore District 642120",
     "BRANCH CODE": "AD",
@@ -16938,7 +16938,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2367,
+    "College Code": 2367,
     "COLLEGE NMAE":
       "Arjun College of Technology  Chettiyakkapalayam Kinathukadavu  Coimbatore District 642120",
     "BRANCH CODE": "CB",
@@ -16952,7 +16952,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2367,
+    "College Code": 2367,
     "COLLEGE NMAE":
       "Arjun College of Technology  Chettiyakkapalayam Kinathukadavu  Coimbatore District 642120",
     "BRANCH CODE": "CE",
@@ -16966,7 +16966,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2367,
+    "College Code": 2367,
     "COLLEGE NMAE":
       "Arjun College of Technology  Chettiyakkapalayam Kinathukadavu  Coimbatore District 642120",
     "BRANCH CODE": "CS",
@@ -16980,7 +16980,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2367,
+    "College Code": 2367,
     "COLLEGE NMAE":
       "Arjun College of Technology  Chettiyakkapalayam Kinathukadavu  Coimbatore District 642120",
     "BRANCH CODE": "EC",
@@ -16994,7 +16994,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2367,
+    "College Code": 2367,
     "COLLEGE NMAE":
       "Arjun College of Technology  Chettiyakkapalayam Kinathukadavu  Coimbatore District 642120",
     "BRANCH CODE": "IT",
@@ -17008,7 +17008,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2367,
+    "College Code": 2367,
     "COLLEGE NMAE":
       "Arjun College of Technology  Chettiyakkapalayam Kinathukadavu  Coimbatore District 642120",
     "BRANCH CODE": "ME",
@@ -17022,7 +17022,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2368,
+    "College Code": 2368,
     "COLLEGE NMAE":
       "Vishnu Lakshmi College of Engineering and Technology Vellalore Post  Coimbatore District 641111",
     "BRANCH CODE": "CE",
@@ -17036,7 +17036,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2368,
+    "College Code": 2368,
     "COLLEGE NMAE":
       "Vishnu Lakshmi College of Engineering and Technology Vellalore Post  Coimbatore District 641111",
     "BRANCH CODE": "CS",
@@ -17050,7 +17050,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2368,
+    "College Code": 2368,
     "COLLEGE NMAE":
       "Vishnu Lakshmi College of Engineering and Technology Vellalore Post  Coimbatore District 641111",
     "BRANCH CODE": "EC",
@@ -17064,7 +17064,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2368,
+    "College Code": 2368,
     "COLLEGE NMAE":
       "Vishnu Lakshmi College of Engineering and Technology Vellalore Post  Coimbatore District 641111",
     "BRANCH CODE": "EE",
@@ -17078,7 +17078,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2368,
+    "College Code": 2368,
     "COLLEGE NMAE":
       "Vishnu Lakshmi College of Engineering and Technology Vellalore Post  Coimbatore District 641111",
     "BRANCH CODE": "ME",
@@ -17092,7 +17092,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2369,
+    "College Code": 2369,
     "COLLEGE NMAE":
       "Government College of Engineering  Chettikkarai Post Dharmapuri District 635704",
     "BRANCH CODE": "CE",
@@ -17106,7 +17106,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2369,
+    "College Code": 2369,
     "COLLEGE NMAE":
       "Government College of Engineering  Chettikkarai Post Dharmapuri District 635704",
     "BRANCH CODE": "CS",
@@ -17120,7 +17120,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2369,
+    "College Code": 2369,
     "COLLEGE NMAE":
       "Government College of Engineering  Chettikkarai Post Dharmapuri District 635704",
     "BRANCH CODE": "EC",
@@ -17134,7 +17134,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2369,
+    "College Code": 2369,
     "COLLEGE NMAE":
       "Government College of Engineering  Chettikkarai Post Dharmapuri District 635704",
     "BRANCH CODE": "EE",
@@ -17148,7 +17148,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2369,
+    "College Code": 2369,
     "COLLEGE NMAE":
       "Government College of Engineering  Chettikkarai Post Dharmapuri District 635704",
     "BRANCH CODE": "ME",
@@ -17162,7 +17162,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2377,
+    "College Code": 2377,
     "COLLEGE NMAE":
       "PSG Institute of Technology and Applied Research  Avinashi Road  Neelambur  Coimbatore 641062",
     "BRANCH CODE": "AD",
@@ -17176,7 +17176,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2377,
+    "College Code": 2377,
     "COLLEGE NMAE":
       "PSG Institute of Technology and Applied Research  Avinashi Road  Neelambur  Coimbatore 641062",
     "BRANCH CODE": "CB",
@@ -17190,7 +17190,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2377,
+    "College Code": 2377,
     "COLLEGE NMAE":
       "PSG Institute of Technology and Applied Research  Avinashi Road  Neelambur  Coimbatore 641062",
     "BRANCH CODE": "CE",
@@ -17204,7 +17204,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2377,
+    "College Code": 2377,
     "COLLEGE NMAE":
       "PSG Institute of Technology and Applied Research  Avinashi Road  Neelambur  Coimbatore 641062",
     "BRANCH CODE": "CS",
@@ -17218,7 +17218,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2377,
+    "College Code": 2377,
     "COLLEGE NMAE":
       "PSG Institute of Technology and Applied Research  Avinashi Road  Neelambur  Coimbatore 641062",
     "BRANCH CODE": "EC",
@@ -17232,7 +17232,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2377,
+    "College Code": 2377,
     "COLLEGE NMAE":
       "PSG Institute of Technology and Applied Research  Avinashi Road  Neelambur  Coimbatore 641062",
     "BRANCH CODE": "EE",
@@ -17246,7 +17246,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2377,
+    "College Code": 2377,
     "COLLEGE NMAE":
       "PSG Institute of Technology and Applied Research  Avinashi Road  Neelambur  Coimbatore 641062",
     "BRANCH CODE": "ME",
@@ -17260,7 +17260,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2378,
+    "College Code": 2378,
     "COLLEGE NMAE":
       "Cherraan College of Technology, Cheran Nagar, Thittuparai, Kangeyam, Tirupur District 638 701",
     "BRANCH CODE": "CS",
@@ -17274,7 +17274,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2378,
+    "College Code": 2378,
     "COLLEGE NMAE":
       "Cherraan College of Technology, Cheran Nagar, Thittuparai, Kangeyam, Tirupur District 638 701",
     "BRANCH CODE": "EC",
@@ -17288,7 +17288,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2378,
+    "College Code": 2378,
     "COLLEGE NMAE":
       "Cherraan College of Technology, Cheran Nagar, Thittuparai, Kangeyam, Tirupur District 638 701",
     "BRANCH CODE": "ME",
@@ -17302,7 +17302,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2378,
+    "College Code": 2378,
     "COLLEGE NMAE":
       "Cherraan College of Technology, Cheran Nagar, Thittuparai, Kangeyam, Tirupur District 638 701",
     "BRANCH CODE": "SC",
@@ -17316,7 +17316,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2601,
+    "College Code": 2601,
     "COLLEGE NMAE":
       "Adhiyamaan  College of Engineering (Autonomous)  Hosur Krishnagiri District 635109",
     "BRANCH CODE": "AD",
@@ -17330,7 +17330,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2601,
+    "College Code": 2601,
     "COLLEGE NMAE":
       "Adhiyamaan  College of Engineering (Autonomous)  Hosur Krishnagiri District 635109",
     "BRANCH CODE": "AE",
@@ -17344,7 +17344,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2601,
+    "College Code": 2601,
     "COLLEGE NMAE":
       "Adhiyamaan  College of Engineering (Autonomous)  Hosur Krishnagiri District 635109",
     "BRANCH CODE": "BM",
@@ -17358,7 +17358,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2601,
+    "College Code": 2601,
     "COLLEGE NMAE":
       "Adhiyamaan  College of Engineering (Autonomous)  Hosur Krishnagiri District 635109",
     "BRANCH CODE": "BT",
@@ -17372,7 +17372,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2601,
+    "College Code": 2601,
     "COLLEGE NMAE":
       "Adhiyamaan  College of Engineering (Autonomous)  Hosur Krishnagiri District 635109",
     "BRANCH CODE": "CE",
@@ -17386,7 +17386,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2601,
+    "College Code": 2601,
     "COLLEGE NMAE":
       "Adhiyamaan  College of Engineering (Autonomous)  Hosur Krishnagiri District 635109",
     "BRANCH CODE": "CH",
@@ -17400,7 +17400,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2601,
+    "College Code": 2601,
     "COLLEGE NMAE":
       "Adhiyamaan  College of Engineering (Autonomous)  Hosur Krishnagiri District 635109",
     "BRANCH CODE": "CS",
@@ -17414,7 +17414,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2601,
+    "College Code": 2601,
     "COLLEGE NMAE":
       "Adhiyamaan  College of Engineering (Autonomous)  Hosur Krishnagiri District 635109",
     "BRANCH CODE": "EC",
@@ -17428,7 +17428,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2601,
+    "College Code": 2601,
     "COLLEGE NMAE":
       "Adhiyamaan  College of Engineering (Autonomous)  Hosur Krishnagiri District 635109",
     "BRANCH CODE": "EE",
@@ -17442,7 +17442,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2601,
+    "College Code": 2601,
     "COLLEGE NMAE":
       "Adhiyamaan  College of Engineering (Autonomous)  Hosur Krishnagiri District 635109",
     "BRANCH CODE": "IT",
@@ -17456,7 +17456,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2601,
+    "College Code": 2601,
     "COLLEGE NMAE":
       "Adhiyamaan  College of Engineering (Autonomous)  Hosur Krishnagiri District 635109",
     "BRANCH CODE": "ME",
@@ -17470,7 +17470,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2602,
+    "College Code": 2602,
     "COLLEGE NMAE":
       "Annai Mathammal Sheela Engineering College  Erumapatty Post  Namakkal District 637013",
     "BRANCH CODE": "AD",
@@ -17484,7 +17484,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2602,
+    "College Code": 2602,
     "COLLEGE NMAE":
       "Annai Mathammal Sheela Engineering College  Erumapatty Post  Namakkal District 637013",
     "BRANCH CODE": "AG",
@@ -17498,7 +17498,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2602,
+    "College Code": 2602,
     "COLLEGE NMAE":
       "Annai Mathammal Sheela Engineering College  Erumapatty Post  Namakkal District 637013",
     "BRANCH CODE": "CS",
@@ -17512,7 +17512,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2602,
+    "College Code": 2602,
     "COLLEGE NMAE":
       "Annai Mathammal Sheela Engineering College  Erumapatty Post  Namakkal District 637013",
     "BRANCH CODE": "EC",
@@ -17526,7 +17526,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2602,
+    "College Code": 2602,
     "COLLEGE NMAE":
       "Annai Mathammal Sheela Engineering College  Erumapatty Post  Namakkal District 637013",
     "BRANCH CODE": "IT",
@@ -17540,7 +17540,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2602,
+    "College Code": 2602,
     "COLLEGE NMAE":
       "Annai Mathammal Sheela Engineering College  Erumapatty Post  Namakkal District 637013",
     "BRANCH CODE": "MD",
@@ -17554,7 +17554,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2602,
+    "College Code": 2602,
     "COLLEGE NMAE":
       "Annai Mathammal Sheela Engineering College  Erumapatty Post  Namakkal District 637013",
     "BRANCH CODE": "ME",
@@ -17568,7 +17568,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2602,
+    "College Code": 2602,
     "COLLEGE NMAE":
       "Annai Mathammal Sheela Engineering College  Erumapatty Post  Namakkal District 637013",
     "BRANCH CODE": "RM",
@@ -17582,7 +17582,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2603,
+    "College Code": 2603,
     "COLLEGE NMAE":
       "Government College of Engineering (Autonomous)  Bargur Krishnagiri District 635104",
     "BRANCH CODE": "CS",
@@ -17596,7 +17596,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2603,
+    "College Code": 2603,
     "COLLEGE NMAE":
       "Government College of Engineering (Autonomous)  Bargur Krishnagiri District 635104",
     "BRANCH CODE": "EC",
@@ -17610,7 +17610,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2603,
+    "College Code": 2603,
     "COLLEGE NMAE":
       "Government College of Engineering (Autonomous)  Bargur Krishnagiri District 635104",
     "BRANCH CODE": "EE",
@@ -17624,7 +17624,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2603,
+    "College Code": 2603,
     "COLLEGE NMAE":
       "Government College of Engineering (Autonomous)  Bargur Krishnagiri District 635104",
     "BRANCH CODE": "ME",
@@ -17638,7 +17638,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2607,
+    "College Code": 2607,
     "COLLEGE NMAE":
       "K S Rangasamy College of Technology (Autonomous) Tiruchengode  Namakkal District 637215",
     "BRANCH CODE": "AD",
@@ -17652,7 +17652,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2607,
+    "College Code": 2607,
     "COLLEGE NMAE":
       "K S Rangasamy College of Technology (Autonomous) Tiruchengode  Namakkal District 637215",
     "BRANCH CODE": "AM",
@@ -17667,7 +17667,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2607,
+    "College Code": 2607,
     "COLLEGE NMAE":
       "K S Rangasamy College of Technology (Autonomous) Tiruchengode  Namakkal District 637215",
     "BRANCH CODE": "BT",
@@ -17681,7 +17681,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2607,
+    "College Code": 2607,
     "COLLEGE NMAE":
       "K S Rangasamy College of Technology (Autonomous) Tiruchengode  Namakkal District 637215",
     "BRANCH CODE": "CB",
@@ -17695,7 +17695,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2607,
+    "College Code": 2607,
     "COLLEGE NMAE":
       "K S Rangasamy College of Technology (Autonomous) Tiruchengode  Namakkal District 637215",
     "BRANCH CODE": "CE",
@@ -17709,7 +17709,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2607,
+    "College Code": 2607,
     "COLLEGE NMAE":
       "K S Rangasamy College of Technology (Autonomous) Tiruchengode  Namakkal District 637215",
     "BRANCH CODE": "CS",
@@ -17723,7 +17723,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2607,
+    "College Code": 2607,
     "COLLEGE NMAE":
       "K S Rangasamy College of Technology (Autonomous) Tiruchengode  Namakkal District 637215",
     "BRANCH CODE": "EC",
@@ -17737,7 +17737,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2607,
+    "College Code": 2607,
     "COLLEGE NMAE":
       "K S Rangasamy College of Technology (Autonomous) Tiruchengode  Namakkal District 637215",
     "BRANCH CODE": "EE",
@@ -17751,7 +17751,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2607,
+    "College Code": 2607,
     "COLLEGE NMAE":
       "K S Rangasamy College of Technology (Autonomous) Tiruchengode  Namakkal District 637215",
     "BRANCH CODE": "EV",
@@ -17765,7 +17765,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2607,
+    "College Code": 2607,
     "COLLEGE NMAE":
       "K S Rangasamy College of Technology (Autonomous) Tiruchengode  Namakkal District 637215",
     "BRANCH CODE": "FD",
@@ -17779,7 +17779,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2607,
+    "College Code": 2607,
     "COLLEGE NMAE":
       "K S Rangasamy College of Technology (Autonomous) Tiruchengode  Namakkal District 637215",
     "BRANCH CODE": "IT",
@@ -17793,7 +17793,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2607,
+    "College Code": 2607,
     "COLLEGE NMAE":
       "K S Rangasamy College of Technology (Autonomous) Tiruchengode  Namakkal District 637215",
     "BRANCH CODE": "ME",
@@ -17807,7 +17807,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2607,
+    "College Code": 2607,
     "COLLEGE NMAE":
       "K S Rangasamy College of Technology (Autonomous) Tiruchengode  Namakkal District 637215",
     "BRANCH CODE": "MZ",
@@ -17821,7 +17821,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2607,
+    "College Code": 2607,
     "COLLEGE NMAE":
       "K S Rangasamy College of Technology (Autonomous) Tiruchengode  Namakkal District 637215",
     "BRANCH CODE": "TX",
@@ -17835,7 +17835,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2608,
+    "College Code": 2608,
     "COLLEGE NMAE":
       "M Kumarasamy College of Engineering (Autonomous) Thalavapalayam  Karur District 639113",
     "BRANCH CODE": "AD",
@@ -17849,7 +17849,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2608,
+    "College Code": 2608,
     "COLLEGE NMAE":
       "M Kumarasamy College of Engineering (Autonomous) Thalavapalayam  Karur District 639113",
     "BRANCH CODE": "AM",
@@ -17864,7 +17864,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2608,
+    "College Code": 2608,
     "COLLEGE NMAE":
       "M Kumarasamy College of Engineering (Autonomous) Thalavapalayam  Karur District 639113",
     "BRANCH CODE": "CB",
@@ -17878,7 +17878,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2608,
+    "College Code": 2608,
     "COLLEGE NMAE":
       "M Kumarasamy College of Engineering (Autonomous) Thalavapalayam  Karur District 639113",
     "BRANCH CODE": "CE",
@@ -17892,7 +17892,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2608,
+    "College Code": 2608,
     "COLLEGE NMAE":
       "M Kumarasamy College of Engineering (Autonomous) Thalavapalayam  Karur District 639113",
     "BRANCH CODE": "CS",
@@ -17906,7 +17906,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2608,
+    "College Code": 2608,
     "COLLEGE NMAE":
       "M Kumarasamy College of Engineering (Autonomous) Thalavapalayam  Karur District 639113",
     "BRANCH CODE": "EC",
@@ -17920,7 +17920,7 @@ export const collegeChoiceListR2 = [
     ST: 2,
   },
   {
-    "COLLEGE CODE": 2608,
+    "College Code": 2608,
     "COLLEGE NMAE":
       "M Kumarasamy College of Engineering (Autonomous) Thalavapalayam  Karur District 639113",
     "BRANCH CODE": "EE",
@@ -17934,7 +17934,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2608,
+    "College Code": 2608,
     "COLLEGE NMAE":
       "M Kumarasamy College of Engineering (Autonomous) Thalavapalayam  Karur District 639113",
     "BRANCH CODE": "IT",
@@ -17948,7 +17948,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2608,
+    "College Code": 2608,
     "COLLEGE NMAE":
       "M Kumarasamy College of Engineering (Autonomous) Thalavapalayam  Karur District 639113",
     "BRANCH CODE": "ME",
@@ -17962,7 +17962,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2609,
+    "College Code": 2609,
     "COLLEGE NMAE":
       "Mahendra Engineering College (Autonomous) Mahendhirapuri  Mallasamudram  Namakkal District 637503",
     "BRANCH CODE": "AD",
@@ -17976,7 +17976,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2609,
+    "College Code": 2609,
     "COLLEGE NMAE":
       "Mahendra Engineering College (Autonomous) Mahendhirapuri  Mallasamudram  Namakkal District 637503",
     "BRANCH CODE": "AE",
@@ -17990,7 +17990,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2609,
+    "College Code": 2609,
     "COLLEGE NMAE":
       "Mahendra Engineering College (Autonomous) Mahendhirapuri  Mallasamudram  Namakkal District 637503",
     "BRANCH CODE": "AG",
@@ -18004,7 +18004,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2609,
+    "College Code": 2609,
     "COLLEGE NMAE":
       "Mahendra Engineering College (Autonomous) Mahendhirapuri  Mallasamudram  Namakkal District 637503",
     "BRANCH CODE": "AO",
@@ -18018,7 +18018,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2609,
+    "College Code": 2609,
     "COLLEGE NMAE":
       "Mahendra Engineering College (Autonomous) Mahendhirapuri  Mallasamudram  Namakkal District 637503",
     "BRANCH CODE": "CE",
@@ -18032,7 +18032,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2609,
+    "College Code": 2609,
     "COLLEGE NMAE":
       "Mahendra Engineering College (Autonomous) Mahendhirapuri  Mallasamudram  Namakkal District 637503",
     "BRANCH CODE": "CH",
@@ -18046,7 +18046,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2609,
+    "College Code": 2609,
     "COLLEGE NMAE":
       "Mahendra Engineering College (Autonomous) Mahendhirapuri  Mallasamudram  Namakkal District 637503",
     "BRANCH CODE": "CS",
@@ -18060,7 +18060,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2609,
+    "College Code": 2609,
     "COLLEGE NMAE":
       "Mahendra Engineering College (Autonomous) Mahendhirapuri  Mallasamudram  Namakkal District 637503",
     "BRANCH CODE": "CY",
@@ -18074,7 +18074,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2609,
+    "College Code": 2609,
     "COLLEGE NMAE":
       "Mahendra Engineering College (Autonomous) Mahendhirapuri  Mallasamudram  Namakkal District 637503",
     "BRANCH CODE": "EC",
@@ -18088,7 +18088,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2609,
+    "College Code": 2609,
     "COLLEGE NMAE":
       "Mahendra Engineering College (Autonomous) Mahendhirapuri  Mallasamudram  Namakkal District 637503",
     "BRANCH CODE": "EE",
@@ -18102,7 +18102,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2609,
+    "College Code": 2609,
     "COLLEGE NMAE":
       "Mahendra Engineering College (Autonomous) Mahendhirapuri  Mallasamudram  Namakkal District 637503",
     "BRANCH CODE": "FD",
@@ -18116,7 +18116,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2609,
+    "College Code": 2609,
     "COLLEGE NMAE":
       "Mahendra Engineering College (Autonomous) Mahendhirapuri  Mallasamudram  Namakkal District 637503",
     "BRANCH CODE": "IT",
@@ -18130,7 +18130,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2609,
+    "College Code": 2609,
     "COLLEGE NMAE":
       "Mahendra Engineering College (Autonomous) Mahendhirapuri  Mallasamudram  Namakkal District 637503",
     "BRANCH CODE": "ME",
@@ -18144,7 +18144,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2609,
+    "College Code": 2609,
     "COLLEGE NMAE":
       "Mahendra Engineering College (Autonomous) Mahendhirapuri  Mallasamudram  Namakkal District 637503",
     "BRANCH CODE": "MZ",
@@ -18158,7 +18158,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2609,
+    "College Code": 2609,
     "COLLEGE NMAE":
       "Mahendra Engineering College (Autonomous) Mahendhirapuri  Mallasamudram  Namakkal District 637503",
     "BRANCH CODE": "PH",
@@ -18172,7 +18172,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2610,
+    "College Code": 2610,
     "COLLEGE NMAE":
       "Muthayammal Engineering College (Autonomous) Rasipuram  Namakkal District 637408",
     "BRANCH CODE": "AD",
@@ -18186,7 +18186,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2610,
+    "College Code": 2610,
     "COLLEGE NMAE":
       "Muthayammal Engineering College (Autonomous) Rasipuram  Namakkal District 637408",
     "BRANCH CODE": "AM",
@@ -18201,7 +18201,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2610,
+    "College Code": 2610,
     "COLLEGE NMAE":
       "Muthayammal Engineering College (Autonomous) Rasipuram  Namakkal District 637408",
     "BRANCH CODE": "BM",
@@ -18215,7 +18215,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2610,
+    "College Code": 2610,
     "COLLEGE NMAE":
       "Muthayammal Engineering College (Autonomous) Rasipuram  Namakkal District 637408",
     "BRANCH CODE": "BT",
@@ -18229,7 +18229,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2610,
+    "College Code": 2610,
     "COLLEGE NMAE":
       "Muthayammal Engineering College (Autonomous) Rasipuram  Namakkal District 637408",
     "BRANCH CODE": "CB",
@@ -18243,7 +18243,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2610,
+    "College Code": 2610,
     "COLLEGE NMAE":
       "Muthayammal Engineering College (Autonomous) Rasipuram  Namakkal District 637408",
     "BRANCH CODE": "CE",
@@ -18257,7 +18257,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2610,
+    "College Code": 2610,
     "COLLEGE NMAE":
       "Muthayammal Engineering College (Autonomous) Rasipuram  Namakkal District 637408",
     "BRANCH CODE": "CS",
@@ -18271,7 +18271,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2610,
+    "College Code": 2610,
     "COLLEGE NMAE":
       "Muthayammal Engineering College (Autonomous) Rasipuram  Namakkal District 637408",
     "BRANCH CODE": "EC",
@@ -18285,7 +18285,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2610,
+    "College Code": 2610,
     "COLLEGE NMAE":
       "Muthayammal Engineering College (Autonomous) Rasipuram  Namakkal District 637408",
     "BRANCH CODE": "EE",
@@ -18299,7 +18299,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2610,
+    "College Code": 2610,
     "COLLEGE NMAE":
       "Muthayammal Engineering College (Autonomous) Rasipuram  Namakkal District 637408",
     "BRANCH CODE": "EV",
@@ -18313,7 +18313,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2610,
+    "College Code": 2610,
     "COLLEGE NMAE":
       "Muthayammal Engineering College (Autonomous) Rasipuram  Namakkal District 637408",
     "BRANCH CODE": "IT",
@@ -18327,7 +18327,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2610,
+    "College Code": 2610,
     "COLLEGE NMAE":
       "Muthayammal Engineering College (Autonomous) Rasipuram  Namakkal District 637408",
     "BRANCH CODE": "ME",
@@ -18341,7 +18341,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2610,
+    "College Code": 2610,
     "COLLEGE NMAE":
       "Muthayammal Engineering College (Autonomous) Rasipuram  Namakkal District 637408",
     "BRANCH CODE": "MZ",
@@ -18355,7 +18355,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2610,
+    "College Code": 2610,
     "COLLEGE NMAE":
       "Muthayammal Engineering College (Autonomous) Rasipuram  Namakkal District 637408",
     "BRANCH CODE": "SC",
@@ -18369,7 +18369,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2611,
+    "College Code": 2611,
     "COLLEGE NMAE":
       "Paavai Engineering College (Autonomous)   NH-7  Pachal Post  Namakkal District 637018",
     "BRANCH CODE": "AD",
@@ -18383,7 +18383,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2611,
+    "College Code": 2611,
     "COLLEGE NMAE":
       "Paavai Engineering College (Autonomous)   NH-7  Pachal Post  Namakkal District 637018",
     "BRANCH CODE": "AE",
@@ -18397,7 +18397,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2611,
+    "College Code": 2611,
     "COLLEGE NMAE":
       "Paavai Engineering College (Autonomous)   NH-7  Pachal Post  Namakkal District 637018",
     "BRANCH CODE": "AG",
@@ -18411,7 +18411,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2611,
+    "College Code": 2611,
     "COLLEGE NMAE":
       "Paavai Engineering College (Autonomous)   NH-7  Pachal Post  Namakkal District 637018",
     "BRANCH CODE": "AM",
@@ -18426,7 +18426,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2611,
+    "College Code": 2611,
     "COLLEGE NMAE":
       "Paavai Engineering College (Autonomous)   NH-7  Pachal Post  Namakkal District 637018",
     "BRANCH CODE": "BM",
@@ -18440,7 +18440,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2611,
+    "College Code": 2611,
     "COLLEGE NMAE":
       "Paavai Engineering College (Autonomous)   NH-7  Pachal Post  Namakkal District 637018",
     "BRANCH CODE": "BT",
@@ -18454,7 +18454,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2611,
+    "College Code": 2611,
     "COLLEGE NMAE":
       "Paavai Engineering College (Autonomous)   NH-7  Pachal Post  Namakkal District 637018",
     "BRANCH CODE": "CE",
@@ -18468,7 +18468,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2611,
+    "College Code": 2611,
     "COLLEGE NMAE":
       "Paavai Engineering College (Autonomous)   NH-7  Pachal Post  Namakkal District 637018",
     "BRANCH CODE": "CH",
@@ -18482,7 +18482,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2611,
+    "College Code": 2611,
     "COLLEGE NMAE":
       "Paavai Engineering College (Autonomous)   NH-7  Pachal Post  Namakkal District 637018",
     "BRANCH CODE": "CI",
@@ -18496,7 +18496,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2611,
+    "College Code": 2611,
     "COLLEGE NMAE":
       "Paavai Engineering College (Autonomous)   NH-7  Pachal Post  Namakkal District 637018",
     "BRANCH CODE": "CS",
@@ -18510,7 +18510,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2611,
+    "College Code": 2611,
     "COLLEGE NMAE":
       "Paavai Engineering College (Autonomous)   NH-7  Pachal Post  Namakkal District 637018",
     "BRANCH CODE": "CY",
@@ -18524,7 +18524,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2611,
+    "College Code": 2611,
     "COLLEGE NMAE":
       "Paavai Engineering College (Autonomous)   NH-7  Pachal Post  Namakkal District 637018",
     "BRANCH CODE": "EC",
@@ -18538,7 +18538,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2611,
+    "College Code": 2611,
     "COLLEGE NMAE":
       "Paavai Engineering College (Autonomous)   NH-7  Pachal Post  Namakkal District 637018",
     "BRANCH CODE": "EE",
@@ -18552,7 +18552,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2611,
+    "College Code": 2611,
     "COLLEGE NMAE":
       "Paavai Engineering College (Autonomous)   NH-7  Pachal Post  Namakkal District 637018",
     "BRANCH CODE": "FD",
@@ -18566,7 +18566,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2611,
+    "College Code": 2611,
     "COLLEGE NMAE":
       "Paavai Engineering College (Autonomous)   NH-7  Pachal Post  Namakkal District 637018",
     "BRANCH CODE": "IT",
@@ -18580,7 +18580,7 @@ export const collegeChoiceListR2 = [
     ST: 2,
   },
   {
-    "COLLEGE CODE": 2611,
+    "College Code": 2611,
     "COLLEGE NMAE":
       "Paavai Engineering College (Autonomous)   NH-7  Pachal Post  Namakkal District 637018",
     "BRANCH CODE": "ME",
@@ -18594,7 +18594,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2611,
+    "College Code": 2611,
     "COLLEGE NMAE":
       "Paavai Engineering College (Autonomous)   NH-7  Pachal Post  Namakkal District 637018",
     "BRANCH CODE": "MZ",
@@ -18608,7 +18608,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2611,
+    "College Code": 2611,
     "COLLEGE NMAE":
       "Paavai Engineering College (Autonomous)   NH-7  Pachal Post  Namakkal District 637018",
     "BRANCH CODE": "PH",
@@ -18622,7 +18622,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2611,
+    "College Code": 2611,
     "COLLEGE NMAE":
       "Paavai Engineering College (Autonomous)   NH-7  Pachal Post  Namakkal District 637018",
     "BRANCH CODE": "RM",
@@ -18636,7 +18636,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2612,
+    "College Code": 2612,
     "COLLEGE NMAE":
       "P G P College of Engineering and Technology  Paramathi Post  Namakkal District 637207",
     "BRANCH CODE": "AD",
@@ -18650,7 +18650,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2612,
+    "College Code": 2612,
     "COLLEGE NMAE":
       "P G P College of Engineering and Technology  Paramathi Post  Namakkal District 637207",
     "BRANCH CODE": "CE",
@@ -18664,7 +18664,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2612,
+    "College Code": 2612,
     "COLLEGE NMAE":
       "P G P College of Engineering and Technology  Paramathi Post  Namakkal District 637207",
     "BRANCH CODE": "CS",
@@ -18678,7 +18678,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2612,
+    "College Code": 2612,
     "COLLEGE NMAE":
       "P G P College of Engineering and Technology  Paramathi Post  Namakkal District 637207",
     "BRANCH CODE": "EC",
@@ -18692,7 +18692,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2612,
+    "College Code": 2612,
     "COLLEGE NMAE":
       "P G P College of Engineering and Technology  Paramathi Post  Namakkal District 637207",
     "BRANCH CODE": "EE",
@@ -18706,7 +18706,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2612,
+    "College Code": 2612,
     "COLLEGE NMAE":
       "P G P College of Engineering and Technology  Paramathi Post  Namakkal District 637207",
     "BRANCH CODE": "IT",
@@ -18720,7 +18720,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2612,
+    "College Code": 2612,
     "COLLEGE NMAE":
       "P G P College of Engineering and Technology  Paramathi Post  Namakkal District 637207",
     "BRANCH CODE": "ME",
@@ -18734,7 +18734,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2613,
+    "College Code": 2613,
     "COLLEGE NMAE":
       "K S R College of Engineering (Autonomous)  Tiruchengode Namakkal District 637215",
     "BRANCH CODE": "AU",
@@ -18748,7 +18748,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2613,
+    "College Code": 2613,
     "COLLEGE NMAE":
       "K S R College of Engineering (Autonomous)  Tiruchengode Namakkal District 637215",
     "BRANCH CODE": "CD",
@@ -18762,7 +18762,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2613,
+    "College Code": 2613,
     "COLLEGE NMAE":
       "K S R College of Engineering (Autonomous)  Tiruchengode Namakkal District 637215",
     "BRANCH CODE": "CE",
@@ -18776,7 +18776,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2613,
+    "College Code": 2613,
     "COLLEGE NMAE":
       "K S R College of Engineering (Autonomous)  Tiruchengode Namakkal District 637215",
     "BRANCH CODE": "CI",
@@ -18790,7 +18790,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2613,
+    "College Code": 2613,
     "COLLEGE NMAE":
       "K S R College of Engineering (Autonomous)  Tiruchengode Namakkal District 637215",
     "BRANCH CODE": "CS",
@@ -18804,7 +18804,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2613,
+    "College Code": 2613,
     "COLLEGE NMAE":
       "K S R College of Engineering (Autonomous)  Tiruchengode Namakkal District 637215",
     "BRANCH CODE": "EC",
@@ -18818,7 +18818,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2613,
+    "College Code": 2613,
     "COLLEGE NMAE":
       "K S R College of Engineering (Autonomous)  Tiruchengode Namakkal District 637215",
     "BRANCH CODE": "EE",
@@ -18832,7 +18832,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2613,
+    "College Code": 2613,
     "COLLEGE NMAE":
       "K S R College of Engineering (Autonomous)  Tiruchengode Namakkal District 637215",
     "BRANCH CODE": "IT",
@@ -18846,7 +18846,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2613,
+    "College Code": 2613,
     "COLLEGE NMAE":
       "K S R College of Engineering (Autonomous)  Tiruchengode Namakkal District 637215",
     "BRANCH CODE": "ME",
@@ -18860,7 +18860,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2613,
+    "College Code": 2613,
     "COLLEGE NMAE":
       "K S R College of Engineering (Autonomous)  Tiruchengode Namakkal District 637215",
     "BRANCH CODE": "SF",
@@ -18874,7 +18874,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2614,
+    "College Code": 2614,
     "COLLEGE NMAE":
       "S S M College of Engineering  Komarapalayam  Namakkal District 638183",
     "BRANCH CODE": "CE",
@@ -18888,7 +18888,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2614,
+    "College Code": 2614,
     "COLLEGE NMAE":
       "S S M College of Engineering  Komarapalayam  Namakkal District 638183",
     "BRANCH CODE": "CS",
@@ -18902,7 +18902,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2614,
+    "College Code": 2614,
     "COLLEGE NMAE":
       "S S M College of Engineering  Komarapalayam  Namakkal District 638183",
     "BRANCH CODE": "EC",
@@ -18916,7 +18916,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2614,
+    "College Code": 2614,
     "COLLEGE NMAE":
       "S S M College of Engineering  Komarapalayam  Namakkal District 638183",
     "BRANCH CODE": "EE",
@@ -18930,7 +18930,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2614,
+    "College Code": 2614,
     "COLLEGE NMAE":
       "S S M College of Engineering  Komarapalayam  Namakkal District 638183",
     "BRANCH CODE": "IT",
@@ -18944,7 +18944,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2614,
+    "College Code": 2614,
     "COLLEGE NMAE":
       "S S M College of Engineering  Komarapalayam  Namakkal District 638183",
     "BRANCH CODE": "ME",
@@ -18958,7 +18958,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2614,
+    "College Code": 2614,
     "COLLEGE NMAE":
       "S S M College of Engineering  Komarapalayam  Namakkal District 638183",
     "BRANCH CODE": "PC",
@@ -18972,7 +18972,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2614,
+    "College Code": 2614,
     "COLLEGE NMAE":
       "S S M College of Engineering  Komarapalayam  Namakkal District 638183",
     "BRANCH CODE": "PE",
@@ -18986,7 +18986,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2614,
+    "College Code": 2614,
     "COLLEGE NMAE":
       "S S M College of Engineering  Komarapalayam  Namakkal District 638183",
     "BRANCH CODE": "TC",
@@ -19000,7 +19000,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2614,
+    "College Code": 2614,
     "COLLEGE NMAE":
       "S S M College of Engineering  Komarapalayam  Namakkal District 638183",
     "BRANCH CODE": "TX",
@@ -19014,7 +19014,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2615,
+    "College Code": 2615,
     "COLLEGE NMAE":
       "Government College of Engineering (Autonomous) Karuppur  Salem District 636011",
     "BRANCH CODE": "CE",
@@ -19028,7 +19028,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2615,
+    "College Code": 2615,
     "COLLEGE NMAE":
       "Government College of Engineering (Autonomous) Karuppur  Salem District 636011",
     "BRANCH CODE": "CS",
@@ -19042,7 +19042,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2615,
+    "College Code": 2615,
     "COLLEGE NMAE":
       "Government College of Engineering (Autonomous) Karuppur  Salem District 636011",
     "BRANCH CODE": "EC",
@@ -19056,7 +19056,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2615,
+    "College Code": 2615,
     "COLLEGE NMAE":
       "Government College of Engineering (Autonomous) Karuppur  Salem District 636011",
     "BRANCH CODE": "EE",
@@ -19070,7 +19070,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2615,
+    "College Code": 2615,
     "COLLEGE NMAE":
       "Government College of Engineering (Autonomous) Karuppur  Salem District 636011",
     "BRANCH CODE": "ME",
@@ -19084,7 +19084,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2615,
+    "College Code": 2615,
     "COLLEGE NMAE":
       "Government College of Engineering (Autonomous) Karuppur  Salem District 636011",
     "BRANCH CODE": "MT",
@@ -19098,7 +19098,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2616,
+    "College Code": 2616,
     "COLLEGE NMAE":
       "Sapthagiri College of Engineering  Periyanahalli Post Dharmapuri District 635205",
     "BRANCH CODE": "AD",
@@ -19112,7 +19112,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2616,
+    "College Code": 2616,
     "COLLEGE NMAE":
       "Sapthagiri College of Engineering  Periyanahalli Post Dharmapuri District 635205",
     "BRANCH CODE": "CE",
@@ -19126,7 +19126,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2616,
+    "College Code": 2616,
     "COLLEGE NMAE":
       "Sapthagiri College of Engineering  Periyanahalli Post Dharmapuri District 635205",
     "BRANCH CODE": "CS",
@@ -19140,7 +19140,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2616,
+    "College Code": 2616,
     "COLLEGE NMAE":
       "Sapthagiri College of Engineering  Periyanahalli Post Dharmapuri District 635205",
     "BRANCH CODE": "EC",
@@ -19154,7 +19154,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2616,
+    "College Code": 2616,
     "COLLEGE NMAE":
       "Sapthagiri College of Engineering  Periyanahalli Post Dharmapuri District 635205",
     "BRANCH CODE": "EE",
@@ -19168,7 +19168,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2616,
+    "College Code": 2616,
     "COLLEGE NMAE":
       "Sapthagiri College of Engineering  Periyanahalli Post Dharmapuri District 635205",
     "BRANCH CODE": "EI",
@@ -19182,7 +19182,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2616,
+    "College Code": 2616,
     "COLLEGE NMAE":
       "Sapthagiri College of Engineering  Periyanahalli Post Dharmapuri District 635205",
     "BRANCH CODE": "IT",
@@ -19196,7 +19196,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2616,
+    "College Code": 2616,
     "COLLEGE NMAE":
       "Sapthagiri College of Engineering  Periyanahalli Post Dharmapuri District 635205",
     "BRANCH CODE": "ME",
@@ -19210,7 +19210,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2616,
+    "College Code": 2616,
     "COLLEGE NMAE":
       "Sapthagiri College of Engineering  Periyanahalli Post Dharmapuri District 635205",
     "BRANCH CODE": "SC",
@@ -19224,7 +19224,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2617,
+    "College Code": 2617,
     "COLLEGE NMAE":
       "Sengunthar Engineering College  (Autonomous) Tiruchengode  Namakkal District 637205",
     "BRANCH CODE": "AD",
@@ -19238,7 +19238,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2617,
+    "College Code": 2617,
     "COLLEGE NMAE":
       "Sengunthar Engineering College  (Autonomous) Tiruchengode  Namakkal District 637205",
     "BRANCH CODE": "CE",
@@ -19252,7 +19252,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2617,
+    "College Code": 2617,
     "COLLEGE NMAE":
       "Sengunthar Engineering College  (Autonomous) Tiruchengode  Namakkal District 637205",
     "BRANCH CODE": "CS",
@@ -19266,7 +19266,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2617,
+    "College Code": 2617,
     "COLLEGE NMAE":
       "Sengunthar Engineering College  (Autonomous) Tiruchengode  Namakkal District 637205",
     "BRANCH CODE": "EC",
@@ -19280,7 +19280,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2617,
+    "College Code": 2617,
     "COLLEGE NMAE":
       "Sengunthar Engineering College  (Autonomous) Tiruchengode  Namakkal District 637205",
     "BRANCH CODE": "EE",
@@ -19294,7 +19294,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2617,
+    "College Code": 2617,
     "COLLEGE NMAE":
       "Sengunthar Engineering College  (Autonomous) Tiruchengode  Namakkal District 637205",
     "BRANCH CODE": "IT",
@@ -19308,7 +19308,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2617,
+    "College Code": 2617,
     "COLLEGE NMAE":
       "Sengunthar Engineering College  (Autonomous) Tiruchengode  Namakkal District 637205",
     "BRANCH CODE": "MD",
@@ -19322,7 +19322,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2617,
+    "College Code": 2617,
     "COLLEGE NMAE":
       "Sengunthar Engineering College  (Autonomous) Tiruchengode  Namakkal District 637205",
     "BRANCH CODE": "ME",
@@ -19336,7 +19336,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2617,
+    "College Code": 2617,
     "COLLEGE NMAE":
       "Sengunthar Engineering College  (Autonomous) Tiruchengode  Namakkal District 637205",
     "BRANCH CODE": "PH",
@@ -19350,7 +19350,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2617,
+    "College Code": 2617,
     "COLLEGE NMAE":
       "Sengunthar Engineering College  (Autonomous) Tiruchengode  Namakkal District 637205",
     "BRANCH CODE": "RM",
@@ -19364,7 +19364,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2617,
+    "College Code": 2617,
     "COLLEGE NMAE":
       "Sengunthar Engineering College  (Autonomous) Tiruchengode  Namakkal District 637205",
     "BRANCH CODE": "SC",
@@ -19378,7 +19378,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2618,
+    "College Code": 2618,
     "COLLEGE NMAE":
       "Sona College of Technology (Autonomous)  Suramangalam Post  Salem District 636005",
     "BRANCH CODE": "AD",
@@ -19392,7 +19392,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2618,
+    "College Code": 2618,
     "COLLEGE NMAE":
       "Sona College of Technology (Autonomous)  Suramangalam Post  Salem District 636005",
     "BRANCH CODE": "AM",
@@ -19407,7 +19407,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2618,
+    "College Code": 2618,
     "COLLEGE NMAE":
       "Sona College of Technology (Autonomous)  Suramangalam Post  Salem District 636005",
     "BRANCH CODE": "BM",
@@ -19421,7 +19421,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2618,
+    "College Code": 2618,
     "COLLEGE NMAE":
       "Sona College of Technology (Autonomous)  Suramangalam Post  Salem District 636005",
     "BRANCH CODE": "CD",
@@ -19435,7 +19435,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2618,
+    "College Code": 2618,
     "COLLEGE NMAE":
       "Sona College of Technology (Autonomous)  Suramangalam Post  Salem District 636005",
     "BRANCH CODE": "CE",
@@ -19449,7 +19449,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2618,
+    "College Code": 2618,
     "COLLEGE NMAE":
       "Sona College of Technology (Autonomous)  Suramangalam Post  Salem District 636005",
     "BRANCH CODE": "CS",
@@ -19463,7 +19463,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2618,
+    "College Code": 2618,
     "COLLEGE NMAE":
       "Sona College of Technology (Autonomous)  Suramangalam Post  Salem District 636005",
     "BRANCH CODE": "EC",
@@ -19477,7 +19477,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2618,
+    "College Code": 2618,
     "COLLEGE NMAE":
       "Sona College of Technology (Autonomous)  Suramangalam Post  Salem District 636005",
     "BRANCH CODE": "EE",
@@ -19491,7 +19491,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2618,
+    "College Code": 2618,
     "COLLEGE NMAE":
       "Sona College of Technology (Autonomous)  Suramangalam Post  Salem District 636005",
     "BRANCH CODE": "FT",
@@ -19505,7 +19505,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2618,
+    "College Code": 2618,
     "COLLEGE NMAE":
       "Sona College of Technology (Autonomous)  Suramangalam Post  Salem District 636005",
     "BRANCH CODE": "IT",
@@ -19519,7 +19519,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2618,
+    "College Code": 2618,
     "COLLEGE NMAE":
       "Sona College of Technology (Autonomous)  Suramangalam Post  Salem District 636005",
     "BRANCH CODE": "ME",
@@ -19533,7 +19533,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2618,
+    "College Code": 2618,
     "COLLEGE NMAE":
       "Sona College of Technology (Autonomous)  Suramangalam Post  Salem District 636005",
     "BRANCH CODE": "MZ",
@@ -19547,7 +19547,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2620,
+    "College Code": 2620,
     "COLLEGE NMAE":
       "Vivekanandha College of Engineering for Women (Autonomous)  Sathinaickenpalayam  Elayampalayam Village  Kumaramangalam  Namakkal District 637205",
     "BRANCH CODE": "BM",
@@ -19561,7 +19561,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2620,
+    "College Code": 2620,
     "COLLEGE NMAE":
       "Vivekanandha College of Engineering for Women (Autonomous)  Sathinaickenpalayam  Elayampalayam Village  Kumaramangalam  Namakkal District 637205",
     "BRANCH CODE": "BT",
@@ -19575,7 +19575,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2620,
+    "College Code": 2620,
     "COLLEGE NMAE":
       "Vivekanandha College of Engineering for Women (Autonomous)  Sathinaickenpalayam  Elayampalayam Village  Kumaramangalam  Namakkal District 637205",
     "BRANCH CODE": "CS",
@@ -19589,7 +19589,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2620,
+    "College Code": 2620,
     "COLLEGE NMAE":
       "Vivekanandha College of Engineering for Women (Autonomous)  Sathinaickenpalayam  Elayampalayam Village  Kumaramangalam  Namakkal District 637205",
     "BRANCH CODE": "EC",
@@ -19603,7 +19603,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2620,
+    "College Code": 2620,
     "COLLEGE NMAE":
       "Vivekanandha College of Engineering for Women (Autonomous)  Sathinaickenpalayam  Elayampalayam Village  Kumaramangalam  Namakkal District 637205",
     "BRANCH CODE": "EE",
@@ -19617,7 +19617,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2620,
+    "College Code": 2620,
     "COLLEGE NMAE":
       "Vivekanandha College of Engineering for Women (Autonomous)  Sathinaickenpalayam  Elayampalayam Village  Kumaramangalam  Namakkal District 637205",
     "BRANCH CODE": "IT",
@@ -19631,7 +19631,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2620,
+    "College Code": 2620,
     "COLLEGE NMAE":
       "Vivekanandha College of Engineering for Women (Autonomous)  Sathinaickenpalayam  Elayampalayam Village  Kumaramangalam  Namakkal District 637205",
     "BRANCH CODE": "TS",
@@ -19645,7 +19645,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2621,
+    "College Code": 2621,
     "COLLEGE NMAE":
       "Er. Perumal Manimekalai College of Engineering (Autonomous) Near Koneripalli  Hosur  Krishnagiri District 635117",
     "BRANCH CODE": "AD",
@@ -19659,7 +19659,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2621,
+    "College Code": 2621,
     "COLLEGE NMAE":
       "Er. Perumal Manimekalai College of Engineering (Autonomous) Near Koneripalli  Hosur  Krishnagiri District 635117",
     "BRANCH CODE": "AE",
@@ -19673,7 +19673,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2621,
+    "College Code": 2621,
     "COLLEGE NMAE":
       "Er. Perumal Manimekalai College of Engineering (Autonomous) Near Koneripalli  Hosur  Krishnagiri District 635117",
     "BRANCH CODE": "CB",
@@ -19687,7 +19687,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2621,
+    "College Code": 2621,
     "COLLEGE NMAE":
       "Er. Perumal Manimekalai College of Engineering (Autonomous) Near Koneripalli  Hosur  Krishnagiri District 635117",
     "BRANCH CODE": "CE",
@@ -19701,7 +19701,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2621,
+    "College Code": 2621,
     "COLLEGE NMAE":
       "Er. Perumal Manimekalai College of Engineering (Autonomous) Near Koneripalli  Hosur  Krishnagiri District 635117",
     "BRANCH CODE": "CH",
@@ -19715,7 +19715,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2621,
+    "College Code": 2621,
     "COLLEGE NMAE":
       "Er. Perumal Manimekalai College of Engineering (Autonomous) Near Koneripalli  Hosur  Krishnagiri District 635117",
     "BRANCH CODE": "CS",
@@ -19729,7 +19729,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2621,
+    "College Code": 2621,
     "COLLEGE NMAE":
       "Er. Perumal Manimekalai College of Engineering (Autonomous) Near Koneripalli  Hosur  Krishnagiri District 635117",
     "BRANCH CODE": "EC",
@@ -19743,7 +19743,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2621,
+    "College Code": 2621,
     "COLLEGE NMAE":
       "Er. Perumal Manimekalai College of Engineering (Autonomous) Near Koneripalli  Hosur  Krishnagiri District 635117",
     "BRANCH CODE": "EE",
@@ -19757,7 +19757,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2621,
+    "College Code": 2621,
     "COLLEGE NMAE":
       "Er. Perumal Manimekalai College of Engineering (Autonomous) Near Koneripalli  Hosur  Krishnagiri District 635117",
     "BRANCH CODE": "IT",
@@ -19771,7 +19771,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2621,
+    "College Code": 2621,
     "COLLEGE NMAE":
       "Er. Perumal Manimekalai College of Engineering (Autonomous) Near Koneripalli  Hosur  Krishnagiri District 635117",
     "BRANCH CODE": "ME",
@@ -19785,7 +19785,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2621,
+    "College Code": 2621,
     "COLLEGE NMAE":
       "Er. Perumal Manimekalai College of Engineering (Autonomous) Near Koneripalli  Hosur  Krishnagiri District 635117",
     "BRANCH CODE": "MZ",
@@ -19799,7 +19799,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2622,
+    "College Code": 2622,
     "COLLEGE NMAE":
       "V S B Engineering College(Autonomous)  Kovai Road  Karur District 639111",
     "BRANCH CODE": "AD",
@@ -19813,7 +19813,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2622,
+    "College Code": 2622,
     "COLLEGE NMAE":
       "V S B Engineering College(Autonomous)  Kovai Road  Karur District 639111",
     "BRANCH CODE": "AM",
@@ -19828,7 +19828,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2622,
+    "College Code": 2622,
     "COLLEGE NMAE":
       "V S B Engineering College(Autonomous)  Kovai Road  Karur District 639111",
     "BRANCH CODE": "BM",
@@ -19842,7 +19842,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2622,
+    "College Code": 2622,
     "COLLEGE NMAE":
       "V S B Engineering College(Autonomous)  Kovai Road  Karur District 639111",
     "BRANCH CODE": "BT",
@@ -19856,7 +19856,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2622,
+    "College Code": 2622,
     "COLLEGE NMAE":
       "V S B Engineering College(Autonomous)  Kovai Road  Karur District 639111",
     "BRANCH CODE": "CB",
@@ -19870,7 +19870,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2622,
+    "College Code": 2622,
     "COLLEGE NMAE":
       "V S B Engineering College(Autonomous)  Kovai Road  Karur District 639111",
     "BRANCH CODE": "CE",
@@ -19884,7 +19884,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2622,
+    "College Code": 2622,
     "COLLEGE NMAE":
       "V S B Engineering College(Autonomous)  Kovai Road  Karur District 639111",
     "BRANCH CODE": "CH",
@@ -19898,7 +19898,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2622,
+    "College Code": 2622,
     "COLLEGE NMAE":
       "V S B Engineering College(Autonomous)  Kovai Road  Karur District 639111",
     "BRANCH CODE": "CO",
@@ -19912,7 +19912,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2622,
+    "College Code": 2622,
     "COLLEGE NMAE":
       "V S B Engineering College(Autonomous)  Kovai Road  Karur District 639111",
     "BRANCH CODE": "CS",
@@ -19926,7 +19926,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2622,
+    "College Code": 2622,
     "COLLEGE NMAE":
       "V S B Engineering College(Autonomous)  Kovai Road  Karur District 639111",
     "BRANCH CODE": "EC",
@@ -19940,7 +19940,7 @@ export const collegeChoiceListR2 = [
     ST: 2,
   },
   {
-    "COLLEGE CODE": 2622,
+    "College Code": 2622,
     "COLLEGE NMAE":
       "V S B Engineering College(Autonomous)  Kovai Road  Karur District 639111",
     "BRANCH CODE": "EE",
@@ -19954,7 +19954,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2622,
+    "College Code": 2622,
     "COLLEGE NMAE":
       "V S B Engineering College(Autonomous)  Kovai Road  Karur District 639111",
     "BRANCH CODE": "IT",
@@ -19968,7 +19968,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2622,
+    "College Code": 2622,
     "COLLEGE NMAE":
       "V S B Engineering College(Autonomous)  Kovai Road  Karur District 639111",
     "BRANCH CODE": "ME",
@@ -19982,7 +19982,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2623,
+    "College Code": 2623,
     "COLLEGE NMAE":
       "Mahendra College of Engineering  Attur Road  Minnampalli Valapady  Salem District 636106",
     "BRANCH CODE": "AD",
@@ -19996,7 +19996,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2623,
+    "College Code": 2623,
     "COLLEGE NMAE":
       "Mahendra College of Engineering  Attur Road  Minnampalli Valapady  Salem District 636106",
     "BRANCH CODE": "BM",
@@ -20010,7 +20010,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2623,
+    "College Code": 2623,
     "COLLEGE NMAE":
       "Mahendra College of Engineering  Attur Road  Minnampalli Valapady  Salem District 636106",
     "BRANCH CODE": "CS",
@@ -20024,7 +20024,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2623,
+    "College Code": 2623,
     "COLLEGE NMAE":
       "Mahendra College of Engineering  Attur Road  Minnampalli Valapady  Salem District 636106",
     "BRANCH CODE": "EC",
@@ -20038,7 +20038,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2623,
+    "College Code": 2623,
     "COLLEGE NMAE":
       "Mahendra College of Engineering  Attur Road  Minnampalli Valapady  Salem District 636106",
     "BRANCH CODE": "EE",
@@ -20052,7 +20052,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2623,
+    "College Code": 2623,
     "COLLEGE NMAE":
       "Mahendra College of Engineering  Attur Road  Minnampalli Valapady  Salem District 636106",
     "BRANCH CODE": "IT",
@@ -20066,7 +20066,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2623,
+    "College Code": 2623,
     "COLLEGE NMAE":
       "Mahendra College of Engineering  Attur Road  Minnampalli Valapady  Salem District 636106",
     "BRANCH CODE": "ME",
@@ -20080,7 +20080,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2624,
+    "College Code": 2624,
     "COLLEGE NMAE":
       "Gnanamani College of Technology   (Autonomous) Pachal Post  Namakkal District 637018",
     "BRANCH CODE": "AD",
@@ -20094,7 +20094,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2624,
+    "College Code": 2624,
     "COLLEGE NMAE":
       "Gnanamani College of Technology   (Autonomous) Pachal Post  Namakkal District 637018",
     "BRANCH CODE": "AG",
@@ -20108,7 +20108,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2624,
+    "College Code": 2624,
     "COLLEGE NMAE":
       "Gnanamani College of Technology   (Autonomous) Pachal Post  Namakkal District 637018",
     "BRANCH CODE": "BM",
@@ -20122,7 +20122,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2624,
+    "College Code": 2624,
     "COLLEGE NMAE":
       "Gnanamani College of Technology   (Autonomous) Pachal Post  Namakkal District 637018",
     "BRANCH CODE": "BT",
@@ -20136,7 +20136,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2624,
+    "College Code": 2624,
     "COLLEGE NMAE":
       "Gnanamani College of Technology   (Autonomous) Pachal Post  Namakkal District 637018",
     "BRANCH CODE": "CH",
@@ -20150,7 +20150,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2624,
+    "College Code": 2624,
     "COLLEGE NMAE":
       "Gnanamani College of Technology   (Autonomous) Pachal Post  Namakkal District 637018",
     "BRANCH CODE": "CS",
@@ -20164,7 +20164,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2624,
+    "College Code": 2624,
     "COLLEGE NMAE":
       "Gnanamani College of Technology   (Autonomous) Pachal Post  Namakkal District 637018",
     "BRANCH CODE": "EC",
@@ -20178,7 +20178,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2624,
+    "College Code": 2624,
     "COLLEGE NMAE":
       "Gnanamani College of Technology   (Autonomous) Pachal Post  Namakkal District 637018",
     "BRANCH CODE": "EE",
@@ -20192,7 +20192,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2624,
+    "College Code": 2624,
     "COLLEGE NMAE":
       "Gnanamani College of Technology   (Autonomous) Pachal Post  Namakkal District 637018",
     "BRANCH CODE": "FD",
@@ -20206,7 +20206,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2624,
+    "College Code": 2624,
     "COLLEGE NMAE":
       "Gnanamani College of Technology   (Autonomous) Pachal Post  Namakkal District 637018",
     "BRANCH CODE": "IT",
@@ -20220,7 +20220,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2624,
+    "College Code": 2624,
     "COLLEGE NMAE":
       "Gnanamani College of Technology   (Autonomous) Pachal Post  Namakkal District 637018",
     "BRANCH CODE": "ME",
@@ -20234,7 +20234,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2624,
+    "College Code": 2624,
     "COLLEGE NMAE":
       "Gnanamani College of Technology   (Autonomous) Pachal Post  Namakkal District 637018",
     "BRANCH CODE": "PH",
@@ -20248,7 +20248,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2625,
+    "College Code": 2625,
     "COLLEGE NMAE":
       "The Kavery Engineering College  M Kalipatti Post  Mecheri Salem District 634456",
     "BRANCH CODE": "AD",
@@ -20262,7 +20262,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2625,
+    "College Code": 2625,
     "COLLEGE NMAE":
       "The Kavery Engineering College  M Kalipatti Post  Mecheri Salem District 634456",
     "BRANCH CODE": "AG",
@@ -20276,7 +20276,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2625,
+    "College Code": 2625,
     "COLLEGE NMAE":
       "The Kavery Engineering College  M Kalipatti Post  Mecheri Salem District 634456",
     "BRANCH CODE": "BM",
@@ -20290,7 +20290,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2625,
+    "College Code": 2625,
     "COLLEGE NMAE":
       "The Kavery Engineering College  M Kalipatti Post  Mecheri Salem District 634456",
     "BRANCH CODE": "CE",
@@ -20304,7 +20304,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2625,
+    "College Code": 2625,
     "COLLEGE NMAE":
       "The Kavery Engineering College  M Kalipatti Post  Mecheri Salem District 634456",
     "BRANCH CODE": "CH",
@@ -20318,7 +20318,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2625,
+    "College Code": 2625,
     "COLLEGE NMAE":
       "The Kavery Engineering College  M Kalipatti Post  Mecheri Salem District 634456",
     "BRANCH CODE": "CS",
@@ -20332,7 +20332,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2625,
+    "College Code": 2625,
     "COLLEGE NMAE":
       "The Kavery Engineering College  M Kalipatti Post  Mecheri Salem District 634456",
     "BRANCH CODE": "EC",
@@ -20346,7 +20346,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2625,
+    "College Code": 2625,
     "COLLEGE NMAE":
       "The Kavery Engineering College  M Kalipatti Post  Mecheri Salem District 634456",
     "BRANCH CODE": "EE",
@@ -20360,7 +20360,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2625,
+    "College Code": 2625,
     "COLLEGE NMAE":
       "The Kavery Engineering College  M Kalipatti Post  Mecheri Salem District 634456",
     "BRANCH CODE": "IT",
@@ -20374,7 +20374,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2625,
+    "College Code": 2625,
     "COLLEGE NMAE":
       "The Kavery Engineering College  M Kalipatti Post  Mecheri Salem District 634456",
     "BRANCH CODE": "ME",
@@ -20388,7 +20388,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2627,
+    "College Code": 2627,
     "COLLEGE NMAE":
       "Selvam College of Technology  Pappanaickenpatti Post Namakkal District 637003",
     "BRANCH CODE": "AD",
@@ -20402,7 +20402,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2627,
+    "College Code": 2627,
     "COLLEGE NMAE":
       "Selvam College of Technology  Pappanaickenpatti Post Namakkal District 637003",
     "BRANCH CODE": "BM",
@@ -20416,7 +20416,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2627,
+    "College Code": 2627,
     "COLLEGE NMAE":
       "Selvam College of Technology  Pappanaickenpatti Post Namakkal District 637003",
     "BRANCH CODE": "BT",
@@ -20430,7 +20430,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2627,
+    "College Code": 2627,
     "COLLEGE NMAE":
       "Selvam College of Technology  Pappanaickenpatti Post Namakkal District 637003",
     "BRANCH CODE": "CE",
@@ -20444,7 +20444,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2627,
+    "College Code": 2627,
     "COLLEGE NMAE":
       "Selvam College of Technology  Pappanaickenpatti Post Namakkal District 637003",
     "BRANCH CODE": "CS",
@@ -20458,7 +20458,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2627,
+    "College Code": 2627,
     "COLLEGE NMAE":
       "Selvam College of Technology  Pappanaickenpatti Post Namakkal District 637003",
     "BRANCH CODE": "EC",
@@ -20472,7 +20472,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2627,
+    "College Code": 2627,
     "COLLEGE NMAE":
       "Selvam College of Technology  Pappanaickenpatti Post Namakkal District 637003",
     "BRANCH CODE": "EE",
@@ -20486,7 +20486,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2627,
+    "College Code": 2627,
     "COLLEGE NMAE":
       "Selvam College of Technology  Pappanaickenpatti Post Namakkal District 637003",
     "BRANCH CODE": "IT",
@@ -20500,7 +20500,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2627,
+    "College Code": 2627,
     "COLLEGE NMAE":
       "Selvam College of Technology  Pappanaickenpatti Post Namakkal District 637003",
     "BRANCH CODE": "ME",
@@ -20514,7 +20514,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2628,
+    "College Code": 2628,
     "COLLEGE NMAE":
       "Paavai College of Engineering  NH-7  Pachal Post  Namakkal District 637018",
     "BRANCH CODE": "AD",
@@ -20528,7 +20528,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2628,
+    "College Code": 2628,
     "COLLEGE NMAE":
       "Paavai College of Engineering  NH-7  Pachal Post  Namakkal District 637018",
     "BRANCH CODE": "AM",
@@ -20543,7 +20543,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2628,
+    "College Code": 2628,
     "COLLEGE NMAE":
       "Paavai College of Engineering  NH-7  Pachal Post  Namakkal District 637018",
     "BRANCH CODE": "AU",
@@ -20557,7 +20557,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2628,
+    "College Code": 2628,
     "COLLEGE NMAE":
       "Paavai College of Engineering  NH-7  Pachal Post  Namakkal District 637018",
     "BRANCH CODE": "BM",
@@ -20571,7 +20571,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2628,
+    "College Code": 2628,
     "COLLEGE NMAE":
       "Paavai College of Engineering  NH-7  Pachal Post  Namakkal District 637018",
     "BRANCH CODE": "CS",
@@ -20585,7 +20585,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2628,
+    "College Code": 2628,
     "COLLEGE NMAE":
       "Paavai College of Engineering  NH-7  Pachal Post  Namakkal District 637018",
     "BRANCH CODE": "EE",
@@ -20599,7 +20599,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2628,
+    "College Code": 2628,
     "COLLEGE NMAE":
       "Paavai College of Engineering  NH-7  Pachal Post  Namakkal District 637018",
     "BRANCH CODE": "ME",
@@ -20613,7 +20613,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2628,
+    "College Code": 2628,
     "COLLEGE NMAE":
       "Paavai College of Engineering  NH-7  Pachal Post  Namakkal District 637018",
     "BRANCH CODE": "SC",
@@ -20627,7 +20627,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2630,
+    "College Code": 2630,
     "COLLEGE NMAE":
       "Chettinad College of Engineering and Technology  NH-67 Trichy Main Road  Puliyur C F  Karur District 639114",
     "BRANCH CODE": "AD",
@@ -20641,7 +20641,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2630,
+    "College Code": 2630,
     "COLLEGE NMAE":
       "Chettinad College of Engineering and Technology  NH-67 Trichy Main Road  Puliyur C F  Karur District 639114",
     "BRANCH CODE": "CS",
@@ -20655,7 +20655,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2630,
+    "College Code": 2630,
     "COLLEGE NMAE":
       "Chettinad College of Engineering and Technology  NH-67 Trichy Main Road  Puliyur C F  Karur District 639114",
     "BRANCH CODE": "EC",
@@ -20669,7 +20669,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2630,
+    "College Code": 2630,
     "COLLEGE NMAE":
       "Chettinad College of Engineering and Technology  NH-67 Trichy Main Road  Puliyur C F  Karur District 639114",
     "BRANCH CODE": "EE",
@@ -20683,7 +20683,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2630,
+    "College Code": 2630,
     "COLLEGE NMAE":
       "Chettinad College of Engineering and Technology  NH-67 Trichy Main Road  Puliyur C F  Karur District 639114",
     "BRANCH CODE": "ME",
@@ -20697,7 +20697,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2632,
+    "College Code": 2632,
     "COLLEGE NMAE":
       "Mahendra Institute of Technology (Autonomous) Mahendhirapuri  Mallasamudram   Namakkal District 637503",
     "BRANCH CODE": "AM",
@@ -20712,7 +20712,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2632,
+    "College Code": 2632,
     "COLLEGE NMAE":
       "Mahendra Institute of Technology (Autonomous) Mahendhirapuri  Mallasamudram   Namakkal District 637503",
     "BRANCH CODE": "AU",
@@ -20726,7 +20726,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2632,
+    "College Code": 2632,
     "COLLEGE NMAE":
       "Mahendra Institute of Technology (Autonomous) Mahendhirapuri  Mallasamudram   Namakkal District 637503",
     "BRANCH CODE": "BM",
@@ -20740,7 +20740,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2632,
+    "College Code": 2632,
     "COLLEGE NMAE":
       "Mahendra Institute of Technology (Autonomous) Mahendhirapuri  Mallasamudram   Namakkal District 637503",
     "BRANCH CODE": "CS",
@@ -20754,7 +20754,7 @@ export const collegeChoiceListR2 = [
     ST: 2,
   },
   {
-    "COLLEGE CODE": 2632,
+    "College Code": 2632,
     "COLLEGE NMAE":
       "Mahendra Institute of Technology (Autonomous) Mahendhirapuri  Mallasamudram   Namakkal District 637503",
     "BRANCH CODE": "EC",
@@ -20768,7 +20768,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2632,
+    "College Code": 2632,
     "COLLEGE NMAE":
       "Mahendra Institute of Technology (Autonomous) Mahendhirapuri  Mallasamudram   Namakkal District 637503",
     "BRANCH CODE": "EE",
@@ -20782,7 +20782,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2632,
+    "College Code": 2632,
     "COLLEGE NMAE":
       "Mahendra Institute of Technology (Autonomous) Mahendhirapuri  Mallasamudram   Namakkal District 637503",
     "BRANCH CODE": "IT",
@@ -20796,7 +20796,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2632,
+    "College Code": 2632,
     "COLLEGE NMAE":
       "Mahendra Institute of Technology (Autonomous) Mahendhirapuri  Mallasamudram   Namakkal District 637503",
     "BRANCH CODE": "ME",
@@ -20810,7 +20810,7 @@ export const collegeChoiceListR2 = [
     ST: 2,
   },
   {
-    "COLLEGE CODE": 2633,
+    "College Code": 2633,
     "COLLEGE NMAE":
       "Vidyaa Vikas College of Engineering and Technology Varahoorampatti  Tiruchengode  Namakkal District 637 214",
     "BRANCH CODE": "AD",
@@ -20824,7 +20824,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2633,
+    "College Code": 2633,
     "COLLEGE NMAE":
       "Vidyaa Vikas College of Engineering and Technology Varahoorampatti  Tiruchengode  Namakkal District 637 214",
     "BRANCH CODE": "CS",
@@ -20838,7 +20838,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2633,
+    "College Code": 2633,
     "COLLEGE NMAE":
       "Vidyaa Vikas College of Engineering and Technology Varahoorampatti  Tiruchengode  Namakkal District 637 214",
     "BRANCH CODE": "EC",
@@ -20852,7 +20852,7 @@ export const collegeChoiceListR2 = [
     ST: 2,
   },
   {
-    "COLLEGE CODE": 2633,
+    "College Code": 2633,
     "COLLEGE NMAE":
       "Vidyaa Vikas College of Engineering and Technology Varahoorampatti  Tiruchengode  Namakkal District 637 214",
     "BRANCH CODE": "EE",
@@ -20866,7 +20866,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2633,
+    "College Code": 2633,
     "COLLEGE NMAE":
       "Vidyaa Vikas College of Engineering and Technology Varahoorampatti  Tiruchengode  Namakkal District 637 214",
     "BRANCH CODE": "ME",
@@ -20880,7 +20880,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2633,
+    "College Code": 2633,
     "COLLEGE NMAE":
       "Vidyaa Vikas College of Engineering and Technology Varahoorampatti  Tiruchengode  Namakkal District 637 214",
     "BRANCH CODE": "SC",
@@ -20894,7 +20894,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2634,
+    "College Code": 2634,
     "COLLEGE NMAE":
       "Excel Engineering College (Autonomous)  NH-544  Salem Main Road  Pallakapalayam  Sankari West Post Komarapalayam Taluk  Namakkal District - 637303",
     "BRANCH CODE": "AD",
@@ -20908,7 +20908,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2634,
+    "College Code": 2634,
     "COLLEGE NMAE":
       "Excel Engineering College (Autonomous)  NH-544  Salem Main Road  Pallakapalayam  Sankari West Post Komarapalayam Taluk  Namakkal District - 637303",
     "BRANCH CODE": "AE",
@@ -20922,7 +20922,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2634,
+    "College Code": 2634,
     "COLLEGE NMAE":
       "Excel Engineering College (Autonomous)  NH-544  Salem Main Road  Pallakapalayam  Sankari West Post Komarapalayam Taluk  Namakkal District - 637303",
     "BRANCH CODE": "AG",
@@ -20936,7 +20936,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2634,
+    "College Code": 2634,
     "COLLEGE NMAE":
       "Excel Engineering College (Autonomous)  NH-544  Salem Main Road  Pallakapalayam  Sankari West Post Komarapalayam Taluk  Namakkal District - 637303",
     "BRANCH CODE": "BM",
@@ -20950,7 +20950,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2634,
+    "College Code": 2634,
     "COLLEGE NMAE":
       "Excel Engineering College (Autonomous)  NH-544  Salem Main Road  Pallakapalayam  Sankari West Post Komarapalayam Taluk  Namakkal District - 637303",
     "BRANCH CODE": "CB",
@@ -20964,7 +20964,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2634,
+    "College Code": 2634,
     "COLLEGE NMAE":
       "Excel Engineering College (Autonomous)  NH-544  Salem Main Road  Pallakapalayam  Sankari West Post Komarapalayam Taluk  Namakkal District - 637303",
     "BRANCH CODE": "CE",
@@ -20978,7 +20978,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2634,
+    "College Code": 2634,
     "COLLEGE NMAE":
       "Excel Engineering College (Autonomous)  NH-544  Salem Main Road  Pallakapalayam  Sankari West Post Komarapalayam Taluk  Namakkal District - 637303",
     "BRANCH CODE": "CJ",
@@ -20993,7 +20993,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2634,
+    "College Code": 2634,
     "COLLEGE NMAE":
       "Excel Engineering College (Autonomous)  NH-544  Salem Main Road  Pallakapalayam  Sankari West Post Komarapalayam Taluk  Namakkal District - 637303",
     "BRANCH CODE": "CS",
@@ -21007,7 +21007,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2634,
+    "College Code": 2634,
     "COLLEGE NMAE":
       "Excel Engineering College (Autonomous)  NH-544  Salem Main Road  Pallakapalayam  Sankari West Post Komarapalayam Taluk  Namakkal District - 637303",
     "BRANCH CODE": "EC",
@@ -21021,7 +21021,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2634,
+    "College Code": 2634,
     "COLLEGE NMAE":
       "Excel Engineering College (Autonomous)  NH-544  Salem Main Road  Pallakapalayam  Sankari West Post Komarapalayam Taluk  Namakkal District - 637303",
     "BRANCH CODE": "EE",
@@ -21035,7 +21035,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2634,
+    "College Code": 2634,
     "COLLEGE NMAE":
       "Excel Engineering College (Autonomous)  NH-544  Salem Main Road  Pallakapalayam  Sankari West Post Komarapalayam Taluk  Namakkal District - 637303",
     "BRANCH CODE": "FD",
@@ -21049,7 +21049,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2634,
+    "College Code": 2634,
     "COLLEGE NMAE":
       "Excel Engineering College (Autonomous)  NH-544  Salem Main Road  Pallakapalayam  Sankari West Post Komarapalayam Taluk  Namakkal District - 637303",
     "BRANCH CODE": "IT",
@@ -21063,7 +21063,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2634,
+    "College Code": 2634,
     "COLLEGE NMAE":
       "Excel Engineering College (Autonomous)  NH-544  Salem Main Road  Pallakapalayam  Sankari West Post Komarapalayam Taluk  Namakkal District - 637303",
     "BRANCH CODE": "ME",
@@ -21077,7 +21077,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2634,
+    "College Code": 2634,
     "COLLEGE NMAE":
       "Excel Engineering College (Autonomous)  NH-544  Salem Main Road  Pallakapalayam  Sankari West Post Komarapalayam Taluk  Namakkal District - 637303",
     "BRANCH CODE": "PC",
@@ -21091,7 +21091,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2634,
+    "College Code": 2634,
     "COLLEGE NMAE":
       "Excel Engineering College (Autonomous)  NH-544  Salem Main Road  Pallakapalayam  Sankari West Post Komarapalayam Taluk  Namakkal District - 637303",
     "BRANCH CODE": "SF",
@@ -21105,7 +21105,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2635,
+    "College Code": 2635,
     "COLLEGE NMAE":
       "CMS College of Engineering  Emapuram Post  Namakkal District 637003",
     "BRANCH CODE": "AD",
@@ -21119,7 +21119,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2635,
+    "College Code": 2635,
     "COLLEGE NMAE":
       "CMS College of Engineering  Emapuram Post  Namakkal District 637003",
     "BRANCH CODE": "BM",
@@ -21133,7 +21133,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2635,
+    "College Code": 2635,
     "COLLEGE NMAE":
       "CMS College of Engineering  Emapuram Post  Namakkal District 637003",
     "BRANCH CODE": "CS",
@@ -21147,7 +21147,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2635,
+    "College Code": 2635,
     "COLLEGE NMAE":
       "CMS College of Engineering  Emapuram Post  Namakkal District 637003",
     "BRANCH CODE": "EC",
@@ -21161,7 +21161,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2635,
+    "College Code": 2635,
     "COLLEGE NMAE":
       "CMS College of Engineering  Emapuram Post  Namakkal District 637003",
     "BRANCH CODE": "EE",
@@ -21175,7 +21175,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2635,
+    "College Code": 2635,
     "COLLEGE NMAE":
       "CMS College of Engineering  Emapuram Post  Namakkal District 637003",
     "BRANCH CODE": "ME",
@@ -21189,7 +21189,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2636,
+    "College Code": 2636,
     "COLLEGE NMAE":
       "A V S Engineering College  Military Road  Ammapet  Salem District 636003",
     "BRANCH CODE": "AD",
@@ -21203,7 +21203,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2636,
+    "College Code": 2636,
     "COLLEGE NMAE":
       "A V S Engineering College  Military Road  Ammapet  Salem District 636003",
     "BRANCH CODE": "BM",
@@ -21217,7 +21217,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2636,
+    "College Code": 2636,
     "COLLEGE NMAE":
       "A V S Engineering College  Military Road  Ammapet  Salem District 636003",
     "BRANCH CODE": "CE",
@@ -21231,7 +21231,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2636,
+    "College Code": 2636,
     "COLLEGE NMAE":
       "A V S Engineering College  Military Road  Ammapet  Salem District 636003",
     "BRANCH CODE": "CS",
@@ -21245,7 +21245,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2636,
+    "College Code": 2636,
     "COLLEGE NMAE":
       "A V S Engineering College  Military Road  Ammapet  Salem District 636003",
     "BRANCH CODE": "EC",
@@ -21259,7 +21259,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2636,
+    "College Code": 2636,
     "COLLEGE NMAE":
       "A V S Engineering College  Military Road  Ammapet  Salem District 636003",
     "BRANCH CODE": "EE",
@@ -21273,7 +21273,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2636,
+    "College Code": 2636,
     "COLLEGE NMAE":
       "A V S Engineering College  Military Road  Ammapet  Salem District 636003",
     "BRANCH CODE": "IT",
@@ -21287,7 +21287,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2636,
+    "College Code": 2636,
     "COLLEGE NMAE":
       "A V S Engineering College  Military Road  Ammapet  Salem District 636003",
     "BRANCH CODE": "ME",
@@ -21301,7 +21301,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2638,
+    "College Code": 2638,
     "COLLEGE NMAE":
       "Mahendra Engineering College for Women Kumaramangalam  Namakkal District 637205",
     "BRANCH CODE": "CS",
@@ -21315,7 +21315,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2638,
+    "College Code": 2638,
     "COLLEGE NMAE":
       "Mahendra Engineering College for Women Kumaramangalam  Namakkal District 637205",
     "BRANCH CODE": "EC",
@@ -21329,7 +21329,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2638,
+    "College Code": 2638,
     "COLLEGE NMAE":
       "Mahendra Engineering College for Women Kumaramangalam  Namakkal District 637205",
     "BRANCH CODE": "IT",
@@ -21343,7 +21343,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2639,
+    "College Code": 2639,
     "COLLEGE NMAE":
       "R P Sarathy Institute of Technology  Poosaripatty Kadaympatty Taluk  Salem  Tamil Nadu-636305",
     "BRANCH CODE": "AD",
@@ -21357,7 +21357,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2639,
+    "College Code": 2639,
     "COLLEGE NMAE":
       "R P Sarathy Institute of Technology  Poosaripatty Kadaympatty Taluk  Salem  Tamil Nadu-636305",
     "BRANCH CODE": "CS",
@@ -21371,7 +21371,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2639,
+    "College Code": 2639,
     "COLLEGE NMAE":
       "R P Sarathy Institute of Technology  Poosaripatty Kadaympatty Taluk  Salem  Tamil Nadu-636305",
     "BRANCH CODE": "EC",
@@ -21385,7 +21385,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2639,
+    "College Code": 2639,
     "COLLEGE NMAE":
       "R P Sarathy Institute of Technology  Poosaripatty Kadaympatty Taluk  Salem  Tamil Nadu-636305",
     "BRANCH CODE": "EE",
@@ -21399,7 +21399,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2639,
+    "College Code": 2639,
     "COLLEGE NMAE":
       "R P Sarathy Institute of Technology  Poosaripatty Kadaympatty Taluk  Salem  Tamil Nadu-636305",
     "BRANCH CODE": "IT",
@@ -21413,7 +21413,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2639,
+    "College Code": 2639,
     "COLLEGE NMAE":
       "R P Sarathy Institute of Technology  Poosaripatty Kadaympatty Taluk  Salem  Tamil Nadu-636305",
     "BRANCH CODE": "ME",
@@ -21427,7 +21427,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2640,
+    "College Code": 2640,
     "COLLEGE NMAE":
       "Jayalakshmi Institute of Technology  Thoppur  Dharmapuri District 635352",
     "BRANCH CODE": "AD",
@@ -21441,7 +21441,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2640,
+    "College Code": 2640,
     "COLLEGE NMAE":
       "Jayalakshmi Institute of Technology  Thoppur  Dharmapuri District 635352",
     "BRANCH CODE": "AG",
@@ -21455,7 +21455,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2640,
+    "College Code": 2640,
     "COLLEGE NMAE":
       "Jayalakshmi Institute of Technology  Thoppur  Dharmapuri District 635352",
     "BRANCH CODE": "CE",
@@ -21469,7 +21469,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2640,
+    "College Code": 2640,
     "COLLEGE NMAE":
       "Jayalakshmi Institute of Technology  Thoppur  Dharmapuri District 635352",
     "BRANCH CODE": "CS",
@@ -21483,7 +21483,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2640,
+    "College Code": 2640,
     "COLLEGE NMAE":
       "Jayalakshmi Institute of Technology  Thoppur  Dharmapuri District 635352",
     "BRANCH CODE": "EC",
@@ -21497,7 +21497,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2640,
+    "College Code": 2640,
     "COLLEGE NMAE":
       "Jayalakshmi Institute of Technology  Thoppur  Dharmapuri District 635352",
     "BRANCH CODE": "EE",
@@ -21511,7 +21511,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2640,
+    "College Code": 2640,
     "COLLEGE NMAE":
       "Jayalakshmi Institute of Technology  Thoppur  Dharmapuri District 635352",
     "BRANCH CODE": "IT",
@@ -21525,7 +21525,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2640,
+    "College Code": 2640,
     "COLLEGE NMAE":
       "Jayalakshmi Institute of Technology  Thoppur  Dharmapuri District 635352",
     "BRANCH CODE": "ME",
@@ -21539,7 +21539,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2641,
+    "College Code": 2641,
     "COLLEGE NMAE":
       "Varuvan Vadivelan Institute of Technology  Nallanahalli Dharmapuri District 636701",
     "BRANCH CODE": "AD",
@@ -21553,7 +21553,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2641,
+    "College Code": 2641,
     "COLLEGE NMAE":
       "Varuvan Vadivelan Institute of Technology  Nallanahalli Dharmapuri District 636701",
     "BRANCH CODE": "CE",
@@ -21567,7 +21567,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2641,
+    "College Code": 2641,
     "COLLEGE NMAE":
       "Varuvan Vadivelan Institute of Technology  Nallanahalli Dharmapuri District 636701",
     "BRANCH CODE": "CS",
@@ -21581,7 +21581,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2641,
+    "College Code": 2641,
     "COLLEGE NMAE":
       "Varuvan Vadivelan Institute of Technology  Nallanahalli Dharmapuri District 636701",
     "BRANCH CODE": "EC",
@@ -21595,7 +21595,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2641,
+    "College Code": 2641,
     "COLLEGE NMAE":
       "Varuvan Vadivelan Institute of Technology  Nallanahalli Dharmapuri District 636701",
     "BRANCH CODE": "EE",
@@ -21609,7 +21609,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2641,
+    "College Code": 2641,
     "COLLEGE NMAE":
       "Varuvan Vadivelan Institute of Technology  Nallanahalli Dharmapuri District 636701",
     "BRANCH CODE": "IT",
@@ -21623,7 +21623,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2641,
+    "College Code": 2641,
     "COLLEGE NMAE":
       "Varuvan Vadivelan Institute of Technology  Nallanahalli Dharmapuri District 636701",
     "BRANCH CODE": "ME",
@@ -21637,7 +21637,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2642,
+    "College Code": 2642,
     "COLLEGE NMAE":
       "P S V College of Engineeering and Technology  Mittapalli Balinayanapalli Post  Elathagiri  Krishnagiri District 635108",
     "BRANCH CODE": "AD",
@@ -21651,7 +21651,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2642,
+    "College Code": 2642,
     "COLLEGE NMAE":
       "P S V College of Engineeering and Technology  Mittapalli Balinayanapalli Post  Elathagiri  Krishnagiri District 635108",
     "BRANCH CODE": "BM",
@@ -21665,7 +21665,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2642,
+    "College Code": 2642,
     "COLLEGE NMAE":
       "P S V College of Engineeering and Technology  Mittapalli Balinayanapalli Post  Elathagiri  Krishnagiri District 635108",
     "BRANCH CODE": "CE",
@@ -21679,7 +21679,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2642,
+    "College Code": 2642,
     "COLLEGE NMAE":
       "P S V College of Engineeering and Technology  Mittapalli Balinayanapalli Post  Elathagiri  Krishnagiri District 635108",
     "BRANCH CODE": "CS",
@@ -21693,7 +21693,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2642,
+    "College Code": 2642,
     "COLLEGE NMAE":
       "P S V College of Engineeering and Technology  Mittapalli Balinayanapalli Post  Elathagiri  Krishnagiri District 635108",
     "BRANCH CODE": "EC",
@@ -21707,7 +21707,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2642,
+    "College Code": 2642,
     "COLLEGE NMAE":
       "P S V College of Engineeering and Technology  Mittapalli Balinayanapalli Post  Elathagiri  Krishnagiri District 635108",
     "BRANCH CODE": "EE",
@@ -21721,7 +21721,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2642,
+    "College Code": 2642,
     "COLLEGE NMAE":
       "P S V College of Engineeering and Technology  Mittapalli Balinayanapalli Post  Elathagiri  Krishnagiri District 635108",
     "BRANCH CODE": "IT",
@@ -21735,7 +21735,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2642,
+    "College Code": 2642,
     "COLLEGE NMAE":
       "P S V College of Engineeering and Technology  Mittapalli Balinayanapalli Post  Elathagiri  Krishnagiri District 635108",
     "BRANCH CODE": "ME",
@@ -21749,7 +21749,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2643,
+    "College Code": 2643,
     "COLLEGE NMAE":
       "Bharathiyar Institute of Engineering for Women Deviayakurichi  Attur Taluk  Salem District 636112",
     "BRANCH CODE": "AD",
@@ -21763,7 +21763,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2643,
+    "College Code": 2643,
     "COLLEGE NMAE":
       "Bharathiyar Institute of Engineering for Women Deviayakurichi  Attur Taluk  Salem District 636112",
     "BRANCH CODE": "CS",
@@ -21777,7 +21777,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2643,
+    "College Code": 2643,
     "COLLEGE NMAE":
       "Bharathiyar Institute of Engineering for Women Deviayakurichi  Attur Taluk  Salem District 636112",
     "BRANCH CODE": "EC",
@@ -21791,7 +21791,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2643,
+    "College Code": 2643,
     "COLLEGE NMAE":
       "Bharathiyar Institute of Engineering for Women Deviayakurichi  Attur Taluk  Salem District 636112",
     "BRANCH CODE": "EE",
@@ -21805,7 +21805,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2646,
+    "College Code": 2646,
     "COLLEGE NMAE":
       "Tagore Institute of Engineering and Technology Deviyakurichi  Attur Taluk  Salem District 636112",
     "BRANCH CODE": "AD",
@@ -21819,7 +21819,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2646,
+    "College Code": 2646,
     "COLLEGE NMAE":
       "Tagore Institute of Engineering and Technology Deviyakurichi  Attur Taluk  Salem District 636112",
     "BRANCH CODE": "AM",
@@ -21834,7 +21834,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2646,
+    "College Code": 2646,
     "COLLEGE NMAE":
       "Tagore Institute of Engineering and Technology Deviyakurichi  Attur Taluk  Salem District 636112",
     "BRANCH CODE": "CE",
@@ -21848,7 +21848,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2646,
+    "College Code": 2646,
     "COLLEGE NMAE":
       "Tagore Institute of Engineering and Technology Deviyakurichi  Attur Taluk  Salem District 636112",
     "BRANCH CODE": "CS",
@@ -21862,7 +21862,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2646,
+    "College Code": 2646,
     "COLLEGE NMAE":
       "Tagore Institute of Engineering and Technology Deviyakurichi  Attur Taluk  Salem District 636112",
     "BRANCH CODE": "EC",
@@ -21876,7 +21876,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2646,
+    "College Code": 2646,
     "COLLEGE NMAE":
       "Tagore Institute of Engineering and Technology Deviyakurichi  Attur Taluk  Salem District 636112",
     "BRANCH CODE": "EE",
@@ -21890,7 +21890,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2646,
+    "College Code": 2646,
     "COLLEGE NMAE":
       "Tagore Institute of Engineering and Technology Deviyakurichi  Attur Taluk  Salem District 636112",
     "BRANCH CODE": "ME",
@@ -21904,7 +21904,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2647,
+    "College Code": 2647,
     "COLLEGE NMAE":
       "J K K Nataraja College of Engineering and Technology Komarapalayam Amani  Thattankuttai Panchayat Namakkal District 638183",
     "BRANCH CODE": "CS",
@@ -21918,7 +21918,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2647,
+    "College Code": 2647,
     "COLLEGE NMAE":
       "J K K Nataraja College of Engineering and Technology Komarapalayam Amani  Thattankuttai Panchayat Namakkal District 638183",
     "BRANCH CODE": "EC",
@@ -21932,7 +21932,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2647,
+    "College Code": 2647,
     "COLLEGE NMAE":
       "J K K Nataraja College of Engineering and Technology Komarapalayam Amani  Thattankuttai Panchayat Namakkal District 638183",
     "BRANCH CODE": "EE",
@@ -21946,7 +21946,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2647,
+    "College Code": 2647,
     "COLLEGE NMAE":
       "J K K Nataraja College of Engineering and Technology Komarapalayam Amani  Thattankuttai Panchayat Namakkal District 638183",
     "BRANCH CODE": "IT",
@@ -21960,7 +21960,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2647,
+    "College Code": 2647,
     "COLLEGE NMAE":
       "J K K Nataraja College of Engineering and Technology Komarapalayam Amani  Thattankuttai Panchayat Namakkal District 638183",
     "BRANCH CODE": "ME",
@@ -21974,7 +21974,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2648,
+    "College Code": 2648,
     "COLLEGE NMAE":
       "Annapoorana Engineering College (Autonomous)  Sankari Main Road  NH-47  Periaseeragapadi  Salem District 636308",
     "BRANCH CODE": "AD",
@@ -21988,7 +21988,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2648,
+    "College Code": 2648,
     "COLLEGE NMAE":
       "Annapoorana Engineering College (Autonomous)  Sankari Main Road  NH-47  Periaseeragapadi  Salem District 636308",
     "BRANCH CODE": "AU",
@@ -22002,7 +22002,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2648,
+    "College Code": 2648,
     "COLLEGE NMAE":
       "Annapoorana Engineering College (Autonomous)  Sankari Main Road  NH-47  Periaseeragapadi  Salem District 636308",
     "BRANCH CODE": "BM",
@@ -22016,7 +22016,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2648,
+    "College Code": 2648,
     "COLLEGE NMAE":
       "Annapoorana Engineering College (Autonomous)  Sankari Main Road  NH-47  Periaseeragapadi  Salem District 636308",
     "BRANCH CODE": "CE",
@@ -22030,7 +22030,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2648,
+    "College Code": 2648,
     "COLLEGE NMAE":
       "Annapoorana Engineering College (Autonomous)  Sankari Main Road  NH-47  Periaseeragapadi  Salem District 636308",
     "BRANCH CODE": "CS",
@@ -22044,7 +22044,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2648,
+    "College Code": 2648,
     "COLLEGE NMAE":
       "Annapoorana Engineering College (Autonomous)  Sankari Main Road  NH-47  Periaseeragapadi  Salem District 636308",
     "BRANCH CODE": "EC",
@@ -22058,7 +22058,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2648,
+    "College Code": 2648,
     "COLLEGE NMAE":
       "Annapoorana Engineering College (Autonomous)  Sankari Main Road  NH-47  Periaseeragapadi  Salem District 636308",
     "BRANCH CODE": "EE",
@@ -22072,7 +22072,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2648,
+    "College Code": 2648,
     "COLLEGE NMAE":
       "Annapoorana Engineering College (Autonomous)  Sankari Main Road  NH-47  Periaseeragapadi  Salem District 636308",
     "BRANCH CODE": "IT",
@@ -22086,7 +22086,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2648,
+    "College Code": 2648,
     "COLLEGE NMAE":
       "Annapoorana Engineering College (Autonomous)  Sankari Main Road  NH-47  Periaseeragapadi  Salem District 636308",
     "BRANCH CODE": "ME",
@@ -22100,7 +22100,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2650,
+    "College Code": 2650,
     "COLLEGE NMAE":
       "Christ The King Engineering College  Cecilia Gardens Chikkarampalayam Village  Coimbatore District 641104",
     "BRANCH CODE": "AD",
@@ -22114,7 +22114,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2650,
+    "College Code": 2650,
     "COLLEGE NMAE":
       "Christ The King Engineering College  Cecilia Gardens Chikkarampalayam Village  Coimbatore District 641104",
     "BRANCH CODE": "CE",
@@ -22128,7 +22128,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2650,
+    "College Code": 2650,
     "COLLEGE NMAE":
       "Christ The King Engineering College  Cecilia Gardens Chikkarampalayam Village  Coimbatore District 641104",
     "BRANCH CODE": "CS",
@@ -22142,7 +22142,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2650,
+    "College Code": 2650,
     "COLLEGE NMAE":
       "Christ The King Engineering College  Cecilia Gardens Chikkarampalayam Village  Coimbatore District 641104",
     "BRANCH CODE": "EC",
@@ -22156,7 +22156,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2650,
+    "College Code": 2650,
     "COLLEGE NMAE":
       "Christ The King Engineering College  Cecilia Gardens Chikkarampalayam Village  Coimbatore District 641104",
     "BRANCH CODE": "EE",
@@ -22170,7 +22170,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2650,
+    "College Code": 2650,
     "COLLEGE NMAE":
       "Christ The King Engineering College  Cecilia Gardens Chikkarampalayam Village  Coimbatore District 641104",
     "BRANCH CODE": "IT",
@@ -22184,7 +22184,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2650,
+    "College Code": 2650,
     "COLLEGE NMAE":
       "Christ The King Engineering College  Cecilia Gardens Chikkarampalayam Village  Coimbatore District 641104",
     "BRANCH CODE": "ME",
@@ -22198,7 +22198,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2651,
+    "College Code": 2651,
     "COLLEGE NMAE":
       "Jai Shriram Engineering College  Dharapuram Road Avinashi Palayam  Tiruppur District 638660",
     "BRANCH CODE": "AD",
@@ -22212,7 +22212,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2651,
+    "College Code": 2651,
     "COLLEGE NMAE":
       "Jai Shriram Engineering College  Dharapuram Road Avinashi Palayam  Tiruppur District 638660",
     "BRANCH CODE": "CE",
@@ -22226,7 +22226,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2651,
+    "College Code": 2651,
     "COLLEGE NMAE":
       "Jai Shriram Engineering College  Dharapuram Road Avinashi Palayam  Tiruppur District 638660",
     "BRANCH CODE": "CS",
@@ -22240,7 +22240,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2651,
+    "College Code": 2651,
     "COLLEGE NMAE":
       "Jai Shriram Engineering College  Dharapuram Road Avinashi Palayam  Tiruppur District 638660",
     "BRANCH CODE": "EC",
@@ -22254,7 +22254,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2651,
+    "College Code": 2651,
     "COLLEGE NMAE":
       "Jai Shriram Engineering College  Dharapuram Road Avinashi Palayam  Tiruppur District 638660",
     "BRANCH CODE": "EE",
@@ -22268,7 +22268,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2651,
+    "College Code": 2651,
     "COLLEGE NMAE":
       "Jai Shriram Engineering College  Dharapuram Road Avinashi Palayam  Tiruppur District 638660",
     "BRANCH CODE": "FT",
@@ -22282,7 +22282,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2651,
+    "College Code": 2651,
     "COLLEGE NMAE":
       "Jai Shriram Engineering College  Dharapuram Road Avinashi Palayam  Tiruppur District 638660",
     "BRANCH CODE": "ME",
@@ -22296,7 +22296,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2652,
+    "College Code": 2652,
     "COLLEGE NMAE":
       "AL-Ameen Engineering College (Autonomous)  Karundevan Palayam  Nanjai Uthukuli Post  Erode District 638104",
     "BRANCH CODE": "AD",
@@ -22310,7 +22310,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2652,
+    "College Code": 2652,
     "COLLEGE NMAE":
       "AL-Ameen Engineering College (Autonomous)  Karundevan Palayam  Nanjai Uthukuli Post  Erode District 638104",
     "BRANCH CODE": "CS",
@@ -22324,7 +22324,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2652,
+    "College Code": 2652,
     "COLLEGE NMAE":
       "AL-Ameen Engineering College (Autonomous)  Karundevan Palayam  Nanjai Uthukuli Post  Erode District 638104",
     "BRANCH CODE": "EC",
@@ -22338,7 +22338,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2652,
+    "College Code": 2652,
     "COLLEGE NMAE":
       "AL-Ameen Engineering College (Autonomous)  Karundevan Palayam  Nanjai Uthukuli Post  Erode District 638104",
     "BRANCH CODE": "EE",
@@ -22352,7 +22352,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2652,
+    "College Code": 2652,
     "COLLEGE NMAE":
       "AL-Ameen Engineering College (Autonomous)  Karundevan Palayam  Nanjai Uthukuli Post  Erode District 638104",
     "BRANCH CODE": "IT",
@@ -22366,7 +22366,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2652,
+    "College Code": 2652,
     "COLLEGE NMAE":
       "AL-Ameen Engineering College (Autonomous)  Karundevan Palayam  Nanjai Uthukuli Post  Erode District 638104",
     "BRANCH CODE": "ME",
@@ -22380,7 +22380,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2653,
+    "College Code": 2653,
     "COLLEGE NMAE":
       "Knowledge Institute of Technology   (Autonomous) KIOT Campus  Kakapalayam Post  Salem District 637504",
     "BRANCH CODE": "AD",
@@ -22394,7 +22394,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2653,
+    "College Code": 2653,
     "COLLEGE NMAE":
       "Knowledge Institute of Technology   (Autonomous) KIOT Campus  Kakapalayam Post  Salem District 637504",
     "BRANCH CODE": "CB",
@@ -22408,7 +22408,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2653,
+    "College Code": 2653,
     "COLLEGE NMAE":
       "Knowledge Institute of Technology   (Autonomous) KIOT Campus  Kakapalayam Post  Salem District 637504",
     "BRANCH CODE": "CE",
@@ -22422,7 +22422,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2653,
+    "College Code": 2653,
     "COLLEGE NMAE":
       "Knowledge Institute of Technology   (Autonomous) KIOT Campus  Kakapalayam Post  Salem District 637504",
     "BRANCH CODE": "CS",
@@ -22436,7 +22436,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2653,
+    "College Code": 2653,
     "COLLEGE NMAE":
       "Knowledge Institute of Technology   (Autonomous) KIOT Campus  Kakapalayam Post  Salem District 637504",
     "BRANCH CODE": "EC",
@@ -22450,7 +22450,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2653,
+    "College Code": 2653,
     "COLLEGE NMAE":
       "Knowledge Institute of Technology   (Autonomous) KIOT Campus  Kakapalayam Post  Salem District 637504",
     "BRANCH CODE": "EE",
@@ -22464,7 +22464,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2653,
+    "College Code": 2653,
     "COLLEGE NMAE":
       "Knowledge Institute of Technology   (Autonomous) KIOT Campus  Kakapalayam Post  Salem District 637504",
     "BRANCH CODE": "IT",
@@ -22478,7 +22478,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2653,
+    "College Code": 2653,
     "COLLEGE NMAE":
       "Knowledge Institute of Technology   (Autonomous) KIOT Campus  Kakapalayam Post  Salem District 637504",
     "BRANCH CODE": "ME",
@@ -22492,7 +22492,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2656,
+    "College Code": 2656,
     "COLLEGE NMAE":
       "Builders Engineering college  Nathakadaiyur  Erode Road Palayakottai Village  Kangeyam  Tiruppur District 638108",
     "BRANCH CODE": "AD",
@@ -22506,7 +22506,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2656,
+    "College Code": 2656,
     "COLLEGE NMAE":
       "Builders Engineering college  Nathakadaiyur  Erode Road Palayakottai Village  Kangeyam  Tiruppur District 638108",
     "BRANCH CODE": "CE",
@@ -22520,7 +22520,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2656,
+    "College Code": 2656,
     "COLLEGE NMAE":
       "Builders Engineering college  Nathakadaiyur  Erode Road Palayakottai Village  Kangeyam  Tiruppur District 638108",
     "BRANCH CODE": "CS",
@@ -22534,7 +22534,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2656,
+    "College Code": 2656,
     "COLLEGE NMAE":
       "Builders Engineering college  Nathakadaiyur  Erode Road Palayakottai Village  Kangeyam  Tiruppur District 638108",
     "BRANCH CODE": "EC",
@@ -22548,7 +22548,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2656,
+    "College Code": 2656,
     "COLLEGE NMAE":
       "Builders Engineering college  Nathakadaiyur  Erode Road Palayakottai Village  Kangeyam  Tiruppur District 638108",
     "BRANCH CODE": "EE",
@@ -22562,7 +22562,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2656,
+    "College Code": 2656,
     "COLLEGE NMAE":
       "Builders Engineering college  Nathakadaiyur  Erode Road Palayakottai Village  Kangeyam  Tiruppur District 638108",
     "BRANCH CODE": "ME",
@@ -22576,7 +22576,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2658,
+    "College Code": 2658,
     "COLLEGE NMAE":
       "V S A Group of Institutions  NH-47  Uthamasola Puram Post Salem District 636010",
     "BRANCH CODE": "BM",
@@ -22590,7 +22590,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2658,
+    "College Code": 2658,
     "COLLEGE NMAE":
       "V S A Group of Institutions  NH-47  Uthamasola Puram Post Salem District 636010",
     "BRANCH CODE": "CE",
@@ -22604,7 +22604,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2658,
+    "College Code": 2658,
     "COLLEGE NMAE":
       "V S A Group of Institutions  NH-47  Uthamasola Puram Post Salem District 636010",
     "BRANCH CODE": "CS",
@@ -22618,7 +22618,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2658,
+    "College Code": 2658,
     "COLLEGE NMAE":
       "V S A Group of Institutions  NH-47  Uthamasola Puram Post Salem District 636010",
     "BRANCH CODE": "EC",
@@ -22632,7 +22632,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2658,
+    "College Code": 2658,
     "COLLEGE NMAE":
       "V S A Group of Institutions  NH-47  Uthamasola Puram Post Salem District 636010",
     "BRANCH CODE": "EE",
@@ -22646,7 +22646,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2658,
+    "College Code": 2658,
     "COLLEGE NMAE":
       "V S A Group of Institutions  NH-47  Uthamasola Puram Post Salem District 636010",
     "BRANCH CODE": "IT",
@@ -22660,7 +22660,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2658,
+    "College Code": 2658,
     "COLLEGE NMAE":
       "V S A Group of Institutions  NH-47  Uthamasola Puram Post Salem District 636010",
     "BRANCH CODE": "ME",
@@ -22674,7 +22674,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2659,
+    "College Code": 2659,
     "COLLEGE NMAE":
       "Salem College of Engineering and Technology  Salem-Attur Main Road  NH-68  Mettupatty Perumapalayam  Salem District 636111",
     "BRANCH CODE": "AD",
@@ -22688,7 +22688,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2659,
+    "College Code": 2659,
     "COLLEGE NMAE":
       "Salem College of Engineering and Technology  Salem-Attur Main Road  NH-68  Mettupatty Perumapalayam  Salem District 636111",
     "BRANCH CODE": "BM",
@@ -22702,7 +22702,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2659,
+    "College Code": 2659,
     "COLLEGE NMAE":
       "Salem College of Engineering and Technology  Salem-Attur Main Road  NH-68  Mettupatty Perumapalayam  Salem District 636111",
     "BRANCH CODE": "BT",
@@ -22716,7 +22716,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2659,
+    "College Code": 2659,
     "COLLEGE NMAE":
       "Salem College of Engineering and Technology  Salem-Attur Main Road  NH-68  Mettupatty Perumapalayam  Salem District 636111",
     "BRANCH CODE": "CE",
@@ -22730,7 +22730,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2659,
+    "College Code": 2659,
     "COLLEGE NMAE":
       "Salem College of Engineering and Technology  Salem-Attur Main Road  NH-68  Mettupatty Perumapalayam  Salem District 636111",
     "BRANCH CODE": "CS",
@@ -22744,7 +22744,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2659,
+    "College Code": 2659,
     "COLLEGE NMAE":
       "Salem College of Engineering and Technology  Salem-Attur Main Road  NH-68  Mettupatty Perumapalayam  Salem District 636111",
     "BRANCH CODE": "EC",
@@ -22758,7 +22758,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2659,
+    "College Code": 2659,
     "COLLEGE NMAE":
       "Salem College of Engineering and Technology  Salem-Attur Main Road  NH-68  Mettupatty Perumapalayam  Salem District 636111",
     "BRANCH CODE": "EE",
@@ -22772,7 +22772,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2659,
+    "College Code": 2659,
     "COLLEGE NMAE":
       "Salem College of Engineering and Technology  Salem-Attur Main Road  NH-68  Mettupatty Perumapalayam  Salem District 636111",
     "BRANCH CODE": "IT",
@@ -22786,7 +22786,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2659,
+    "College Code": 2659,
     "COLLEGE NMAE":
       "Salem College of Engineering and Technology  Salem-Attur Main Road  NH-68  Mettupatty Perumapalayam  Salem District 636111",
     "BRANCH CODE": "ME",
@@ -22800,7 +22800,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2661,
+    "College Code": 2661,
     "COLLEGE NMAE":
       "Vivekanandha College of Technology for Women Sathinaickenpalayam  Elayampalayam Village Kumaramangalam  Namakkal District 637205",
     "BRANCH CODE": "AD",
@@ -22814,7 +22814,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2661,
+    "College Code": 2661,
     "COLLEGE NMAE":
       "Vivekanandha College of Technology for Women Sathinaickenpalayam  Elayampalayam Village Kumaramangalam  Namakkal District 637205",
     "BRANCH CODE": "AG",
@@ -22828,7 +22828,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2661,
+    "College Code": 2661,
     "COLLEGE NMAE":
       "Vivekanandha College of Technology for Women Sathinaickenpalayam  Elayampalayam Village Kumaramangalam  Namakkal District 637205",
     "BRANCH CODE": "CE",
@@ -22842,7 +22842,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2661,
+    "College Code": 2661,
     "COLLEGE NMAE":
       "Vivekanandha College of Technology for Women Sathinaickenpalayam  Elayampalayam Village Kumaramangalam  Namakkal District 637205",
     "BRANCH CODE": "CS",
@@ -22856,7 +22856,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2661,
+    "College Code": 2661,
     "COLLEGE NMAE":
       "Vivekanandha College of Technology for Women Sathinaickenpalayam  Elayampalayam Village Kumaramangalam  Namakkal District 637205",
     "BRANCH CODE": "EC",
@@ -22870,7 +22870,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2661,
+    "College Code": 2661,
     "COLLEGE NMAE":
       "Vivekanandha College of Technology for Women Sathinaickenpalayam  Elayampalayam Village Kumaramangalam  Namakkal District 637205",
     "BRANCH CODE": "IT",
@@ -22884,7 +22884,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2673,
+    "College Code": 2673,
     "COLLEGE NMAE":
       "Sree Sakthi Engineering College  Bettathapuram  Bilichi Village  Karamadai  Coimbatore District 641104",
     "BRANCH CODE": "AM",
@@ -22899,7 +22899,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2673,
+    "College Code": 2673,
     "COLLEGE NMAE":
       "Sree Sakthi Engineering College  Bettathapuram  Bilichi Village  Karamadai  Coimbatore District 641104",
     "BRANCH CODE": "CE",
@@ -22913,7 +22913,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2673,
+    "College Code": 2673,
     "COLLEGE NMAE":
       "Sree Sakthi Engineering College  Bettathapuram  Bilichi Village  Karamadai  Coimbatore District 641104",
     "BRANCH CODE": "CS",
@@ -22927,7 +22927,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2673,
+    "College Code": 2673,
     "COLLEGE NMAE":
       "Sree Sakthi Engineering College  Bettathapuram  Bilichi Village  Karamadai  Coimbatore District 641104",
     "BRANCH CODE": "EC",
@@ -22941,7 +22941,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2673,
+    "College Code": 2673,
     "COLLEGE NMAE":
       "Sree Sakthi Engineering College  Bettathapuram  Bilichi Village  Karamadai  Coimbatore District 641104",
     "BRANCH CODE": "EE",
@@ -22955,7 +22955,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2673,
+    "College Code": 2673,
     "COLLEGE NMAE":
       "Sree Sakthi Engineering College  Bettathapuram  Bilichi Village  Karamadai  Coimbatore District 641104",
     "BRANCH CODE": "IT",
@@ -22969,7 +22969,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2673,
+    "College Code": 2673,
     "COLLEGE NMAE":
       "Sree Sakthi Engineering College  Bettathapuram  Bilichi Village  Karamadai  Coimbatore District 641104",
     "BRANCH CODE": "ME",
@@ -22983,7 +22983,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2673,
+    "College Code": 2673,
     "COLLEGE NMAE":
       "Sree Sakthi Engineering College  Bettathapuram  Bilichi Village  Karamadai  Coimbatore District 641104",
     "BRANCH CODE": "SC",
@@ -22997,7 +22997,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2683,
+    "College Code": 2683,
     "COLLEGE NMAE":
       "Shreenivasa Engineering College  B Pallipatti  Bommidi Pappireddipatti Taluk  Dharmapuri District 635301",
     "BRANCH CODE": "AD",
@@ -23011,7 +23011,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2683,
+    "College Code": 2683,
     "COLLEGE NMAE":
       "Shreenivasa Engineering College  B Pallipatti  Bommidi Pappireddipatti Taluk  Dharmapuri District 635301",
     "BRANCH CODE": "AG",
@@ -23025,7 +23025,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2683,
+    "College Code": 2683,
     "COLLEGE NMAE":
       "Shreenivasa Engineering College  B Pallipatti  Bommidi Pappireddipatti Taluk  Dharmapuri District 635301",
     "BRANCH CODE": "BM",
@@ -23039,7 +23039,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2683,
+    "College Code": 2683,
     "COLLEGE NMAE":
       "Shreenivasa Engineering College  B Pallipatti  Bommidi Pappireddipatti Taluk  Dharmapuri District 635301",
     "BRANCH CODE": "CS",
@@ -23053,7 +23053,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2683,
+    "College Code": 2683,
     "COLLEGE NMAE":
       "Shreenivasa Engineering College  B Pallipatti  Bommidi Pappireddipatti Taluk  Dharmapuri District 635301",
     "BRANCH CODE": "EE",
@@ -23067,7 +23067,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2683,
+    "College Code": 2683,
     "COLLEGE NMAE":
       "Shreenivasa Engineering College  B Pallipatti  Bommidi Pappireddipatti Taluk  Dharmapuri District 635301",
     "BRANCH CODE": "IT",
@@ -23081,7 +23081,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2683,
+    "College Code": 2683,
     "COLLEGE NMAE":
       "Shreenivasa Engineering College  B Pallipatti  Bommidi Pappireddipatti Taluk  Dharmapuri District 635301",
     "BRANCH CODE": "ME",
@@ -23095,7 +23095,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2702,
+    "College Code": 2702,
     "COLLEGE NMAE":
       "Bannari Amman Institute of Technology (Autonomous) Sathyamanagalam  Erode District  638401",
     "BRANCH CODE": "AD",
@@ -23109,7 +23109,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2702,
+    "College Code": 2702,
     "COLLEGE NMAE":
       "Bannari Amman Institute of Technology (Autonomous) Sathyamanagalam  Erode District  638401",
     "BRANCH CODE": "AG",
@@ -23123,7 +23123,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2702,
+    "College Code": 2702,
     "COLLEGE NMAE":
       "Bannari Amman Institute of Technology (Autonomous) Sathyamanagalam  Erode District  638401",
     "BRANCH CODE": "AL",
@@ -23137,7 +23137,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2702,
+    "College Code": 2702,
     "COLLEGE NMAE":
       "Bannari Amman Institute of Technology (Autonomous) Sathyamanagalam  Erode District  638401",
     "BRANCH CODE": "BM",
@@ -23151,7 +23151,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2702,
+    "College Code": 2702,
     "COLLEGE NMAE":
       "Bannari Amman Institute of Technology (Autonomous) Sathyamanagalam  Erode District  638401",
     "BRANCH CODE": "BT",
@@ -23165,7 +23165,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2702,
+    "College Code": 2702,
     "COLLEGE NMAE":
       "Bannari Amman Institute of Technology (Autonomous) Sathyamanagalam  Erode District  638401",
     "BRANCH CODE": "CB",
@@ -23179,7 +23179,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2702,
+    "College Code": 2702,
     "COLLEGE NMAE":
       "Bannari Amman Institute of Technology (Autonomous) Sathyamanagalam  Erode District  638401",
     "BRANCH CODE": "CD",
@@ -23193,7 +23193,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2702,
+    "College Code": 2702,
     "COLLEGE NMAE":
       "Bannari Amman Institute of Technology (Autonomous) Sathyamanagalam  Erode District  638401",
     "BRANCH CODE": "CE",
@@ -23207,7 +23207,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2702,
+    "College Code": 2702,
     "COLLEGE NMAE":
       "Bannari Amman Institute of Technology (Autonomous) Sathyamanagalam  Erode District  638401",
     "BRANCH CODE": "CS",
@@ -23221,7 +23221,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2702,
+    "College Code": 2702,
     "COLLEGE NMAE":
       "Bannari Amman Institute of Technology (Autonomous) Sathyamanagalam  Erode District  638401",
     "BRANCH CODE": "CT",
@@ -23235,7 +23235,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2702,
+    "College Code": 2702,
     "COLLEGE NMAE":
       "Bannari Amman Institute of Technology (Autonomous) Sathyamanagalam  Erode District  638401",
     "BRANCH CODE": "EC",
@@ -23249,7 +23249,7 @@ export const collegeChoiceListR2 = [
     ST: 2,
   },
   {
-    "COLLEGE CODE": 2702,
+    "College Code": 2702,
     "COLLEGE NMAE":
       "Bannari Amman Institute of Technology (Autonomous) Sathyamanagalam  Erode District  638401",
     "BRANCH CODE": "EE",
@@ -23263,7 +23263,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2702,
+    "College Code": 2702,
     "COLLEGE NMAE":
       "Bannari Amman Institute of Technology (Autonomous) Sathyamanagalam  Erode District  638401",
     "BRANCH CODE": "EI",
@@ -23277,7 +23277,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2702,
+    "College Code": 2702,
     "COLLEGE NMAE":
       "Bannari Amman Institute of Technology (Autonomous) Sathyamanagalam  Erode District  638401",
     "BRANCH CODE": "FD",
@@ -23291,7 +23291,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2702,
+    "College Code": 2702,
     "COLLEGE NMAE":
       "Bannari Amman Institute of Technology (Autonomous) Sathyamanagalam  Erode District  638401",
     "BRANCH CODE": "FT",
@@ -23305,7 +23305,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2702,
+    "College Code": 2702,
     "COLLEGE NMAE":
       "Bannari Amman Institute of Technology (Autonomous) Sathyamanagalam  Erode District  638401",
     "BRANCH CODE": "IT",
@@ -23319,7 +23319,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2702,
+    "College Code": 2702,
     "COLLEGE NMAE":
       "Bannari Amman Institute of Technology (Autonomous) Sathyamanagalam  Erode District  638401",
     "BRANCH CODE": "ME",
@@ -23333,7 +23333,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2702,
+    "College Code": 2702,
     "COLLEGE NMAE":
       "Bannari Amman Institute of Technology (Autonomous) Sathyamanagalam  Erode District  638401",
     "BRANCH CODE": "MZ",
@@ -23347,7 +23347,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2702,
+    "College Code": 2702,
     "COLLEGE NMAE":
       "Bannari Amman Institute of Technology (Autonomous) Sathyamanagalam  Erode District  638401",
     "BRANCH CODE": "SE",
@@ -23361,7 +23361,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2704,
+    "College Code": 2704,
     "COLLEGE NMAE":
       "Coimbatore Institute of Engineering and Technolgoy (Autonomous)  Narasipuram Post  Coimbatore District 641109",
     "BRANCH CODE": "AD",
@@ -23375,7 +23375,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2704,
+    "College Code": 2704,
     "COLLEGE NMAE":
       "Coimbatore Institute of Engineering and Technolgoy (Autonomous)  Narasipuram Post  Coimbatore District 641109",
     "BRANCH CODE": "CE",
@@ -23389,7 +23389,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2704,
+    "College Code": 2704,
     "COLLEGE NMAE":
       "Coimbatore Institute of Engineering and Technolgoy (Autonomous)  Narasipuram Post  Coimbatore District 641109",
     "BRANCH CODE": "CS",
@@ -23403,7 +23403,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2704,
+    "College Code": 2704,
     "COLLEGE NMAE":
       "Coimbatore Institute of Engineering and Technolgoy (Autonomous)  Narasipuram Post  Coimbatore District 641109",
     "BRANCH CODE": "EC",
@@ -23417,7 +23417,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2704,
+    "College Code": 2704,
     "COLLEGE NMAE":
       "Coimbatore Institute of Engineering and Technolgoy (Autonomous)  Narasipuram Post  Coimbatore District 641109",
     "BRANCH CODE": "EE",
@@ -23431,7 +23431,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2704,
+    "College Code": 2704,
     "COLLEGE NMAE":
       "Coimbatore Institute of Engineering and Technolgoy (Autonomous)  Narasipuram Post  Coimbatore District 641109",
     "BRANCH CODE": "IT",
@@ -23445,7 +23445,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2704,
+    "College Code": 2704,
     "COLLEGE NMAE":
       "Coimbatore Institute of Engineering and Technolgoy (Autonomous)  Narasipuram Post  Coimbatore District 641109",
     "BRANCH CODE": "ME",
@@ -23459,7 +23459,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2704,
+    "College Code": 2704,
     "COLLEGE NMAE":
       "Coimbatore Institute of Engineering and Technolgoy (Autonomous)  Narasipuram Post  Coimbatore District 641109",
     "BRANCH CODE": "MZ",
@@ -23473,7 +23473,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2704,
+    "College Code": 2704,
     "COLLEGE NMAE":
       "Coimbatore Institute of Engineering and Technolgoy (Autonomous)  Narasipuram Post  Coimbatore District 641109",
     "BRANCH CODE": "SC",
@@ -23487,7 +23487,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2705,
+    "College Code": 2705,
     "COLLEGE NMAE": "CSI College of Engineering  Ketti  The Nilgiris 643215",
     "BRANCH CODE": "AD",
     "BRANCH NAME": "ARTIFICIAL INTELLIGENCE AND DATA SCIENCE",
@@ -23500,7 +23500,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2705,
+    "College Code": 2705,
     "COLLEGE NMAE": "CSI College of Engineering  Ketti  The Nilgiris 643215",
     "BRANCH CODE": "CE",
     "BRANCH NAME": "CIVIL  ENGINEERING",
@@ -23513,7 +23513,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2705,
+    "College Code": 2705,
     "COLLEGE NMAE": "CSI College of Engineering  Ketti  The Nilgiris 643215",
     "BRANCH CODE": "CS",
     "BRANCH NAME": "COMPUTER SCIENCE AND ENGINEERING",
@@ -23526,7 +23526,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2705,
+    "College Code": 2705,
     "COLLEGE NMAE": "CSI College of Engineering  Ketti  The Nilgiris 643215",
     "BRANCH CODE": "EC",
     "BRANCH NAME": "ELECTRONICS AND COMMUNICATION ENGINEERING",
@@ -23539,7 +23539,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2705,
+    "College Code": 2705,
     "COLLEGE NMAE": "CSI College of Engineering  Ketti  The Nilgiris 643215",
     "BRANCH CODE": "EE",
     "BRANCH NAME": "ELECTRICAL AND ELECTRONICS ENGINEERING",
@@ -23552,7 +23552,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2705,
+    "College Code": 2705,
     "COLLEGE NMAE": "CSI College of Engineering  Ketti  The Nilgiris 643215",
     "BRANCH CODE": "IT",
     "BRANCH NAME": "INFORMATION TECHNOLOGY",
@@ -23565,7 +23565,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2705,
+    "College Code": 2705,
     "COLLEGE NMAE": "CSI College of Engineering  Ketti  The Nilgiris 643215",
     "BRANCH CODE": "ME",
     "BRANCH NAME": "MECHANICAL ENGINEERING",
@@ -23578,7 +23578,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2706,
+    "College Code": 2706,
     "COLLEGE NMAE":
       "Dr. Mahalingam College of  Engineering and Technology (Autonomous)  Mackinaickenpatti Post  Pollachi Taluk Coimbatore District 642003",
     "BRANCH CODE": "AD",
@@ -23592,7 +23592,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2706,
+    "College Code": 2706,
     "COLLEGE NMAE":
       "Dr. Mahalingam College of  Engineering and Technology (Autonomous)  Mackinaickenpatti Post  Pollachi Taluk Coimbatore District 642003",
     "BRANCH CODE": "AM",
@@ -23607,7 +23607,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2706,
+    "College Code": 2706,
     "COLLEGE NMAE":
       "Dr. Mahalingam College of  Engineering and Technology (Autonomous)  Mackinaickenpatti Post  Pollachi Taluk Coimbatore District 642003",
     "BRANCH CODE": "AU",
@@ -23621,7 +23621,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2706,
+    "College Code": 2706,
     "COLLEGE NMAE":
       "Dr. Mahalingam College of  Engineering and Technology (Autonomous)  Mackinaickenpatti Post  Pollachi Taluk Coimbatore District 642003",
     "BRANCH CODE": "CE",
@@ -23635,7 +23635,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2706,
+    "College Code": 2706,
     "COLLEGE NMAE":
       "Dr. Mahalingam College of  Engineering and Technology (Autonomous)  Mackinaickenpatti Post  Pollachi Taluk Coimbatore District 642003",
     "BRANCH CODE": "CS",
@@ -23649,7 +23649,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2706,
+    "College Code": 2706,
     "COLLEGE NMAE":
       "Dr. Mahalingam College of  Engineering and Technology (Autonomous)  Mackinaickenpatti Post  Pollachi Taluk Coimbatore District 642003",
     "BRANCH CODE": "EA",
@@ -23664,7 +23664,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2706,
+    "College Code": 2706,
     "COLLEGE NMAE":
       "Dr. Mahalingam College of  Engineering and Technology (Autonomous)  Mackinaickenpatti Post  Pollachi Taluk Coimbatore District 642003",
     "BRANCH CODE": "EC",
@@ -23678,7 +23678,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2706,
+    "College Code": 2706,
     "COLLEGE NMAE":
       "Dr. Mahalingam College of  Engineering and Technology (Autonomous)  Mackinaickenpatti Post  Pollachi Taluk Coimbatore District 642003",
     "BRANCH CODE": "EE",
@@ -23692,7 +23692,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2706,
+    "College Code": 2706,
     "COLLEGE NMAE":
       "Dr. Mahalingam College of  Engineering and Technology (Autonomous)  Mackinaickenpatti Post  Pollachi Taluk Coimbatore District 642003",
     "BRANCH CODE": "EV",
@@ -23706,7 +23706,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2706,
+    "College Code": 2706,
     "COLLEGE NMAE":
       "Dr. Mahalingam College of  Engineering and Technology (Autonomous)  Mackinaickenpatti Post  Pollachi Taluk Coimbatore District 642003",
     "BRANCH CODE": "IT",
@@ -23720,7 +23720,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2706,
+    "College Code": 2706,
     "COLLEGE NMAE":
       "Dr. Mahalingam College of  Engineering and Technology (Autonomous)  Mackinaickenpatti Post  Pollachi Taluk Coimbatore District 642003",
     "BRANCH CODE": "ME",
@@ -23734,7 +23734,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2706,
+    "College Code": 2706,
     "COLLEGE NMAE":
       "Dr. Mahalingam College of  Engineering and Technology (Autonomous)  Mackinaickenpatti Post  Pollachi Taluk Coimbatore District 642003",
     "BRANCH CODE": "SC",
@@ -23748,7 +23748,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2707,
+    "College Code": 2707,
     "COLLEGE NMAE":
       "Erode Sengunthar Engineering College (Autonomous) Thudupathi Post  Erode District 638057",
     "BRANCH CODE": "AD",
@@ -23762,7 +23762,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2707,
+    "College Code": 2707,
     "COLLEGE NMAE":
       "Erode Sengunthar Engineering College (Autonomous) Thudupathi Post  Erode District 638057",
     "BRANCH CODE": "AG",
@@ -23776,7 +23776,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2707,
+    "College Code": 2707,
     "COLLEGE NMAE":
       "Erode Sengunthar Engineering College (Autonomous) Thudupathi Post  Erode District 638057",
     "BRANCH CODE": "BM",
@@ -23790,7 +23790,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2707,
+    "College Code": 2707,
     "COLLEGE NMAE":
       "Erode Sengunthar Engineering College (Autonomous) Thudupathi Post  Erode District 638057",
     "BRANCH CODE": "BT",
@@ -23804,7 +23804,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2707,
+    "College Code": 2707,
     "COLLEGE NMAE":
       "Erode Sengunthar Engineering College (Autonomous) Thudupathi Post  Erode District 638057",
     "BRANCH CODE": "CD",
@@ -23818,7 +23818,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2707,
+    "College Code": 2707,
     "COLLEGE NMAE":
       "Erode Sengunthar Engineering College (Autonomous) Thudupathi Post  Erode District 638057",
     "BRANCH CODE": "CE",
@@ -23832,7 +23832,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2707,
+    "College Code": 2707,
     "COLLEGE NMAE":
       "Erode Sengunthar Engineering College (Autonomous) Thudupathi Post  Erode District 638057",
     "BRANCH CODE": "CH",
@@ -23846,7 +23846,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2707,
+    "College Code": 2707,
     "COLLEGE NMAE":
       "Erode Sengunthar Engineering College (Autonomous) Thudupathi Post  Erode District 638057",
     "BRANCH CODE": "CJ",
@@ -23861,7 +23861,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2707,
+    "College Code": 2707,
     "COLLEGE NMAE":
       "Erode Sengunthar Engineering College (Autonomous) Thudupathi Post  Erode District 638057",
     "BRANCH CODE": "CS",
@@ -23875,7 +23875,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2707,
+    "College Code": 2707,
     "COLLEGE NMAE":
       "Erode Sengunthar Engineering College (Autonomous) Thudupathi Post  Erode District 638057",
     "BRANCH CODE": "EC",
@@ -23889,7 +23889,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2707,
+    "College Code": 2707,
     "COLLEGE NMAE":
       "Erode Sengunthar Engineering College (Autonomous) Thudupathi Post  Erode District 638057",
     "BRANCH CODE": "EE",
@@ -23903,7 +23903,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2707,
+    "College Code": 2707,
     "COLLEGE NMAE":
       "Erode Sengunthar Engineering College (Autonomous) Thudupathi Post  Erode District 638057",
     "BRANCH CODE": "EI",
@@ -23917,7 +23917,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2707,
+    "College Code": 2707,
     "COLLEGE NMAE":
       "Erode Sengunthar Engineering College (Autonomous) Thudupathi Post  Erode District 638057",
     "BRANCH CODE": "IT",
@@ -23931,7 +23931,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2707,
+    "College Code": 2707,
     "COLLEGE NMAE":
       "Erode Sengunthar Engineering College (Autonomous) Thudupathi Post  Erode District 638057",
     "BRANCH CODE": "ME",
@@ -23945,7 +23945,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2707,
+    "College Code": 2707,
     "COLLEGE NMAE":
       "Erode Sengunthar Engineering College (Autonomous) Thudupathi Post  Erode District 638057",
     "BRANCH CODE": "RM",
@@ -23959,7 +23959,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2707,
+    "College Code": 2707,
     "COLLEGE NMAE":
       "Erode Sengunthar Engineering College (Autonomous) Thudupathi Post  Erode District 638057",
     "BRANCH CODE": "XM",
@@ -23973,7 +23973,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2708,
+    "College Code": 2708,
     "COLLEGE NMAE":
       "Hindusthan College of Engineering and Technology (Autonomous)  Othakkalmandapam Post  Coimbatore District 641032",
     "BRANCH CODE": "AE",
@@ -23987,7 +23987,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2708,
+    "College Code": 2708,
     "COLLEGE NMAE":
       "Hindusthan College of Engineering and Technology (Autonomous)  Othakkalmandapam Post  Coimbatore District 641032",
     "BRANCH CODE": "AG",
@@ -24001,7 +24001,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2708,
+    "College Code": 2708,
     "COLLEGE NMAE":
       "Hindusthan College of Engineering and Technology (Autonomous)  Othakkalmandapam Post  Coimbatore District 641032",
     "BRANCH CODE": "AL",
@@ -24015,7 +24015,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2708,
+    "College Code": 2708,
     "COLLEGE NMAE":
       "Hindusthan College of Engineering and Technology (Autonomous)  Othakkalmandapam Post  Coimbatore District 641032",
     "BRANCH CODE": "AU",
@@ -24029,7 +24029,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2708,
+    "College Code": 2708,
     "COLLEGE NMAE":
       "Hindusthan College of Engineering and Technology (Autonomous)  Othakkalmandapam Post  Coimbatore District 641032",
     "BRANCH CODE": "BM",
@@ -24043,7 +24043,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2708,
+    "College Code": 2708,
     "COLLEGE NMAE":
       "Hindusthan College of Engineering and Technology (Autonomous)  Othakkalmandapam Post  Coimbatore District 641032",
     "BRANCH CODE": "CE",
@@ -24057,7 +24057,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2708,
+    "College Code": 2708,
     "COLLEGE NMAE":
       "Hindusthan College of Engineering and Technology (Autonomous)  Othakkalmandapam Post  Coimbatore District 641032",
     "BRANCH CODE": "CH",
@@ -24071,7 +24071,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2708,
+    "College Code": 2708,
     "COLLEGE NMAE":
       "Hindusthan College of Engineering and Technology (Autonomous)  Othakkalmandapam Post  Coimbatore District 641032",
     "BRANCH CODE": "CS",
@@ -24085,7 +24085,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2708,
+    "College Code": 2708,
     "COLLEGE NMAE":
       "Hindusthan College of Engineering and Technology (Autonomous)  Othakkalmandapam Post  Coimbatore District 641032",
     "BRANCH CODE": "EC",
@@ -24099,7 +24099,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2708,
+    "College Code": 2708,
     "COLLEGE NMAE":
       "Hindusthan College of Engineering and Technology (Autonomous)  Othakkalmandapam Post  Coimbatore District 641032",
     "BRANCH CODE": "EE",
@@ -24113,7 +24113,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2708,
+    "College Code": 2708,
     "COLLEGE NMAE":
       "Hindusthan College of Engineering and Technology (Autonomous)  Othakkalmandapam Post  Coimbatore District 641032",
     "BRANCH CODE": "EI",
@@ -24127,7 +24127,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2708,
+    "College Code": 2708,
     "COLLEGE NMAE":
       "Hindusthan College of Engineering and Technology (Autonomous)  Othakkalmandapam Post  Coimbatore District 641032",
     "BRANCH CODE": "FD",
@@ -24141,7 +24141,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2708,
+    "College Code": 2708,
     "COLLEGE NMAE":
       "Hindusthan College of Engineering and Technology (Autonomous)  Othakkalmandapam Post  Coimbatore District 641032",
     "BRANCH CODE": "IT",
@@ -24155,7 +24155,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2708,
+    "College Code": 2708,
     "COLLEGE NMAE":
       "Hindusthan College of Engineering and Technology (Autonomous)  Othakkalmandapam Post  Coimbatore District 641032",
     "BRANCH CODE": "ME",
@@ -24169,7 +24169,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2708,
+    "College Code": 2708,
     "COLLEGE NMAE":
       "Hindusthan College of Engineering and Technology (Autonomous)  Othakkalmandapam Post  Coimbatore District 641032",
     "BRANCH CODE": "MZ",
@@ -24183,7 +24183,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2709,
+    "College Code": 2709,
     "COLLEGE NMAE":
       "Government College of Engineering (Formerly Institute of Road and Transport Technology)  Vasavi College Post Erode District 638316",
     "BRANCH CODE": "AU",
@@ -24197,7 +24197,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2709,
+    "College Code": 2709,
     "COLLEGE NMAE":
       "Government College of Engineering (Formerly Institute of Road and Transport Technology)  Vasavi College Post Erode District 638316",
     "BRANCH CODE": "CE",
@@ -24211,7 +24211,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2709,
+    "College Code": 2709,
     "COLLEGE NMAE":
       "Government College of Engineering (Formerly Institute of Road and Transport Technology)  Vasavi College Post Erode District 638316",
     "BRANCH CODE": "CS",
@@ -24225,7 +24225,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2709,
+    "College Code": 2709,
     "COLLEGE NMAE":
       "Government College of Engineering (Formerly Institute of Road and Transport Technology)  Vasavi College Post Erode District 638316",
     "BRANCH CODE": "EC",
@@ -24239,7 +24239,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2709,
+    "College Code": 2709,
     "COLLEGE NMAE":
       "Government College of Engineering (Formerly Institute of Road and Transport Technology)  Vasavi College Post Erode District 638316",
     "BRANCH CODE": "EE",
@@ -24253,7 +24253,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2709,
+    "College Code": 2709,
     "COLLEGE NMAE":
       "Government College of Engineering (Formerly Institute of Road and Transport Technology)  Vasavi College Post Erode District 638316",
     "BRANCH CODE": "IT",
@@ -24267,7 +24267,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2709,
+    "College Code": 2709,
     "COLLEGE NMAE":
       "Government College of Engineering (Formerly Institute of Road and Transport Technology)  Vasavi College Post Erode District 638316",
     "BRANCH CODE": "ME",
@@ -24281,7 +24281,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2710,
+    "College Code": 2710,
     "COLLEGE NMAE":
       "Karpagam College of Engineering (Autonomous) Othakkalmandapam  Coimbatore District 641032",
     "BRANCH CODE": "AD",
@@ -24295,7 +24295,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2710,
+    "College Code": 2710,
     "COLLEGE NMAE":
       "Karpagam College of Engineering (Autonomous) Othakkalmandapam  Coimbatore District 641032",
     "BRANCH CODE": "CD",
@@ -24309,7 +24309,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2710,
+    "College Code": 2710,
     "COLLEGE NMAE":
       "Karpagam College of Engineering (Autonomous) Othakkalmandapam  Coimbatore District 641032",
     "BRANCH CODE": "CE",
@@ -24323,7 +24323,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2710,
+    "College Code": 2710,
     "COLLEGE NMAE":
       "Karpagam College of Engineering (Autonomous) Othakkalmandapam  Coimbatore District 641032",
     "BRANCH CODE": "CS",
@@ -24337,7 +24337,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2710,
+    "College Code": 2710,
     "COLLEGE NMAE":
       "Karpagam College of Engineering (Autonomous) Othakkalmandapam  Coimbatore District 641032",
     "BRANCH CODE": "EC",
@@ -24351,7 +24351,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2710,
+    "College Code": 2710,
     "COLLEGE NMAE":
       "Karpagam College of Engineering (Autonomous) Othakkalmandapam  Coimbatore District 641032",
     "BRANCH CODE": "EE",
@@ -24365,7 +24365,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2710,
+    "College Code": 2710,
     "COLLEGE NMAE":
       "Karpagam College of Engineering (Autonomous) Othakkalmandapam  Coimbatore District 641032",
     "BRANCH CODE": "ET",
@@ -24379,7 +24379,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2710,
+    "College Code": 2710,
     "COLLEGE NMAE":
       "Karpagam College of Engineering (Autonomous) Othakkalmandapam  Coimbatore District 641032",
     "BRANCH CODE": "IT",
@@ -24393,7 +24393,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2710,
+    "College Code": 2710,
     "COLLEGE NMAE":
       "Karpagam College of Engineering (Autonomous) Othakkalmandapam  Coimbatore District 641032",
     "BRANCH CODE": "ME",
@@ -24407,7 +24407,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2710,
+    "College Code": 2710,
     "COLLEGE NMAE":
       "Karpagam College of Engineering (Autonomous) Othakkalmandapam  Coimbatore District 641032",
     "BRANCH CODE": "SC",
@@ -24421,7 +24421,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2710,
+    "College Code": 2710,
     "COLLEGE NMAE":
       "Karpagam College of Engineering (Autonomous) Othakkalmandapam  Coimbatore District 641032",
     "BRANCH CODE": "TS",
@@ -24435,7 +24435,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2711,
+    "College Code": 2711,
     "COLLEGE NMAE":
       "Kongu Engineering College (Autonomous)  Perundurai Erode District 638052",
     "BRANCH CODE": "AD",
@@ -24449,7 +24449,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2711,
+    "College Code": 2711,
     "COLLEGE NMAE":
       "Kongu Engineering College (Autonomous)  Perundurai Erode District 638052",
     "BRANCH CODE": "AL",
@@ -24463,7 +24463,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2711,
+    "College Code": 2711,
     "COLLEGE NMAE":
       "Kongu Engineering College (Autonomous)  Perundurai Erode District 638052",
     "BRANCH CODE": "AU",
@@ -24477,7 +24477,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2711,
+    "College Code": 2711,
     "COLLEGE NMAE":
       "Kongu Engineering College (Autonomous)  Perundurai Erode District 638052",
     "BRANCH CODE": "CD",
@@ -24491,7 +24491,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2711,
+    "College Code": 2711,
     "COLLEGE NMAE":
       "Kongu Engineering College (Autonomous)  Perundurai Erode District 638052",
     "BRANCH CODE": "CE",
@@ -24505,7 +24505,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2711,
+    "College Code": 2711,
     "COLLEGE NMAE":
       "Kongu Engineering College (Autonomous)  Perundurai Erode District 638052",
     "BRANCH CODE": "CH",
@@ -24519,7 +24519,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2711,
+    "College Code": 2711,
     "COLLEGE NMAE":
       "Kongu Engineering College (Autonomous)  Perundurai Erode District 638052",
     "BRANCH CODE": "CS",
@@ -24533,7 +24533,7 @@ export const collegeChoiceListR2 = [
     ST: 2,
   },
   {
-    "COLLEGE CODE": 2711,
+    "College Code": 2711,
     "COLLEGE NMAE":
       "Kongu Engineering College (Autonomous)  Perundurai Erode District 638052",
     "BRANCH CODE": "EC",
@@ -24547,7 +24547,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2711,
+    "College Code": 2711,
     "COLLEGE NMAE":
       "Kongu Engineering College (Autonomous)  Perundurai Erode District 638052",
     "BRANCH CODE": "EE",
@@ -24561,7 +24561,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2711,
+    "College Code": 2711,
     "COLLEGE NMAE":
       "Kongu Engineering College (Autonomous)  Perundurai Erode District 638052",
     "BRANCH CODE": "EI",
@@ -24575,7 +24575,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2711,
+    "College Code": 2711,
     "COLLEGE NMAE":
       "Kongu Engineering College (Autonomous)  Perundurai Erode District 638052",
     "BRANCH CODE": "FD",
@@ -24589,7 +24589,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2711,
+    "College Code": 2711,
     "COLLEGE NMAE":
       "Kongu Engineering College (Autonomous)  Perundurai Erode District 638052",
     "BRANCH CODE": "IT",
@@ -24603,7 +24603,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2711,
+    "College Code": 2711,
     "COLLEGE NMAE":
       "Kongu Engineering College (Autonomous)  Perundurai Erode District 638052",
     "BRANCH CODE": "ME",
@@ -24617,7 +24617,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2711,
+    "College Code": 2711,
     "COLLEGE NMAE":
       "Kongu Engineering College (Autonomous)  Perundurai Erode District 638052",
     "BRANCH CODE": "MZ",
@@ -24631,7 +24631,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2712,
+    "College Code": 2712,
     "COLLEGE NMAE":
       "Kumaraguru College of Technology (Autonomous) Chinnavedampatti Post  Coimbatore District 641006",
     "BRANCH CODE": "AD",
@@ -24645,7 +24645,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2712,
+    "College Code": 2712,
     "COLLEGE NMAE":
       "Kumaraguru College of Technology (Autonomous) Chinnavedampatti Post  Coimbatore District 641006",
     "BRANCH CODE": "AE",
@@ -24659,7 +24659,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2712,
+    "College Code": 2712,
     "COLLEGE NMAE":
       "Kumaraguru College of Technology (Autonomous) Chinnavedampatti Post  Coimbatore District 641006",
     "BRANCH CODE": "AU",
@@ -24673,7 +24673,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2712,
+    "College Code": 2712,
     "COLLEGE NMAE":
       "Kumaraguru College of Technology (Autonomous) Chinnavedampatti Post  Coimbatore District 641006",
     "BRANCH CODE": "BT",
@@ -24687,7 +24687,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2712,
+    "College Code": 2712,
     "COLLEGE NMAE":
       "Kumaraguru College of Technology (Autonomous) Chinnavedampatti Post  Coimbatore District 641006",
     "BRANCH CODE": "CE",
@@ -24701,7 +24701,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2712,
+    "College Code": 2712,
     "COLLEGE NMAE":
       "Kumaraguru College of Technology (Autonomous) Chinnavedampatti Post  Coimbatore District 641006",
     "BRANCH CODE": "CS",
@@ -24715,7 +24715,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2712,
+    "College Code": 2712,
     "COLLEGE NMAE":
       "Kumaraguru College of Technology (Autonomous) Chinnavedampatti Post  Coimbatore District 641006",
     "BRANCH CODE": "EC",
@@ -24729,7 +24729,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2712,
+    "College Code": 2712,
     "COLLEGE NMAE":
       "Kumaraguru College of Technology (Autonomous) Chinnavedampatti Post  Coimbatore District 641006",
     "BRANCH CODE": "EE",
@@ -24743,7 +24743,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2712,
+    "College Code": 2712,
     "COLLEGE NMAE":
       "Kumaraguru College of Technology (Autonomous) Chinnavedampatti Post  Coimbatore District 641006",
     "BRANCH CODE": "EI",
@@ -24757,7 +24757,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2712,
+    "College Code": 2712,
     "COLLEGE NMAE":
       "Kumaraguru College of Technology (Autonomous) Chinnavedampatti Post  Coimbatore District 641006",
     "BRANCH CODE": "FT",
@@ -24771,7 +24771,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2712,
+    "College Code": 2712,
     "COLLEGE NMAE":
       "Kumaraguru College of Technology (Autonomous) Chinnavedampatti Post  Coimbatore District 641006",
     "BRANCH CODE": "IT",
@@ -24785,7 +24785,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2712,
+    "College Code": 2712,
     "COLLEGE NMAE":
       "Kumaraguru College of Technology (Autonomous) Chinnavedampatti Post  Coimbatore District 641006",
     "BRANCH CODE": "ME",
@@ -24799,7 +24799,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2712,
+    "College Code": 2712,
     "COLLEGE NMAE":
       "Kumaraguru College of Technology (Autonomous) Chinnavedampatti Post  Coimbatore District 641006",
     "BRANCH CODE": "MZ",
@@ -24813,7 +24813,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2712,
+    "College Code": 2712,
     "COLLEGE NMAE":
       "Kumaraguru College of Technology (Autonomous) Chinnavedampatti Post  Coimbatore District 641006",
     "BRANCH CODE": "TX",
@@ -24827,7 +24827,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2713,
+    "College Code": 2713,
     "COLLEGE NMAE":
       "M P Nachimuthu M Jaganathan Engineering College Chennimalai  Erode District 638112",
     "BRANCH CODE": "CE",
@@ -24841,7 +24841,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2713,
+    "College Code": 2713,
     "COLLEGE NMAE":
       "M P Nachimuthu M Jaganathan Engineering College Chennimalai  Erode District 638112",
     "BRANCH CODE": "CS",
@@ -24855,7 +24855,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2713,
+    "College Code": 2713,
     "COLLEGE NMAE":
       "M P Nachimuthu M Jaganathan Engineering College Chennimalai  Erode District 638112",
     "BRANCH CODE": "EC",
@@ -24869,7 +24869,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2713,
+    "College Code": 2713,
     "COLLEGE NMAE":
       "M P Nachimuthu M Jaganathan Engineering College Chennimalai  Erode District 638112",
     "BRANCH CODE": "EE",
@@ -24883,7 +24883,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2713,
+    "College Code": 2713,
     "COLLEGE NMAE":
       "M P Nachimuthu M Jaganathan Engineering College Chennimalai  Erode District 638112",
     "BRANCH CODE": "IT",
@@ -24897,7 +24897,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2713,
+    "College Code": 2713,
     "COLLEGE NMAE":
       "M P Nachimuthu M Jaganathan Engineering College Chennimalai  Erode District 638112",
     "BRANCH CODE": "ME",
@@ -24911,7 +24911,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2715,
+    "College Code": 2715,
     "COLLEGE NMAE":
       "Nandha Engineering College (Autonomous) Pitchandampalayam Post  Erode District 638052",
     "BRANCH CODE": "AD",
@@ -24925,7 +24925,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2715,
+    "College Code": 2715,
     "COLLEGE NMAE":
       "Nandha Engineering College (Autonomous) Pitchandampalayam Post  Erode District 638052",
     "BRANCH CODE": "AG",
@@ -24939,7 +24939,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2715,
+    "College Code": 2715,
     "COLLEGE NMAE":
       "Nandha Engineering College (Autonomous) Pitchandampalayam Post  Erode District 638052",
     "BRANCH CODE": "BM",
@@ -24953,7 +24953,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2715,
+    "College Code": 2715,
     "COLLEGE NMAE":
       "Nandha Engineering College (Autonomous) Pitchandampalayam Post  Erode District 638052",
     "BRANCH CODE": "CE",
@@ -24967,7 +24967,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2715,
+    "College Code": 2715,
     "COLLEGE NMAE":
       "Nandha Engineering College (Autonomous) Pitchandampalayam Post  Erode District 638052",
     "BRANCH CODE": "CH",
@@ -24981,7 +24981,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2715,
+    "College Code": 2715,
     "COLLEGE NMAE":
       "Nandha Engineering College (Autonomous) Pitchandampalayam Post  Erode District 638052",
     "BRANCH CODE": "CI",
@@ -24995,7 +24995,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2715,
+    "College Code": 2715,
     "COLLEGE NMAE":
       "Nandha Engineering College (Autonomous) Pitchandampalayam Post  Erode District 638052",
     "BRANCH CODE": "CS",
@@ -25009,7 +25009,7 @@ export const collegeChoiceListR2 = [
     ST: 2,
   },
   {
-    "COLLEGE CODE": 2715,
+    "College Code": 2715,
     "COLLEGE NMAE":
       "Nandha Engineering College (Autonomous) Pitchandampalayam Post  Erode District 638052",
     "BRANCH CODE": "EC",
@@ -25023,7 +25023,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2715,
+    "College Code": 2715,
     "COLLEGE NMAE":
       "Nandha Engineering College (Autonomous) Pitchandampalayam Post  Erode District 638052",
     "BRANCH CODE": "EE",
@@ -25037,7 +25037,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2715,
+    "College Code": 2715,
     "COLLEGE NMAE":
       "Nandha Engineering College (Autonomous) Pitchandampalayam Post  Erode District 638052",
     "BRANCH CODE": "IT",
@@ -25051,7 +25051,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2715,
+    "College Code": 2715,
     "COLLEGE NMAE":
       "Nandha Engineering College (Autonomous) Pitchandampalayam Post  Erode District 638052",
     "BRANCH CODE": "ME",
@@ -25065,7 +25065,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2715,
+    "College Code": 2715,
     "COLLEGE NMAE":
       "Nandha Engineering College (Autonomous) Pitchandampalayam Post  Erode District 638052",
     "BRANCH CODE": "SC",
@@ -25079,7 +25079,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2716,
+    "College Code": 2716,
     "COLLEGE NMAE":
       "Park College of Engineering and Technology  Kaniyur Coimbatore District 641659",
     "BRANCH CODE": "AD",
@@ -25093,7 +25093,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2716,
+    "College Code": 2716,
     "COLLEGE NMAE":
       "Park College of Engineering and Technology  Kaniyur Coimbatore District 641659",
     "BRANCH CODE": "AE",
@@ -25107,7 +25107,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2716,
+    "College Code": 2716,
     "COLLEGE NMAE":
       "Park College of Engineering and Technology  Kaniyur Coimbatore District 641659",
     "BRANCH CODE": "AG",
@@ -25121,7 +25121,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2716,
+    "College Code": 2716,
     "COLLEGE NMAE":
       "Park College of Engineering and Technology  Kaniyur Coimbatore District 641659",
     "BRANCH CODE": "BM",
@@ -25135,7 +25135,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2716,
+    "College Code": 2716,
     "COLLEGE NMAE":
       "Park College of Engineering and Technology  Kaniyur Coimbatore District 641659",
     "BRANCH CODE": "CS",
@@ -25149,7 +25149,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2716,
+    "College Code": 2716,
     "COLLEGE NMAE":
       "Park College of Engineering and Technology  Kaniyur Coimbatore District 641659",
     "BRANCH CODE": "EC",
@@ -25163,7 +25163,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2716,
+    "College Code": 2716,
     "COLLEGE NMAE":
       "Park College of Engineering and Technology  Kaniyur Coimbatore District 641659",
     "BRANCH CODE": "EE",
@@ -25177,7 +25177,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2716,
+    "College Code": 2716,
     "COLLEGE NMAE":
       "Park College of Engineering and Technology  Kaniyur Coimbatore District 641659",
     "BRANCH CODE": "GI",
@@ -25191,7 +25191,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2716,
+    "College Code": 2716,
     "COLLEGE NMAE":
       "Park College of Engineering and Technology  Kaniyur Coimbatore District 641659",
     "BRANCH CODE": "IT",
@@ -25205,7 +25205,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2716,
+    "College Code": 2716,
     "COLLEGE NMAE":
       "Park College of Engineering and Technology  Kaniyur Coimbatore District 641659",
     "BRANCH CODE": "MD",
@@ -25219,7 +25219,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2716,
+    "College Code": 2716,
     "COLLEGE NMAE":
       "Park College of Engineering and Technology  Kaniyur Coimbatore District 641659",
     "BRANCH CODE": "ME",
@@ -25233,7 +25233,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2716,
+    "College Code": 2716,
     "COLLEGE NMAE":
       "Park College of Engineering and Technology  Kaniyur Coimbatore District 641659",
     "BRANCH CODE": "MZ",
@@ -25247,7 +25247,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2716,
+    "College Code": 2716,
     "COLLEGE NMAE":
       "Park College of Engineering and Technology  Kaniyur Coimbatore District 641659",
     "BRANCH CODE": "RM",
@@ -25261,7 +25261,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2716,
+    "College Code": 2716,
     "COLLEGE NMAE":
       "Park College of Engineering and Technology  Kaniyur Coimbatore District 641659",
     "BRANCH CODE": "SC",
@@ -25275,7 +25275,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2716,
+    "College Code": 2716,
     "COLLEGE NMAE":
       "Park College of Engineering and Technology  Kaniyur Coimbatore District 641659",
     "BRANCH CODE": "TX",
@@ -25289,7 +25289,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2717,
+    "College Code": 2717,
     "COLLEGE NMAE":
       "Sasurie College of Engineering  Vijayamangalam  Tiruppur District 638056",
     "BRANCH CODE": "AD",
@@ -25303,7 +25303,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2717,
+    "College Code": 2717,
     "COLLEGE NMAE":
       "Sasurie College of Engineering  Vijayamangalam  Tiruppur District 638056",
     "BRANCH CODE": "CE",
@@ -25317,7 +25317,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2717,
+    "College Code": 2717,
     "COLLEGE NMAE":
       "Sasurie College of Engineering  Vijayamangalam  Tiruppur District 638056",
     "BRANCH CODE": "CS",
@@ -25331,7 +25331,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2717,
+    "College Code": 2717,
     "COLLEGE NMAE":
       "Sasurie College of Engineering  Vijayamangalam  Tiruppur District 638056",
     "BRANCH CODE": "EC",
@@ -25345,7 +25345,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2717,
+    "College Code": 2717,
     "COLLEGE NMAE":
       "Sasurie College of Engineering  Vijayamangalam  Tiruppur District 638056",
     "BRANCH CODE": "EE",
@@ -25359,7 +25359,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2717,
+    "College Code": 2717,
     "COLLEGE NMAE":
       "Sasurie College of Engineering  Vijayamangalam  Tiruppur District 638056",
     "BRANCH CODE": "IT",
@@ -25373,7 +25373,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2717,
+    "College Code": 2717,
     "COLLEGE NMAE":
       "Sasurie College of Engineering  Vijayamangalam  Tiruppur District 638056",
     "BRANCH CODE": "ME",
@@ -25387,7 +25387,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2717,
+    "College Code": 2717,
     "COLLEGE NMAE":
       "Sasurie College of Engineering  Vijayamangalam  Tiruppur District 638056",
     "BRANCH CODE": "SC",
@@ -25401,7 +25401,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2718,
+    "College Code": 2718,
     "COLLEGE NMAE":
       "Sri Krishna College of Enginering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
     "BRANCH CODE": "AD",
@@ -25415,7 +25415,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2718,
+    "College Code": 2718,
     "COLLEGE NMAE":
       "Sri Krishna College of Enginering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
     "BRANCH CODE": "CB",
@@ -25429,7 +25429,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2718,
+    "College Code": 2718,
     "COLLEGE NMAE":
       "Sri Krishna College of Enginering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
     "BRANCH CODE": "CD",
@@ -25443,7 +25443,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2718,
+    "College Code": 2718,
     "COLLEGE NMAE":
       "Sri Krishna College of Enginering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
     "BRANCH CODE": "CE",
@@ -25457,7 +25457,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2718,
+    "College Code": 2718,
     "COLLEGE NMAE":
       "Sri Krishna College of Enginering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
     "BRANCH CODE": "CJ",
@@ -25472,7 +25472,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2718,
+    "College Code": 2718,
     "COLLEGE NMAE":
       "Sri Krishna College of Enginering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
     "BRANCH CODE": "CS",
@@ -25486,7 +25486,7 @@ export const collegeChoiceListR2 = [
     ST: 2,
   },
   {
-    "COLLEGE CODE": 2718,
+    "College Code": 2718,
     "COLLEGE NMAE":
       "Sri Krishna College of Enginering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
     "BRANCH CODE": "EC",
@@ -25500,7 +25500,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2718,
+    "College Code": 2718,
     "COLLEGE NMAE":
       "Sri Krishna College of Enginering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
     "BRANCH CODE": "EE",
@@ -25514,7 +25514,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2718,
+    "College Code": 2718,
     "COLLEGE NMAE":
       "Sri Krishna College of Enginering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
     "BRANCH CODE": "IT",
@@ -25528,7 +25528,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2718,
+    "College Code": 2718,
     "COLLEGE NMAE":
       "Sri Krishna College of Enginering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
     "BRANCH CODE": "ME",
@@ -25542,7 +25542,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2718,
+    "College Code": 2718,
     "COLLEGE NMAE":
       "Sri Krishna College of Enginering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
     "BRANCH CODE": "MZ",
@@ -25556,7 +25556,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2718,
+    "College Code": 2718,
     "COLLEGE NMAE":
       "Sri Krishna College of Enginering and Technology (Autonomous)   Kuniamuthur  Coimbatore District 641008",
     "BRANCH CODE": "SC",
@@ -25570,7 +25570,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2719,
+    "College Code": 2719,
     "COLLEGE NMAE":
       "Sri Ramakrishna Engineering College (Autonomous) Vattamalaipalayam  Coimbatore District 641022",
     "BRANCH CODE": "AD",
@@ -25584,7 +25584,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2719,
+    "College Code": 2719,
     "COLLEGE NMAE":
       "Sri Ramakrishna Engineering College (Autonomous) Vattamalaipalayam  Coimbatore District 641022",
     "BRANCH CODE": "AE",
@@ -25598,7 +25598,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2719,
+    "College Code": 2719,
     "COLLEGE NMAE":
       "Sri Ramakrishna Engineering College (Autonomous) Vattamalaipalayam  Coimbatore District 641022",
     "BRANCH CODE": "BM",
@@ -25612,7 +25612,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2719,
+    "College Code": 2719,
     "COLLEGE NMAE":
       "Sri Ramakrishna Engineering College (Autonomous) Vattamalaipalayam  Coimbatore District 641022",
     "BRANCH CODE": "CE",
@@ -25626,7 +25626,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2719,
+    "College Code": 2719,
     "COLLEGE NMAE":
       "Sri Ramakrishna Engineering College (Autonomous) Vattamalaipalayam  Coimbatore District 641022",
     "BRANCH CODE": "CJ",
@@ -25641,7 +25641,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2719,
+    "College Code": 2719,
     "COLLEGE NMAE":
       "Sri Ramakrishna Engineering College (Autonomous) Vattamalaipalayam  Coimbatore District 641022",
     "BRANCH CODE": "CS",
@@ -25655,7 +25655,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2719,
+    "College Code": 2719,
     "COLLEGE NMAE":
       "Sri Ramakrishna Engineering College (Autonomous) Vattamalaipalayam  Coimbatore District 641022",
     "BRANCH CODE": "EC",
@@ -25669,7 +25669,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2719,
+    "College Code": 2719,
     "COLLEGE NMAE":
       "Sri Ramakrishna Engineering College (Autonomous) Vattamalaipalayam  Coimbatore District 641022",
     "BRANCH CODE": "EE",
@@ -25683,7 +25683,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2719,
+    "College Code": 2719,
     "COLLEGE NMAE":
       "Sri Ramakrishna Engineering College (Autonomous) Vattamalaipalayam  Coimbatore District 641022",
     "BRANCH CODE": "EI",
@@ -25697,7 +25697,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2719,
+    "College Code": 2719,
     "COLLEGE NMAE":
       "Sri Ramakrishna Engineering College (Autonomous) Vattamalaipalayam  Coimbatore District 641022",
     "BRANCH CODE": "IT",
@@ -25711,7 +25711,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2719,
+    "College Code": 2719,
     "COLLEGE NMAE":
       "Sri Ramakrishna Engineering College (Autonomous) Vattamalaipalayam  Coimbatore District 641022",
     "BRANCH CODE": "ME",
@@ -25725,7 +25725,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2719,
+    "College Code": 2719,
     "COLLEGE NMAE":
       "Sri Ramakrishna Engineering College (Autonomous) Vattamalaipalayam  Coimbatore District 641022",
     "BRANCH CODE": "RM",
@@ -25739,7 +25739,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2721,
+    "College Code": 2721,
     "COLLEGE NMAE":
       "Tamilnadu College of Engineering  Karumathampatti Post Coimbatore District 641659",
     "BRANCH CODE": "AD",
@@ -25753,7 +25753,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2721,
+    "College Code": 2721,
     "COLLEGE NMAE":
       "Tamilnadu College of Engineering  Karumathampatti Post Coimbatore District 641659",
     "BRANCH CODE": "AU",
@@ -25767,7 +25767,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2721,
+    "College Code": 2721,
     "COLLEGE NMAE":
       "Tamilnadu College of Engineering  Karumathampatti Post Coimbatore District 641659",
     "BRANCH CODE": "CE",
@@ -25781,7 +25781,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2721,
+    "College Code": 2721,
     "COLLEGE NMAE":
       "Tamilnadu College of Engineering  Karumathampatti Post Coimbatore District 641659",
     "BRANCH CODE": "CS",
@@ -25795,7 +25795,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2721,
+    "College Code": 2721,
     "COLLEGE NMAE":
       "Tamilnadu College of Engineering  Karumathampatti Post Coimbatore District 641659",
     "BRANCH CODE": "EC",
@@ -25809,7 +25809,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2721,
+    "College Code": 2721,
     "COLLEGE NMAE":
       "Tamilnadu College of Engineering  Karumathampatti Post Coimbatore District 641659",
     "BRANCH CODE": "EE",
@@ -25823,7 +25823,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2721,
+    "College Code": 2721,
     "COLLEGE NMAE":
       "Tamilnadu College of Engineering  Karumathampatti Post Coimbatore District 641659",
     "BRANCH CODE": "IC",
@@ -25837,7 +25837,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2721,
+    "College Code": 2721,
     "COLLEGE NMAE":
       "Tamilnadu College of Engineering  Karumathampatti Post Coimbatore District 641659",
     "BRANCH CODE": "IT",
@@ -25851,7 +25851,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2721,
+    "College Code": 2721,
     "COLLEGE NMAE":
       "Tamilnadu College of Engineering  Karumathampatti Post Coimbatore District 641659",
     "BRANCH CODE": "ME",
@@ -25865,7 +25865,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2722,
+    "College Code": 2722,
     "COLLEGE NMAE":
       "Sri Krishna College of Technology (Autonomous) Kovaipudur Post  Coimbatore District 641042",
     "BRANCH CODE": "AD",
@@ -25879,7 +25879,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2722,
+    "College Code": 2722,
     "COLLEGE NMAE":
       "Sri Krishna College of Technology (Autonomous) Kovaipudur Post  Coimbatore District 641042",
     "BRANCH CODE": "AM",
@@ -25894,7 +25894,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2722,
+    "College Code": 2722,
     "COLLEGE NMAE":
       "Sri Krishna College of Technology (Autonomous) Kovaipudur Post  Coimbatore District 641042",
     "BRANCH CODE": "CE",
@@ -25908,7 +25908,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2722,
+    "College Code": 2722,
     "COLLEGE NMAE":
       "Sri Krishna College of Technology (Autonomous) Kovaipudur Post  Coimbatore District 641042",
     "BRANCH CODE": "CI",
@@ -25922,7 +25922,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2722,
+    "College Code": 2722,
     "COLLEGE NMAE":
       "Sri Krishna College of Technology (Autonomous) Kovaipudur Post  Coimbatore District 641042",
     "BRANCH CODE": "CS",
@@ -25936,7 +25936,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2722,
+    "College Code": 2722,
     "COLLEGE NMAE":
       "Sri Krishna College of Technology (Autonomous) Kovaipudur Post  Coimbatore District 641042",
     "BRANCH CODE": "EC",
@@ -25950,7 +25950,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2722,
+    "College Code": 2722,
     "COLLEGE NMAE":
       "Sri Krishna College of Technology (Autonomous) Kovaipudur Post  Coimbatore District 641042",
     "BRANCH CODE": "EE",
@@ -25964,7 +25964,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2722,
+    "College Code": 2722,
     "COLLEGE NMAE":
       "Sri Krishna College of Technology (Autonomous) Kovaipudur Post  Coimbatore District 641042",
     "BRANCH CODE": "IT",
@@ -25978,7 +25978,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2722,
+    "College Code": 2722,
     "COLLEGE NMAE":
       "Sri Krishna College of Technology (Autonomous) Kovaipudur Post  Coimbatore District 641042",
     "BRANCH CODE": "ME",
@@ -25992,7 +25992,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2722,
+    "College Code": 2722,
     "COLLEGE NMAE":
       "Sri Krishna College of Technology (Autonomous) Kovaipudur Post  Coimbatore District 641042",
     "BRANCH CODE": "SC",
@@ -26006,7 +26006,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2723,
+    "College Code": 2723,
     "COLLEGE NMAE":
       "Velalar College of Engineering and Technology (Autonomous)  Thindal Post  Erode District 638012",
     "BRANCH CODE": "AD",
@@ -26020,7 +26020,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2723,
+    "College Code": 2723,
     "COLLEGE NMAE":
       "Velalar College of Engineering and Technology (Autonomous)  Thindal Post  Erode District 638012",
     "BRANCH CODE": "AM",
@@ -26035,7 +26035,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2723,
+    "College Code": 2723,
     "COLLEGE NMAE":
       "Velalar College of Engineering and Technology (Autonomous)  Thindal Post  Erode District 638012",
     "BRANCH CODE": "BM",
@@ -26049,7 +26049,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2723,
+    "College Code": 2723,
     "COLLEGE NMAE":
       "Velalar College of Engineering and Technology (Autonomous)  Thindal Post  Erode District 638012",
     "BRANCH CODE": "CE",
@@ -26063,7 +26063,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2723,
+    "College Code": 2723,
     "COLLEGE NMAE":
       "Velalar College of Engineering and Technology (Autonomous)  Thindal Post  Erode District 638012",
     "BRANCH CODE": "CS",
@@ -26077,7 +26077,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2723,
+    "College Code": 2723,
     "COLLEGE NMAE":
       "Velalar College of Engineering and Technology (Autonomous)  Thindal Post  Erode District 638012",
     "BRANCH CODE": "EC",
@@ -26091,7 +26091,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2723,
+    "College Code": 2723,
     "COLLEGE NMAE":
       "Velalar College of Engineering and Technology (Autonomous)  Thindal Post  Erode District 638012",
     "BRANCH CODE": "EE",
@@ -26105,7 +26105,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2723,
+    "College Code": 2723,
     "COLLEGE NMAE":
       "Velalar College of Engineering and Technology (Autonomous)  Thindal Post  Erode District 638012",
     "BRANCH CODE": "IT",
@@ -26119,7 +26119,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2723,
+    "College Code": 2723,
     "COLLEGE NMAE":
       "Velalar College of Engineering and Technology (Autonomous)  Thindal Post  Erode District 638012",
     "BRANCH CODE": "MD",
@@ -26133,7 +26133,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2723,
+    "College Code": 2723,
     "COLLEGE NMAE":
       "Velalar College of Engineering and Technology (Autonomous)  Thindal Post  Erode District 638012",
     "BRANCH CODE": "ME",
@@ -26147,7 +26147,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2725,
+    "College Code": 2725,
     "COLLEGE NMAE":
       "Sri Ramakrishna Institute of Technology (Autonomous) Pachapalayam  Coimbatore District 641010",
     "BRANCH CODE": "CS",
@@ -26161,7 +26161,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2725,
+    "College Code": 2725,
     "COLLEGE NMAE":
       "Sri Ramakrishna Institute of Technology (Autonomous) Pachapalayam  Coimbatore District 641010",
     "BRANCH CODE": "EC",
@@ -26175,7 +26175,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2725,
+    "College Code": 2725,
     "COLLEGE NMAE":
       "Sri Ramakrishna Institute of Technology (Autonomous) Pachapalayam  Coimbatore District 641010",
     "BRANCH CODE": "EE",
@@ -26189,7 +26189,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2725,
+    "College Code": 2725,
     "COLLEGE NMAE":
       "Sri Ramakrishna Institute of Technology (Autonomous) Pachapalayam  Coimbatore District 641010",
     "BRANCH CODE": "IT",
@@ -26203,7 +26203,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2725,
+    "College Code": 2725,
     "COLLEGE NMAE":
       "Sri Ramakrishna Institute of Technology (Autonomous) Pachapalayam  Coimbatore District 641010",
     "BRANCH CODE": "ME",
@@ -26217,7 +26217,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2726,
+    "College Code": 2726,
     "COLLEGE NMAE":
       "SNS College of Technology (Autonomous)  Kalappatti Post Coimbatore District 641035",
     "BRANCH CODE": "AG",
@@ -26231,7 +26231,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2726,
+    "College Code": 2726,
     "COLLEGE NMAE":
       "SNS College of Technology (Autonomous)  Kalappatti Post Coimbatore District 641035",
     "BRANCH CODE": "AL",
@@ -26245,7 +26245,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2726,
+    "College Code": 2726,
     "COLLEGE NMAE":
       "SNS College of Technology (Autonomous)  Kalappatti Post Coimbatore District 641035",
     "BRANCH CODE": "AO",
@@ -26259,7 +26259,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2726,
+    "College Code": 2726,
     "COLLEGE NMAE":
       "SNS College of Technology (Autonomous)  Kalappatti Post Coimbatore District 641035",
     "BRANCH CODE": "AU",
@@ -26273,7 +26273,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2726,
+    "College Code": 2726,
     "COLLEGE NMAE":
       "SNS College of Technology (Autonomous)  Kalappatti Post Coimbatore District 641035",
     "BRANCH CODE": "BM",
@@ -26287,7 +26287,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2726,
+    "College Code": 2726,
     "COLLEGE NMAE":
       "SNS College of Technology (Autonomous)  Kalappatti Post Coimbatore District 641035",
     "BRANCH CODE": "CE",
@@ -26301,7 +26301,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2726,
+    "College Code": 2726,
     "COLLEGE NMAE":
       "SNS College of Technology (Autonomous)  Kalappatti Post Coimbatore District 641035",
     "BRANCH CODE": "CS",
@@ -26315,7 +26315,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2726,
+    "College Code": 2726,
     "COLLEGE NMAE":
       "SNS College of Technology (Autonomous)  Kalappatti Post Coimbatore District 641035",
     "BRANCH CODE": "EC",
@@ -26329,7 +26329,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2726,
+    "College Code": 2726,
     "COLLEGE NMAE":
       "SNS College of Technology (Autonomous)  Kalappatti Post Coimbatore District 641035",
     "BRANCH CODE": "EE",
@@ -26343,7 +26343,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2726,
+    "College Code": 2726,
     "COLLEGE NMAE":
       "SNS College of Technology (Autonomous)  Kalappatti Post Coimbatore District 641035",
     "BRANCH CODE": "FD",
@@ -26357,7 +26357,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2726,
+    "College Code": 2726,
     "COLLEGE NMAE":
       "SNS College of Technology (Autonomous)  Kalappatti Post Coimbatore District 641035",
     "BRANCH CODE": "IT",
@@ -26371,7 +26371,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2726,
+    "College Code": 2726,
     "COLLEGE NMAE":
       "SNS College of Technology (Autonomous)  Kalappatti Post Coimbatore District 641035",
     "BRANCH CODE": "ME",
@@ -26385,7 +26385,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2726,
+    "College Code": 2726,
     "COLLEGE NMAE":
       "SNS College of Technology (Autonomous)  Kalappatti Post Coimbatore District 641035",
     "BRANCH CODE": "MZ",
@@ -26399,7 +26399,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2727,
+    "College Code": 2727,
     "COLLEGE NMAE":
       "Sri Shakthi Institute of Engineering and Technology (Autonomous)  L&T Bye-Pass  Venkitapuram Post Comibatore District 641062",
     "BRANCH CODE": "AD",
@@ -26413,7 +26413,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2727,
+    "College Code": 2727,
     "COLLEGE NMAE":
       "Sri Shakthi Institute of Engineering and Technology (Autonomous)  L&T Bye-Pass  Venkitapuram Post Comibatore District 641062",
     "BRANCH CODE": "AG",
@@ -26427,7 +26427,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2727,
+    "College Code": 2727,
     "COLLEGE NMAE":
       "Sri Shakthi Institute of Engineering and Technology (Autonomous)  L&T Bye-Pass  Venkitapuram Post Comibatore District 641062",
     "BRANCH CODE": "AL",
@@ -26441,7 +26441,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2727,
+    "College Code": 2727,
     "COLLEGE NMAE":
       "Sri Shakthi Institute of Engineering and Technology (Autonomous)  L&T Bye-Pass  Venkitapuram Post Comibatore District 641062",
     "BRANCH CODE": "BM",
@@ -26455,7 +26455,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2727,
+    "College Code": 2727,
     "COLLEGE NMAE":
       "Sri Shakthi Institute of Engineering and Technology (Autonomous)  L&T Bye-Pass  Venkitapuram Post Comibatore District 641062",
     "BRANCH CODE": "BT",
@@ -26469,7 +26469,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2727,
+    "College Code": 2727,
     "COLLEGE NMAE":
       "Sri Shakthi Institute of Engineering and Technology (Autonomous)  L&T Bye-Pass  Venkitapuram Post Comibatore District 641062",
     "BRANCH CODE": "CE",
@@ -26483,7 +26483,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2727,
+    "College Code": 2727,
     "COLLEGE NMAE":
       "Sri Shakthi Institute of Engineering and Technology (Autonomous)  L&T Bye-Pass  Venkitapuram Post Comibatore District 641062",
     "BRANCH CODE": "CS",
@@ -26497,7 +26497,7 @@ export const collegeChoiceListR2 = [
     ST: 2,
   },
   {
-    "COLLEGE CODE": 2727,
+    "College Code": 2727,
     "COLLEGE NMAE":
       "Sri Shakthi Institute of Engineering and Technology (Autonomous)  L&T Bye-Pass  Venkitapuram Post Comibatore District 641062",
     "BRANCH CODE": "EC",
@@ -26511,7 +26511,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2727,
+    "College Code": 2727,
     "COLLEGE NMAE":
       "Sri Shakthi Institute of Engineering and Technology (Autonomous)  L&T Bye-Pass  Venkitapuram Post Comibatore District 641062",
     "BRANCH CODE": "EE",
@@ -26525,7 +26525,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2727,
+    "College Code": 2727,
     "COLLEGE NMAE":
       "Sri Shakthi Institute of Engineering and Technology (Autonomous)  L&T Bye-Pass  Venkitapuram Post Comibatore District 641062",
     "BRANCH CODE": "FD",
@@ -26539,7 +26539,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2727,
+    "College Code": 2727,
     "COLLEGE NMAE":
       "Sri Shakthi Institute of Engineering and Technology (Autonomous)  L&T Bye-Pass  Venkitapuram Post Comibatore District 641062",
     "BRANCH CODE": "IT",
@@ -26553,7 +26553,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2727,
+    "College Code": 2727,
     "COLLEGE NMAE":
       "Sri Shakthi Institute of Engineering and Technology (Autonomous)  L&T Bye-Pass  Venkitapuram Post Comibatore District 641062",
     "BRANCH CODE": "ME",
@@ -26567,7 +26567,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2727,
+    "College Code": 2727,
     "COLLEGE NMAE":
       "Sri Shakthi Institute of Engineering and Technology (Autonomous)  L&T Bye-Pass  Venkitapuram Post Comibatore District 641062",
     "BRANCH CODE": "SC",
@@ -26581,7 +26581,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2729,
+    "College Code": 2729,
     "COLLEGE NMAE":
       "Nehru Institute of Engineering and Technology Thirumalayampalayam Post  Coimbatore District 641105",
     "BRANCH CODE": "AD",
@@ -26595,7 +26595,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2729,
+    "College Code": 2729,
     "COLLEGE NMAE":
       "Nehru Institute of Engineering and Technology Thirumalayampalayam Post  Coimbatore District 641105",
     "BRANCH CODE": "AE",
@@ -26609,7 +26609,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2729,
+    "College Code": 2729,
     "COLLEGE NMAE":
       "Nehru Institute of Engineering and Technology Thirumalayampalayam Post  Coimbatore District 641105",
     "BRANCH CODE": "CB",
@@ -26623,7 +26623,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2729,
+    "College Code": 2729,
     "COLLEGE NMAE":
       "Nehru Institute of Engineering and Technology Thirumalayampalayam Post  Coimbatore District 641105",
     "BRANCH CODE": "CS",
@@ -26637,7 +26637,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2729,
+    "College Code": 2729,
     "COLLEGE NMAE":
       "Nehru Institute of Engineering and Technology Thirumalayampalayam Post  Coimbatore District 641105",
     "BRANCH CODE": "EC",
@@ -26651,7 +26651,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2729,
+    "College Code": 2729,
     "COLLEGE NMAE":
       "Nehru Institute of Engineering and Technology Thirumalayampalayam Post  Coimbatore District 641105",
     "BRANCH CODE": "EE",
@@ -26665,7 +26665,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2729,
+    "College Code": 2729,
     "COLLEGE NMAE":
       "Nehru Institute of Engineering and Technology Thirumalayampalayam Post  Coimbatore District 641105",
     "BRANCH CODE": "IT",
@@ -26679,7 +26679,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2729,
+    "College Code": 2729,
     "COLLEGE NMAE":
       "Nehru Institute of Engineering and Technology Thirumalayampalayam Post  Coimbatore District 641105",
     "BRANCH CODE": "ME",
@@ -26693,7 +26693,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2729,
+    "College Code": 2729,
     "COLLEGE NMAE":
       "Nehru Institute of Engineering and Technology Thirumalayampalayam Post  Coimbatore District 641105",
     "BRANCH CODE": "MZ",
@@ -26707,7 +26707,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2731,
+    "College Code": 2731,
     "COLLEGE NMAE":
       "R V S College of Engineering and Technology Kannampalayam  Sulur  Coimbatore District 641402",
     "BRANCH CODE": "AD",
@@ -26721,7 +26721,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2731,
+    "College Code": 2731,
     "COLLEGE NMAE":
       "R V S College of Engineering and Technology Kannampalayam  Sulur  Coimbatore District 641402",
     "BRANCH CODE": "CS",
@@ -26735,7 +26735,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2731,
+    "College Code": 2731,
     "COLLEGE NMAE":
       "R V S College of Engineering and Technology Kannampalayam  Sulur  Coimbatore District 641402",
     "BRANCH CODE": "EC",
@@ -26749,7 +26749,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2731,
+    "College Code": 2731,
     "COLLEGE NMAE":
       "R V S College of Engineering and Technology Kannampalayam  Sulur  Coimbatore District 641402",
     "BRANCH CODE": "EE",
@@ -26763,7 +26763,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2731,
+    "College Code": 2731,
     "COLLEGE NMAE":
       "R V S College of Engineering and Technology Kannampalayam  Sulur  Coimbatore District 641402",
     "BRANCH CODE": "IT",
@@ -26777,7 +26777,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2731,
+    "College Code": 2731,
     "COLLEGE NMAE":
       "R V S College of Engineering and Technology Kannampalayam  Sulur  Coimbatore District 641402",
     "BRANCH CODE": "ME",
@@ -26791,7 +26791,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2731,
+    "College Code": 2731,
     "COLLEGE NMAE":
       "R V S College of Engineering and Technology Kannampalayam  Sulur  Coimbatore District 641402",
     "BRANCH CODE": "PC",
@@ -26805,7 +26805,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2732,
+    "College Code": 2732,
     "COLLEGE NMAE":
       "Info Institute of Engineering  Sarkar Samakulam Coimbatore District 641107",
     "BRANCH CODE": "AD",
@@ -26819,7 +26819,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2732,
+    "College Code": 2732,
     "COLLEGE NMAE":
       "Info Institute of Engineering  Sarkar Samakulam Coimbatore District 641107",
     "BRANCH CODE": "CS",
@@ -26833,7 +26833,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2732,
+    "College Code": 2732,
     "COLLEGE NMAE":
       "Info Institute of Engineering  Sarkar Samakulam Coimbatore District 641107",
     "BRANCH CODE": "EC",
@@ -26847,7 +26847,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2732,
+    "College Code": 2732,
     "COLLEGE NMAE":
       "Info Institute of Engineering  Sarkar Samakulam Coimbatore District 641107",
     "BRANCH CODE": "EE",
@@ -26861,7 +26861,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2732,
+    "College Code": 2732,
     "COLLEGE NMAE":
       "Info Institute of Engineering  Sarkar Samakulam Coimbatore District 641107",
     "BRANCH CODE": "IT",
@@ -26875,7 +26875,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2732,
+    "College Code": 2732,
     "COLLEGE NMAE":
       "Info Institute of Engineering  Sarkar Samakulam Coimbatore District 641107",
     "BRANCH CODE": "ME",
@@ -26889,7 +26889,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2733,
+    "College Code": 2733,
     "COLLEGE NMAE":
       "Angel College of Engineering and Technology  P.K.Palayam Ugayanur Village  Tirupur District 641 665",
     "BRANCH CODE": "CE",
@@ -26903,7 +26903,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2733,
+    "College Code": 2733,
     "COLLEGE NMAE":
       "Angel College of Engineering and Technology  P.K.Palayam Ugayanur Village  Tirupur District 641 665",
     "BRANCH CODE": "CS",
@@ -26917,7 +26917,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2733,
+    "College Code": 2733,
     "COLLEGE NMAE":
       "Angel College of Engineering and Technology  P.K.Palayam Ugayanur Village  Tirupur District 641 665",
     "BRANCH CODE": "EC",
@@ -26931,7 +26931,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2733,
+    "College Code": 2733,
     "COLLEGE NMAE":
       "Angel College of Engineering and Technology  P.K.Palayam Ugayanur Village  Tirupur District 641 665",
     "BRANCH CODE": "EE",
@@ -26945,7 +26945,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2733,
+    "College Code": 2733,
     "COLLEGE NMAE":
       "Angel College of Engineering and Technology  P.K.Palayam Ugayanur Village  Tirupur District 641 665",
     "BRANCH CODE": "FT",
@@ -26959,7 +26959,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2733,
+    "College Code": 2733,
     "COLLEGE NMAE":
       "Angel College of Engineering and Technology  P.K.Palayam Ugayanur Village  Tirupur District 641 665",
     "BRANCH CODE": "ME",
@@ -26973,7 +26973,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2734,
+    "College Code": 2734,
     "COLLEGE NMAE":
       "SNS College of Engineering (Autonomous)  Sathy Main Road  Kurumbapalayam Post  Coimbatore District 641107",
     "BRANCH CODE": "AD",
@@ -26987,7 +26987,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2734,
+    "College Code": 2734,
     "COLLEGE NMAE":
       "SNS College of Engineering (Autonomous)  Sathy Main Road  Kurumbapalayam Post  Coimbatore District 641107",
     "BRANCH CODE": "CD",
@@ -27001,7 +27001,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2734,
+    "College Code": 2734,
     "COLLEGE NMAE":
       "SNS College of Engineering (Autonomous)  Sathy Main Road  Kurumbapalayam Post  Coimbatore District 641107",
     "BRANCH CODE": "CS",
@@ -27015,7 +27015,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2734,
+    "College Code": 2734,
     "COLLEGE NMAE":
       "SNS College of Engineering (Autonomous)  Sathy Main Road  Kurumbapalayam Post  Coimbatore District 641107",
     "BRANCH CODE": "EC",
@@ -27029,7 +27029,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2734,
+    "College Code": 2734,
     "COLLEGE NMAE":
       "SNS College of Engineering (Autonomous)  Sathy Main Road  Kurumbapalayam Post  Coimbatore District 641107",
     "BRANCH CODE": "EE",
@@ -27043,7 +27043,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2734,
+    "College Code": 2734,
     "COLLEGE NMAE":
       "SNS College of Engineering (Autonomous)  Sathy Main Road  Kurumbapalayam Post  Coimbatore District 641107",
     "BRANCH CODE": "IT",
@@ -27057,7 +27057,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2734,
+    "College Code": 2734,
     "COLLEGE NMAE":
       "SNS College of Engineering (Autonomous)  Sathy Main Road  Kurumbapalayam Post  Coimbatore District 641107",
     "BRANCH CODE": "ME",
@@ -27071,7 +27071,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2734,
+    "College Code": 2734,
     "COLLEGE NMAE":
       "SNS College of Engineering (Autonomous)  Sathy Main Road  Kurumbapalayam Post  Coimbatore District 641107",
     "BRANCH CODE": "MO",
@@ -27086,7 +27086,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2734,
+    "College Code": 2734,
     "COLLEGE NMAE":
       "SNS College of Engineering (Autonomous)  Sathy Main Road  Kurumbapalayam Post  Coimbatore District 641107",
     "BRANCH CODE": "SB",
@@ -27101,7 +27101,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2734,
+    "College Code": 2734,
     "COLLEGE NMAE":
       "SNS College of Engineering (Autonomous)  Sathy Main Road  Kurumbapalayam Post  Coimbatore District 641107",
     "BRANCH CODE": "TS",
@@ -27115,7 +27115,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2735,
+    "College Code": 2735,
     "COLLEGE NMAE":
       "Karpagam Institute of Technology  Seerapalayam Village L&T By pass Road  Coimbatore District 641021",
     "BRANCH CODE": "AD",
@@ -27129,7 +27129,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2735,
+    "College Code": 2735,
     "COLLEGE NMAE":
       "Karpagam Institute of Technology  Seerapalayam Village L&T By pass Road  Coimbatore District 641021",
     "BRANCH CODE": "CS",
@@ -27143,7 +27143,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2735,
+    "College Code": 2735,
     "COLLEGE NMAE":
       "Karpagam Institute of Technology  Seerapalayam Village L&T By pass Road  Coimbatore District 641021",
     "BRANCH CODE": "EC",
@@ -27157,7 +27157,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2735,
+    "College Code": 2735,
     "COLLEGE NMAE":
       "Karpagam Institute of Technology  Seerapalayam Village L&T By pass Road  Coimbatore District 641021",
     "BRANCH CODE": "EE",
@@ -27171,7 +27171,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2735,
+    "College Code": 2735,
     "COLLEGE NMAE":
       "Karpagam Institute of Technology  Seerapalayam Village L&T By pass Road  Coimbatore District 641021",
     "BRANCH CODE": "IT",
@@ -27185,7 +27185,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2735,
+    "College Code": 2735,
     "COLLEGE NMAE":
       "Karpagam Institute of Technology  Seerapalayam Village L&T By pass Road  Coimbatore District 641021",
     "BRANCH CODE": "ME",
@@ -27199,7 +27199,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2736,
+    "College Code": 2736,
     "COLLEGE NMAE":
       "Dr. N G P Institute of Technology  (Autonomous) Kalapatti Road  Coimbatore District 641035",
     "BRANCH CODE": "AD",
@@ -27213,7 +27213,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2736,
+    "College Code": 2736,
     "COLLEGE NMAE":
       "Dr. N G P Institute of Technology  (Autonomous) Kalapatti Road  Coimbatore District 641035",
     "BRANCH CODE": "BM",
@@ -27227,7 +27227,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2736,
+    "College Code": 2736,
     "COLLEGE NMAE":
       "Dr. N G P Institute of Technology  (Autonomous) Kalapatti Road  Coimbatore District 641035",
     "BRANCH CODE": "CB",
@@ -27241,7 +27241,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2736,
+    "College Code": 2736,
     "COLLEGE NMAE":
       "Dr. N G P Institute of Technology  (Autonomous) Kalapatti Road  Coimbatore District 641035",
     "BRANCH CODE": "CE",
@@ -27255,7 +27255,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2736,
+    "College Code": 2736,
     "COLLEGE NMAE":
       "Dr. N G P Institute of Technology  (Autonomous) Kalapatti Road  Coimbatore District 641035",
     "BRANCH CODE": "CS",
@@ -27269,7 +27269,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2736,
+    "College Code": 2736,
     "COLLEGE NMAE":
       "Dr. N G P Institute of Technology  (Autonomous) Kalapatti Road  Coimbatore District 641035",
     "BRANCH CODE": "EC",
@@ -27283,7 +27283,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2736,
+    "College Code": 2736,
     "COLLEGE NMAE":
       "Dr. N G P Institute of Technology  (Autonomous) Kalapatti Road  Coimbatore District 641035",
     "BRANCH CODE": "EE",
@@ -27297,7 +27297,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2736,
+    "College Code": 2736,
     "COLLEGE NMAE":
       "Dr. N G P Institute of Technology  (Autonomous) Kalapatti Road  Coimbatore District 641035",
     "BRANCH CODE": "IT",
@@ -27311,7 +27311,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2736,
+    "College Code": 2736,
     "COLLEGE NMAE":
       "Dr. N G P Institute of Technology  (Autonomous) Kalapatti Road  Coimbatore District 641035",
     "BRANCH CODE": "ME",
@@ -27325,7 +27325,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2736,
+    "College Code": 2736,
     "COLLEGE NMAE":
       "Dr. N G P Institute of Technology  (Autonomous) Kalapatti Road  Coimbatore District 641035",
     "BRANCH CODE": "SC",
@@ -27339,7 +27339,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2737,
+    "College Code": 2737,
     "COLLEGE NMAE":
       "Sri Sai Ranganathan Engineering College Zahirnaickenpalayam Village  Viraliyur Post  Thondamuthur Via  Coimbatore District 641109",
     "BRANCH CODE": "AM",
@@ -27354,7 +27354,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2737,
+    "College Code": 2737,
     "COLLEGE NMAE":
       "Sri Sai Ranganathan Engineering College Zahirnaickenpalayam Village  Viraliyur Post  Thondamuthur Via  Coimbatore District 641109",
     "BRANCH CODE": "CE",
@@ -27368,7 +27368,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2737,
+    "College Code": 2737,
     "COLLEGE NMAE":
       "Sri Sai Ranganathan Engineering College Zahirnaickenpalayam Village  Viraliyur Post  Thondamuthur Via  Coimbatore District 641109",
     "BRANCH CODE": "CS",
@@ -27382,7 +27382,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2737,
+    "College Code": 2737,
     "COLLEGE NMAE":
       "Sri Sai Ranganathan Engineering College Zahirnaickenpalayam Village  Viraliyur Post  Thondamuthur Via  Coimbatore District 641109",
     "BRANCH CODE": "EC",
@@ -27396,7 +27396,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2737,
+    "College Code": 2737,
     "COLLEGE NMAE":
       "Sri Sai Ranganathan Engineering College Zahirnaickenpalayam Village  Viraliyur Post  Thondamuthur Via  Coimbatore District 641109",
     "BRANCH CODE": "EE",
@@ -27410,7 +27410,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2737,
+    "College Code": 2737,
     "COLLEGE NMAE":
       "Sri Sai Ranganathan Engineering College Zahirnaickenpalayam Village  Viraliyur Post  Thondamuthur Via  Coimbatore District 641109",
     "BRANCH CODE": "IT",
@@ -27424,7 +27424,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2737,
+    "College Code": 2737,
     "COLLEGE NMAE":
       "Sri Sai Ranganathan Engineering College Zahirnaickenpalayam Village  Viraliyur Post  Thondamuthur Via  Coimbatore District 641109",
     "BRANCH CODE": "ME",
@@ -27438,7 +27438,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2737,
+    "College Code": 2737,
     "COLLEGE NMAE":
       "Sri Sai Ranganathan Engineering College Zahirnaickenpalayam Village  Viraliyur Post  Thondamuthur Via  Coimbatore District 641109",
     "BRANCH CODE": "SC",
@@ -27452,7 +27452,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2739,
+    "College Code": 2739,
     "COLLEGE NMAE":
       "Sri Eshwar College of Engineering (Autonomous) Kondampatti Post  Vadasithur (Via)  Kinathukadavu Coimbatore District 641202",
     "BRANCH CODE": "AD",
@@ -27466,7 +27466,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2739,
+    "College Code": 2739,
     "COLLEGE NMAE":
       "Sri Eshwar College of Engineering (Autonomous) Kondampatti Post  Vadasithur (Via)  Kinathukadavu Coimbatore District 641202",
     "BRANCH CODE": "AM",
@@ -27481,7 +27481,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2739,
+    "College Code": 2739,
     "COLLEGE NMAE":
       "Sri Eshwar College of Engineering (Autonomous) Kondampatti Post  Vadasithur (Via)  Kinathukadavu Coimbatore District 641202",
     "BRANCH CODE": "CB",
@@ -27495,7 +27495,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2739,
+    "College Code": 2739,
     "COLLEGE NMAE":
       "Sri Eshwar College of Engineering (Autonomous) Kondampatti Post  Vadasithur (Via)  Kinathukadavu Coimbatore District 641202",
     "BRANCH CODE": "CO",
@@ -27509,7 +27509,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2739,
+    "College Code": 2739,
     "COLLEGE NMAE":
       "Sri Eshwar College of Engineering (Autonomous) Kondampatti Post  Vadasithur (Via)  Kinathukadavu Coimbatore District 641202",
     "BRANCH CODE": "CS",
@@ -27523,7 +27523,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2739,
+    "College Code": 2739,
     "COLLEGE NMAE":
       "Sri Eshwar College of Engineering (Autonomous) Kondampatti Post  Vadasithur (Via)  Kinathukadavu Coimbatore District 641202",
     "BRANCH CODE": "EC",
@@ -27537,7 +27537,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2739,
+    "College Code": 2739,
     "COLLEGE NMAE":
       "Sri Eshwar College of Engineering (Autonomous) Kondampatti Post  Vadasithur (Via)  Kinathukadavu Coimbatore District 641202",
     "BRANCH CODE": "EE",
@@ -27551,7 +27551,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2739,
+    "College Code": 2739,
     "COLLEGE NMAE":
       "Sri Eshwar College of Engineering (Autonomous) Kondampatti Post  Vadasithur (Via)  Kinathukadavu Coimbatore District 641202",
     "BRANCH CODE": "IT",
@@ -27565,7 +27565,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2739,
+    "College Code": 2739,
     "COLLEGE NMAE":
       "Sri Eshwar College of Engineering (Autonomous) Kondampatti Post  Vadasithur (Via)  Kinathukadavu Coimbatore District 641202",
     "BRANCH CODE": "ME",
@@ -27579,7 +27579,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2740,
+    "College Code": 2740,
     "COLLEGE NMAE":
       "Hindusthan Institute of Technology (Autonomous) Othakkalmandapam  Coimbatore District 641032",
     "BRANCH CODE": "AD",
@@ -27593,7 +27593,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2740,
+    "College Code": 2740,
     "COLLEGE NMAE":
       "Hindusthan Institute of Technology (Autonomous) Othakkalmandapam  Coimbatore District 641032",
     "BRANCH CODE": "AE",
@@ -27607,7 +27607,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2740,
+    "College Code": 2740,
     "COLLEGE NMAE":
       "Hindusthan Institute of Technology (Autonomous) Othakkalmandapam  Coimbatore District 641032",
     "BRANCH CODE": "CS",
@@ -27621,7 +27621,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2740,
+    "College Code": 2740,
     "COLLEGE NMAE":
       "Hindusthan Institute of Technology (Autonomous) Othakkalmandapam  Coimbatore District 641032",
     "BRANCH CODE": "EC",
@@ -27635,7 +27635,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2740,
+    "College Code": 2740,
     "COLLEGE NMAE":
       "Hindusthan Institute of Technology (Autonomous) Othakkalmandapam  Coimbatore District 641032",
     "BRANCH CODE": "IT",
@@ -27649,7 +27649,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2740,
+    "College Code": 2740,
     "COLLEGE NMAE":
       "Hindusthan Institute of Technology (Autonomous) Othakkalmandapam  Coimbatore District 641032",
     "BRANCH CODE": "ME",
@@ -27663,7 +27663,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2741,
+    "College Code": 2741,
     "COLLEGE NMAE":
       "P A College of Engineering and Technology (Autonomous) Palladam Road  Pollachi  Coimbatore District 642002",
     "BRANCH CODE": "AD",
@@ -27677,7 +27677,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2741,
+    "College Code": 2741,
     "COLLEGE NMAE":
       "P A College of Engineering and Technology (Autonomous) Palladam Road  Pollachi  Coimbatore District 642002",
     "BRANCH CODE": "CS",
@@ -27691,7 +27691,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2741,
+    "College Code": 2741,
     "COLLEGE NMAE":
       "P A College of Engineering and Technology (Autonomous) Palladam Road  Pollachi  Coimbatore District 642002",
     "BRANCH CODE": "EC",
@@ -27705,7 +27705,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2741,
+    "College Code": 2741,
     "COLLEGE NMAE":
       "P A College of Engineering and Technology (Autonomous) Palladam Road  Pollachi  Coimbatore District 642002",
     "BRANCH CODE": "EE",
@@ -27719,7 +27719,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2741,
+    "College Code": 2741,
     "COLLEGE NMAE":
       "P A College of Engineering and Technology (Autonomous) Palladam Road  Pollachi  Coimbatore District 642002",
     "BRANCH CODE": "IT",
@@ -27733,7 +27733,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2741,
+    "College Code": 2741,
     "COLLEGE NMAE":
       "P A College of Engineering and Technology (Autonomous) Palladam Road  Pollachi  Coimbatore District 642002",
     "BRANCH CODE": "ME",
@@ -27747,7 +27747,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2743,
+    "College Code": 2743,
     "COLLEGE NMAE":
       "Dhanalakshmi Srinivasan College of Engineering (CBE) NH47  Palakkad Main Road  Navakkarai Post  Near Nandhi Temple  Coimbatore District 641105",
     "BRANCH CODE": "AD",
@@ -27761,7 +27761,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2743,
+    "College Code": 2743,
     "COLLEGE NMAE":
       "Dhanalakshmi Srinivasan College of Engineering (CBE) NH47  Palakkad Main Road  Navakkarai Post  Near Nandhi Temple  Coimbatore District 641105",
     "BRANCH CODE": "AG",
@@ -27775,7 +27775,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2743,
+    "College Code": 2743,
     "COLLEGE NMAE":
       "Dhanalakshmi Srinivasan College of Engineering (CBE) NH47  Palakkad Main Road  Navakkarai Post  Near Nandhi Temple  Coimbatore District 641105",
     "BRANCH CODE": "BM",
@@ -27789,7 +27789,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2743,
+    "College Code": 2743,
     "COLLEGE NMAE":
       "Dhanalakshmi Srinivasan College of Engineering (CBE) NH47  Palakkad Main Road  Navakkarai Post  Near Nandhi Temple  Coimbatore District 641105",
     "BRANCH CODE": "CE",
@@ -27803,7 +27803,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2743,
+    "College Code": 2743,
     "COLLEGE NMAE":
       "Dhanalakshmi Srinivasan College of Engineering (CBE) NH47  Palakkad Main Road  Navakkarai Post  Near Nandhi Temple  Coimbatore District 641105",
     "BRANCH CODE": "CS",
@@ -27817,7 +27817,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2743,
+    "College Code": 2743,
     "COLLEGE NMAE":
       "Dhanalakshmi Srinivasan College of Engineering (CBE) NH47  Palakkad Main Road  Navakkarai Post  Near Nandhi Temple  Coimbatore District 641105",
     "BRANCH CODE": "EC",
@@ -27831,7 +27831,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2743,
+    "College Code": 2743,
     "COLLEGE NMAE":
       "Dhanalakshmi Srinivasan College of Engineering (CBE) NH47  Palakkad Main Road  Navakkarai Post  Near Nandhi Temple  Coimbatore District 641105",
     "BRANCH CODE": "EE",
@@ -27845,7 +27845,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2743,
+    "College Code": 2743,
     "COLLEGE NMAE":
       "Dhanalakshmi Srinivasan College of Engineering (CBE) NH47  Palakkad Main Road  Navakkarai Post  Near Nandhi Temple  Coimbatore District 641105",
     "BRANCH CODE": "FD",
@@ -27859,7 +27859,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2743,
+    "College Code": 2743,
     "COLLEGE NMAE":
       "Dhanalakshmi Srinivasan College of Engineering (CBE) NH47  Palakkad Main Road  Navakkarai Post  Near Nandhi Temple  Coimbatore District 641105",
     "BRANCH CODE": "ME",
@@ -27873,7 +27873,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2743,
+    "College Code": 2743,
     "COLLEGE NMAE":
       "Dhanalakshmi Srinivasan College of Engineering (CBE) NH47  Palakkad Main Road  Navakkarai Post  Near Nandhi Temple  Coimbatore District 641105",
     "BRANCH CODE": "SC",
@@ -27887,7 +27887,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2744,
+    "College Code": 2744,
     "COLLEGE NMAE":
       "Adithya Institute of Technology  Kurumbapalayam Village Coimbatore District 641107",
     "BRANCH CODE": "AD",
@@ -27901,7 +27901,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2744,
+    "College Code": 2744,
     "COLLEGE NMAE":
       "Adithya Institute of Technology  Kurumbapalayam Village Coimbatore District 641107",
     "BRANCH CODE": "CE",
@@ -27915,7 +27915,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2744,
+    "College Code": 2744,
     "COLLEGE NMAE":
       "Adithya Institute of Technology  Kurumbapalayam Village Coimbatore District 641107",
     "BRANCH CODE": "CS",
@@ -27929,7 +27929,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2744,
+    "College Code": 2744,
     "COLLEGE NMAE":
       "Adithya Institute of Technology  Kurumbapalayam Village Coimbatore District 641107",
     "BRANCH CODE": "EC",
@@ -27943,7 +27943,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2744,
+    "College Code": 2744,
     "COLLEGE NMAE":
       "Adithya Institute of Technology  Kurumbapalayam Village Coimbatore District 641107",
     "BRANCH CODE": "EE",
@@ -27957,7 +27957,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2744,
+    "College Code": 2744,
     "COLLEGE NMAE":
       "Adithya Institute of Technology  Kurumbapalayam Village Coimbatore District 641107",
     "BRANCH CODE": "IT",
@@ -27971,7 +27971,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2744,
+    "College Code": 2744,
     "COLLEGE NMAE":
       "Adithya Institute of Technology  Kurumbapalayam Village Coimbatore District 641107",
     "BRANCH CODE": "ME",
@@ -27985,7 +27985,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2745,
+    "College Code": 2745,
     "COLLEGE NMAE":
       "Kathir College of Engineering  Neelambur  Avinashi Road Coimbatore District 641062",
     "BRANCH CODE": "AD",
@@ -27999,7 +27999,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2745,
+    "College Code": 2745,
     "COLLEGE NMAE":
       "Kathir College of Engineering  Neelambur  Avinashi Road Coimbatore District 641062",
     "BRANCH CODE": "CO",
@@ -28013,7 +28013,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2745,
+    "College Code": 2745,
     "COLLEGE NMAE":
       "Kathir College of Engineering  Neelambur  Avinashi Road Coimbatore District 641062",
     "BRANCH CODE": "CS",
@@ -28027,7 +28027,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2745,
+    "College Code": 2745,
     "COLLEGE NMAE":
       "Kathir College of Engineering  Neelambur  Avinashi Road Coimbatore District 641062",
     "BRANCH CODE": "EC",
@@ -28041,7 +28041,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2745,
+    "College Code": 2745,
     "COLLEGE NMAE":
       "Kathir College of Engineering  Neelambur  Avinashi Road Coimbatore District 641062",
     "BRANCH CODE": "EE",
@@ -28055,7 +28055,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2745,
+    "College Code": 2745,
     "COLLEGE NMAE":
       "Kathir College of Engineering  Neelambur  Avinashi Road Coimbatore District 641062",
     "BRANCH CODE": "ME",
@@ -28069,7 +28069,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2747,
+    "College Code": 2747,
     "COLLEGE NMAE":
       "Shree Venkateshwara Hi-Tech Engineering College (Autonomous) Othakuthirai  K Mettupalayam Post Gobichettipalayam  Erode District 638455",
     "BRANCH CODE": "AD",
@@ -28083,7 +28083,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2747,
+    "College Code": 2747,
     "COLLEGE NMAE":
       "Shree Venkateshwara Hi-Tech Engineering College (Autonomous) Othakuthirai  K Mettupalayam Post Gobichettipalayam  Erode District 638455",
     "BRANCH CODE": "BM",
@@ -28097,7 +28097,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2747,
+    "College Code": 2747,
     "COLLEGE NMAE":
       "Shree Venkateshwara Hi-Tech Engineering College (Autonomous) Othakuthirai  K Mettupalayam Post Gobichettipalayam  Erode District 638455",
     "BRANCH CODE": "CE",
@@ -28111,7 +28111,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2747,
+    "College Code": 2747,
     "COLLEGE NMAE":
       "Shree Venkateshwara Hi-Tech Engineering College (Autonomous) Othakuthirai  K Mettupalayam Post Gobichettipalayam  Erode District 638455",
     "BRANCH CODE": "CS",
@@ -28125,7 +28125,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2747,
+    "College Code": 2747,
     "COLLEGE NMAE":
       "Shree Venkateshwara Hi-Tech Engineering College (Autonomous) Othakuthirai  K Mettupalayam Post Gobichettipalayam  Erode District 638455",
     "BRANCH CODE": "EC",
@@ -28139,7 +28139,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2747,
+    "College Code": 2747,
     "COLLEGE NMAE":
       "Shree Venkateshwara Hi-Tech Engineering College (Autonomous) Othakuthirai  K Mettupalayam Post Gobichettipalayam  Erode District 638455",
     "BRANCH CODE": "EE",
@@ -28153,7 +28153,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2747,
+    "College Code": 2747,
     "COLLEGE NMAE":
       "Shree Venkateshwara Hi-Tech Engineering College (Autonomous) Othakuthirai  K Mettupalayam Post Gobichettipalayam  Erode District 638455",
     "BRANCH CODE": "IT",
@@ -28167,7 +28167,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2747,
+    "College Code": 2747,
     "COLLEGE NMAE":
       "Shree Venkateshwara Hi-Tech Engineering College (Autonomous) Othakuthirai  K Mettupalayam Post Gobichettipalayam  Erode District 638455",
     "BRANCH CODE": "ME",
@@ -28181,7 +28181,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2747,
+    "College Code": 2747,
     "COLLEGE NMAE":
       "Shree Venkateshwara Hi-Tech Engineering College (Autonomous) Othakuthirai  K Mettupalayam Post Gobichettipalayam  Erode District 638455",
     "BRANCH CODE": "PH",
@@ -28195,7 +28195,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2748,
+    "College Code": 2748,
     "COLLEGE NMAE":
       "Surya Engineering College  Mettukadai  Kathirampatti Post Erode District 638107",
     "BRANCH CODE": "AD",
@@ -28209,7 +28209,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2748,
+    "College Code": 2748,
     "COLLEGE NMAE":
       "Surya Engineering College  Mettukadai  Kathirampatti Post Erode District 638107",
     "BRANCH CODE": "BM",
@@ -28223,7 +28223,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2748,
+    "College Code": 2748,
     "COLLEGE NMAE":
       "Surya Engineering College  Mettukadai  Kathirampatti Post Erode District 638107",
     "BRANCH CODE": "CE",
@@ -28237,7 +28237,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2748,
+    "College Code": 2748,
     "COLLEGE NMAE":
       "Surya Engineering College  Mettukadai  Kathirampatti Post Erode District 638107",
     "BRANCH CODE": "CS",
@@ -28251,7 +28251,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2748,
+    "College Code": 2748,
     "COLLEGE NMAE":
       "Surya Engineering College  Mettukadai  Kathirampatti Post Erode District 638107",
     "BRANCH CODE": "EC",
@@ -28265,7 +28265,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2748,
+    "College Code": 2748,
     "COLLEGE NMAE":
       "Surya Engineering College  Mettukadai  Kathirampatti Post Erode District 638107",
     "BRANCH CODE": "EE",
@@ -28279,7 +28279,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2748,
+    "College Code": 2748,
     "COLLEGE NMAE":
       "Surya Engineering College  Mettukadai  Kathirampatti Post Erode District 638107",
     "BRANCH CODE": "IT",
@@ -28293,7 +28293,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2748,
+    "College Code": 2748,
     "COLLEGE NMAE":
       "Surya Engineering College  Mettukadai  Kathirampatti Post Erode District 638107",
     "BRANCH CODE": "ME",
@@ -28307,7 +28307,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2748,
+    "College Code": 2748,
     "COLLEGE NMAE":
       "Surya Engineering College  Mettukadai  Kathirampatti Post Erode District 638107",
     "BRANCH CODE": "SC",
@@ -28321,7 +28321,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2749,
+    "College Code": 2749,
     "COLLEGE NMAE":
       "Easa College of Engineering and Technology  NH-47 Coimbatore-Palakkad Main Road  Navakarai Post Coimbatore District 641105",
     "BRANCH CODE": "AD",
@@ -28335,7 +28335,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2749,
+    "College Code": 2749,
     "COLLEGE NMAE":
       "Easa College of Engineering and Technology  NH-47 Coimbatore-Palakkad Main Road  Navakarai Post Coimbatore District 641105",
     "BRANCH CODE": "AG",
@@ -28349,7 +28349,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2749,
+    "College Code": 2749,
     "COLLEGE NMAE":
       "Easa College of Engineering and Technology  NH-47 Coimbatore-Palakkad Main Road  Navakarai Post Coimbatore District 641105",
     "BRANCH CODE": "CS",
@@ -28363,7 +28363,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2749,
+    "College Code": 2749,
     "COLLEGE NMAE":
       "Easa College of Engineering and Technology  NH-47 Coimbatore-Palakkad Main Road  Navakarai Post Coimbatore District 641105",
     "BRANCH CODE": "EC",
@@ -28377,7 +28377,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2749,
+    "College Code": 2749,
     "COLLEGE NMAE":
       "Easa College of Engineering and Technology  NH-47 Coimbatore-Palakkad Main Road  Navakarai Post Coimbatore District 641105",
     "BRANCH CODE": "IT",
@@ -28391,7 +28391,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2749,
+    "College Code": 2749,
     "COLLEGE NMAE":
       "Easa College of Engineering and Technology  NH-47 Coimbatore-Palakkad Main Road  Navakarai Post Coimbatore District 641105",
     "BRANCH CODE": "ME",
@@ -28405,7 +28405,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2749,
+    "College Code": 2749,
     "COLLEGE NMAE":
       "Easa College of Engineering and Technology  NH-47 Coimbatore-Palakkad Main Road  Navakarai Post Coimbatore District 641105",
     "BRANCH CODE": "SC",
@@ -28419,7 +28419,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2750,
+    "College Code": 2750,
     "COLLEGE NMAE":
       "KIT - Kalaignar Karunanidhi Institute of Technology (Autonomous)  Kannampalayam  Coimbatore District 641402",
     "BRANCH CODE": "AD",
@@ -28433,7 +28433,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2750,
+    "College Code": 2750,
     "COLLEGE NMAE":
       "KIT - Kalaignar Karunanidhi Institute of Technology (Autonomous)  Kannampalayam  Coimbatore District 641402",
     "BRANCH CODE": "AE",
@@ -28447,7 +28447,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2750,
+    "College Code": 2750,
     "COLLEGE NMAE":
       "KIT - Kalaignar Karunanidhi Institute of Technology (Autonomous)  Kannampalayam  Coimbatore District 641402",
     "BRANCH CODE": "AG",
@@ -28461,7 +28461,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2750,
+    "College Code": 2750,
     "COLLEGE NMAE":
       "KIT - Kalaignar Karunanidhi Institute of Technology (Autonomous)  Kannampalayam  Coimbatore District 641402",
     "BRANCH CODE": "AM",
@@ -28476,7 +28476,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2750,
+    "College Code": 2750,
     "COLLEGE NMAE":
       "KIT - Kalaignar Karunanidhi Institute of Technology (Autonomous)  Kannampalayam  Coimbatore District 641402",
     "BRANCH CODE": "BM",
@@ -28490,7 +28490,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2750,
+    "College Code": 2750,
     "COLLEGE NMAE":
       "KIT - Kalaignar Karunanidhi Institute of Technology (Autonomous)  Kannampalayam  Coimbatore District 641402",
     "BRANCH CODE": "BT",
@@ -28504,7 +28504,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2750,
+    "College Code": 2750,
     "COLLEGE NMAE":
       "KIT - Kalaignar Karunanidhi Institute of Technology (Autonomous)  Kannampalayam  Coimbatore District 641402",
     "BRANCH CODE": "CB",
@@ -28518,7 +28518,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2750,
+    "College Code": 2750,
     "COLLEGE NMAE":
       "KIT - Kalaignar Karunanidhi Institute of Technology (Autonomous)  Kannampalayam  Coimbatore District 641402",
     "BRANCH CODE": "CS",
@@ -28532,7 +28532,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2750,
+    "College Code": 2750,
     "COLLEGE NMAE":
       "KIT - Kalaignar Karunanidhi Institute of Technology (Autonomous)  Kannampalayam  Coimbatore District 641402",
     "BRANCH CODE": "EC",
@@ -28546,7 +28546,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2750,
+    "College Code": 2750,
     "COLLEGE NMAE":
       "KIT - Kalaignar Karunanidhi Institute of Technology (Autonomous)  Kannampalayam  Coimbatore District 641402",
     "BRANCH CODE": "EE",
@@ -28560,7 +28560,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2750,
+    "College Code": 2750,
     "COLLEGE NMAE":
       "KIT - Kalaignar Karunanidhi Institute of Technology (Autonomous)  Kannampalayam  Coimbatore District 641402",
     "BRANCH CODE": "ME",
@@ -28574,7 +28574,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2751,
+    "College Code": 2751,
     "COLLEGE NMAE":
       "KGISL Institute of Technology  KGISL Campus  Thudiyalur Road  Saravanampatti  Coimbatore District 641035",
     "BRANCH CODE": "AD",
@@ -28588,7 +28588,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2751,
+    "College Code": 2751,
     "COLLEGE NMAE":
       "KGISL Institute of Technology  KGISL Campus  Thudiyalur Road  Saravanampatti  Coimbatore District 641035",
     "BRANCH CODE": "CB",
@@ -28602,7 +28602,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2751,
+    "College Code": 2751,
     "COLLEGE NMAE":
       "KGISL Institute of Technology  KGISL Campus  Thudiyalur Road  Saravanampatti  Coimbatore District 641035",
     "BRANCH CODE": "CS",
@@ -28616,7 +28616,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2751,
+    "College Code": 2751,
     "COLLEGE NMAE":
       "KGISL Institute of Technology  KGISL Campus  Thudiyalur Road  Saravanampatti  Coimbatore District 641035",
     "BRANCH CODE": "EC",
@@ -28630,7 +28630,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2751,
+    "College Code": 2751,
     "COLLEGE NMAE":
       "KGISL Institute of Technology  KGISL Campus  Thudiyalur Road  Saravanampatti  Coimbatore District 641035",
     "BRANCH CODE": "IT",
@@ -28644,7 +28644,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2751,
+    "College Code": 2751,
     "COLLEGE NMAE":
       "KGISL Institute of Technology  KGISL Campus  Thudiyalur Road  Saravanampatti  Coimbatore District 641035",
     "BRANCH CODE": "ME",
@@ -28658,7 +28658,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2752,
+    "College Code": 2752,
     "COLLEGE NMAE":
       "Nandha College of Technology  Pitchandampalayam Post Erode District 638052",
     "BRANCH CODE": "CS",
@@ -28672,7 +28672,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2752,
+    "College Code": 2752,
     "COLLEGE NMAE":
       "Nandha College of Technology  Pitchandampalayam Post Erode District 638052",
     "BRANCH CODE": "EC",
@@ -28686,7 +28686,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2752,
+    "College Code": 2752,
     "COLLEGE NMAE":
       "Nandha College of Technology  Pitchandampalayam Post Erode District 638052",
     "BRANCH CODE": "EE",
@@ -28700,7 +28700,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2752,
+    "College Code": 2752,
     "COLLEGE NMAE":
       "Nandha College of Technology  Pitchandampalayam Post Erode District 638052",
     "BRANCH CODE": "IT",
@@ -28714,7 +28714,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2753,
+    "College Code": 2753,
     "COLLEGE NMAE":
       "PPG Institute of Technology  Vilankurichi Village Coimbatore District 641035",
     "BRANCH CODE": "AD",
@@ -28728,7 +28728,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2753,
+    "College Code": 2753,
     "COLLEGE NMAE":
       "PPG Institute of Technology  Vilankurichi Village Coimbatore District 641035",
     "BRANCH CODE": "AG",
@@ -28742,7 +28742,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2753,
+    "College Code": 2753,
     "COLLEGE NMAE":
       "PPG Institute of Technology  Vilankurichi Village Coimbatore District 641035",
     "BRANCH CODE": "AM",
@@ -28757,7 +28757,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2753,
+    "College Code": 2753,
     "COLLEGE NMAE":
       "PPG Institute of Technology  Vilankurichi Village Coimbatore District 641035",
     "BRANCH CODE": "BM",
@@ -28771,7 +28771,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2753,
+    "College Code": 2753,
     "COLLEGE NMAE":
       "PPG Institute of Technology  Vilankurichi Village Coimbatore District 641035",
     "BRANCH CODE": "CS",
@@ -28785,7 +28785,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2753,
+    "College Code": 2753,
     "COLLEGE NMAE":
       "PPG Institute of Technology  Vilankurichi Village Coimbatore District 641035",
     "BRANCH CODE": "EC",
@@ -28799,7 +28799,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2753,
+    "College Code": 2753,
     "COLLEGE NMAE":
       "PPG Institute of Technology  Vilankurichi Village Coimbatore District 641035",
     "BRANCH CODE": "IT",
@@ -28813,7 +28813,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2753,
+    "College Code": 2753,
     "COLLEGE NMAE":
       "PPG Institute of Technology  Vilankurichi Village Coimbatore District 641035",
     "BRANCH CODE": "ME",
@@ -28827,7 +28827,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2755,
+    "College Code": 2755,
     "COLLEGE NMAE":
       "Nehru Institute of Technology  (Autonomous) Thirumalayampalayam Post  Coimbatore District 641105",
     "BRANCH CODE": "AE",
@@ -28841,7 +28841,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2755,
+    "College Code": 2755,
     "COLLEGE NMAE":
       "Nehru Institute of Technology  (Autonomous) Thirumalayampalayam Post  Coimbatore District 641105",
     "BRANCH CODE": "AG",
@@ -28855,7 +28855,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2755,
+    "College Code": 2755,
     "COLLEGE NMAE":
       "Nehru Institute of Technology  (Autonomous) Thirumalayampalayam Post  Coimbatore District 641105",
     "BRANCH CODE": "CE",
@@ -28869,7 +28869,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2755,
+    "College Code": 2755,
     "COLLEGE NMAE":
       "Nehru Institute of Technology  (Autonomous) Thirumalayampalayam Post  Coimbatore District 641105",
     "BRANCH CODE": "CS",
@@ -28883,7 +28883,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2755,
+    "College Code": 2755,
     "COLLEGE NMAE":
       "Nehru Institute of Technology  (Autonomous) Thirumalayampalayam Post  Coimbatore District 641105",
     "BRANCH CODE": "FD",
@@ -28897,7 +28897,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2755,
+    "College Code": 2755,
     "COLLEGE NMAE":
       "Nehru Institute of Technology  (Autonomous) Thirumalayampalayam Post  Coimbatore District 641105",
     "BRANCH CODE": "IT",
@@ -28911,7 +28911,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2758,
+    "College Code": 2758,
     "COLLEGE NMAE":
       "J K K Munirajah College of Technology  T N Palayam  Gobi Taluk  Erode District 638506",
     "BRANCH CODE": "AD",
@@ -28925,7 +28925,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2758,
+    "College Code": 2758,
     "COLLEGE NMAE":
       "J K K Munirajah College of Technology  T N Palayam  Gobi Taluk  Erode District 638506",
     "BRANCH CODE": "AU",
@@ -28939,7 +28939,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2758,
+    "College Code": 2758,
     "COLLEGE NMAE":
       "J K K Munirajah College of Technology  T N Palayam  Gobi Taluk  Erode District 638506",
     "BRANCH CODE": "CE",
@@ -28953,7 +28953,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2758,
+    "College Code": 2758,
     "COLLEGE NMAE":
       "J K K Munirajah College of Technology  T N Palayam  Gobi Taluk  Erode District 638506",
     "BRANCH CODE": "CS",
@@ -28967,7 +28967,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2758,
+    "College Code": 2758,
     "COLLEGE NMAE":
       "J K K Munirajah College of Technology  T N Palayam  Gobi Taluk  Erode District 638506",
     "BRANCH CODE": "EC",
@@ -28981,7 +28981,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2758,
+    "College Code": 2758,
     "COLLEGE NMAE":
       "J K K Munirajah College of Technology  T N Palayam  Gobi Taluk  Erode District 638506",
     "BRANCH CODE": "EE",
@@ -28995,7 +28995,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2758,
+    "College Code": 2758,
     "COLLEGE NMAE":
       "J K K Munirajah College of Technology  T N Palayam  Gobi Taluk  Erode District 638506",
     "BRANCH CODE": "IT",
@@ -29009,7 +29009,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2758,
+    "College Code": 2758,
     "COLLEGE NMAE":
       "J K K Munirajah College of Technology  T N Palayam  Gobi Taluk  Erode District 638506",
     "BRANCH CODE": "ME",
@@ -29023,7 +29023,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2758,
+    "College Code": 2758,
     "COLLEGE NMAE":
       "J K K Munirajah College of Technology  T N Palayam  Gobi Taluk  Erode District 638506",
     "BRANCH CODE": "SC",
@@ -29037,7 +29037,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2761,
+    "College Code": 2761,
     "COLLEGE NMAE":
       "United Institute of Technology  Gadalore Village Perianaickenpalayam  Coimbatore District 641020",
     "BRANCH CODE": "AD",
@@ -29051,7 +29051,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2761,
+    "College Code": 2761,
     "COLLEGE NMAE":
       "United Institute of Technology  Gadalore Village Perianaickenpalayam  Coimbatore District 641020",
     "BRANCH CODE": "CS",
@@ -29065,7 +29065,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2761,
+    "College Code": 2761,
     "COLLEGE NMAE":
       "United Institute of Technology  Gadalore Village Perianaickenpalayam  Coimbatore District 641020",
     "BRANCH CODE": "EC",
@@ -29079,7 +29079,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2761,
+    "College Code": 2761,
     "COLLEGE NMAE":
       "United Institute of Technology  Gadalore Village Perianaickenpalayam  Coimbatore District 641020",
     "BRANCH CODE": "IT",
@@ -29093,7 +29093,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2761,
+    "College Code": 2761,
     "COLLEGE NMAE":
       "United Institute of Technology  Gadalore Village Perianaickenpalayam  Coimbatore District 641020",
     "BRANCH CODE": "RM",
@@ -29107,7 +29107,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2761,
+    "College Code": 2761,
     "COLLEGE NMAE":
       "United Institute of Technology  Gadalore Village Perianaickenpalayam  Coimbatore District 641020",
     "BRANCH CODE": "SC",
@@ -29121,7 +29121,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2762,
+    "College Code": 2762,
     "COLLEGE NMAE":
       "Jansons Institute of Technology  Karumathampatty  Somaur Coimbatore District 641659",
     "BRANCH CODE": "AD",
@@ -29135,7 +29135,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2762,
+    "College Code": 2762,
     "COLLEGE NMAE":
       "Jansons Institute of Technology  Karumathampatty  Somaur Coimbatore District 641659",
     "BRANCH CODE": "CB",
@@ -29149,7 +29149,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2762,
+    "College Code": 2762,
     "COLLEGE NMAE":
       "Jansons Institute of Technology  Karumathampatty  Somaur Coimbatore District 641659",
     "BRANCH CODE": "CE",
@@ -29163,7 +29163,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2762,
+    "College Code": 2762,
     "COLLEGE NMAE":
       "Jansons Institute of Technology  Karumathampatty  Somaur Coimbatore District 641659",
     "BRANCH CODE": "CS",
@@ -29177,7 +29177,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2762,
+    "College Code": 2762,
     "COLLEGE NMAE":
       "Jansons Institute of Technology  Karumathampatty  Somaur Coimbatore District 641659",
     "BRANCH CODE": "EC",
@@ -29191,7 +29191,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2762,
+    "College Code": 2762,
     "COLLEGE NMAE":
       "Jansons Institute of Technology  Karumathampatty  Somaur Coimbatore District 641659",
     "BRANCH CODE": "ME",
@@ -29205,7 +29205,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2763,
+    "College Code": 2763,
     "COLLEGE NMAE":
       "Akshaya College of Engineering and Technology Kinathukadavu  Coimbatore District 642109",
     "BRANCH CODE": "AD",
@@ -29219,7 +29219,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2763,
+    "College Code": 2763,
     "COLLEGE NMAE":
       "Akshaya College of Engineering and Technology Kinathukadavu  Coimbatore District 642109",
     "BRANCH CODE": "CB",
@@ -29233,7 +29233,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2763,
+    "College Code": 2763,
     "COLLEGE NMAE":
       "Akshaya College of Engineering and Technology Kinathukadavu  Coimbatore District 642109",
     "BRANCH CODE": "CE",
@@ -29247,7 +29247,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2763,
+    "College Code": 2763,
     "COLLEGE NMAE":
       "Akshaya College of Engineering and Technology Kinathukadavu  Coimbatore District 642109",
     "BRANCH CODE": "CS",
@@ -29261,7 +29261,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2763,
+    "College Code": 2763,
     "COLLEGE NMAE":
       "Akshaya College of Engineering and Technology Kinathukadavu  Coimbatore District 642109",
     "BRANCH CODE": "EC",
@@ -29275,7 +29275,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2763,
+    "College Code": 2763,
     "COLLEGE NMAE":
       "Akshaya College of Engineering and Technology Kinathukadavu  Coimbatore District 642109",
     "BRANCH CODE": "EE",
@@ -29289,7 +29289,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2763,
+    "College Code": 2763,
     "COLLEGE NMAE":
       "Akshaya College of Engineering and Technology Kinathukadavu  Coimbatore District 642109",
     "BRANCH CODE": "ME",
@@ -29303,7 +29303,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2763,
+    "College Code": 2763,
     "COLLEGE NMAE":
       "Akshaya College of Engineering and Technology Kinathukadavu  Coimbatore District 642109",
     "BRANCH CODE": "MZ",
@@ -29317,7 +29317,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2764,
+    "College Code": 2764,
     "COLLEGE NMAE":
       "K P R Institute of Engineering and Technology (Autonomous)  Kollupalayam Village  Arasur Panchayat Coimbatore District 641407",
     "BRANCH CODE": "AD",
@@ -29331,7 +29331,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2764,
+    "College Code": 2764,
     "COLLEGE NMAE":
       "K P R Institute of Engineering and Technology (Autonomous)  Kollupalayam Village  Arasur Panchayat Coimbatore District 641407",
     "BRANCH CODE": "AM",
@@ -29346,7 +29346,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2764,
+    "College Code": 2764,
     "COLLEGE NMAE":
       "K P R Institute of Engineering and Technology (Autonomous)  Kollupalayam Village  Arasur Panchayat Coimbatore District 641407",
     "BRANCH CODE": "BM",
@@ -29360,7 +29360,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2764,
+    "College Code": 2764,
     "COLLEGE NMAE":
       "K P R Institute of Engineering and Technology (Autonomous)  Kollupalayam Village  Arasur Panchayat Coimbatore District 641407",
     "BRANCH CODE": "CB",
@@ -29374,7 +29374,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2764,
+    "College Code": 2764,
     "COLLEGE NMAE":
       "K P R Institute of Engineering and Technology (Autonomous)  Kollupalayam Village  Arasur Panchayat Coimbatore District 641407",
     "BRANCH CODE": "CE",
@@ -29388,7 +29388,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2764,
+    "College Code": 2764,
     "COLLEGE NMAE":
       "K P R Institute of Engineering and Technology (Autonomous)  Kollupalayam Village  Arasur Panchayat Coimbatore District 641407",
     "BRANCH CODE": "CH",
@@ -29402,7 +29402,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2764,
+    "College Code": 2764,
     "COLLEGE NMAE":
       "K P R Institute of Engineering and Technology (Autonomous)  Kollupalayam Village  Arasur Panchayat Coimbatore District 641407",
     "BRANCH CODE": "CS",
@@ -29416,7 +29416,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2764,
+    "College Code": 2764,
     "COLLEGE NMAE":
       "K P R Institute of Engineering and Technology (Autonomous)  Kollupalayam Village  Arasur Panchayat Coimbatore District 641407",
     "BRANCH CODE": "EC",
@@ -29430,7 +29430,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2764,
+    "College Code": 2764,
     "COLLEGE NMAE":
       "K P R Institute of Engineering and Technology (Autonomous)  Kollupalayam Village  Arasur Panchayat Coimbatore District 641407",
     "BRANCH CODE": "EE",
@@ -29444,7 +29444,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2764,
+    "College Code": 2764,
     "COLLEGE NMAE":
       "K P R Institute of Engineering and Technology (Autonomous)  Kollupalayam Village  Arasur Panchayat Coimbatore District 641407",
     "BRANCH CODE": "IT",
@@ -29458,7 +29458,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2764,
+    "College Code": 2764,
     "COLLEGE NMAE":
       "K P R Institute of Engineering and Technology (Autonomous)  Kollupalayam Village  Arasur Panchayat Coimbatore District 641407",
     "BRANCH CODE": "ME",
@@ -29472,7 +29472,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2764,
+    "College Code": 2764,
     "COLLEGE NMAE":
       "K P R Institute of Engineering and Technology (Autonomous)  Kollupalayam Village  Arasur Panchayat Coimbatore District 641407",
     "BRANCH CODE": "MZ",
@@ -29486,7 +29486,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2767,
+    "College Code": 2767,
     "COLLEGE NMAE":
       "SRG Engineering College  Aniyapuram Post  Namakkal District 637017",
     "BRANCH CODE": "AD",
@@ -29500,7 +29500,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2767,
+    "College Code": 2767,
     "COLLEGE NMAE":
       "SRG Engineering College  Aniyapuram Post  Namakkal District 637017",
     "BRANCH CODE": "BM",
@@ -29514,7 +29514,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2767,
+    "College Code": 2767,
     "COLLEGE NMAE":
       "SRG Engineering College  Aniyapuram Post  Namakkal District 637017",
     "BRANCH CODE": "CE",
@@ -29528,7 +29528,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2767,
+    "College Code": 2767,
     "COLLEGE NMAE":
       "SRG Engineering College  Aniyapuram Post  Namakkal District 637017",
     "BRANCH CODE": "CS",
@@ -29542,7 +29542,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2767,
+    "College Code": 2767,
     "COLLEGE NMAE":
       "SRG Engineering College  Aniyapuram Post  Namakkal District 637017",
     "BRANCH CODE": "EE",
@@ -29556,7 +29556,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2767,
+    "College Code": 2767,
     "COLLEGE NMAE":
       "SRG Engineering College  Aniyapuram Post  Namakkal District 637017",
     "BRANCH CODE": "IT",
@@ -29570,7 +29570,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2767,
+    "College Code": 2767,
     "COLLEGE NMAE":
       "SRG Engineering College  Aniyapuram Post  Namakkal District 637017",
     "BRANCH CODE": "ME",
@@ -29584,7 +29584,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2767,
+    "College Code": 2767,
     "COLLEGE NMAE":
       "SRG Engineering College  Aniyapuram Post  Namakkal District 637017",
     "BRANCH CODE": "SC",
@@ -29598,7 +29598,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2768,
+    "College Code": 2768,
     "COLLEGE NMAE":
       "Park College of Technology  Prema Ravi Nagar Karumathampatti  Coimbatore - 641 659",
     "BRANCH CODE": "AD",
@@ -29612,7 +29612,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2768,
+    "College Code": 2768,
     "COLLEGE NMAE":
       "Park College of Technology  Prema Ravi Nagar Karumathampatti  Coimbatore - 641 659",
     "BRANCH CODE": "AO",
@@ -29626,7 +29626,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2768,
+    "College Code": 2768,
     "COLLEGE NMAE":
       "Park College of Technology  Prema Ravi Nagar Karumathampatti  Coimbatore - 641 659",
     "BRANCH CODE": "CE",
@@ -29640,7 +29640,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2768,
+    "College Code": 2768,
     "COLLEGE NMAE":
       "Park College of Technology  Prema Ravi Nagar Karumathampatti  Coimbatore - 641 659",
     "BRANCH CODE": "CS",
@@ -29654,7 +29654,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2768,
+    "College Code": 2768,
     "COLLEGE NMAE":
       "Park College of Technology  Prema Ravi Nagar Karumathampatti  Coimbatore - 641 659",
     "BRANCH CODE": "EC",
@@ -29668,7 +29668,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2768,
+    "College Code": 2768,
     "COLLEGE NMAE":
       "Park College of Technology  Prema Ravi Nagar Karumathampatti  Coimbatore - 641 659",
     "BRANCH CODE": "EN",
@@ -29682,7 +29682,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2768,
+    "College Code": 2768,
     "COLLEGE NMAE":
       "Park College of Technology  Prema Ravi Nagar Karumathampatti  Coimbatore - 641 659",
     "BRANCH CODE": "ME",
@@ -29696,7 +29696,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2769,
+    "College Code": 2769,
     "COLLEGE NMAE":
       "J C T College of Engineering and Technology  Pichanur Coimbatore District 641105",
     "BRANCH CODE": "AD",
@@ -29710,7 +29710,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2769,
+    "College Code": 2769,
     "COLLEGE NMAE":
       "J C T College of Engineering and Technology  Pichanur Coimbatore District 641105",
     "BRANCH CODE": "BC",
@@ -29724,7 +29724,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2769,
+    "College Code": 2769,
     "COLLEGE NMAE":
       "J C T College of Engineering and Technology  Pichanur Coimbatore District 641105",
     "BRANCH CODE": "CB",
@@ -29738,7 +29738,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2769,
+    "College Code": 2769,
     "COLLEGE NMAE":
       "J C T College of Engineering and Technology  Pichanur Coimbatore District 641105",
     "BRANCH CODE": "CE",
@@ -29752,7 +29752,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2769,
+    "College Code": 2769,
     "COLLEGE NMAE":
       "J C T College of Engineering and Technology  Pichanur Coimbatore District 641105",
     "BRANCH CODE": "CS",
@@ -29766,7 +29766,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2769,
+    "College Code": 2769,
     "COLLEGE NMAE":
       "J C T College of Engineering and Technology  Pichanur Coimbatore District 641105",
     "BRANCH CODE": "EC",
@@ -29780,7 +29780,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2769,
+    "College Code": 2769,
     "COLLEGE NMAE":
       "J C T College of Engineering and Technology  Pichanur Coimbatore District 641105",
     "BRANCH CODE": "EE",
@@ -29794,7 +29794,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2769,
+    "College Code": 2769,
     "COLLEGE NMAE":
       "J C T College of Engineering and Technology  Pichanur Coimbatore District 641105",
     "BRANCH CODE": "FD",
@@ -29808,7 +29808,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2769,
+    "College Code": 2769,
     "COLLEGE NMAE":
       "J C T College of Engineering and Technology  Pichanur Coimbatore District 641105",
     "BRANCH CODE": "ME",
@@ -29822,7 +29822,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2769,
+    "College Code": 2769,
     "COLLEGE NMAE":
       "J C T College of Engineering and Technology  Pichanur Coimbatore District 641105",
     "BRANCH CODE": "PC",
@@ -29836,7 +29836,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2769,
+    "College Code": 2769,
     "COLLEGE NMAE":
       "J C T College of Engineering and Technology  Pichanur Coimbatore District 641105",
     "BRANCH CODE": "PE",
@@ -29850,7 +29850,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2770,
+    "College Code": 2770,
     "COLLEGE NMAE":
       "Studyworld College of Engineering  Madukarai Post Coimbatore - 641 105.",
     "BRANCH CODE": "AD",
@@ -29864,7 +29864,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2770,
+    "College Code": 2770,
     "COLLEGE NMAE":
       "Studyworld College of Engineering  Madukarai Post Coimbatore - 641 105.",
     "BRANCH CODE": "CS",
@@ -29878,7 +29878,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2770,
+    "College Code": 2770,
     "COLLEGE NMAE":
       "Studyworld College of Engineering  Madukarai Post Coimbatore - 641 105.",
     "BRANCH CODE": "EC",
@@ -29892,7 +29892,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2770,
+    "College Code": 2770,
     "COLLEGE NMAE":
       "Studyworld College of Engineering  Madukarai Post Coimbatore - 641 105.",
     "BRANCH CODE": "EE",
@@ -29906,7 +29906,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2770,
+    "College Code": 2770,
     "COLLEGE NMAE":
       "Studyworld College of Engineering  Madukarai Post Coimbatore - 641 105.",
     "BRANCH CODE": "IT",
@@ -29920,7 +29920,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2770,
+    "College Code": 2770,
     "COLLEGE NMAE":
       "Studyworld College of Engineering  Madukarai Post Coimbatore - 641 105.",
     "BRANCH CODE": "ME",
@@ -29934,7 +29934,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2772,
+    "College Code": 2772,
     "COLLEGE NMAE":
       "C M S College of Engineering and Technology Appachigoundenpathy  Kumittipathi Post  Coimbatore District 641032",
     "BRANCH CODE": "AD",
@@ -29948,7 +29948,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2772,
+    "College Code": 2772,
     "COLLEGE NMAE":
       "C M S College of Engineering and Technology Appachigoundenpathy  Kumittipathi Post  Coimbatore District 641032",
     "BRANCH CODE": "CB",
@@ -29962,7 +29962,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2772,
+    "College Code": 2772,
     "COLLEGE NMAE":
       "C M S College of Engineering and Technology Appachigoundenpathy  Kumittipathi Post  Coimbatore District 641032",
     "BRANCH CODE": "CS",
@@ -29976,7 +29976,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2772,
+    "College Code": 2772,
     "COLLEGE NMAE":
       "C M S College of Engineering and Technology Appachigoundenpathy  Kumittipathi Post  Coimbatore District 641032",
     "BRANCH CODE": "EC",
@@ -29990,7 +29990,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2772,
+    "College Code": 2772,
     "COLLEGE NMAE":
       "C M S College of Engineering and Technology Appachigoundenpathy  Kumittipathi Post  Coimbatore District 641032",
     "BRANCH CODE": "IT",
@@ -30004,7 +30004,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2772,
+    "College Code": 2772,
     "COLLEGE NMAE":
       "C M S College of Engineering and Technology Appachigoundenpathy  Kumittipathi Post  Coimbatore District 641032",
     "BRANCH CODE": "ME",
@@ -30018,7 +30018,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2772,
+    "College Code": 2772,
     "COLLEGE NMAE":
       "C M S College of Engineering and Technology Appachigoundenpathy  Kumittipathi Post  Coimbatore District 641032",
     "BRANCH CODE": "SC",
@@ -30032,7 +30032,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2776,
+    "College Code": 2776,
     "COLLEGE NMAE":
       "R V S Technical Campus-Coimbatore  Kumaran Kottam Campus   Kannampalayam  Sulur  Coimbatore District 641 402",
     "BRANCH CODE": "AD",
@@ -30046,7 +30046,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2776,
+    "College Code": 2776,
     "COLLEGE NMAE":
       "R V S Technical Campus-Coimbatore  Kumaran Kottam Campus   Kannampalayam  Sulur  Coimbatore District 641 402",
     "BRANCH CODE": "AG",
@@ -30060,7 +30060,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2776,
+    "College Code": 2776,
     "COLLEGE NMAE":
       "R V S Technical Campus-Coimbatore  Kumaran Kottam Campus   Kannampalayam  Sulur  Coimbatore District 641 402",
     "BRANCH CODE": "AM",
@@ -30075,7 +30075,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2776,
+    "College Code": 2776,
     "COLLEGE NMAE":
       "R V S Technical Campus-Coimbatore  Kumaran Kottam Campus   Kannampalayam  Sulur  Coimbatore District 641 402",
     "BRANCH CODE": "AU",
@@ -30089,7 +30089,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 2776,
+    "College Code": 2776,
     "COLLEGE NMAE":
       "R V S Technical Campus-Coimbatore  Kumaran Kottam Campus   Kannampalayam  Sulur  Coimbatore District 641 402",
     "BRANCH CODE": "CE",
@@ -30103,7 +30103,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2776,
+    "College Code": 2776,
     "COLLEGE NMAE":
       "R V S Technical Campus-Coimbatore  Kumaran Kottam Campus   Kannampalayam  Sulur  Coimbatore District 641 402",
     "BRANCH CODE": "CS",
@@ -30117,7 +30117,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2776,
+    "College Code": 2776,
     "COLLEGE NMAE":
       "R V S Technical Campus-Coimbatore  Kumaran Kottam Campus   Kannampalayam  Sulur  Coimbatore District 641 402",
     "BRANCH CODE": "ME",
@@ -30131,7 +30131,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 2776,
+    "College Code": 2776,
     "COLLEGE NMAE":
       "R V S Technical Campus-Coimbatore  Kumaran Kottam Campus   Kannampalayam  Sulur  Coimbatore District 641 402",
     "BRANCH CODE": "MZ",
@@ -30145,7 +30145,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3011,
+    "College Code": 3011,
     "COLLEGE NMAE":
       "University College of Engineering  Tiruchirappalli (Bharathidasan Institute of Technology)  Tiruchirappalli District 620024",
     "BRANCH CODE": "AU",
@@ -30159,7 +30159,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3011,
+    "College Code": 3011,
     "COLLEGE NMAE":
       "University College of Engineering  Tiruchirappalli (Bharathidasan Institute of Technology)  Tiruchirappalli District 620024",
     "BRANCH CODE": "BT",
@@ -30173,7 +30173,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3011,
+    "College Code": 3011,
     "COLLEGE NMAE":
       "University College of Engineering  Tiruchirappalli (Bharathidasan Institute of Technology)  Tiruchirappalli District 620024",
     "BRANCH CODE": "CE",
@@ -30187,7 +30187,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3011,
+    "College Code": 3011,
     "COLLEGE NMAE":
       "University College of Engineering  Tiruchirappalli (Bharathidasan Institute of Technology)  Tiruchirappalli District 620024",
     "BRANCH CODE": "CS",
@@ -30201,7 +30201,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3011,
+    "College Code": 3011,
     "COLLEGE NMAE":
       "University College of Engineering  Tiruchirappalli (Bharathidasan Institute of Technology)  Tiruchirappalli District 620024",
     "BRANCH CODE": "EC",
@@ -30215,7 +30215,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3011,
+    "College Code": 3011,
     "COLLEGE NMAE":
       "University College of Engineering  Tiruchirappalli (Bharathidasan Institute of Technology)  Tiruchirappalli District 620024",
     "BRANCH CODE": "EE",
@@ -30229,7 +30229,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3011,
+    "College Code": 3011,
     "COLLEGE NMAE":
       "University College of Engineering  Tiruchirappalli (Bharathidasan Institute of Technology)  Tiruchirappalli District 620024",
     "BRANCH CODE": "IT",
@@ -30243,7 +30243,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3011,
+    "College Code": 3011,
     "COLLEGE NMAE":
       "University College of Engineering  Tiruchirappalli (Bharathidasan Institute of Technology)  Tiruchirappalli District 620024",
     "BRANCH CODE": "ME",
@@ -30257,7 +30257,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3011,
+    "College Code": 3011,
     "COLLEGE NMAE":
       "University College of Engineering  Tiruchirappalli (Bharathidasan Institute of Technology)  Tiruchirappalli District 620024",
     "BRANCH CODE": "PC",
@@ -30271,7 +30271,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3011,
+    "College Code": 3011,
     "COLLEGE NMAE":
       "University College of Engineering  Tiruchirappalli (Bharathidasan Institute of Technology)  Tiruchirappalli District 620024",
     "BRANCH CODE": "PH",
@@ -30285,7 +30285,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3011,
+    "College Code": 3011,
     "COLLEGE NMAE":
       "University College of Engineering  Tiruchirappalli (Bharathidasan Institute of Technology)  Tiruchirappalli District 620024",
     "BRANCH CODE": "XC",
@@ -30299,7 +30299,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3011,
+    "College Code": 3011,
     "COLLEGE NMAE":
       "University College of Engineering  Tiruchirappalli (Bharathidasan Institute of Technology)  Tiruchirappalli District 620024",
     "BRANCH CODE": "XM",
@@ -30313,7 +30313,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3016,
+    "College Code": 3016,
     "COLLEGE NMAE":
       "University College of Engineering  Ariyalur  Kathankudikadu Village  Thelur Post  Ariyalur District 621704",
     "BRANCH CODE": "CE",
@@ -30327,7 +30327,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3016,
+    "College Code": 3016,
     "COLLEGE NMAE":
       "University College of Engineering  Ariyalur  Kathankudikadu Village  Thelur Post  Ariyalur District 621704",
     "BRANCH CODE": "CS",
@@ -30341,7 +30341,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3016,
+    "College Code": 3016,
     "COLLEGE NMAE":
       "University College of Engineering  Ariyalur  Kathankudikadu Village  Thelur Post  Ariyalur District 621704",
     "BRANCH CODE": "EC",
@@ -30355,7 +30355,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3016,
+    "College Code": 3016,
     "COLLEGE NMAE":
       "University College of Engineering  Ariyalur  Kathankudikadu Village  Thelur Post  Ariyalur District 621704",
     "BRANCH CODE": "EE",
@@ -30369,7 +30369,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3016,
+    "College Code": 3016,
     "COLLEGE NMAE":
       "University College of Engineering  Ariyalur  Kathankudikadu Village  Thelur Post  Ariyalur District 621704",
     "BRANCH CODE": "ME",
@@ -30383,7 +30383,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3016,
+    "College Code": 3016,
     "COLLEGE NMAE":
       "University College of Engineering  Ariyalur  Kathankudikadu Village  Thelur Post  Ariyalur District 621704",
     "BRANCH CODE": "XC",
@@ -30397,7 +30397,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3016,
+    "College Code": 3016,
     "COLLEGE NMAE":
       "University College of Engineering  Ariyalur  Kathankudikadu Village  Thelur Post  Ariyalur District 621704",
     "BRANCH CODE": "XM",
@@ -30411,7 +30411,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3018,
+    "College Code": 3018,
     "COLLEGE NMAE":
       "University College of Engineering  Thirukkuvalai Nagappattinam District 610204",
     "BRANCH CODE": "CE",
@@ -30425,7 +30425,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3018,
+    "College Code": 3018,
     "COLLEGE NMAE":
       "University College of Engineering  Thirukkuvalai Nagappattinam District 610204",
     "BRANCH CODE": "CS",
@@ -30439,7 +30439,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3018,
+    "College Code": 3018,
     "COLLEGE NMAE":
       "University College of Engineering  Thirukkuvalai Nagappattinam District 610204",
     "BRANCH CODE": "EC",
@@ -30453,7 +30453,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3018,
+    "College Code": 3018,
     "COLLEGE NMAE":
       "University College of Engineering  Thirukkuvalai Nagappattinam District 610204",
     "BRANCH CODE": "EE",
@@ -30467,7 +30467,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3018,
+    "College Code": 3018,
     "COLLEGE NMAE":
       "University College of Engineering  Thirukkuvalai Nagappattinam District 610204",
     "BRANCH CODE": "ME",
@@ -30481,7 +30481,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3018,
+    "College Code": 3018,
     "COLLEGE NMAE":
       "University College of Engineering  Thirukkuvalai Nagappattinam District 610204",
     "BRANCH CODE": "XC",
@@ -30495,7 +30495,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3018,
+    "College Code": 3018,
     "COLLEGE NMAE":
       "University College of Engineering  Thirukkuvalai Nagappattinam District 610204",
     "BRANCH CODE": "XM",
@@ -30509,7 +30509,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3019,
+    "College Code": 3019,
     "COLLEGE NMAE":
       "University College of Engineering  Panruti  Chennai- Kumbakonam Highway  Panikkankuppam  Panruti Cuddalore District 607106",
     "BRANCH CODE": "CE",
@@ -30523,7 +30523,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3019,
+    "College Code": 3019,
     "COLLEGE NMAE":
       "University College of Engineering  Panruti  Chennai- Kumbakonam Highway  Panikkankuppam  Panruti Cuddalore District 607106",
     "BRANCH CODE": "CS",
@@ -30537,7 +30537,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3019,
+    "College Code": 3019,
     "COLLEGE NMAE":
       "University College of Engineering  Panruti  Chennai- Kumbakonam Highway  Panikkankuppam  Panruti Cuddalore District 607106",
     "BRANCH CODE": "EC",
@@ -30551,7 +30551,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3019,
+    "College Code": 3019,
     "COLLEGE NMAE":
       "University College of Engineering  Panruti  Chennai- Kumbakonam Highway  Panikkankuppam  Panruti Cuddalore District 607106",
     "BRANCH CODE": "EE",
@@ -30565,7 +30565,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3019,
+    "College Code": 3019,
     "COLLEGE NMAE":
       "University College of Engineering  Panruti  Chennai- Kumbakonam Highway  Panikkankuppam  Panruti Cuddalore District 607106",
     "BRANCH CODE": "ME",
@@ -30579,7 +30579,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3019,
+    "College Code": 3019,
     "COLLEGE NMAE":
       "University College of Engineering  Panruti  Chennai- Kumbakonam Highway  Panikkankuppam  Panruti Cuddalore District 607106",
     "BRANCH CODE": "XC",
@@ -30593,7 +30593,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3019,
+    "College Code": 3019,
     "COLLEGE NMAE":
       "University College of Engineering  Panruti  Chennai- Kumbakonam Highway  Panikkankuppam  Panruti Cuddalore District 607106",
     "BRANCH CODE": "XM",
@@ -30607,7 +30607,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3021,
+    "College Code": 3021,
     "COLLEGE NMAE":
       "University College of Engineering  Pattukkottai  ECR Road Rajamadam  Pattukkottai Taluk  Thanjavur District 614701",
     "BRANCH CODE": "CE",
@@ -30621,7 +30621,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3021,
+    "College Code": 3021,
     "COLLEGE NMAE":
       "University College of Engineering  Pattukkottai  ECR Road Rajamadam  Pattukkottai Taluk  Thanjavur District 614701",
     "BRANCH CODE": "CS",
@@ -30635,7 +30635,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3021,
+    "College Code": 3021,
     "COLLEGE NMAE":
       "University College of Engineering  Pattukkottai  ECR Road Rajamadam  Pattukkottai Taluk  Thanjavur District 614701",
     "BRANCH CODE": "EC",
@@ -30649,7 +30649,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3021,
+    "College Code": 3021,
     "COLLEGE NMAE":
       "University College of Engineering  Pattukkottai  ECR Road Rajamadam  Pattukkottai Taluk  Thanjavur District 614701",
     "BRANCH CODE": "EE",
@@ -30663,7 +30663,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3021,
+    "College Code": 3021,
     "COLLEGE NMAE":
       "University College of Engineering  Pattukkottai  ECR Road Rajamadam  Pattukkottai Taluk  Thanjavur District 614701",
     "BRANCH CODE": "ME",
@@ -30677,7 +30677,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3021,
+    "College Code": 3021,
     "COLLEGE NMAE":
       "University College of Engineering  Pattukkottai  ECR Road Rajamadam  Pattukkottai Taluk  Thanjavur District 614701",
     "BRANCH CODE": "XC",
@@ -30691,7 +30691,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3021,
+    "College Code": 3021,
     "COLLEGE NMAE":
       "University College of Engineering  Pattukkottai  ECR Road Rajamadam  Pattukkottai Taluk  Thanjavur District 614701",
     "BRANCH CODE": "XM",
@@ -30705,7 +30705,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3403,
+    "College Code": 3403,
     "COLLEGE NMAE":
       "Mahalakshmi Engineering College  Trichy-Salem Highways (Near No.1 Tollgate)  Melpathu  Siruganbur Post Tiruchirappalli District 621213",
     "BRANCH CODE": "AD",
@@ -30719,7 +30719,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3403,
+    "College Code": 3403,
     "COLLEGE NMAE":
       "Mahalakshmi Engineering College  Trichy-Salem Highways (Near No.1 Tollgate)  Melpathu  Siruganbur Post Tiruchirappalli District 621213",
     "BRANCH CODE": "AG",
@@ -30733,7 +30733,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3403,
+    "College Code": 3403,
     "COLLEGE NMAE":
       "Mahalakshmi Engineering College  Trichy-Salem Highways (Near No.1 Tollgate)  Melpathu  Siruganbur Post Tiruchirappalli District 621213",
     "BRANCH CODE": "BC",
@@ -30747,7 +30747,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3403,
+    "College Code": 3403,
     "COLLEGE NMAE":
       "Mahalakshmi Engineering College  Trichy-Salem Highways (Near No.1 Tollgate)  Melpathu  Siruganbur Post Tiruchirappalli District 621213",
     "BRANCH CODE": "CE",
@@ -30761,7 +30761,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3403,
+    "College Code": 3403,
     "COLLEGE NMAE":
       "Mahalakshmi Engineering College  Trichy-Salem Highways (Near No.1 Tollgate)  Melpathu  Siruganbur Post Tiruchirappalli District 621213",
     "BRANCH CODE": "CS",
@@ -30775,7 +30775,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3403,
+    "College Code": 3403,
     "COLLEGE NMAE":
       "Mahalakshmi Engineering College  Trichy-Salem Highways (Near No.1 Tollgate)  Melpathu  Siruganbur Post Tiruchirappalli District 621213",
     "BRANCH CODE": "EC",
@@ -30789,7 +30789,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3403,
+    "College Code": 3403,
     "COLLEGE NMAE":
       "Mahalakshmi Engineering College  Trichy-Salem Highways (Near No.1 Tollgate)  Melpathu  Siruganbur Post Tiruchirappalli District 621213",
     "BRANCH CODE": "EE",
@@ -30803,7 +30803,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3403,
+    "College Code": 3403,
     "COLLEGE NMAE":
       "Mahalakshmi Engineering College  Trichy-Salem Highways (Near No.1 Tollgate)  Melpathu  Siruganbur Post Tiruchirappalli District 621213",
     "BRANCH CODE": "ME",
@@ -30817,7 +30817,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3403,
+    "College Code": 3403,
     "COLLEGE NMAE":
       "Mahalakshmi Engineering College  Trichy-Salem Highways (Near No.1 Tollgate)  Melpathu  Siruganbur Post Tiruchirappalli District 621213",
     "BRANCH CODE": "PH",
@@ -30831,7 +30831,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3410,
+    "College Code": 3410,
     "COLLEGE NMAE":
       "Krishnasamy College of Engineering and Technology  S Kumarapuram  Cuddalore District 607109",
     "BRANCH CODE": "CE",
@@ -30845,7 +30845,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3410,
+    "College Code": 3410,
     "COLLEGE NMAE":
       "Krishnasamy College of Engineering and Technology  S Kumarapuram  Cuddalore District 607109",
     "BRANCH CODE": "CS",
@@ -30859,7 +30859,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3410,
+    "College Code": 3410,
     "COLLEGE NMAE":
       "Krishnasamy College of Engineering and Technology  S Kumarapuram  Cuddalore District 607109",
     "BRANCH CODE": "EC",
@@ -30873,7 +30873,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3410,
+    "College Code": 3410,
     "COLLEGE NMAE":
       "Krishnasamy College of Engineering and Technology  S Kumarapuram  Cuddalore District 607109",
     "BRANCH CODE": "EE",
@@ -30887,7 +30887,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3410,
+    "College Code": 3410,
     "COLLEGE NMAE":
       "Krishnasamy College of Engineering and Technology  S Kumarapuram  Cuddalore District 607109",
     "BRANCH CODE": "IT",
@@ -30901,7 +30901,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3410,
+    "College Code": 3410,
     "COLLEGE NMAE":
       "Krishnasamy College of Engineering and Technology  S Kumarapuram  Cuddalore District 607109",
     "BRANCH CODE": "ME",
@@ -30915,7 +30915,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3425,
+    "College Code": 3425,
     "COLLEGE NMAE":
       "C K College of Engineering and Technology Chellangkuppam  Cuddalore District 607003",
     "BRANCH CODE": "AD",
@@ -30929,7 +30929,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3425,
+    "College Code": 3425,
     "COLLEGE NMAE":
       "C K College of Engineering and Technology Chellangkuppam  Cuddalore District 607003",
     "BRANCH CODE": "CE",
@@ -30943,7 +30943,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3425,
+    "College Code": 3425,
     "COLLEGE NMAE":
       "C K College of Engineering and Technology Chellangkuppam  Cuddalore District 607003",
     "BRANCH CODE": "CS",
@@ -30957,7 +30957,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3425,
+    "College Code": 3425,
     "COLLEGE NMAE":
       "C K College of Engineering and Technology Chellangkuppam  Cuddalore District 607003",
     "BRANCH CODE": "EC",
@@ -30971,7 +30971,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3425,
+    "College Code": 3425,
     "COLLEGE NMAE":
       "C K College of Engineering and Technology Chellangkuppam  Cuddalore District 607003",
     "BRANCH CODE": "EE",
@@ -30985,7 +30985,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3425,
+    "College Code": 3425,
     "COLLEGE NMAE":
       "C K College of Engineering and Technology Chellangkuppam  Cuddalore District 607003",
     "BRANCH CODE": "ME",
@@ -30999,7 +30999,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3454,
+    "College Code": 3454,
     "COLLEGE NMAE":
       "Sri Ramakrishna College of Engineering  Sri Saradha Nagar NH-45  Perambalur District  621113",
     "BRANCH CODE": "AD",
@@ -31013,7 +31013,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3454,
+    "College Code": 3454,
     "COLLEGE NMAE":
       "Sri Ramakrishna College of Engineering  Sri Saradha Nagar NH-45  Perambalur District  621113",
     "BRANCH CODE": "AG",
@@ -31027,7 +31027,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3454,
+    "College Code": 3454,
     "COLLEGE NMAE":
       "Sri Ramakrishna College of Engineering  Sri Saradha Nagar NH-45  Perambalur District  621113",
     "BRANCH CODE": "BM",
@@ -31041,7 +31041,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3454,
+    "College Code": 3454,
     "COLLEGE NMAE":
       "Sri Ramakrishna College of Engineering  Sri Saradha Nagar NH-45  Perambalur District  621113",
     "BRANCH CODE": "CE",
@@ -31055,7 +31055,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3454,
+    "College Code": 3454,
     "COLLEGE NMAE":
       "Sri Ramakrishna College of Engineering  Sri Saradha Nagar NH-45  Perambalur District  621113",
     "BRANCH CODE": "CS",
@@ -31069,7 +31069,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3454,
+    "College Code": 3454,
     "COLLEGE NMAE":
       "Sri Ramakrishna College of Engineering  Sri Saradha Nagar NH-45  Perambalur District  621113",
     "BRANCH CODE": "ME",
@@ -31083,7 +31083,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3454,
+    "College Code": 3454,
     "COLLEGE NMAE":
       "Sri Ramakrishna College of Engineering  Sri Saradha Nagar NH-45  Perambalur District  621113",
     "BRANCH CODE": "SC",
@@ -31097,7 +31097,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3456,
+    "College Code": 3456,
     "COLLEGE NMAE":
       "K S K College of Engineering and Technology  Thanjavur Main Road  Darasuram  Kumbakonam  Thanjavur District 612702",
     "BRANCH CODE": "AD",
@@ -31111,7 +31111,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3456,
+    "College Code": 3456,
     "COLLEGE NMAE":
       "K S K College of Engineering and Technology  Thanjavur Main Road  Darasuram  Kumbakonam  Thanjavur District 612702",
     "BRANCH CODE": "AG",
@@ -31125,7 +31125,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3456,
+    "College Code": 3456,
     "COLLEGE NMAE":
       "K S K College of Engineering and Technology  Thanjavur Main Road  Darasuram  Kumbakonam  Thanjavur District 612702",
     "BRANCH CODE": "AM",
@@ -31140,7 +31140,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3456,
+    "College Code": 3456,
     "COLLEGE NMAE":
       "K S K College of Engineering and Technology  Thanjavur Main Road  Darasuram  Kumbakonam  Thanjavur District 612702",
     "BRANCH CODE": "BM",
@@ -31154,7 +31154,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3456,
+    "College Code": 3456,
     "COLLEGE NMAE":
       "K S K College of Engineering and Technology  Thanjavur Main Road  Darasuram  Kumbakonam  Thanjavur District 612702",
     "BRANCH CODE": "CS",
@@ -31168,7 +31168,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3456,
+    "College Code": 3456,
     "COLLEGE NMAE":
       "K S K College of Engineering and Technology  Thanjavur Main Road  Darasuram  Kumbakonam  Thanjavur District 612702",
     "BRANCH CODE": "EC",
@@ -31182,7 +31182,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3456,
+    "College Code": 3456,
     "COLLEGE NMAE":
       "K S K College of Engineering and Technology  Thanjavur Main Road  Darasuram  Kumbakonam  Thanjavur District 612702",
     "BRANCH CODE": "EE",
@@ -31196,7 +31196,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3456,
+    "College Code": 3456,
     "COLLEGE NMAE":
       "K S K College of Engineering and Technology  Thanjavur Main Road  Darasuram  Kumbakonam  Thanjavur District 612702",
     "BRANCH CODE": "ME",
@@ -31210,7 +31210,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3460,
+    "College Code": 3460,
     "COLLEGE NMAE":
       "Surya College of Engineering  Konalai  Tiruchirappalli District 621132",
     "BRANCH CODE": "CE",
@@ -31224,7 +31224,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3460,
+    "College Code": 3460,
     "COLLEGE NMAE":
       "Surya College of Engineering  Konalai  Tiruchirappalli District 621132",
     "BRANCH CODE": "CS",
@@ -31238,7 +31238,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3460,
+    "College Code": 3460,
     "COLLEGE NMAE":
       "Surya College of Engineering  Konalai  Tiruchirappalli District 621132",
     "BRANCH CODE": "EE",
@@ -31252,7 +31252,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3460,
+    "College Code": 3460,
     "COLLEGE NMAE":
       "Surya College of Engineering  Konalai  Tiruchirappalli District 621132",
     "BRANCH CODE": "ME",
@@ -31266,7 +31266,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3461,
+    "College Code": 3461,
     "COLLEGE NMAE":
       "Arifa Institute of Technology(Formly Haji sheik Ismail Engineering College)  Esanoor  Keelaiyur Post  Thirukkuvalai Taluk  Nagapattinam District 611103",
     "BRANCH CODE": "AD",
@@ -31280,7 +31280,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3461,
+    "College Code": 3461,
     "COLLEGE NMAE":
       "Arifa Institute of Technology(Formly Haji sheik Ismail Engineering College)  Esanoor  Keelaiyur Post  Thirukkuvalai Taluk  Nagapattinam District 611103",
     "BRANCH CODE": "CS",
@@ -31294,7 +31294,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3461,
+    "College Code": 3461,
     "COLLEGE NMAE":
       "Arifa Institute of Technology(Formly Haji sheik Ismail Engineering College)  Esanoor  Keelaiyur Post  Thirukkuvalai Taluk  Nagapattinam District 611103",
     "BRANCH CODE": "EC",
@@ -31308,7 +31308,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3461,
+    "College Code": 3461,
     "COLLEGE NMAE":
       "Arifa Institute of Technology(Formly Haji sheik Ismail Engineering College)  Esanoor  Keelaiyur Post  Thirukkuvalai Taluk  Nagapattinam District 611103",
     "BRANCH CODE": "EE",
@@ -31322,7 +31322,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3461,
+    "College Code": 3461,
     "COLLEGE NMAE":
       "Arifa Institute of Technology(Formly Haji sheik Ismail Engineering College)  Esanoor  Keelaiyur Post  Thirukkuvalai Taluk  Nagapattinam District 611103",
     "BRANCH CODE": "ME",
@@ -31336,7 +31336,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3462,
+    "College Code": 3462,
     "COLLEGE NMAE":
       "Ariyalur Engineering College  NH-227  Trichy-Chithambaram NH  Karuppur-Senapathy Post  Ariyalur District 621707",
     "BRANCH CODE": "CE",
@@ -31350,7 +31350,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3462,
+    "College Code": 3462,
     "COLLEGE NMAE":
       "Ariyalur Engineering College  NH-227  Trichy-Chithambaram NH  Karuppur-Senapathy Post  Ariyalur District 621707",
     "BRANCH CODE": "CS",
@@ -31364,7 +31364,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3462,
+    "College Code": 3462,
     "COLLEGE NMAE":
       "Ariyalur Engineering College  NH-227  Trichy-Chithambaram NH  Karuppur-Senapathy Post  Ariyalur District 621707",
     "BRANCH CODE": "EC",
@@ -31378,7 +31378,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3462,
+    "College Code": 3462,
     "COLLEGE NMAE":
       "Ariyalur Engineering College  NH-227  Trichy-Chithambaram NH  Karuppur-Senapathy Post  Ariyalur District 621707",
     "BRANCH CODE": "EE",
@@ -31392,7 +31392,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3462,
+    "College Code": 3462,
     "COLLEGE NMAE":
       "Ariyalur Engineering College  NH-227  Trichy-Chithambaram NH  Karuppur-Senapathy Post  Ariyalur District 621707",
     "BRANCH CODE": "ME",
@@ -31406,7 +31406,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3464,
+    "College Code": 3464,
     "COLLEGE NMAE":
       "Government College of Engineering  Gandarvakottai Road Sengipatti  Thanjavur District 613402",
     "BRANCH CODE": "CE",
@@ -31420,7 +31420,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3464,
+    "College Code": 3464,
     "COLLEGE NMAE":
       "Government College of Engineering  Gandarvakottai Road Sengipatti  Thanjavur District 613402",
     "BRANCH CODE": "CS",
@@ -31434,7 +31434,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3464,
+    "College Code": 3464,
     "COLLEGE NMAE":
       "Government College of Engineering  Gandarvakottai Road Sengipatti  Thanjavur District 613402",
     "BRANCH CODE": "EC",
@@ -31448,7 +31448,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3464,
+    "College Code": 3464,
     "COLLEGE NMAE":
       "Government College of Engineering  Gandarvakottai Road Sengipatti  Thanjavur District 613402",
     "BRANCH CODE": "EE",
@@ -31462,7 +31462,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3464,
+    "College Code": 3464,
     "COLLEGE NMAE":
       "Government College of Engineering  Gandarvakottai Road Sengipatti  Thanjavur District 613402",
     "BRANCH CODE": "ME",
@@ -31476,7 +31476,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3465,
+    "College Code": 3465,
     "COLLEGE NMAE":
       "Government College of Engineering  Srirangam Sethurappatti  Tiruchirappalli District 620012",
     "BRANCH CODE": "CE",
@@ -31490,7 +31490,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3465,
+    "College Code": 3465,
     "COLLEGE NMAE":
       "Government College of Engineering  Srirangam Sethurappatti  Tiruchirappalli District 620012",
     "BRANCH CODE": "CS",
@@ -31504,7 +31504,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3465,
+    "College Code": 3465,
     "COLLEGE NMAE":
       "Government College of Engineering  Srirangam Sethurappatti  Tiruchirappalli District 620012",
     "BRANCH CODE": "EC",
@@ -31518,7 +31518,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3465,
+    "College Code": 3465,
     "COLLEGE NMAE":
       "Government College of Engineering  Srirangam Sethurappatti  Tiruchirappalli District 620012",
     "BRANCH CODE": "EE",
@@ -31532,7 +31532,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3465,
+    "College Code": 3465,
     "COLLEGE NMAE":
       "Government College of Engineering  Srirangam Sethurappatti  Tiruchirappalli District 620012",
     "BRANCH CODE": "ME",
@@ -31546,7 +31546,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3466,
+    "College Code": 3466,
     "COLLEGE NMAE":
       "Nelliandavar Institute of Technology  Nerunjikorai Village Pudhupalayam  Ariyalur Taluk  Ariyalur District 621704",
     "BRANCH CODE": "AD",
@@ -31560,7 +31560,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3466,
+    "College Code": 3466,
     "COLLEGE NMAE":
       "Nelliandavar Institute of Technology  Nerunjikorai Village Pudhupalayam  Ariyalur Taluk  Ariyalur District 621704",
     "BRANCH CODE": "CS",
@@ -31574,7 +31574,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3466,
+    "College Code": 3466,
     "COLLEGE NMAE":
       "Nelliandavar Institute of Technology  Nerunjikorai Village Pudhupalayam  Ariyalur Taluk  Ariyalur District 621704",
     "BRANCH CODE": "EC",
@@ -31588,7 +31588,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3466,
+    "College Code": 3466,
     "COLLEGE NMAE":
       "Nelliandavar Institute of Technology  Nerunjikorai Village Pudhupalayam  Ariyalur Taluk  Ariyalur District 621704",
     "BRANCH CODE": "EE",
@@ -31602,7 +31602,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3466,
+    "College Code": 3466,
     "COLLEGE NMAE":
       "Nelliandavar Institute of Technology  Nerunjikorai Village Pudhupalayam  Ariyalur Taluk  Ariyalur District 621704",
     "BRANCH CODE": "ME",
@@ -31616,7 +31616,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3701,
+    "College Code": 3701,
     "COLLEGE NMAE":
       "K Ramakrishnan College of Technology (Autonomous) Kariyamanickam Road  Samayapuram  Manachanallur Taluk Tiruchirappalli District 621112",
     "BRANCH CODE": "AD",
@@ -31630,7 +31630,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3701,
+    "College Code": 3701,
     "COLLEGE NMAE":
       "K Ramakrishnan College of Technology (Autonomous) Kariyamanickam Road  Samayapuram  Manachanallur Taluk Tiruchirappalli District 621112",
     "BRANCH CODE": "AM",
@@ -31645,7 +31645,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3701,
+    "College Code": 3701,
     "COLLEGE NMAE":
       "K Ramakrishnan College of Technology (Autonomous) Kariyamanickam Road  Samayapuram  Manachanallur Taluk Tiruchirappalli District 621112",
     "BRANCH CODE": "CE",
@@ -31659,7 +31659,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3701,
+    "College Code": 3701,
     "COLLEGE NMAE":
       "K Ramakrishnan College of Technology (Autonomous) Kariyamanickam Road  Samayapuram  Manachanallur Taluk Tiruchirappalli District 621112",
     "BRANCH CODE": "CS",
@@ -31673,7 +31673,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3701,
+    "College Code": 3701,
     "COLLEGE NMAE":
       "K Ramakrishnan College of Technology (Autonomous) Kariyamanickam Road  Samayapuram  Manachanallur Taluk Tiruchirappalli District 621112",
     "BRANCH CODE": "EC",
@@ -31687,7 +31687,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3701,
+    "College Code": 3701,
     "COLLEGE NMAE":
       "K Ramakrishnan College of Technology (Autonomous) Kariyamanickam Road  Samayapuram  Manachanallur Taluk Tiruchirappalli District 621112",
     "BRANCH CODE": "EE",
@@ -31701,7 +31701,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3701,
+    "College Code": 3701,
     "COLLEGE NMAE":
       "K Ramakrishnan College of Technology (Autonomous) Kariyamanickam Road  Samayapuram  Manachanallur Taluk Tiruchirappalli District 621112",
     "BRANCH CODE": "IT",
@@ -31715,7 +31715,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3701,
+    "College Code": 3701,
     "COLLEGE NMAE":
       "K Ramakrishnan College of Technology (Autonomous) Kariyamanickam Road  Samayapuram  Manachanallur Taluk Tiruchirappalli District 621112",
     "BRANCH CODE": "ME",
@@ -31729,7 +31729,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3760,
+    "College Code": 3760,
     "COLLEGE NMAE":
       "Sir Issac Newton College of Engineering and Technology Anthanapeetai Post  Papakoil  Nagappattinam District 611102",
     "BRANCH CODE": "AD",
@@ -31743,7 +31743,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3760,
+    "College Code": 3760,
     "COLLEGE NMAE":
       "Sir Issac Newton College of Engineering and Technology Anthanapeetai Post  Papakoil  Nagappattinam District 611102",
     "BRANCH CODE": "AG",
@@ -31757,7 +31757,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3760,
+    "College Code": 3760,
     "COLLEGE NMAE":
       "Sir Issac Newton College of Engineering and Technology Anthanapeetai Post  Papakoil  Nagappattinam District 611102",
     "BRANCH CODE": "CS",
@@ -31771,7 +31771,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3760,
+    "College Code": 3760,
     "COLLEGE NMAE":
       "Sir Issac Newton College of Engineering and Technology Anthanapeetai Post  Papakoil  Nagappattinam District 611102",
     "BRANCH CODE": "EC",
@@ -31785,7 +31785,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3760,
+    "College Code": 3760,
     "COLLEGE NMAE":
       "Sir Issac Newton College of Engineering and Technology Anthanapeetai Post  Papakoil  Nagappattinam District 611102",
     "BRANCH CODE": "IT",
@@ -31799,7 +31799,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3760,
+    "College Code": 3760,
     "COLLEGE NMAE":
       "Sir Issac Newton College of Engineering and Technology Anthanapeetai Post  Papakoil  Nagappattinam District 611102",
     "BRANCH CODE": "ME",
@@ -31813,7 +31813,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3766,
+    "College Code": 3766,
     "COLLEGE NMAE":
       "Star Lion College of Engineering and Technology Manankorai Main Road  Manankorai Village  Thanjavur District 614206",
     "BRANCH CODE": "AD",
@@ -31827,7 +31827,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3766,
+    "College Code": 3766,
     "COLLEGE NMAE":
       "Star Lion College of Engineering and Technology Manankorai Main Road  Manankorai Village  Thanjavur District 614206",
     "BRANCH CODE": "AM",
@@ -31842,7 +31842,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3766,
+    "College Code": 3766,
     "COLLEGE NMAE":
       "Star Lion College of Engineering and Technology Manankorai Main Road  Manankorai Village  Thanjavur District 614206",
     "BRANCH CODE": "CE",
@@ -31856,7 +31856,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3766,
+    "College Code": 3766,
     "COLLEGE NMAE":
       "Star Lion College of Engineering and Technology Manankorai Main Road  Manankorai Village  Thanjavur District 614206",
     "BRANCH CODE": "CS",
@@ -31870,7 +31870,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3766,
+    "College Code": 3766,
     "COLLEGE NMAE":
       "Star Lion College of Engineering and Technology Manankorai Main Road  Manankorai Village  Thanjavur District 614206",
     "BRANCH CODE": "EC",
@@ -31884,7 +31884,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3766,
+    "College Code": 3766,
     "COLLEGE NMAE":
       "Star Lion College of Engineering and Technology Manankorai Main Road  Manankorai Village  Thanjavur District 614206",
     "BRANCH CODE": "EE",
@@ -31898,7 +31898,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3766,
+    "College Code": 3766,
     "COLLEGE NMAE":
       "Star Lion College of Engineering and Technology Manankorai Main Road  Manankorai Village  Thanjavur District 614206",
     "BRANCH CODE": "ME",
@@ -31912,7 +31912,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3782,
+    "College Code": 3782,
     "COLLEGE NMAE":
       "OASYS Institute of Technology   Pulivalam Village  Musiri Taluk  Tiruchirappalli District 621006",
     "BRANCH CODE": "AD",
@@ -31926,7 +31926,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3782,
+    "College Code": 3782,
     "COLLEGE NMAE":
       "OASYS Institute of Technology   Pulivalam Village  Musiri Taluk  Tiruchirappalli District 621006",
     "BRANCH CODE": "CB",
@@ -31940,7 +31940,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3782,
+    "College Code": 3782,
     "COLLEGE NMAE":
       "OASYS Institute of Technology   Pulivalam Village  Musiri Taluk  Tiruchirappalli District 621006",
     "BRANCH CODE": "CS",
@@ -31954,7 +31954,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3782,
+    "College Code": 3782,
     "COLLEGE NMAE":
       "OASYS Institute of Technology   Pulivalam Village  Musiri Taluk  Tiruchirappalli District 621006",
     "BRANCH CODE": "EC",
@@ -31968,7 +31968,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3782,
+    "College Code": 3782,
     "COLLEGE NMAE":
       "OASYS Institute of Technology   Pulivalam Village  Musiri Taluk  Tiruchirappalli District 621006",
     "BRANCH CODE": "EE",
@@ -31982,7 +31982,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3782,
+    "College Code": 3782,
     "COLLEGE NMAE":
       "OASYS Institute of Technology   Pulivalam Village  Musiri Taluk  Tiruchirappalli District 621006",
     "BRANCH CODE": "IT",
@@ -31996,7 +31996,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3782,
+    "College Code": 3782,
     "COLLEGE NMAE":
       "OASYS Institute of Technology   Pulivalam Village  Musiri Taluk  Tiruchirappalli District 621006",
     "BRANCH CODE": "ME",
@@ -32010,7 +32010,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3786,
+    "College Code": 3786,
     "COLLEGE NMAE":
       "M.A.M. School of Engineering  Siruganur  Tiruchirappalli District 621105",
     "BRANCH CODE": "AD",
@@ -32024,7 +32024,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3786,
+    "College Code": 3786,
     "COLLEGE NMAE":
       "M.A.M. School of Engineering  Siruganur  Tiruchirappalli District 621105",
     "BRANCH CODE": "AE",
@@ -32038,7 +32038,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3786,
+    "College Code": 3786,
     "COLLEGE NMAE":
       "M.A.M. School of Engineering  Siruganur  Tiruchirappalli District 621105",
     "BRANCH CODE": "BM",
@@ -32052,7 +32052,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3786,
+    "College Code": 3786,
     "COLLEGE NMAE":
       "M.A.M. School of Engineering  Siruganur  Tiruchirappalli District 621105",
     "BRANCH CODE": "CS",
@@ -32066,7 +32066,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3786,
+    "College Code": 3786,
     "COLLEGE NMAE":
       "M.A.M. School of Engineering  Siruganur  Tiruchirappalli District 621105",
     "BRANCH CODE": "EC",
@@ -32080,7 +32080,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3786,
+    "College Code": 3786,
     "COLLEGE NMAE":
       "M.A.M. School of Engineering  Siruganur  Tiruchirappalli District 621105",
     "BRANCH CODE": "EE",
@@ -32094,7 +32094,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3786,
+    "College Code": 3786,
     "COLLEGE NMAE":
       "M.A.M. School of Engineering  Siruganur  Tiruchirappalli District 621105",
     "BRANCH CODE": "ME",
@@ -32108,7 +32108,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3786,
+    "College Code": 3786,
     "COLLEGE NMAE":
       "M.A.M. School of Engineering  Siruganur  Tiruchirappalli District 621105",
     "BRANCH CODE": "MZ",
@@ -32122,7 +32122,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3795,
+    "College Code": 3795,
     "COLLEGE NMAE":
       "SRM TRP Engineering College  Irungalur  Manachanallur Taluk  Tiruchirappalli District 621105",
     "BRANCH CODE": "AD",
@@ -32136,7 +32136,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3795,
+    "College Code": 3795,
     "COLLEGE NMAE":
       "SRM TRP Engineering College  Irungalur  Manachanallur Taluk  Tiruchirappalli District 621105",
     "BRANCH CODE": "CE",
@@ -32150,7 +32150,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3795,
+    "College Code": 3795,
     "COLLEGE NMAE":
       "SRM TRP Engineering College  Irungalur  Manachanallur Taluk  Tiruchirappalli District 621105",
     "BRANCH CODE": "CS",
@@ -32164,7 +32164,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3795,
+    "College Code": 3795,
     "COLLEGE NMAE":
       "SRM TRP Engineering College  Irungalur  Manachanallur Taluk  Tiruchirappalli District 621105",
     "BRANCH CODE": "EC",
@@ -32178,7 +32178,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3795,
+    "College Code": 3795,
     "COLLEGE NMAE":
       "SRM TRP Engineering College  Irungalur  Manachanallur Taluk  Tiruchirappalli District 621105",
     "BRANCH CODE": "EE",
@@ -32192,7 +32192,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3795,
+    "College Code": 3795,
     "COLLEGE NMAE":
       "SRM TRP Engineering College  Irungalur  Manachanallur Taluk  Tiruchirappalli District 621105",
     "BRANCH CODE": "ME",
@@ -32206,7 +32206,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3801,
+    "College Code": 3801,
     "COLLEGE NMAE":
       "A V C College of Engineering  Mannampandal Post MayiladuthuraiDistrict 609305",
     "BRANCH CODE": "CE",
@@ -32220,7 +32220,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3801,
+    "College Code": 3801,
     "COLLEGE NMAE":
       "A V C College of Engineering  Mannampandal Post MayiladuthuraiDistrict 609305",
     "BRANCH CODE": "CS",
@@ -32234,7 +32234,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3801,
+    "College Code": 3801,
     "COLLEGE NMAE":
       "A V C College of Engineering  Mannampandal Post MayiladuthuraiDistrict 609305",
     "BRANCH CODE": "EC",
@@ -32248,7 +32248,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3801,
+    "College Code": 3801,
     "COLLEGE NMAE":
       "A V C College of Engineering  Mannampandal Post MayiladuthuraiDistrict 609305",
     "BRANCH CODE": "EE",
@@ -32262,7 +32262,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3801,
+    "College Code": 3801,
     "COLLEGE NMAE":
       "A V C College of Engineering  Mannampandal Post MayiladuthuraiDistrict 609305",
     "BRANCH CODE": "IC",
@@ -32276,7 +32276,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3801,
+    "College Code": 3801,
     "COLLEGE NMAE":
       "A V C College of Engineering  Mannampandal Post MayiladuthuraiDistrict 609305",
     "BRANCH CODE": "IT",
@@ -32290,7 +32290,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3801,
+    "College Code": 3801,
     "COLLEGE NMAE":
       "A V C College of Engineering  Mannampandal Post MayiladuthuraiDistrict 609305",
     "BRANCH CODE": "ME",
@@ -32304,7 +32304,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3802,
+    "College Code": 3802,
     "COLLEGE NMAE":
       "Shri Angalamman College of Engineering and Technology Siruganoor Tiruchirapalli-621 105",
     "BRANCH CODE": "CE",
@@ -32318,7 +32318,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3802,
+    "College Code": 3802,
     "COLLEGE NMAE":
       "Shri Angalamman College of Engineering and Technology Siruganoor Tiruchirapalli-621 105",
     "BRANCH CODE": "CS",
@@ -32332,7 +32332,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3802,
+    "College Code": 3802,
     "COLLEGE NMAE":
       "Shri Angalamman College of Engineering and Technology Siruganoor Tiruchirapalli-621 105",
     "BRANCH CODE": "EE",
@@ -32346,7 +32346,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3802,
+    "College Code": 3802,
     "COLLEGE NMAE":
       "Shri Angalamman College of Engineering and Technology Siruganoor Tiruchirapalli-621 105",
     "BRANCH CODE": "ME",
@@ -32360,7 +32360,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3803,
+    "College Code": 3803,
     "COLLEGE NMAE":
       "Anjalai Ammal Mahalingam Engineering College  Kovilvenni Thiruvarur District 614403",
     "BRANCH CODE": "CE",
@@ -32374,7 +32374,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3803,
+    "College Code": 3803,
     "COLLEGE NMAE":
       "Anjalai Ammal Mahalingam Engineering College  Kovilvenni Thiruvarur District 614403",
     "BRANCH CODE": "CH",
@@ -32388,7 +32388,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3803,
+    "College Code": 3803,
     "COLLEGE NMAE":
       "Anjalai Ammal Mahalingam Engineering College  Kovilvenni Thiruvarur District 614403",
     "BRANCH CODE": "CS",
@@ -32402,7 +32402,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3803,
+    "College Code": 3803,
     "COLLEGE NMAE":
       "Anjalai Ammal Mahalingam Engineering College  Kovilvenni Thiruvarur District 614403",
     "BRANCH CODE": "EC",
@@ -32416,7 +32416,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3803,
+    "College Code": 3803,
     "COLLEGE NMAE":
       "Anjalai Ammal Mahalingam Engineering College  Kovilvenni Thiruvarur District 614403",
     "BRANCH CODE": "EE",
@@ -32430,7 +32430,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3803,
+    "College Code": 3803,
     "COLLEGE NMAE":
       "Anjalai Ammal Mahalingam Engineering College  Kovilvenni Thiruvarur District 614403",
     "BRANCH CODE": "IT",
@@ -32444,7 +32444,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3803,
+    "College Code": 3803,
     "COLLEGE NMAE":
       "Anjalai Ammal Mahalingam Engineering College  Kovilvenni Thiruvarur District 614403",
     "BRANCH CODE": "ME",
@@ -32458,7 +32458,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3804,
+    "College Code": 3804,
     "COLLEGE NMAE":
       "Arasu Engineering  College  Chennai Main Road Kumbakonam  Thanjavur District 612501",
     "BRANCH CODE": "AD",
@@ -32472,7 +32472,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3804,
+    "College Code": 3804,
     "COLLEGE NMAE":
       "Arasu Engineering  College  Chennai Main Road Kumbakonam  Thanjavur District 612501",
     "BRANCH CODE": "AG",
@@ -32486,7 +32486,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3804,
+    "College Code": 3804,
     "COLLEGE NMAE":
       "Arasu Engineering  College  Chennai Main Road Kumbakonam  Thanjavur District 612501",
     "BRANCH CODE": "BM",
@@ -32500,7 +32500,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3804,
+    "College Code": 3804,
     "COLLEGE NMAE":
       "Arasu Engineering  College  Chennai Main Road Kumbakonam  Thanjavur District 612501",
     "BRANCH CODE": "CE",
@@ -32514,7 +32514,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3804,
+    "College Code": 3804,
     "COLLEGE NMAE":
       "Arasu Engineering  College  Chennai Main Road Kumbakonam  Thanjavur District 612501",
     "BRANCH CODE": "CS",
@@ -32528,7 +32528,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3804,
+    "College Code": 3804,
     "COLLEGE NMAE":
       "Arasu Engineering  College  Chennai Main Road Kumbakonam  Thanjavur District 612501",
     "BRANCH CODE": "EC",
@@ -32542,7 +32542,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3804,
+    "College Code": 3804,
     "COLLEGE NMAE":
       "Arasu Engineering  College  Chennai Main Road Kumbakonam  Thanjavur District 612501",
     "BRANCH CODE": "EE",
@@ -32556,7 +32556,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3804,
+    "College Code": 3804,
     "COLLEGE NMAE":
       "Arasu Engineering  College  Chennai Main Road Kumbakonam  Thanjavur District 612501",
     "BRANCH CODE": "ME",
@@ -32570,7 +32570,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3805,
+    "College Code": 3805,
     "COLLEGE NMAE":
       "Dhanalakshmi Srinivasan  Engineering College (Autonomous)  Thuraiyur Road  Perambalur District 621212",
     "BRANCH CODE": "AD",
@@ -32584,7 +32584,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3805,
+    "College Code": 3805,
     "COLLEGE NMAE":
       "Dhanalakshmi Srinivasan  Engineering College (Autonomous)  Thuraiyur Road  Perambalur District 621212",
     "BRANCH CODE": "AE",
@@ -32598,7 +32598,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3805,
+    "College Code": 3805,
     "COLLEGE NMAE":
       "Dhanalakshmi Srinivasan  Engineering College (Autonomous)  Thuraiyur Road  Perambalur District 621212",
     "BRANCH CODE": "AG",
@@ -32612,7 +32612,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3805,
+    "College Code": 3805,
     "COLLEGE NMAE":
       "Dhanalakshmi Srinivasan  Engineering College (Autonomous)  Thuraiyur Road  Perambalur District 621212",
     "BRANCH CODE": "BM",
@@ -32626,7 +32626,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3805,
+    "College Code": 3805,
     "COLLEGE NMAE":
       "Dhanalakshmi Srinivasan  Engineering College (Autonomous)  Thuraiyur Road  Perambalur District 621212",
     "BRANCH CODE": "BT",
@@ -32640,7 +32640,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3805,
+    "College Code": 3805,
     "COLLEGE NMAE":
       "Dhanalakshmi Srinivasan  Engineering College (Autonomous)  Thuraiyur Road  Perambalur District 621212",
     "BRANCH CODE": "CE",
@@ -32654,7 +32654,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3805,
+    "College Code": 3805,
     "COLLEGE NMAE":
       "Dhanalakshmi Srinivasan  Engineering College (Autonomous)  Thuraiyur Road  Perambalur District 621212",
     "BRANCH CODE": "CH",
@@ -32668,7 +32668,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3805,
+    "College Code": 3805,
     "COLLEGE NMAE":
       "Dhanalakshmi Srinivasan  Engineering College (Autonomous)  Thuraiyur Road  Perambalur District 621212",
     "BRANCH CODE": "CS",
@@ -32682,7 +32682,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3805,
+    "College Code": 3805,
     "COLLEGE NMAE":
       "Dhanalakshmi Srinivasan  Engineering College (Autonomous)  Thuraiyur Road  Perambalur District 621212",
     "BRANCH CODE": "EC",
@@ -32696,7 +32696,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3805,
+    "College Code": 3805,
     "COLLEGE NMAE":
       "Dhanalakshmi Srinivasan  Engineering College (Autonomous)  Thuraiyur Road  Perambalur District 621212",
     "BRANCH CODE": "EE",
@@ -32710,7 +32710,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3805,
+    "College Code": 3805,
     "COLLEGE NMAE":
       "Dhanalakshmi Srinivasan  Engineering College (Autonomous)  Thuraiyur Road  Perambalur District 621212",
     "BRANCH CODE": "FD",
@@ -32724,7 +32724,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3805,
+    "College Code": 3805,
     "COLLEGE NMAE":
       "Dhanalakshmi Srinivasan  Engineering College (Autonomous)  Thuraiyur Road  Perambalur District 621212",
     "BRANCH CODE": "IT",
@@ -32738,7 +32738,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3805,
+    "College Code": 3805,
     "COLLEGE NMAE":
       "Dhanalakshmi Srinivasan  Engineering College (Autonomous)  Thuraiyur Road  Perambalur District 621212",
     "BRANCH CODE": "ME",
@@ -32752,7 +32752,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3805,
+    "College Code": 3805,
     "COLLEGE NMAE":
       "Dhanalakshmi Srinivasan  Engineering College (Autonomous)  Thuraiyur Road  Perambalur District 621212",
     "BRANCH CODE": "PH",
@@ -32766,7 +32766,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3805,
+    "College Code": 3805,
     "COLLEGE NMAE":
       "Dhanalakshmi Srinivasan  Engineering College (Autonomous)  Thuraiyur Road  Perambalur District 621212",
     "BRANCH CODE": "RM",
@@ -32780,7 +32780,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3805,
+    "College Code": 3805,
     "COLLEGE NMAE":
       "Dhanalakshmi Srinivasan  Engineering College (Autonomous)  Thuraiyur Road  Perambalur District 621212",
     "BRANCH CODE": "SC",
@@ -32794,7 +32794,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3806,
+    "College Code": 3806,
     "COLLEGE NMAE":
       "E G S Pillay  Engineering College (Autonomous) Nagapattinam District 611002",
     "BRANCH CODE": "AD",
@@ -32808,7 +32808,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3806,
+    "College Code": 3806,
     "COLLEGE NMAE":
       "E G S Pillay  Engineering College (Autonomous) Nagapattinam District 611002",
     "BRANCH CODE": "BM",
@@ -32822,7 +32822,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3806,
+    "College Code": 3806,
     "COLLEGE NMAE":
       "E G S Pillay  Engineering College (Autonomous) Nagapattinam District 611002",
     "BRANCH CODE": "CB",
@@ -32836,7 +32836,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3806,
+    "College Code": 3806,
     "COLLEGE NMAE":
       "E G S Pillay  Engineering College (Autonomous) Nagapattinam District 611002",
     "BRANCH CODE": "CE",
@@ -32850,7 +32850,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3806,
+    "College Code": 3806,
     "COLLEGE NMAE":
       "E G S Pillay  Engineering College (Autonomous) Nagapattinam District 611002",
     "BRANCH CODE": "CS",
@@ -32864,7 +32864,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3806,
+    "College Code": 3806,
     "COLLEGE NMAE":
       "E G S Pillay  Engineering College (Autonomous) Nagapattinam District 611002",
     "BRANCH CODE": "EC",
@@ -32878,7 +32878,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3806,
+    "College Code": 3806,
     "COLLEGE NMAE":
       "E G S Pillay  Engineering College (Autonomous) Nagapattinam District 611002",
     "BRANCH CODE": "EE",
@@ -32892,7 +32892,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3806,
+    "College Code": 3806,
     "COLLEGE NMAE":
       "E G S Pillay  Engineering College (Autonomous) Nagapattinam District 611002",
     "BRANCH CODE": "IT",
@@ -32906,7 +32906,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3806,
+    "College Code": 3806,
     "COLLEGE NMAE":
       "E G S Pillay  Engineering College (Autonomous) Nagapattinam District 611002",
     "BRANCH CODE": "ME",
@@ -32920,7 +32920,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3807,
+    "College Code": 3807,
     "COLLEGE NMAE":
       "J J College of Engineering and Technology Poolankulathupatti Post  Thiruchirappalli District 620009",
     "BRANCH CODE": "AD",
@@ -32934,7 +32934,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3807,
+    "College Code": 3807,
     "COLLEGE NMAE":
       "J J College of Engineering and Technology Poolankulathupatti Post  Thiruchirappalli District 620009",
     "BRANCH CODE": "AE",
@@ -32948,7 +32948,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3807,
+    "College Code": 3807,
     "COLLEGE NMAE":
       "J J College of Engineering and Technology Poolankulathupatti Post  Thiruchirappalli District 620009",
     "BRANCH CODE": "CE",
@@ -32962,7 +32962,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3807,
+    "College Code": 3807,
     "COLLEGE NMAE":
       "J J College of Engineering and Technology Poolankulathupatti Post  Thiruchirappalli District 620009",
     "BRANCH CODE": "CS",
@@ -32976,7 +32976,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3807,
+    "College Code": 3807,
     "COLLEGE NMAE":
       "J J College of Engineering and Technology Poolankulathupatti Post  Thiruchirappalli District 620009",
     "BRANCH CODE": "EC",
@@ -32990,7 +32990,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3807,
+    "College Code": 3807,
     "COLLEGE NMAE":
       "J J College of Engineering and Technology Poolankulathupatti Post  Thiruchirappalli District 620009",
     "BRANCH CODE": "EE",
@@ -33004,7 +33004,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3807,
+    "College Code": 3807,
     "COLLEGE NMAE":
       "J J College of Engineering and Technology Poolankulathupatti Post  Thiruchirappalli District 620009",
     "BRANCH CODE": "IT",
@@ -33018,7 +33018,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3807,
+    "College Code": 3807,
     "COLLEGE NMAE":
       "J J College of Engineering and Technology Poolankulathupatti Post  Thiruchirappalli District 620009",
     "BRANCH CODE": "ME",
@@ -33032,7 +33032,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3807,
+    "College Code": 3807,
     "COLLEGE NMAE":
       "J J College of Engineering and Technology Poolankulathupatti Post  Thiruchirappalli District 620009",
     "BRANCH CODE": "SC",
@@ -33046,7 +33046,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3808,
+    "College Code": 3808,
     "COLLEGE NMAE":
       "Jayaram College of Engineering and Technology Karattampatti  Pagalavadi Po Thuraivur  Trichy-621014",
     "BRANCH CODE": "CE",
@@ -33060,7 +33060,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3808,
+    "College Code": 3808,
     "COLLEGE NMAE":
       "Jayaram College of Engineering and Technology Karattampatti  Pagalavadi Po Thuraivur  Trichy-621014",
     "BRANCH CODE": "CS",
@@ -33074,7 +33074,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3808,
+    "College Code": 3808,
     "COLLEGE NMAE":
       "Jayaram College of Engineering and Technology Karattampatti  Pagalavadi Po Thuraivur  Trichy-621014",
     "BRANCH CODE": "EC",
@@ -33088,7 +33088,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3808,
+    "College Code": 3808,
     "COLLEGE NMAE":
       "Jayaram College of Engineering and Technology Karattampatti  Pagalavadi Po Thuraivur  Trichy-621014",
     "BRANCH CODE": "EE",
@@ -33102,7 +33102,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3808,
+    "College Code": 3808,
     "COLLEGE NMAE":
       "Jayaram College of Engineering and Technology Karattampatti  Pagalavadi Po Thuraivur  Trichy-621014",
     "BRANCH CODE": "IT",
@@ -33116,7 +33116,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3808,
+    "College Code": 3808,
     "COLLEGE NMAE":
       "Jayaram College of Engineering and Technology Karattampatti  Pagalavadi Po Thuraivur  Trichy-621014",
     "BRANCH CODE": "ME",
@@ -33130,7 +33130,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3809,
+    "College Code": 3809,
     "COLLEGE NMAE":
       "Kurinji College of Engineering and Technology  Manapparai Tiruchirappalli District 621307",
     "BRANCH CODE": "CS",
@@ -33144,7 +33144,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3809,
+    "College Code": 3809,
     "COLLEGE NMAE":
       "Kurinji College of Engineering and Technology  Manapparai Tiruchirappalli District 621307",
     "BRANCH CODE": "EC",
@@ -33158,7 +33158,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3809,
+    "College Code": 3809,
     "COLLEGE NMAE":
       "Kurinji College of Engineering and Technology  Manapparai Tiruchirappalli District 621307",
     "BRANCH CODE": "EE",
@@ -33172,7 +33172,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3809,
+    "College Code": 3809,
     "COLLEGE NMAE":
       "Kurinji College of Engineering and Technology  Manapparai Tiruchirappalli District 621307",
     "BRANCH CODE": "ME",
@@ -33186,7 +33186,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3810,
+    "College Code": 3810,
     "COLLEGE NMAE":
       "M.A.M. College of Engineering  Siruganur  Tiruchirappalli District 621105",
     "BRANCH CODE": "AD",
@@ -33200,7 +33200,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3810,
+    "College Code": 3810,
     "COLLEGE NMAE":
       "M.A.M. College of Engineering  Siruganur  Tiruchirappalli District 621105",
     "BRANCH CODE": "AG",
@@ -33214,7 +33214,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3810,
+    "College Code": 3810,
     "COLLEGE NMAE":
       "M.A.M. College of Engineering  Siruganur  Tiruchirappalli District 621105",
     "BRANCH CODE": "BM",
@@ -33228,7 +33228,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3810,
+    "College Code": 3810,
     "COLLEGE NMAE":
       "M.A.M. College of Engineering  Siruganur  Tiruchirappalli District 621105",
     "BRANCH CODE": "CE",
@@ -33242,7 +33242,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3810,
+    "College Code": 3810,
     "COLLEGE NMAE":
       "M.A.M. College of Engineering  Siruganur  Tiruchirappalli District 621105",
     "BRANCH CODE": "CS",
@@ -33256,7 +33256,7 @@ export const collegeChoiceListR2 = [
     ST: 2,
   },
   {
-    "COLLEGE CODE": 3810,
+    "College Code": 3810,
     "COLLEGE NMAE":
       "M.A.M. College of Engineering  Siruganur  Tiruchirappalli District 621105",
     "BRANCH CODE": "EC",
@@ -33270,7 +33270,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3810,
+    "College Code": 3810,
     "COLLEGE NMAE":
       "M.A.M. College of Engineering  Siruganur  Tiruchirappalli District 621105",
     "BRANCH CODE": "EE",
@@ -33284,7 +33284,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3810,
+    "College Code": 3810,
     "COLLEGE NMAE":
       "M.A.M. College of Engineering  Siruganur  Tiruchirappalli District 621105",
     "BRANCH CODE": "EI",
@@ -33298,7 +33298,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3810,
+    "College Code": 3810,
     "COLLEGE NMAE":
       "M.A.M. College of Engineering  Siruganur  Tiruchirappalli District 621105",
     "BRANCH CODE": "FD",
@@ -33312,7 +33312,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3810,
+    "College Code": 3810,
     "COLLEGE NMAE":
       "M.A.M. College of Engineering  Siruganur  Tiruchirappalli District 621105",
     "BRANCH CODE": "IT",
@@ -33326,7 +33326,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3810,
+    "College Code": 3810,
     "COLLEGE NMAE":
       "M.A.M. College of Engineering  Siruganur  Tiruchirappalli District 621105",
     "BRANCH CODE": "ME",
@@ -33340,7 +33340,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3811,
+    "College Code": 3811,
     "COLLEGE NMAE":
       "M I E T Engineering College  Trichy-Pudukkottai Road Tiruchirappalli District 620007",
     "BRANCH CODE": "AD",
@@ -33354,7 +33354,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3811,
+    "College Code": 3811,
     "COLLEGE NMAE":
       "M I E T Engineering College  Trichy-Pudukkottai Road Tiruchirappalli District 620007",
     "BRANCH CODE": "BM",
@@ -33368,7 +33368,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3811,
+    "College Code": 3811,
     "COLLEGE NMAE":
       "M I E T Engineering College  Trichy-Pudukkottai Road Tiruchirappalli District 620007",
     "BRANCH CODE": "CE",
@@ -33382,7 +33382,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3811,
+    "College Code": 3811,
     "COLLEGE NMAE":
       "M I E T Engineering College  Trichy-Pudukkottai Road Tiruchirappalli District 620007",
     "BRANCH CODE": "CS",
@@ -33396,7 +33396,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3811,
+    "College Code": 3811,
     "COLLEGE NMAE":
       "M I E T Engineering College  Trichy-Pudukkottai Road Tiruchirappalli District 620007",
     "BRANCH CODE": "EC",
@@ -33410,7 +33410,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3811,
+    "College Code": 3811,
     "COLLEGE NMAE":
       "M I E T Engineering College  Trichy-Pudukkottai Road Tiruchirappalli District 620007",
     "BRANCH CODE": "EE",
@@ -33424,7 +33424,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3811,
+    "College Code": 3811,
     "COLLEGE NMAE":
       "M I E T Engineering College  Trichy-Pudukkottai Road Tiruchirappalli District 620007",
     "BRANCH CODE": "IT",
@@ -33438,7 +33438,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3811,
+    "College Code": 3811,
     "COLLEGE NMAE":
       "M I E T Engineering College  Trichy-Pudukkottai Road Tiruchirappalli District 620007",
     "BRANCH CODE": "ME",
@@ -33452,7 +33452,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3812,
+    "College Code": 3812,
     "COLLEGE NMAE":
       "Mookambigai College of Engineering  Keeranur Pudukkottai District 622502",
     "BRANCH CODE": "AD",
@@ -33466,7 +33466,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3812,
+    "College Code": 3812,
     "COLLEGE NMAE":
       "Mookambigai College of Engineering  Keeranur Pudukkottai District 622502",
     "BRANCH CODE": "CE",
@@ -33480,7 +33480,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3812,
+    "College Code": 3812,
     "COLLEGE NMAE":
       "Mookambigai College of Engineering  Keeranur Pudukkottai District 622502",
     "BRANCH CODE": "CS",
@@ -33494,7 +33494,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3812,
+    "College Code": 3812,
     "COLLEGE NMAE":
       "Mookambigai College of Engineering  Keeranur Pudukkottai District 622502",
     "BRANCH CODE": "EC",
@@ -33508,7 +33508,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3812,
+    "College Code": 3812,
     "COLLEGE NMAE":
       "Mookambigai College of Engineering  Keeranur Pudukkottai District 622502",
     "BRANCH CODE": "EE",
@@ -33522,7 +33522,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3812,
+    "College Code": 3812,
     "COLLEGE NMAE":
       "Mookambigai College of Engineering  Keeranur Pudukkottai District 622502",
     "BRANCH CODE": "EI",
@@ -33536,7 +33536,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3812,
+    "College Code": 3812,
     "COLLEGE NMAE":
       "Mookambigai College of Engineering  Keeranur Pudukkottai District 622502",
     "BRANCH CODE": "IT",
@@ -33550,7 +33550,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3812,
+    "College Code": 3812,
     "COLLEGE NMAE":
       "Mookambigai College of Engineering  Keeranur Pudukkottai District 622502",
     "BRANCH CODE": "ME",
@@ -33564,7 +33564,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3813,
+    "College Code": 3813,
     "COLLEGE NMAE":
       "Oxford Engineering College,Karumandapam,Pirattiyur,Trichy-620 009",
     "BRANCH CODE": "CE",
@@ -33578,7 +33578,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3813,
+    "College Code": 3813,
     "COLLEGE NMAE":
       "Oxford Engineering College,Karumandapam,Pirattiyur,Trichy-620 009",
     "BRANCH CODE": "CS",
@@ -33592,7 +33592,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3813,
+    "College Code": 3813,
     "COLLEGE NMAE":
       "Oxford Engineering College,Karumandapam,Pirattiyur,Trichy-620 009",
     "BRANCH CODE": "EC",
@@ -33606,7 +33606,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3813,
+    "College Code": 3813,
     "COLLEGE NMAE":
       "Oxford Engineering College,Karumandapam,Pirattiyur,Trichy-620 009",
     "BRANCH CODE": "EE",
@@ -33620,7 +33620,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3813,
+    "College Code": 3813,
     "COLLEGE NMAE":
       "Oxford Engineering College,Karumandapam,Pirattiyur,Trichy-620 009",
     "BRANCH CODE": "IT",
@@ -33634,7 +33634,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3813,
+    "College Code": 3813,
     "COLLEGE NMAE":
       "Oxford Engineering College,Karumandapam,Pirattiyur,Trichy-620 009",
     "BRANCH CODE": "ME",
@@ -33648,7 +33648,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3814,
+    "College Code": 3814,
     "COLLEGE NMAE":
       "P R Engineering College  Vallam  Thanjavur District 613403",
     "BRANCH CODE": "AD",
@@ -33662,7 +33662,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3814,
+    "College Code": 3814,
     "COLLEGE NMAE":
       "P R Engineering College  Vallam  Thanjavur District 613403",
     "BRANCH CODE": "CE",
@@ -33676,7 +33676,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3814,
+    "College Code": 3814,
     "COLLEGE NMAE":
       "P R Engineering College  Vallam  Thanjavur District 613403",
     "BRANCH CODE": "CS",
@@ -33690,7 +33690,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3814,
+    "College Code": 3814,
     "COLLEGE NMAE":
       "P R Engineering College  Vallam  Thanjavur District 613403",
     "BRANCH CODE": "EC",
@@ -33704,7 +33704,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3814,
+    "College Code": 3814,
     "COLLEGE NMAE":
       "P R Engineering College  Vallam  Thanjavur District 613403",
     "BRANCH CODE": "EE",
@@ -33718,7 +33718,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3814,
+    "College Code": 3814,
     "COLLEGE NMAE":
       "P R Engineering College  Vallam  Thanjavur District 613403",
     "BRANCH CODE": "ME",
@@ -33732,7 +33732,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3815,
+    "College Code": 3815,
     "COLLEGE NMAE":
       "Pavendar Bharathidasan College of Engineering and Technology  Pudukkottai Main Road  Tiruchirappalli District 622515",
     "BRANCH CODE": "AD",
@@ -33746,7 +33746,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3815,
+    "College Code": 3815,
     "COLLEGE NMAE":
       "Pavendar Bharathidasan College of Engineering and Technology  Pudukkottai Main Road  Tiruchirappalli District 622515",
     "BRANCH CODE": "BM",
@@ -33760,7 +33760,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3815,
+    "College Code": 3815,
     "COLLEGE NMAE":
       "Pavendar Bharathidasan College of Engineering and Technology  Pudukkottai Main Road  Tiruchirappalli District 622515",
     "BRANCH CODE": "BT",
@@ -33774,7 +33774,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3815,
+    "College Code": 3815,
     "COLLEGE NMAE":
       "Pavendar Bharathidasan College of Engineering and Technology  Pudukkottai Main Road  Tiruchirappalli District 622515",
     "BRANCH CODE": "CS",
@@ -33788,7 +33788,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3815,
+    "College Code": 3815,
     "COLLEGE NMAE":
       "Pavendar Bharathidasan College of Engineering and Technology  Pudukkottai Main Road  Tiruchirappalli District 622515",
     "BRANCH CODE": "EC",
@@ -33802,7 +33802,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3815,
+    "College Code": 3815,
     "COLLEGE NMAE":
       "Pavendar Bharathidasan College of Engineering and Technology  Pudukkottai Main Road  Tiruchirappalli District 622515",
     "BRANCH CODE": "EE",
@@ -33816,7 +33816,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3815,
+    "College Code": 3815,
     "COLLEGE NMAE":
       "Pavendar Bharathidasan College of Engineering and Technology  Pudukkottai Main Road  Tiruchirappalli District 622515",
     "BRANCH CODE": "IT",
@@ -33830,7 +33830,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3815,
+    "College Code": 3815,
     "COLLEGE NMAE":
       "Pavendar Bharathidasan College of Engineering and Technology  Pudukkottai Main Road  Tiruchirappalli District 622515",
     "BRANCH CODE": "ME",
@@ -33844,7 +33844,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3815,
+    "College Code": 3815,
     "COLLEGE NMAE":
       "Pavendar Bharathidasan College of Engineering and Technology  Pudukkottai Main Road  Tiruchirappalli District 622515",
     "BRANCH CODE": "TX",
@@ -33858,7 +33858,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3817,
+    "College Code": 3817,
     "COLLEGE NMAE":
       "Roever Engineering College  Elambalur  Perambalur District 621212",
     "BRANCH CODE": "BT",
@@ -33872,7 +33872,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3817,
+    "College Code": 3817,
     "COLLEGE NMAE":
       "Roever Engineering College  Elambalur  Perambalur District 621212",
     "BRANCH CODE": "CE",
@@ -33886,7 +33886,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3817,
+    "College Code": 3817,
     "COLLEGE NMAE":
       "Roever Engineering College  Elambalur  Perambalur District 621212",
     "BRANCH CODE": "CS",
@@ -33900,7 +33900,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3817,
+    "College Code": 3817,
     "COLLEGE NMAE":
       "Roever Engineering College  Elambalur  Perambalur District 621212",
     "BRANCH CODE": "EC",
@@ -33914,7 +33914,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3817,
+    "College Code": 3817,
     "COLLEGE NMAE":
       "Roever Engineering College  Elambalur  Perambalur District 621212",
     "BRANCH CODE": "EE",
@@ -33928,7 +33928,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3817,
+    "College Code": 3817,
     "COLLEGE NMAE":
       "Roever Engineering College  Elambalur  Perambalur District 621212",
     "BRANCH CODE": "ME",
@@ -33942,7 +33942,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3819,
+    "College Code": 3819,
     "COLLEGE NMAE":
       "Saranathan College of  Engineering  Panjappur Tiruchirappalli District  620012",
     "BRANCH CODE": "AD",
@@ -33956,7 +33956,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3819,
+    "College Code": 3819,
     "COLLEGE NMAE":
       "Saranathan College of  Engineering  Panjappur Tiruchirappalli District  620012",
     "BRANCH CODE": "AM",
@@ -33971,7 +33971,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3819,
+    "College Code": 3819,
     "COLLEGE NMAE":
       "Saranathan College of  Engineering  Panjappur Tiruchirappalli District  620012",
     "BRANCH CODE": "CB",
@@ -33985,7 +33985,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3819,
+    "College Code": 3819,
     "COLLEGE NMAE":
       "Saranathan College of  Engineering  Panjappur Tiruchirappalli District  620012",
     "BRANCH CODE": "CE",
@@ -33999,7 +33999,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3819,
+    "College Code": 3819,
     "COLLEGE NMAE":
       "Saranathan College of  Engineering  Panjappur Tiruchirappalli District  620012",
     "BRANCH CODE": "CS",
@@ -34013,7 +34013,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3819,
+    "College Code": 3819,
     "COLLEGE NMAE":
       "Saranathan College of  Engineering  Panjappur Tiruchirappalli District  620012",
     "BRANCH CODE": "EC",
@@ -34027,7 +34027,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3819,
+    "College Code": 3819,
     "COLLEGE NMAE":
       "Saranathan College of  Engineering  Panjappur Tiruchirappalli District  620012",
     "BRANCH CODE": "EE",
@@ -34041,7 +34041,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3819,
+    "College Code": 3819,
     "COLLEGE NMAE":
       "Saranathan College of  Engineering  Panjappur Tiruchirappalli District  620012",
     "BRANCH CODE": "IC",
@@ -34055,7 +34055,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3819,
+    "College Code": 3819,
     "COLLEGE NMAE":
       "Saranathan College of  Engineering  Panjappur Tiruchirappalli District  620012",
     "BRANCH CODE": "IT",
@@ -34069,7 +34069,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3819,
+    "College Code": 3819,
     "COLLEGE NMAE":
       "Saranathan College of  Engineering  Panjappur Tiruchirappalli District  620012",
     "BRANCH CODE": "ME",
@@ -34083,7 +34083,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3820,
+    "College Code": 3820,
     "COLLEGE NMAE":
       "Trichy Engineering College  Konalai  Tiruchirappalli District 621132",
     "BRANCH CODE": "AD",
@@ -34097,7 +34097,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3820,
+    "College Code": 3820,
     "COLLEGE NMAE":
       "Trichy Engineering College  Konalai  Tiruchirappalli District 621132",
     "BRANCH CODE": "AM",
@@ -34112,7 +34112,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3820,
+    "College Code": 3820,
     "COLLEGE NMAE":
       "Trichy Engineering College  Konalai  Tiruchirappalli District 621132",
     "BRANCH CODE": "CE",
@@ -34126,7 +34126,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3820,
+    "College Code": 3820,
     "COLLEGE NMAE":
       "Trichy Engineering College  Konalai  Tiruchirappalli District 621132",
     "BRANCH CODE": "CS",
@@ -34140,7 +34140,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3820,
+    "College Code": 3820,
     "COLLEGE NMAE":
       "Trichy Engineering College  Konalai  Tiruchirappalli District 621132",
     "BRANCH CODE": "EC",
@@ -34154,7 +34154,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3820,
+    "College Code": 3820,
     "COLLEGE NMAE":
       "Trichy Engineering College  Konalai  Tiruchirappalli District 621132",
     "BRANCH CODE": "EE",
@@ -34168,7 +34168,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3820,
+    "College Code": 3820,
     "COLLEGE NMAE":
       "Trichy Engineering College  Konalai  Tiruchirappalli District 621132",
     "BRANCH CODE": "MC",
@@ -34182,7 +34182,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3820,
+    "College Code": 3820,
     "COLLEGE NMAE":
       "Trichy Engineering College  Konalai  Tiruchirappalli District 621132",
     "BRANCH CODE": "ME",
@@ -34196,7 +34196,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3821,
+    "College Code": 3821,
     "COLLEGE NMAE":
       "A R J College of Engineering and Technology  Mannargudi Taluk  Thiruvarur District 614001",
     "BRANCH CODE": "AD",
@@ -34210,7 +34210,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3821,
+    "College Code": 3821,
     "COLLEGE NMAE":
       "A R J College of Engineering and Technology  Mannargudi Taluk  Thiruvarur District 614001",
     "BRANCH CODE": "AG",
@@ -34224,7 +34224,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3821,
+    "College Code": 3821,
     "COLLEGE NMAE":
       "A R J College of Engineering and Technology  Mannargudi Taluk  Thiruvarur District 614001",
     "BRANCH CODE": "BM",
@@ -34238,7 +34238,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3821,
+    "College Code": 3821,
     "COLLEGE NMAE":
       "A R J College of Engineering and Technology  Mannargudi Taluk  Thiruvarur District 614001",
     "BRANCH CODE": "CE",
@@ -34252,7 +34252,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3821,
+    "College Code": 3821,
     "COLLEGE NMAE":
       "A R J College of Engineering and Technology  Mannargudi Taluk  Thiruvarur District 614001",
     "BRANCH CODE": "CS",
@@ -34266,7 +34266,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3821,
+    "College Code": 3821,
     "COLLEGE NMAE":
       "A R J College of Engineering and Technology  Mannargudi Taluk  Thiruvarur District 614001",
     "BRANCH CODE": "EC",
@@ -34280,7 +34280,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3821,
+    "College Code": 3821,
     "COLLEGE NMAE":
       "A R J College of Engineering and Technology  Mannargudi Taluk  Thiruvarur District 614001",
     "BRANCH CODE": "EE",
@@ -34294,7 +34294,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3821,
+    "College Code": 3821,
     "COLLEGE NMAE":
       "A R J College of Engineering and Technology  Mannargudi Taluk  Thiruvarur District 614001",
     "BRANCH CODE": "ME",
@@ -34308,7 +34308,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3822,
+    "College Code": 3822,
     "COLLEGE NMAE":
       "Dr.Navalar Nedunchezhiyan College of Engineering Raja Nagar Vaithiyanathapuram tholudur  Cuddalore-606303",
     "BRANCH CODE": "AD",
@@ -34322,7 +34322,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3822,
+    "College Code": 3822,
     "COLLEGE NMAE":
       "Dr.Navalar Nedunchezhiyan College of Engineering Raja Nagar Vaithiyanathapuram tholudur  Cuddalore-606303",
     "BRANCH CODE": "BM",
@@ -34336,7 +34336,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3822,
+    "College Code": 3822,
     "COLLEGE NMAE":
       "Dr.Navalar Nedunchezhiyan College of Engineering Raja Nagar Vaithiyanathapuram tholudur  Cuddalore-606303",
     "BRANCH CODE": "CE",
@@ -34350,7 +34350,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3822,
+    "College Code": 3822,
     "COLLEGE NMAE":
       "Dr.Navalar Nedunchezhiyan College of Engineering Raja Nagar Vaithiyanathapuram tholudur  Cuddalore-606303",
     "BRANCH CODE": "CS",
@@ -34364,7 +34364,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3822,
+    "College Code": 3822,
     "COLLEGE NMAE":
       "Dr.Navalar Nedunchezhiyan College of Engineering Raja Nagar Vaithiyanathapuram tholudur  Cuddalore-606303",
     "BRANCH CODE": "EC",
@@ -34378,7 +34378,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3822,
+    "College Code": 3822,
     "COLLEGE NMAE":
       "Dr.Navalar Nedunchezhiyan College of Engineering Raja Nagar Vaithiyanathapuram tholudur  Cuddalore-606303",
     "BRANCH CODE": "EE",
@@ -34392,7 +34392,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3822,
+    "College Code": 3822,
     "COLLEGE NMAE":
       "Dr.Navalar Nedunchezhiyan College of Engineering Raja Nagar Vaithiyanathapuram tholudur  Cuddalore-606303",
     "BRANCH CODE": "IT",
@@ -34406,7 +34406,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3822,
+    "College Code": 3822,
     "COLLEGE NMAE":
       "Dr.Navalar Nedunchezhiyan College of Engineering Raja Nagar Vaithiyanathapuram tholudur  Cuddalore-606303",
     "BRANCH CODE": "ME",
@@ -34420,7 +34420,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3825,
+    "College Code": 3825,
     "COLLEGE NMAE":
       "St. Joseph's College of Engineering and Technology  Elupatti Village  Rawaspatti Post  Thanjavur District 613403",
     "BRANCH CODE": "AD",
@@ -34434,7 +34434,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3825,
+    "College Code": 3825,
     "COLLEGE NMAE":
       "St. Joseph's College of Engineering and Technology  Elupatti Village  Rawaspatti Post  Thanjavur District 613403",
     "BRANCH CODE": "CS",
@@ -34448,7 +34448,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3825,
+    "College Code": 3825,
     "COLLEGE NMAE":
       "St. Joseph's College of Engineering and Technology  Elupatti Village  Rawaspatti Post  Thanjavur District 613403",
     "BRANCH CODE": "EC",
@@ -34462,7 +34462,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3825,
+    "College Code": 3825,
     "COLLEGE NMAE":
       "St. Joseph's College of Engineering and Technology  Elupatti Village  Rawaspatti Post  Thanjavur District 613403",
     "BRANCH CODE": "EE",
@@ -34476,7 +34476,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3825,
+    "College Code": 3825,
     "COLLEGE NMAE":
       "St. Joseph's College of Engineering and Technology  Elupatti Village  Rawaspatti Post  Thanjavur District 613403",
     "BRANCH CODE": "ME",
@@ -34490,7 +34490,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3826,
+    "College Code": 3826,
     "COLLEGE NMAE":
       "Kongunadu College of Engineering and Technology (Autonomous)  Tholurpatti  Thottiyam  Tiruchirappalli District 621215",
     "BRANCH CODE": "AD",
@@ -34504,7 +34504,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3826,
+    "College Code": 3826,
     "COLLEGE NMAE":
       "Kongunadu College of Engineering and Technology (Autonomous)  Tholurpatti  Thottiyam  Tiruchirappalli District 621215",
     "BRANCH CODE": "AG",
@@ -34518,7 +34518,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3826,
+    "College Code": 3826,
     "COLLEGE NMAE":
       "Kongunadu College of Engineering and Technology (Autonomous)  Tholurpatti  Thottiyam  Tiruchirappalli District 621215",
     "BRANCH CODE": "BM",
@@ -34532,7 +34532,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3826,
+    "College Code": 3826,
     "COLLEGE NMAE":
       "Kongunadu College of Engineering and Technology (Autonomous)  Tholurpatti  Thottiyam  Tiruchirappalli District 621215",
     "BRANCH CODE": "CE",
@@ -34546,7 +34546,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3826,
+    "College Code": 3826,
     "COLLEGE NMAE":
       "Kongunadu College of Engineering and Technology (Autonomous)  Tholurpatti  Thottiyam  Tiruchirappalli District 621215",
     "BRANCH CODE": "CS",
@@ -34560,7 +34560,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3826,
+    "College Code": 3826,
     "COLLEGE NMAE":
       "Kongunadu College of Engineering and Technology (Autonomous)  Tholurpatti  Thottiyam  Tiruchirappalli District 621215",
     "BRANCH CODE": "EC",
@@ -34574,7 +34574,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3826,
+    "College Code": 3826,
     "COLLEGE NMAE":
       "Kongunadu College of Engineering and Technology (Autonomous)  Tholurpatti  Thottiyam  Tiruchirappalli District 621215",
     "BRANCH CODE": "EE",
@@ -34588,7 +34588,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3826,
+    "College Code": 3826,
     "COLLEGE NMAE":
       "Kongunadu College of Engineering and Technology (Autonomous)  Tholurpatti  Thottiyam  Tiruchirappalli District 621215",
     "BRANCH CODE": "IT",
@@ -34602,7 +34602,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3826,
+    "College Code": 3826,
     "COLLEGE NMAE":
       "Kongunadu College of Engineering and Technology (Autonomous)  Tholurpatti  Thottiyam  Tiruchirappalli District 621215",
     "BRANCH CODE": "ME",
@@ -34616,7 +34616,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3829,
+    "College Code": 3829,
     "COLLEGE NMAE":
       "M.A.M. College of Engineering and Technology  Trichy- Chennai Trunk Road  Siruganur  Tiruchirappalli District 621105",
     "BRANCH CODE": "AD",
@@ -34630,7 +34630,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3829,
+    "College Code": 3829,
     "COLLEGE NMAE":
       "M.A.M. College of Engineering and Technology  Trichy- Chennai Trunk Road  Siruganur  Tiruchirappalli District 621105",
     "BRANCH CODE": "CE",
@@ -34644,7 +34644,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3829,
+    "College Code": 3829,
     "COLLEGE NMAE":
       "M.A.M. College of Engineering and Technology  Trichy- Chennai Trunk Road  Siruganur  Tiruchirappalli District 621105",
     "BRANCH CODE": "CS",
@@ -34658,7 +34658,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3829,
+    "College Code": 3829,
     "COLLEGE NMAE":
       "M.A.M. College of Engineering and Technology  Trichy- Chennai Trunk Road  Siruganur  Tiruchirappalli District 621105",
     "BRANCH CODE": "EC",
@@ -34672,7 +34672,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3829,
+    "College Code": 3829,
     "COLLEGE NMAE":
       "M.A.M. College of Engineering and Technology  Trichy- Chennai Trunk Road  Siruganur  Tiruchirappalli District 621105",
     "BRANCH CODE": "EE",
@@ -34686,7 +34686,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3829,
+    "College Code": 3829,
     "COLLEGE NMAE":
       "M.A.M. College of Engineering and Technology  Trichy- Chennai Trunk Road  Siruganur  Tiruchirappalli District 621105",
     "BRANCH CODE": "IT",
@@ -34700,7 +34700,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3829,
+    "College Code": 3829,
     "COLLEGE NMAE":
       "M.A.M. College of Engineering and Technology  Trichy- Chennai Trunk Road  Siruganur  Tiruchirappalli District 621105",
     "BRANCH CODE": "ME",
@@ -34714,7 +34714,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3830,
+    "College Code": 3830,
     "COLLEGE NMAE":
       "K Ramakrishnan College of Engineering (Autonomous) Kariyamanickam Road  Samayapuram  Manachanallur Taluk Tiruchirappalli District 621112",
     "BRANCH CODE": "AD",
@@ -34728,7 +34728,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3830,
+    "College Code": 3830,
     "COLLEGE NMAE":
       "K Ramakrishnan College of Engineering (Autonomous) Kariyamanickam Road  Samayapuram  Manachanallur Taluk Tiruchirappalli District 621112",
     "BRANCH CODE": "AM",
@@ -34743,7 +34743,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3830,
+    "College Code": 3830,
     "COLLEGE NMAE":
       "K Ramakrishnan College of Engineering (Autonomous) Kariyamanickam Road  Samayapuram  Manachanallur Taluk Tiruchirappalli District 621112",
     "BRANCH CODE": "CB",
@@ -34757,7 +34757,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3830,
+    "College Code": 3830,
     "COLLEGE NMAE":
       "K Ramakrishnan College of Engineering (Autonomous) Kariyamanickam Road  Samayapuram  Manachanallur Taluk Tiruchirappalli District 621112",
     "BRANCH CODE": "CS",
@@ -34771,7 +34771,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3830,
+    "College Code": 3830,
     "COLLEGE NMAE":
       "K Ramakrishnan College of Engineering (Autonomous) Kariyamanickam Road  Samayapuram  Manachanallur Taluk Tiruchirappalli District 621112",
     "BRANCH CODE": "EC",
@@ -34785,7 +34785,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3830,
+    "College Code": 3830,
     "COLLEGE NMAE":
       "K Ramakrishnan College of Engineering (Autonomous) Kariyamanickam Road  Samayapuram  Manachanallur Taluk Tiruchirappalli District 621112",
     "BRANCH CODE": "EE",
@@ -34799,7 +34799,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3830,
+    "College Code": 3830,
     "COLLEGE NMAE":
       "K Ramakrishnan College of Engineering (Autonomous) Kariyamanickam Road  Samayapuram  Manachanallur Taluk Tiruchirappalli District 621112",
     "BRANCH CODE": "IT",
@@ -34813,7 +34813,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3830,
+    "College Code": 3830,
     "COLLEGE NMAE":
       "K Ramakrishnan College of Engineering (Autonomous) Kariyamanickam Road  Samayapuram  Manachanallur Taluk Tiruchirappalli District 621112",
     "BRANCH CODE": "ME",
@@ -34827,7 +34827,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3831,
+    "College Code": 3831,
     "COLLEGE NMAE":
       "Indra Ganesan College of Engineering  Madurai Main Road Manikandam  Tiruchirappalli District 620012",
     "BRANCH CODE": "AD",
@@ -34841,7 +34841,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3831,
+    "College Code": 3831,
     "COLLEGE NMAE":
       "Indra Ganesan College of Engineering  Madurai Main Road Manikandam  Tiruchirappalli District 620012",
     "BRANCH CODE": "AG",
@@ -34855,7 +34855,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3831,
+    "College Code": 3831,
     "COLLEGE NMAE":
       "Indra Ganesan College of Engineering  Madurai Main Road Manikandam  Tiruchirappalli District 620012",
     "BRANCH CODE": "BM",
@@ -34869,7 +34869,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3831,
+    "College Code": 3831,
     "COLLEGE NMAE":
       "Indra Ganesan College of Engineering  Madurai Main Road Manikandam  Tiruchirappalli District 620012",
     "BRANCH CODE": "CS",
@@ -34883,7 +34883,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3831,
+    "College Code": 3831,
     "COLLEGE NMAE":
       "Indra Ganesan College of Engineering  Madurai Main Road Manikandam  Tiruchirappalli District 620012",
     "BRANCH CODE": "EC",
@@ -34897,7 +34897,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3831,
+    "College Code": 3831,
     "COLLEGE NMAE":
       "Indra Ganesan College of Engineering  Madurai Main Road Manikandam  Tiruchirappalli District 620012",
     "BRANCH CODE": "EE",
@@ -34911,7 +34911,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3831,
+    "College Code": 3831,
     "COLLEGE NMAE":
       "Indra Ganesan College of Engineering  Madurai Main Road Manikandam  Tiruchirappalli District 620012",
     "BRANCH CODE": "IT",
@@ -34925,7 +34925,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3831,
+    "College Code": 3831,
     "COLLEGE NMAE":
       "Indra Ganesan College of Engineering  Madurai Main Road Manikandam  Tiruchirappalli District 620012",
     "BRANCH CODE": "ME",
@@ -34939,7 +34939,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3833,
+    "College Code": 3833,
     "COLLEGE NMAE":
       "Parisutham Institute of Technology and Science  Ring Road Nanjikottai  Thanjavur District 613006",
     "BRANCH CODE": "AE",
@@ -34953,7 +34953,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3833,
+    "College Code": 3833,
     "COLLEGE NMAE":
       "Parisutham Institute of Technology and Science  Ring Road Nanjikottai  Thanjavur District 613006",
     "BRANCH CODE": "CE",
@@ -34967,7 +34967,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3833,
+    "College Code": 3833,
     "COLLEGE NMAE":
       "Parisutham Institute of Technology and Science  Ring Road Nanjikottai  Thanjavur District 613006",
     "BRANCH CODE": "CS",
@@ -34981,7 +34981,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3833,
+    "College Code": 3833,
     "COLLEGE NMAE":
       "Parisutham Institute of Technology and Science  Ring Road Nanjikottai  Thanjavur District 613006",
     "BRANCH CODE": "EC",
@@ -34995,7 +34995,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3833,
+    "College Code": 3833,
     "COLLEGE NMAE":
       "Parisutham Institute of Technology and Science  Ring Road Nanjikottai  Thanjavur District 613006",
     "BRANCH CODE": "EE",
@@ -35009,7 +35009,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3833,
+    "College Code": 3833,
     "COLLEGE NMAE":
       "Parisutham Institute of Technology and Science  Ring Road Nanjikottai  Thanjavur District 613006",
     "BRANCH CODE": "IT",
@@ -35023,7 +35023,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3833,
+    "College Code": 3833,
     "COLLEGE NMAE":
       "Parisutham Institute of Technology and Science  Ring Road Nanjikottai  Thanjavur District 613006",
     "BRANCH CODE": "ME",
@@ -35037,7 +35037,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3841,
+    "College Code": 3841,
     "COLLEGE NMAE":
       "CARE College of Engineering   Thayanoor Village Kuttappatti  Srirangam Taluk  Tiruchirappalli District 620009",
     "BRANCH CODE": "AD",
@@ -35051,7 +35051,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3841,
+    "College Code": 3841,
     "COLLEGE NMAE":
       "CARE College of Engineering   Thayanoor Village Kuttappatti  Srirangam Taluk  Tiruchirappalli District 620009",
     "BRANCH CODE": "CE",
@@ -35065,7 +35065,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3841,
+    "College Code": 3841,
     "COLLEGE NMAE":
       "CARE College of Engineering   Thayanoor Village Kuttappatti  Srirangam Taluk  Tiruchirappalli District 620009",
     "BRANCH CODE": "CS",
@@ -35079,7 +35079,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3841,
+    "College Code": 3841,
     "COLLEGE NMAE":
       "CARE College of Engineering   Thayanoor Village Kuttappatti  Srirangam Taluk  Tiruchirappalli District 620009",
     "BRANCH CODE": "EC",
@@ -35093,7 +35093,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3841,
+    "College Code": 3841,
     "COLLEGE NMAE":
       "CARE College of Engineering   Thayanoor Village Kuttappatti  Srirangam Taluk  Tiruchirappalli District 620009",
     "BRANCH CODE": "ME",
@@ -35107,7 +35107,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3843,
+    "College Code": 3843,
     "COLLEGE NMAE":
       "M R K Institute of Technology  Nattarmangalam Village Kattumannarkoil  Cuddalore District 608306",
     "BRANCH CODE": "CE",
@@ -35121,7 +35121,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3843,
+    "College Code": 3843,
     "COLLEGE NMAE":
       "M R K Institute of Technology  Nattarmangalam Village Kattumannarkoil  Cuddalore District 608306",
     "BRANCH CODE": "CS",
@@ -35135,7 +35135,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3843,
+    "College Code": 3843,
     "COLLEGE NMAE":
       "M R K Institute of Technology  Nattarmangalam Village Kattumannarkoil  Cuddalore District 608306",
     "BRANCH CODE": "EC",
@@ -35149,7 +35149,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3843,
+    "College Code": 3843,
     "COLLEGE NMAE":
       "M R K Institute of Technology  Nattarmangalam Village Kattumannarkoil  Cuddalore District 608306",
     "BRANCH CODE": "EE",
@@ -35163,7 +35163,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3843,
+    "College Code": 3843,
     "COLLEGE NMAE":
       "M R K Institute of Technology  Nattarmangalam Village Kattumannarkoil  Cuddalore District 608306",
     "BRANCH CODE": "IT",
@@ -35177,7 +35177,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3843,
+    "College Code": 3843,
     "COLLEGE NMAE":
       "M R K Institute of Technology  Nattarmangalam Village Kattumannarkoil  Cuddalore District 608306",
     "BRANCH CODE": "ME",
@@ -35191,7 +35191,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3844,
+    "College Code": 3844,
     "COLLEGE NMAE":
       "Shivani Engineering College  Trichy-Dindigul NH Road Poolangulathupatti  Tiruchirappalli - 620009",
     "BRANCH CODE": "AD",
@@ -35205,7 +35205,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3844,
+    "College Code": 3844,
     "COLLEGE NMAE":
       "Shivani Engineering College  Trichy-Dindigul NH Road Poolangulathupatti  Tiruchirappalli - 620009",
     "BRANCH CODE": "BM",
@@ -35219,7 +35219,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3844,
+    "College Code": 3844,
     "COLLEGE NMAE":
       "Shivani Engineering College  Trichy-Dindigul NH Road Poolangulathupatti  Tiruchirappalli - 620009",
     "BRANCH CODE": "CS",
@@ -35233,7 +35233,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3844,
+    "College Code": 3844,
     "COLLEGE NMAE":
       "Shivani Engineering College  Trichy-Dindigul NH Road Poolangulathupatti  Tiruchirappalli - 620009",
     "BRANCH CODE": "EC",
@@ -35247,7 +35247,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3844,
+    "College Code": 3844,
     "COLLEGE NMAE":
       "Shivani Engineering College  Trichy-Dindigul NH Road Poolangulathupatti  Tiruchirappalli - 620009",
     "BRANCH CODE": "EE",
@@ -35261,7 +35261,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3844,
+    "College Code": 3844,
     "COLLEGE NMAE":
       "Shivani Engineering College  Trichy-Dindigul NH Road Poolangulathupatti  Tiruchirappalli - 620009",
     "BRANCH CODE": "ME",
@@ -35275,7 +35275,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3844,
+    "College Code": 3844,
     "COLLEGE NMAE":
       "Shivani Engineering College  Trichy-Dindigul NH Road Poolangulathupatti  Tiruchirappalli - 620009",
     "BRANCH CODE": "SC",
@@ -35289,7 +35289,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3845,
+    "College Code": 3845,
     "COLLEGE NMAE":
       "Imayam College of Engineering  Kannanur  Thuraiyur Tiruchirappalli District 621206",
     "BRANCH CODE": "AD",
@@ -35303,7 +35303,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3845,
+    "College Code": 3845,
     "COLLEGE NMAE":
       "Imayam College of Engineering  Kannanur  Thuraiyur Tiruchirappalli District 621206",
     "BRANCH CODE": "AM",
@@ -35318,7 +35318,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3845,
+    "College Code": 3845,
     "COLLEGE NMAE":
       "Imayam College of Engineering  Kannanur  Thuraiyur Tiruchirappalli District 621206",
     "BRANCH CODE": "CS",
@@ -35332,7 +35332,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3845,
+    "College Code": 3845,
     "COLLEGE NMAE":
       "Imayam College of Engineering  Kannanur  Thuraiyur Tiruchirappalli District 621206",
     "BRANCH CODE": "EC",
@@ -35346,7 +35346,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3845,
+    "College Code": 3845,
     "COLLEGE NMAE":
       "Imayam College of Engineering  Kannanur  Thuraiyur Tiruchirappalli District 621206",
     "BRANCH CODE": "EE",
@@ -35360,7 +35360,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3845,
+    "College Code": 3845,
     "COLLEGE NMAE":
       "Imayam College of Engineering  Kannanur  Thuraiyur Tiruchirappalli District 621206",
     "BRANCH CODE": "ME",
@@ -35374,7 +35374,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3845,
+    "College Code": 3845,
     "COLLEGE NMAE":
       "Imayam College of Engineering  Kannanur  Thuraiyur Tiruchirappalli District 621206",
     "BRANCH CODE": "SC",
@@ -35388,7 +35388,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3846,
+    "College Code": 3846,
     "COLLEGE NMAE":
       "Mother Terasa College of Engineering and Technology Mettusalai Post and Taluk  Pudukkottai District 622102",
     "BRANCH CODE": "AD",
@@ -35402,7 +35402,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3846,
+    "College Code": 3846,
     "COLLEGE NMAE":
       "Mother Terasa College of Engineering and Technology Mettusalai Post and Taluk  Pudukkottai District 622102",
     "BRANCH CODE": "CB",
@@ -35416,7 +35416,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3846,
+    "College Code": 3846,
     "COLLEGE NMAE":
       "Mother Terasa College of Engineering and Technology Mettusalai Post and Taluk  Pudukkottai District 622102",
     "BRANCH CODE": "CE",
@@ -35430,7 +35430,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3846,
+    "College Code": 3846,
     "COLLEGE NMAE":
       "Mother Terasa College of Engineering and Technology Mettusalai Post and Taluk  Pudukkottai District 622102",
     "BRANCH CODE": "CS",
@@ -35444,7 +35444,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3846,
+    "College Code": 3846,
     "COLLEGE NMAE":
       "Mother Terasa College of Engineering and Technology Mettusalai Post and Taluk  Pudukkottai District 622102",
     "BRANCH CODE": "EC",
@@ -35458,7 +35458,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3846,
+    "College Code": 3846,
     "COLLEGE NMAE":
       "Mother Terasa College of Engineering and Technology Mettusalai Post and Taluk  Pudukkottai District 622102",
     "BRANCH CODE": "EE",
@@ -35472,7 +35472,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3846,
+    "College Code": 3846,
     "COLLEGE NMAE":
       "Mother Terasa College of Engineering and Technology Mettusalai Post and Taluk  Pudukkottai District 622102",
     "BRANCH CODE": "ME",
@@ -35486,7 +35486,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3846,
+    "College Code": 3846,
     "COLLEGE NMAE":
       "Mother Terasa College of Engineering and Technology Mettusalai Post and Taluk  Pudukkottai District 622102",
     "BRANCH CODE": "RM",
@@ -35500,7 +35500,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3848,
+    "College Code": 3848,
     "COLLEGE NMAE":
       "Vandayar Engineering College  Pulavarnatham Post Mariamman Koil (Via)  Thanjavur District 613001",
     "BRANCH CODE": "CE",
@@ -35514,7 +35514,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3848,
+    "College Code": 3848,
     "COLLEGE NMAE":
       "Vandayar Engineering College  Pulavarnatham Post Mariamman Koil (Via)  Thanjavur District 613001",
     "BRANCH CODE": "CS",
@@ -35528,7 +35528,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3848,
+    "College Code": 3848,
     "COLLEGE NMAE":
       "Vandayar Engineering College  Pulavarnatham Post Mariamman Koil (Via)  Thanjavur District 613001",
     "BRANCH CODE": "EC",
@@ -35542,7 +35542,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3848,
+    "College Code": 3848,
     "COLLEGE NMAE":
       "Vandayar Engineering College  Pulavarnatham Post Mariamman Koil (Via)  Thanjavur District 613001",
     "BRANCH CODE": "EE",
@@ -35556,7 +35556,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3848,
+    "College Code": 3848,
     "COLLEGE NMAE":
       "Vandayar Engineering College  Pulavarnatham Post Mariamman Koil (Via)  Thanjavur District 613001",
     "BRANCH CODE": "ME",
@@ -35570,7 +35570,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3849,
+    "College Code": 3849,
     "COLLEGE NMAE":
       "Annai College of Engineering and Technology  Anakudi Road  Kovilacheri  Kumbakonam  Thanjavur District 612503",
     "BRANCH CODE": "CE",
@@ -35584,7 +35584,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3849,
+    "College Code": 3849,
     "COLLEGE NMAE":
       "Annai College of Engineering and Technology  Anakudi Road  Kovilacheri  Kumbakonam  Thanjavur District 612503",
     "BRANCH CODE": "CS",
@@ -35598,7 +35598,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3849,
+    "College Code": 3849,
     "COLLEGE NMAE":
       "Annai College of Engineering and Technology  Anakudi Road  Kovilacheri  Kumbakonam  Thanjavur District 612503",
     "BRANCH CODE": "EC",
@@ -35612,7 +35612,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3849,
+    "College Code": 3849,
     "COLLEGE NMAE":
       "Annai College of Engineering and Technology  Anakudi Road  Kovilacheri  Kumbakonam  Thanjavur District 612503",
     "BRANCH CODE": "EE",
@@ -35626,7 +35626,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3849,
+    "College Code": 3849,
     "COLLEGE NMAE":
       "Annai College of Engineering and Technology  Anakudi Road  Kovilacheri  Kumbakonam  Thanjavur District 612503",
     "BRANCH CODE": "IT",
@@ -35640,7 +35640,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3849,
+    "College Code": 3849,
     "COLLEGE NMAE":
       "Annai College of Engineering and Technology  Anakudi Road  Kovilacheri  Kumbakonam  Thanjavur District 612503",
     "BRANCH CODE": "ME",
@@ -35654,7 +35654,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3850,
+    "College Code": 3850,
     "COLLEGE NMAE":
       "Vetri Vinayaha College of Engineering and Technology Namakkal-Trichy Main Road  Tholurpatti Village  Thottiam Tiruchirappalli District 621215",
     "BRANCH CODE": "AD",
@@ -35668,7 +35668,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3850,
+    "College Code": 3850,
     "COLLEGE NMAE":
       "Vetri Vinayaha College of Engineering and Technology Namakkal-Trichy Main Road  Tholurpatti Village  Thottiam Tiruchirappalli District 621215",
     "BRANCH CODE": "CS",
@@ -35682,7 +35682,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3850,
+    "College Code": 3850,
     "COLLEGE NMAE":
       "Vetri Vinayaha College of Engineering and Technology Namakkal-Trichy Main Road  Tholurpatti Village  Thottiam Tiruchirappalli District 621215",
     "BRANCH CODE": "EC",
@@ -35696,7 +35696,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3850,
+    "College Code": 3850,
     "COLLEGE NMAE":
       "Vetri Vinayaha College of Engineering and Technology Namakkal-Trichy Main Road  Tholurpatti Village  Thottiam Tiruchirappalli District 621215",
     "BRANCH CODE": "EE",
@@ -35710,7 +35710,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3850,
+    "College Code": 3850,
     "COLLEGE NMAE":
       "Vetri Vinayaha College of Engineering and Technology Namakkal-Trichy Main Road  Tholurpatti Village  Thottiam Tiruchirappalli District 621215",
     "BRANCH CODE": "IT",
@@ -35724,7 +35724,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3850,
+    "College Code": 3850,
     "COLLEGE NMAE":
       "Vetri Vinayaha College of Engineering and Technology Namakkal-Trichy Main Road  Tholurpatti Village  Thottiam Tiruchirappalli District 621215",
     "BRANCH CODE": "ME",
@@ -35738,7 +35738,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3852,
+    "College Code": 3852,
     "COLLEGE NMAE":
       "Sri Bharathi Engineering College for Women  Kaikkuruchi Village  Alangudi Taluk  Pudukkottai District 622303",
     "BRANCH CODE": "CE",
@@ -35752,7 +35752,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3852,
+    "College Code": 3852,
     "COLLEGE NMAE":
       "Sri Bharathi Engineering College for Women  Kaikkuruchi Village  Alangudi Taluk  Pudukkottai District 622303",
     "BRANCH CODE": "CS",
@@ -35766,7 +35766,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3852,
+    "College Code": 3852,
     "COLLEGE NMAE":
       "Sri Bharathi Engineering College for Women  Kaikkuruchi Village  Alangudi Taluk  Pudukkottai District 622303",
     "BRANCH CODE": "EC",
@@ -35780,7 +35780,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3852,
+    "College Code": 3852,
     "COLLEGE NMAE":
       "Sri Bharathi Engineering College for Women  Kaikkuruchi Village  Alangudi Taluk  Pudukkottai District 622303",
     "BRANCH CODE": "EE",
@@ -35794,7 +35794,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3852,
+    "College Code": 3852,
     "COLLEGE NMAE":
       "Sri Bharathi Engineering College for Women  Kaikkuruchi Village  Alangudi Taluk  Pudukkottai District 622303",
     "BRANCH CODE": "IT",
@@ -35808,7 +35808,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3854,
+    "College Code": 3854,
     "COLLEGE NMAE":
       "Mahath Amma Institute of Engineering and Technology (MIET)  Ariyur  Annavasal Road  Illupur Taluk  Pudukkottai District 622101",
     "BRANCH CODE": "AD",
@@ -35822,7 +35822,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3854,
+    "College Code": 3854,
     "COLLEGE NMAE":
       "Mahath Amma Institute of Engineering and Technology (MIET)  Ariyur  Annavasal Road  Illupur Taluk  Pudukkottai District 622101",
     "BRANCH CODE": "AG",
@@ -35836,7 +35836,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3854,
+    "College Code": 3854,
     "COLLEGE NMAE":
       "Mahath Amma Institute of Engineering and Technology (MIET)  Ariyur  Annavasal Road  Illupur Taluk  Pudukkottai District 622101",
     "BRANCH CODE": "CE",
@@ -35850,7 +35850,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3854,
+    "College Code": 3854,
     "COLLEGE NMAE":
       "Mahath Amma Institute of Engineering and Technology (MIET)  Ariyur  Annavasal Road  Illupur Taluk  Pudukkottai District 622101",
     "BRANCH CODE": "CS",
@@ -35864,7 +35864,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3854,
+    "College Code": 3854,
     "COLLEGE NMAE":
       "Mahath Amma Institute of Engineering and Technology (MIET)  Ariyur  Annavasal Road  Illupur Taluk  Pudukkottai District 622101",
     "BRANCH CODE": "EE",
@@ -35878,7 +35878,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3854,
+    "College Code": 3854,
     "COLLEGE NMAE":
       "Mahath Amma Institute of Engineering and Technology (MIET)  Ariyur  Annavasal Road  Illupur Taluk  Pudukkottai District 622101",
     "BRANCH CODE": "IT",
@@ -35892,7 +35892,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3854,
+    "College Code": 3854,
     "COLLEGE NMAE":
       "Mahath Amma Institute of Engineering and Technology (MIET)  Ariyur  Annavasal Road  Illupur Taluk  Pudukkottai District 622101",
     "BRANCH CODE": "ME",
@@ -35906,7 +35906,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3854,
+    "College Code": 3854,
     "COLLEGE NMAE":
       "Mahath Amma Institute of Engineering and Technology (MIET)  Ariyur  Annavasal Road  Illupur Taluk  Pudukkottai District 622101",
     "BRANCH CODE": "SC",
@@ -35920,7 +35920,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3855,
+    "College Code": 3855,
     "COLLEGE NMAE":
       "As-Salam College of Engineering and Technology Thirumangalakudi  Aduthurai  Thiruvidaimaruthur Thanjavur District 612102",
     "BRANCH CODE": "AD",
@@ -35934,7 +35934,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3855,
+    "College Code": 3855,
     "COLLEGE NMAE":
       "As-Salam College of Engineering and Technology Thirumangalakudi  Aduthurai  Thiruvidaimaruthur Thanjavur District 612102",
     "BRANCH CODE": "CE",
@@ -35948,7 +35948,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3855,
+    "College Code": 3855,
     "COLLEGE NMAE":
       "As-Salam College of Engineering and Technology Thirumangalakudi  Aduthurai  Thiruvidaimaruthur Thanjavur District 612102",
     "BRANCH CODE": "CS",
@@ -35962,7 +35962,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3855,
+    "College Code": 3855,
     "COLLEGE NMAE":
       "As-Salam College of Engineering and Technology Thirumangalakudi  Aduthurai  Thiruvidaimaruthur Thanjavur District 612102",
     "BRANCH CODE": "EC",
@@ -35976,7 +35976,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3855,
+    "College Code": 3855,
     "COLLEGE NMAE":
       "As-Salam College of Engineering and Technology Thirumangalakudi  Aduthurai  Thiruvidaimaruthur Thanjavur District 612102",
     "BRANCH CODE": "EE",
@@ -35990,7 +35990,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3855,
+    "College Code": 3855,
     "COLLEGE NMAE":
       "As-Salam College of Engineering and Technology Thirumangalakudi  Aduthurai  Thiruvidaimaruthur Thanjavur District 612102",
     "BRANCH CODE": "IT",
@@ -36004,7 +36004,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3855,
+    "College Code": 3855,
     "COLLEGE NMAE":
       "As-Salam College of Engineering and Technology Thirumangalakudi  Aduthurai  Thiruvidaimaruthur Thanjavur District 612102",
     "BRANCH CODE": "ME",
@@ -36018,7 +36018,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3855,
+    "College Code": 3855,
     "COLLEGE NMAE":
       "As-Salam College of Engineering and Technology Thirumangalakudi  Aduthurai  Thiruvidaimaruthur Thanjavur District 612102",
     "BRANCH CODE": "SC",
@@ -36032,7 +36032,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3857,
+    "College Code": 3857,
     "COLLEGE NMAE":
       "Meenakshi Ramaswamy Engineering College  Trichy Main Road   Thathanur  Udayarpalayam  Ariyalur District 621804",
     "BRANCH CODE": "AG",
@@ -36046,7 +36046,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3857,
+    "College Code": 3857,
     "COLLEGE NMAE":
       "Meenakshi Ramaswamy Engineering College  Trichy Main Road   Thathanur  Udayarpalayam  Ariyalur District 621804",
     "BRANCH CODE": "AM",
@@ -36061,7 +36061,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3857,
+    "College Code": 3857,
     "COLLEGE NMAE":
       "Meenakshi Ramaswamy Engineering College  Trichy Main Road   Thathanur  Udayarpalayam  Ariyalur District 621804",
     "BRANCH CODE": "BM",
@@ -36075,7 +36075,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3857,
+    "College Code": 3857,
     "COLLEGE NMAE":
       "Meenakshi Ramaswamy Engineering College  Trichy Main Road   Thathanur  Udayarpalayam  Ariyalur District 621804",
     "BRANCH CODE": "CE",
@@ -36089,7 +36089,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3857,
+    "College Code": 3857,
     "COLLEGE NMAE":
       "Meenakshi Ramaswamy Engineering College  Trichy Main Road   Thathanur  Udayarpalayam  Ariyalur District 621804",
     "BRANCH CODE": "CS",
@@ -36103,7 +36103,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3857,
+    "College Code": 3857,
     "COLLEGE NMAE":
       "Meenakshi Ramaswamy Engineering College  Trichy Main Road   Thathanur  Udayarpalayam  Ariyalur District 621804",
     "BRANCH CODE": "EC",
@@ -36117,7 +36117,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3857,
+    "College Code": 3857,
     "COLLEGE NMAE":
       "Meenakshi Ramaswamy Engineering College  Trichy Main Road   Thathanur  Udayarpalayam  Ariyalur District 621804",
     "BRANCH CODE": "EE",
@@ -36131,7 +36131,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3857,
+    "College Code": 3857,
     "COLLEGE NMAE":
       "Meenakshi Ramaswamy Engineering College  Trichy Main Road   Thathanur  Udayarpalayam  Ariyalur District 621804",
     "BRANCH CODE": "ME",
@@ -36145,7 +36145,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3859,
+    "College Code": 3859,
     "COLLEGE NMAE":
       "Sembodai Rukmani Varatharajan Engineering College Sembodai Village  Vedaraniam  Nagappattinam District 614820",
     "BRANCH CODE": "CE",
@@ -36159,7 +36159,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3859,
+    "College Code": 3859,
     "COLLEGE NMAE":
       "Sembodai Rukmani Varatharajan Engineering College Sembodai Village  Vedaraniam  Nagappattinam District 614820",
     "BRANCH CODE": "CS",
@@ -36173,7 +36173,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3859,
+    "College Code": 3859,
     "COLLEGE NMAE":
       "Sembodai Rukmani Varatharajan Engineering College Sembodai Village  Vedaraniam  Nagappattinam District 614820",
     "BRANCH CODE": "EC",
@@ -36187,7 +36187,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3859,
+    "College Code": 3859,
     "COLLEGE NMAE":
       "Sembodai Rukmani Varatharajan Engineering College Sembodai Village  Vedaraniam  Nagappattinam District 614820",
     "BRANCH CODE": "EE",
@@ -36201,7 +36201,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3859,
+    "College Code": 3859,
     "COLLEGE NMAE":
       "Sembodai Rukmani Varatharajan Engineering College Sembodai Village  Vedaraniam  Nagappattinam District 614820",
     "BRANCH CODE": "ME",
@@ -36215,7 +36215,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3860,
+    "College Code": 3860,
     "COLLEGE NMAE":
       "St. Anne's College of Engineering and Technology Anguchettypalayam  Siruvathur Post  Panruti  Cuddalore District 607110",
     "BRANCH CODE": "AM",
@@ -36230,7 +36230,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3860,
+    "College Code": 3860,
     "COLLEGE NMAE":
       "St. Anne's College of Engineering and Technology Anguchettypalayam  Siruvathur Post  Panruti  Cuddalore District 607110",
     "BRANCH CODE": "CS",
@@ -36244,7 +36244,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3860,
+    "College Code": 3860,
     "COLLEGE NMAE":
       "St. Anne's College of Engineering and Technology Anguchettypalayam  Siruvathur Post  Panruti  Cuddalore District 607110",
     "BRANCH CODE": "EC",
@@ -36258,7 +36258,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3860,
+    "College Code": 3860,
     "COLLEGE NMAE":
       "St. Anne's College of Engineering and Technology Anguchettypalayam  Siruvathur Post  Panruti  Cuddalore District 607110",
     "BRANCH CODE": "EE",
@@ -36272,7 +36272,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3860,
+    "College Code": 3860,
     "COLLEGE NMAE":
       "St. Anne's College of Engineering and Technology Anguchettypalayam  Siruvathur Post  Panruti  Cuddalore District 607110",
     "BRANCH CODE": "ME",
@@ -36286,7 +36286,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3905,
+    "College Code": 3905,
     "COLLEGE NMAE":
       "Kings College of Engineering  Punalkulam  Pudukkottai District 613303",
     "BRANCH CODE": "AD",
@@ -36300,7 +36300,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3905,
+    "College Code": 3905,
     "COLLEGE NMAE":
       "Kings College of Engineering  Punalkulam  Pudukkottai District 613303",
     "BRANCH CODE": "CE",
@@ -36314,7 +36314,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3905,
+    "College Code": 3905,
     "COLLEGE NMAE":
       "Kings College of Engineering  Punalkulam  Pudukkottai District 613303",
     "BRANCH CODE": "CS",
@@ -36328,7 +36328,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3905,
+    "College Code": 3905,
     "COLLEGE NMAE":
       "Kings College of Engineering  Punalkulam  Pudukkottai District 613303",
     "BRANCH CODE": "EC",
@@ -36342,7 +36342,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3905,
+    "College Code": 3905,
     "COLLEGE NMAE":
       "Kings College of Engineering  Punalkulam  Pudukkottai District 613303",
     "BRANCH CODE": "EE",
@@ -36356,7 +36356,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3905,
+    "College Code": 3905,
     "COLLEGE NMAE":
       "Kings College of Engineering  Punalkulam  Pudukkottai District 613303",
     "BRANCH CODE": "ME",
@@ -36370,7 +36370,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3908,
+    "College Code": 3908,
     "COLLEGE NMAE":
       "Mount Zion College of Engineering and Technology Pilivalam Post  Pudukkottai District 622507",
     "BRANCH CODE": "AD",
@@ -36384,7 +36384,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3908,
+    "College Code": 3908,
     "COLLEGE NMAE":
       "Mount Zion College of Engineering and Technology Pilivalam Post  Pudukkottai District 622507",
     "BRANCH CODE": "CE",
@@ -36398,7 +36398,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3908,
+    "College Code": 3908,
     "COLLEGE NMAE":
       "Mount Zion College of Engineering and Technology Pilivalam Post  Pudukkottai District 622507",
     "BRANCH CODE": "CS",
@@ -36412,7 +36412,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3908,
+    "College Code": 3908,
     "COLLEGE NMAE":
       "Mount Zion College of Engineering and Technology Pilivalam Post  Pudukkottai District 622507",
     "BRANCH CODE": "EC",
@@ -36426,7 +36426,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3908,
+    "College Code": 3908,
     "COLLEGE NMAE":
       "Mount Zion College of Engineering and Technology Pilivalam Post  Pudukkottai District 622507",
     "BRANCH CODE": "EE",
@@ -36440,7 +36440,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3908,
+    "College Code": 3908,
     "COLLEGE NMAE":
       "Mount Zion College of Engineering and Technology Pilivalam Post  Pudukkottai District 622507",
     "BRANCH CODE": "IT",
@@ -36454,7 +36454,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3908,
+    "College Code": 3908,
     "COLLEGE NMAE":
       "Mount Zion College of Engineering and Technology Pilivalam Post  Pudukkottai District 622507",
     "BRANCH CODE": "ME",
@@ -36468,7 +36468,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3918,
+    "College Code": 3918,
     "COLLEGE NMAE":
       "Shanmuganathan Engineering College  Pillivalam Post Pudukkottai District 622507",
     "BRANCH CODE": "AM",
@@ -36483,7 +36483,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3918,
+    "College Code": 3918,
     "COLLEGE NMAE":
       "Shanmuganathan Engineering College  Pillivalam Post Pudukkottai District 622507",
     "BRANCH CODE": "CE",
@@ -36497,7 +36497,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3918,
+    "College Code": 3918,
     "COLLEGE NMAE":
       "Shanmuganathan Engineering College  Pillivalam Post Pudukkottai District 622507",
     "BRANCH CODE": "CS",
@@ -36511,7 +36511,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3918,
+    "College Code": 3918,
     "COLLEGE NMAE":
       "Shanmuganathan Engineering College  Pillivalam Post Pudukkottai District 622507",
     "BRANCH CODE": "EC",
@@ -36525,7 +36525,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3918,
+    "College Code": 3918,
     "COLLEGE NMAE":
       "Shanmuganathan Engineering College  Pillivalam Post Pudukkottai District 622507",
     "BRANCH CODE": "EE",
@@ -36539,7 +36539,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3918,
+    "College Code": 3918,
     "COLLEGE NMAE":
       "Shanmuganathan Engineering College  Pillivalam Post Pudukkottai District 622507",
     "BRANCH CODE": "ME",
@@ -36553,7 +36553,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3918,
+    "College Code": 3918,
     "COLLEGE NMAE":
       "Shanmuganathan Engineering College  Pillivalam Post Pudukkottai District 622507",
     "BRANCH CODE": "SC",
@@ -36567,7 +36567,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3920,
+    "College Code": 3920,
     "COLLEGE NMAE":
       "Sudharsan Engineering College  Sathiyamangalam Post Pudukkottai District 622501",
     "BRANCH CODE": "AD",
@@ -36581,7 +36581,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3920,
+    "College Code": 3920,
     "COLLEGE NMAE":
       "Sudharsan Engineering College  Sathiyamangalam Post Pudukkottai District 622501",
     "BRANCH CODE": "AM",
@@ -36596,7 +36596,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3920,
+    "College Code": 3920,
     "COLLEGE NMAE":
       "Sudharsan Engineering College  Sathiyamangalam Post Pudukkottai District 622501",
     "BRANCH CODE": "CE",
@@ -36610,7 +36610,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3920,
+    "College Code": 3920,
     "COLLEGE NMAE":
       "Sudharsan Engineering College  Sathiyamangalam Post Pudukkottai District 622501",
     "BRANCH CODE": "CS",
@@ -36624,7 +36624,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3920,
+    "College Code": 3920,
     "COLLEGE NMAE":
       "Sudharsan Engineering College  Sathiyamangalam Post Pudukkottai District 622501",
     "BRANCH CODE": "EC",
@@ -36638,7 +36638,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3920,
+    "College Code": 3920,
     "COLLEGE NMAE":
       "Sudharsan Engineering College  Sathiyamangalam Post Pudukkottai District 622501",
     "BRANCH CODE": "EE",
@@ -36652,7 +36652,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3920,
+    "College Code": 3920,
     "COLLEGE NMAE":
       "Sudharsan Engineering College  Sathiyamangalam Post Pudukkottai District 622501",
     "BRANCH CODE": "ME",
@@ -36666,7 +36666,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3923,
+    "College Code": 3923,
     "COLLEGE NMAE":
       "M N S K College of Engineering  Vallathirakkottai Post Pudukkottai District 622305",
     "BRANCH CODE": "AD",
@@ -36680,7 +36680,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3923,
+    "College Code": 3923,
     "COLLEGE NMAE":
       "M N S K College of Engineering  Vallathirakkottai Post Pudukkottai District 622305",
     "BRANCH CODE": "AG",
@@ -36694,7 +36694,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3923,
+    "College Code": 3923,
     "COLLEGE NMAE":
       "M N S K College of Engineering  Vallathirakkottai Post Pudukkottai District 622305",
     "BRANCH CODE": "CE",
@@ -36708,7 +36708,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3923,
+    "College Code": 3923,
     "COLLEGE NMAE":
       "M N S K College of Engineering  Vallathirakkottai Post Pudukkottai District 622305",
     "BRANCH CODE": "CS",
@@ -36722,7 +36722,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3923,
+    "College Code": 3923,
     "COLLEGE NMAE":
       "M N S K College of Engineering  Vallathirakkottai Post Pudukkottai District 622305",
     "BRANCH CODE": "EC",
@@ -36736,7 +36736,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3923,
+    "College Code": 3923,
     "COLLEGE NMAE":
       "M N S K College of Engineering  Vallathirakkottai Post Pudukkottai District 622305",
     "BRANCH CODE": "EE",
@@ -36750,7 +36750,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3923,
+    "College Code": 3923,
     "COLLEGE NMAE":
       "M N S K College of Engineering  Vallathirakkottai Post Pudukkottai District 622305",
     "BRANCH CODE": "ME",
@@ -36764,7 +36764,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3926,
+    "College Code": 3926,
     "COLLEGE NMAE":
       "Chendhuran College of Engineering and Technology Madurai Road  Lenavilakku  Pilivalam Post  Pudukkottai - 622 507",
     "BRANCH CODE": "AD",
@@ -36778,7 +36778,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3926,
+    "College Code": 3926,
     "COLLEGE NMAE":
       "Chendhuran College of Engineering and Technology Madurai Road  Lenavilakku  Pilivalam Post  Pudukkottai - 622 507",
     "BRANCH CODE": "CE",
@@ -36792,7 +36792,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3926,
+    "College Code": 3926,
     "COLLEGE NMAE":
       "Chendhuran College of Engineering and Technology Madurai Road  Lenavilakku  Pilivalam Post  Pudukkottai - 622 507",
     "BRANCH CODE": "CS",
@@ -36806,7 +36806,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 3926,
+    "College Code": 3926,
     "COLLEGE NMAE":
       "Chendhuran College of Engineering and Technology Madurai Road  Lenavilakku  Pilivalam Post  Pudukkottai - 622 507",
     "BRANCH CODE": "EC",
@@ -36820,7 +36820,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3926,
+    "College Code": 3926,
     "COLLEGE NMAE":
       "Chendhuran College of Engineering and Technology Madurai Road  Lenavilakku  Pilivalam Post  Pudukkottai - 622 507",
     "BRANCH CODE": "EE",
@@ -36834,7 +36834,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 3926,
+    "College Code": 3926,
     "COLLEGE NMAE":
       "Chendhuran College of Engineering and Technology Madurai Road  Lenavilakku  Pilivalam Post  Pudukkottai - 622 507",
     "BRANCH CODE": "ME",
@@ -36848,7 +36848,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4020,
+    "College Code": 4020,
     "COLLEGE NMAE":
       "Anna University Regional Campus - Tirunelveli  Trivandrum Road  Palayamkottai  Tirunelveli District 627007",
     "BRANCH CODE": "CS",
@@ -36862,7 +36862,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4020,
+    "College Code": 4020,
     "COLLEGE NMAE":
       "Anna University Regional Campus - Tirunelveli  Trivandrum Road  Palayamkottai  Tirunelveli District 627007",
     "BRANCH CODE": "EC",
@@ -36876,7 +36876,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4020,
+    "College Code": 4020,
     "COLLEGE NMAE":
       "Anna University Regional Campus - Tirunelveli  Trivandrum Road  Palayamkottai  Tirunelveli District 627007",
     "BRANCH CODE": "GI",
@@ -36890,7 +36890,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4020,
+    "College Code": 4020,
     "COLLEGE NMAE":
       "Anna University Regional Campus - Tirunelveli  Trivandrum Road  Palayamkottai  Tirunelveli District 627007",
     "BRANCH CODE": "ME",
@@ -36904,7 +36904,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4023,
+    "College Code": 4023,
     "COLLEGE NMAE":
       "University College of Engineering  Nagercoil  Nagercoil Industrial Estate  Konam  Kanyakumari District 629004",
     "BRANCH CODE": "CE",
@@ -36918,7 +36918,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4023,
+    "College Code": 4023,
     "COLLEGE NMAE":
       "University College of Engineering  Nagercoil  Nagercoil Industrial Estate  Konam  Kanyakumari District 629004",
     "BRANCH CODE": "CS",
@@ -36932,7 +36932,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4023,
+    "College Code": 4023,
     "COLLEGE NMAE":
       "University College of Engineering  Nagercoil  Nagercoil Industrial Estate  Konam  Kanyakumari District 629004",
     "BRANCH CODE": "EC",
@@ -36946,7 +36946,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4023,
+    "College Code": 4023,
     "COLLEGE NMAE":
       "University College of Engineering  Nagercoil  Nagercoil Industrial Estate  Konam  Kanyakumari District 629004",
     "BRANCH CODE": "EE",
@@ -36960,7 +36960,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4023,
+    "College Code": 4023,
     "COLLEGE NMAE":
       "University College of Engineering  Nagercoil  Nagercoil Industrial Estate  Konam  Kanyakumari District 629004",
     "BRANCH CODE": "IT",
@@ -36974,7 +36974,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4023,
+    "College Code": 4023,
     "COLLEGE NMAE":
       "University College of Engineering  Nagercoil  Nagercoil Industrial Estate  Konam  Kanyakumari District 629004",
     "BRANCH CODE": "ME",
@@ -36988,7 +36988,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4023,
+    "College Code": 4023,
     "COLLEGE NMAE":
       "University College of Engineering  Nagercoil  Nagercoil Industrial Estate  Konam  Kanyakumari District 629004",
     "BRANCH CODE": "XC",
@@ -37002,7 +37002,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4023,
+    "College Code": 4023,
     "COLLEGE NMAE":
       "University College of Engineering  Nagercoil  Nagercoil Industrial Estate  Konam  Kanyakumari District 629004",
     "BRANCH CODE": "XM",
@@ -37016,7 +37016,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4024,
+    "College Code": 4024,
     "COLLEGE NMAE":
       "University V.O.C. College of Engineering  Thoothukudi  Near V.O.C. College  Millerpuram  Thoothukudi District 628008",
     "BRANCH CODE": "CE",
@@ -37030,7 +37030,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4024,
+    "College Code": 4024,
     "COLLEGE NMAE":
       "University V.O.C. College of Engineering  Thoothukudi  Near V.O.C. College  Millerpuram  Thoothukudi District 628008",
     "BRANCH CODE": "EC",
@@ -37044,7 +37044,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4024,
+    "College Code": 4024,
     "COLLEGE NMAE":
       "University V.O.C. College of Engineering  Thoothukudi  Near V.O.C. College  Millerpuram  Thoothukudi District 628008",
     "BRANCH CODE": "EE",
@@ -37058,7 +37058,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4024,
+    "College Code": 4024,
     "COLLEGE NMAE":
       "University V.O.C. College of Engineering  Thoothukudi  Near V.O.C. College  Millerpuram  Thoothukudi District 628008",
     "BRANCH CODE": "ME",
@@ -37072,7 +37072,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4024,
+    "College Code": 4024,
     "COLLEGE NMAE":
       "University V.O.C. College of Engineering  Thoothukudi  Near V.O.C. College  Millerpuram  Thoothukudi District 628008",
     "BRANCH CODE": "XC",
@@ -37086,7 +37086,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4024,
+    "College Code": 4024,
     "COLLEGE NMAE":
       "University V.O.C. College of Engineering  Thoothukudi  Near V.O.C. College  Millerpuram  Thoothukudi District 628008",
     "BRANCH CODE": "XM",
@@ -37100,7 +37100,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4669,
+    "College Code": 4669,
     "COLLEGE NMAE":
       "Thamirabharani Engineering College  Chathirampudukulam Village  Thatchanallur  Tirunelveli District 627358",
     "BRANCH CODE": "CE",
@@ -37114,7 +37114,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4669,
+    "College Code": 4669,
     "COLLEGE NMAE":
       "Thamirabharani Engineering College  Chathirampudukulam Village  Thatchanallur  Tirunelveli District 627358",
     "BRANCH CODE": "CS",
@@ -37128,7 +37128,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4669,
+    "College Code": 4669,
     "COLLEGE NMAE":
       "Thamirabharani Engineering College  Chathirampudukulam Village  Thatchanallur  Tirunelveli District 627358",
     "BRANCH CODE": "EC",
@@ -37142,7 +37142,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4669,
+    "College Code": 4669,
     "COLLEGE NMAE":
       "Thamirabharani Engineering College  Chathirampudukulam Village  Thatchanallur  Tirunelveli District 627358",
     "BRANCH CODE": "EE",
@@ -37156,7 +37156,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4669,
+    "College Code": 4669,
     "COLLEGE NMAE":
       "Thamirabharani Engineering College  Chathirampudukulam Village  Thatchanallur  Tirunelveli District 627358",
     "BRANCH CODE": "ME",
@@ -37170,7 +37170,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4670,
+    "College Code": 4670,
     "COLLEGE NMAE":
       "Rohini College of Engineering & Technology  Anjugramam- Kanyakumari Main Road  Palkulam  Variyoor Post Kanyakumari District 629401",
     "BRANCH CODE": "AD",
@@ -37184,7 +37184,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4670,
+    "College Code": 4670,
     "COLLEGE NMAE":
       "Rohini College of Engineering & Technology  Anjugramam- Kanyakumari Main Road  Palkulam  Variyoor Post Kanyakumari District 629401",
     "BRANCH CODE": "AG",
@@ -37198,7 +37198,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4670,
+    "College Code": 4670,
     "COLLEGE NMAE":
       "Rohini College of Engineering & Technology  Anjugramam- Kanyakumari Main Road  Palkulam  Variyoor Post Kanyakumari District 629401",
     "BRANCH CODE": "BM",
@@ -37212,7 +37212,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4670,
+    "College Code": 4670,
     "COLLEGE NMAE":
       "Rohini College of Engineering & Technology  Anjugramam- Kanyakumari Main Road  Palkulam  Variyoor Post Kanyakumari District 629401",
     "BRANCH CODE": "CE",
@@ -37226,7 +37226,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4670,
+    "College Code": 4670,
     "COLLEGE NMAE":
       "Rohini College of Engineering & Technology  Anjugramam- Kanyakumari Main Road  Palkulam  Variyoor Post Kanyakumari District 629401",
     "BRANCH CODE": "CS",
@@ -37240,7 +37240,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4670,
+    "College Code": 4670,
     "COLLEGE NMAE":
       "Rohini College of Engineering & Technology  Anjugramam- Kanyakumari Main Road  Palkulam  Variyoor Post Kanyakumari District 629401",
     "BRANCH CODE": "EC",
@@ -37254,7 +37254,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4670,
+    "College Code": 4670,
     "COLLEGE NMAE":
       "Rohini College of Engineering & Technology  Anjugramam- Kanyakumari Main Road  Palkulam  Variyoor Post Kanyakumari District 629401",
     "BRANCH CODE": "EE",
@@ -37268,7 +37268,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4670,
+    "College Code": 4670,
     "COLLEGE NMAE":
       "Rohini College of Engineering & Technology  Anjugramam- Kanyakumari Main Road  Palkulam  Variyoor Post Kanyakumari District 629401",
     "BRANCH CODE": "ME",
@@ -37282,7 +37282,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4672,
+    "College Code": 4672,
     "COLLEGE NMAE":
       "Stella Mary's College of Engineering  Arunthengan Vilai Azhikal Post  Kanyakumari District 629202",
     "BRANCH CODE": "AD",
@@ -37296,7 +37296,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4672,
+    "College Code": 4672,
     "COLLEGE NMAE":
       "Stella Mary's College of Engineering  Arunthengan Vilai Azhikal Post  Kanyakumari District 629202",
     "BRANCH CODE": "CE",
@@ -37310,7 +37310,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4672,
+    "College Code": 4672,
     "COLLEGE NMAE":
       "Stella Mary's College of Engineering  Arunthengan Vilai Azhikal Post  Kanyakumari District 629202",
     "BRANCH CODE": "CS",
@@ -37324,7 +37324,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4672,
+    "College Code": 4672,
     "COLLEGE NMAE":
       "Stella Mary's College of Engineering  Arunthengan Vilai Azhikal Post  Kanyakumari District 629202",
     "BRANCH CODE": "EC",
@@ -37338,7 +37338,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4672,
+    "College Code": 4672,
     "COLLEGE NMAE":
       "Stella Mary's College of Engineering  Arunthengan Vilai Azhikal Post  Kanyakumari District 629202",
     "BRANCH CODE": "EE",
@@ -37352,7 +37352,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4672,
+    "College Code": 4672,
     "COLLEGE NMAE":
       "Stella Mary's College of Engineering  Arunthengan Vilai Azhikal Post  Kanyakumari District 629202",
     "BRANCH CODE": "ME",
@@ -37366,7 +37366,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4675,
+    "College Code": 4675,
     "COLLEGE NMAE":
       "Universal College of Engineering and Technology  Anbagam Campus  Radhapuram Road  Vallioor  Tirunelveli District 627117",
     "BRANCH CODE": "CB",
@@ -37380,7 +37380,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4675,
+    "College Code": 4675,
     "COLLEGE NMAE":
       "Universal College of Engineering and Technology  Anbagam Campus  Radhapuram Road  Vallioor  Tirunelveli District 627117",
     "BRANCH CODE": "CE",
@@ -37394,7 +37394,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4675,
+    "College Code": 4675,
     "COLLEGE NMAE":
       "Universal College of Engineering and Technology  Anbagam Campus  Radhapuram Road  Vallioor  Tirunelveli District 627117",
     "BRANCH CODE": "CS",
@@ -37408,7 +37408,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4675,
+    "College Code": 4675,
     "COLLEGE NMAE":
       "Universal College of Engineering and Technology  Anbagam Campus  Radhapuram Road  Vallioor  Tirunelveli District 627117",
     "BRANCH CODE": "EC",
@@ -37422,7 +37422,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4675,
+    "College Code": 4675,
     "COLLEGE NMAE":
       "Universal College of Engineering and Technology  Anbagam Campus  Radhapuram Road  Vallioor  Tirunelveli District 627117",
     "BRANCH CODE": "EE",
@@ -37436,7 +37436,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4675,
+    "College Code": 4675,
     "COLLEGE NMAE":
       "Universal College of Engineering and Technology  Anbagam Campus  Radhapuram Road  Vallioor  Tirunelveli District 627117",
     "BRANCH CODE": "ME",
@@ -37450,7 +37450,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4676,
+    "College Code": 4676,
     "COLLEGE NMAE":
       "Renganayagi Varatharaj College of Engineering  Salvarpatti Sivakasi  Virudhunagar District 626128",
     "BRANCH CODE": "AD",
@@ -37464,7 +37464,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4676,
+    "College Code": 4676,
     "COLLEGE NMAE":
       "Renganayagi Varatharaj College of Engineering  Salvarpatti Sivakasi  Virudhunagar District 626128",
     "BRANCH CODE": "CS",
@@ -37478,7 +37478,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4676,
+    "College Code": 4676,
     "COLLEGE NMAE":
       "Renganayagi Varatharaj College of Engineering  Salvarpatti Sivakasi  Virudhunagar District 626128",
     "BRANCH CODE": "EC",
@@ -37492,7 +37492,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4676,
+    "College Code": 4676,
     "COLLEGE NMAE":
       "Renganayagi Varatharaj College of Engineering  Salvarpatti Sivakasi  Virudhunagar District 626128",
     "BRANCH CODE": "EE",
@@ -37506,7 +37506,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4676,
+    "College Code": 4676,
     "COLLEGE NMAE":
       "Renganayagi Varatharaj College of Engineering  Salvarpatti Sivakasi  Virudhunagar District 626128",
     "BRANCH CODE": "ME",
@@ -37520,7 +37520,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4677,
+    "College Code": 4677,
     "COLLEGE NMAE":
       "Lourdes Mount College of Engineering and Technology Marthandam-Karungal Road  Chundavilai  Mullanganavilai Nattalam Post  Kanyakumari District 629195",
     "BRANCH CODE": "CE",
@@ -37534,7 +37534,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4677,
+    "College Code": 4677,
     "COLLEGE NMAE":
       "Lourdes Mount College of Engineering and Technology Marthandam-Karungal Road  Chundavilai  Mullanganavilai Nattalam Post  Kanyakumari District 629195",
     "BRANCH CODE": "CS",
@@ -37548,7 +37548,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4677,
+    "College Code": 4677,
     "COLLEGE NMAE":
       "Lourdes Mount College of Engineering and Technology Marthandam-Karungal Road  Chundavilai  Mullanganavilai Nattalam Post  Kanyakumari District 629195",
     "BRANCH CODE": "EC",
@@ -37562,7 +37562,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4677,
+    "College Code": 4677,
     "COLLEGE NMAE":
       "Lourdes Mount College of Engineering and Technology Marthandam-Karungal Road  Chundavilai  Mullanganavilai Nattalam Post  Kanyakumari District 629195",
     "BRANCH CODE": "EE",
@@ -37576,7 +37576,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4677,
+    "College Code": 4677,
     "COLLEGE NMAE":
       "Lourdes Mount College of Engineering and Technology Marthandam-Karungal Road  Chundavilai  Mullanganavilai Nattalam Post  Kanyakumari District 629195",
     "BRANCH CODE": "ME",
@@ -37590,7 +37590,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4678,
+    "College Code": 4678,
     "COLLEGE NMAE":
       "Ramco Institute of Technology  North venganallur Village Krishnapuram Panchayat  Rajapalayam  Virudhunagar District 626117",
     "BRANCH CODE": "AD",
@@ -37604,7 +37604,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4678,
+    "College Code": 4678,
     "COLLEGE NMAE":
       "Ramco Institute of Technology  North venganallur Village Krishnapuram Panchayat  Rajapalayam  Virudhunagar District 626117",
     "BRANCH CODE": "CB",
@@ -37618,7 +37618,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4678,
+    "College Code": 4678,
     "COLLEGE NMAE":
       "Ramco Institute of Technology  North venganallur Village Krishnapuram Panchayat  Rajapalayam  Virudhunagar District 626117",
     "BRANCH CODE": "CE",
@@ -37632,7 +37632,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4678,
+    "College Code": 4678,
     "COLLEGE NMAE":
       "Ramco Institute of Technology  North venganallur Village Krishnapuram Panchayat  Rajapalayam  Virudhunagar District 626117",
     "BRANCH CODE": "CS",
@@ -37646,7 +37646,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4678,
+    "College Code": 4678,
     "COLLEGE NMAE":
       "Ramco Institute of Technology  North venganallur Village Krishnapuram Panchayat  Rajapalayam  Virudhunagar District 626117",
     "BRANCH CODE": "EC",
@@ -37660,7 +37660,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4678,
+    "College Code": 4678,
     "COLLEGE NMAE":
       "Ramco Institute of Technology  North venganallur Village Krishnapuram Panchayat  Rajapalayam  Virudhunagar District 626117",
     "BRANCH CODE": "EE",
@@ -37674,7 +37674,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4678,
+    "College Code": 4678,
     "COLLEGE NMAE":
       "Ramco Institute of Technology  North venganallur Village Krishnapuram Panchayat  Rajapalayam  Virudhunagar District 626117",
     "BRANCH CODE": "IT",
@@ -37688,7 +37688,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4678,
+    "College Code": 4678,
     "COLLEGE NMAE":
       "Ramco Institute of Technology  North venganallur Village Krishnapuram Panchayat  Rajapalayam  Virudhunagar District 626117",
     "BRANCH CODE": "ME",
@@ -37702,7 +37702,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4680,
+    "College Code": 4680,
     "COLLEGE NMAE":
       "AAA College of Engineering and Technology  Kamarajar Educational Road  Amathur Village  Sivakasi  Virudhunagar District 626005",
     "BRANCH CODE": "AD",
@@ -37716,7 +37716,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4680,
+    "College Code": 4680,
     "COLLEGE NMAE":
       "AAA College of Engineering and Technology  Kamarajar Educational Road  Amathur Village  Sivakasi  Virudhunagar District 626005",
     "BRANCH CODE": "CE",
@@ -37730,7 +37730,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4680,
+    "College Code": 4680,
     "COLLEGE NMAE":
       "AAA College of Engineering and Technology  Kamarajar Educational Road  Amathur Village  Sivakasi  Virudhunagar District 626005",
     "BRANCH CODE": "CS",
@@ -37744,7 +37744,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4680,
+    "College Code": 4680,
     "COLLEGE NMAE":
       "AAA College of Engineering and Technology  Kamarajar Educational Road  Amathur Village  Sivakasi  Virudhunagar District 626005",
     "BRANCH CODE": "EC",
@@ -37758,7 +37758,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4680,
+    "College Code": 4680,
     "COLLEGE NMAE":
       "AAA College of Engineering and Technology  Kamarajar Educational Road  Amathur Village  Sivakasi  Virudhunagar District 626005",
     "BRANCH CODE": "EE",
@@ -37772,7 +37772,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4680,
+    "College Code": 4680,
     "COLLEGE NMAE":
       "AAA College of Engineering and Technology  Kamarajar Educational Road  Amathur Village  Sivakasi  Virudhunagar District 626005",
     "BRANCH CODE": "IT",
@@ -37786,7 +37786,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4680,
+    "College Code": 4680,
     "COLLEGE NMAE":
       "AAA College of Engineering and Technology  Kamarajar Educational Road  Amathur Village  Sivakasi  Virudhunagar District 626005",
     "BRANCH CODE": "ME",
@@ -37800,7 +37800,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4680,
+    "College Code": 4680,
     "COLLEGE NMAE":
       "AAA College of Engineering and Technology  Kamarajar Educational Road  Amathur Village  Sivakasi  Virudhunagar District 626005",
     "BRANCH CODE": "SC",
@@ -37814,7 +37814,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4686,
+    "College Code": 4686,
     "COLLEGE NMAE":
       "Good Shepherd College of Engineering and Technology Maruthamparai  Kanyakumari District 629101",
     "BRANCH CODE": "AD",
@@ -37828,7 +37828,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4686,
+    "College Code": 4686,
     "COLLEGE NMAE":
       "Good Shepherd College of Engineering and Technology Maruthamparai  Kanyakumari District 629101",
     "BRANCH CODE": "CE",
@@ -37842,7 +37842,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4686,
+    "College Code": 4686,
     "COLLEGE NMAE":
       "Good Shepherd College of Engineering and Technology Maruthamparai  Kanyakumari District 629101",
     "BRANCH CODE": "CS",
@@ -37856,7 +37856,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4686,
+    "College Code": 4686,
     "COLLEGE NMAE":
       "Good Shepherd College of Engineering and Technology Maruthamparai  Kanyakumari District 629101",
     "BRANCH CODE": "EC",
@@ -37870,7 +37870,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4686,
+    "College Code": 4686,
     "COLLEGE NMAE":
       "Good Shepherd College of Engineering and Technology Maruthamparai  Kanyakumari District 629101",
     "BRANCH CODE": "ME",
@@ -37884,7 +37884,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4864,
+    "College Code": 4864,
     "COLLEGE NMAE":
       "V V College of Engineering  Arasoor Village  Idaichivilai Post Santhakulam Taluk  Thoothukudi District 628656",
     "BRANCH CODE": "CE",
@@ -37898,7 +37898,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4864,
+    "College Code": 4864,
     "COLLEGE NMAE":
       "V V College of Engineering  Arasoor Village  Idaichivilai Post Santhakulam Taluk  Thoothukudi District 628656",
     "BRANCH CODE": "CS",
@@ -37912,7 +37912,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4864,
+    "College Code": 4864,
     "COLLEGE NMAE":
       "V V College of Engineering  Arasoor Village  Idaichivilai Post Santhakulam Taluk  Thoothukudi District 628656",
     "BRANCH CODE": "EC",
@@ -37926,7 +37926,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4864,
+    "College Code": 4864,
     "COLLEGE NMAE":
       "V V College of Engineering  Arasoor Village  Idaichivilai Post Santhakulam Taluk  Thoothukudi District 628656",
     "BRANCH CODE": "EE",
@@ -37940,7 +37940,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4864,
+    "College Code": 4864,
     "COLLEGE NMAE":
       "V V College of Engineering  Arasoor Village  Idaichivilai Post Santhakulam Taluk  Thoothukudi District 628656",
     "BRANCH CODE": "ME",
@@ -37954,7 +37954,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4917,
+    "College Code": 4917,
     "COLLEGE NMAE":
       "Sethu Institute of Technology (Autonomous)  Kariapatti Post  Virudhunagar District 626115",
     "BRANCH CODE": "AD",
@@ -37968,7 +37968,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4917,
+    "College Code": 4917,
     "COLLEGE NMAE":
       "Sethu Institute of Technology (Autonomous)  Kariapatti Post  Virudhunagar District 626115",
     "BRANCH CODE": "AG",
@@ -37982,7 +37982,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4917,
+    "College Code": 4917,
     "COLLEGE NMAE":
       "Sethu Institute of Technology (Autonomous)  Kariapatti Post  Virudhunagar District 626115",
     "BRANCH CODE": "AM",
@@ -37997,7 +37997,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4917,
+    "College Code": 4917,
     "COLLEGE NMAE":
       "Sethu Institute of Technology (Autonomous)  Kariapatti Post  Virudhunagar District 626115",
     "BRANCH CODE": "BM",
@@ -38011,7 +38011,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4917,
+    "College Code": 4917,
     "COLLEGE NMAE":
       "Sethu Institute of Technology (Autonomous)  Kariapatti Post  Virudhunagar District 626115",
     "BRANCH CODE": "BT",
@@ -38025,7 +38025,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4917,
+    "College Code": 4917,
     "COLLEGE NMAE":
       "Sethu Institute of Technology (Autonomous)  Kariapatti Post  Virudhunagar District 626115",
     "BRANCH CODE": "CB",
@@ -38039,7 +38039,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4917,
+    "College Code": 4917,
     "COLLEGE NMAE":
       "Sethu Institute of Technology (Autonomous)  Kariapatti Post  Virudhunagar District 626115",
     "BRANCH CODE": "CD",
@@ -38053,7 +38053,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4917,
+    "College Code": 4917,
     "COLLEGE NMAE":
       "Sethu Institute of Technology (Autonomous)  Kariapatti Post  Virudhunagar District 626115",
     "BRANCH CODE": "CE",
@@ -38067,7 +38067,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4917,
+    "College Code": 4917,
     "COLLEGE NMAE":
       "Sethu Institute of Technology (Autonomous)  Kariapatti Post  Virudhunagar District 626115",
     "BRANCH CODE": "CH",
@@ -38081,7 +38081,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4917,
+    "College Code": 4917,
     "COLLEGE NMAE":
       "Sethu Institute of Technology (Autonomous)  Kariapatti Post  Virudhunagar District 626115",
     "BRANCH CODE": "CI",
@@ -38095,7 +38095,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4917,
+    "College Code": 4917,
     "COLLEGE NMAE":
       "Sethu Institute of Technology (Autonomous)  Kariapatti Post  Virudhunagar District 626115",
     "BRANCH CODE": "CS",
@@ -38109,7 +38109,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4917,
+    "College Code": 4917,
     "COLLEGE NMAE":
       "Sethu Institute of Technology (Autonomous)  Kariapatti Post  Virudhunagar District 626115",
     "BRANCH CODE": "EC",
@@ -38123,7 +38123,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4917,
+    "College Code": 4917,
     "COLLEGE NMAE":
       "Sethu Institute of Technology (Autonomous)  Kariapatti Post  Virudhunagar District 626115",
     "BRANCH CODE": "EE",
@@ -38137,7 +38137,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4917,
+    "College Code": 4917,
     "COLLEGE NMAE":
       "Sethu Institute of Technology (Autonomous)  Kariapatti Post  Virudhunagar District 626115",
     "BRANCH CODE": "IT",
@@ -38151,7 +38151,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4917,
+    "College Code": 4917,
     "COLLEGE NMAE":
       "Sethu Institute of Technology (Autonomous)  Kariapatti Post  Virudhunagar District 626115",
     "BRANCH CODE": "ME",
@@ -38165,7 +38165,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4917,
+    "College Code": 4917,
     "COLLEGE NMAE":
       "Sethu Institute of Technology (Autonomous)  Kariapatti Post  Virudhunagar District 626115",
     "BRANCH CODE": "SC",
@@ -38179,7 +38179,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4925,
+    "College Code": 4925,
     "COLLEGE NMAE":
       "Sun College of Engineering and Technology  Ammandivilai & Post  Kanyakumari District - 629204",
     "BRANCH CODE": "AD",
@@ -38193,7 +38193,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4925,
+    "College Code": 4925,
     "COLLEGE NMAE":
       "Sun College of Engineering and Technology  Ammandivilai & Post  Kanyakumari District - 629204",
     "BRANCH CODE": "FD",
@@ -38207,7 +38207,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4925,
+    "College Code": 4925,
     "COLLEGE NMAE":
       "Sun College of Engineering and Technology  Ammandivilai & Post  Kanyakumari District - 629204",
     "BRANCH CODE": "MD",
@@ -38221,7 +38221,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4925,
+    "College Code": 4925,
     "COLLEGE NMAE":
       "Sun College of Engineering and Technology  Ammandivilai & Post  Kanyakumari District - 629204",
     "BRANCH CODE": "PC",
@@ -38235,7 +38235,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4925,
+    "College Code": 4925,
     "COLLEGE NMAE":
       "Sun College of Engineering and Technology  Ammandivilai & Post  Kanyakumari District - 629204",
     "BRANCH CODE": "PH",
@@ -38249,7 +38249,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4927,
+    "College Code": 4927,
     "COLLEGE NMAE":
       "Maria College of Engineering and Technology  Attoor Puliyamoodu Junction  Thiruvattar Post  Kanyakumari District 629177",
     "BRANCH CODE": "AU",
@@ -38263,7 +38263,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4927,
+    "College Code": 4927,
     "COLLEGE NMAE":
       "Maria College of Engineering and Technology  Attoor Puliyamoodu Junction  Thiruvattar Post  Kanyakumari District 629177",
     "BRANCH CODE": "BM",
@@ -38277,7 +38277,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4927,
+    "College Code": 4927,
     "COLLEGE NMAE":
       "Maria College of Engineering and Technology  Attoor Puliyamoodu Junction  Thiruvattar Post  Kanyakumari District 629177",
     "BRANCH CODE": "CE",
@@ -38291,7 +38291,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4927,
+    "College Code": 4927,
     "COLLEGE NMAE":
       "Maria College of Engineering and Technology  Attoor Puliyamoodu Junction  Thiruvattar Post  Kanyakumari District 629177",
     "BRANCH CODE": "CS",
@@ -38305,7 +38305,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4927,
+    "College Code": 4927,
     "COLLEGE NMAE":
       "Maria College of Engineering and Technology  Attoor Puliyamoodu Junction  Thiruvattar Post  Kanyakumari District 629177",
     "BRANCH CODE": "EC",
@@ -38319,7 +38319,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4927,
+    "College Code": 4927,
     "COLLEGE NMAE":
       "Maria College of Engineering and Technology  Attoor Puliyamoodu Junction  Thiruvattar Post  Kanyakumari District 629177",
     "BRANCH CODE": "EE",
@@ -38333,7 +38333,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4927,
+    "College Code": 4927,
     "COLLEGE NMAE":
       "Maria College of Engineering and Technology  Attoor Puliyamoodu Junction  Thiruvattar Post  Kanyakumari District 629177",
     "BRANCH CODE": "ME",
@@ -38347,7 +38347,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4928,
+    "College Code": 4928,
     "COLLEGE NMAE":
       "MAR Ephraem College of Engineering & Technology Malankara Hills  Elavuvillai  Marthandam  Kanyakumari District 629171",
     "BRANCH CODE": "AD",
@@ -38361,7 +38361,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4928,
+    "College Code": 4928,
     "COLLEGE NMAE":
       "MAR Ephraem College of Engineering & Technology Malankara Hills  Elavuvillai  Marthandam  Kanyakumari District 629171",
     "BRANCH CODE": "CE",
@@ -38375,7 +38375,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4928,
+    "College Code": 4928,
     "COLLEGE NMAE":
       "MAR Ephraem College of Engineering & Technology Malankara Hills  Elavuvillai  Marthandam  Kanyakumari District 629171",
     "BRANCH CODE": "CS",
@@ -38389,7 +38389,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4928,
+    "College Code": 4928,
     "COLLEGE NMAE":
       "MAR Ephraem College of Engineering & Technology Malankara Hills  Elavuvillai  Marthandam  Kanyakumari District 629171",
     "BRANCH CODE": "EC",
@@ -38403,7 +38403,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4928,
+    "College Code": 4928,
     "COLLEGE NMAE":
       "MAR Ephraem College of Engineering & Technology Malankara Hills  Elavuvillai  Marthandam  Kanyakumari District 629171",
     "BRANCH CODE": "EE",
@@ -38417,7 +38417,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4928,
+    "College Code": 4928,
     "COLLEGE NMAE":
       "MAR Ephraem College of Engineering & Technology Malankara Hills  Elavuvillai  Marthandam  Kanyakumari District 629171",
     "BRANCH CODE": "ME",
@@ -38431,7 +38431,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4929,
+    "College Code": 4929,
     "COLLEGE NMAE":
       "M E T Engineering College  Mogals Garden  Thovalai Village Aralvaimozhi Town Panchayat  Thovalai  Kanyakumari District 629304",
     "BRANCH CODE": "AD",
@@ -38445,7 +38445,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4929,
+    "College Code": 4929,
     "COLLEGE NMAE":
       "M E T Engineering College  Mogals Garden  Thovalai Village Aralvaimozhi Town Panchayat  Thovalai  Kanyakumari District 629304",
     "BRANCH CODE": "CE",
@@ -38459,7 +38459,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4929,
+    "College Code": 4929,
     "COLLEGE NMAE":
       "M E T Engineering College  Mogals Garden  Thovalai Village Aralvaimozhi Town Panchayat  Thovalai  Kanyakumari District 629304",
     "BRANCH CODE": "CS",
@@ -38473,7 +38473,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4929,
+    "College Code": 4929,
     "COLLEGE NMAE":
       "M E T Engineering College  Mogals Garden  Thovalai Village Aralvaimozhi Town Panchayat  Thovalai  Kanyakumari District 629304",
     "BRANCH CODE": "EC",
@@ -38487,7 +38487,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4929,
+    "College Code": 4929,
     "COLLEGE NMAE":
       "M E T Engineering College  Mogals Garden  Thovalai Village Aralvaimozhi Town Panchayat  Thovalai  Kanyakumari District 629304",
     "BRANCH CODE": "EE",
@@ -38501,7 +38501,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4929,
+    "College Code": 4929,
     "COLLEGE NMAE":
       "M E T Engineering College  Mogals Garden  Thovalai Village Aralvaimozhi Town Panchayat  Thovalai  Kanyakumari District 629304",
     "BRANCH CODE": "ME",
@@ -38515,7 +38515,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4931,
+    "College Code": 4931,
     "COLLEGE NMAE":
       "Grace College of Engineering  Chandy Nagar  Mullakkadu Thoothukudi District 628005",
     "BRANCH CODE": "AD",
@@ -38529,7 +38529,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4931,
+    "College Code": 4931,
     "COLLEGE NMAE":
       "Grace College of Engineering  Chandy Nagar  Mullakkadu Thoothukudi District 628005",
     "BRANCH CODE": "CE",
@@ -38543,7 +38543,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4931,
+    "College Code": 4931,
     "COLLEGE NMAE":
       "Grace College of Engineering  Chandy Nagar  Mullakkadu Thoothukudi District 628005",
     "BRANCH CODE": "CS",
@@ -38557,7 +38557,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4931,
+    "College Code": 4931,
     "COLLEGE NMAE":
       "Grace College of Engineering  Chandy Nagar  Mullakkadu Thoothukudi District 628005",
     "BRANCH CODE": "EC",
@@ -38571,7 +38571,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4931,
+    "College Code": 4931,
     "COLLEGE NMAE":
       "Grace College of Engineering  Chandy Nagar  Mullakkadu Thoothukudi District 628005",
     "BRANCH CODE": "EE",
@@ -38585,7 +38585,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4931,
+    "College Code": 4931,
     "COLLEGE NMAE":
       "Grace College of Engineering  Chandy Nagar  Mullakkadu Thoothukudi District 628005",
     "BRANCH CODE": "ME",
@@ -38599,7 +38599,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4933,
+    "College Code": 4933,
     "COLLEGE NMAE":
       "St. Mother Theresa Engineering College  Vagaikulam Thoothukudi District 628102",
     "BRANCH CODE": "CS",
@@ -38613,7 +38613,7 @@ export const collegeChoiceListR2 = [
     ST: 2,
   },
   {
-    "COLLEGE CODE": 4933,
+    "College Code": 4933,
     "COLLEGE NMAE":
       "St. Mother Theresa Engineering College  Vagaikulam Thoothukudi District 628102",
     "BRANCH CODE": "EC",
@@ -38627,7 +38627,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4933,
+    "College Code": 4933,
     "COLLEGE NMAE":
       "St. Mother Theresa Engineering College  Vagaikulam Thoothukudi District 628102",
     "BRANCH CODE": "EE",
@@ -38641,7 +38641,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4933,
+    "College Code": 4933,
     "COLLEGE NMAE":
       "St. Mother Theresa Engineering College  Vagaikulam Thoothukudi District 628102",
     "BRANCH CODE": "ME",
@@ -38655,7 +38655,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4934,
+    "College Code": 4934,
     "COLLEGE NMAE":
       "Holy Cross Engineering College  Vagaikulam  Sri Mulakarai Srivaikuntam   Thoothukudi District 628851",
     "BRANCH CODE": "BM",
@@ -38669,7 +38669,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4934,
+    "College Code": 4934,
     "COLLEGE NMAE":
       "Holy Cross Engineering College  Vagaikulam  Sri Mulakarai Srivaikuntam   Thoothukudi District 628851",
     "BRANCH CODE": "CS",
@@ -38683,7 +38683,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4934,
+    "College Code": 4934,
     "COLLEGE NMAE":
       "Holy Cross Engineering College  Vagaikulam  Sri Mulakarai Srivaikuntam   Thoothukudi District 628851",
     "BRANCH CODE": "EC",
@@ -38697,7 +38697,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4934,
+    "College Code": 4934,
     "COLLEGE NMAE":
       "Holy Cross Engineering College  Vagaikulam  Sri Mulakarai Srivaikuntam   Thoothukudi District 628851",
     "BRANCH CODE": "EE",
@@ -38711,7 +38711,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4934,
+    "College Code": 4934,
     "COLLEGE NMAE":
       "Holy Cross Engineering College  Vagaikulam  Sri Mulakarai Srivaikuntam   Thoothukudi District 628851",
     "BRANCH CODE": "ME",
@@ -38725,7 +38725,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4937,
+    "College Code": 4937,
     "COLLEGE NMAE":
       "A.R College of Engineering and Technology  A.R Nagar Kadayam-Alangulam Road  Therkkumadathoor P.o Ambasamudram Taluk Tirunelveli-627423",
     "BRANCH CODE": "CE",
@@ -38739,7 +38739,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4937,
+    "College Code": 4937,
     "COLLEGE NMAE":
       "A.R College of Engineering and Technology  A.R Nagar Kadayam-Alangulam Road  Therkkumadathoor P.o Ambasamudram Taluk Tirunelveli-627423",
     "BRANCH CODE": "CS",
@@ -38753,7 +38753,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4937,
+    "College Code": 4937,
     "COLLEGE NMAE":
       "A.R College of Engineering and Technology  A.R Nagar Kadayam-Alangulam Road  Therkkumadathoor P.o Ambasamudram Taluk Tirunelveli-627423",
     "BRANCH CODE": "EC",
@@ -38767,7 +38767,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4937,
+    "College Code": 4937,
     "COLLEGE NMAE":
       "A.R College of Engineering and Technology  A.R Nagar Kadayam-Alangulam Road  Therkkumadathoor P.o Ambasamudram Taluk Tirunelveli-627423",
     "BRANCH CODE": "EE",
@@ -38781,7 +38781,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4937,
+    "College Code": 4937,
     "COLLEGE NMAE":
       "A.R College of Engineering and Technology  A.R Nagar Kadayam-Alangulam Road  Therkkumadathoor P.o Ambasamudram Taluk Tirunelveli-627423",
     "BRANCH CODE": "ME",
@@ -38795,7 +38795,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4937,
+    "College Code": 4937,
     "COLLEGE NMAE":
       "A.R College of Engineering and Technology  A.R Nagar Kadayam-Alangulam Road  Therkkumadathoor P.o Ambasamudram Taluk Tirunelveli-627423",
     "BRANCH CODE": "MZ",
@@ -38809,7 +38809,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4938,
+    "College Code": 4938,
     "COLLEGE NMAE":
       "Sivaji College of Engineering and Technology  Manivilla Palulai Panchayat  Vilavancode  Kanyakumari District 629171",
     "BRANCH CODE": "AD",
@@ -38823,7 +38823,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4938,
+    "College Code": 4938,
     "COLLEGE NMAE":
       "Sivaji College of Engineering and Technology  Manivilla Palulai Panchayat  Vilavancode  Kanyakumari District 629171",
     "BRANCH CODE": "AG",
@@ -38837,7 +38837,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4938,
+    "College Code": 4938,
     "COLLEGE NMAE":
       "Sivaji College of Engineering and Technology  Manivilla Palulai Panchayat  Vilavancode  Kanyakumari District 629171",
     "BRANCH CODE": "CE",
@@ -38851,7 +38851,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4938,
+    "College Code": 4938,
     "COLLEGE NMAE":
       "Sivaji College of Engineering and Technology  Manivilla Palulai Panchayat  Vilavancode  Kanyakumari District 629171",
     "BRANCH CODE": "CS",
@@ -38865,7 +38865,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4938,
+    "College Code": 4938,
     "COLLEGE NMAE":
       "Sivaji College of Engineering and Technology  Manivilla Palulai Panchayat  Vilavancode  Kanyakumari District 629171",
     "BRANCH CODE": "EE",
@@ -38879,7 +38879,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4938,
+    "College Code": 4938,
     "COLLEGE NMAE":
       "Sivaji College of Engineering and Technology  Manivilla Palulai Panchayat  Vilavancode  Kanyakumari District 629171",
     "BRANCH CODE": "ME",
@@ -38893,7 +38893,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4941,
+    "College Code": 4941,
     "COLLEGE NMAE":
       "Unnamalai Institute of Technology  Ayyaneri  Kovilpatti Thoothukudi District 628502",
     "BRANCH CODE": "CS",
@@ -38907,7 +38907,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4941,
+    "College Code": 4941,
     "COLLEGE NMAE":
       "Unnamalai Institute of Technology  Ayyaneri  Kovilpatti Thoothukudi District 628502",
     "BRANCH CODE": "EC",
@@ -38921,7 +38921,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4941,
+    "College Code": 4941,
     "COLLEGE NMAE":
       "Unnamalai Institute of Technology  Ayyaneri  Kovilpatti Thoothukudi District 628502",
     "BRANCH CODE": "EE",
@@ -38935,7 +38935,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4941,
+    "College Code": 4941,
     "COLLEGE NMAE":
       "Unnamalai Institute of Technology  Ayyaneri  Kovilpatti Thoothukudi District 628502",
     "BRANCH CODE": "ME",
@@ -38949,7 +38949,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4943,
+    "College Code": 4943,
     "COLLEGE NMAE":
       "Satyam College of Engineering and Technology Satyam Nagar Aralvoimozhi Kanyakumari-629301",
     "BRANCH CODE": "AE",
@@ -38963,7 +38963,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4943,
+    "College Code": 4943,
     "COLLEGE NMAE":
       "Satyam College of Engineering and Technology Satyam Nagar Aralvoimozhi Kanyakumari-629301",
     "BRANCH CODE": "CE",
@@ -38977,7 +38977,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4943,
+    "College Code": 4943,
     "COLLEGE NMAE":
       "Satyam College of Engineering and Technology Satyam Nagar Aralvoimozhi Kanyakumari-629301",
     "BRANCH CODE": "CS",
@@ -38991,7 +38991,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4943,
+    "College Code": 4943,
     "COLLEGE NMAE":
       "Satyam College of Engineering and Technology Satyam Nagar Aralvoimozhi Kanyakumari-629301",
     "BRANCH CODE": "EC",
@@ -39005,7 +39005,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4943,
+    "College Code": 4943,
     "COLLEGE NMAE":
       "Satyam College of Engineering and Technology Satyam Nagar Aralvoimozhi Kanyakumari-629301",
     "BRANCH CODE": "EE",
@@ -39019,7 +39019,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4943,
+    "College Code": 4943,
     "COLLEGE NMAE":
       "Satyam College of Engineering and Technology Satyam Nagar Aralvoimozhi Kanyakumari-629301",
     "BRANCH CODE": "ME",
@@ -39033,7 +39033,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4944,
+    "College Code": 4944,
     "COLLEGE NMAE":
       "Arunachala College of Engineering for Women  Thanka Gardens  Manavilai  Vellichanthai  Nagercoil  Kanyakumari District 629203",
     "BRANCH CODE": "AD",
@@ -39047,7 +39047,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4944,
+    "College Code": 4944,
     "COLLEGE NMAE":
       "Arunachala College of Engineering for Women  Thanka Gardens  Manavilai  Vellichanthai  Nagercoil  Kanyakumari District 629203",
     "BRANCH CODE": "CE",
@@ -39061,7 +39061,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4944,
+    "College Code": 4944,
     "COLLEGE NMAE":
       "Arunachala College of Engineering for Women  Thanka Gardens  Manavilai  Vellichanthai  Nagercoil  Kanyakumari District 629203",
     "BRANCH CODE": "CS",
@@ -39075,7 +39075,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4944,
+    "College Code": 4944,
     "COLLEGE NMAE":
       "Arunachala College of Engineering for Women  Thanka Gardens  Manavilai  Vellichanthai  Nagercoil  Kanyakumari District 629203",
     "BRANCH CODE": "EC",
@@ -39089,7 +39089,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4944,
+    "College Code": 4944,
     "COLLEGE NMAE":
       "Arunachala College of Engineering for Women  Thanka Gardens  Manavilai  Vellichanthai  Nagercoil  Kanyakumari District 629203",
     "BRANCH CODE": "EE",
@@ -39103,7 +39103,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4944,
+    "College Code": 4944,
     "COLLEGE NMAE":
       "Arunachala College of Engineering for Women  Thanka Gardens  Manavilai  Vellichanthai  Nagercoil  Kanyakumari District 629203",
     "BRANCH CODE": "IT",
@@ -39117,7 +39117,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4946,
+    "College Code": 4946,
     "COLLEGE NMAE":
       "D M I Engineering College  Aralvaimozhi Village  Thovalai Kanyakumari District 629301",
     "BRANCH CODE": "AD",
@@ -39131,7 +39131,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4946,
+    "College Code": 4946,
     "COLLEGE NMAE":
       "D M I Engineering College  Aralvaimozhi Village  Thovalai Kanyakumari District 629301",
     "BRANCH CODE": "CE",
@@ -39145,7 +39145,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4946,
+    "College Code": 4946,
     "COLLEGE NMAE":
       "D M I Engineering College  Aralvaimozhi Village  Thovalai Kanyakumari District 629301",
     "BRANCH CODE": "CS",
@@ -39159,7 +39159,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4946,
+    "College Code": 4946,
     "COLLEGE NMAE":
       "D M I Engineering College  Aralvaimozhi Village  Thovalai Kanyakumari District 629301",
     "BRANCH CODE": "EC",
@@ -39173,7 +39173,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4946,
+    "College Code": 4946,
     "COLLEGE NMAE":
       "D M I Engineering College  Aralvaimozhi Village  Thovalai Kanyakumari District 629301",
     "BRANCH CODE": "EE",
@@ -39187,7 +39187,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4946,
+    "College Code": 4946,
     "COLLEGE NMAE":
       "D M I Engineering College  Aralvaimozhi Village  Thovalai Kanyakumari District 629301",
     "BRANCH CODE": "IT",
@@ -39201,7 +39201,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4946,
+    "College Code": 4946,
     "COLLEGE NMAE":
       "D M I Engineering College  Aralvaimozhi Village  Thovalai Kanyakumari District 629301",
     "BRANCH CODE": "ME",
@@ -39215,7 +39215,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4949,
+    "College Code": 4949,
     "COLLEGE NMAE":
       "PSN Institute of Technology and Science Melathediyoor Tirunelveli-627 152",
     "BRANCH CODE": "CE",
@@ -39229,7 +39229,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4949,
+    "College Code": 4949,
     "COLLEGE NMAE":
       "PSN Institute of Technology and Science Melathediyoor Tirunelveli-627 152",
     "BRANCH CODE": "CS",
@@ -39243,7 +39243,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4949,
+    "College Code": 4949,
     "COLLEGE NMAE":
       "PSN Institute of Technology and Science Melathediyoor Tirunelveli-627 152",
     "BRANCH CODE": "EC",
@@ -39257,7 +39257,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4949,
+    "College Code": 4949,
     "COLLEGE NMAE":
       "PSN Institute of Technology and Science Melathediyoor Tirunelveli-627 152",
     "BRANCH CODE": "EE",
@@ -39271,7 +39271,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4949,
+    "College Code": 4949,
     "COLLEGE NMAE":
       "PSN Institute of Technology and Science Melathediyoor Tirunelveli-627 152",
     "BRANCH CODE": "IN",
@@ -39285,7 +39285,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4949,
+    "College Code": 4949,
     "COLLEGE NMAE":
       "PSN Institute of Technology and Science Melathediyoor Tirunelveli-627 152",
     "BRANCH CODE": "ME",
@@ -39299,7 +39299,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4949,
+    "College Code": 4949,
     "COLLEGE NMAE":
       "PSN Institute of Technology and Science Melathediyoor Tirunelveli-627 152",
     "BRANCH CODE": "MU",
@@ -39313,7 +39313,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4949,
+    "College Code": 4949,
     "COLLEGE NMAE":
       "PSN Institute of Technology and Science Melathediyoor Tirunelveli-627 152",
     "BRANCH CODE": "MZ",
@@ -39327,7 +39327,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4952,
+    "College Code": 4952,
     "COLLEGE NMAE":
       "C S I Institute of Technology  Thovalai  Kanyakumari District 629302",
     "BRANCH CODE": "AD",
@@ -39341,7 +39341,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4952,
+    "College Code": 4952,
     "COLLEGE NMAE":
       "C S I Institute of Technology  Thovalai  Kanyakumari District 629302",
     "BRANCH CODE": "CE",
@@ -39355,7 +39355,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4952,
+    "College Code": 4952,
     "COLLEGE NMAE":
       "C S I Institute of Technology  Thovalai  Kanyakumari District 629302",
     "BRANCH CODE": "CS",
@@ -39369,7 +39369,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4952,
+    "College Code": 4952,
     "COLLEGE NMAE":
       "C S I Institute of Technology  Thovalai  Kanyakumari District 629302",
     "BRANCH CODE": "EC",
@@ -39383,7 +39383,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4952,
+    "College Code": 4952,
     "COLLEGE NMAE":
       "C S I Institute of Technology  Thovalai  Kanyakumari District 629302",
     "BRANCH CODE": "EE",
@@ -39397,7 +39397,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4952,
+    "College Code": 4952,
     "COLLEGE NMAE":
       "C S I Institute of Technology  Thovalai  Kanyakumari District 629302",
     "BRANCH CODE": "IT",
@@ -39411,7 +39411,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4952,
+    "College Code": 4952,
     "COLLEGE NMAE":
       "C S I Institute of Technology  Thovalai  Kanyakumari District 629302",
     "BRANCH CODE": "ME",
@@ -39425,7 +39425,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4953,
+    "College Code": 4953,
     "COLLEGE NMAE":
       "CAPE Institute of Technology  Levingipuram  Tirunelveli District 627114",
     "BRANCH CODE": "AM",
@@ -39440,7 +39440,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4953,
+    "College Code": 4953,
     "COLLEGE NMAE":
       "CAPE Institute of Technology  Levingipuram  Tirunelveli District 627114",
     "BRANCH CODE": "CE",
@@ -39454,7 +39454,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4953,
+    "College Code": 4953,
     "COLLEGE NMAE":
       "CAPE Institute of Technology  Levingipuram  Tirunelveli District 627114",
     "BRANCH CODE": "CS",
@@ -39468,7 +39468,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4953,
+    "College Code": 4953,
     "COLLEGE NMAE":
       "CAPE Institute of Technology  Levingipuram  Tirunelveli District 627114",
     "BRANCH CODE": "EC",
@@ -39482,7 +39482,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4953,
+    "College Code": 4953,
     "COLLEGE NMAE":
       "CAPE Institute of Technology  Levingipuram  Tirunelveli District 627114",
     "BRANCH CODE": "EE",
@@ -39496,7 +39496,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4953,
+    "College Code": 4953,
     "COLLEGE NMAE":
       "CAPE Institute of Technology  Levingipuram  Tirunelveli District 627114",
     "BRANCH CODE": "IT",
@@ -39510,7 +39510,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4953,
+    "College Code": 4953,
     "COLLEGE NMAE":
       "CAPE Institute of Technology  Levingipuram  Tirunelveli District 627114",
     "BRANCH CODE": "ME",
@@ -39524,7 +39524,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4954,
+    "College Code": 4954,
     "COLLEGE NMAE":
       "Dr. Sivanthi Aditanar College of Engineering  Tiruchendur Thoothukudi District 628215",
     "BRANCH CODE": "AD",
@@ -39538,7 +39538,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4954,
+    "College Code": 4954,
     "COLLEGE NMAE":
       "Dr. Sivanthi Aditanar College of Engineering  Tiruchendur Thoothukudi District 628215",
     "BRANCH CODE": "CE",
@@ -39552,7 +39552,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4954,
+    "College Code": 4954,
     "COLLEGE NMAE":
       "Dr. Sivanthi Aditanar College of Engineering  Tiruchendur Thoothukudi District 628215",
     "BRANCH CODE": "CS",
@@ -39566,7 +39566,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4954,
+    "College Code": 4954,
     "COLLEGE NMAE":
       "Dr. Sivanthi Aditanar College of Engineering  Tiruchendur Thoothukudi District 628215",
     "BRANCH CODE": "EC",
@@ -39580,7 +39580,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4954,
+    "College Code": 4954,
     "COLLEGE NMAE":
       "Dr. Sivanthi Aditanar College of Engineering  Tiruchendur Thoothukudi District 628215",
     "BRANCH CODE": "EE",
@@ -39594,7 +39594,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4954,
+    "College Code": 4954,
     "COLLEGE NMAE":
       "Dr. Sivanthi Aditanar College of Engineering  Tiruchendur Thoothukudi District 628215",
     "BRANCH CODE": "IT",
@@ -39608,7 +39608,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4954,
+    "College Code": 4954,
     "COLLEGE NMAE":
       "Dr. Sivanthi Aditanar College of Engineering  Tiruchendur Thoothukudi District 628215",
     "BRANCH CODE": "ME",
@@ -39622,7 +39622,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4955,
+    "College Code": 4955,
     "COLLEGE NMAE":
       "Francis Xavier Engineering College (Autonomous) Vannarpettai  Tirunelveli District 627003",
     "BRANCH CODE": "AD",
@@ -39636,7 +39636,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4955,
+    "College Code": 4955,
     "COLLEGE NMAE":
       "Francis Xavier Engineering College (Autonomous) Vannarpettai  Tirunelveli District 627003",
     "BRANCH CODE": "CB",
@@ -39650,7 +39650,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4955,
+    "College Code": 4955,
     "COLLEGE NMAE":
       "Francis Xavier Engineering College (Autonomous) Vannarpettai  Tirunelveli District 627003",
     "BRANCH CODE": "CE",
@@ -39664,7 +39664,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4955,
+    "College Code": 4955,
     "COLLEGE NMAE":
       "Francis Xavier Engineering College (Autonomous) Vannarpettai  Tirunelveli District 627003",
     "BRANCH CODE": "CS",
@@ -39678,7 +39678,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4955,
+    "College Code": 4955,
     "COLLEGE NMAE":
       "Francis Xavier Engineering College (Autonomous) Vannarpettai  Tirunelveli District 627003",
     "BRANCH CODE": "EC",
@@ -39692,7 +39692,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4955,
+    "College Code": 4955,
     "COLLEGE NMAE":
       "Francis Xavier Engineering College (Autonomous) Vannarpettai  Tirunelveli District 627003",
     "BRANCH CODE": "EE",
@@ -39706,7 +39706,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4955,
+    "College Code": 4955,
     "COLLEGE NMAE":
       "Francis Xavier Engineering College (Autonomous) Vannarpettai  Tirunelveli District 627003",
     "BRANCH CODE": "IT",
@@ -39720,7 +39720,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4955,
+    "College Code": 4955,
     "COLLEGE NMAE":
       "Francis Xavier Engineering College (Autonomous) Vannarpettai  Tirunelveli District 627003",
     "BRANCH CODE": "ME",
@@ -39734,7 +39734,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4956,
+    "College Code": 4956,
     "COLLEGE NMAE":
       "Jayamatha Engineering College  Aralvaimozhi  Kanyakumari District",
     "BRANCH CODE": "CE",
@@ -39748,7 +39748,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4956,
+    "College Code": 4956,
     "COLLEGE NMAE":
       "Jayamatha Engineering College  Aralvaimozhi  Kanyakumari District",
     "BRANCH CODE": "CS",
@@ -39762,7 +39762,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4956,
+    "College Code": 4956,
     "COLLEGE NMAE":
       "Jayamatha Engineering College  Aralvaimozhi  Kanyakumari District",
     "BRANCH CODE": "EC",
@@ -39776,7 +39776,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4956,
+    "College Code": 4956,
     "COLLEGE NMAE":
       "Jayamatha Engineering College  Aralvaimozhi  Kanyakumari District",
     "BRANCH CODE": "EE",
@@ -39790,7 +39790,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4956,
+    "College Code": 4956,
     "COLLEGE NMAE":
       "Jayamatha Engineering College  Aralvaimozhi  Kanyakumari District",
     "BRANCH CODE": "IC",
@@ -39804,7 +39804,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4956,
+    "College Code": 4956,
     "COLLEGE NMAE":
       "Jayamatha Engineering College  Aralvaimozhi  Kanyakumari District",
     "BRANCH CODE": "ME",
@@ -39818,7 +39818,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4957,
+    "College Code": 4957,
     "COLLEGE NMAE":
       "Jayaraj Annapackiam CSI College of Engineering  Nazareth Thoothukudi District 628617",
     "BRANCH CODE": "AD",
@@ -39832,7 +39832,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4957,
+    "College Code": 4957,
     "COLLEGE NMAE":
       "Jayaraj Annapackiam CSI College of Engineering  Nazareth Thoothukudi District 628617",
     "BRANCH CODE": "CS",
@@ -39846,7 +39846,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4957,
+    "College Code": 4957,
     "COLLEGE NMAE":
       "Jayaraj Annapackiam CSI College of Engineering  Nazareth Thoothukudi District 628617",
     "BRANCH CODE": "EC",
@@ -39860,7 +39860,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4957,
+    "College Code": 4957,
     "COLLEGE NMAE":
       "Jayaraj Annapackiam CSI College of Engineering  Nazareth Thoothukudi District 628617",
     "BRANCH CODE": "IT",
@@ -39874,7 +39874,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4957,
+    "College Code": 4957,
     "COLLEGE NMAE":
       "Jayaraj Annapackiam CSI College of Engineering  Nazareth Thoothukudi District 628617",
     "BRANCH CODE": "ME",
@@ -39888,7 +39888,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4959,
+    "College Code": 4959,
     "COLLEGE NMAE":
       "Kamaraj College of Engineering and Technology (Autonomous)  Virudhunagar District 626001",
     "BRANCH CODE": "AD",
@@ -39902,7 +39902,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4959,
+    "College Code": 4959,
     "COLLEGE NMAE":
       "Kamaraj College of Engineering and Technology (Autonomous)  Virudhunagar District 626001",
     "BRANCH CODE": "BT",
@@ -39916,7 +39916,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4959,
+    "College Code": 4959,
     "COLLEGE NMAE":
       "Kamaraj College of Engineering and Technology (Autonomous)  Virudhunagar District 626001",
     "BRANCH CODE": "CE",
@@ -39930,7 +39930,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4959,
+    "College Code": 4959,
     "COLLEGE NMAE":
       "Kamaraj College of Engineering and Technology (Autonomous)  Virudhunagar District 626001",
     "BRANCH CODE": "CS",
@@ -39944,7 +39944,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4959,
+    "College Code": 4959,
     "COLLEGE NMAE":
       "Kamaraj College of Engineering and Technology (Autonomous)  Virudhunagar District 626001",
     "BRANCH CODE": "EC",
@@ -39958,7 +39958,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4959,
+    "College Code": 4959,
     "COLLEGE NMAE":
       "Kamaraj College of Engineering and Technology (Autonomous)  Virudhunagar District 626001",
     "BRANCH CODE": "EE",
@@ -39972,7 +39972,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4959,
+    "College Code": 4959,
     "COLLEGE NMAE":
       "Kamaraj College of Engineering and Technology (Autonomous)  Virudhunagar District 626001",
     "BRANCH CODE": "IT",
@@ -39986,7 +39986,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4959,
+    "College Code": 4959,
     "COLLEGE NMAE":
       "Kamaraj College of Engineering and Technology (Autonomous)  Virudhunagar District 626001",
     "BRANCH CODE": "ME",
@@ -40000,7 +40000,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4959,
+    "College Code": 4959,
     "COLLEGE NMAE":
       "Kamaraj College of Engineering and Technology (Autonomous)  Virudhunagar District 626001",
     "BRANCH CODE": "MZ",
@@ -40014,7 +40014,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4960,
+    "College Code": 4960,
     "COLLEGE NMAE":
       "Mepco Schlenk Engineering College (Autonomous) Sivakasi  Virudhunagar District 626005",
     "BRANCH CODE": "AD",
@@ -40028,7 +40028,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4960,
+    "College Code": 4960,
     "COLLEGE NMAE":
       "Mepco Schlenk Engineering College (Autonomous) Sivakasi  Virudhunagar District 626005",
     "BRANCH CODE": "BM",
@@ -40042,7 +40042,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4960,
+    "College Code": 4960,
     "COLLEGE NMAE":
       "Mepco Schlenk Engineering College (Autonomous) Sivakasi  Virudhunagar District 626005",
     "BRANCH CODE": "BT",
@@ -40056,7 +40056,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4960,
+    "College Code": 4960,
     "COLLEGE NMAE":
       "Mepco Schlenk Engineering College (Autonomous) Sivakasi  Virudhunagar District 626005",
     "BRANCH CODE": "CE",
@@ -40070,7 +40070,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4960,
+    "College Code": 4960,
     "COLLEGE NMAE":
       "Mepco Schlenk Engineering College (Autonomous) Sivakasi  Virudhunagar District 626005",
     "BRANCH CODE": "CS",
@@ -40084,7 +40084,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4960,
+    "College Code": 4960,
     "COLLEGE NMAE":
       "Mepco Schlenk Engineering College (Autonomous) Sivakasi  Virudhunagar District 626005",
     "BRANCH CODE": "EC",
@@ -40098,7 +40098,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4960,
+    "College Code": 4960,
     "COLLEGE NMAE":
       "Mepco Schlenk Engineering College (Autonomous) Sivakasi  Virudhunagar District 626005",
     "BRANCH CODE": "EE",
@@ -40112,7 +40112,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4960,
+    "College Code": 4960,
     "COLLEGE NMAE":
       "Mepco Schlenk Engineering College (Autonomous) Sivakasi  Virudhunagar District 626005",
     "BRANCH CODE": "IT",
@@ -40126,7 +40126,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4960,
+    "College Code": 4960,
     "COLLEGE NMAE":
       "Mepco Schlenk Engineering College (Autonomous) Sivakasi  Virudhunagar District 626005",
     "BRANCH CODE": "ME",
@@ -40140,7 +40140,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4961,
+    "College Code": 4961,
     "COLLEGE NMAE":
       "Nellai College of Engineering, Maruthakulam Post Tirunelveli District 627151",
     "BRANCH CODE": "CE",
@@ -40154,7 +40154,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4961,
+    "College Code": 4961,
     "COLLEGE NMAE":
       "Nellai College of Engineering, Maruthakulam Post Tirunelveli District 627151",
     "BRANCH CODE": "CS",
@@ -40168,7 +40168,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4961,
+    "College Code": 4961,
     "COLLEGE NMAE":
       "Nellai College of Engineering, Maruthakulam Post Tirunelveli District 627151",
     "BRANCH CODE": "EC",
@@ -40182,7 +40182,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4961,
+    "College Code": 4961,
     "COLLEGE NMAE":
       "Nellai College of Engineering, Maruthakulam Post Tirunelveli District 627151",
     "BRANCH CODE": "EE",
@@ -40196,7 +40196,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4961,
+    "College Code": 4961,
     "COLLEGE NMAE":
       "Nellai College of Engineering, Maruthakulam Post Tirunelveli District 627151",
     "BRANCH CODE": "ME",
@@ -40210,7 +40210,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4962,
+    "College Code": 4962,
     "COLLEGE NMAE":
       "National  Engineering College (Autonomous)  Kovilpatti Thoothukudi District 628503",
     "BRANCH CODE": "AD",
@@ -40224,7 +40224,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4962,
+    "College Code": 4962,
     "COLLEGE NMAE":
       "National  Engineering College (Autonomous)  Kovilpatti Thoothukudi District 628503",
     "BRANCH CODE": "CE",
@@ -40238,7 +40238,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4962,
+    "College Code": 4962,
     "COLLEGE NMAE":
       "National  Engineering College (Autonomous)  Kovilpatti Thoothukudi District 628503",
     "BRANCH CODE": "CS",
@@ -40252,7 +40252,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4962,
+    "College Code": 4962,
     "COLLEGE NMAE":
       "National  Engineering College (Autonomous)  Kovilpatti Thoothukudi District 628503",
     "BRANCH CODE": "EC",
@@ -40266,7 +40266,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4962,
+    "College Code": 4962,
     "COLLEGE NMAE":
       "National  Engineering College (Autonomous)  Kovilpatti Thoothukudi District 628503",
     "BRANCH CODE": "EE",
@@ -40280,7 +40280,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4962,
+    "College Code": 4962,
     "COLLEGE NMAE":
       "National  Engineering College (Autonomous)  Kovilpatti Thoothukudi District 628503",
     "BRANCH CODE": "IT",
@@ -40294,7 +40294,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4962,
+    "College Code": 4962,
     "COLLEGE NMAE":
       "National  Engineering College (Autonomous)  Kovilpatti Thoothukudi District 628503",
     "BRANCH CODE": "ME",
@@ -40308,7 +40308,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4964,
+    "College Code": 4964,
     "COLLEGE NMAE":
       "PSN College of Engineering and  Technology (Autonomous) Melathediyoor  Tirunelveli-627 152",
     "BRANCH CODE": "AE",
@@ -40322,7 +40322,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4964,
+    "College Code": 4964,
     "COLLEGE NMAE":
       "PSN College of Engineering and  Technology (Autonomous) Melathediyoor  Tirunelveli-627 152",
     "BRANCH CODE": "CE",
@@ -40336,7 +40336,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4964,
+    "College Code": 4964,
     "COLLEGE NMAE":
       "PSN College of Engineering and  Technology (Autonomous) Melathediyoor  Tirunelveli-627 152",
     "BRANCH CODE": "CS",
@@ -40350,7 +40350,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4964,
+    "College Code": 4964,
     "COLLEGE NMAE":
       "PSN College of Engineering and  Technology (Autonomous) Melathediyoor  Tirunelveli-627 152",
     "BRANCH CODE": "EC",
@@ -40364,7 +40364,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4964,
+    "College Code": 4964,
     "COLLEGE NMAE":
       "PSN College of Engineering and  Technology (Autonomous) Melathediyoor  Tirunelveli-627 152",
     "BRANCH CODE": "EE",
@@ -40378,7 +40378,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4964,
+    "College Code": 4964,
     "COLLEGE NMAE":
       "PSN College of Engineering and  Technology (Autonomous) Melathediyoor  Tirunelveli-627 152",
     "BRANCH CODE": "ME",
@@ -40392,7 +40392,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4964,
+    "College Code": 4964,
     "COLLEGE NMAE":
       "PSN College of Engineering and  Technology (Autonomous) Melathediyoor  Tirunelveli-627 152",
     "BRANCH CODE": "MR",
@@ -40406,7 +40406,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4964,
+    "College Code": 4964,
     "COLLEGE NMAE":
       "PSN College of Engineering and  Technology (Autonomous) Melathediyoor  Tirunelveli-627 152",
     "BRANCH CODE": "MU",
@@ -40420,7 +40420,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4965,
+    "College Code": 4965,
     "COLLEGE NMAE":
       "P S R  Engineering College (Autonomous) Appayanaickenpatti  Sevalpatty  Virudhunagar District 626140",
     "BRANCH CODE": "AD",
@@ -40434,7 +40434,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4965,
+    "College Code": 4965,
     "COLLEGE NMAE":
       "P S R  Engineering College (Autonomous) Appayanaickenpatti  Sevalpatty  Virudhunagar District 626140",
     "BRANCH CODE": "BM",
@@ -40448,7 +40448,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4965,
+    "College Code": 4965,
     "COLLEGE NMAE":
       "P S R  Engineering College (Autonomous) Appayanaickenpatti  Sevalpatty  Virudhunagar District 626140",
     "BRANCH CODE": "BT",
@@ -40462,7 +40462,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4965,
+    "College Code": 4965,
     "COLLEGE NMAE":
       "P S R  Engineering College (Autonomous) Appayanaickenpatti  Sevalpatty  Virudhunagar District 626140",
     "BRANCH CODE": "CE",
@@ -40476,7 +40476,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4965,
+    "College Code": 4965,
     "COLLEGE NMAE":
       "P S R  Engineering College (Autonomous) Appayanaickenpatti  Sevalpatty  Virudhunagar District 626140",
     "BRANCH CODE": "CS",
@@ -40490,7 +40490,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4965,
+    "College Code": 4965,
     "COLLEGE NMAE":
       "P S R  Engineering College (Autonomous) Appayanaickenpatti  Sevalpatty  Virudhunagar District 626140",
     "BRANCH CODE": "EC",
@@ -40504,7 +40504,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4965,
+    "College Code": 4965,
     "COLLEGE NMAE":
       "P S R  Engineering College (Autonomous) Appayanaickenpatti  Sevalpatty  Virudhunagar District 626140",
     "BRANCH CODE": "EE",
@@ -40518,7 +40518,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4965,
+    "College Code": 4965,
     "COLLEGE NMAE":
       "P S R  Engineering College (Autonomous) Appayanaickenpatti  Sevalpatty  Virudhunagar District 626140",
     "BRANCH CODE": "IT",
@@ -40532,7 +40532,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4965,
+    "College Code": 4965,
     "COLLEGE NMAE":
       "P S R  Engineering College (Autonomous) Appayanaickenpatti  Sevalpatty  Virudhunagar District 626140",
     "BRANCH CODE": "ME",
@@ -40546,7 +40546,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4966,
+    "College Code": 4966,
     "COLLEGE NMAE":
       "PET Engineering College  Vallioor Post  Tirunelveli District 627117",
     "BRANCH CODE": "AD",
@@ -40560,7 +40560,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4966,
+    "College Code": 4966,
     "COLLEGE NMAE":
       "PET Engineering College  Vallioor Post  Tirunelveli District 627117",
     "BRANCH CODE": "CE",
@@ -40574,7 +40574,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4966,
+    "College Code": 4966,
     "COLLEGE NMAE":
       "PET Engineering College  Vallioor Post  Tirunelveli District 627117",
     "BRANCH CODE": "CS",
@@ -40588,7 +40588,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4966,
+    "College Code": 4966,
     "COLLEGE NMAE":
       "PET Engineering College  Vallioor Post  Tirunelveli District 627117",
     "BRANCH CODE": "EC",
@@ -40602,7 +40602,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4966,
+    "College Code": 4966,
     "COLLEGE NMAE":
       "PET Engineering College  Vallioor Post  Tirunelveli District 627117",
     "BRANCH CODE": "EE",
@@ -40616,7 +40616,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4966,
+    "College Code": 4966,
     "COLLEGE NMAE":
       "PET Engineering College  Vallioor Post  Tirunelveli District 627117",
     "BRANCH CODE": "ME",
@@ -40630,7 +40630,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4967,
+    "College Code": 4967,
     "COLLEGE NMAE":
       "S Veerasamy Chettiar College of  Engineering and Technology  Puliangudi Post  Tenkasi District 627855",
     "BRANCH CODE": "AD",
@@ -40644,7 +40644,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4967,
+    "College Code": 4967,
     "COLLEGE NMAE":
       "S Veerasamy Chettiar College of  Engineering and Technology  Puliangudi Post  Tenkasi District 627855",
     "BRANCH CODE": "CE",
@@ -40658,7 +40658,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4967,
+    "College Code": 4967,
     "COLLEGE NMAE":
       "S Veerasamy Chettiar College of  Engineering and Technology  Puliangudi Post  Tenkasi District 627855",
     "BRANCH CODE": "CS",
@@ -40672,7 +40672,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4967,
+    "College Code": 4967,
     "COLLEGE NMAE":
       "S Veerasamy Chettiar College of  Engineering and Technology  Puliangudi Post  Tenkasi District 627855",
     "BRANCH CODE": "EC",
@@ -40686,7 +40686,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4967,
+    "College Code": 4967,
     "COLLEGE NMAE":
       "S Veerasamy Chettiar College of  Engineering and Technology  Puliangudi Post  Tenkasi District 627855",
     "BRANCH CODE": "EE",
@@ -40700,7 +40700,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4967,
+    "College Code": 4967,
     "COLLEGE NMAE":
       "S Veerasamy Chettiar College of  Engineering and Technology  Puliangudi Post  Tenkasi District 627855",
     "BRANCH CODE": "IT",
@@ -40714,7 +40714,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4967,
+    "College Code": 4967,
     "COLLEGE NMAE":
       "S Veerasamy Chettiar College of  Engineering and Technology  Puliangudi Post  Tenkasi District 627855",
     "BRANCH CODE": "ME",
@@ -40728,7 +40728,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4967,
+    "College Code": 4967,
     "COLLEGE NMAE":
       "S Veerasamy Chettiar College of  Engineering and Technology  Puliangudi Post  Tenkasi District 627855",
     "BRANCH CODE": "SC",
@@ -40742,7 +40742,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4968,
+    "College Code": 4968,
     "COLLEGE NMAE":
       "Sardar Raja College of Engineering  Alangulam  Tenkasi District 627808",
     "BRANCH CODE": "AD",
@@ -40756,7 +40756,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4968,
+    "College Code": 4968,
     "COLLEGE NMAE":
       "Sardar Raja College of Engineering  Alangulam  Tenkasi District 627808",
     "BRANCH CODE": "CE",
@@ -40770,7 +40770,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4968,
+    "College Code": 4968,
     "COLLEGE NMAE":
       "Sardar Raja College of Engineering  Alangulam  Tenkasi District 627808",
     "BRANCH CODE": "CS",
@@ -40784,7 +40784,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4968,
+    "College Code": 4968,
     "COLLEGE NMAE":
       "Sardar Raja College of Engineering  Alangulam  Tenkasi District 627808",
     "BRANCH CODE": "EC",
@@ -40798,7 +40798,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4968,
+    "College Code": 4968,
     "COLLEGE NMAE":
       "Sardar Raja College of Engineering  Alangulam  Tenkasi District 627808",
     "BRANCH CODE": "EE",
@@ -40812,7 +40812,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4968,
+    "College Code": 4968,
     "COLLEGE NMAE":
       "Sardar Raja College of Engineering  Alangulam  Tenkasi District 627808",
     "BRANCH CODE": "ME",
@@ -40826,7 +40826,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4969,
+    "College Code": 4969,
     "COLLEGE NMAE":
       "SCAD College of Engineering and Technology Cheranmahadevi  Tirunelveli District 627414",
     "BRANCH CODE": "CE",
@@ -40840,7 +40840,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4969,
+    "College Code": 4969,
     "COLLEGE NMAE":
       "SCAD College of Engineering and Technology Cheranmahadevi  Tirunelveli District 627414",
     "BRANCH CODE": "CS",
@@ -40854,7 +40854,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4969,
+    "College Code": 4969,
     "COLLEGE NMAE":
       "SCAD College of Engineering and Technology Cheranmahadevi  Tirunelveli District 627414",
     "BRANCH CODE": "EC",
@@ -40868,7 +40868,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4969,
+    "College Code": 4969,
     "COLLEGE NMAE":
       "SCAD College of Engineering and Technology Cheranmahadevi  Tirunelveli District 627414",
     "BRANCH CODE": "EE",
@@ -40882,7 +40882,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4969,
+    "College Code": 4969,
     "COLLEGE NMAE":
       "SCAD College of Engineering and Technology Cheranmahadevi  Tirunelveli District 627414",
     "BRANCH CODE": "ME",
@@ -40896,7 +40896,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4970,
+    "College Code": 4970,
     "COLLEGE NMAE":
       "Sree Sowdambika  College of Engineering  Aruppukkottai Taluk  Virudhunagar District 626134",
     "BRANCH CODE": "CE",
@@ -40910,7 +40910,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4970,
+    "College Code": 4970,
     "COLLEGE NMAE":
       "Sree Sowdambika  College of Engineering  Aruppukkottai Taluk  Virudhunagar District 626134",
     "BRANCH CODE": "CS",
@@ -40924,7 +40924,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4970,
+    "College Code": 4970,
     "COLLEGE NMAE":
       "Sree Sowdambika  College of Engineering  Aruppukkottai Taluk  Virudhunagar District 626134",
     "BRANCH CODE": "EC",
@@ -40938,7 +40938,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4970,
+    "College Code": 4970,
     "COLLEGE NMAE":
       "Sree Sowdambika  College of Engineering  Aruppukkottai Taluk  Virudhunagar District 626134",
     "BRANCH CODE": "EE",
@@ -40952,7 +40952,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4970,
+    "College Code": 4970,
     "COLLEGE NMAE":
       "Sree Sowdambika  College of Engineering  Aruppukkottai Taluk  Virudhunagar District 626134",
     "BRANCH CODE": "ME",
@@ -40966,7 +40966,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4971,
+    "College Code": 4971,
     "COLLEGE NMAE":
       "St. Xavier's Catholic College of Engineering (Autonomous) Chunkankadai  Nagercoil  Kanyakumari District 629807",
     "BRANCH CODE": "AD",
@@ -40980,7 +40980,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4971,
+    "College Code": 4971,
     "COLLEGE NMAE":
       "St. Xavier's Catholic College of Engineering (Autonomous) Chunkankadai  Nagercoil  Kanyakumari District 629807",
     "BRANCH CODE": "CE",
@@ -40994,7 +40994,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4971,
+    "College Code": 4971,
     "COLLEGE NMAE":
       "St. Xavier's Catholic College of Engineering (Autonomous) Chunkankadai  Nagercoil  Kanyakumari District 629807",
     "BRANCH CODE": "CS",
@@ -41008,7 +41008,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4971,
+    "College Code": 4971,
     "COLLEGE NMAE":
       "St. Xavier's Catholic College of Engineering (Autonomous) Chunkankadai  Nagercoil  Kanyakumari District 629807",
     "BRANCH CODE": "EC",
@@ -41022,7 +41022,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4971,
+    "College Code": 4971,
     "COLLEGE NMAE":
       "St. Xavier's Catholic College of Engineering (Autonomous) Chunkankadai  Nagercoil  Kanyakumari District 629807",
     "BRANCH CODE": "EE",
@@ -41036,7 +41036,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4971,
+    "College Code": 4971,
     "COLLEGE NMAE":
       "St. Xavier's Catholic College of Engineering (Autonomous) Chunkankadai  Nagercoil  Kanyakumari District 629807",
     "BRANCH CODE": "IT",
@@ -41050,7 +41050,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4971,
+    "College Code": 4971,
     "COLLEGE NMAE":
       "St. Xavier's Catholic College of Engineering (Autonomous) Chunkankadai  Nagercoil  Kanyakumari District 629807",
     "BRANCH CODE": "ME",
@@ -41064,7 +41064,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4972,
+    "College Code": 4972,
     "COLLEGE NMAE":
       "AMRITA  College of Engineering and Technology Erachakulam Post  Kanyakumari District 629902",
     "BRANCH CODE": "AD",
@@ -41078,7 +41078,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4972,
+    "College Code": 4972,
     "COLLEGE NMAE":
       "AMRITA  College of Engineering and Technology Erachakulam Post  Kanyakumari District 629902",
     "BRANCH CODE": "CE",
@@ -41092,7 +41092,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4972,
+    "College Code": 4972,
     "COLLEGE NMAE":
       "AMRITA  College of Engineering and Technology Erachakulam Post  Kanyakumari District 629902",
     "BRANCH CODE": "CS",
@@ -41106,7 +41106,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4972,
+    "College Code": 4972,
     "COLLEGE NMAE":
       "AMRITA  College of Engineering and Technology Erachakulam Post  Kanyakumari District 629902",
     "BRANCH CODE": "EC",
@@ -41120,7 +41120,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4972,
+    "College Code": 4972,
     "COLLEGE NMAE":
       "AMRITA  College of Engineering and Technology Erachakulam Post  Kanyakumari District 629902",
     "BRANCH CODE": "EE",
@@ -41134,7 +41134,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4972,
+    "College Code": 4972,
     "COLLEGE NMAE":
       "AMRITA  College of Engineering and Technology Erachakulam Post  Kanyakumari District 629902",
     "BRANCH CODE": "ME",
@@ -41148,7 +41148,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4974,
+    "College Code": 4974,
     "COLLEGE NMAE":
       "Government College of Engineering  Tirunelveli District 627007",
     "BRANCH CODE": "CE",
@@ -41162,7 +41162,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4974,
+    "College Code": 4974,
     "COLLEGE NMAE":
       "Government College of Engineering  Tirunelveli District 627007",
     "BRANCH CODE": "CS",
@@ -41176,7 +41176,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4974,
+    "College Code": 4974,
     "COLLEGE NMAE":
       "Government College of Engineering  Tirunelveli District 627007",
     "BRANCH CODE": "EC",
@@ -41190,7 +41190,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4974,
+    "College Code": 4974,
     "COLLEGE NMAE":
       "Government College of Engineering  Tirunelveli District 627007",
     "BRANCH CODE": "EE",
@@ -41204,7 +41204,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4974,
+    "College Code": 4974,
     "COLLEGE NMAE":
       "Government College of Engineering  Tirunelveli District 627007",
     "BRANCH CODE": "ME",
@@ -41218,7 +41218,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4975,
+    "College Code": 4975,
     "COLLEGE NMAE":
       "Dr. G U Pope College of Engineering  Sawyerpuram Thoothukudi District  628251",
     "BRANCH CODE": "CE",
@@ -41232,7 +41232,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4975,
+    "College Code": 4975,
     "COLLEGE NMAE":
       "Dr. G U Pope College of Engineering  Sawyerpuram Thoothukudi District  628251",
     "BRANCH CODE": "CS",
@@ -41246,7 +41246,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4975,
+    "College Code": 4975,
     "COLLEGE NMAE":
       "Dr. G U Pope College of Engineering  Sawyerpuram Thoothukudi District  628251",
     "BRANCH CODE": "EC",
@@ -41260,7 +41260,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4975,
+    "College Code": 4975,
     "COLLEGE NMAE":
       "Dr. G U Pope College of Engineering  Sawyerpuram Thoothukudi District  628251",
     "BRANCH CODE": "EE",
@@ -41274,7 +41274,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4975,
+    "College Code": 4975,
     "COLLEGE NMAE":
       "Dr. G U Pope College of Engineering  Sawyerpuram Thoothukudi District  628251",
     "BRANCH CODE": "ME",
@@ -41288,7 +41288,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4976,
+    "College Code": 4976,
     "COLLEGE NMAE":
       "Infant Jesus College of Engineering  Thoothukudi Highway (NH7/A)  Thoothukudi District 628851",
     "BRANCH CODE": "AE",
@@ -41302,7 +41302,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4976,
+    "College Code": 4976,
     "COLLEGE NMAE":
       "Infant Jesus College of Engineering  Thoothukudi Highway (NH7/A)  Thoothukudi District 628851",
     "BRANCH CODE": "AG",
@@ -41316,7 +41316,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4976,
+    "College Code": 4976,
     "COLLEGE NMAE":
       "Infant Jesus College of Engineering  Thoothukudi Highway (NH7/A)  Thoothukudi District 628851",
     "BRANCH CODE": "CS",
@@ -41330,7 +41330,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4976,
+    "College Code": 4976,
     "COLLEGE NMAE":
       "Infant Jesus College of Engineering  Thoothukudi Highway (NH7/A)  Thoothukudi District 628851",
     "BRANCH CODE": "EC",
@@ -41344,7 +41344,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4976,
+    "College Code": 4976,
     "COLLEGE NMAE":
       "Infant Jesus College of Engineering  Thoothukudi Highway (NH7/A)  Thoothukudi District 628851",
     "BRANCH CODE": "ME",
@@ -41358,7 +41358,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4977,
+    "College Code": 4977,
     "COLLEGE NMAE":
       "Narayanaguru College of Engineering  Manjalumoodu Kanyakumari District 629151",
     "BRANCH CODE": "AD",
@@ -41372,7 +41372,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4977,
+    "College Code": 4977,
     "COLLEGE NMAE":
       "Narayanaguru College of Engineering  Manjalumoodu Kanyakumari District 629151",
     "BRANCH CODE": "AU",
@@ -41386,7 +41386,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4977,
+    "College Code": 4977,
     "COLLEGE NMAE":
       "Narayanaguru College of Engineering  Manjalumoodu Kanyakumari District 629151",
     "BRANCH CODE": "CE",
@@ -41400,7 +41400,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4977,
+    "College Code": 4977,
     "COLLEGE NMAE":
       "Narayanaguru College of Engineering  Manjalumoodu Kanyakumari District 629151",
     "BRANCH CODE": "CS",
@@ -41414,7 +41414,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4977,
+    "College Code": 4977,
     "COLLEGE NMAE":
       "Narayanaguru College of Engineering  Manjalumoodu Kanyakumari District 629151",
     "BRANCH CODE": "EC",
@@ -41428,7 +41428,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4977,
+    "College Code": 4977,
     "COLLEGE NMAE":
       "Narayanaguru College of Engineering  Manjalumoodu Kanyakumari District 629151",
     "BRANCH CODE": "EE",
@@ -41442,7 +41442,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4977,
+    "College Code": 4977,
     "COLLEGE NMAE":
       "Narayanaguru College of Engineering  Manjalumoodu Kanyakumari District 629151",
     "BRANCH CODE": "ME",
@@ -41456,7 +41456,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4978,
+    "College Code": 4978,
     "COLLEGE NMAE":
       "Udaya School of Engineering  Ammandivilai Post Kanyakumari District 629204",
     "BRANCH CODE": "AE",
@@ -41470,7 +41470,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4978,
+    "College Code": 4978,
     "COLLEGE NMAE":
       "Udaya School of Engineering  Ammandivilai Post Kanyakumari District 629204",
     "BRANCH CODE": "AG",
@@ -41484,7 +41484,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4978,
+    "College Code": 4978,
     "COLLEGE NMAE":
       "Udaya School of Engineering  Ammandivilai Post Kanyakumari District 629204",
     "BRANCH CODE": "AM",
@@ -41499,7 +41499,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4978,
+    "College Code": 4978,
     "COLLEGE NMAE":
       "Udaya School of Engineering  Ammandivilai Post Kanyakumari District 629204",
     "BRANCH CODE": "BM",
@@ -41513,7 +41513,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4978,
+    "College Code": 4978,
     "COLLEGE NMAE":
       "Udaya School of Engineering  Ammandivilai Post Kanyakumari District 629204",
     "BRANCH CODE": "BT",
@@ -41527,7 +41527,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4978,
+    "College Code": 4978,
     "COLLEGE NMAE":
       "Udaya School of Engineering  Ammandivilai Post Kanyakumari District 629204",
     "BRANCH CODE": "CE",
@@ -41541,7 +41541,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4978,
+    "College Code": 4978,
     "COLLEGE NMAE":
       "Udaya School of Engineering  Ammandivilai Post Kanyakumari District 629204",
     "BRANCH CODE": "CS",
@@ -41555,7 +41555,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4978,
+    "College Code": 4978,
     "COLLEGE NMAE":
       "Udaya School of Engineering  Ammandivilai Post Kanyakumari District 629204",
     "BRANCH CODE": "EC",
@@ -41569,7 +41569,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4978,
+    "College Code": 4978,
     "COLLEGE NMAE":
       "Udaya School of Engineering  Ammandivilai Post Kanyakumari District 629204",
     "BRANCH CODE": "EE",
@@ -41583,7 +41583,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4978,
+    "College Code": 4978,
     "COLLEGE NMAE":
       "Udaya School of Engineering  Ammandivilai Post Kanyakumari District 629204",
     "BRANCH CODE": "ME",
@@ -41597,7 +41597,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4978,
+    "College Code": 4978,
     "COLLEGE NMAE":
       "Udaya School of Engineering  Ammandivilai Post Kanyakumari District 629204",
     "BRANCH CODE": "RM",
@@ -41611,7 +41611,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4978,
+    "College Code": 4978,
     "COLLEGE NMAE":
       "Udaya School of Engineering  Ammandivilai Post Kanyakumari District 629204",
     "BRANCH CODE": "SC",
@@ -41625,7 +41625,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4979,
+    "College Code": 4979,
     "COLLEGE NMAE":
       "Arul Tharum VPMM College of Engineering and Technology (Formerly V.P.Muthaiah Pillai Meenakshi Ammal Engineering College for Women)  Krishnakoil Virudhunagar- 626 190",
     "BRANCH CODE": "CE",
@@ -41639,7 +41639,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4979,
+    "College Code": 4979,
     "COLLEGE NMAE":
       "Arul Tharum VPMM College of Engineering and Technology (Formerly V.P.Muthaiah Pillai Meenakshi Ammal Engineering College for Women)  Krishnakoil Virudhunagar- 626 190",
     "BRANCH CODE": "CS",
@@ -41653,7 +41653,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4979,
+    "College Code": 4979,
     "COLLEGE NMAE":
       "Arul Tharum VPMM College of Engineering and Technology (Formerly V.P.Muthaiah Pillai Meenakshi Ammal Engineering College for Women)  Krishnakoil Virudhunagar- 626 190",
     "BRANCH CODE": "EC",
@@ -41667,7 +41667,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4979,
+    "College Code": 4979,
     "COLLEGE NMAE":
       "Arul Tharum VPMM College of Engineering and Technology (Formerly V.P.Muthaiah Pillai Meenakshi Ammal Engineering College for Women)  Krishnakoil Virudhunagar- 626 190",
     "BRANCH CODE": "EE",
@@ -41681,7 +41681,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4979,
+    "College Code": 4979,
     "COLLEGE NMAE":
       "Arul Tharum VPMM College of Engineering and Technology (Formerly V.P.Muthaiah Pillai Meenakshi Ammal Engineering College for Women)  Krishnakoil Virudhunagar- 626 190",
     "BRANCH CODE": "IT",
@@ -41695,7 +41695,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4980,
+    "College Code": 4980,
     "COLLEGE NMAE":
       "Einstein College of Engineering  Seethaparpanallur Tirunelveli District 627012",
     "BRANCH CODE": "CE",
@@ -41709,7 +41709,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4980,
+    "College Code": 4980,
     "COLLEGE NMAE":
       "Einstein College of Engineering  Seethaparpanallur Tirunelveli District 627012",
     "BRANCH CODE": "CS",
@@ -41723,7 +41723,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4980,
+    "College Code": 4980,
     "COLLEGE NMAE":
       "Einstein College of Engineering  Seethaparpanallur Tirunelveli District 627012",
     "BRANCH CODE": "EC",
@@ -41737,7 +41737,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4980,
+    "College Code": 4980,
     "COLLEGE NMAE":
       "Einstein College of Engineering  Seethaparpanallur Tirunelveli District 627012",
     "BRANCH CODE": "EE",
@@ -41751,7 +41751,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4980,
+    "College Code": 4980,
     "COLLEGE NMAE":
       "Einstein College of Engineering  Seethaparpanallur Tirunelveli District 627012",
     "BRANCH CODE": "ME",
@@ -41765,7 +41765,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4981,
+    "College Code": 4981,
     "COLLEGE NMAE":
       "Ponjesly College of  Engineering  Vettornimadam Post Nagercoil  Kanyakumari District 629003",
     "BRANCH CODE": "AD",
@@ -41779,7 +41779,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4981,
+    "College Code": 4981,
     "COLLEGE NMAE":
       "Ponjesly College of  Engineering  Vettornimadam Post Nagercoil  Kanyakumari District 629003",
     "BRANCH CODE": "CE",
@@ -41793,7 +41793,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4981,
+    "College Code": 4981,
     "COLLEGE NMAE":
       "Ponjesly College of  Engineering  Vettornimadam Post Nagercoil  Kanyakumari District 629003",
     "BRANCH CODE": "CS",
@@ -41807,7 +41807,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4981,
+    "College Code": 4981,
     "COLLEGE NMAE":
       "Ponjesly College of  Engineering  Vettornimadam Post Nagercoil  Kanyakumari District 629003",
     "BRANCH CODE": "EC",
@@ -41821,7 +41821,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4981,
+    "College Code": 4981,
     "COLLEGE NMAE":
       "Ponjesly College of  Engineering  Vettornimadam Post Nagercoil  Kanyakumari District 629003",
     "BRANCH CODE": "EE",
@@ -41835,7 +41835,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4981,
+    "College Code": 4981,
     "COLLEGE NMAE":
       "Ponjesly College of  Engineering  Vettornimadam Post Nagercoil  Kanyakumari District 629003",
     "BRANCH CODE": "IT",
@@ -41849,7 +41849,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4981,
+    "College Code": 4981,
     "COLLEGE NMAE":
       "Ponjesly College of  Engineering  Vettornimadam Post Nagercoil  Kanyakumari District 629003",
     "BRANCH CODE": "ME",
@@ -41863,7 +41863,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4982,
+    "College Code": 4982,
     "COLLEGE NMAE":
       "Vins Christian College of Engineering  Chunkankadai Post Nagercoil  Kanyakumari District  629807",
     "BRANCH CODE": "AD",
@@ -41877,7 +41877,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4982,
+    "College Code": 4982,
     "COLLEGE NMAE":
       "Vins Christian College of Engineering  Chunkankadai Post Nagercoil  Kanyakumari District  629807",
     "BRANCH CODE": "AM",
@@ -41892,7 +41892,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4982,
+    "College Code": 4982,
     "COLLEGE NMAE":
       "Vins Christian College of Engineering  Chunkankadai Post Nagercoil  Kanyakumari District  629807",
     "BRANCH CODE": "CE",
@@ -41906,7 +41906,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4982,
+    "College Code": 4982,
     "COLLEGE NMAE":
       "Vins Christian College of Engineering  Chunkankadai Post Nagercoil  Kanyakumari District  629807",
     "BRANCH CODE": "CS",
@@ -41920,7 +41920,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4982,
+    "College Code": 4982,
     "COLLEGE NMAE":
       "Vins Christian College of Engineering  Chunkankadai Post Nagercoil  Kanyakumari District  629807",
     "BRANCH CODE": "EC",
@@ -41934,7 +41934,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4982,
+    "College Code": 4982,
     "COLLEGE NMAE":
       "Vins Christian College of Engineering  Chunkankadai Post Nagercoil  Kanyakumari District  629807",
     "BRANCH CODE": "EE",
@@ -41948,7 +41948,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4982,
+    "College Code": 4982,
     "COLLEGE NMAE":
       "Vins Christian College of Engineering  Chunkankadai Post Nagercoil  Kanyakumari District  629807",
     "BRANCH CODE": "ME",
@@ -41962,7 +41962,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4982,
+    "College Code": 4982,
     "COLLEGE NMAE":
       "Vins Christian College of Engineering  Chunkankadai Post Nagercoil  Kanyakumari District  629807",
     "BRANCH CODE": "SC",
@@ -41976,7 +41976,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4983,
+    "College Code": 4983,
     "COLLEGE NMAE":
       "Lord Jegannath College of Engineering and Technology Kumarapuram  Thoppur Post  Kanyakumari District 629402",
     "BRANCH CODE": "AE",
@@ -41990,7 +41990,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4983,
+    "College Code": 4983,
     "COLLEGE NMAE":
       "Lord Jegannath College of Engineering and Technology Kumarapuram  Thoppur Post  Kanyakumari District 629402",
     "BRANCH CODE": "AG",
@@ -42004,7 +42004,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4983,
+    "College Code": 4983,
     "COLLEGE NMAE":
       "Lord Jegannath College of Engineering and Technology Kumarapuram  Thoppur Post  Kanyakumari District 629402",
     "BRANCH CODE": "CE",
@@ -42018,7 +42018,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4983,
+    "College Code": 4983,
     "COLLEGE NMAE":
       "Lord Jegannath College of Engineering and Technology Kumarapuram  Thoppur Post  Kanyakumari District 629402",
     "BRANCH CODE": "CS",
@@ -42032,7 +42032,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4983,
+    "College Code": 4983,
     "COLLEGE NMAE":
       "Lord Jegannath College of Engineering and Technology Kumarapuram  Thoppur Post  Kanyakumari District 629402",
     "BRANCH CODE": "EC",
@@ -42046,7 +42046,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4983,
+    "College Code": 4983,
     "COLLEGE NMAE":
       "Lord Jegannath College of Engineering and Technology Kumarapuram  Thoppur Post  Kanyakumari District 629402",
     "BRANCH CODE": "EE",
@@ -42060,7 +42060,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4983,
+    "College Code": 4983,
     "COLLEGE NMAE":
       "Lord Jegannath College of Engineering and Technology Kumarapuram  Thoppur Post  Kanyakumari District 629402",
     "BRANCH CODE": "ME",
@@ -42074,7 +42074,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4983,
+    "College Code": 4983,
     "COLLEGE NMAE":
       "Lord Jegannath College of Engineering and Technology Kumarapuram  Thoppur Post  Kanyakumari District 629402",
     "BRANCH CODE": "RM",
@@ -42088,7 +42088,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4984,
+    "College Code": 4984,
     "COLLEGE NMAE":
       "Marthandam College of Engineering & Technology Kuttakuzhi  Veeyanoor Post  Kanyakumari District 629177",
     "BRANCH CODE": "AD",
@@ -42102,7 +42102,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4984,
+    "College Code": 4984,
     "COLLEGE NMAE":
       "Marthandam College of Engineering & Technology Kuttakuzhi  Veeyanoor Post  Kanyakumari District 629177",
     "BRANCH CODE": "CE",
@@ -42116,7 +42116,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4984,
+    "College Code": 4984,
     "COLLEGE NMAE":
       "Marthandam College of Engineering & Technology Kuttakuzhi  Veeyanoor Post  Kanyakumari District 629177",
     "BRANCH CODE": "CS",
@@ -42130,7 +42130,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4984,
+    "College Code": 4984,
     "COLLEGE NMAE":
       "Marthandam College of Engineering & Technology Kuttakuzhi  Veeyanoor Post  Kanyakumari District 629177",
     "BRANCH CODE": "EC",
@@ -42144,7 +42144,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4984,
+    "College Code": 4984,
     "COLLEGE NMAE":
       "Marthandam College of Engineering & Technology Kuttakuzhi  Veeyanoor Post  Kanyakumari District 629177",
     "BRANCH CODE": "EE",
@@ -42158,7 +42158,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4984,
+    "College Code": 4984,
     "COLLEGE NMAE":
       "Marthandam College of Engineering & Technology Kuttakuzhi  Veeyanoor Post  Kanyakumari District 629177",
     "BRANCH CODE": "IT",
@@ -42172,7 +42172,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4984,
+    "College Code": 4984,
     "COLLEGE NMAE":
       "Marthandam College of Engineering & Technology Kuttakuzhi  Veeyanoor Post  Kanyakumari District 629177",
     "BRANCH CODE": "ME",
@@ -42186,7 +42186,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4986,
+    "College Code": 4986,
     "COLLEGE NMAE":
       "Noorul Islam College of Engineering and Technology, Pookadai, Punkarai, Thiruvithancode (PO), Kanyakumari District, Tamil Nadu -629174",
     "BRANCH CODE": "AD",
@@ -42200,7 +42200,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4986,
+    "College Code": 4986,
     "COLLEGE NMAE":
       "Noorul Islam College of Engineering and Technology, Pookadai, Punkarai, Thiruvithancode (PO), Kanyakumari District, Tamil Nadu -629174",
     "BRANCH CODE": "CS",
@@ -42214,7 +42214,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4986,
+    "College Code": 4986,
     "COLLEGE NMAE":
       "Noorul Islam College of Engineering and Technology, Pookadai, Punkarai, Thiruvithancode (PO), Kanyakumari District, Tamil Nadu -629174",
     "BRANCH CODE": "EC",
@@ -42228,7 +42228,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4986,
+    "College Code": 4986,
     "COLLEGE NMAE":
       "Noorul Islam College of Engineering and Technology, Pookadai, Punkarai, Thiruvithancode (PO), Kanyakumari District, Tamil Nadu -629174",
     "BRANCH CODE": "EE",
@@ -42242,7 +42242,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4986,
+    "College Code": 4986,
     "COLLEGE NMAE":
       "Noorul Islam College of Engineering and Technology, Pookadai, Punkarai, Thiruvithancode (PO), Kanyakumari District, Tamil Nadu -629174",
     "BRANCH CODE": "IT",
@@ -42256,7 +42256,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4986,
+    "College Code": 4986,
     "COLLEGE NMAE":
       "Noorul Islam College of Engineering and Technology, Pookadai, Punkarai, Thiruvithancode (PO), Kanyakumari District, Tamil Nadu -629174",
     "BRANCH CODE": "ME",
@@ -42270,7 +42270,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4989,
+    "College Code": 4989,
     "COLLEGE NMAE":
       "PSN Engineering College  Melathediyoor  Tirunelveli District 627152",
     "BRANCH CODE": "AG",
@@ -42284,7 +42284,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4989,
+    "College Code": 4989,
     "COLLEGE NMAE":
       "PSN Engineering College  Melathediyoor  Tirunelveli District 627152",
     "BRANCH CODE": "AU",
@@ -42298,7 +42298,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4989,
+    "College Code": 4989,
     "COLLEGE NMAE":
       "PSN Engineering College  Melathediyoor  Tirunelveli District 627152",
     "BRANCH CODE": "CE",
@@ -42312,7 +42312,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4989,
+    "College Code": 4989,
     "COLLEGE NMAE":
       "PSN Engineering College  Melathediyoor  Tirunelveli District 627152",
     "BRANCH CODE": "CS",
@@ -42326,7 +42326,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4989,
+    "College Code": 4989,
     "COLLEGE NMAE":
       "PSN Engineering College  Melathediyoor  Tirunelveli District 627152",
     "BRANCH CODE": "EC",
@@ -42340,7 +42340,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4989,
+    "College Code": 4989,
     "COLLEGE NMAE":
       "PSN Engineering College  Melathediyoor  Tirunelveli District 627152",
     "BRANCH CODE": "IT",
@@ -42354,7 +42354,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4989,
+    "College Code": 4989,
     "COLLEGE NMAE":
       "PSN Engineering College  Melathediyoor  Tirunelveli District 627152",
     "BRANCH CODE": "ME",
@@ -42368,7 +42368,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4989,
+    "College Code": 4989,
     "COLLEGE NMAE":
       "PSN Engineering College  Melathediyoor  Tirunelveli District 627152",
     "BRANCH CODE": "MU",
@@ -42382,7 +42382,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4992,
+    "College Code": 4992,
     "COLLEGE NMAE":
       "Bethlahem Institute of Engineering  Karungal  Kanyakumari District 629157",
     "BRANCH CODE": "CE",
@@ -42396,7 +42396,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4992,
+    "College Code": 4992,
     "COLLEGE NMAE":
       "Bethlahem Institute of Engineering  Karungal  Kanyakumari District 629157",
     "BRANCH CODE": "CS",
@@ -42410,7 +42410,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4992,
+    "College Code": 4992,
     "COLLEGE NMAE":
       "Bethlahem Institute of Engineering  Karungal  Kanyakumari District 629157",
     "BRANCH CODE": "EC",
@@ -42424,7 +42424,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4992,
+    "College Code": 4992,
     "COLLEGE NMAE":
       "Bethlahem Institute of Engineering  Karungal  Kanyakumari District 629157",
     "BRANCH CODE": "EE",
@@ -42438,7 +42438,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4992,
+    "College Code": 4992,
     "COLLEGE NMAE":
       "Bethlahem Institute of Engineering  Karungal  Kanyakumari District 629157",
     "BRANCH CODE": "IT",
@@ -42452,7 +42452,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4992,
+    "College Code": 4992,
     "COLLEGE NMAE":
       "Bethlahem Institute of Engineering  Karungal  Kanyakumari District 629157",
     "BRANCH CODE": "ME",
@@ -42466,7 +42466,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4993,
+    "College Code": 4993,
     "COLLEGE NMAE":
       "Loyola Institute of Technology and Science  Loyola Nagar   P B No.2  Thovalai  Kanyakumari District 629302",
     "BRANCH CODE": "AD",
@@ -42480,7 +42480,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4993,
+    "College Code": 4993,
     "COLLEGE NMAE":
       "Loyola Institute of Technology and Science  Loyola Nagar   P B No.2  Thovalai  Kanyakumari District 629302",
     "BRANCH CODE": "AG",
@@ -42494,7 +42494,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4993,
+    "College Code": 4993,
     "COLLEGE NMAE":
       "Loyola Institute of Technology and Science  Loyola Nagar   P B No.2  Thovalai  Kanyakumari District 629302",
     "BRANCH CODE": "AM",
@@ -42509,7 +42509,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4993,
+    "College Code": 4993,
     "COLLEGE NMAE":
       "Loyola Institute of Technology and Science  Loyola Nagar   P B No.2  Thovalai  Kanyakumari District 629302",
     "BRANCH CODE": "BM",
@@ -42523,7 +42523,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4993,
+    "College Code": 4993,
     "COLLEGE NMAE":
       "Loyola Institute of Technology and Science  Loyola Nagar   P B No.2  Thovalai  Kanyakumari District 629302",
     "BRANCH CODE": "CS",
@@ -42537,7 +42537,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4993,
+    "College Code": 4993,
     "COLLEGE NMAE":
       "Loyola Institute of Technology and Science  Loyola Nagar   P B No.2  Thovalai  Kanyakumari District 629302",
     "BRANCH CODE": "EC",
@@ -42551,7 +42551,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4993,
+    "College Code": 4993,
     "COLLEGE NMAE":
       "Loyola Institute of Technology and Science  Loyola Nagar   P B No.2  Thovalai  Kanyakumari District 629302",
     "BRANCH CODE": "EE",
@@ -42565,7 +42565,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4993,
+    "College Code": 4993,
     "COLLEGE NMAE":
       "Loyola Institute of Technology and Science  Loyola Nagar   P B No.2  Thovalai  Kanyakumari District 629302",
     "BRANCH CODE": "IT",
@@ -42579,7 +42579,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4993,
+    "College Code": 4993,
     "COLLEGE NMAE":
       "Loyola Institute of Technology and Science  Loyola Nagar   P B No.2  Thovalai  Kanyakumari District 629302",
     "BRANCH CODE": "ME",
@@ -42593,7 +42593,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4994,
+    "College Code": 4994,
     "COLLEGE NMAE":
       "J P College of Engineering  College Road  Ayakudy  Tenkasi Taluk  Tenkasi District 627852",
     "BRANCH CODE": "CE",
@@ -42607,7 +42607,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4994,
+    "College Code": 4994,
     "COLLEGE NMAE":
       "J P College of Engineering  College Road  Ayakudy  Tenkasi Taluk  Tenkasi District 627852",
     "BRANCH CODE": "CS",
@@ -42621,7 +42621,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4994,
+    "College Code": 4994,
     "COLLEGE NMAE":
       "J P College of Engineering  College Road  Ayakudy  Tenkasi Taluk  Tenkasi District 627852",
     "BRANCH CODE": "EC",
@@ -42635,7 +42635,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4994,
+    "College Code": 4994,
     "COLLEGE NMAE":
       "J P College of Engineering  College Road  Ayakudy  Tenkasi Taluk  Tenkasi District 627852",
     "BRANCH CODE": "EE",
@@ -42649,7 +42649,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4994,
+    "College Code": 4994,
     "COLLEGE NMAE":
       "J P College of Engineering  College Road  Ayakudy  Tenkasi Taluk  Tenkasi District 627852",
     "BRANCH CODE": "IT",
@@ -42663,7 +42663,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4994,
+    "College Code": 4994,
     "COLLEGE NMAE":
       "J P College of Engineering  College Road  Ayakudy  Tenkasi Taluk  Tenkasi District 627852",
     "BRANCH CODE": "ME",
@@ -42677,7 +42677,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4995,
+    "College Code": 4995,
     "COLLEGE NMAE":
       "P.S.R.R College of Engineering  Appayanaickenpatti Sevalpatti  Virudhunagar District 626140",
     "BRANCH CODE": "AD",
@@ -42691,7 +42691,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4995,
+    "College Code": 4995,
     "COLLEGE NMAE":
       "P.S.R.R College of Engineering  Appayanaickenpatti Sevalpatti  Virudhunagar District 626140",
     "BRANCH CODE": "CS",
@@ -42705,7 +42705,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4995,
+    "College Code": 4995,
     "COLLEGE NMAE":
       "P.S.R.R College of Engineering  Appayanaickenpatti Sevalpatti  Virudhunagar District 626140",
     "BRANCH CODE": "EC",
@@ -42719,7 +42719,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4995,
+    "College Code": 4995,
     "COLLEGE NMAE":
       "P.S.R.R College of Engineering  Appayanaickenpatti Sevalpatti  Virudhunagar District 626140",
     "BRANCH CODE": "EE",
@@ -42733,7 +42733,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4996,
+    "College Code": 4996,
     "COLLEGE NMAE":
       "Sri Vidya College of Engineering and Technology  Sivakasi Main Road  P Kumaralinapuram  Virudhunagar District 626005",
     "BRANCH CODE": "AD",
@@ -42747,7 +42747,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4996,
+    "College Code": 4996,
     "COLLEGE NMAE":
       "Sri Vidya College of Engineering and Technology  Sivakasi Main Road  P Kumaralinapuram  Virudhunagar District 626005",
     "BRANCH CODE": "CB",
@@ -42761,7 +42761,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4996,
+    "College Code": 4996,
     "COLLEGE NMAE":
       "Sri Vidya College of Engineering and Technology  Sivakasi Main Road  P Kumaralinapuram  Virudhunagar District 626005",
     "BRANCH CODE": "CE",
@@ -42775,7 +42775,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4996,
+    "College Code": 4996,
     "COLLEGE NMAE":
       "Sri Vidya College of Engineering and Technology  Sivakasi Main Road  P Kumaralinapuram  Virudhunagar District 626005",
     "BRANCH CODE": "CS",
@@ -42789,7 +42789,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4996,
+    "College Code": 4996,
     "COLLEGE NMAE":
       "Sri Vidya College of Engineering and Technology  Sivakasi Main Road  P Kumaralinapuram  Virudhunagar District 626005",
     "BRANCH CODE": "EC",
@@ -42803,7 +42803,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4996,
+    "College Code": 4996,
     "COLLEGE NMAE":
       "Sri Vidya College of Engineering and Technology  Sivakasi Main Road  P Kumaralinapuram  Virudhunagar District 626005",
     "BRANCH CODE": "EE",
@@ -42817,7 +42817,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4996,
+    "College Code": 4996,
     "COLLEGE NMAE":
       "Sri Vidya College of Engineering and Technology  Sivakasi Main Road  P Kumaralinapuram  Virudhunagar District 626005",
     "BRANCH CODE": "ME",
@@ -42831,7 +42831,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4998,
+    "College Code": 4998,
     "COLLEGE NMAE":
       "Mahakavi Bharathiyar College of Engineering and Technology  Vasudevanallur  Tenkasi District 627758",
     "BRANCH CODE": "CE",
@@ -42845,7 +42845,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4998,
+    "College Code": 4998,
     "COLLEGE NMAE":
       "Mahakavi Bharathiyar College of Engineering and Technology  Vasudevanallur  Tenkasi District 627758",
     "BRANCH CODE": "CS",
@@ -42859,7 +42859,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4998,
+    "College Code": 4998,
     "COLLEGE NMAE":
       "Mahakavi Bharathiyar College of Engineering and Technology  Vasudevanallur  Tenkasi District 627758",
     "BRANCH CODE": "EC",
@@ -42873,7 +42873,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4998,
+    "College Code": 4998,
     "COLLEGE NMAE":
       "Mahakavi Bharathiyar College of Engineering and Technology  Vasudevanallur  Tenkasi District 627758",
     "BRANCH CODE": "EE",
@@ -42887,7 +42887,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4998,
+    "College Code": 4998,
     "COLLEGE NMAE":
       "Mahakavi Bharathiyar College of Engineering and Technology  Vasudevanallur  Tenkasi District 627758",
     "BRANCH CODE": "ME",
@@ -42901,7 +42901,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4999,
+    "College Code": 4999,
     "COLLEGE NMAE":
       "Annai Vailankanni College of Engineering  Pothaiyadi Salai Pottalkulam  Azhagappapuram  Kanyakumari District 629401",
     "BRANCH CODE": "AD",
@@ -42915,7 +42915,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4999,
+    "College Code": 4999,
     "COLLEGE NMAE":
       "Annai Vailankanni College of Engineering  Pothaiyadi Salai Pottalkulam  Azhagappapuram  Kanyakumari District 629401",
     "BRANCH CODE": "BM",
@@ -42929,7 +42929,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 4999,
+    "College Code": 4999,
     "COLLEGE NMAE":
       "Annai Vailankanni College of Engineering  Pothaiyadi Salai Pottalkulam  Azhagappapuram  Kanyakumari District 629401",
     "BRANCH CODE": "CS",
@@ -42943,7 +42943,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4999,
+    "College Code": 4999,
     "COLLEGE NMAE":
       "Annai Vailankanni College of Engineering  Pothaiyadi Salai Pottalkulam  Azhagappapuram  Kanyakumari District 629401",
     "BRANCH CODE": "EC",
@@ -42957,7 +42957,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 4999,
+    "College Code": 4999,
     "COLLEGE NMAE":
       "Annai Vailankanni College of Engineering  Pothaiyadi Salai Pottalkulam  Azhagappapuram  Kanyakumari District 629401",
     "BRANCH CODE": "ME",
@@ -42971,7 +42971,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5008,
+    "College Code": 5008,
     "COLLEGE NMAE":
       "Thiagarajar College of Engineering (Autonomous) Tirupparankundram  Madurai District 625015",
     "BRANCH CODE": "CE",
@@ -42985,7 +42985,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5008,
+    "College Code": 5008,
     "COLLEGE NMAE":
       "Thiagarajar College of Engineering (Autonomous) Tirupparankundram  Madurai District 625015",
     "BRANCH CODE": "CM",
@@ -42999,7 +42999,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5008,
+    "College Code": 5008,
     "COLLEGE NMAE":
       "Thiagarajar College of Engineering (Autonomous) Tirupparankundram  Madurai District 625015",
     "BRANCH CODE": "CN",
@@ -43013,7 +43013,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5008,
+    "College Code": 5008,
     "COLLEGE NMAE":
       "Thiagarajar College of Engineering (Autonomous) Tirupparankundram  Madurai District 625015",
     "BRANCH CODE": "CS",
@@ -43027,7 +43027,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5008,
+    "College Code": 5008,
     "COLLEGE NMAE":
       "Thiagarajar College of Engineering (Autonomous) Tirupparankundram  Madurai District 625015",
     "BRANCH CODE": "CW",
@@ -43041,7 +43041,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5008,
+    "College Code": 5008,
     "COLLEGE NMAE":
       "Thiagarajar College of Engineering (Autonomous) Tirupparankundram  Madurai District 625015",
     "BRANCH CODE": "EC",
@@ -43055,7 +43055,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5008,
+    "College Code": 5008,
     "COLLEGE NMAE":
       "Thiagarajar College of Engineering (Autonomous) Tirupparankundram  Madurai District 625015",
     "BRANCH CODE": "EE",
@@ -43069,7 +43069,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5008,
+    "College Code": 5008,
     "COLLEGE NMAE":
       "Thiagarajar College of Engineering (Autonomous) Tirupparankundram  Madurai District 625015",
     "BRANCH CODE": "EM",
@@ -43083,7 +43083,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5008,
+    "College Code": 5008,
     "COLLEGE NMAE":
       "Thiagarajar College of Engineering (Autonomous) Tirupparankundram  Madurai District 625015",
     "BRANCH CODE": "EY",
@@ -43097,7 +43097,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5008,
+    "College Code": 5008,
     "COLLEGE NMAE":
       "Thiagarajar College of Engineering (Autonomous) Tirupparankundram  Madurai District 625015",
     "BRANCH CODE": "IM",
@@ -43111,7 +43111,7 @@ export const collegeChoiceListR2 = [
     ST: 2,
   },
   {
-    "COLLEGE CODE": 5008,
+    "College Code": 5008,
     "COLLEGE NMAE":
       "Thiagarajar College of Engineering (Autonomous) Tirupparankundram  Madurai District 625015",
     "BRANCH CODE": "ME",
@@ -43125,7 +43125,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5008,
+    "College Code": 5008,
     "COLLEGE NMAE":
       "Thiagarajar College of Engineering (Autonomous) Tirupparankundram  Madurai District 625015",
     "BRANCH CODE": "MF",
@@ -43139,7 +43139,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5008,
+    "College Code": 5008,
     "COLLEGE NMAE":
       "Thiagarajar College of Engineering (Autonomous) Tirupparankundram  Madurai District 625015",
     "BRANCH CODE": "MG",
@@ -43153,7 +43153,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5009,
+    "College Code": 5009,
     "COLLEGE NMAE":
       "Government College of Engineering Melachokkanathapuram  Bodinayakkanur  Theni District 625582",
     "BRANCH CODE": "CE",
@@ -43167,7 +43167,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5009,
+    "College Code": 5009,
     "COLLEGE NMAE":
       "Government College of Engineering Melachokkanathapuram  Bodinayakkanur  Theni District 625582",
     "BRANCH CODE": "CS",
@@ -43181,7 +43181,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5009,
+    "College Code": 5009,
     "COLLEGE NMAE":
       "Government College of Engineering Melachokkanathapuram  Bodinayakkanur  Theni District 625582",
     "BRANCH CODE": "EC",
@@ -43195,7 +43195,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5009,
+    "College Code": 5009,
     "COLLEGE NMAE":
       "Government College of Engineering Melachokkanathapuram  Bodinayakkanur  Theni District 625582",
     "BRANCH CODE": "EE",
@@ -43209,7 +43209,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5009,
+    "College Code": 5009,
     "COLLEGE NMAE":
       "Government College of Engineering Melachokkanathapuram  Bodinayakkanur  Theni District 625582",
     "BRANCH CODE": "ME",
@@ -43223,7 +43223,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5010,
+    "College Code": 5010,
     "COLLEGE NMAE":
       "Anna University Regional Campus - Madurai  Kanyakumari National Highway  Keelakuilkudi  Madurai District 625019",
     "BRANCH CODE": "CE",
@@ -43237,7 +43237,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5010,
+    "College Code": 5010,
     "COLLEGE NMAE":
       "Anna University Regional Campus - Madurai  Kanyakumari National Highway  Keelakuilkudi  Madurai District 625019",
     "BRANCH CODE": "CS",
@@ -43251,7 +43251,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5010,
+    "College Code": 5010,
     "COLLEGE NMAE":
       "Anna University Regional Campus - Madurai  Kanyakumari National Highway  Keelakuilkudi  Madurai District 625019",
     "BRANCH CODE": "EC",
@@ -43265,7 +43265,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5010,
+    "College Code": 5010,
     "COLLEGE NMAE":
       "Anna University Regional Campus - Madurai  Kanyakumari National Highway  Keelakuilkudi  Madurai District 625019",
     "BRANCH CODE": "EE",
@@ -43279,7 +43279,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5010,
+    "College Code": 5010,
     "COLLEGE NMAE":
       "Anna University Regional Campus - Madurai  Kanyakumari National Highway  Keelakuilkudi  Madurai District 625019",
     "BRANCH CODE": "ME",
@@ -43293,7 +43293,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5012,
+    "College Code": 5012,
     "COLLEGE NMAE":
       "Central Electrochemical Research Institute CECRI) Karaikudi  Sivagangai District 630006",
     "BRANCH CODE": "CC",
@@ -43307,7 +43307,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5017,
+    "College Code": 5017,
     "COLLEGE NMAE":
       "University College of Engineering  Ramanathapuram Pullangudi  Ramanathapuram District 623513",
     "BRANCH CODE": "CE",
@@ -43321,7 +43321,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5017,
+    "College Code": 5017,
     "COLLEGE NMAE":
       "University College of Engineering  Ramanathapuram Pullangudi  Ramanathapuram District 623513",
     "BRANCH CODE": "CS",
@@ -43335,7 +43335,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5017,
+    "College Code": 5017,
     "COLLEGE NMAE":
       "University College of Engineering  Ramanathapuram Pullangudi  Ramanathapuram District 623513",
     "BRANCH CODE": "EC",
@@ -43349,7 +43349,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5017,
+    "College Code": 5017,
     "COLLEGE NMAE":
       "University College of Engineering  Ramanathapuram Pullangudi  Ramanathapuram District 623513",
     "BRANCH CODE": "ME",
@@ -43363,7 +43363,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5017,
+    "College Code": 5017,
     "COLLEGE NMAE":
       "University College of Engineering  Ramanathapuram Pullangudi  Ramanathapuram District 623513",
     "BRANCH CODE": "XC",
@@ -43377,7 +43377,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5017,
+    "College Code": 5017,
     "COLLEGE NMAE":
       "University College of Engineering  Ramanathapuram Pullangudi  Ramanathapuram District 623513",
     "BRANCH CODE": "XM",
@@ -43391,7 +43391,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5022,
+    "College Code": 5022,
     "COLLEGE NMAE":
       "University College of Engineering  Dindigul  Mangarai Pirivu Reddiyarchathiram  Dindigul District 624622",
     "BRANCH CODE": "CE",
@@ -43405,7 +43405,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5022,
+    "College Code": 5022,
     "COLLEGE NMAE":
       "University College of Engineering  Dindigul  Mangarai Pirivu Reddiyarchathiram  Dindigul District 624622",
     "BRANCH CODE": "CS",
@@ -43419,7 +43419,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5022,
+    "College Code": 5022,
     "COLLEGE NMAE":
       "University College of Engineering  Dindigul  Mangarai Pirivu Reddiyarchathiram  Dindigul District 624622",
     "BRANCH CODE": "EC",
@@ -43433,7 +43433,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5022,
+    "College Code": 5022,
     "COLLEGE NMAE":
       "University College of Engineering  Dindigul  Mangarai Pirivu Reddiyarchathiram  Dindigul District 624622",
     "BRANCH CODE": "EE",
@@ -43447,7 +43447,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5022,
+    "College Code": 5022,
     "COLLEGE NMAE":
       "University College of Engineering  Dindigul  Mangarai Pirivu Reddiyarchathiram  Dindigul District 624622",
     "BRANCH CODE": "ME",
@@ -43461,7 +43461,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5022,
+    "College Code": 5022,
     "COLLEGE NMAE":
       "University College of Engineering  Dindigul  Mangarai Pirivu Reddiyarchathiram  Dindigul District 624622",
     "BRANCH CODE": "XC",
@@ -43475,7 +43475,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5022,
+    "College Code": 5022,
     "COLLEGE NMAE":
       "University College of Engineering  Dindigul  Mangarai Pirivu Reddiyarchathiram  Dindigul District 624622",
     "BRANCH CODE": "XM",
@@ -43489,7 +43489,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5502,
+    "College Code": 5502,
     "COLLEGE NMAE":
       "Sri Raajaraajan College of Engineering & Technology Amaravathi Village  Amaravathi Pudur Post  Karaikudi Sivagangai District 630301",
     "BRANCH CODE": "AD",
@@ -43503,7 +43503,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5502,
+    "College Code": 5502,
     "COLLEGE NMAE":
       "Sri Raajaraajan College of Engineering & Technology Amaravathi Village  Amaravathi Pudur Post  Karaikudi Sivagangai District 630301",
     "BRANCH CODE": "AG",
@@ -43517,7 +43517,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5502,
+    "College Code": 5502,
     "COLLEGE NMAE":
       "Sri Raajaraajan College of Engineering & Technology Amaravathi Village  Amaravathi Pudur Post  Karaikudi Sivagangai District 630301",
     "BRANCH CODE": "CE",
@@ -43531,7 +43531,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5502,
+    "College Code": 5502,
     "COLLEGE NMAE":
       "Sri Raajaraajan College of Engineering & Technology Amaravathi Village  Amaravathi Pudur Post  Karaikudi Sivagangai District 630301",
     "BRANCH CODE": "CS",
@@ -43545,7 +43545,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5502,
+    "College Code": 5502,
     "COLLEGE NMAE":
       "Sri Raajaraajan College of Engineering & Technology Amaravathi Village  Amaravathi Pudur Post  Karaikudi Sivagangai District 630301",
     "BRANCH CODE": "EC",
@@ -43559,7 +43559,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5502,
+    "College Code": 5502,
     "COLLEGE NMAE":
       "Sri Raajaraajan College of Engineering & Technology Amaravathi Village  Amaravathi Pudur Post  Karaikudi Sivagangai District 630301",
     "BRANCH CODE": "EE",
@@ -43573,7 +43573,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5502,
+    "College Code": 5502,
     "COLLEGE NMAE":
       "Sri Raajaraajan College of Engineering & Technology Amaravathi Village  Amaravathi Pudur Post  Karaikudi Sivagangai District 630301",
     "BRANCH CODE": "ME",
@@ -43587,7 +43587,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5530,
+    "College Code": 5530,
     "COLLEGE NMAE":
       "SSM Institute of Engineering and Technology  Kuttathupatti Village  Sindalaigundu Post  Dindigul District 624002",
     "BRANCH CODE": "AD",
@@ -43601,7 +43601,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5530,
+    "College Code": 5530,
     "COLLEGE NMAE":
       "SSM Institute of Engineering and Technology  Kuttathupatti Village  Sindalaigundu Post  Dindigul District 624002",
     "BRANCH CODE": "AU",
@@ -43615,7 +43615,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5530,
+    "College Code": 5530,
     "COLLEGE NMAE":
       "SSM Institute of Engineering and Technology  Kuttathupatti Village  Sindalaigundu Post  Dindigul District 624002",
     "BRANCH CODE": "CB",
@@ -43629,7 +43629,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5530,
+    "College Code": 5530,
     "COLLEGE NMAE":
       "SSM Institute of Engineering and Technology  Kuttathupatti Village  Sindalaigundu Post  Dindigul District 624002",
     "BRANCH CODE": "CE",
@@ -43643,7 +43643,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5530,
+    "College Code": 5530,
     "COLLEGE NMAE":
       "SSM Institute of Engineering and Technology  Kuttathupatti Village  Sindalaigundu Post  Dindigul District 624002",
     "BRANCH CODE": "CS",
@@ -43657,7 +43657,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5530,
+    "College Code": 5530,
     "COLLEGE NMAE":
       "SSM Institute of Engineering and Technology  Kuttathupatti Village  Sindalaigundu Post  Dindigul District 624002",
     "BRANCH CODE": "EC",
@@ -43671,7 +43671,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5530,
+    "College Code": 5530,
     "COLLEGE NMAE":
       "SSM Institute of Engineering and Technology  Kuttathupatti Village  Sindalaigundu Post  Dindigul District 624002",
     "BRANCH CODE": "EE",
@@ -43685,7 +43685,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5530,
+    "College Code": 5530,
     "COLLEGE NMAE":
       "SSM Institute of Engineering and Technology  Kuttathupatti Village  Sindalaigundu Post  Dindigul District 624002",
     "BRANCH CODE": "IT",
@@ -43699,7 +43699,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5530,
+    "College Code": 5530,
     "COLLEGE NMAE":
       "SSM Institute of Engineering and Technology  Kuttathupatti Village  Sindalaigundu Post  Dindigul District 624002",
     "BRANCH CODE": "ME",
@@ -43713,7 +43713,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5530,
+    "College Code": 5530,
     "COLLEGE NMAE":
       "SSM Institute of Engineering and Technology  Kuttathupatti Village  Sindalaigundu Post  Dindigul District 624002",
     "BRANCH CODE": "SC",
@@ -43727,7 +43727,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5532,
+    "College Code": 5532,
     "COLLEGE NMAE":
       "Vaigai College of Engineering  Therkutheru  Melur Taluk Madurai District 625122",
     "BRANCH CODE": "CE",
@@ -43741,7 +43741,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5532,
+    "College Code": 5532,
     "COLLEGE NMAE":
       "Vaigai College of Engineering  Therkutheru  Melur Taluk Madurai District 625122",
     "BRANCH CODE": "CS",
@@ -43755,7 +43755,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5532,
+    "College Code": 5532,
     "COLLEGE NMAE":
       "Vaigai College of Engineering  Therkutheru  Melur Taluk Madurai District 625122",
     "BRANCH CODE": "EC",
@@ -43769,7 +43769,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5532,
+    "College Code": 5532,
     "COLLEGE NMAE":
       "Vaigai College of Engineering  Therkutheru  Melur Taluk Madurai District 625122",
     "BRANCH CODE": "EE",
@@ -43783,7 +43783,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5532,
+    "College Code": 5532,
     "COLLEGE NMAE":
       "Vaigai College of Engineering  Therkutheru  Melur Taluk Madurai District 625122",
     "BRANCH CODE": "ME",
@@ -43797,7 +43797,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5533,
+    "College Code": 5533,
     "COLLEGE NMAE":
       "Karaikudi Institute of Technology and Karaikudi Institute of Management  KIT & KIM Technical Campus  Keeranipatti Thalakkuvur  Karaikudi  Sivagangai District 630307",
     "BRANCH CODE": "CE",
@@ -43811,7 +43811,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5533,
+    "College Code": 5533,
     "COLLEGE NMAE":
       "Karaikudi Institute of Technology and Karaikudi Institute of Management  KIT & KIM Technical Campus  Keeranipatti Thalakkuvur  Karaikudi  Sivagangai District 630307",
     "BRANCH CODE": "CS",
@@ -43825,7 +43825,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5533,
+    "College Code": 5533,
     "COLLEGE NMAE":
       "Karaikudi Institute of Technology and Karaikudi Institute of Management  KIT & KIM Technical Campus  Keeranipatti Thalakkuvur  Karaikudi  Sivagangai District 630307",
     "BRANCH CODE": "EC",
@@ -43839,7 +43839,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5533,
+    "College Code": 5533,
     "COLLEGE NMAE":
       "Karaikudi Institute of Technology and Karaikudi Institute of Management  KIT & KIM Technical Campus  Keeranipatti Thalakkuvur  Karaikudi  Sivagangai District 630307",
     "BRANCH CODE": "EE",
@@ -43853,7 +43853,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5533,
+    "College Code": 5533,
     "COLLEGE NMAE":
       "Karaikudi Institute of Technology and Karaikudi Institute of Management  KIT & KIM Technical Campus  Keeranipatti Thalakkuvur  Karaikudi  Sivagangai District 630307",
     "BRANCH CODE": "ME",
@@ -43867,7 +43867,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5536,
+    "College Code": 5536,
     "COLLEGE NMAE":
       "Mangayarkarasi College of Engineering  First Street Mangayarkarasi Nagar  Paravai  Madurai District 625402",
     "BRANCH CODE": "AG",
@@ -43881,7 +43881,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5536,
+    "College Code": 5536,
     "COLLEGE NMAE":
       "Mangayarkarasi College of Engineering  First Street Mangayarkarasi Nagar  Paravai  Madurai District 625402",
     "BRANCH CODE": "AM",
@@ -43896,7 +43896,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5536,
+    "College Code": 5536,
     "COLLEGE NMAE":
       "Mangayarkarasi College of Engineering  First Street Mangayarkarasi Nagar  Paravai  Madurai District 625402",
     "BRANCH CODE": "CS",
@@ -43910,7 +43910,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5536,
+    "College Code": 5536,
     "COLLEGE NMAE":
       "Mangayarkarasi College of Engineering  First Street Mangayarkarasi Nagar  Paravai  Madurai District 625402",
     "BRANCH CODE": "EC",
@@ -43924,7 +43924,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5536,
+    "College Code": 5536,
     "COLLEGE NMAE":
       "Mangayarkarasi College of Engineering  First Street Mangayarkarasi Nagar  Paravai  Madurai District 625402",
     "BRANCH CODE": "EE",
@@ -43938,7 +43938,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5536,
+    "College Code": 5536,
     "COLLEGE NMAE":
       "Mangayarkarasi College of Engineering  First Street Mangayarkarasi Nagar  Paravai  Madurai District 625402",
     "BRANCH CODE": "ME",
@@ -43952,7 +43952,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5537,
+    "College Code": 5537,
     "COLLEGE NMAE":
       "Jainee College of Engineering and Technology, Dindigul- Theni Main Road, (NHB Extn.), Aathupattiprivu, Veerakkal, B.P.O.N Panjampatti Post, Dindigul 624303",
     "BRANCH CODE": "CE",
@@ -43966,7 +43966,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5537,
+    "College Code": 5537,
     "COLLEGE NMAE":
       "Jainee College of Engineering and Technology, Dindigul- Theni Main Road, (NHB Extn.), Aathupattiprivu, Veerakkal, B.P.O.N Panjampatti Post, Dindigul 624303",
     "BRANCH CODE": "CS",
@@ -43980,7 +43980,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5537,
+    "College Code": 5537,
     "COLLEGE NMAE":
       "Jainee College of Engineering and Technology, Dindigul- Theni Main Road, (NHB Extn.), Aathupattiprivu, Veerakkal, B.P.O.N Panjampatti Post, Dindigul 624303",
     "BRANCH CODE": "EC",
@@ -43994,7 +43994,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5537,
+    "College Code": 5537,
     "COLLEGE NMAE":
       "Jainee College of Engineering and Technology, Dindigul- Theni Main Road, (NHB Extn.), Aathupattiprivu, Veerakkal, B.P.O.N Panjampatti Post, Dindigul 624303",
     "BRANCH CODE": "EE",
@@ -44008,7 +44008,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5537,
+    "College Code": 5537,
     "COLLEGE NMAE":
       "Jainee College of Engineering and Technology, Dindigul- Theni Main Road, (NHB Extn.), Aathupattiprivu, Veerakkal, B.P.O.N Panjampatti Post, Dindigul 624303",
     "BRANCH CODE": "ME",
@@ -44022,7 +44022,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5703,
+    "College Code": 5703,
     "COLLEGE NMAE":
       "Christian College of Engineering and Technology Oddanchatram  Dindigul District 624619",
     "BRANCH CODE": "AD",
@@ -44036,7 +44036,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5703,
+    "College Code": 5703,
     "COLLEGE NMAE":
       "Christian College of Engineering and Technology Oddanchatram  Dindigul District 624619",
     "BRANCH CODE": "AG",
@@ -44050,7 +44050,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5703,
+    "College Code": 5703,
     "COLLEGE NMAE":
       "Christian College of Engineering and Technology Oddanchatram  Dindigul District 624619",
     "BRANCH CODE": "CE",
@@ -44064,7 +44064,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5703,
+    "College Code": 5703,
     "COLLEGE NMAE":
       "Christian College of Engineering and Technology Oddanchatram  Dindigul District 624619",
     "BRANCH CODE": "CS",
@@ -44078,7 +44078,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5703,
+    "College Code": 5703,
     "COLLEGE NMAE":
       "Christian College of Engineering and Technology Oddanchatram  Dindigul District 624619",
     "BRANCH CODE": "EC",
@@ -44092,7 +44092,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5703,
+    "College Code": 5703,
     "COLLEGE NMAE":
       "Christian College of Engineering and Technology Oddanchatram  Dindigul District 624619",
     "BRANCH CODE": "EE",
@@ -44106,7 +44106,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5703,
+    "College Code": 5703,
     "COLLEGE NMAE":
       "Christian College of Engineering and Technology Oddanchatram  Dindigul District 624619",
     "BRANCH CODE": "IT",
@@ -44120,7 +44120,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5703,
+    "College Code": 5703,
     "COLLEGE NMAE":
       "Christian College of Engineering and Technology Oddanchatram  Dindigul District 624619",
     "BRANCH CODE": "ME",
@@ -44134,7 +44134,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5832,
+    "College Code": 5832,
     "COLLEGE NMAE":
       "N P R College of Engineering and Technology (Autonomous) Natham  Dindigul District 624401",
     "BRANCH CODE": "AD",
@@ -44148,7 +44148,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5832,
+    "College Code": 5832,
     "COLLEGE NMAE":
       "N P R College of Engineering and Technology (Autonomous) Natham  Dindigul District 624401",
     "BRANCH CODE": "CE",
@@ -44162,7 +44162,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5832,
+    "College Code": 5832,
     "COLLEGE NMAE":
       "N P R College of Engineering and Technology (Autonomous) Natham  Dindigul District 624401",
     "BRANCH CODE": "CS",
@@ -44176,7 +44176,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5832,
+    "College Code": 5832,
     "COLLEGE NMAE":
       "N P R College of Engineering and Technology (Autonomous) Natham  Dindigul District 624401",
     "BRANCH CODE": "EC",
@@ -44190,7 +44190,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5832,
+    "College Code": 5832,
     "COLLEGE NMAE":
       "N P R College of Engineering and Technology (Autonomous) Natham  Dindigul District 624401",
     "BRANCH CODE": "EE",
@@ -44204,7 +44204,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5832,
+    "College Code": 5832,
     "COLLEGE NMAE":
       "N P R College of Engineering and Technology (Autonomous) Natham  Dindigul District 624401",
     "BRANCH CODE": "IT",
@@ -44218,7 +44218,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5832,
+    "College Code": 5832,
     "COLLEGE NMAE":
       "N P R College of Engineering and Technology (Autonomous) Natham  Dindigul District 624401",
     "BRANCH CODE": "ME",
@@ -44232,7 +44232,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5842,
+    "College Code": 5842,
     "COLLEGE NMAE":
       "SRM Madurai College for Engineering and Technology (Formely Madurai Institute of Engineering and Technology), Pottapalayam Village  Manamadurai Taluk  Sivagangai District 630611",
     "BRANCH CODE": "AD",
@@ -44246,7 +44246,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5842,
+    "College Code": 5842,
     "COLLEGE NMAE":
       "SRM Madurai College for Engineering and Technology (Formely Madurai Institute of Engineering and Technology), Pottapalayam Village  Manamadurai Taluk  Sivagangai District 630611",
     "BRANCH CODE": "AM",
@@ -44261,7 +44261,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5842,
+    "College Code": 5842,
     "COLLEGE NMAE":
       "SRM Madurai College for Engineering and Technology (Formely Madurai Institute of Engineering and Technology), Pottapalayam Village  Manamadurai Taluk  Sivagangai District 630611",
     "BRANCH CODE": "CE",
@@ -44275,7 +44275,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5842,
+    "College Code": 5842,
     "COLLEGE NMAE":
       "SRM Madurai College for Engineering and Technology (Formely Madurai Institute of Engineering and Technology), Pottapalayam Village  Manamadurai Taluk  Sivagangai District 630611",
     "BRANCH CODE": "CS",
@@ -44289,7 +44289,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5842,
+    "College Code": 5842,
     "COLLEGE NMAE":
       "SRM Madurai College for Engineering and Technology (Formely Madurai Institute of Engineering and Technology), Pottapalayam Village  Manamadurai Taluk  Sivagangai District 630611",
     "BRANCH CODE": "EC",
@@ -44303,7 +44303,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5842,
+    "College Code": 5842,
     "COLLEGE NMAE":
       "SRM Madurai College for Engineering and Technology (Formely Madurai Institute of Engineering and Technology), Pottapalayam Village  Manamadurai Taluk  Sivagangai District 630611",
     "BRANCH CODE": "EE",
@@ -44317,7 +44317,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5842,
+    "College Code": 5842,
     "COLLEGE NMAE":
       "SRM Madurai College for Engineering and Technology (Formely Madurai Institute of Engineering and Technology), Pottapalayam Village  Manamadurai Taluk  Sivagangai District 630611",
     "BRANCH CODE": "IT",
@@ -44331,7 +44331,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5842,
+    "College Code": 5842,
     "COLLEGE NMAE":
       "SRM Madurai College for Engineering and Technology (Formely Madurai Institute of Engineering and Technology), Pottapalayam Village  Manamadurai Taluk  Sivagangai District 630611",
     "BRANCH CODE": "ME",
@@ -44345,7 +44345,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5842,
+    "College Code": 5842,
     "COLLEGE NMAE":
       "SRM Madurai College for Engineering and Technology (Formely Madurai Institute of Engineering and Technology), Pottapalayam Village  Manamadurai Taluk  Sivagangai District 630611",
     "BRANCH CODE": "SC",
@@ -44359,7 +44359,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5851,
+    "College Code": 5851,
     "COLLEGE NMAE":
       "Veerammal Engineering College  PVP Nagar  K.Singrakottai Dindigul-624708",
     "BRANCH CODE": "CE",
@@ -44373,7 +44373,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5851,
+    "College Code": 5851,
     "COLLEGE NMAE":
       "Veerammal Engineering College  PVP Nagar  K.Singrakottai Dindigul-624708",
     "BRANCH CODE": "CS",
@@ -44387,7 +44387,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5851,
+    "College Code": 5851,
     "COLLEGE NMAE":
       "Veerammal Engineering College  PVP Nagar  K.Singrakottai Dindigul-624708",
     "BRANCH CODE": "EC",
@@ -44401,7 +44401,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5851,
+    "College Code": 5851,
     "COLLEGE NMAE":
       "Veerammal Engineering College  PVP Nagar  K.Singrakottai Dindigul-624708",
     "BRANCH CODE": "EE",
@@ -44415,7 +44415,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5862,
+    "College Code": 5862,
     "COLLEGE NMAE":
       "R V S Educational Trust's Groups of Institutions, (Integrated Campus)  N Paraipatti Post  Vedasandur Taluk  Dindigul District 624005",
     "BRANCH CODE": "AE",
@@ -44429,7 +44429,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5862,
+    "College Code": 5862,
     "COLLEGE NMAE":
       "R V S Educational Trust's Groups of Institutions, (Integrated Campus)  N Paraipatti Post  Vedasandur Taluk  Dindigul District 624005",
     "BRANCH CODE": "AG",
@@ -44443,7 +44443,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5862,
+    "College Code": 5862,
     "COLLEGE NMAE":
       "R V S Educational Trust's Groups of Institutions, (Integrated Campus)  N Paraipatti Post  Vedasandur Taluk  Dindigul District 624005",
     "BRANCH CODE": "AU",
@@ -44457,7 +44457,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5862,
+    "College Code": 5862,
     "COLLEGE NMAE":
       "R V S Educational Trust's Groups of Institutions, (Integrated Campus)  N Paraipatti Post  Vedasandur Taluk  Dindigul District 624005",
     "BRANCH CODE": "BM",
@@ -44471,7 +44471,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5862,
+    "College Code": 5862,
     "COLLEGE NMAE":
       "R V S Educational Trust's Groups of Institutions, (Integrated Campus)  N Paraipatti Post  Vedasandur Taluk  Dindigul District 624005",
     "BRANCH CODE": "CB",
@@ -44485,7 +44485,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5862,
+    "College Code": 5862,
     "COLLEGE NMAE":
       "R V S Educational Trust's Groups of Institutions, (Integrated Campus)  N Paraipatti Post  Vedasandur Taluk  Dindigul District 624005",
     "BRANCH CODE": "CE",
@@ -44499,7 +44499,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5862,
+    "College Code": 5862,
     "COLLEGE NMAE":
       "R V S Educational Trust's Groups of Institutions, (Integrated Campus)  N Paraipatti Post  Vedasandur Taluk  Dindigul District 624005",
     "BRANCH CODE": "CS",
@@ -44513,7 +44513,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5862,
+    "College Code": 5862,
     "COLLEGE NMAE":
       "R V S Educational Trust's Groups of Institutions, (Integrated Campus)  N Paraipatti Post  Vedasandur Taluk  Dindigul District 624005",
     "BRANCH CODE": "ME",
@@ -44527,7 +44527,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5862,
+    "College Code": 5862,
     "COLLEGE NMAE":
       "R V S Educational Trust's Groups of Institutions, (Integrated Campus)  N Paraipatti Post  Vedasandur Taluk  Dindigul District 624005",
     "BRANCH CODE": "SC",
@@ -44541,7 +44541,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5865,
+    "College Code": 5865,
     "COLLEGE NMAE":
       "Nadar Saraswathi College of Engineering and Technology Vadupudupatti  Annanji Post  Theni District 625531",
     "BRANCH CODE": "AD",
@@ -44555,7 +44555,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5865,
+    "College Code": 5865,
     "COLLEGE NMAE":
       "Nadar Saraswathi College of Engineering and Technology Vadupudupatti  Annanji Post  Theni District 625531",
     "BRANCH CODE": "CE",
@@ -44569,7 +44569,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5865,
+    "College Code": 5865,
     "COLLEGE NMAE":
       "Nadar Saraswathi College of Engineering and Technology Vadupudupatti  Annanji Post  Theni District 625531",
     "BRANCH CODE": "CS",
@@ -44583,7 +44583,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5865,
+    "College Code": 5865,
     "COLLEGE NMAE":
       "Nadar Saraswathi College of Engineering and Technology Vadupudupatti  Annanji Post  Theni District 625531",
     "BRANCH CODE": "EC",
@@ -44597,7 +44597,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5865,
+    "College Code": 5865,
     "COLLEGE NMAE":
       "Nadar Saraswathi College of Engineering and Technology Vadupudupatti  Annanji Post  Theni District 625531",
     "BRANCH CODE": "EE",
@@ -44611,7 +44611,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5865,
+    "College Code": 5865,
     "COLLEGE NMAE":
       "Nadar Saraswathi College of Engineering and Technology Vadupudupatti  Annanji Post  Theni District 625531",
     "BRANCH CODE": "IT",
@@ -44625,7 +44625,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5865,
+    "College Code": 5865,
     "COLLEGE NMAE":
       "Nadar Saraswathi College of Engineering and Technology Vadupudupatti  Annanji Post  Theni District 625531",
     "BRANCH CODE": "ME",
@@ -44639,7 +44639,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5901,
+    "College Code": 5901,
     "COLLEGE NMAE":
       "Alagappa Chettair Government College of Engineering and Technology (Autonomous)  Karaikudi  Sivagangai District 630004",
     "BRANCH CODE": "CE",
@@ -44653,7 +44653,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5901,
+    "College Code": 5901,
     "COLLEGE NMAE":
       "Alagappa Chettair Government College of Engineering and Technology (Autonomous)  Karaikudi  Sivagangai District 630004",
     "BRANCH CODE": "CS",
@@ -44667,7 +44667,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5901,
+    "College Code": 5901,
     "COLLEGE NMAE":
       "Alagappa Chettair Government College of Engineering and Technology (Autonomous)  Karaikudi  Sivagangai District 630004",
     "BRANCH CODE": "EC",
@@ -44681,7 +44681,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5901,
+    "College Code": 5901,
     "COLLEGE NMAE":
       "Alagappa Chettair Government College of Engineering and Technology (Autonomous)  Karaikudi  Sivagangai District 630004",
     "BRANCH CODE": "EE",
@@ -44695,7 +44695,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5901,
+    "College Code": 5901,
     "COLLEGE NMAE":
       "Alagappa Chettair Government College of Engineering and Technology (Autonomous)  Karaikudi  Sivagangai District 630004",
     "BRANCH CODE": "ME",
@@ -44709,7 +44709,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5902,
+    "College Code": 5902,
     "COLLEGE NMAE":
       "Bharath Niketan Engineering College Thimmarasanaickanoor  Aundipatti  Theni District 625536",
     "BRANCH CODE": "AD",
@@ -44723,7 +44723,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5902,
+    "College Code": 5902,
     "COLLEGE NMAE":
       "Bharath Niketan Engineering College Thimmarasanaickanoor  Aundipatti  Theni District 625536",
     "BRANCH CODE": "CE",
@@ -44737,7 +44737,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5902,
+    "College Code": 5902,
     "COLLEGE NMAE":
       "Bharath Niketan Engineering College Thimmarasanaickanoor  Aundipatti  Theni District 625536",
     "BRANCH CODE": "CS",
@@ -44751,7 +44751,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5902,
+    "College Code": 5902,
     "COLLEGE NMAE":
       "Bharath Niketan Engineering College Thimmarasanaickanoor  Aundipatti  Theni District 625536",
     "BRANCH CODE": "EC",
@@ -44765,7 +44765,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5902,
+    "College Code": 5902,
     "COLLEGE NMAE":
       "Bharath Niketan Engineering College Thimmarasanaickanoor  Aundipatti  Theni District 625536",
     "BRANCH CODE": "EE",
@@ -44779,7 +44779,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5902,
+    "College Code": 5902,
     "COLLEGE NMAE":
       "Bharath Niketan Engineering College Thimmarasanaickanoor  Aundipatti  Theni District 625536",
     "BRANCH CODE": "IT",
@@ -44793,7 +44793,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5902,
+    "College Code": 5902,
     "COLLEGE NMAE":
       "Bharath Niketan Engineering College Thimmarasanaickanoor  Aundipatti  Theni District 625536",
     "BRANCH CODE": "ME",
@@ -44807,7 +44807,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5904,
+    "College Code": 5904,
     "COLLEGE NMAE":
       "K L N College of Engineering (Autonomous)  Pottapalayam Sivagangai District 630611",
     "BRANCH CODE": "AD",
@@ -44821,7 +44821,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5904,
+    "College Code": 5904,
     "COLLEGE NMAE":
       "K L N College of Engineering (Autonomous)  Pottapalayam Sivagangai District 630611",
     "BRANCH CODE": "CI",
@@ -44835,7 +44835,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5904,
+    "College Code": 5904,
     "COLLEGE NMAE":
       "K L N College of Engineering (Autonomous)  Pottapalayam Sivagangai District 630611",
     "BRANCH CODE": "CS",
@@ -44849,7 +44849,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5904,
+    "College Code": 5904,
     "COLLEGE NMAE":
       "K L N College of Engineering (Autonomous)  Pottapalayam Sivagangai District 630611",
     "BRANCH CODE": "EC",
@@ -44863,7 +44863,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5904,
+    "College Code": 5904,
     "COLLEGE NMAE":
       "K L N College of Engineering (Autonomous)  Pottapalayam Sivagangai District 630611",
     "BRANCH CODE": "EE",
@@ -44877,7 +44877,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5904,
+    "College Code": 5904,
     "COLLEGE NMAE":
       "K L N College of Engineering (Autonomous)  Pottapalayam Sivagangai District 630611",
     "BRANCH CODE": "IT",
@@ -44891,7 +44891,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5904,
+    "College Code": 5904,
     "COLLEGE NMAE":
       "K L N College of Engineering (Autonomous)  Pottapalayam Sivagangai District 630611",
     "BRANCH CODE": "ME",
@@ -44905,7 +44905,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5904,
+    "College Code": 5904,
     "COLLEGE NMAE":
       "K L N College of Engineering (Autonomous)  Pottapalayam Sivagangai District 630611",
     "BRANCH CODE": "SC",
@@ -44919,7 +44919,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5907,
+    "College Code": 5907,
     "COLLEGE NMAE":
       "Mohamed Sathak Engineering College  Kilakarai Ramanathapuram District 623806",
     "BRANCH CODE": "AD",
@@ -44933,7 +44933,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5907,
+    "College Code": 5907,
     "COLLEGE NMAE":
       "Mohamed Sathak Engineering College  Kilakarai Ramanathapuram District 623806",
     "BRANCH CODE": "AE",
@@ -44947,7 +44947,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5907,
+    "College Code": 5907,
     "COLLEGE NMAE":
       "Mohamed Sathak Engineering College  Kilakarai Ramanathapuram District 623806",
     "BRANCH CODE": "AG",
@@ -44961,7 +44961,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5907,
+    "College Code": 5907,
     "COLLEGE NMAE":
       "Mohamed Sathak Engineering College  Kilakarai Ramanathapuram District 623806",
     "BRANCH CODE": "CB",
@@ -44975,7 +44975,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5907,
+    "College Code": 5907,
     "COLLEGE NMAE":
       "Mohamed Sathak Engineering College  Kilakarai Ramanathapuram District 623806",
     "BRANCH CODE": "CE",
@@ -44989,7 +44989,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5907,
+    "College Code": 5907,
     "COLLEGE NMAE":
       "Mohamed Sathak Engineering College  Kilakarai Ramanathapuram District 623806",
     "BRANCH CODE": "CH",
@@ -45003,7 +45003,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5907,
+    "College Code": 5907,
     "COLLEGE NMAE":
       "Mohamed Sathak Engineering College  Kilakarai Ramanathapuram District 623806",
     "BRANCH CODE": "CS",
@@ -45017,7 +45017,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5907,
+    "College Code": 5907,
     "COLLEGE NMAE":
       "Mohamed Sathak Engineering College  Kilakarai Ramanathapuram District 623806",
     "BRANCH CODE": "EC",
@@ -45031,7 +45031,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5907,
+    "College Code": 5907,
     "COLLEGE NMAE":
       "Mohamed Sathak Engineering College  Kilakarai Ramanathapuram District 623806",
     "BRANCH CODE": "EE",
@@ -45045,7 +45045,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5907,
+    "College Code": 5907,
     "COLLEGE NMAE":
       "Mohamed Sathak Engineering College  Kilakarai Ramanathapuram District 623806",
     "BRANCH CODE": "IT",
@@ -45059,7 +45059,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5907,
+    "College Code": 5907,
     "COLLEGE NMAE":
       "Mohamed Sathak Engineering College  Kilakarai Ramanathapuram District 623806",
     "BRANCH CODE": "ME",
@@ -45073,7 +45073,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5907,
+    "College Code": 5907,
     "COLLEGE NMAE":
       "Mohamed Sathak Engineering College  Kilakarai Ramanathapuram District 623806",
     "BRANCH CODE": "MR",
@@ -45087,7 +45087,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5910,
+    "College Code": 5910,
     "COLLEGE NMAE":
       "P S N A Colllege of Engineering and Technology (Autonomous),  Dindigul District 624622",
     "BRANCH CODE": "AD",
@@ -45101,7 +45101,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5910,
+    "College Code": 5910,
     "COLLEGE NMAE":
       "P S N A Colllege of Engineering and Technology (Autonomous),  Dindigul District 624622",
     "BRANCH CODE": "BM",
@@ -45115,7 +45115,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5910,
+    "College Code": 5910,
     "COLLEGE NMAE":
       "P S N A Colllege of Engineering and Technology (Autonomous),  Dindigul District 624622",
     "BRANCH CODE": "CB",
@@ -45129,7 +45129,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5910,
+    "College Code": 5910,
     "COLLEGE NMAE":
       "P S N A Colllege of Engineering and Technology (Autonomous),  Dindigul District 624622",
     "BRANCH CODE": "CE",
@@ -45143,7 +45143,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5910,
+    "College Code": 5910,
     "COLLEGE NMAE":
       "P S N A Colllege of Engineering and Technology (Autonomous),  Dindigul District 624622",
     "BRANCH CODE": "CS",
@@ -45157,7 +45157,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5910,
+    "College Code": 5910,
     "COLLEGE NMAE":
       "P S N A Colllege of Engineering and Technology (Autonomous),  Dindigul District 624622",
     "BRANCH CODE": "EC",
@@ -45171,7 +45171,7 @@ export const collegeChoiceListR2 = [
     ST: 2,
   },
   {
-    "COLLEGE CODE": 5910,
+    "College Code": 5910,
     "COLLEGE NMAE":
       "P S N A Colllege of Engineering and Technology (Autonomous),  Dindigul District 624622",
     "BRANCH CODE": "EE",
@@ -45185,7 +45185,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5910,
+    "College Code": 5910,
     "COLLEGE NMAE":
       "P S N A Colllege of Engineering and Technology (Autonomous),  Dindigul District 624622",
     "BRANCH CODE": "IT",
@@ -45199,7 +45199,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5910,
+    "College Code": 5910,
     "COLLEGE NMAE":
       "P S N A Colllege of Engineering and Technology (Autonomous),  Dindigul District 624622",
     "BRANCH CODE": "ME",
@@ -45213,7 +45213,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5910,
+    "College Code": 5910,
     "COLLEGE NMAE":
       "P S N A Colllege of Engineering and Technology (Autonomous),  Dindigul District 624622",
     "BRANCH CODE": "SC",
@@ -45227,7 +45227,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5911,
+    "College Code": 5911,
     "COLLEGE NMAE":
       "P T R College of Engineering and Technology Thanapandiyan Nagar  Austinpatty Post  Madurai District 625008",
     "BRANCH CODE": "CE",
@@ -45241,7 +45241,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5911,
+    "College Code": 5911,
     "COLLEGE NMAE":
       "P T R College of Engineering and Technology Thanapandiyan Nagar  Austinpatty Post  Madurai District 625008",
     "BRANCH CODE": "CS",
@@ -45255,7 +45255,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5911,
+    "College Code": 5911,
     "COLLEGE NMAE":
       "P T R College of Engineering and Technology Thanapandiyan Nagar  Austinpatty Post  Madurai District 625008",
     "BRANCH CODE": "EC",
@@ -45269,7 +45269,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5911,
+    "College Code": 5911,
     "COLLEGE NMAE":
       "P T R College of Engineering and Technology Thanapandiyan Nagar  Austinpatty Post  Madurai District 625008",
     "BRANCH CODE": "EE",
@@ -45283,7 +45283,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5911,
+    "College Code": 5911,
     "COLLEGE NMAE":
       "P T R College of Engineering and Technology Thanapandiyan Nagar  Austinpatty Post  Madurai District 625008",
     "BRANCH CODE": "ME",
@@ -45297,7 +45297,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5912,
+    "College Code": 5912,
     "COLLEGE NMAE":
       "Pandian Saraswathi Yadav Engineering College Thirumansolai Post  Sivagangai District 630 561",
     "BRANCH CODE": "AD",
@@ -45311,7 +45311,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5912,
+    "College Code": 5912,
     "COLLEGE NMAE":
       "Pandian Saraswathi Yadav Engineering College Thirumansolai Post  Sivagangai District 630 561",
     "BRANCH CODE": "AM",
@@ -45326,7 +45326,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5912,
+    "College Code": 5912,
     "COLLEGE NMAE":
       "Pandian Saraswathi Yadav Engineering College Thirumansolai Post  Sivagangai District 630 561",
     "BRANCH CODE": "CE",
@@ -45340,7 +45340,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5912,
+    "College Code": 5912,
     "COLLEGE NMAE":
       "Pandian Saraswathi Yadav Engineering College Thirumansolai Post  Sivagangai District 630 561",
     "BRANCH CODE": "CS",
@@ -45354,7 +45354,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5912,
+    "College Code": 5912,
     "COLLEGE NMAE":
       "Pandian Saraswathi Yadav Engineering College Thirumansolai Post  Sivagangai District 630 561",
     "BRANCH CODE": "EC",
@@ -45368,7 +45368,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5912,
+    "College Code": 5912,
     "COLLEGE NMAE":
       "Pandian Saraswathi Yadav Engineering College Thirumansolai Post  Sivagangai District 630 561",
     "BRANCH CODE": "EE",
@@ -45382,7 +45382,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5912,
+    "College Code": 5912,
     "COLLEGE NMAE":
       "Pandian Saraswathi Yadav Engineering College Thirumansolai Post  Sivagangai District 630 561",
     "BRANCH CODE": "IT",
@@ -45396,7 +45396,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5912,
+    "College Code": 5912,
     "COLLEGE NMAE":
       "Pandian Saraswathi Yadav Engineering College Thirumansolai Post  Sivagangai District 630 561",
     "BRANCH CODE": "ME",
@@ -45410,7 +45410,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5912,
+    "College Code": 5912,
     "COLLEGE NMAE":
       "Pandian Saraswathi Yadav Engineering College Thirumansolai Post  Sivagangai District 630 561",
     "BRANCH CODE": "RM",
@@ -45424,7 +45424,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5912,
+    "College Code": 5912,
     "COLLEGE NMAE":
       "Pandian Saraswathi Yadav Engineering College Thirumansolai Post  Sivagangai District 630 561",
     "BRANCH CODE": "SC",
@@ -45438,7 +45438,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5913,
+    "College Code": 5913,
     "COLLEGE NMAE":
       "R V S College of Engineering  N Paraipatti Post  Dindigul District 624005",
     "BRANCH CODE": "AD",
@@ -45452,7 +45452,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5913,
+    "College Code": 5913,
     "COLLEGE NMAE":
       "R V S College of Engineering  N Paraipatti Post  Dindigul District 624005",
     "BRANCH CODE": "CE",
@@ -45466,7 +45466,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5913,
+    "College Code": 5913,
     "COLLEGE NMAE":
       "R V S College of Engineering  N Paraipatti Post  Dindigul District 624005",
     "BRANCH CODE": "CS",
@@ -45480,7 +45480,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5913,
+    "College Code": 5913,
     "COLLEGE NMAE":
       "R V S College of Engineering  N Paraipatti Post  Dindigul District 624005",
     "BRANCH CODE": "EC",
@@ -45494,7 +45494,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5913,
+    "College Code": 5913,
     "COLLEGE NMAE":
       "R V S College of Engineering  N Paraipatti Post  Dindigul District 624005",
     "BRANCH CODE": "EE",
@@ -45508,7 +45508,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5913,
+    "College Code": 5913,
     "COLLEGE NMAE":
       "R V S College of Engineering  N Paraipatti Post  Dindigul District 624005",
     "BRANCH CODE": "IT",
@@ -45522,7 +45522,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5913,
+    "College Code": 5913,
     "COLLEGE NMAE":
       "R V S College of Engineering  N Paraipatti Post  Dindigul District 624005",
     "BRANCH CODE": "ME",
@@ -45536,7 +45536,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5913,
+    "College Code": 5913,
     "COLLEGE NMAE":
       "R V S College of Engineering  N Paraipatti Post  Dindigul District 624005",
     "BRANCH CODE": "PC",
@@ -45550,7 +45550,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5913,
+    "College Code": 5913,
     "COLLEGE NMAE":
       "R V S College of Engineering  N Paraipatti Post  Dindigul District 624005",
     "BRANCH CODE": "TX",
@@ -45564,7 +45564,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5914,
+    "College Code": 5914,
     "COLLEGE NMAE":
       "Solamalai College of Engineering  Veerapanjan  Madurai District 625020",
     "BRANCH CODE": "AD",
@@ -45578,7 +45578,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5914,
+    "College Code": 5914,
     "COLLEGE NMAE":
       "Solamalai College of Engineering  Veerapanjan  Madurai District 625020",
     "BRANCH CODE": "CB",
@@ -45592,7 +45592,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5914,
+    "College Code": 5914,
     "COLLEGE NMAE":
       "Solamalai College of Engineering  Veerapanjan  Madurai District 625020",
     "BRANCH CODE": "CE",
@@ -45606,7 +45606,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5914,
+    "College Code": 5914,
     "COLLEGE NMAE":
       "Solamalai College of Engineering  Veerapanjan  Madurai District 625020",
     "BRANCH CODE": "CS",
@@ -45620,7 +45620,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5914,
+    "College Code": 5914,
     "COLLEGE NMAE":
       "Solamalai College of Engineering  Veerapanjan  Madurai District 625020",
     "BRANCH CODE": "EC",
@@ -45634,7 +45634,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5914,
+    "College Code": 5914,
     "COLLEGE NMAE":
       "Solamalai College of Engineering  Veerapanjan  Madurai District 625020",
     "BRANCH CODE": "EE",
@@ -45648,7 +45648,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5914,
+    "College Code": 5914,
     "COLLEGE NMAE":
       "Solamalai College of Engineering  Veerapanjan  Madurai District 625020",
     "BRANCH CODE": "ME",
@@ -45662,7 +45662,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5915,
+    "College Code": 5915,
     "COLLEGE NMAE":
       "SACS-M A V M M Engineering College  Kidaripatty Post Madurai District 625301",
     "BRANCH CODE": "CE",
@@ -45676,7 +45676,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5915,
+    "College Code": 5915,
     "COLLEGE NMAE":
       "SACS-M A V M M Engineering College  Kidaripatty Post Madurai District 625301",
     "BRANCH CODE": "CS",
@@ -45690,7 +45690,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5915,
+    "College Code": 5915,
     "COLLEGE NMAE":
       "SACS-M A V M M Engineering College  Kidaripatty Post Madurai District 625301",
     "BRANCH CODE": "EC",
@@ -45704,7 +45704,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5915,
+    "College Code": 5915,
     "COLLEGE NMAE":
       "SACS-M A V M M Engineering College  Kidaripatty Post Madurai District 625301",
     "BRANCH CODE": "EE",
@@ -45718,7 +45718,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5915,
+    "College Code": 5915,
     "COLLEGE NMAE":
       "SACS-M A V M M Engineering College  Kidaripatty Post Madurai District 625301",
     "BRANCH CODE": "ME",
@@ -45732,7 +45732,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5919,
+    "College Code": 5919,
     "COLLEGE NMAE":
       "St. Michael College of Engineering and Technology Kalayarkoil  Sivagangai District 630551",
     "BRANCH CODE": "AM",
@@ -45747,7 +45747,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5919,
+    "College Code": 5919,
     "COLLEGE NMAE":
       "St. Michael College of Engineering and Technology Kalayarkoil  Sivagangai District 630551",
     "BRANCH CODE": "BM",
@@ -45761,7 +45761,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5919,
+    "College Code": 5919,
     "COLLEGE NMAE":
       "St. Michael College of Engineering and Technology Kalayarkoil  Sivagangai District 630551",
     "BRANCH CODE": "BT",
@@ -45775,7 +45775,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5919,
+    "College Code": 5919,
     "COLLEGE NMAE":
       "St. Michael College of Engineering and Technology Kalayarkoil  Sivagangai District 630551",
     "BRANCH CODE": "CH",
@@ -45789,7 +45789,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5919,
+    "College Code": 5919,
     "COLLEGE NMAE":
       "St. Michael College of Engineering and Technology Kalayarkoil  Sivagangai District 630551",
     "BRANCH CODE": "CS",
@@ -45803,7 +45803,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5919,
+    "College Code": 5919,
     "COLLEGE NMAE":
       "St. Michael College of Engineering and Technology Kalayarkoil  Sivagangai District 630551",
     "BRANCH CODE": "EC",
@@ -45817,7 +45817,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5919,
+    "College Code": 5919,
     "COLLEGE NMAE":
       "St. Michael College of Engineering and Technology Kalayarkoil  Sivagangai District 630551",
     "BRANCH CODE": "EE",
@@ -45831,7 +45831,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5919,
+    "College Code": 5919,
     "COLLEGE NMAE":
       "St. Michael College of Engineering and Technology Kalayarkoil  Sivagangai District 630551",
     "BRANCH CODE": "ME",
@@ -45845,7 +45845,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5921,
+    "College Code": 5921,
     "COLLEGE NMAE":
       "Syed Ammal Engineering College  Achuthan Vayal Post Ramanathapuram District 623502",
     "BRANCH CODE": "AD",
@@ -45859,7 +45859,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5921,
+    "College Code": 5921,
     "COLLEGE NMAE":
       "Syed Ammal Engineering College  Achuthan Vayal Post Ramanathapuram District 623502",
     "BRANCH CODE": "BM",
@@ -45873,7 +45873,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5921,
+    "College Code": 5921,
     "COLLEGE NMAE":
       "Syed Ammal Engineering College  Achuthan Vayal Post Ramanathapuram District 623502",
     "BRANCH CODE": "CB",
@@ -45887,7 +45887,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5921,
+    "College Code": 5921,
     "COLLEGE NMAE":
       "Syed Ammal Engineering College  Achuthan Vayal Post Ramanathapuram District 623502",
     "BRANCH CODE": "CE",
@@ -45901,7 +45901,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5921,
+    "College Code": 5921,
     "COLLEGE NMAE":
       "Syed Ammal Engineering College  Achuthan Vayal Post Ramanathapuram District 623502",
     "BRANCH CODE": "CS",
@@ -45915,7 +45915,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5921,
+    "College Code": 5921,
     "COLLEGE NMAE":
       "Syed Ammal Engineering College  Achuthan Vayal Post Ramanathapuram District 623502",
     "BRANCH CODE": "EC",
@@ -45929,7 +45929,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5921,
+    "College Code": 5921,
     "COLLEGE NMAE":
       "Syed Ammal Engineering College  Achuthan Vayal Post Ramanathapuram District 623502",
     "BRANCH CODE": "EE",
@@ -45943,7 +45943,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5921,
+    "College Code": 5921,
     "COLLEGE NMAE":
       "Syed Ammal Engineering College  Achuthan Vayal Post Ramanathapuram District 623502",
     "BRANCH CODE": "ME",
@@ -45957,7 +45957,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5924,
+    "College Code": 5924,
     "COLLEGE NMAE":
       "Ganapathy Chettiar College of Engineering and Technology Melakavanur Post  Paramakudi  Ramanathapuram District 623706",
     "BRANCH CODE": "CE",
@@ -45971,7 +45971,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5924,
+    "College Code": 5924,
     "COLLEGE NMAE":
       "Ganapathy Chettiar College of Engineering and Technology Melakavanur Post  Paramakudi  Ramanathapuram District 623706",
     "BRANCH CODE": "CS",
@@ -45985,7 +45985,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5924,
+    "College Code": 5924,
     "COLLEGE NMAE":
       "Ganapathy Chettiar College of Engineering and Technology Melakavanur Post  Paramakudi  Ramanathapuram District 623706",
     "BRANCH CODE": "EC",
@@ -45999,7 +45999,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5924,
+    "College Code": 5924,
     "COLLEGE NMAE":
       "Ganapathy Chettiar College of Engineering and Technology Melakavanur Post  Paramakudi  Ramanathapuram District 623706",
     "BRANCH CODE": "EE",
@@ -46013,7 +46013,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5924,
+    "College Code": 5924,
     "COLLEGE NMAE":
       "Ganapathy Chettiar College of Engineering and Technology Melakavanur Post  Paramakudi  Ramanathapuram District 623706",
     "BRANCH CODE": "IT",
@@ -46027,7 +46027,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5924,
+    "College Code": 5924,
     "COLLEGE NMAE":
       "Ganapathy Chettiar College of Engineering and Technology Melakavanur Post  Paramakudi  Ramanathapuram District 623706",
     "BRANCH CODE": "ME",
@@ -46041,7 +46041,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5930,
+    "College Code": 5930,
     "COLLEGE NMAE":
       "SBM College of Engineering and Technology  Thamaraipady T N Paraipatti Pirivu  Dindigul District 624005",
     "BRANCH CODE": "CE",
@@ -46055,7 +46055,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5930,
+    "College Code": 5930,
     "COLLEGE NMAE":
       "SBM College of Engineering and Technology  Thamaraipady T N Paraipatti Pirivu  Dindigul District 624005",
     "BRANCH CODE": "CS",
@@ -46069,7 +46069,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5930,
+    "College Code": 5930,
     "COLLEGE NMAE":
       "SBM College of Engineering and Technology  Thamaraipady T N Paraipatti Pirivu  Dindigul District 624005",
     "BRANCH CODE": "EC",
@@ -46083,7 +46083,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5930,
+    "College Code": 5930,
     "COLLEGE NMAE":
       "SBM College of Engineering and Technology  Thamaraipady T N Paraipatti Pirivu  Dindigul District 624005",
     "BRANCH CODE": "EE",
@@ -46097,7 +46097,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5930,
+    "College Code": 5930,
     "COLLEGE NMAE":
       "SBM College of Engineering and Technology  Thamaraipady T N Paraipatti Pirivu  Dindigul District 624005",
     "BRANCH CODE": "ME",
@@ -46111,7 +46111,7 @@ export const collegeChoiceListR2 = [
     ST: 2,
   },
   {
-    "COLLEGE CODE": 5935,
+    "College Code": 5935,
     "COLLEGE NMAE":
       "Fatima Michael College of Engineering and Technology Sengottai Village  Sivagangai Main Road  Madurai District 625020",
     "BRANCH CODE": "AM",
@@ -46126,7 +46126,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5935,
+    "College Code": 5935,
     "COLLEGE NMAE":
       "Fatima Michael College of Engineering and Technology Sengottai Village  Sivagangai Main Road  Madurai District 625020",
     "BRANCH CODE": "AU",
@@ -46140,7 +46140,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5935,
+    "College Code": 5935,
     "COLLEGE NMAE":
       "Fatima Michael College of Engineering and Technology Sengottai Village  Sivagangai Main Road  Madurai District 625020",
     "BRANCH CODE": "CE",
@@ -46154,7 +46154,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5935,
+    "College Code": 5935,
     "COLLEGE NMAE":
       "Fatima Michael College of Engineering and Technology Sengottai Village  Sivagangai Main Road  Madurai District 625020",
     "BRANCH CODE": "CS",
@@ -46168,7 +46168,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5935,
+    "College Code": 5935,
     "COLLEGE NMAE":
       "Fatima Michael College of Engineering and Technology Sengottai Village  Sivagangai Main Road  Madurai District 625020",
     "BRANCH CODE": "EC",
@@ -46182,7 +46182,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5935,
+    "College Code": 5935,
     "COLLEGE NMAE":
       "Fatima Michael College of Engineering and Technology Sengottai Village  Sivagangai Main Road  Madurai District 625020",
     "BRANCH CODE": "EE",
@@ -46196,7 +46196,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5935,
+    "College Code": 5935,
     "COLLEGE NMAE":
       "Fatima Michael College of Engineering and Technology Sengottai Village  Sivagangai Main Road  Madurai District 625020",
     "BRANCH CODE": "ME",
@@ -46210,7 +46210,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5935,
+    "College Code": 5935,
     "COLLEGE NMAE":
       "Fatima Michael College of Engineering and Technology Sengottai Village  Sivagangai Main Road  Madurai District 625020",
     "BRANCH CODE": "SC",
@@ -46224,7 +46224,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5942,
+    "College Code": 5942,
     "COLLEGE NMAE":
       "Ultra College of Engineering and  Technology  Kodikulam  1 Bit Village  Madurai-Chennai Highway  Madurai District 625104",
     "BRANCH CODE": "CE",
@@ -46238,7 +46238,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5942,
+    "College Code": 5942,
     "COLLEGE NMAE":
       "Ultra College of Engineering and  Technology  Kodikulam  1 Bit Village  Madurai-Chennai Highway  Madurai District 625104",
     "BRANCH CODE": "CS",
@@ -46252,7 +46252,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5942,
+    "College Code": 5942,
     "COLLEGE NMAE":
       "Ultra College of Engineering and  Technology  Kodikulam  1 Bit Village  Madurai-Chennai Highway  Madurai District 625104",
     "BRANCH CODE": "EC",
@@ -46266,7 +46266,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5942,
+    "College Code": 5942,
     "COLLEGE NMAE":
       "Ultra College of Engineering and  Technology  Kodikulam  1 Bit Village  Madurai-Chennai Highway  Madurai District 625104",
     "BRANCH CODE": "EE",
@@ -46280,7 +46280,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5942,
+    "College Code": 5942,
     "COLLEGE NMAE":
       "Ultra College of Engineering and  Technology  Kodikulam  1 Bit Village  Madurai-Chennai Highway  Madurai District 625104",
     "BRANCH CODE": "IT",
@@ -46294,7 +46294,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5942,
+    "College Code": 5942,
     "COLLEGE NMAE":
       "Ultra College of Engineering and  Technology  Kodikulam  1 Bit Village  Madurai-Chennai Highway  Madurai District 625104",
     "BRANCH CODE": "ME",
@@ -46308,7 +46308,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5986,
+    "College Code": 5986,
     "COLLEGE NMAE":
       "Velammal College of Engineering and Technology (Autonomous) Madurai District 625009",
     "BRANCH CODE": "AD",
@@ -46322,7 +46322,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5986,
+    "College Code": 5986,
     "COLLEGE NMAE":
       "Velammal College of Engineering and Technology (Autonomous) Madurai District 625009",
     "BRANCH CODE": "CE",
@@ -46336,7 +46336,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5986,
+    "College Code": 5986,
     "COLLEGE NMAE":
       "Velammal College of Engineering and Technology (Autonomous) Madurai District 625009",
     "BRANCH CODE": "CS",
@@ -46350,7 +46350,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5986,
+    "College Code": 5986,
     "COLLEGE NMAE":
       "Velammal College of Engineering and Technology (Autonomous) Madurai District 625009",
     "BRANCH CODE": "EC",
@@ -46364,7 +46364,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5986,
+    "College Code": 5986,
     "COLLEGE NMAE":
       "Velammal College of Engineering and Technology (Autonomous) Madurai District 625009",
     "BRANCH CODE": "EE",
@@ -46378,7 +46378,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5986,
+    "College Code": 5986,
     "COLLEGE NMAE":
       "Velammal College of Engineering and Technology (Autonomous) Madurai District 625009",
     "BRANCH CODE": "IT",
@@ -46392,7 +46392,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5986,
+    "College Code": 5986,
     "COLLEGE NMAE":
       "Velammal College of Engineering and Technology (Autonomous) Madurai District 625009",
     "BRANCH CODE": "ME",
@@ -46406,7 +46406,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5988,
+    "College Code": 5988,
     "COLLEGE NMAE":
       "Theni Kammavar Sangam College of Technology  Theni Main Road  Koduvillarpatti Post  Theni District 625534",
     "BRANCH CODE": "CE",
@@ -46420,7 +46420,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5988,
+    "College Code": 5988,
     "COLLEGE NMAE":
       "Theni Kammavar Sangam College of Technology  Theni Main Road  Koduvillarpatti Post  Theni District 625534",
     "BRANCH CODE": "CS",
@@ -46434,7 +46434,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5988,
+    "College Code": 5988,
     "COLLEGE NMAE":
       "Theni Kammavar Sangam College of Technology  Theni Main Road  Koduvillarpatti Post  Theni District 625534",
     "BRANCH CODE": "EC",
@@ -46448,7 +46448,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5988,
+    "College Code": 5988,
     "COLLEGE NMAE":
       "Theni Kammavar Sangam College of Technology  Theni Main Road  Koduvillarpatti Post  Theni District 625534",
     "BRANCH CODE": "EE",
@@ -46462,7 +46462,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5988,
+    "College Code": 5988,
     "COLLEGE NMAE":
       "Theni Kammavar Sangam College of Technology  Theni Main Road  Koduvillarpatti Post  Theni District 625534",
     "BRANCH CODE": "IT",
@@ -46476,7 +46476,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5988,
+    "College Code": 5988,
     "COLLEGE NMAE":
       "Theni Kammavar Sangam College of Technology  Theni Main Road  Koduvillarpatti Post  Theni District 625534",
     "BRANCH CODE": "ME",
@@ -46490,7 +46490,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5990,
+    "College Code": 5990,
     "COLLEGE NMAE":
       "Latha Mathavan Engineering College  Kidaripatti Post Alagarkoil (Via)  Melur Taluk  Madurai District 625301",
     "BRANCH CODE": "CE",
@@ -46504,7 +46504,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5990,
+    "College Code": 5990,
     "COLLEGE NMAE":
       "Latha Mathavan Engineering College  Kidaripatti Post Alagarkoil (Via)  Melur Taluk  Madurai District 625301",
     "BRANCH CODE": "CS",
@@ -46518,7 +46518,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5990,
+    "College Code": 5990,
     "COLLEGE NMAE":
       "Latha Mathavan Engineering College  Kidaripatti Post Alagarkoil (Via)  Melur Taluk  Madurai District 625301",
     "BRANCH CODE": "EC",
@@ -46532,7 +46532,7 @@ export const collegeChoiceListR2 = [
     ST: 1,
   },
   {
-    "COLLEGE CODE": 5990,
+    "College Code": 5990,
     "COLLEGE NMAE":
       "Latha Mathavan Engineering College  Kidaripatti Post Alagarkoil (Via)  Melur Taluk  Madurai District 625301",
     "BRANCH CODE": "EE",
@@ -46546,7 +46546,7 @@ export const collegeChoiceListR2 = [
     ST: 0,
   },
   {
-    "COLLEGE CODE": 5990,
+    "College Code": 5990,
     "COLLEGE NMAE":
       "Latha Mathavan Engineering College  Kidaripatti Post Alagarkoil (Via)  Melur Taluk  Madurai District 625301",
     "BRANCH CODE": "ME",

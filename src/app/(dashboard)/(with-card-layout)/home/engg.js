@@ -121,7 +121,7 @@ const Home = () => {
   // current step ah depend ah paathu, if currstep not 1 or 0, then open if localstorageHomeTour is false
   useEffect(() => {
     const hasHomeFilterTourPlayed = localStorage.getItem("hasHomeFilterPlayed");
-    if (!isOpen && (!hasHomeFilterTourPlayed || hasHomeFilterTourPlayed != "true")) {
+    if (!isOpen && (!hasHomeFilterTourPlayed || hasHomeFilterTourPlayed != "true") && ![0, 1, 4, 5, 6].includes(currentStep)) {
       setIsOpen(true);
       setCurrentStep(2);
     }
