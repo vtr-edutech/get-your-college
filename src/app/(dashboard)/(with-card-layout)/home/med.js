@@ -63,7 +63,7 @@ export default function Med() {
 
   const [unSubmitSearch, setUnSubmitSearch] = useState({
     counsellingCategory: "STATE",
-    quota: COUNSELLING_CATEGORY["STATE"][0],
+    quota: COUNSELLING_CATEGORY["STATE"][0].value,
   })
 
   const [searchCriteria, setSearchCriteria] = useState({
@@ -150,12 +150,14 @@ export default function Med() {
                     return value && { color: "white" };
                   },
                 }}
-                onChange={
-                  (value) => {
-                    setValue("counsellingCategory", value);
-                    setUnSubmitSearch(prev => ({ ...prev, counsellingCategory: value, quota: COUNSELLING_CATEGORY[value][0].value }));
-                  }
-                }
+                onChange={(value) => {
+                  setValue("counsellingCategory", value);
+                  setUnSubmitSearch((prev) => ({
+                    ...prev,
+                    counsellingCategory: value,
+                    quota: COUNSELLING_CATEGORY[value][0].value,
+                  }));
+                }}
                 data={[
                   {
                     label: "State",
@@ -164,7 +166,7 @@ export default function Med() {
                   {
                     label: "MCC",
                     value: "MCC",
-                    disabled: true
+                    disabled: true,
                   },
                 ]}
               >
@@ -196,9 +198,11 @@ export default function Med() {
                 value={unSubmitSearch.quota}
                 onChange={(value) => {
                   setValue("quota", value);
-                  setUnSubmitSearch(prev => ({ ...prev, quota: value }))
+                  setUnSubmitSearch((prev) => ({ ...prev, quota: value }));
                 }}
-                data={COUNSELLING_CATEGORY[unSubmitSearch["counsellingCategory"]]}
+                data={
+                  COUNSELLING_CATEGORY[unSubmitSearch["counsellingCategory"]]
+                }
                 hiddenInputProps={{
                   ...register("quota", {
                     required: {
@@ -273,7 +277,7 @@ export default function Med() {
                   ...register("year", {
                     required: true,
                     validate: (value) =>
-                      (parseInt(value) <= new Date().getFullYear()) ||
+                      parseInt(value) <= new Date().getFullYear() ||
                       "Invalid year!",
                   }),
                 }}
@@ -417,8 +421,12 @@ export default function Med() {
               <p className='font-normal text-sm w-full text-left'>Community:</p>
               <select
                 name='community'
+                disabled={unSubmitSearch.quota?.includes("MQ")}
                 onChange={(e) => {
-                  setUnSubmitSearch({ ...unSubmitSearch, community: e.currentTarget.value })
+                  setUnSubmitSearch({
+                    ...unSubmitSearch,
+                    community: e.currentTarget.value,
+                  });
                   // setValue("community", e.currentTarget.value)
                 }}
                 key={"huh"}
@@ -426,17 +434,19 @@ export default function Med() {
                 className='bg-card/10 outline p-2 py-2.5 text-sm pr-8 rounded-md outline-[0.8px] md:focus:outline-1 focus:outline-2 outline-mantine-blue/50 md:outline-gray-200 placeholder:text-sm focus:outline-mantine-blue/60'
                 id='community'
                 {...register("community", {
-                  required: { value: true, message: "This field is required" },
+                  required: {
+                    value: true,
+                    message: "This field is required",
+                  },
+                  disabled: unSubmitSearch.quota?.includes("MQ"),
                 })}
               >
                 <option value='select'>Select Category</option>
-                {COMMUNITY[unSubmitSearch.counsellingCategory].map(
-                  (cat) => (
-                    <option key={cat} value={cat}>
-                      {cat}
-                    </option>
-                  )
-                )}
+                {COMMUNITY[unSubmitSearch.counsellingCategory].map((cat) => (
+                  <option key={cat} value={cat}>
+                    {cat}
+                  </option>
+                ))}
               </select>
               {errors["community"] && (
                 <p className='text-xs text-red-500 font-light absolute -bottom-4 left-0'>
@@ -464,7 +474,7 @@ export default function Med() {
 
       {/* Results table */}
       <div className='flex flex-col h-full w-full gap-4 items-center md:mt-2'>
-        {searchCriteria?.community ? (
+        {searchCriteria?.MaxNEET ? (
           <Suspense fallback={<SkeletonLoader />}>
             <div className='flex md:flex-row flex-col w-full mt-8 gap-2 justify-between items-center'>
               {/* College name or code search */}

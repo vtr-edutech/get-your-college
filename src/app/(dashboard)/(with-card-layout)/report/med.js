@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Medical() {
     return (
       <>
@@ -7,6 +9,11 @@ export default function Medical() {
         <h1 className='font-normal text-base'>
           Search medical colleges and add to your preference list
         </h1>
+
+        <div className="flex w-full items-center justify-center flex-col h-full">
+          <p>Coming soon...</p>
+          <Image src={'/404.webp'} alt="Under Construction" width={200} height={200} />
+        </div>
       </>
     );
 }

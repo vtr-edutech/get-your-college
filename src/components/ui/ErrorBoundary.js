@@ -25,10 +25,10 @@ class ErrorBoundary extends React.Component {
     if (this.state.hasError) {
       // You can render any custom fallback UI
       return (
-        <div className="w-full rounded-md bg-red-50 h-full gap-4 flex items-center justify-center flex-col flex-1 mb-1 py-7">
+        <div className="w-full rounded-md bg-red-50 h-full gap-4 flex items-center justify-center flex-col flex-1 mb-1 py-7 px-4">
           <h2 className="text-red-500">Oops, there was an error trying to display this component</h2>
           <pre className="text-red-500 text-sm">{this.state.error + ''}</pre>
-          <pre className="text-red-500 text-sm">{this.state.errorInfo + ''}</pre>
+          <pre className="text-red-500 text-sm text-balance break-words">{this.state.errorInfo?.componentStack + ''}</pre>
           <button
             type='button'
             className="outline outline-1 bg-green-50 outline-red-300 text-red-500 rounded-md px-3 py-1"

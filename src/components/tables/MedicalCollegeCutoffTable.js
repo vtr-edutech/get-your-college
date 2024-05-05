@@ -49,7 +49,7 @@ export default function MedicalCollegeCutoffTable({ searchCriteria }) {
 
   useEffect(() => pagination.setPage(1), [searchCriteria]);
 
-  if (!searchCriteria.community) return <p>Invalid Search Criteria!</p>;
+  // if (!searchCriteria.community) return <p>Invalid Search Criteria!</p>;
 
   return (
     <>
