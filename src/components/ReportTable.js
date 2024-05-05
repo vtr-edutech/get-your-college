@@ -21,7 +21,7 @@ const data = reportTableData.map((data) => {
 })
 });
 
-console.log("🚀 ~ data ~ data:", data)
+// console.log("🚀 ~ data ~ data:", data)
 
 const addCollegeToList = (colleges, setSelectedColleges) => {
   if (colleges.length < 1) {
@@ -36,9 +36,9 @@ const addCollegeToList = (colleges, setSelectedColleges) => {
 };
 
 const ReportTable = ({ searchCriteria }) => {
-  console.log("🚀 ~ ReportTable ~ searchCriteria:", searchCriteria)
+  // console.log("🚀 ~ ReportTable ~ searchCriteria:", searchCriteria)
   const previouslySelectedCollegeIds = localStorage.getItem("colleges");
-  console.log(previouslySelectedCollegeIds)
+  // console.log(previouslySelectedCollegeIds)
   const [windowSize, setWindowSize] = useState(0);
   
   const previouslySelectedColleges = useMemo(
@@ -94,7 +94,7 @@ const ReportTable = ({ searchCriteria }) => {
   const [selectedColleges, setSelectedColleges] = useState(
     previouslySelectedColleges ?? []
   );
-  console.log("🚀 ~ ReportTable ~ selectedColleges:", selectedColleges)
+  // console.log("🚀 ~ ReportTable ~ selectedColleges:", selectedColleges)
 
   const collegesAfterSlicing = useMemo(
     () =>
@@ -122,7 +122,7 @@ const ReportTable = ({ searchCriteria }) => {
 
   const [bodyRef] = useAutoAnimate({easing: "ease-in-out", duration: 500});
 
-  console.log("🚀 ~ ReportTable ~ collegesAfterSclicing:", collegesAfterSlicing)
+  // console.log("🚀 ~ ReportTable ~ collegesAfterSclicing:", collegesAfterSlicing)
 
   if (!searchCriteria.Category) return <p>Invalid search parameters!</p>;
 

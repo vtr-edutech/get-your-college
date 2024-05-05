@@ -85,7 +85,7 @@ export default function Med() {
   }, []);
 
   const searchSubmission = async (data) => {
-    console.log("submit data", data);
+    // console.log("submit data", data);
     if (Object.keys(data).length !== 0) {
       if (parseInt(data.MinNEET) > parseInt(data.MaxNEET)) {
         setError(
@@ -113,7 +113,7 @@ export default function Med() {
         return;
       }
       setSearchCriteria({ ...searchCriteria, ...data });
-      console.log("🚀 ~ searchSubmission ~ searchCriteria:", searchCriteria)
+      // console.log("🚀 ~ searchSubmission ~ searchCriteria:", searchCriteria)
     }
   };
 

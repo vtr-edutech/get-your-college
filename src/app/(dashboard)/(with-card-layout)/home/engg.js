@@ -58,8 +58,8 @@ const Home = () => {
   const [courseGroup, setCourseGroup] = useState("ALL");
   const [districtKey, setDistrictKey] = useState("");
 
-  console.log("🚀 ~ Home ~ searchCriteria:", searchCriteria);
-  console.log("🚀 ~ Home ~ courseGroup:", courseGroup);
+  // console.log("🚀 ~ Home ~ searchCriteria:", searchCriteria);
+  // console.log("🚀 ~ Home ~ courseGroup:", courseGroup);
 
   const courseGroupsDropdownData = useMemo(
     () =>
@@ -132,10 +132,10 @@ const Home = () => {
   }, []);
 
   const searchSubmission = async (data) => {
-    console.log("submit data", data);
+    // console.log("submit data", data);
     if (Object.keys(data).length !== 0) {
       // if (!data.Dept || (typeof data.Dept == "string" && data.Dept != "ALL") || (typeof data.Dept == "object" && data.Dept.length < 1)) {
-      //   console.log("Empty dept");
+      // //   console.log("Empty dept");
       //   setError(
       //     "Dept",
       //     {
@@ -145,7 +145,7 @@ const Home = () => {
       //   );
       //   return;
       // } else {
-      //   console.log("dept error null")
+      // //   console.log("dept error null")
       //   clearErrors("Dept")
       // }
       if (parseInt(data.MinCutoff) > parseInt(data.MaxCutoff)) {
@@ -162,7 +162,7 @@ const Home = () => {
       }
       const chosenYear = yearInputRef.current.value;
       // const chosenCutoffCategory = cutoffCategoryRef.current;
-      // console.log("🚀 ~ searchSubmission ~ chosenCutoffCategory:", chosenCutoffCategory)
+      // // console.log("🚀 ~ searchSubmission ~ chosenCutoffCategory:", chosenCutoffCategory)
       setSearchCriteria({ ...searchCriteria, ...data, year: chosenYear });
     }
   };

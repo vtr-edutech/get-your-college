@@ -54,8 +54,7 @@ const Report = () => {
   const [collegeCategory, setCollegeCategory] = useState();
   const [windowSize, setWindowSize] = useState({ width: 1093, height: 1293 });
 
-  console.log("🚀 ~ Report ~ searchCriteria:", searchCriteria);
-  // console.log(X);
+  // console.log("🚀 ~ Report ~ searchCriteria:", searchCriteria);
 
   useEffect(() => {
     const searchCriteriaFromLS = localStorage.getItem("search");
@@ -75,9 +74,9 @@ const Report = () => {
   useEffect(() => setWindowSize(getWindowSize()), []);
 
   const searchSubmission = async (data) => {
-    console.log("🚀 ~ searchSubmission ~ data:", data);
+    // console.log("🚀 ~ searchSubmission ~ data:", data);
     if (Object.keys(data).length !== 0) {
-      console.log(data);
+      // console.log(data);
       localStorage.setItem("search", JSON.stringify(data));
       if (parseInt(data.MinCutoff) > parseInt(data.MaxCutoff)) {
         setError(
@@ -242,7 +241,7 @@ const Report = () => {
                 let currCat = collegeCategoryData.find(
                   (cat) => cat["TNEA CODE"] == currentCode
                 )["College Category"];
-                console.log("🚀 ~ Report ~ currCat:", currCat);
+                // console.log("🚀 ~ Report ~ currCat:", currCat);
                 setCollegeCategory(currCat);
                 setCollegeCode(currentCode.toString());
                 setSearchCriteria((prev) => ({
