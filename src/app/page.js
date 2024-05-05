@@ -1,5 +1,4 @@
 import Button from "@/components/ui/Button";
-import { MdOutlineArrowOutward } from "react-icons/md";
 import { CiLogin } from "react-icons/ci";
 import Image from "next/image";
 import Link from "next/link";
@@ -7,6 +6,7 @@ import WhyGYC from "@/components/WhySection";
 import SixFeatures from "@/components/SixFeatures";
 import "aos/dist/aos.css";
 import HeroSection from "@/components/HeroSection";
+import WhatAreYourWaitingFor from "@/components/WhatAreYouWaitingFor";
 
 export default function Home() {
   return (
@@ -62,22 +62,7 @@ export default function Home() {
       {/* Meet him section */}
 
       {/* What are you waiting for? */}
-      <div className='flex p-8 md:h-[unset] h-[60vh] w-[90%] md:w-[80%] rounded-lg items-center justify-center flex-col gap-7 bg-card my-12'>
-        <p className='text-base'>What are you waiting for?</p>
-        <h1 className='md:text-4xl text-3xl font-semibold text-balance text-center'>
-          Kickstart your career with <br /> the best college for you!
-        </h1>
-        <Button
-          label={
-            <div className='flex gap-1 items-center group-hover:gap-2 transition-all'>
-              <MdOutlineArrowOutward />
-              <h2>Let&apos;s Get Started</h2>
-            </div>
-          }
-          className='rounded-sm group w-fit bg-sky-600 px-6 py-3 mt-8'
-          to='/login'
-        />
-      </div>
+      <WhatAreYourWaitingFor />
 
       {/* Footer */}
       <div className='bg-background/70 w-full mt-6 px-3 gap-12 justify-between items-start md:px-16 py-12 md:py-10 flex md:flex-row flex-col'>
@@ -91,9 +76,9 @@ export default function Home() {
           />
         </div>
 
-        <div className='flex flex-col justify-center gap-8 mt-4 md:w-full'>
+        <div className='flex flex-col justify-center gap-4 md:gap-8 mt-4 md:p-0 p-3 md:w-full'>
           <h1 className='text-2xl font-semibold'>Get Your College</h1>
-          <div className='grid grid-cols-2 gap-2'>
+          <div className='grid grid-cols-2 gap-x-1 md:gap-2'>
             <Link href={"/about"} className='hover:underline'>
               About us ›
             </Link>
@@ -121,7 +106,7 @@ export default function Home() {
           ></iframe>
         </div>
       </div>
-      <div className='div w-full grid place-items-center border-t-gray-300/80 py-3 border bg-background/50'>
+      <div className='div w-full grid place-items-center border-t-gray-300/80 py-3 border bg-background/90'>
         <h1>© 2024 Get Your College™. All Rights Reserved.</h1>
       </div>
     </main>

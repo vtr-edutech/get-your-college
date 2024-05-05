@@ -1,9 +1,10 @@
 "use client";
 
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Button from "./ui/Button";
 import Image from "next/image";
 import { CountdownCircleTimer } from "react-countdown-circle-timer";
+import Aos from "aos";
 
 const screenshotsData = [
   {
@@ -40,6 +41,9 @@ export default function WhyGYC() {
     [currentStep]
   );
 
+  useEffect(() => {
+    Aos.init();
+  }, []);
   
   useEffect(() => {
     const skipNextSS = () => {
@@ -54,20 +58,39 @@ export default function WhyGYC() {
 
   return (
     <div className='flex w-full min-h-screen md:min-h-[90vh] items-center flex-col p-4 md:p-14 gap-8'>
-      <p className='text-sm mt-4 px-2 py-1 outline outline-2 outline-gray-400 rounded-full'>
+      <p
+        className='text-sm mt-4 px-2 py-1 outline outline-2 outline-gray-400 rounded-full'
+        data-aos='fade-up'
+        data-aos-duration='300'
+      >
         Presenting you
       </p>
-      <h1 className='text-4xl md:text-5xl font-bold text-center'>
+      <h1
+        className='text-4xl md:text-5xl font-bold text-center'
+        data-aos='fade-up'
+        data-aos-duration='500'
+        data-aos-delay='300'
+      >
         The Most Versatile <br />
         College Prediction Service
       </h1>
-      <p className='text-lg'>
+      <p
+        className='text-lg'
+        data-aos='fade-up'
+        data-aos-duration='500'
+        data-aos-delay='800'
+      >
         Forget the <strong>unintuitive and bland</strong> UI. With Get Your
         College, avoid confusion and focus only on colleges that you need
       </p>
 
       {/* Div of buttons */}
-      <div className='flex gap-3 items-center mt-3 flex-wrap'>
+      <div
+        className='flex gap-3 items-center mt-3 flex-wrap'
+        data-aos='fade-in'
+        data-aos-duration='500'
+        data-aos-delay='1000'
+      >
         {screenshotsData.map((ss) => (
           <Button
             key={ss.id}
@@ -82,16 +105,21 @@ export default function WhyGYC() {
           />
         ))}
       </div>
-      <div className='grid place-items-center w-full mt-4 relative'>
+      <div
+        className='grid place-items-center w-full mt-4 relative'
+        data-aos='fade-in'
+        data-aos-duration='500'
+        data-aos-delay='1000'
+      >
         <Image
           src={currentData.url}
           width={1077}
-          fetchPriority="high"
-          loading="eager"
+          fetchPriority='high'
+          loading='eager'
           priority
           height={600}
           className='object-contain scale-[calc(1-8rem)] transition-opacity animate-fade-in'
-          quality={90}
+          quality={85}
           key={currentData.id}
           alt={currentData.name}
         />

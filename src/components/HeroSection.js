@@ -5,11 +5,12 @@ import Button from "./ui/Button";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import { Tooltip } from "@mantine/core";
 import { useEffect } from "react";
+import Aos from "aos";
 // import anime from "animejs";
 
 export default function HeroSection() {
-    // useEffect(() => {
-    //     // anime({
+    useEffect(() => {
+        // anime({
         //   targets: ".char",
         //   translateY: [0, -20],
         //   direction: "alternate",
@@ -17,7 +18,8 @@ export default function HeroSection() {
         //   delay: anime.stagger(25),
         //   easing: "cubicBezier(.71,-0.77,.43,1.67)",
         // });
-    // }, []);
+        Aos.init()
+    }, []);
 
     return (
       <div className='flex w-full min-h-[90vh] md:min-h-[calc(95vh-8rem)] md:mt-0 mt-5 items-center md:justify-center flex-col p-4 md:p-14 gap-6 md:gap-4'>
@@ -26,7 +28,7 @@ export default function HeroSection() {
         </h1>
 
         <div className='flex md:gap-3 flex-col'>
-          <h1 className='md:text-6xl text-5xl text-center font-bold'>
+          <h1 className='md:text-6xl text-5xl text-center font-bold' data-aos="zoom-out-up">
             <span className='relative text-sky-500 splt'>
               Engineering{" "}
               {/* <span className='text-lg absolute top-0 left-[95%] text-sky-600'>

@@ -72,10 +72,10 @@ export default function SixFeatures() {
       id='more'
       className='flex w-full min-h-screen md:min-h-[90vh] items-center flex-col p-4 md:p-14 gap-8'
     >
-      <h1 className='text-4xl md:text-5xl mt-4 font-bold text-center'>
+      <h1 className='text-4xl md:text-5xl mt-4 font-bold text-center' data-aos="fade-up" data-aos-duration="400">
         Why choose <br /> Get Your College?
       </h1>
-      <p className='text-lg'>
+      <p className='text-lg' data-aos="fade-up" data-aos-delay="600" data-aos-duration="400">
         We provide compelling reasons for you to choose our service that you
         won&apos;t regret
       </p>
@@ -86,7 +86,7 @@ export default function SixFeatures() {
             key={i + 9831}
             data-aos='zoom-out'
             data-aos-duration={200}
-            data-aos-delay={100 * i}
+            data-aos-delay={(100 * i) + 1000}
             color={feature.color}
             title={feature.title}
             icon={feature.icon}

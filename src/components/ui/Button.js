@@ -3,7 +3,7 @@ import { cn } from "@/utils";
 import Link from "next/link";
 import React from "react";
 
-const Button = ({ label, to = "", onClick = () => null, isDisabled, asButton = false, className = '' }) => {
+const Button = ({ label, to = "", onClick = () => null, isDisabled, asButton = false, className = '', ...props }) => {
 
   return asButton ? (
     <button
@@ -29,6 +29,9 @@ const Button = ({ label, to = "", onClick = () => null, isDisabled, asButton = f
       )}
       href={to ?? "#"}
       onClick={onClick}
+      data-aos={props['data-aos']}
+      data-aos-delay={props['data-aos-delay']}
+      data-aos-duration={props['data-aos-duration']}
     >
       {label}
     </Link>
