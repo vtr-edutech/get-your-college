@@ -30,10 +30,10 @@ export default function HeroSection() {
 
         <div className='flex md:gap-3 flex-col'>
           <h1
-            className='md:text-6xl text-5xl text-center font-bold'
+            className='md:text-6xl md:leading-[inherit] leading-normal text-5xl text-center font-bold'
             data-aos='zoom-out-up'
           >
-            <span className='relative z-10 bg-[url("/drawsvg.svg")]  bg-[50%_50%_0rem] bg-[length:100%] bg-clip-padding bg-blend-lighten'>
+            <span className='relative leading-6 z-10 bg-[url("/drawsvg.svg")]  bg-[50%_50%_0rem] bg-[length:100%] bg-clip-padding bg-blend-lighten'>
               Engineering {/* <HighlightYellow /> */}
               {/* <span className='text-lg absolute top-0 left-[95%] text-sky-600'>
               (TNEA)
@@ -43,7 +43,7 @@ export default function HeroSection() {
             {/* &nbsp;&nbsp;&nbsp; */}
             <span className='text-5xl'>&</span>
             &nbsp;
-            <span className='relative bg-[url("/new.svg")] px-2 bg-no-repeat bg-[center_center] bg-[length:130%] bg-blend-lighten'>
+            <span className='relative md:my-0 my-4 bg-[url("/new.svg")] px-2 bg-no-repeat bg-[center_center] bg-[length:130%] bg-blend-lighten'>
               Medical{" "}
               {/* <span className='text-lg absolute top-0 text-sky-600'>(NEET)</span> */}
             </span>{" "}

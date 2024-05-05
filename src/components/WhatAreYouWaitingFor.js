@@ -33,7 +33,8 @@ export default function WhatAreYourWaitingFor() {
         className='rounded-sm group w-fit bg-sky-600 px-6 py-3 mt-8'
         to='/login'
         data-aos='fade-in'
-        data-aos-delay='1000'
+        data-aos-delay='800'
+        data-aos-offset='-100'
         data-aos-duration='600'
       />
     </div>

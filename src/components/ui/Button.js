@@ -29,9 +29,10 @@ const Button = ({ label, to = "", onClick = () => null, isDisabled, asButton = f
       )}
       href={to ?? "#"}
       onClick={onClick}
-      data-aos={props['data-aos']}
-      data-aos-delay={props['data-aos-delay']}
-      data-aos-duration={props['data-aos-duration']}
+      data-aos={props["data-aos"]}
+      data-aos-delay={props["data-aos-delay"]}
+      data-aos-duration={props["data-aos-duration"]}
+      data-aos-offset={props["data-aos-offset"]}
     >
       {label}
     </Link>

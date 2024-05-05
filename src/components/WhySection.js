@@ -99,8 +99,8 @@ export default function WhyGYC() {
             label={ss.name}
             className={`px-5 w-fit ${
               currentData.id === ss.id
-                ? ""
-                : "text-black/80 bg-transparent outline outline-1 outline-gray-800"
+                ? "bg-mantine-blue text-white shadow"
+                : "text-black/80 bg-transparent outline outline-1 outline-gray-500/60"
             }`}
           />
         ))}
