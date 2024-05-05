@@ -8,23 +8,14 @@ const PAGE_SIZE = 25;
 
 export default function MedicalCollegeCutoffTable({ searchCriteria }) {
   console.log("🚀 ~ searchCriteria:", searchCriteria);
-  const community = searchCriteria?.communityCategory?.includes("MQ")
-      ? searchCriteria.communityCategory
-      : searchCriteria.community;
+
   const results = useMemo(() => {
-    const dataBeforeFilter = [
-      "MQ General",
-      "MQ Telugu",
-      "MQ Christian",
-      "MQ Malayalam",
-      "MQ NRI",
-      "MQ NRI Lapsed",
-    ].includes(community)
+    const dataBeforeFilter = searchCriteria?.quota?.includes("MQ")
       ? medicalMQData.filter(
           (college) =>
-            college[`${searchCriteria.communityCategory} - NEET Mark`] >=
+            college[`${searchCriteria?.quota} - NEET Mark`] >=
               parseFloat(searchCriteria?.MinNEET) &&
-            college[`${searchCriteria.communityCategory} - NEET Mark`] <=
+            college[`${searchCriteria?.quota} - NEET Mark`] <=
               parseFloat(searchCriteria?.MaxNEET)
         )
       : medicalCutoffData.filter(
@@ -46,19 +37,17 @@ export default function MedicalCollegeCutoffTable({ searchCriteria }) {
           : true
       )
       .sort(
-        (a, b) =>
-          b[`${community} - NEET Mark`] -
-          a[`${community} - NEET Mark`]
+        (a, b) => b[`${searchCriteria?.quota?.includes("MQ")? searchCriteria?.quota : searchCriteria?.community} - NEET Mark`] - a[`${searchCriteria?.quota?.includes("MQ")? searchCriteria?.quota : searchCriteria?.community} - NEET Mark`]
       );
-  }, [searchCriteria, community]);
+  }, [searchCriteria]);
 
   const pagination = usePagination({
     total: parseInt(results.length / PAGE_SIZE) + 1,
     initialPage: 1,
     sibling: 1,
   });
-  
-  useEffect(() => pagination.setPage(1), [searchCriteria])
+
+  useEffect(() => pagination.setPage(1), [searchCriteria]);
 
   if (!searchCriteria.community) return <p>Invalid Search Criteria!</p>;
 
@@ -73,7 +62,7 @@ export default function MedicalCollegeCutoffTable({ searchCriteria }) {
           <h2 className='min-w-44 max-w-96 flex-1 font-medium'>College Name</h2>
           <h2 className='flex-1 font-medium min-w-20 max-w-36'>Branch</h2>
           <h2 className='max-w-36 flex-1 font-medium min-w-20'>
-            {community} - {searchCriteria.filterBy}
+            {searchCriteria?.quota?.includes("MQ")? searchCriteria?.quota : searchCriteria?.community} - {searchCriteria.filterBy}
           </h2>
         </div>
 
@@ -99,11 +88,7 @@ export default function MedicalCollegeCutoffTable({ searchCriteria }) {
                 {searchCriteria?.Course}
               </h2>
               <h2 className='max-w-36 flex-1 min-w-20 text-sm'>
-                {
-                  college[
-                    `${community} - ${searchCriteria.filterBy}`
-                  ]
-                }
+                {college[`${searchCriteria?.quota?.includes("MQ")? searchCriteria?.quota : searchCriteria?.community} - ${searchCriteria.filterBy}`]}
               </h2>
             </div>
           ))}

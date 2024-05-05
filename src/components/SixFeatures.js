@@ -1,7 +1,7 @@
 "use client";
 
 import { cn } from "@/utils";
-import Aos from "aos";
+import AOS from "aos";
 import { useEffect } from "react";
 import { BsListCheck } from "react-icons/bs";
 import { CiSearch } from "react-icons/ci";
@@ -9,7 +9,6 @@ import { FiCheckCircle } from "react-icons/fi";
 import { IoTimeOutline } from "react-icons/io5";
 import { LuMousePointerClick } from "react-icons/lu";
 import { TbHeartHandshake } from "react-icons/tb";
-import "aos/dist/aos.css"
 
 const FEATURES = [
   {
@@ -44,18 +43,16 @@ const FEATURES = [
   },
 ];
 
-const FeatureCard = ({ icon: Icon, title, color }) => {
-
-  useEffect(() => {
-    Aos.init();
-  }, []);
-  
+const FeatureCard = ({ icon: Icon, title, color, ...props }) => {
   return (
     <div
       className={cn([
         `flex items-center gap-4 md:gap-2 py-5 px-8 outline outline-1 outline-gray-200 shadow-sm rounded-md`,
         color.bg,
       ])}
+      data-aos={props["data-aos"]}
+      data-aos-duration={props["data-aos-duration"]}
+      data-aos-delay={props["data-aos-delay"]}
     >
       <Icon color={color.text} />
       <h3 className={"text-lg tracking-wide font-semibold text-black/60"}>
@@ -64,7 +61,12 @@ const FeatureCard = ({ icon: Icon, title, color }) => {
     </div>
   );
 };
+
 export default function SixFeatures() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <div
       id='more'
@@ -82,8 +84,9 @@ export default function SixFeatures() {
         {FEATURES.map((feature, i) => (
           <FeatureCard
             key={i + 9831}
-            data-aos="zoom-in"
-            // data-aos-delay={200 * i}
+            data-aos='zoom-out'
+            data-aos-duration={200}
+            data-aos-delay={100 * i}
             color={feature.color}
             title={feature.title}
             icon={feature.icon}

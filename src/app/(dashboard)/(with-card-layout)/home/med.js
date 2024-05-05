@@ -2,10 +2,8 @@
 
 import SkeletonLoader from "@/components/SkeletonLoader";
 import { getWindowSize, inter, tw } from "@/utils";
-import {
-  SegmentedControl,
-  Select,
-} from "@mantine/core";
+// import { DevTool } from "@hookform/devtools";
+import { SegmentedControl, Select } from "@mantine/core";
 import { useLocalStorage } from "@mantine/hooks";
 import { useTour } from "@reactour/tour";
 import Image from "next/image";
@@ -14,28 +12,27 @@ import { useForm } from "react-hook-form";
 import { LuSearch } from "react-icons/lu";
 
 const COUNSELLING_CATEGORY = {
-    "STATE": [
-        { label: "TN-GQ 92.5", value: "GQ 92.5" },
-        { label: "TN-GQ 7.5", value: "GQ 7.5", disabled: true },
-        { label: "TN-MQ General", value: "MQ General" },
-        { label: "TN-MQ Telugu Minority", value: "MQ Telugu" },
-        { label: "TN-MQ Christian Minority", value: "MQ Christian" },
-        { label: "TN-MQ Malayalam", value: "MQ Malayalam" },
-        { label: "TN-MQ NRI", value: "MQ NRI" },
-        { label: "TN-MQ NRI Lapsed", value: "MQ NRI Lapsed" },
-    ],
-    "MCC": [
-        "AIQ",
-        "Deemed"
-    ]
-}
+  STATE: [
+    { label: "TN-GQ 92.5", value: "GQ 92.5" },
+    { label: "TN-GQ 7.5", value: "GQ 7.5", disabled: true },
+    { label: "TN-MQ General", value: "MQ General" },
+    { label: "TN-MQ Telugu Minority", value: "MQ Telugu" },
+    { label: "TN-MQ Christian Minority", value: "MQ Christian" },
+    { label: "TN-MQ Malayalam", value: "MQ Malayalam" },
+    { label: "TN-MQ NRI", value: "MQ NRI" },
+    { label: "TN-MQ NRI Lapsed", value: "MQ NRI Lapsed" },
+  ],
+  MCC: ["AIQ", "Deemed"],
+};
 
 const COMMUNITY = {
-  "STATE": ["OC", "BC", "BCM", "MBC & DNC", "SC", "SCA",	"ST"],
-  "MCC": ["OC", "OBC", "SC", "ST", "EWS"]
-}
+  STATE: ["OC", "BC", "BCM", "MBC & DNC", "SC", "SCA", "ST"],
+  MCC: ["OC", "OBC", "SC", "ST", "EWS"],
+};
 
-const MedicalCutoffTable = lazy(() => import("@/components/tables/MedicalCollegeCutoffTable"));
+const MedicalCutoffTable = lazy(() =>
+  import("@/components/tables/MedicalCollegeCutoffTable")
+);
 
 export default function Med() {
   const {
@@ -44,25 +41,35 @@ export default function Med() {
     register,
     setError,
     setValue,
+    control,
     getValues,
     clearErrors,
-  } = useForm();
+  } = useForm({
+    defaultValues: {
+      counsellingCategory: "STATE",
+      state: "TN",
+      year: "2023",
+      community: "select"
+    },
+  });
 
-  const stateInputRef = useRef();
-  const cutoffCategoryRef = useRef();
-  
   const [windowSize, setwindowSize] = useState({ width: 1230, height: 1234 });
 
   const { setIsOpen, setCurrentStep, isOpen } = useTour();
-  const [hasMedicalTourPlayed, setHasMedicalTourPlayed] = useLocalStorage({ key: "hasMedicalPlayed", defaultValue: false })
+  const [hasMedicalTourPlayed, setHasMedicalTourPlayed] = useLocalStorage({
+    key: "hasMedicalPlayed",
+    defaultValue: false,
+  });
+
+  const [unSubmitSearch, setUnSubmitSearch] = useState({
+    counsellingCategory: "STATE",
+    quota: COUNSELLING_CATEGORY["STATE"][0],
+  })
 
   const [searchCriteria, setSearchCriteria] = useState({
-    counsellingCategory: "STATE",
-    state: "TN",
-    year: "2023",
     searchKey: "",
     districtKey: "",
-    filterBy: "NEET Mark"
+    filterBy: "NEET Mark",
   });
 
   useEffect(() => {
@@ -71,30 +78,44 @@ export default function Med() {
       setCurrentStep(3);
       setIsOpen(true);
     }
-  }, [])
+  }, []);
 
   useEffect(() => {
     setwindowSize(getWindowSize());
   }, []);
 
-   const searchSubmission = async (data) => {
-     console.log("submit data", data);
-     if (Object.keys(data).length !== 0) {
-       if (parseInt(data.MinNEET) > parseInt(data.MaxNEET)) {
-         setError(
-           "MinNEET",
-           {
-             type: "validate",
-             message: "Minimum NEET score should be less than Maximum NEET score",
-           },
-           { shouldFocus: true }
-         );
-         return;
-       }
-       setSearchCriteria({ ...searchCriteria, ...data });
-       console.log(searchCriteria);
-     }
-   };
+  const searchSubmission = async (data) => {
+    console.log("submit data", data);
+    if (Object.keys(data).length !== 0) {
+      if (parseInt(data.MinNEET) > parseInt(data.MaxNEET)) {
+        setError(
+          "MinNEET",
+          {
+            type: "validate",
+            message:
+              "Minimum NEET score should be less than Maximum NEET score",
+          },
+          { shouldFocus: true }
+        );
+        return;
+      }
+      if (data.community == "select") {
+        setError(
+          "community",
+          {
+            type: "validate",
+            message:
+              "Invalid Community!",
+          },
+          { shouldFocus: true }
+        );
+
+        return;
+      }
+      setSearchCriteria({ ...searchCriteria, ...data });
+      console.log("🚀 ~ searchSubmission ~ searchCriteria:", searchCriteria)
+    }
+  };
 
   return (
     <>
@@ -112,10 +133,10 @@ export default function Med() {
           {/* Category and Years container */}
           <div className='flex flex-col md:flex-row gap-7 justify-center md:justify-start md:gap-10 md:flex-wrap'>
             {/* Medical cutoff category choose */}
-            <div className='flex flex-col justify-center gap-1 w-full md:w-[unset]'>
+            <div className='flex flex-col justify-center gap-1 w-full md:w-[unset] relative'>
               <p className='font-normal text-sm'>Counselling category:</p>
               <SegmentedControl
-                ref={cutoffCategoryRef}
+                value={unSubmitSearch.counsellingCategory}
                 withItemsBorders={false}
                 color='blue'
                 styles={{
@@ -129,17 +150,11 @@ export default function Med() {
                     return value && { color: "white" };
                   },
                 }}
-                value={searchCriteria?.counsellingCategory ?? "STATE"}
-                onChange={(value) =>
-                  setSearchCriteria((prev) => ({
-                    ...prev,
-                    counsellingCategory: value,
-                    filterBy: value == "STATE" ? "NEET Mark" : "All India Rank",
-                    communityCategory:
-                      value == "STATE"
-                        ? COUNSELLING_CATEGORY.STATE[0].value
-                        : COUNSELLING_CATEGORY.MCC[0],
-                  }))
+                onChange={
+                  (value) => {
+                    setValue("counsellingCategory", value);
+                    setUnSubmitSearch(prev => ({ ...prev, counsellingCategory: value, quota: COUNSELLING_CATEGORY[value][0].value }));
+                  }
                 }
                 data={[
                   {
@@ -149,33 +164,49 @@ export default function Med() {
                   {
                     label: "MCC",
                     value: "MCC",
+                    disabled: true
                   },
                 ]}
-              />
+              >
+                <input
+                  type='hidden'
+                  {...register("counsellingCategory", {
+                    required: {
+                      value: true,
+                      message: "This field is required!",
+                    },
+                    validate: (value) =>
+                      ["STATE", "MCC"].includes(value) ||
+                      "Invalid selection made!",
+                  })}
+                />
+                {errors["counsellingCategory"] && (
+                  <p className='text-xs text-red-500 font-light absolute -bottom-4 left-0'>
+                    {errors["counsellingCategory"].message}
+                  </p>
+                )}
+              </SegmentedControl>
             </div>
             {/* Category based on cutoff category */}
-            <div className='flex flex-col justify-center gap-1'>
+            <div className='flex flex-col justify-center gap-1 relative'>
               <p className='font-normal text-sm'>Quota:</p>
               <Select
                 allowDeselect={false}
                 comboboxProps={{ shadow: "md" }}
-                value={
-                  searchCriteria?.communityCategory ??
-                  COUNSELLING_CATEGORY[
-                    searchCriteria?.counsellingCategory ?? "STATE"
-                  ][0].value
-                }
+                value={unSubmitSearch.quota}
                 onChange={(value) => {
-                  setSearchCriteria((prev) => ({
-                    ...prev,
-                    communityCategory: value,
-                  }));
+                  setValue("quota", value);
+                  setUnSubmitSearch(prev => ({ ...prev, quota: value }))
                 }}
-                data={
-                  COUNSELLING_CATEGORY[
-                    searchCriteria?.counsellingCategory ?? "STATE"
-                  ]
-                }
+                data={COUNSELLING_CATEGORY[unSubmitSearch["counsellingCategory"]]}
+                hiddenInputProps={{
+                  ...register("quota", {
+                    required: {
+                      message: "Quota required!",
+                      value: true,
+                    },
+                  }),
+                }}
                 checkIconPosition='left'
                 styles={{
                   root: { width: windowSize.width < 768 ? "100%" : "12rem" },
@@ -188,12 +219,16 @@ export default function Med() {
                   },
                 }}
               />
+              {errors["quota"] && (
+                <p className='text-xs text-red-500 font-light absolute -bottom-4 left-0'>
+                  {errors["quota"].message}
+                </p>
+              )}
             </div>
             {/* State choose */}
             <div className='flex flex-col justify-center gap-1'>
               <p className='font-normal text-sm'>State:</p>
               <Select
-                ref={stateInputRef}
                 defaultValue='TN'
                 allowDeselect={false}
                 checkIconPosition='right'
@@ -208,19 +243,19 @@ export default function Med() {
                         : tw.theme.colors.gray[200],
                   },
                 }}
-                data={[{ label: "Tamil Nadu", value: "TN" }]} // for now only year 2023 is available. later add 2021 and 2022 too
+                data={[{ label: "Tamil Nadu", value: "TN" }]} // for now only TN available
               />
             </div>
             {/* Year choose */}
-            <div className='flex flex-col justify-center gap-1'>
+            <div className='flex flex-col justify-center gap-1 relative'>
               <p className='font-normal text-sm'>Year:</p>
               <Select
-                ref={stateInputRef}
                 defaultValue='2023'
                 comboboxProps={{ shadow: "xl" }}
-                value={searchCriteria?.year}
+                // value={searchCriteria?.year}
                 onChange={(value) =>
-                  setSearchCriteria((prev) => ({ ...prev, year: value }))
+                  // setSearchCriteria((prev) => ({ ...prev, year: value }))
+                  setValue("year", value)
                 }
                 allowDeselect={false}
                 checkIconPosition='right'
@@ -234,8 +269,21 @@ export default function Med() {
                         : tw.theme.colors.gray[200],
                   },
                 }}
+                hiddenInputProps={{
+                  ...register("year", {
+                    required: true,
+                    validate: (value) =>
+                      (parseInt(value) <= new Date().getFullYear()) ||
+                      "Invalid year!",
+                  }),
+                }}
                 data={["2023"]} // for now only year 2023 is available. later add 2021 and 2022 too
               />
+              {errors["year"] && (
+                <p className='text-xs text-red-500 font-light absolute -bottom-4 left-0'>
+                  {errors["year"].message}
+                </p>
+              )}
             </div>
           </div>
 
@@ -243,9 +291,10 @@ export default function Med() {
 
           {/* Linear Search bar */}
           <div className='grid grid-cols-2 grid-rows-2 gap-2 gap-y-7 md:flex md:gap-2 md:justify-start md:items-center md:flex-wrap'>
+            {/* Min NEET */}
             <div className='flex flex-col gap-1 items-center relative'>
               <p className='font-normal text-sm w-full text-left'>
-                Minimum NEET Score:
+                Min NEET Score:
               </p>
               <input
                 type='number'
@@ -273,6 +322,7 @@ export default function Med() {
               )}
             </div>
 
+            {/* Max NEET */}
             <div className='flex flex-col gap-1 items-center relative'>
               <p className='font-normal text-sm w-full text-left'>
                 NEET Score:
@@ -302,6 +352,7 @@ export default function Med() {
               )}
             </div>
 
+            {/* Course name */}
             <div className='grid col-span-2 md:flex md:flex-col md:gap-1 md:items-center relative'>
               <p className='font-normal text-sm w-full text-left'>
                 Course Name:
@@ -361,27 +412,27 @@ export default function Med() {
               )}
             </div>
 
+            {/* Community */}
             <div className='grid col-span-2 md:flex md:flex-col md:gap-1 md:items-center relative'>
               <p className='font-normal text-sm w-full text-left'>Community:</p>
               <select
                 name='community'
-                defaultValue={"Select"}
-                // value={getValues("community")}
-                // onChange={({ currentTarget: { value: x }}) =>
-                //   setValue("community", x)
-                // }
+                onChange={(e) => {
+                  setUnSubmitSearch({ ...unSubmitSearch, community: e.currentTarget.value })
+                  // setValue("community", e.currentTarget.value)
+                }}
+                key={"huh"}
+                value={unSubmitSearch.community}
                 className='bg-card/10 outline p-2 py-2.5 text-sm pr-8 rounded-md outline-[0.8px] md:focus:outline-1 focus:outline-2 outline-mantine-blue/50 md:outline-gray-200 placeholder:text-sm focus:outline-mantine-blue/60'
                 id='community'
                 {...register("community", {
                   required: { value: true, message: "This field is required" },
-                  validate: (value) =>
-                    value !== "select" || "Invalid value selected!",
                 })}
               >
                 <option value='select'>Select Category</option>
-                {COMMUNITY[searchCriteria?.counsellingCategory ?? "STATE"].map(
+                {COMMUNITY[unSubmitSearch.counsellingCategory].map(
                   (cat) => (
-                    <option key={Math.random()} value={cat}>
+                    <option key={cat} value={cat}>
                       {cat}
                     </option>
                   )
@@ -394,6 +445,7 @@ export default function Med() {
               )}
             </div>
 
+            {/* Submit */}
             <div className='grid col-span-2 md:flex md:flex-col md:gap-1 md:items-center relative'>
               <p className='font-normal text-sm w-full text-white text-left'>
                 &nbsp;
@@ -406,6 +458,9 @@ export default function Med() {
           </div>
         </div>
       </form>
+
+      {/* devtools */}
+      {/* <DevTool control={control} /> */}
 
       {/* Results table */}
       <div className='flex flex-col h-full w-full gap-4 items-center md:mt-2'>

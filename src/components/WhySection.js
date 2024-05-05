@@ -40,15 +40,17 @@ export default function WhyGYC() {
     [currentStep]
   );
 
-  const skipNextSS = useCallback(() => {
-    setCurrentStep((prev) => (prev + 1) % screenshotsData.length);
-  }, []);
-
+  
   useEffect(() => {
-    let intervalSkip = setInterval(skipNextSS, 1000 * 8);
+    const skipNextSS = () => {
+      setCurrentStep((prev) => (prev + 1) % screenshotsData.length);
+    };
 
+    let intervalSkip = setInterval(skipNextSS, 1000 * 8);
+    
     return () => clearInterval(intervalSkip);
-  }, [skipNextSS]);
+
+  }, [currentStep]);
 
   return (
     <div className='flex w-full min-h-screen md:min-h-[90vh] items-center flex-col p-4 md:p-14 gap-8'>
@@ -84,6 +86,9 @@ export default function WhyGYC() {
         <Image
           src={currentData.url}
           width={1077}
+          fetchPriority="high"
+          loading="eager"
+          priority
           height={600}
           className='object-contain scale-[calc(1-8rem)] transition-opacity animate-fade-in'
           quality={90}
