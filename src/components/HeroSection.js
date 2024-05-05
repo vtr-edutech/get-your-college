@@ -6,6 +6,7 @@ import { MdOutlineArrowOutward } from "react-icons/md";
 import { Tooltip } from "@mantine/core";
 import { useEffect } from "react";
 import Aos from "aos";
+import HighlightYellow from "./graphics/HighLightYellow";
 // import anime from "animejs";
 
 export default function HeroSection() {
@@ -28,17 +29,21 @@ export default function HeroSection() {
         </h1>
 
         <div className='flex md:gap-3 flex-col'>
-          <h1 className='md:text-6xl text-5xl text-center font-bold' data-aos="zoom-out-up">
-            <span className='relative text-sky-500 splt'>
-              Engineering{" "}
+          <h1
+            className='md:text-6xl text-5xl text-center font-bold'
+            data-aos='zoom-out-up'
+          >
+            <span className='relative z-10 bg-[url("/drawsvg.svg")]  bg-[50%_50%_0rem] bg-[length:100%] bg-clip-padding bg-blend-lighten'>
+              Engineering {/* <HighlightYellow /> */}
               {/* <span className='text-lg absolute top-0 left-[95%] text-sky-600'>
               (TNEA)
-            </span> */}
+              </span> 
+              */}
             </span>
             {/* &nbsp;&nbsp;&nbsp; */}
             <span className='text-5xl'>&</span>
             &nbsp;
-            <span className='relative text-red-500 splt'>
+            <span className='relative bg-[url("/new.svg")] px-2 bg-no-repeat bg-[center_center] bg-[length:130%] bg-blend-lighten'>
               Medical{" "}
               {/* <span className='text-lg absolute top-0 text-sky-600'>(NEET)</span> */}
             </span>{" "}
