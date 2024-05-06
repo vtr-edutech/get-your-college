@@ -20,6 +20,7 @@ const CollegeSchema = new Schema({
       "CECRI AND CIPET",
       "CONSTITUENT COLLEGES",
       "SELF FINANCING ENGINEERING COLLEGES",
+      "Unknown"
     ],
   },
   courses: [

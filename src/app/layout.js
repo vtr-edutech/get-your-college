@@ -15,7 +15,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: `${PROJECT_NAME_TITLE_CASE} | You deserve the best`,
-  description: "Your complete guidance for Engineering & Medical College Counselling",
+  description: "Your complete guidance for Engineering & Medical College Counselling. Look for the most suitable colleges for your choice of career. Currently catering college admissions and guidances all over Tamil Nadu",
   generator: "Next.js",
   applicationName: "Get Your College",
   // referrer: "origin-when-cross-origin",
@@ -28,6 +28,13 @@ export const metadata = {
     "Colleges",
     "Dinesh Kumar",
     "Counselling",
+    "Tamil Nadu",
+    "Andhra Pradesh",
+    "NEET",
+    "Quota",
+    "Minority",
+    "Admissions",
+    "Easy to use",
   ],
   authors: [
     { name: "Kartheeshwaran" },

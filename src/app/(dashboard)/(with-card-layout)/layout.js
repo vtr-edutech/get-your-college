@@ -27,12 +27,12 @@ const RootLayout = ({ children }) => {
         toast.info("Please continue to register your details so we could guide you better!");
         open();
       } else {
-        console.log("Stopping interval as user data is present");
+        // console.log("Stopping interval as user data is present");
         clearInterval(interval);
       }
     }
 
-    interval = setInterval(intervalFunc, 1000 * 60);
+    interval = setInterval(intervalFunc, 1000 * 60 * 2);
 
     return () => clearInterval(interval)
   },[userInfo, loading]);

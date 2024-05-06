@@ -47,6 +47,7 @@ export default function Med() {
   } = useForm({
     defaultValues: {
       counsellingCategory: "STATE",
+      quota: COUNSELLING_CATEGORY["STATE"][0].value,
       state: "TN",
       year: "2023",
       community: "select"

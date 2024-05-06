@@ -444,7 +444,7 @@ export async function POST(req) {
     headers.set("Content-Type", "application/pdf");
     headers.set(
       "Content-Disposition",
-      `attachment; filname=${data.name + ' Cutoff'}.pdf`
+      `attachment; filname=${data.name + (data.type === "cutoff"?' Cutoff':' Choice List')}.pdf`
     );
     return new NextResponse(buffer, { headers: headers, status: 200, statusText: "OK" });
   } catch (error) {
