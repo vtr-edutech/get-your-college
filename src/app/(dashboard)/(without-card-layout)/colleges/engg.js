@@ -15,6 +15,10 @@ import React, {
 } from "react";
 import { useSelector } from "react-redux";
 
+/** Lazy loaded NEW CollegeInfoTable  */
+// const CollegeInfoTable = lazy(() => import("@/components/tables/engg/CollegesInfoTable"));
+
+/** Lazy loaded OLD CollegeInfoTable  */
 const CollegeInfoTable = lazy(() => import("@/components/CollegeInfoTable"));
 
 const Colleges = () => {
