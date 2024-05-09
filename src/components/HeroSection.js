@@ -4,24 +4,8 @@ import { IoBookOutline } from "react-icons/io5";
 import Button from "./ui/Button";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import { Tooltip } from "@mantine/core";
-import { useEffect } from "react";
-import Aos from "aos";
-import HighlightYellow from "./graphics/HighLightYellow";
-// import anime from "animejs";
 
 export default function HeroSection() {
-    useEffect(() => {
-        // anime({
-        //   targets: ".char",
-        //   translateY: [0, -20],
-        //   direction: "alternate",
-        //   loop: 1,
-        //   delay: anime.stagger(25),
-        //   easing: "cubicBezier(.71,-0.77,.43,1.67)",
-        // });
-        Aos.init()
-    }, []);
-
     return (
       <div className='flex w-full min-h-[90vh] md:min-h-[calc(95vh-8rem)] md:mt-0 mt-5 items-center md:justify-center flex-col p-4 md:p-14 gap-6 md:gap-4'>
         <h1 className='text-4xl md:text-6xl font-bold text-center'>
@@ -31,7 +15,6 @@ export default function HeroSection() {
         <div className='flex md:gap-3 flex-col'>
           <h1
             className='md:text-6xl md:leading-[inherit] leading-normal text-5xl text-center font-bold'
-            data-aos='zoom-out-up'
           >
             <span className='relative leading-6 z-10 bg-[url("/drawsvg.svg")]  bg-[50%_50%_0rem] bg-[length:100%] bg-clip-padding bg-blend-lighten'>
               Engineering {/* <HighlightYellow /> */}

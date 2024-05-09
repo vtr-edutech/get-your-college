@@ -9,7 +9,7 @@ export const COLLEGE_CATEGORIES = [
   {
     name: "Engineering",
     value: "engineering",
-    icon: <MdEngineering size={18} />,
+    icon: <MdEngineering size={18} color='#228be6' />,
     disabled: false,
     subcategories: [
       {
@@ -21,7 +21,7 @@ export const COLLEGE_CATEGORIES = [
   {
     name: "Medical",
     value: "medical",
-    icon: <FaBookMedical size={16} />,
+    icon: <FaBookMedical size={16} color="red" />,
     disabled: false,
     subcategories: [
       {
