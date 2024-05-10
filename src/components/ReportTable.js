@@ -27,11 +27,6 @@ const data = reportTableData.map((data) => {
     round_3: collegeChoiceListR3.find(
       (coll) => coll["College Code"] == data["College Code"]
     ),
-    minority: currCollEx?.["Minority Status"]
-      ? currCollEx["Minority Status"].toLowerCase() == "yes"
-        ? "Minority"
-        : "Non-Minority"
-      : "Unknown",
     nba: currCollEx?.["NBA Accredited"]
       ? currCollEx["NBA Accredited"]
         ? typeof currCollEx["NBA Accredited"] == "number"
@@ -216,9 +211,6 @@ const ReportTable = ({ searchCriteria }) => {
                 {value["College Name"]},
                 <br />
                 <div className='flex h-fit gap-1 mt-1 flex-wrap'>
-                  <p className='px-1.5 py-3/4 rounded-full text-xs text-cyan-600 bg-cyan-50 w-fit h-fit cursor-default'>
-                    {value.minority}
-                  </p>
                   <p className='px-1.5 cursor-default py-3/4 rounded-full text-xs text-amber-500 bg-amber-50 w-fit h-fit'>
                     {value.autonomous}
                   </p>

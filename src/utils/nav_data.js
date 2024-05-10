@@ -1,5 +1,5 @@
-import { FaBookMedical } from "react-icons/fa6";
-import { MdEngineering } from "react-icons/md";
+import { LiaHardHatSolid } from "react-icons/lia";
+import { CiMedicalCross } from "react-icons/ci";
 
 /* 
   Once real data is given, replace the following data with the ones they give, and make sure whatever value is given in any of the following
@@ -9,7 +9,7 @@ export const COLLEGE_CATEGORIES = [
   {
     name: "Engineering",
     value: "engineering",
-    icon: <MdEngineering size={18} color='#228be6' />,
+    icon: <LiaHardHatSolid size={21} color='#228be6' />,
     disabled: false,
     subcategories: [
       {
@@ -21,7 +21,7 @@ export const COLLEGE_CATEGORIES = [
   {
     name: "Medical",
     value: "medical",
-    icon: <FaBookMedical size={16} color="red" />,
+    icon: <CiMedicalCross size={20} color='red' />,
     disabled: false,
     subcategories: [
       {
@@ -40,4 +40,6 @@ export const COLLEGE_CATEGORIES = [
   },
 ];
 
-export const ALL_VALID_CATEGORIES = COLLEGE_CATEGORIES.map(cat => cat.subcategories).flat();
+export const ALL_VALID_CATEGORIES = COLLEGE_CATEGORIES.map(
+  (cat) => cat.subcategories
+).flat();

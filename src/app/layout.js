@@ -9,7 +9,6 @@ import "@mantine/core/styles.css";
 import StoreProvider from "./StoreProvider";
 import TourProvider from "./TourProvider";
 import TransitionBar from "./TransitionBar";
-import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -71,7 +70,6 @@ export default function RootLayout({ children }) {
               <MantineProvider>
                 <TransitionBar />
                 {children}
-                <Analytics />
               </MantineProvider>
             </TourProvider>
           </StoreProvider>
