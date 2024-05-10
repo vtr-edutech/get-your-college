@@ -8,18 +8,45 @@ import { districtData } from "@/utils/collegeDistrictData";
 import { collegeChoiceListR2 } from "@/utils/collegeChoiceListRound2";
 import { collegeChoiceListR3 } from "@/utils/collegeChoiceListRound3";
 import { CUSTOM_BREAKPOINT } from "@/constants";
+import { NBAdata } from "@/utils/collegeCourseNBAData";
+import { Tooltip } from "@mantine/core";
 
 const PAGE_SIZE = 25;
 
 const data = reportTableData.map((data) => {
-  return ({...data,
-  round_2: collegeChoiceListR2.find(
-    (coll) => coll["College Code"] == data["College Code"]
-  ),
-  round_3: collegeChoiceListR3.find(
-    (coll) => coll["College Code"] == data["College Code"]
-  ),
-})
+  const currCollEx = NBAdata.find(
+    (coll) =>
+      coll["COLLEGE CODE"] == data["College Code"] &&
+      coll.BRANCH == data["Branch Code"]
+  );
+  return {
+    ...data,
+    round_2: collegeChoiceListR2.find(
+      (coll) => coll["College Code"] == data["College Code"]
+    ),
+    round_3: collegeChoiceListR3.find(
+      (coll) => coll["College Code"] == data["College Code"]
+    ),
+    minority: currCollEx?.["Minority Status"]
+      ? currCollEx["Minority Status"].toLowerCase() == "yes"
+        ? "Minority"
+        : "Non-Minority"
+      : "Unknown",
+    nba: currCollEx?.["NBA Accredited"]
+      ? currCollEx["NBA Accredited"]
+        ? typeof currCollEx["NBA Accredited"] == "number"
+          ? "yes"
+          : currCollEx["NBA Accredited"].toString().toLowerCase() == "yes"
+          ? "yes"
+          : "no"
+        : "no"
+      : "no",
+    autonomous: currCollEx?.["College Status"]
+      ? currCollEx["College Status"] == "Autonomous"
+        ? "Autonomous"
+        : "Non-Autonomous"
+      : "Unknown",
+  };
 });
 
 // console.log("🚀 ~ data ~ data:", data)
@@ -41,15 +68,16 @@ const ReportTable = ({ searchCriteria }) => {
   const previouslySelectedCollegeIds = localStorage.getItem("colleges");
   // console.log(previouslySelectedCollegeIds)
   const [windowSize, setWindowSize] = useState(0);
-  
+
   const previouslySelectedColleges = useMemo(
     () =>
-      previouslySelectedCollegeIds ?
       previouslySelectedCollegeIds
-        .split(",")
-        .map((id) => reportTableData.find((college) => college['id'] == id)): [],
+        ? previouslySelectedCollegeIds
+            .split(",")
+            .map((id) => reportTableData.find((college) => college["id"] == id))
+        : [],
     [previouslySelectedCollegeIds]
-  ); 
+  );
   // console.log("🚀 ~ ReportTable ~ previouslySelectedColleges:", collegeData['GC'])
 
   const collegesAfterFiltering = useMemo(
@@ -94,15 +122,15 @@ const ReportTable = ({ searchCriteria }) => {
         ),
     [searchCriteria]
   );
-  
+
   const pagination = usePagination({
     total: parseInt(collegesAfterFiltering.length / PAGE_SIZE) + 1,
     initialPage: 1,
     siblings: 1,
   });
 
-  useEffect(() => setWindowSize(window.innerWidth), [])
-  
+  useEffect(() => setWindowSize(window.innerWidth), []);
+
   const [selectedColleges, setSelectedColleges] = useState(
     previouslySelectedColleges ?? []
   );
@@ -110,9 +138,9 @@ const ReportTable = ({ searchCriteria }) => {
 
   const collegesAfterSlicing = useMemo(
     () =>
-      selectedColleges.concat(
-        collegesAfterFiltering
-          .filter((college) =>
+      selectedColleges
+        .concat(
+          collegesAfterFiltering.filter((college) =>
             previouslySelectedCollegeIds
               ? !previouslySelectedCollegeIds.includes(college.id)
               : true
@@ -130,9 +158,9 @@ const ReportTable = ({ searchCriteria }) => {
     ]
   );
 
-  useEffect(() => pagination.setPage(1) ,[searchCriteria])
+  useEffect(() => pagination.setPage(1), [searchCriteria]);
 
-  const [bodyRef] = useAutoAnimate({easing: "ease-in-out", duration: 500});
+  const [bodyRef] = useAutoAnimate({ easing: "ease-in-out", duration: 500 });
 
   // console.log("🚀 ~ ReportTable ~ collegesAfterSclicing:", collegesAfterSlicing)
 
@@ -152,13 +180,13 @@ const ReportTable = ({ searchCriteria }) => {
           table: {
             background: "white",
             border: "1px solid rbga(0, 0, 0, 0.4)",
-            padding: "2px"
+            padding: "2px",
           },
           header: {
             position: "sticky",
             top: 0,
             background: "white",
-            boxShadow: "0 0 10px rgba(0, 0, 0, 0.1)"
+            boxShadow: "0 0 10px rgba(0, 0, 0, 0.1)",
           },
         }}
         scrollAreaProps={{ type: "always", h: 500 }}
@@ -183,12 +211,46 @@ const ReportTable = ({ searchCriteria }) => {
             accessor: "College Name",
             title: "College Name",
             width: windowSize < CUSTOM_BREAKPOINT ? 200 : "auto",
+            render: (value) => (
+              <>
+                {value["College Name"]},
+                <br />
+                <div className='flex h-fit gap-1 mt-1 flex-wrap'>
+                  <p className='px-1.5 py-3/4 rounded-full text-xs text-cyan-600 bg-cyan-50 w-fit h-fit cursor-default'>
+                    {value.minority}
+                  </p>
+                  <p className='px-1.5 cursor-default py-3/4 rounded-full text-xs text-amber-500 bg-amber-50 w-fit h-fit'>
+                    {value.autonomous}
+                  </p>
+                </div>
+              </>
+            ),
           },
           {
             accessor: "Branch Name",
             title: "Branch Name",
             width: windowSize < CUSTOM_BREAKPOINT ? 150 : "auto",
-            render: (value) => value["Branch Name"].toUpperCase(),
+            render: (value) => (
+              <>
+                {value["Branch Name"].toUpperCase()}
+                <br />
+                {value["nba"] != "no" && (
+                  <Tooltip
+                    label='NBA Accredited'
+                    withArrow
+                    styles={{
+                      tooltip: {
+                        fontSize: "12px",
+                      },
+                    }}
+                  >
+                    <p className='px-1.5 py-3/4 rounded-full text-xs text-violet-500 bg-violet-50 w-fit h-fit cursor-default'>
+                      NBA
+                    </p>
+                  </Tooltip>
+                )}
+              </>
+            ),
           },
           {
             accessor: "OC - Vacancy",

@@ -25,8 +25,8 @@ export async function POST(req) {
         
         buffer = await renderToBuffer(
           <Document
-            author="Get Your College"
-            creator="Get Your College"
+            author='Get Your College'
+            creator='Get Your College'
             title={`${data.name} - Cutoff`}
           >
             <Page size={"A4"} style={{ padding: 20 }}>
@@ -42,7 +42,9 @@ export async function POST(req) {
                 />
               </Link>
               <Text style={{ fontSize: "14px" }}>Name: {data.name}</Text>
-              <Text style={{ fontSize: "14px" }}>Register No.: {data.registerNo}</Text>
+              <Text style={{ fontSize: "14px" }}>
+                Register No.: {data.registerNo}
+              </Text>
               <View
                 style={{
                   display: "flex",
@@ -100,7 +102,7 @@ export async function POST(req) {
                     fontSize: "14px",
                     textAlign: "left",
                     width: "50%",
-                    paddingLeft: "5px"
+                    paddingLeft: "5px",
                   }}
                 >
                   Physics
@@ -111,7 +113,7 @@ export async function POST(req) {
                     fontSize: "14px",
                     textAlign: "left",
                     width: "50%",
-                    paddingLeft: "5px"
+                    paddingLeft: "5px",
                   }}
                 >
                   {data.physics}
@@ -135,7 +137,7 @@ export async function POST(req) {
                     fontSize: "14px",
                     textAlign: "left",
                     width: "50%",
-                    paddingLeft: "5px"
+                    paddingLeft: "5px",
                   }}
                 >
                   Chemistry
@@ -146,7 +148,7 @@ export async function POST(req) {
                     fontSize: "14px",
                     textAlign: "left",
                     width: "50%",
-                    paddingLeft: "5px"
+                    paddingLeft: "5px",
                   }}
                 >
                   {data.chemistry}
@@ -170,7 +172,7 @@ export async function POST(req) {
                     fontSize: "14px",
                     textAlign: "left",
                     width: "50%",
-                    paddingLeft: "5px"
+                    paddingLeft: "5px",
                   }}
                 >
                   Maths
@@ -181,7 +183,7 @@ export async function POST(req) {
                     fontSize: "14px",
                     textAlign: "left",
                     width: "50%",
-                    paddingLeft: "5px"
+                    paddingLeft: "5px",
                   }}
                 >
                   {data.maths}
@@ -208,7 +210,7 @@ export async function POST(req) {
                     fontSize: "14px",
                     textAlign: "left",
                     width: "50%",
-                    paddingLeft: "5px"
+                    paddingLeft: "5px",
                   }}
                 >
                   Cutoff
@@ -219,12 +221,40 @@ export async function POST(req) {
                     fontSize: "14px",
                     textAlign: "left",
                     width: "50%",
-                    paddingLeft: "5px"
+                    paddingLeft: "5px",
                   }}
                 >
                   {data.cutoff}
                 </Text>
               </View>
+              <Link
+                src='https://www.youtube.com/c/A2KDK'
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  marginTop: "10px",
+                  flexDirection: "row",
+                }}
+              >
+                <Image
+                  alt='YT'
+                  style={{
+                    width: 22,
+                    height: 15,
+                  }}
+                  src={"https://www.getyourcollege.com/yt.png"}
+                />
+                <Text
+                  color='blue'
+                  style={{
+                    fontSize: "8px",
+                  }}
+                >
+                  {" "}
+                  Official Youtube Channel | Admission & Counselling - Guides,
+                  Updates
+                </Text>
+              </Link>
             </Page>
           </Document>
         );
