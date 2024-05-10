@@ -1,3 +1,4 @@
+import { CUSTOM_BREAKPOINT } from "@/constants";
 import { selectCategory } from "@/store/collegeCategorySlice";
 import { getWindowSize } from "@/utils";
 import { COLLEGE_CATEGORIES } from "@/utils/nav_data";
@@ -30,7 +31,7 @@ function MobileCategorySelector() {
   }, []);
 
   return (
-    windowSize.width < 768 && (
+    windowSize.width < CUSTOM_BREAKPOINT && (
       <div className='md:hidden absolute z-50 top-0 left-1/2 -translate-x-[50%] w-56 bg-transparent px-5 h-0'>
         <Combobox
           store={collegeCategorySelect}

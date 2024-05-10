@@ -6,6 +6,9 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      md: "1024px"
+    },
     extend: {
       colors: {
         card: "#F2F2F2",

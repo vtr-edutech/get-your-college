@@ -121,7 +121,7 @@ function CutoffCalculator() {
   return (
     <>
       {/* For Display */}
-      <div className='md:flex md:gap-3 md:h-min md:flex-col flex flex-col gap-2 md:py-2'>
+      <div className='md:flex md:gap-3 md:h-min md:flex-col flex flex-col gap-2 md:py-2 w-full'>
         <div className='flex items-center justify-between'>
           <h2>Name:</h2>
           <Skeleton visible={loading} width={"fit-content"} radius='md'>

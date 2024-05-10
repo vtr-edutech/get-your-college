@@ -42,7 +42,7 @@ export default function Announcements() {
   ]);
 
   return announcements.length > 0 ? (
-    <div className='flex flex-col gap-1 md:max-h-[28rem] max-h-64 p-2 overflow-y-scroll relative'>
+    <div className='flex flex-col gap-2 md:gap-1 md:max-h-[28rem] max-h-72 p-2 overflow-y-scroll relative'>
       {/* Annoucement card */}
       {announcements.map((announcement) => (
         <Link
@@ -69,7 +69,7 @@ export default function Announcements() {
               </span>
             </h3>
             {/* link */}
-            <p className='text-mantine-blue flex gap-1 items-center'>
+            <p className='text-mantine-blue flex gap-1 md:text-base text-sm items-center'>
               Open <MdOutlineArrowOutward />
             </p>
           </div>

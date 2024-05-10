@@ -7,6 +7,7 @@ import { reportTableData } from "@/utils/collegeChoiceListData";
 import { districtData } from "@/utils/collegeDistrictData";
 import { collegeChoiceListR2 } from "@/utils/collegeChoiceListRound2";
 import { collegeChoiceListR3 } from "@/utils/collegeChoiceListRound3";
+import { CUSTOM_BREAKPOINT } from "@/constants";
 
 const PAGE_SIZE = 25;
 
@@ -56,30 +57,41 @@ const ReportTable = ({ searchCriteria }) => {
       data // for now its GC, later keep it as selectable
         .filter(
           (college) =>
-            (college[`${searchCriteria?.Category} - Cutoff`] >=
+            college[`${searchCriteria?.Category} - Cutoff`] >=
               parseFloat(searchCriteria?.MinCutoff) &&
             college[`${searchCriteria?.Category} - Cutoff`] <=
-              parseFloat(searchCriteria?.MaxCutoff)) && (
-                searchCriteria?.CollegeCode
-                  ? (college["College Code"] == searchCriteria?.CollegeCode)
-                  : true
-              ) && (
-                searchCriteria?.BranchName ?
-                  (college['Branch Name'].replace(/\s+/g, '').toLowerCase().includes(searchCriteria?.BranchName))
-                  : true
-                ) && (
-                searchCriteria?.CollegeCategory ?
-                  (college['College Category'] == searchCriteria?.CollegeCategory)
-                  : true
-              )
-        ).filter(
-          college => 
-          searchCriteria?.District ?
-            districtData.find(
-              (dist) => (dist["District "] == searchCriteria?.District) && (dist["COLLEGE CODE"] == college["College Code"]) 
-            ) : true
+              parseFloat(searchCriteria?.MaxCutoff) &&
+            (searchCriteria?.CollegeCode
+              ? college["College Code"] == searchCriteria?.CollegeCode
+              : true) &&
+            (searchCriteria?.BranchName
+              ? college["Branch Name"]
+                  .replace(/\s+/g, "")
+                  .toLowerCase()
+                  .includes(searchCriteria?.BranchName)
+              : true) &&
+            (searchCriteria?.CollegeCategory
+              ? college["College Category"] == searchCriteria?.CollegeCategory
+              : true)
         )
-        ,
+        .filter((college) =>
+          searchCriteria?.District && searchCriteria?.District?.length > 0
+            ? searchCriteria?.District == "ALL"
+              ? true
+              : districtData.find(
+                  (dist) =>
+                    searchCriteria?.District.includes(dist["District "]) &&
+                    dist["COLLEGE CODE"] == college["College Code"]
+                )
+            : true
+        )
+        .sort((a, b) =>
+          searchCriteria.filterBy == "Cutoff"
+            ? b[`${searchCriteria?.Category} - ${searchCriteria.filterBy}`] -
+              a[`${searchCriteria?.Category} - ${searchCriteria.filterBy}`]
+            : a[`${searchCriteria?.Category} - ${searchCriteria.filterBy}`] -
+              b[`${searchCriteria?.Category} - ${searchCriteria.filterBy}`]
+        ),
     [searchCriteria]
   );
   
@@ -139,11 +151,14 @@ const ReportTable = ({ searchCriteria }) => {
         styles={{
           table: {
             background: "white",
+            border: "1px solid rbga(0, 0, 0, 0.4)",
+            padding: "2px"
           },
           header: {
             position: "sticky",
             top: 0,
-            background: "white"
+            background: "white",
+            boxShadow: "0 0 10px rgba(0, 0, 0, 0.1)"
           },
         }}
         scrollAreaProps={{ type: "always", h: 500 }}
@@ -167,18 +182,18 @@ const ReportTable = ({ searchCriteria }) => {
           {
             accessor: "College Name",
             title: "College Name",
-            width: windowSize < 768 ? 200 : "auto",
+            width: windowSize < CUSTOM_BREAKPOINT ? 200 : "auto",
           },
           {
             accessor: "Branch Name",
             title: "Branch Name",
-            width: windowSize < 768 ? 150 : "auto",
+            width: windowSize < CUSTOM_BREAKPOINT ? 150 : "auto",
             render: (value) => value["Branch Name"].toUpperCase(),
           },
           {
             accessor: "OC - Vacancy",
             title: "OC Vacancy",
-            width: windowSize < 768 ? 100 : "auto",
+            width: windowSize < CUSTOM_BREAKPOINT ? 100 : "auto",
             render: (value) => {
               const whichRoundToSearch = value[searchCriteria.round];
               return (
@@ -204,7 +219,7 @@ const ReportTable = ({ searchCriteria }) => {
           {
             accessor: `${searchCriteria?.Category} - Vacancy`,
             title: `${searchCriteria?.Category} - Vacancy`,
-            width: windowSize < 768 ? 100 : "auto",
+            width: windowSize < CUSTOM_BREAKPOINT ? 100 : "auto",
             hidden: searchCriteria?.Category == "OC",
             render: (value) => {
               const whichRoundToSearch = value[searchCriteria.round];
@@ -230,8 +245,8 @@ const ReportTable = ({ searchCriteria }) => {
             },
           },
           {
-            accessor: `${searchCriteria?.Category} - Cutoff`,
-            title: `${searchCriteria?.Category} - Cutoff (Reference)`,
+            accessor: `${searchCriteria?.Category} - ${searchCriteria?.filterBy}`,
+            title: `${searchCriteria?.Category} - ${searchCriteria?.filterBy} (Reference)`,
             width: 100,
           },
         ]}

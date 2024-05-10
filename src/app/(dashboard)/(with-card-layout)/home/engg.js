@@ -25,6 +25,7 @@ import { useDisclosure } from "@mantine/hooks";
 import CutoffCalculator from "@/components/CutoffCalculator";
 import { collegeCourseGroups } from "@/utils/collegeCourseGroups";
 import { useTour } from "@reactour/tour";
+import { CUSTOM_BREAKPOINT } from "@/constants";
 
 const CollegesTable = lazy(() => import("@/components/CollegesTable"));
 
@@ -42,7 +43,7 @@ const Home = () => {
   const cutoffCategoryRef = useRef();
 
   /* setting window height to this because it doesn make huge diff between 100% and 20rem, so phone la 100% also ok, 20rem also ok
-   * but it sucks when initially window size is less than 768, if so, there is a jerk when actual size is calculated in useffect
+   * but it sucks when initially window size is less than CUSTOM_BREAKPOINT, if so, there is a jerk when actual size is calculated in useffect
    */
   const [windowSize, setwindowSize] = useState({ width: 1230, height: 1234 });
 
@@ -206,7 +207,7 @@ const Home = () => {
                 styles={{
                   root: {
                     width:
-                      windowSize.width != -1 && windowSize.width < 768
+                      windowSize.width != -1 && windowSize.width < CUSTOM_BREAKPOINT
                         ? "100%"
                         : "20rem",
                   },
@@ -248,11 +249,11 @@ const Home = () => {
                 checkIconPosition='left'
                 title={courseGroup}
                 styles={{
-                  root: { width: windowSize.width < 768 ? "100%" : "12rem" },
+                  root: { width: windowSize.width < CUSTOM_BREAKPOINT ? "100%" : "12rem" },
                   input: {
                     fontFamily: inter.style.fontFamily,
                     borderColor:
-                      windowSize.width < 768
+                      windowSize.width < CUSTOM_BREAKPOINT
                         ? tw.theme.colors["mantine-blue"]
                         : tw.theme.colors.gray[200],
                   },
@@ -274,7 +275,7 @@ const Home = () => {
                   input: {
                     fontFamily: inter.style.fontFamily,
                     borderColor:
-                      windowSize.width < 768
+                      windowSize.width < CUSTOM_BREAKPOINT
                         ? tw.theme.colors["mantine-blue"]
                         : tw.theme.colors.gray[200],
                   },
@@ -290,9 +291,9 @@ const Home = () => {
           <hr className='md:hidden self-center border-none border-0 bg-black/10 h-[1px] w-[90%]' />
 
           {/* Linear Search bar */}
-          <div className='grid grid-cols-2 grid-rows-2 gap-2 gap-y-7 md:flex md:gap-2 md:justify-start md:items-center md:flex-wrap'>
+          <div className='grid grid-cols-2 grid-rows-2 gap-4 gap-y-7 md:flex md:gap-4 md:justify-start md:items-center md:flex-wrap'>
             {/* Min cutoff */}
-            <div className='flex flex-col gap-1 items-center relative'>
+            <div className='flex flex-col gap-1 md:items-center relative'>
               <p className='font-normal text-sm w-full text-left'>
                 Minimum Cut-off:
               </p>
@@ -321,14 +322,14 @@ const Home = () => {
                 </p>
               )}
               <p
-                className='underline text-xs absolute cursor-pointer top-[90%] md:top-[110%] left-1'
+                className='underline text-xs absolute cursor-pointer  top-[90%] md:top-[110%] left-1'
                 onClick={open}
               >
                 Calculate my Cut-off?
               </p>
             </div>
             {/* Max cutoff */}
-            <div className='flex flex-col gap-1 items-center relative'>
+            <div className='flex flex-col gap-1 md:items-center relative'>
               <p className='font-normal text-sm w-full text-left'>
                 Maximum Cut-off:
               </p>
@@ -389,7 +390,7 @@ const Home = () => {
                 }}
                 styles={{
                   root: {
-                    width: windowSize.width < 768 ? "100%" : "20rem",
+                    width: windowSize.width < CUSTOM_BREAKPOINT ? "100%" : "20rem",
                   },
                   input: {
                     paddingTop: "0.55rem",
@@ -398,7 +399,7 @@ const Home = () => {
                     fontFamily: inter.style.fontFamily,
                     fontWeight: inter.style.fontWeight,
                     borderColor:
-                      windowSize.width < 768
+                      windowSize.width < CUSTOM_BREAKPOINT
                         ? tw.theme.colors["mantine-blue"]
                         : tw.theme.colors.gray[200],
                     md: {
@@ -539,7 +540,7 @@ const Home = () => {
                 value={searchCriteria.filterBy}
                 color='blue'
                 styles={{
-                  root: { width: window.innerWidth < 768 ? "100%" : "unset" },
+                  root: { width: window.innerWidth < CUSTOM_BREAKPOINT ? "100%" : "unset" },
                 }}
                 onChange={(value) =>
                   setSearchCriteria((prev) => ({ ...prev, filterBy: value }))

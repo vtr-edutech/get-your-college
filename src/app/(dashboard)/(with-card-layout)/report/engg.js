@@ -1,13 +1,14 @@
 "use client";
 import SkeletonLoader from "@/components/SkeletonLoader";
 import ErrorBoundary from "@/components/ui/ErrorBoundary";
-import { getWindowSize, inter } from "@/utils";
+import { CUSTOM_BREAKPOINT } from "@/constants";
+import { getWindowSize, inter, tw } from "@/utils";
 import { collegeCategoryData } from "@/utils/collegeCategoryData";
 import { COLLEGE_CATEGORIES } from "@/utils/collegeChoiceListData";
 import { ALL_DISTRICT } from "@/utils/collegeDistrictData";
 import { COLLEGE_CODE_NAME } from "@/utils/collegeDistrictData";
 import { UNIQUE_COURSE_NAMES } from "@/utils/collegeNames";
-import { SegmentedControl, Select } from "@mantine/core";
+import { MultiSelect, SegmentedControl, Select } from "@mantine/core";
 import Image from "next/image";
 import React, {
   Suspense,
@@ -48,7 +49,7 @@ const Report = () => {
   const collegeNameRef = useRef();
   const collegeCodeRef = useRef();
 
-  const [searchCriteria, setSearchCriteria] = useState(null);
+  const [searchCriteria, setSearchCriteria] = useState({ filterBy: "Cutoff" });
   const [collegeName, setCollegeName] = useState();
   const [collegeCode, setCollegeCode] = useState();
   const [collegeCategory, setCollegeCategory] = useState();
@@ -60,7 +61,7 @@ const Report = () => {
     const searchCriteriaFromLS = localStorage.getItem("search");
     if (searchCriteriaFromLS) {
       const searchCriteriaObj = JSON.parse(searchCriteriaFromLS);
-      setSearchCriteria(searchCriteriaObj);
+      setSearchCriteria(prev => ({ ...prev, ...searchCriteriaObj }));
       reset({
         MinCutoff: searchCriteriaObj.MinCutoff,
         MaxCutoff: searchCriteriaObj.MaxCutoff,
@@ -110,7 +111,7 @@ const Report = () => {
         onSubmit={handleSubmit(searchSubmission)}
       >
         {/* Min cutoff */}
-        <div className='flex flex-col gap-1 items-center relative'>
+        <div className='flex flex-col gap-1 md:items-center relative'>
           <p className='font-normal text-sm w-full text-left'>
             Minimum Cut-off:
           </p>
@@ -140,7 +141,7 @@ const Report = () => {
           )}
         </div>
         {/* Max cutoff */}
-        <div className='flex flex-col gap-1 items-center relative'>
+        <div className='flex flex-col gap-1 md:items-center relative'>
           <p className='font-normal text-sm w-full text-left'>
             Maximum Cut-off:
           </p>
@@ -213,7 +214,7 @@ const Report = () => {
         </div>
       </form>
 
-      {searchCriteria?.MinCutoff ? (
+      {searchCriteria?.MaxCutoff ? (
         <Suspense fallback={<SkeletonLoader />}>
           <div className='flex md:flex-row flex-col md:items-center gap-2 w-full mt-8'>
             {/* College Name Filter */}
@@ -258,7 +259,8 @@ const Report = () => {
               filter={collegeNameSearchFilter}
               styles={{
                 root: {
-                  minWidth: windowSize.width < 768 ? "100%" : "50vw",
+                  minWidth:
+                    windowSize.width < CUSTOM_BREAKPOINT ? "100%" : "50vw",
                 },
                 label: {
                   fontStyle: inter.style.fontStyle,
@@ -268,6 +270,10 @@ const Report = () => {
                   fontFamily: inter.style.fontFamily,
                   paddingTop: "0.55rem",
                   paddingBottom: "0.55rem",
+                  borderColor:
+                    windowSize.width < CUSTOM_BREAKPOINT
+                      ? tw.theme.colors["mantine-blue"]
+                      : tw.theme.colors.gray[200],
                 },
               }}
             />
@@ -322,6 +328,10 @@ const Report = () => {
                   fontFamily: inter.style.fontFamily,
                   paddingTop: "0.55rem",
                   paddingBottom: "0.55rem",
+                  borderColor:
+                    windowSize.width < CUSTOM_BREAKPOINT
+                      ? tw.theme.colors["mantine-blue"]
+                      : tw.theme.colors.gray[200],
                 },
               }}
             />
@@ -355,32 +365,67 @@ const Report = () => {
                   fontFamily: inter.style.fontFamily,
                   paddingTop: "0.55rem",
                   paddingBottom: "0.55rem",
+                  borderColor:
+                    windowSize.width < CUSTOM_BREAKPOINT
+                      ? tw.theme.colors["mantine-blue"]
+                      : tw.theme.colors.gray[200],
                 },
               }}
             />
             {/* District */}
-            <Select
-              clearable
+            <MultiSelect
               label='District:'
               searchable
               placeholder='Filter by District'
               data={ALL_DISTRICT}
               onChange={(value) => {
-                setSearchCriteria((prev) => ({ ...prev, District: value }));
+                if (value.includes("ALL")) {
+                  setSearchCriteria((prev) => ({ ...prev, District: "ALL" }));
+                } else {
+                  setSearchCriteria((prev) => ({ ...prev, District: value }));
+                }
               }}
               comboboxProps={{
                 withArrow: true,
                 shadow: "xl",
+                offset: 0,
               }}
               styles={{
                 label: {
-                  fontStyle: inter.style.fontStyle,
                   fontWeight: 400,
                 },
+                root: {
+                  width:
+                    windowSize.width < CUSTOM_BREAKPOINT ? "100%" : "20rem",
+                },
                 input: {
+                  paddingTop: "0.38rem",
+                  paddingBottom: "0.38rem",
+                  borderRadius: "0.2rem",
                   fontFamily: inter.style.fontFamily,
-                  paddingTop: "0.55rem",
-                  paddingBottom: "0.55rem",
+                  fontWeight: inter.style.fontWeight,
+                  borderColor:
+                    windowSize.width < CUSTOM_BREAKPOINT
+                      ? tw.theme.colors["mantine-blue"]
+                      : tw.theme.colors.gray[200],
+                  md: {
+                    borderColor: "black",
+                  },
+                },
+                pill: {
+                  maxWidth: "5rem",
+                  fontSize: "0.7rem",
+                },
+                option: {
+                  fontSize: "0.8rem",
+                },
+                groupLabel: {
+                  fontSize: "0.7rem",
+                  padding: 3,
+                },
+                pillsList: {
+                  maxHeight: "3rem",
+                  overflowY: "scroll",
                 },
               }}
             />
@@ -411,6 +456,10 @@ const Report = () => {
                   fontFamily: inter.style.fontFamily,
                   paddingTop: "0.55rem",
                   paddingBottom: "0.55rem",
+                  borderColor:
+                    windowSize.width < CUSTOM_BREAKPOINT
+                      ? tw.theme.colors["mantine-blue"]
+                      : tw.theme.colors.gray[200],
                 },
               }}
               comboboxProps={{
@@ -419,7 +468,7 @@ const Report = () => {
               }}
             />
           </div>
-          <div className='flex w-full justify-end md:mt-3'>
+          <div className='flex w-full justify-between md:mt-3'>
             <SegmentedControl
               data={[
                 {
@@ -435,13 +484,16 @@ const Report = () => {
                   value: "round_3",
                 },
               ]}
-              onChange={(value) => setSearchCriteria(prev => ({ ...prev, round: value }))}
+              onChange={(value) =>
+                setSearchCriteria((prev) => ({ ...prev, round: value }))
+              }
               color='blue'
               withItemsBorders={false}
               styles={{
                 root: {
                   width:
-                    windowSize.width != -1 && windowSize.width < 768
+                    windowSize.width != -1 &&
+                    windowSize.width < CUSTOM_BREAKPOINT
                       ? "100%"
                       : "22rem",
                 },
@@ -449,6 +501,30 @@ const Report = () => {
                   return value && { color: "white" };
                 },
               }}
+            />
+            <SegmentedControl
+              label={"Filter By"}
+              value={searchCriteria.filterBy}
+              color='blue'
+              styles={{
+                root: {
+                  width:
+                    window.innerWidth < CUSTOM_BREAKPOINT ? "100%" : "unset",
+                },
+              }}
+              onChange={(value) =>
+                setSearchCriteria((prev) => ({ ...prev, filterBy: value }))
+              }
+              data={[
+                {
+                  label: "By Cutoff",
+                  value: "Cutoff",
+                },
+                {
+                  label: "By Rank",
+                  value: "Rank",
+                },
+              ]}
             />
           </div>
           <ErrorBoundary>
