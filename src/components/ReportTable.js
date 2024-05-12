@@ -1,6 +1,6 @@
 import { usePagination } from "@mantine/hooks";
 import { DataTable } from "mantine-datatable";
-import { useEffect, useMemo, useState } from "react";
+import { memo, useEffect, useMemo, useState } from "react";
 import Button from "./ui/Button";
 import { useAutoAnimate } from "@formkit/auto-animate/react";
 import { reportTableData } from "@/utils/collegeChoiceListData";
@@ -19,6 +19,7 @@ const data = reportTableData.map((data) => {
       coll["COLLEGE CODE"] == data["College Code"] &&
       coll.BRANCH == data["Branch Code"]
   );
+  const currCollDist = districtData.find(coll => coll["COLLEGE CODE"] == data["College Code"]);
   return {
     ...data,
     round_2: collegeChoiceListR2.find(
@@ -36,8 +37,8 @@ const data = reportTableData.map((data) => {
           : "no"
         : "no"
       : "no",
-    autonomous: currCollEx?.["College Status"]
-      ? currCollEx["College Status"] == "Autonomous"
+    autonomous: currCollDist?.["College Status"]
+      ? currCollDist["College Status"] == "Autonomous"
         ? "Autonomous"
         : "Non-Autonomous"
       : "Unknown",
@@ -58,7 +59,7 @@ const addCollegeToList = (colleges, setSelectedColleges) => {
   setSelectedColleges(colleges);
 };
 
-const ReportTable = ({ searchCriteria }) => {
+const ReportTable = memo(function MyReportTable({ searchCriteria, visible }) {
   // console.log("🚀 ~ ReportTable ~ searchCriteria:", searchCriteria)
   const previouslySelectedCollegeIds = localStorage.getItem("colleges");
   // console.log(previouslySelectedCollegeIds)
@@ -69,7 +70,7 @@ const ReportTable = ({ searchCriteria }) => {
       previouslySelectedCollegeIds
         ? previouslySelectedCollegeIds
             .split(",")
-            .map((id) => reportTableData.find((college) => college["id"] == id))
+            .map((id) => data.find((college) => college["id"] == id))
         : [],
     [previouslySelectedCollegeIds]
   );
@@ -183,6 +184,9 @@ const ReportTable = ({ searchCriteria }) => {
             background: "white",
             boxShadow: "0 0 10px rgba(0, 0, 0, 0.1)",
           },
+          root: {
+            opacity: visible? 100: 0
+          }
         }}
         scrollAreaProps={{ type: "always", h: 500 }}
         // noRecordsIcon={}
@@ -264,8 +268,8 @@ const ReportTable = ({ searchCriteria }) => {
                   }`}
                 >
                   {whichRoundToSearch
-                    ? whichRoundToSearch["OC"]
-                    : value["OC - Vacancy"]}
+                    ? whichRoundToSearch["OC"] ?? '-'
+                    : value["OC - Vacancy"] ?? '-'}
                 </p>
               );
             },
@@ -292,8 +296,8 @@ const ReportTable = ({ searchCriteria }) => {
                   }`}
                 >
                   {whichRoundToSearch
-                    ? whichRoundToSearch[`${searchCriteria?.Category}`]
-                    : value[`${searchCriteria?.Category} - Vacancy`]}
+                    ? whichRoundToSearch[`${searchCriteria?.Category}`] ?? '-'
+                    : value[`${searchCriteria?.Category} - Vacancy`] ?? '-'}
                 </p>
               );
             },
@@ -367,6 +371,6 @@ const ReportTable = ({ searchCriteria }) => {
       </div>
     </>
   );
-};
+});
 
 export default ReportTable;

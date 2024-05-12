@@ -36,8 +36,6 @@ const Home = () => {
     register,
     setError,
     setValue,
-    getValues,
-    clearErrors,
   } = useForm();
   const yearInputRef = useRef();
   const cutoffCategoryRef = useRef();
@@ -57,7 +55,6 @@ const Home = () => {
     districtKey: "",
   });
   const [courseGroup, setCourseGroup] = useState("ALL");
-  const [districtKey, setDistrictKey] = useState("");
 
   // console.log("🚀 ~ Home ~ searchCriteria:", searchCriteria);
   // console.log("🚀 ~ Home ~ courseGroup:", courseGroup);
@@ -86,15 +83,6 @@ const Home = () => {
     [courseGroup]
   );
 
-  const districtCombobox = useCombobox({
-    onDropdownClose: () => districtCombobox.resetSelectedOption(),
-    onDropdownOpen: (eventSource) => {
-      eventSource == "keyboard"
-        ? districtCombobox.selectActiveOption()
-        : districtCombobox.updateSelectedOptionIndex("active");
-    },
-  });
-
   const departmentCombobox = useCombobox({
     onDropdownClose: () => departmentCombobox.resetSelectedOption(),
     onDropdownOpen: (eventSource) => {
@@ -104,25 +92,11 @@ const Home = () => {
     },
   });
 
-  // const departmentComboboxOptions = useMemo(() => UNIQUE_COURSE_NAMES, [courseGroup])
-
-  const options = useMemo(
-    () =>
-      ALL_DISTRICT.filter((district) =>
-        district.toLowerCase().trim().includes(districtKey.toLowerCase().trim())
-      ).map((district, k) => (
-        <Combobox.Option key={k} value={district}>
-          {district}
-        </Combobox.Option>
-      )),
-    [districtKey]
-  );
-
   const { currentStep, isOpen, setCurrentStep, setIsOpen } = useTour();
   // current step ah depend ah paathu, if currstep not 1 or 0, then open if localstorageHomeTour is false
   useEffect(() => {
     const hasHomeFilterTourPlayed = localStorage.getItem("hasHomeFilterPlayed");
-    if (!isOpen && (!hasHomeFilterTourPlayed || hasHomeFilterTourPlayed != "true") && ![0, 1, 4, 5, 6].includes(currentStep)) {
+    if (!isOpen && (!hasHomeFilterTourPlayed || hasHomeFilterTourPlayed != "true") /* && ![0, 1, 4, 5, 6].includes(currentStep)*/) {
       setIsOpen(true);
       setCurrentStep(2);
     }
@@ -135,20 +109,6 @@ const Home = () => {
   const searchSubmission = async (data) => {
     // console.log("submit data", data);
     if (Object.keys(data).length !== 0) {
-      // if (!data.Dept || (typeof data.Dept == "string" && data.Dept != "ALL") || (typeof data.Dept == "object" && data.Dept.length < 1)) {
-      // //   console.log("Empty dept");
-      //   setError(
-      //     "Dept",
-      //     {
-      //       type: "validate",
-      //       message: "This field is required!",
-      //     },
-      //   );
-      //   return;
-      // } else {
-      // //   console.log("dept error null")
-      //   clearErrors("Dept")
-      // }
       if (parseInt(data.MinCutoff) > parseInt(data.MaxCutoff)) {
         setError(
           "MinCutoff",
@@ -162,8 +122,6 @@ const Home = () => {
         return;
       }
       const chosenYear = yearInputRef.current.value;
-      // const chosenCutoffCategory = cutoffCategoryRef.current;
-      // // console.log("🚀 ~ searchSubmission ~ chosenCutoffCategory:", chosenCutoffCategory)
       setSearchCriteria({ ...searchCriteria, ...data, year: chosenYear });
     }
   };
@@ -207,7 +165,8 @@ const Home = () => {
                 styles={{
                   root: {
                     width:
-                      windowSize.width != -1 && windowSize.width < CUSTOM_BREAKPOINT
+                      windowSize.width != -1 &&
+                      windowSize.width < CUSTOM_BREAKPOINT
                         ? "100%"
                         : "20rem",
                   },
@@ -249,7 +208,10 @@ const Home = () => {
                 checkIconPosition='left'
                 title={courseGroup}
                 styles={{
-                  root: { width: windowSize.width < CUSTOM_BREAKPOINT ? "100%" : "12rem" },
+                  root: {
+                    width:
+                      windowSize.width < CUSTOM_BREAKPOINT ? "100%" : "12rem",
+                  },
                   input: {
                     fontFamily: inter.style.fontFamily,
                     borderColor:
@@ -390,7 +352,8 @@ const Home = () => {
                 }}
                 styles={{
                   root: {
-                    width: windowSize.width < CUSTOM_BREAKPOINT ? "100%" : "20rem",
+                    width:
+                      windowSize.width < CUSTOM_BREAKPOINT ? "100%" : "20rem",
                   },
                   input: {
                     paddingTop: "0.55rem",
@@ -497,50 +460,70 @@ const Home = () => {
                 }
               />
               {/* Combobox'd select for districts */}
-              <Combobox
-                store={districtCombobox}
-                shadow='md'
-                onOptionSubmit={(val) => {
-                  setSearchCriteria({ ...searchCriteria, districtKey: val });
-                  setDistrictKey(val);
-                  districtCombobox.closeDropdown();
+              <MultiSelect
+                searchable
+                placeholder='Filter by District'
+                data={ALL_DISTRICT}
+                onChange={(value) => {
+                  if (value.includes("ALL")) {
+                    setSearchCriteria((prev) => ({ ...prev, DistrictKey: "ALL" }));
+                  } else {
+                    setSearchCriteria((prev) => ({ ...prev, DistrictKey: value }));
+                  }
                 }}
-              >
-                <Combobox.Target>
-                  <input
-                    type='search'
-                    name='district'
-                    placeholder='Search by district'
-                    id='search-district'
-                    className='py-2 px-3 w-full md:w-[20%] md:mr-auto outline outline-1 placeholder:text-sm outline-gray-300 focus:outline-gray-400 md:outline-gray-200 rounded-md focus:outline-1 md:focus:outline-mantine-blue/60'
-                    onClick={() => districtCombobox.toggleDropdown()}
-                    onInput={(e) => {
-                      if (e.target.value == "")
-                        setSearchCriteria({
-                          ...searchCriteria,
-                          districtKey: "",
-                        });
-                      setDistrictKey(e.target.value);
-                      districtCombobox.openDropdown();
-                    }}
-                    value={districtKey}
-                  />
-                </Combobox.Target>
-                <Combobox.Dropdown>
-                  <Combobox.Options
-                    mah={200}
-                    styles={{ options: { overflowY: "scroll" } }}
-                  >
-                    {options}
-                  </Combobox.Options>
-                </Combobox.Dropdown>
-              </Combobox>
+                comboboxProps={{
+                  withArrow: true,
+                  shadow: "xl",
+                  offset: 0,
+                }}
+                styles={{
+                  label: {
+                    fontWeight: 400,
+                  },
+                  root: {
+                    width:
+                      windowSize.width < CUSTOM_BREAKPOINT ? "100%" : "20rem",
+                  },
+                  input: {
+                    paddingTop: "0.44rem",
+                    paddingBottom: "0.44rem",
+                    borderRadius: "0.2rem",
+                    fontFamily: inter.style.fontFamily,
+                    fontWeight: inter.style.fontWeight,
+                    borderColor:
+                      windowSize.width < CUSTOM_BREAKPOINT
+                        ? tw.theme.colors["mantine-blue"]
+                        : tw.theme.colors.gray[200],
+                    md: {
+                      borderColor: "black",
+                    },
+                  },
+                  pill: {
+                    maxWidth: "5rem",
+                    fontSize: "0.7rem",
+                  },
+                  option: {
+                    fontSize: "0.8rem",
+                  },
+                  groupLabel: {
+                    fontSize: "0.7rem",
+                    padding: 3,
+                  },
+                  pillsList: {
+                    maxHeight: "3rem",
+                    overflowY: "scroll",
+                  },
+                }}
+              />
               <SegmentedControl
                 label={"Filter By"}
                 value={searchCriteria.filterBy}
                 color='blue'
                 styles={{
-                  root: { width: window.innerWidth < CUSTOM_BREAKPOINT ? "100%" : "unset" },
+                  root: {
+                    width:
+                      window.innerWidth < CUSTOM_BREAKPOINT ? "100%" : "unset",
+                  },
                 }}
                 onChange={(value) =>
                   setSearchCriteria((prev) => ({ ...prev, filterBy: value }))

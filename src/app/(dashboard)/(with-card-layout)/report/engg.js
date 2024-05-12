@@ -17,6 +17,7 @@ import React, {
   useMemo,
   useRef,
   useState,
+  useTransition,
 } from "react";
 import { useForm } from "react-hook-form";
 import { LuSearch } from "react-icons/lu";
@@ -55,13 +56,13 @@ const Report = () => {
   const [collegeCategory, setCollegeCategory] = useState();
   const [windowSize, setWindowSize] = useState({ width: 1093, height: 1293 });
 
-  // console.log("🚀 ~ Report ~ searchCriteria:", searchCriteria);
+  const [isPending, startTransition] = useTransition();
 
   useEffect(() => {
     const searchCriteriaFromLS = localStorage.getItem("search");
     if (searchCriteriaFromLS) {
       const searchCriteriaObj = JSON.parse(searchCriteriaFromLS);
-      setSearchCriteria(prev => ({ ...prev, ...searchCriteriaObj }));
+      setSearchCriteria((prev) => ({ ...prev, ...searchCriteriaObj }));
       reset({
         MinCutoff: searchCriteriaObj.MinCutoff,
         MaxCutoff: searchCriteriaObj.MaxCutoff,
@@ -227,30 +228,32 @@ const Report = () => {
               ref={collegeNameRef}
               value={collegeName}
               onChange={(value) => {
-                if (!value) {
-                  setCollegeName(null);
-                  setCollegeCode(null);
-                  setCollegeCategory(null);
-                  return setSearchCriteria((prev) => ({
-                    ...prev,
-                    CollegeCode: null,
-                  }));
-                }
-                let currentCode = COLLEGE_CODE_NAME.find(
-                  (codeName) => codeName["College Name"] == value
-                )["College Code"];
-                let currCat = collegeCategoryData.find(
-                  (cat) => cat["TNEA CODE"] == currentCode
-                )["College Category"];
-                // console.log("🚀 ~ Report ~ currCat:", currCat);
-                setCollegeCategory(currCat);
-                setCollegeCode(currentCode.toString());
-                setSearchCriteria((prev) => ({
-                  ...prev,
-                  CollegeCode: currentCode,
-                }));
-                setCollegeName(value);
-                collegeCodeRef.current.value = currentCode;
+                setCollegeName(!value ? null : value);
+                startTransition(() => {
+                  if (!value) {
+                    // setCollegeName(null);
+                    setCollegeCode(null);
+                    setCollegeCategory(null);
+                    return setSearchCriteria({
+                      ...searchCriteria,
+                      CollegeCode: null,
+                    });
+                  }
+                  let currentCode = COLLEGE_CODE_NAME.find(
+                    (codeName) => codeName["College Name"] == value
+                  )["College Code"];
+                  let currCat = collegeCategoryData.find(
+                    (cat) => cat["TNEA CODE"] == currentCode
+                  )["College Category"];
+                  // console.log("🚀 ~ Report ~ currCat:", currCat);
+                  setCollegeCategory(currCat);
+                  setCollegeCode(currentCode.toString());
+                  setSearchCriteria({
+                    ...searchCriteria,
+                    CollegeCode: currentCode,
+                  });
+                  collegeCodeRef.current.value = currentCode;
+                });
               }}
               comboboxProps={{
                 withArrow: true,
@@ -287,30 +290,32 @@ const Report = () => {
               ref={collegeCodeRef}
               value={collegeCode}
               onChange={(value) => {
-                if (!value) {
-                  setCollegeName(null);
-                  setCollegeCode(null);
-                  setCollegeCategory(null);
-                  return setSearchCriteria((prev) => ({
+                setCollegeCode(!value ? null : value);
+                startTransition(() => {
+                  if (!value) {
+                    setCollegeName(null);
+                    // setCollegeCode(null);
+                    setCollegeCategory(null);
+                    return setSearchCriteria((prev) => ({
+                      ...prev,
+                      CollegeCode: null,
+                    }));
+                  }
+                  let currentName = COLLEGE_CODE_NAME.find(
+                    (codeName) => codeName["College Code"] == value
+                  )["College Name"];
+                  setSearchCriteria((prev) => ({
                     ...prev,
-                    CollegeCode: null,
+                    CollegeCode: value,
                   }));
-                }
-                let currentName = COLLEGE_CODE_NAME.find(
-                  (codeName) => codeName["College Code"] == value
-                )["College Name"];
-                setSearchCriteria((prev) => ({
-                  ...prev,
-                  CollegeCode: value,
-                }));
-                setCollegeName(currentName);
-                setCollegeCode(value);
-                setCollegeCategory(
-                  collegeCategoryData.find((cat) => cat["TNEA CODE"] == value)[
-                    "College Category"
-                  ]
-                );
-                collegeNameRef.current.value = currentName;
+                  setCollegeName(currentName);
+                  setCollegeCategory(
+                    collegeCategoryData.find(
+                      (cat) => cat["TNEA CODE"] == value
+                    )["College Category"]
+                  );
+                  collegeNameRef.current.value = currentName;
+                });
               }}
               comboboxProps={{
                 withArrow: true,
@@ -345,12 +350,14 @@ const Report = () => {
               placeholder='Filter by Branch Name'
               data={UNIQUE_COURSE_NAMES}
               onChange={(value) => {
-                setSearchCriteria((prev) => ({
-                  ...prev,
-                  BranchName: value
-                    ? value.replace(/\s+/g, "").toLowerCase()
-                    : null,
-                }));
+                startTransition(() => {
+                  setSearchCriteria((prev) => ({
+                    ...prev,
+                    BranchName: value
+                      ? value.replace(/\s+/g, "").toLowerCase()
+                      : null,
+                  }));
+                });
               }}
               comboboxProps={{
                 withArrow: true,
@@ -379,11 +386,13 @@ const Report = () => {
               placeholder='Filter by District'
               data={ALL_DISTRICT}
               onChange={(value) => {
-                if (value.includes("ALL")) {
-                  setSearchCriteria((prev) => ({ ...prev, District: "ALL" }));
-                } else {
-                  setSearchCriteria((prev) => ({ ...prev, District: value }));
-                }
+                startTransition(() => {
+                  if (value.includes("ALL")) {
+                    setSearchCriteria((prev) => ({ ...prev, District: "ALL" }));
+                  } else {
+                    setSearchCriteria((prev) => ({ ...prev, District: value }));
+                  }
+                });
               }}
               comboboxProps={{
                 withArrow: true,
@@ -468,7 +477,7 @@ const Report = () => {
               }}
             />
           </div>
-          <div className='flex w-full justify-between md:mt-3'>
+          <div className='flex w-full md:flex-row flex-col gap-4 justify-between md:mt-3'>
             <SegmentedControl
               data={[
                 {
@@ -485,7 +494,9 @@ const Report = () => {
                 },
               ]}
               onChange={(value) =>
-                setSearchCriteria((prev) => ({ ...prev, round: value }))
+                startTransition(() => {
+                  setSearchCriteria((prev) => ({ ...prev, round: value }));
+                })
               }
               color='blue'
               withItemsBorders={false}
@@ -513,7 +524,9 @@ const Report = () => {
                 },
               }}
               onChange={(value) =>
-                setSearchCriteria((prev) => ({ ...prev, filterBy: value }))
+                startTransition(() => {
+                  setSearchCriteria((prev) => ({ ...prev, filterBy: value }));
+                })
               }
               data={[
                 {
@@ -528,7 +541,10 @@ const Report = () => {
             />
           </div>
           <ErrorBoundary>
-            <ReportTable searchCriteria={searchCriteria} />
+            <div className={`${isPending? '': 'hidden'} flex flex-col gap-3`}>
+              <SkeletonLoader rows={8} />
+            </div>
+            <ReportTable searchCriteria={searchCriteria} visible={!isPending} />
           </ErrorBoundary>
         </Suspense>
       ) : (

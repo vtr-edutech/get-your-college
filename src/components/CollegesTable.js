@@ -16,6 +16,7 @@ const colleges = {
         coll["COLLEGE CODE"] == college["College Code"] &&
         coll.BRANCH == college["Branch Code"]
     );
+    const collDataDist = districtData.find(coll => coll["COLLEGE CODE"] == college["College Code"]);
     return {
       ...college,
       nba: collData?.["NBA Accredited"]
@@ -27,8 +28,8 @@ const colleges = {
             : "no"
           : "no"
         : "no",
-      autonomous: collData?.["College Status"]
-        ? collData["College Status"] == "Autonomous"
+      autonomous: collDataDist?.["College Status"]
+        ? collDataDist["College Status"] == "Autonomous"
           ? "Autonomous"
           : "Non-Autonomous"
         : "Unknown",
@@ -40,6 +41,7 @@ const colleges = {
         coll["COLLEGE CODE"] == college["College Code"] &&
         coll.BRANCH == college["Branch Code"]
     );
+    const collDataDist = districtData.find(coll => coll["COLLEGE CODE"] == college["College Code"]);
     return {
       ...college,
       nba: collData?.["NBA Accredited"]
@@ -51,8 +53,8 @@ const colleges = {
             : "no"
           : "no"
         : "no",
-      autonomous: collData?.["College Status"]
-        ? collData["College Status"] == "Autonomous"
+      autonomous: collDataDist?.["College Status"]
+        ? collDataDist["College Status"] == "Autonomous"
           ? "Autonomous"
           : "Non-Autonomous"
         : "Unknown",
@@ -91,21 +93,14 @@ const CollegesTable = ({ searchCriteria }) => {
                     ))
             )
             .filter((college) =>
-              searchCriteria.districtKey.trim() != ""
-                ? districtData.find(
-                    (collegeMiscData) =>
-                      collegeMiscData["District "]
-                        .toLowerCase()
-                        .replace(/\s+/g, "")
-                        .includes(
-                          searchCriteria.districtKey
-                            .toLowerCase()
-                            .replace(/s\+/g, "")
-                        ) &&
-                      collegeMiscData["COLLEGE CODE"] == college["College Code"]
-                  )
+              searchCriteria?.DistrictKey && searchCriteria?.DistrictKey?.length > 0
+                ? searchCriteria?.DistrictKey == "ALL"
                   ? true
-                  : false
+                  : districtData.find(
+                      (dist) =>
+                        searchCriteria?.DistrictKey.includes(dist["District "]) &&
+                        dist["COLLEGE CODE"] == college["College Code"]
+                    )
                 : true
             )
             .sort(

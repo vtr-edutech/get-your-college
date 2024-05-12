@@ -206,7 +206,7 @@ const CollegeInfoTable = ({ searchCriteria }) => {
                           1
                         )
                       : college[`${key} - ${searchCriteria.filterBy}`]
-                    : " "}
+                    : "-"}
                 </h2>
               ))}
             </div>

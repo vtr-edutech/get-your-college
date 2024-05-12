@@ -742,6 +742,13 @@ export const collegeCategoryData = [
     "College Category": "SELF FINANCING ENGINEERING COLLEGES",
   },
   {
+    "S.No": 106.5,
+    "TNEA CODE": 1398,
+    "Name of the Colleges":
+      "Chennai Institute of Technology and Applied Research Sarathy Nagar Puthuper Village Kundrathur Chennai 600069",
+    "College Category": "SELF FINANCING ENGINEERING COLLEGES",
+  },
+  {
     "S.No": 107,
     "TNEA CODE": 1399,
     "Name of the Colleges":
