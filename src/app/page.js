@@ -96,7 +96,7 @@ export default function Home() {
 
         <div className='map grid w-full place-items-center md:max-w-[40%]'>
           <iframe
-            src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.5327439932926!2d80.17000177484307!3d13.06537978725863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526165149482d5%3A0x5b78d8d1489b9dfc!2sVTR%20Edu%20Solutions!5e0!3m2!1sen!2sin!4v1714782617990!5m2!1sen!2sin'
+            src='<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.5331177025696!2d80.1725574!3d13.0653633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5261cdbf3a87d5%3A0x81abea73c6e63dba!2sGet%20Your%20College!5e0!3m2!1sen!2sin!4v1716102516302!5m2!1sen!2sin'
             width='100%'
             height='300'
             style={{ border: 0 }}

@@ -43,7 +43,7 @@ export const metadata = {
   publisher: "Sachin",
   metadataBase: new URL("https://www.getyourcollege.com"),
   robots: {
-    index: false,
+    index: true,
     follow: true,
     nocache: true,
     googleBot: {
