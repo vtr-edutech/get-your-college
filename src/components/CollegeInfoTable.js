@@ -78,6 +78,12 @@ const CollegeInfoTable = ({ searchCriteria }) => {
   return (
     <>
       <div className='w-full self-end flex'>
+        {searchCriteria.searchKey.trim() !== "" && (
+          <p className='ml-2'>
+            <span className='font-medium'>{collegesAfterFiltering.length}</span>{" "}
+            college(s) found
+          </p>
+        )}
         <Pagination
           total={parseInt(collegesAfterFiltering.length / PAGE_SIZE) + 1}
           value={pagination.active}
@@ -212,7 +218,7 @@ const CollegeInfoTable = ({ searchCriteria }) => {
             </div>
           ))}
       </div>
-      <div className='w-full md:self-end self-start md:flex-row flex-col flex'>
+      <div className='w-full md:self-end self-start flex'>
         {searchCriteria.searchKey.trim() !== "" && (
           <p className='ml-2'>
             <span className='font-medium'>{collegesAfterFiltering.length}</span>{" "}

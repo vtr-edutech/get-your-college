@@ -96,18 +96,16 @@ const ReportTable = memo(function MyReportTable({ searchCriteria, visible }) {
               : true) &&
             (searchCriteria?.CollegeCategory
               ? college["College Category"] == searchCriteria?.CollegeCategory
+              : true) &&
+            (searchCriteria?.District && searchCriteria?.District?.length > 0
+              ? searchCriteria?.District == "ALL"
+                ? true
+                : districtData.find(
+                    (dist) =>
+                      searchCriteria?.District.includes(dist["District "]) &&
+                      dist["COLLEGE CODE"] == college["College Code"]
+                  )
               : true)
-        )
-        .filter((college) =>
-          searchCriteria?.District && searchCriteria?.District?.length > 0
-            ? searchCriteria?.District == "ALL"
-              ? true
-              : districtData.find(
-                  (dist) =>
-                    searchCriteria?.District.includes(dist["District "]) &&
-                    dist["COLLEGE CODE"] == college["College Code"]
-                )
-            : true
         )
         .sort((a, b) =>
           searchCriteria.filterBy == "Cutoff"

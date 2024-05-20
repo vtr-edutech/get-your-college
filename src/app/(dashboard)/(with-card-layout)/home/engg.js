@@ -11,12 +11,10 @@ import React, {
 import { useForm } from "react-hook-form";
 import { LuSearch } from "react-icons/lu";
 import {
-  Combobox,
   Modal,
   MultiSelect,
   SegmentedControl,
   Select,
-  useCombobox,
 } from "@mantine/core";
 import SkeletonLoader from "@/components/SkeletonLoader";
 import { ALL_DISTRICT } from "@/utils/collegeDistrictData";
@@ -65,9 +63,10 @@ const Home = () => {
         ? [{ group: "ALL DEPARTMENTS", items: ["ALL"] }].concat(
             Object.keys(collegeCourseGroups).map((group) => ({
               group: group,
-              items: collegeCourseGroups[group].map(
-                (course) => course["Branch Name"]
-              ),
+              items: collegeCourseGroups[group].map((course) => ({
+                label: course["Branch Name"],
+                value: course["Branch Code"],
+              })),
             }))
           )
         : [{ group: "ALL DEPARTMENTS", items: ["ALL"] }].concat(
@@ -75,22 +74,14 @@ const Home = () => {
               .filter((group) => group == courseGroup)
               .map((group) => ({
                 group: group,
-                items: collegeCourseGroups[group].map(
-                  (course) => course["Branch Name"]
-                ),
+                items: collegeCourseGroups[group].map((course) => ({
+                  label: course["Branch Name"],
+                  value: course["Branch Code"],
+                })),
               }))
           ),
     [courseGroup]
   );
-
-  const departmentCombobox = useCombobox({
-    onDropdownClose: () => departmentCombobox.resetSelectedOption(),
-    onDropdownOpen: (eventSource) => {
-      eventSource == "keyboard"
-        ? departmentCombobox.selectActiveOption()
-        : departmentCombobox.updateSelectedOptionIndex("active");
-    },
-  });
 
   const { currentStep, isOpen, setCurrentStep, setIsOpen } = useTour();
   // current step ah depend ah paathu, if currstep not 1 or 0, then open if localstorageHomeTour is false
@@ -221,7 +212,7 @@ const Home = () => {
                   },
                 }}
                 onChange={(value) => setCourseGroup(value)}
-                data={["ALL", ...Object.keys(collegeCourseGroups)]} // for now only year 2023 is available. later add 2021 and 2022 too
+                data={[{ label: "All departments", value: "ALL" }, ...Object.keys(collegeCourseGroups)]} // for now only year 2023 is available. later add 2021 and 2022 too
               />
             </div>
             {/* Year choose */}
@@ -344,10 +335,7 @@ const Home = () => {
                   if (values.includes("ALL") && values.length > 1) {
                     setValue("Dept", "ALL");
                   } else {
-                    setValue(
-                      "Dept",
-                      values.map((value) => value.replace(/\s+/g, ""))
-                    );
+                    setValue("Dept",values);
                   }
                 }}
                 styles={{

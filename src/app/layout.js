@@ -26,6 +26,8 @@ export const metadata = {
     "Engineering",
     "Colleges",
     "Dinesh Kumar",
+    "VTR",
+    "Edu Tech",
     "Counselling",
     "Tamil Nadu",
     "Andhra Pradesh",
@@ -34,6 +36,9 @@ export const metadata = {
     "Minority",
     "Admissions",
     "Easy to use",
+    "Guidance",
+    "Free",
+    "Kerala",
   ],
   authors: [
     { name: "Kartheeshwaran" },
@@ -42,19 +47,6 @@ export const metadata = {
   creator: "Sachin",
   publisher: "Sachin",
   metadataBase: new URL("https://www.getyourcollege.com"),
-  robots: {
-    index: true,
-    follow: true,
-    nocache: true,
-    googleBot: {
-      index: true,
-      follow: false,
-      noimageindex: false,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
-  },
 };
 
 export default function RootLayout({ children }) {

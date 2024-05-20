@@ -477,6 +477,8 @@ const Report = () => {
               }}
             />
           </div>
+
+          {/* Rounds and filterBy sections */}
           <div className='flex w-full md:flex-row flex-col gap-4 justify-between md:mt-3'>
             <SegmentedControl
               data={[

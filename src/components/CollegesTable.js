@@ -72,7 +72,7 @@ const CollegesTable = ({ searchCriteria }) => {
                 (searchCriteria?.Dept == "ALL"
                   ? true
                   : searchCriteria?.Dept.includes(
-                      college["Branch Name"].replace(/\s+/g, "").toUpperCase()
+                      college["Branch Code"]
                     )) &&
                 college[`${searchCriteria.Category} - Cutoff`] >=
                   parseFloat(searchCriteria.MinCutoff) &&

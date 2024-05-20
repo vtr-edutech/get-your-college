@@ -64,7 +64,7 @@ const Navbar = ({ modalOpen, logoutOpen }) => {
   const currentSubCategoryType = useSearchParams().get('t');
 
   const { data: session, status: hasSessionLoaded } = useSession();
-  console.log("🚀 ~ Nav ~ session:", session);
+  // console.log("🚀 ~ Nav ~ session:", session);
   
   const dispatch = useDispatch();
   const selectedCollegeCategory = useSelector((state) => state.collegeCategory);
