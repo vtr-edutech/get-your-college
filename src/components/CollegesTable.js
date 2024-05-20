@@ -71,9 +71,7 @@ const CollegesTable = ({ searchCriteria }) => {
               (college) =>
                 (searchCriteria?.Dept == "ALL"
                   ? true
-                  : searchCriteria?.Dept.includes(
-                      college["Branch Code"]
-                    )) &&
+                  : searchCriteria?.Dept.includes(college["Branch Code"])) &&
                 college[`${searchCriteria.Category} - Cutoff`] >=
                   parseFloat(searchCriteria.MinCutoff) &&
                 college[`${searchCriteria.Category} - Cutoff`] <=
@@ -90,18 +88,18 @@ const CollegesTable = ({ searchCriteria }) => {
                     .replace(/\s+/g, "")
                     .includes(
                       searchCriteria.searchKey.toLowerCase().replace(/\s+/g, "")
-                    ))
-            )
-            .filter((college) =>
-              searchCriteria?.DistrictKey && searchCriteria?.DistrictKey?.length > 0
-                ? searchCriteria?.DistrictKey == "ALL"
-                  ? true
-                  : districtData.find(
-                      (dist) =>
-                        searchCriteria?.DistrictKey.includes(dist["District "]) &&
-                        dist["COLLEGE CODE"] == college["College Code"]
-                    )
-                : true
+                    )) &&
+                (searchCriteria?.DistrictKey &&
+                searchCriteria?.DistrictKey?.length > 0
+                  ? searchCriteria?.DistrictKey == "ALL"
+                    ? true
+                    : districtData.find(
+                        (dist) =>
+                          searchCriteria?.DistrictKey.includes(
+                            dist["District "]
+                          ) && dist["COLLEGE CODE"] == college["College Code"]
+                      )
+                  : true)
             )
             .sort(
               (a, b) =>
@@ -149,9 +147,7 @@ const CollegesTable = ({ searchCriteria }) => {
           .map((college, i) => (
             <div
               key={college["S.No"]}
-              // onMouseOver={(e) => e.currentTarget.classList.replace('h-16', 'h-auto')}
-              // onMouseOut={(e) => e.currentTarget.classList.replace('h-auto', 'h-16')}
-              className={`flex transition-all min-w-fit md:min-w-[unset] mx-1 justify-around items-center outline p-2 md:p-1 min-h-32 animate-fade-in overflow-hidden ${
+              className={`flex hover:bg-sky-200/70 transition-all min-w-fit md:min-w-[unset] mx-1 justify-around items-center outline p-2 md:p-1 min-h-32 animate-fade-in overflow-hidden ${
                 i % 2 != 0 ? "bg-white" : "bg-blue-50/70"
               } outline-1 outline-gray-200 last-of-type:rounded-ee-md last-of-type:mb-1 last-of-type:rounded-es-md`}
             >

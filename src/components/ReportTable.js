@@ -341,7 +341,7 @@ const ReportTable = memo(function MyReportTable({ searchCriteria, visible }) {
         selectionTrigger='cell'
         selectionColumnClassName='cursor-pointer'
         selectionCheckboxProps={{ className: "cursor-pointer" }}
-        rowClassName={"h-28 max-h-28 mx-1"}
+        rowClassName={"h-28 max-h-28 mx-1 hover:bg-blue-100 transition-all"}
       />
       <div className='w-full flex md:flex-row flex-col md:justify-between mt-16'>
         <p className='ml-2'>

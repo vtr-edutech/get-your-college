@@ -136,7 +136,7 @@ const CollegeInfoTable = ({ searchCriteria }) => {
           .map((college, i) => (
             <div
               key={i}
-              className={`flex transition-all min-w-fit mx-1 md:min-w-[unset] justify-around items-center outline p-1.5 md:p-1 min-h-32 last-of-type:mb-1 animate-fade-in overflow-hidden ${
+              className={`flex hover:bg-sky-200/70 transition-all min-w-fit mx-1 md:min-w-[unset] justify-around items-center outline p-1.5 md:p-1 min-h-32 last-of-type:mb-1 animate-fade-in overflow-hidden ${
                 i % 2 != 0 ? "bg-white" : "bg-blue-50/70"
               } outline-1 outline-gray-200 last-of-type:rounded-ee-md last-of-type:rounded-es-md`}
             >
