@@ -7,7 +7,7 @@ import { SegmentedControl, Select } from "@mantine/core";
 import { useLocalStorage } from "@mantine/hooks";
 import { useTour } from "@reactour/tour";
 import Image from "next/image";
-import { Suspense, lazy, useEffect, useRef, useState } from "react";
+import { Suspense, lazy, useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { LuSearch } from "react-icons/lu";
 
@@ -22,7 +22,7 @@ const COUNSELLING_CATEGORY = {
     { label: "TN-MQ NRI", value: "MQ NRI" },
     { label: "TN-MQ NRI Lapsed", value: "MQ NRI Lapsed" },
   ],
-  MCC: ["AIQ", "Deemed"],
+  MCC: [{ label: "AIQ", value: "AIQ" }, { label: "Deemed", value: "Deemed" }],
 };
 
 const COMMUNITY = {
@@ -41,9 +41,7 @@ export default function Med() {
     register,
     setError,
     setValue,
-    control,
-    getValues,
-    clearErrors,
+    resetField,
   } = useForm({
     defaultValues: {
       counsellingCategory: "STATE",
@@ -113,7 +111,7 @@ export default function Med() {
 
         return;
       }
-      setSearchCriteria({ ...searchCriteria, ...data });
+      setSearchCriteria({ ...searchCriteria, ...data, ...unSubmitSearch });
       // console.log("🚀 ~ searchSubmission ~ searchCriteria:", searchCriteria)
     }
   };
@@ -133,7 +131,7 @@ export default function Med() {
         <div className='flex flex-col gap-12 md:gap-8'>
           {/* Category and Years container */}
           <div className='flex flex-col md:flex-row gap-7 justify-center md:justify-start md:gap-10 md:flex-wrap'>
-            {/* Medical cutoff category choose */}
+            {/* Medical counselling category choose */}
             <div className='flex flex-col justify-center gap-1 w-full md:w-[unset] relative'>
               <p className='font-normal text-sm'>Counselling category:</p>
               <SegmentedControl
@@ -153,6 +151,8 @@ export default function Med() {
                 }}
                 onChange={(value) => {
                   setValue("counsellingCategory", value);
+                  setValue("MinNEET", value == "STATE"? 107: 1)
+                  resetField("MaxNEET")
                   setUnSubmitSearch((prev) => ({
                     ...prev,
                     counsellingCategory: value,
@@ -167,7 +167,6 @@ export default function Med() {
                   {
                     label: "MCC",
                     value: "MCC",
-                    disabled: true,
                   },
                 ]}
               >
@@ -190,7 +189,7 @@ export default function Med() {
                 )}
               </SegmentedControl>
             </div>
-            {/* Category based on cutoff category */}
+            {/* Quota based on cutoff category */}
             <div className='flex flex-col justify-center gap-1 relative'>
               <p className='font-normal text-sm'>Quota:</p>
               <Select
@@ -236,6 +235,7 @@ export default function Med() {
               <Select
                 defaultValue='TN'
                 allowDeselect={false}
+                disabled={unSubmitSearch.counsellingCategory == "MCC"}
                 checkIconPosition='right'
                 comboboxProps={{ shadow: "xl" }}
                 styles={{
@@ -248,7 +248,17 @@ export default function Med() {
                         : tw.theme.colors.gray[200],
                   },
                 }}
-                data={[{ label: "Tamil Nadu", value: "TN" }]} // for now only TN available
+                value={
+                  unSubmitSearch.counsellingCategory == "MCC" ? "AI" : "TN"
+                }
+                data={[
+                  { label: "Tamil Nadu", value: "TN" },
+                  {
+                    label: "All India",
+                    value: "AI",
+                    disabled: unSubmitSearch.counsellingCategory == "STATE",
+                  },
+                ]} // for now only TN available
               />
             </div>
             {/* Year choose */}
@@ -299,7 +309,11 @@ export default function Med() {
             {/* Min NEET */}
             <div className='flex flex-col gap-1 items-center relative'>
               <p className='font-normal text-sm w-full text-left'>
-                Min NEET Score:
+                Min (
+                {unSubmitSearch.counsellingCategory == "STATE"
+                  ? "NEET Score"
+                  : "Rank"}
+                ):
               </p>
               <input
                 type='number'
@@ -310,18 +324,38 @@ export default function Med() {
                 {...register("MinNEET", {
                   required: { value: true, message: "This field is required" },
                   min: {
-                    value: 70,
-                    message: "Minimum cutoff should be greater than 107",
+                    value:
+                      unSubmitSearch.counsellingCategory == "STATE" ? 107 : 1,
+                    message: `Minimum ${
+                      unSubmitSearch.counsellingCategory == "STATE"
+                        ? "cutoff"
+                        : "rank"
+                    } should be greater than ${
+                      unSubmitSearch.counsellingCategory == "STATE" ? 107 : 1
+                    }`,
                   },
                   max: {
-                    value: 200,
-                    message: "Minimum cutoff should be less than 720",
+                    value:
+                      unSubmitSearch.counsellingCategory == "STATE"
+                        ? 720
+                        : 1145976,
+                    message: `Maximum ${
+                      unSubmitSearch.counsellingCategory == "STATE"
+                        ? "cutoff"
+                        : "rank"
+                    } should be less than ${
+                      unSubmitSearch.counsellingCategory == "STATE"
+                        ? 720
+                        : 1145976
+                    }`,
                   },
                 })}
-                defaultValue={107}
+                defaultValue={
+                  unSubmitSearch.counsellingCategory == "STATE" ? 107 : 1
+                }
               />
               {errors["MinNEET"] && (
-                <p className='text-xs text-red-500 font-light absolute -bottom-4 left-0'>
+                <p className='text-xs text-red-500 font-light absolute -bottom-4 left-0 translate-y-[70%]'>
                   {errors["MinNEET"].message}
                 </p>
               )}
@@ -330,7 +364,11 @@ export default function Med() {
             {/* Max NEET */}
             <div className='flex flex-col gap-1 items-center relative'>
               <p className='font-normal text-sm w-full text-left'>
-                NEET Score:
+                Max (
+                {unSubmitSearch.counsellingCategory == "STATE"
+                  ? "NEET Score"
+                  : "Rank"}
+                ):
               </p>
               <input
                 type='number'
@@ -341,17 +379,35 @@ export default function Med() {
                 {...register("MaxNEET", {
                   required: { value: true, message: "This field is required" },
                   min: {
-                    value: 107,
-                    message: "Maximum cutoff should be greater than 107",
+                    value:
+                      unSubmitSearch.counsellingCategory == "STATE" ? 107 : 1,
+                    message: `Minimum ${
+                      unSubmitSearch.counsellingCategory == "STATE"
+                        ? "cutoff"
+                        : "rank"
+                    } should be greater than ${
+                      unSubmitSearch.counsellingCategory == "STATE" ? 107 : 1
+                    }`,
                   },
                   max: {
-                    value: 720,
-                    message: "Maximum cutoff should be less than 720",
+                    value:
+                      unSubmitSearch.counsellingCategory == "STATE"
+                        ? 720
+                        : 1145976,
+                    message: `Maximum ${
+                      unSubmitSearch.counsellingCategory == "STATE"
+                        ? "cutoff"
+                        : "rank"
+                    } should be less than ${
+                      unSubmitSearch.counsellingCategory == "STATE"
+                        ? 720
+                        : 1145976
+                    }`,
                   },
                 })}
               />
               {errors["MaxNEET"] && (
-                <p className='text-xs text-red-500 font-light absolute -bottom-4 left-0'>
+                <p className='text-xs text-red-500 font-light absolute -bottom-4 left-0 translate-y-[70%]'>
                   {errors["MaxNEET"].message}
                 </p>
               )}
@@ -401,8 +457,8 @@ export default function Med() {
                     },
                   },
                   section: {
-                    paddingTop: "0.7rem",
-                    paddingBottom: "0.7rem",
+                    paddingTop: "0.10rem",
+                    paddingBottom: "0.10rem",
                   },
                   option: {
                     fontSize: "0.8rem",

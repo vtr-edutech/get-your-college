@@ -1,5 +1,6 @@
 import { medicalCutoffData } from "@/utils/medicalCutoffData";
 import { medicalMQData } from "@/utils/medicalMQCutoffData";
+import { medicaMCC_AIQdata } from "@/utils/medicalMCC-AIQ";
 import { Pagination } from "@mantine/core";
 import { usePagination } from "@mantine/hooks";
 import { useEffect, useMemo } from "react";
@@ -10,21 +11,32 @@ export default function MedicalCollegeCutoffTable({ searchCriteria }) {
   console.log("🚀 ~ searchCriteria:", searchCriteria);
 
   const results = useMemo(() => {
-    const dataBeforeFilter = searchCriteria?.quota?.includes("MQ")
-      ? medicalMQData.filter(
-          (college) =>
-            college[`${searchCriteria?.quota} - NEET Mark`] >=
-              parseFloat(searchCriteria?.MinNEET) &&
-            college[`${searchCriteria?.quota} - NEET Mark`] <=
-              parseFloat(searchCriteria?.MaxNEET)
-        )
-      : medicalCutoffData.filter(
-          (college) =>
-            college[`${searchCriteria?.community} - NEET Mark`] >=
-              parseFloat(searchCriteria?.MinNEET) &&
-            college[`${searchCriteria?.community} - NEET Mark`] <=
-              parseFloat(searchCriteria?.MaxNEET)
-        );
+    const dataBeforeFilter =
+      searchCriteria?.counsellingCategory == "STATE"
+        ? searchCriteria?.quota?.includes("MQ")
+          ? medicalMQData.filter(
+              (college) =>
+                college[`${searchCriteria?.quota} - NEET Mark`] >=
+                  parseFloat(searchCriteria?.MinNEET) &&
+                college[`${searchCriteria?.quota} - NEET Mark`] <=
+                  parseFloat(searchCriteria?.MaxNEET)
+            )
+          : medicalCutoffData.filter(
+              (college) =>
+                college[`${searchCriteria?.community} - NEET Mark`] >=
+                  parseFloat(searchCriteria?.MinNEET) &&
+                college[`${searchCriteria?.community} - NEET Mark`] <=
+                  parseFloat(searchCriteria?.MaxNEET)
+            )
+        : searchCriteria?.quota == "AIQ"
+        ? medicaMCC_AIQdata.filter(
+            (college) =>
+              college[`${searchCriteria?.community} - Rank`] >=
+                parseFloat(searchCriteria?.MinNEET) &&
+              college[`${searchCriteria?.community} - Rank`] <=
+                parseFloat(searchCriteria?.MaxNEET)
+          )
+        : [];
     return dataBeforeFilter
       .filter((college) =>
         searchCriteria?.searchKey
@@ -36,8 +48,32 @@ export default function MedicalCollegeCutoffTable({ searchCriteria }) {
               )
           : true
       )
-      .sort(
-        (a, b) => b[`${searchCriteria?.quota?.includes("MQ")? searchCriteria?.quota : searchCriteria?.community} - NEET Mark`] - a[`${searchCriteria?.quota?.includes("MQ")? searchCriteria?.quota : searchCriteria?.community} - NEET Mark`]
+      .sort((a, b) =>
+        searchCriteria?.counsellingCategory == "STATE"
+          ? b[
+              `${
+                searchCriteria?.quota?.includes("MQ")
+                  ? searchCriteria?.quota
+                  : searchCriteria?.community
+              } - NEET Mark`
+            ] -
+            a[
+              `${
+                searchCriteria?.quota?.includes("MQ")
+                  ? searchCriteria?.quota
+                  : searchCriteria?.community
+              } - NEET Mark`
+            ]
+          : a[
+              `${
+                searchCriteria?.community
+              } - Rank`
+            ] -
+            b[
+              `${
+                searchCriteria?.community
+              } - Rank`
+            ]
       );
   }, [searchCriteria]);
 
@@ -62,7 +98,10 @@ export default function MedicalCollegeCutoffTable({ searchCriteria }) {
           <h2 className='min-w-44 max-w-96 flex-1 font-medium'>College Name</h2>
           <h2 className='flex-1 font-medium min-w-20 max-w-36'>Branch</h2>
           <h2 className='max-w-36 flex-1 font-medium min-w-20'>
-            {searchCriteria?.quota?.includes("MQ")? searchCriteria?.quota : searchCriteria?.community} - {searchCriteria.filterBy}
+            {searchCriteria?.quota?.includes("MQ")
+              ? searchCriteria?.quota
+              : searchCriteria?.community}{" "}
+            - {searchCriteria?.counsellingCategory == "STATE"? searchCriteria.filterBy: "Rank"}
           </h2>
         </div>
 
@@ -74,7 +113,7 @@ export default function MedicalCollegeCutoffTable({ searchCriteria }) {
           .map((college, i) => (
             <div
               key={i}
-              className={`flex transition-all min-w-fit md:min-w-[unset] mx-1 justify-around items-center outline p-2 md:p-1 min-h-20 animate-fade-in overflow-hidden ${
+              className={`flex hover:bg-sky-200/70 transition-all min-w-fit md:min-w-[unset] mx-1 justify-around items-center outline p-2 md:p-1 min-h-20 animate-fade-in overflow-hidden ${
                 i % 2 != 0 ? "bg-white" : "bg-blue-50/70"
               } outline-1 outline-gray-200 last-of-type:rounded-ee-md last-of-type:mb-1 last-of-type:rounded-es-md`}
             >
@@ -88,7 +127,15 @@ export default function MedicalCollegeCutoffTable({ searchCriteria }) {
                 {searchCriteria?.Course}
               </h2>
               <h2 className='max-w-36 flex-1 min-w-20 text-sm'>
-                {college[`${searchCriteria?.quota?.includes("MQ")? searchCriteria?.quota : searchCriteria?.community} - ${searchCriteria.filterBy}`]}
+                {
+                  college[
+                    `${
+                      searchCriteria?.quota?.includes("MQ")
+                        ? searchCriteria?.quota
+                        : searchCriteria?.community
+                    } - ${searchCriteria?.counsellingCategory == "STATE"? searchCriteria.filterBy: "Rank"}`
+                  ]
+                }
               </h2>
             </div>
           ))}
