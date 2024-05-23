@@ -22,7 +22,11 @@ const COUNSELLING_CATEGORY = {
     { label: "TN-MQ NRI", value: "MQ NRI" },
     { label: "TN-MQ NRI Lapsed", value: "MQ NRI Lapsed" },
   ],
-  MCC: [{ label: "AIQ", value: "AIQ" }, { label: "Deemed", value: "Deemed" }],
+  MCC: [
+    { label: "AIQ", value: "AIQ" },
+    { label: "Deemed / NRI", value: "Deemed - NRI" },
+    { label: "Deemed / Management", value: "Deemed - Management" },
+  ],
 };
 
 const COMMUNITY = {
@@ -151,8 +155,8 @@ export default function Med() {
                 }}
                 onChange={(value) => {
                   setValue("counsellingCategory", value);
-                  setValue("MinNEET", value == "STATE"? 107: 1)
-                  resetField("MaxNEET")
+                  setValue("MinNEET", value == "STATE" ? 107 : 1);
+                  resetField("MaxNEET");
                   setUnSubmitSearch((prev) => ({
                     ...prev,
                     counsellingCategory: value,
@@ -338,7 +342,7 @@ export default function Med() {
                     value:
                       unSubmitSearch.counsellingCategory == "STATE"
                         ? 720
-                        : 1145976,
+                        : 1154767,
                     message: `Maximum ${
                       unSubmitSearch.counsellingCategory == "STATE"
                         ? "cutoff"
@@ -346,7 +350,7 @@ export default function Med() {
                     } should be less than ${
                       unSubmitSearch.counsellingCategory == "STATE"
                         ? 720
-                        : 1145976
+                        : 1154767
                     }`,
                   },
                 })}
@@ -393,7 +397,7 @@ export default function Med() {
                     value:
                       unSubmitSearch.counsellingCategory == "STATE"
                         ? 720
-                        : 1145976,
+                        : 1154767,
                     message: `Maximum ${
                       unSubmitSearch.counsellingCategory == "STATE"
                         ? "cutoff"
@@ -401,7 +405,7 @@ export default function Med() {
                     } should be less than ${
                       unSubmitSearch.counsellingCategory == "STATE"
                         ? 720
-                        : 1145976
+                        : 1154767
                     }`,
                   },
                 })}
@@ -478,7 +482,9 @@ export default function Med() {
               <p className='font-normal text-sm w-full text-left'>Community:</p>
               <select
                 name='community'
-                disabled={unSubmitSearch.quota?.includes("MQ")}
+                disabled={
+                  ["Deemed", "MQ"].includes(unSubmitSearch.quota.split(" ")[0])
+                }
                 onChange={(e) => {
                   setUnSubmitSearch({
                     ...unSubmitSearch,

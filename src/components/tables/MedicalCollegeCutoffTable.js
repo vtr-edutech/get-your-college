@@ -4,6 +4,7 @@ import { medicaMCC_AIQdata } from "@/utils/medicalMCC-AIQ";
 import { Pagination } from "@mantine/core";
 import { usePagination } from "@mantine/hooks";
 import { useEffect, useMemo } from "react";
+import { medicalMCC_Deemed } from "@/utils/medicalMCC-Deemed";
 
 const PAGE_SIZE = 25;
 
@@ -35,8 +36,13 @@ export default function MedicalCollegeCutoffTable({ searchCriteria }) {
                 parseFloat(searchCriteria?.MinNEET) &&
               college[`${searchCriteria?.community} - Rank`] <=
                 parseFloat(searchCriteria?.MaxNEET)
-          )
-        : [];
+              )
+              : medicalMCC_Deemed.filter(college => 
+                college[`${searchCriteria?.quota} - Rank`] >=
+                  parseFloat(searchCriteria?.MinNEET) &&
+                college[`${searchCriteria?.quota} - Rank`] <=
+                  parseFloat(searchCriteria?.MaxNEET)
+              );
     return dataBeforeFilter
       .filter((college) =>
         searchCriteria?.searchKey
@@ -66,12 +72,16 @@ export default function MedicalCollegeCutoffTable({ searchCriteria }) {
             ]
           : a[
               `${
-                searchCriteria?.community
+                searchCriteria?.quota?.includes("Deemed")
+                  ? searchCriteria?.quota
+                  : searchCriteria?.community
               } - Rank`
             ] -
             b[
               `${
-                searchCriteria?.community
+                searchCriteria?.quota?.includes("Deemed")
+                  ? searchCriteria?.quota
+                  : searchCriteria?.community
               } - Rank`
             ]
       );
@@ -98,10 +108,14 @@ export default function MedicalCollegeCutoffTable({ searchCriteria }) {
           <h2 className='min-w-44 max-w-96 flex-1 font-medium'>College Name</h2>
           <h2 className='flex-1 font-medium min-w-20 max-w-36'>Branch</h2>
           <h2 className='max-w-36 flex-1 font-medium min-w-20'>
-            {searchCriteria?.quota?.includes("MQ")
+            {searchCriteria?.quota?.includes("MQ") ||
+            searchCriteria?.quota?.includes("Deemed")
               ? searchCriteria?.quota
               : searchCriteria?.community}{" "}
-            - {searchCriteria?.counsellingCategory == "STATE"? searchCriteria.filterBy: "Rank"}
+            {" "}
+            {searchCriteria?.counsellingCategory == "STATE"
+              ? searchCriteria.filterBy
+              : "Rank"}
           </h2>
         </div>
 
@@ -130,10 +144,15 @@ export default function MedicalCollegeCutoffTable({ searchCriteria }) {
                 {
                   college[
                     `${
-                      searchCriteria?.quota?.includes("MQ")
+                      searchCriteria?.quota?.includes("MQ") ||
+                      searchCriteria?.quota?.includes("Deemed")
                         ? searchCriteria?.quota
                         : searchCriteria?.community
-                    } - ${searchCriteria?.counsellingCategory == "STATE"? searchCriteria.filterBy: "Rank"}`
+                    } - ${
+                      searchCriteria?.counsellingCategory == "STATE"
+                        ? searchCriteria.filterBy
+                        : "Rank"
+                    }`
                   ]
                 }
               </h2>
