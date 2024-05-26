@@ -1,14 +1,11 @@
 import { usePagination } from "@mantine/hooks";
-import colleges from "../utils/collegeData";
+import colleges, { allCasteCategories } from "../utils/collegeData";
 import { useEffect, useMemo, useTransition } from "react";
 import { Pagination, Tooltip } from "@mantine/core";
 import { districtData } from "@/utils/collegeDistrictData";
 import { NBAdata } from "@/utils/collegeCourseNBAData";
 
 const PAGE_SIZE = 25;
-const allCasteCategories = Object.keys(colleges['GC'][1]).filter((key) =>
-  key.includes("Cutoff")
-).map(key => key.split("-")[0].trim());
 
 const communityColors = [
   'text-amber-500',

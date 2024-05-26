@@ -26,11 +26,11 @@ export const COLLEGE_CATEGORIES = [
     subcategories: [
       {
         name: "Govt. College",
-        value: "govt",
+        value: "Govt",
       },
       {
         name: "Self-Financing",
-        value: "self",
+        value: "SF",
       },
       {
         name: "Deemed University",

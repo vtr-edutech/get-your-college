@@ -88,32 +88,36 @@ export default function Med() {
   }, []);
 
   const searchSubmission = async (data) => {
-    // console.log("submit data", data);
+    console.log("submit data", data);
     if (Object.keys(data).length !== 0) {
-      if (parseInt(data.MinNEET) > parseInt(data.MaxNEET)) {
-        setError(
-          "MinNEET",
-          {
-            type: "validate",
-            message:
-              "Minimum NEET score should be less than Maximum NEET score",
-          },
-          { shouldFocus: true }
-        );
-        return;
-      }
-      if (data.community == "select") {
-        setError(
-          "community",
-          {
-            type: "validate",
-            message:
-              "Invalid Community!",
-          },
-          { shouldFocus: true }
-        );
+      if (unSubmitSearch.counsellingCategory == "STATE") {
+        if (parseInt(data.MinNEET) > parseInt(data.MaxNEET)) {
+          setError(
+            "MinNEET",
+            {
+              type: "validate",
+              message:
+                "Minimum NEET score should be less than Maximum NEET score",
+            },
+            { shouldFocus: true }
+          );
+          return;
+        }
+        if (data.community == "select") {
+          setError(
+            "community",
+            {
+              type: "validate",
+              message:
+                "Invalid Community!",
+            },
+            { shouldFocus: true }
+          );
 
-        return;
+          return;
+        }
+      } else {
+        data.MaxNEET = 1154767;
       }
       setSearchCriteria({ ...searchCriteria, ...data, ...unSubmitSearch });
       // console.log("🚀 ~ searchSubmission ~ searchCriteria:", searchCriteria)
@@ -157,6 +161,9 @@ export default function Med() {
                   setValue("counsellingCategory", value);
                   setValue("MinNEET", value == "STATE" ? 107 : 1);
                   resetField("MaxNEET");
+                  if (value == "MCC") {
+                    setValue("MaxNEET", "1154767");
+                  }
                   setUnSubmitSearch((prev) => ({
                     ...prev,
                     counsellingCategory: value,
@@ -313,11 +320,9 @@ export default function Med() {
             {/* Min NEET */}
             <div className='flex flex-col gap-1 items-center relative'>
               <p className='font-normal text-sm w-full text-left'>
-                Min (
                 {unSubmitSearch.counsellingCategory == "STATE"
-                  ? "NEET Score"
-                  : "Rank"}
-                ):
+                  ? "Min (NEET Score)"
+                  : "Your Rank"}
               </p>
               <input
                 type='number'
@@ -378,6 +383,7 @@ export default function Med() {
                 type='number'
                 name='ending-cutoff'
                 id='ending-cutoff'
+                disabled={unSubmitSearch.counsellingCategory == "MCC"}
                 placeholder='Ending Cut-Off'
                 className='bg-card/10 outline p-2 max-w-44 w-full md:w-[8.5rem] placeholder:text-sm md:mb-0 mb-3 rounded-md outline-1 md:focus:outline-1 focus:outline-2 outline-mantine-blue/50 md:outline-gray-200 focus:outline-mantine-blue/60'
                 {...register("MaxNEET", {
@@ -408,6 +414,7 @@ export default function Med() {
                         : 1154767
                     }`,
                   },
+                  disabled: unSubmitSearch.counsellingCategory == "MCC",
                 })}
               />
               {errors["MaxNEET"] && (
@@ -482,9 +489,9 @@ export default function Med() {
               <p className='font-normal text-sm w-full text-left'>Community:</p>
               <select
                 name='community'
-                disabled={
-                  ["Deemed", "MQ"].includes(unSubmitSearch.quota.split(" ")[0])
-                }
+                disabled={["Deemed", "MQ"].includes(
+                  unSubmitSearch.quota.split(" ")[0]
+                )}
                 onChange={(e) => {
                   setUnSubmitSearch({
                     ...unSubmitSearch,
@@ -501,7 +508,9 @@ export default function Med() {
                     value: true,
                     message: "This field is required",
                   },
-                  disabled: unSubmitSearch.quota?.includes("MQ"),
+                  disabled: ["Deemed", "MQ"].includes(
+                    unSubmitSearch.quota.split(" ")[0]
+                  ),
                 })}
               >
                 <option value='select'>Select Category</option>
@@ -537,14 +546,18 @@ export default function Med() {
 
       {/* Results table */}
       <div className='flex flex-col h-full w-full gap-4 items-center md:mt-2'>
-        {searchCriteria?.MaxNEET ? (
+        {searchCriteria?.Course ? (
           <Suspense fallback={<SkeletonLoader />}>
             <div className='flex md:flex-row flex-col w-full mt-8 gap-2 justify-between items-center'>
               {/* College name or code search */}
               <input
                 type='search'
                 name='searchKey'
-                placeholder='Search by college name, college code, etc.'
+                placeholder={`Search by ${
+                  unSubmitSearch.counsellingCategory == "STATE"
+                    ? "college name, college code, etc."
+                    : "college name, district, city, pincode"
+                }`}
                 id='search'
                 className='py-2 px-3 w-full md:w-[50%] outline outline-1 placeholder:text-sm outline-gray-300 focus:outline-gray-400 md:outline-gray-200 rounded-md focus:outline-1 md:focus:outline-mantine-blue/60'
                 onInput={(e) =>

@@ -93165,5 +93165,8 @@ const collegeData = {
 
 // const UNIQUE_COURSE_NAMES = new Set(collegeData.map(c => c["Branch Name"].replace(' ', ' ')));
 // export const COLLEGE_NAMES = Array.from(new Set(collegeData['GC'].map(c => c["College Name"].replace("\n", " "))))
+export const allCasteCategories = Object.keys(collegeData["GC"][1])
+  .filter((key) => key.includes("Cutoff"))
+  .map((key) => key.split("-")[0].trim());
 
 export default collegeData;

@@ -27,7 +27,7 @@ const contactDetails = [
   {
     label: "Location",
     sublabel: "VTR Edu Solutions",
-    value: `No.135/A, P.H. Road, Maduravoyal, Chennai - 600 095`,
+    value: `No. 135/A, Poonamallee High Rd, Sathiyamoorthy Nagar, Maduravoyal, Chennai, Tamil Nadu 600095`,
     icon: <IoLocationOutline size={22} />,
     proto: "https://maps.app.goo.gl/1KCsK1ZJFZhXrBWh7",
   },
