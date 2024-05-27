@@ -34,7 +34,7 @@ export const COLLEGE_CATEGORIES = [
       },
       {
         name: "Deemed University",
-        value: "deemed",
+        value: "Deemed",
       },
     ],
   },

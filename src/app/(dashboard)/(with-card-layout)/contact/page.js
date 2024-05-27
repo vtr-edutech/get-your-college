@@ -26,7 +26,7 @@ const contactDetails = [
   },
   {
     label: "Location",
-    sublabel: "VTR Edu Solutions",
+    sublabel: "Get Your College",
     value: `No. 135/A, Poonamallee High Rd, Sathiyamoorthy Nagar, Maduravoyal, Chennai, Tamil Nadu 600095`,
     icon: <IoLocationOutline size={22} />,
     proto: "https://maps.app.goo.gl/1KCsK1ZJFZhXrBWh7",
@@ -35,15 +35,17 @@ const contactDetails = [
 
 const ContactCard = ({ icon: Icon, label, sublabel = null, value, proto }) => {
   return (
-    <Link className='flex md:w-[unset] shrink-0 w-full items-center md:h-full gap-4 rounded-md shadow p-2 px-3 md:px-8 outline outline-1 outline-gray-100' 
+    <Link className='flex w-full items-center md:h-full gap-4 rounded-md shadow p-2 px-3 md:px-8 outline outline-1 outline-gray-100' 
       href={(label == "Location")? proto: proto + value} target="_blank">
-      {Icon}
+      <div className="w-8 h-8">
+        {Icon}
+      </div>
       <div className='flex flex-col'>
         <h1 className='font-medium text-lg text-primary/70 ml-1'>{label}</h1>
         {
           sublabel && <h1 className='font-medium text-base text-primary/70 ml-1'>{sublabel}</h1>
         }
-        <h1 className={`font-normal ${sublabel ? 'text-sm': 'text-base'}  text-primary/50`}>{value}</h1>
+        <h1 className={`font-normal ${sublabel ? 'text-sm': 'text-base'} text-wrap  text-primary/50`}>{value}</h1>
       </div>
     </Link>
   );
@@ -92,20 +94,28 @@ const Contact = () => {
           target='_blank'
           className='m-5'
         >
-          <FaYoutube size={32} color="#228be6" />
+          <FaYoutube size={32} color='#228be6' />
         </a>
-        <a href='https://instagram.com' target='_blank' className='m-5'>
-          <FaInstagram size={32} color="#228be6" />
+        <a
+          href='https://www.instagram.com/get.your.college?igsh=amoxbXpnbGt1cXBi'
+          target='_blank'
+          className='m-5'
+        >
+          <FaInstagram size={32} color='#228be6' />
         </a>
-        <a href='https://facebook.com' target='_blank' className='m-5'>
-          <FaFacebook size={32} color="#228be6" />
+        <a
+          href='https://www.facebook.com/profile.php?id=61559877867074&mibextid=ZbWKwL'
+          target='_blank'
+          className='m-5'
+        >
+          <FaFacebook size={32} color='#228be6' />
         </a>
         <a
           href='https://web.whatsapp.com/send?phone=8946082559&text&app_absent=0'
           target='_blank'
           className='m-5'
         >
-          <FaWhatsapp size={32} color="#228be6" />
+          <FaWhatsapp size={32} color='#228be6' />
         </a>
       </div>
 
@@ -188,7 +198,7 @@ const Contact = () => {
                 Send message <GoPaperAirplane />
               </div>
             }
-            className="bg-mantine-blue"
+            className='bg-mantine-blue'
             asButton
           />
         </div>

@@ -33,15 +33,11 @@ export default function MedicalCollegeCutoffTable({ searchCriteria }) {
         ? medicaMCC_AIQdata.filter(
             (college) =>
               college[`${searchCriteria?.community} - Rank`] >=
-                parseFloat(searchCriteria?.MinNEET) &&
-              college[`${searchCriteria?.community} - Rank`] <=
-                parseFloat(searchCriteria?.MaxNEET)
+                parseFloat(searchCriteria?.MinNEET)
               )
               : medicalMCC_Deemed.filter(college => 
                 college[`${searchCriteria?.quota} - Rank`] >=
-                  parseFloat(searchCriteria?.MinNEET) &&
-                college[`${searchCriteria?.quota} - Rank`] <=
-                  parseFloat(searchCriteria?.MaxNEET)
+                  parseFloat(searchCriteria?.MinNEET)
               );
     return dataBeforeFilter
       .filter((college) =>
