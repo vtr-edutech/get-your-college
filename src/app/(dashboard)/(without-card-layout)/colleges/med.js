@@ -1,3 +1,4 @@
+import AdvertBanner from "@/components/AdvertBanner";
 import ContentCard from "@/components/ContentCard";
 import SkeletonLoader from "@/components/SkeletonLoader";
 import MedicalCollegeInfoTable from "@/components/tables/MedicalCollegeInfoTable";
@@ -5,6 +6,7 @@ import { getWindowSize } from "@/utils";
 import { ALL_VALID_CATEGORIES, COLLEGE_CATEGORIES } from "@/utils/nav_data";
 import { SegmentedControl } from "@mantine/core";
 import { useDebouncedState } from "@mantine/hooks";
+import Image from "next/image";
 import { useSearchParams } from "next/navigation";
 import { Suspense, useEffect, useState } from "react";
 import { useSelector } from "react-redux";
@@ -52,6 +54,7 @@ const Medical = () => {
 
   return (
     <>
+      <AdvertBanner />
       <h1 className='font-medium text-2xl'>
         Search for {selectedCollegeType} college in{" "}
         {ALL_VALID_CATEGORIES.find(c => c.value == currentSubCategoryType).name}
@@ -61,7 +64,7 @@ const Medical = () => {
         onChange={(event) => setCollegeSearchKey(event.currentTarget.value)}
         name='college-search'
         id='search-input'
-        placeholder='Search by College name, District, City, Pincode'
+        placeholder='Search by College name, District, City, State, Pincode'
         className='bg-white px-3 py-2 rounded-md outline outline-1 placeholder:text-sm outline-gray-300 focus:outline-gray-400 md:outline-gray-200 focus:outline-1 md:focus:outline-mantine-blue'
       />
       <ContentCard>

@@ -1,3 +1,4 @@
+import AdvertBanner from "@/components/AdvertBanner";
 import Announcements from "@/components/Announcements";
 import CutoffCalculator from "@/components/CutoffCalculator";
 import Image from "next/image";
@@ -32,18 +33,8 @@ const Discover = () => {
         <h1 className='font-semibold text-xl'>News</h1>
         Connect with any of our socials to get latest updates
         {/* Invisible div for height */}
-        <div className='flex w-full relative justify-center'>
-          <Image
-            src={"/Empty-pana.png"}
-            height={180}
-            width={300}
-            className='self-center flex p-5'
-            quality={95}
-            alt='No data placeholder image'
-          />
-          <p className='text-primary/50 absolute -translate-x-1/2 left-[50%] bottom-2'>
-            No data yet!
-          </p>
+        <AdvertBanner />
+        <div className='flex h-64 w-full relative justify-center'>
         </div>
       </div>
 

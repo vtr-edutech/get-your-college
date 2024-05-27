@@ -1,4 +1,5 @@
 "use client";
+import AdvertBanner from "@/components/AdvertBanner";
 import ContentCard from "@/components/ContentCard";
 import SkeletonLoader from "@/components/SkeletonLoader";
 import { getWindowSize } from "@/utils";
@@ -51,6 +52,7 @@ const Colleges = () => {
 
   return (
     <>
+        <AdvertBanner />
         <h1 className='font-medium text-2xl'>
             Search for {selectedCollegeType} college in{" "}
             {ALL_VALID_CATEGORIES.at(subcategoryIndex).name}
