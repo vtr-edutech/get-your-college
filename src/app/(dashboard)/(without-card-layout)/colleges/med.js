@@ -1,15 +1,15 @@
 import AdvertBanner from "@/components/AdvertBanner";
 import ContentCard from "@/components/ContentCard";
 import SkeletonLoader from "@/components/SkeletonLoader";
-import MedicalCollegeInfoTable from "@/components/tables/MedicalCollegeInfoTable";
 import { getWindowSize } from "@/utils";
 import { ALL_VALID_CATEGORIES, COLLEGE_CATEGORIES } from "@/utils/nav_data";
 import { SegmentedControl } from "@mantine/core";
 import { useDebouncedState } from "@mantine/hooks";
-import Image from "next/image";
 import { useSearchParams } from "next/navigation";
-import { Suspense, useEffect, useState } from "react";
+import { Suspense, lazy, useEffect, useState } from "react";
 import { useSelector } from "react-redux";
+
+const MedicalCollegeInfoTable = lazy(() => import("@/components/tables/MedicalCollegeInfoTable"));
 
 const Medical = () => {
   const currentSubCategoryType = useSearchParams().get("t");
@@ -20,6 +20,7 @@ const Medical = () => {
     searchKey: "",
     collegeType: currentSubCategoryType,
     filterBy: "State Rank",
+    collegeState: "State",
     sfpu: "SF"
   });
 
@@ -55,60 +56,82 @@ const Medical = () => {
   return (
     <>
       <AdvertBanner />
-      <h1 className='font-medium text-2xl'>
+      <h1 className="text-2xl font-medium">
         Search for {selectedCollegeType} college in{" "}
-        {ALL_VALID_CATEGORIES.find(c => c.value == currentSubCategoryType).name}
+        {
+          ALL_VALID_CATEGORIES.find((c) => c.value == currentSubCategoryType)
+            .name
+        }
       </h1>
       <input
-        type='search'
+        type="search"
         onChange={(event) => setCollegeSearchKey(event.currentTarget.value)}
-        name='college-search'
-        id='search-input'
-        placeholder='Search by College name, District, City, State, Pincode'
-        className='bg-white px-3 py-2 rounded-md outline outline-1 placeholder:text-sm outline-gray-300 focus:outline-gray-400 md:outline-gray-200 focus:outline-1 md:focus:outline-mantine-blue'
+        name="college-search"
+        id="search-input"
+        placeholder="Search by College name, District, City, State, Pincode"
+        className="rounded-md bg-white px-3 py-2 outline outline-1 outline-gray-300 placeholder:text-sm focus:outline-1 focus:outline-gray-400 md:outline-gray-200 md:focus:outline-mantine-blue"
       />
       <ContentCard>
-        <div className='flex justify-between w-full md:flex-row flex-col gap-2 items-center mb-3'>
-          {(["SF", "Deemed"].includes(currentSubCategoryType)) && 
-            <SegmentedControl
-              label={"College Type"}
-              value={
-                // searchCriteria?.counsellingCategory == "STATE"?
-                searchCriteria.sfpu
-                // : "All India Rank"
-              }
-              color='blue'
-              styles={{
-                root: { width: window.innerWidth < 768 ? "100%" : "unset" },
-              }}
-              onChange={(value) =>
-                setSearchCriteria((prev) => ({ ...prev, sfpu: value }))
-              }
-              data={
-                searchCriteria?.collegeType == "SF"?
-                [
-                  {
-                    label: "Self-Financing",
-                    value: "SF",
-                  },
-                  {
-                    label: "Private University",
-                    value: "PU",
-                  },
-                ]
-                : [
-                  {
-                    label: "Deemed / NRI",
-                    value: "Deemed - NRI"
-                  },
-                  {
-                    label: "Deemed / Management",
-                    value: "Deemed - Management"
-                  },
-                ]
-              }
-            />
-          }
+        <div className="mb-3 flex w-full flex-col items-center justify-between gap-2 md:flex-row">
+          <SegmentedControl
+            label={"College Type"}
+            value={
+              currentSubCategoryType == "Govt"
+                ? searchCriteria.collegeState
+                : searchCriteria.sfpu
+            }
+            color="blue"
+            styles={{
+              root: { width: window.innerWidth < 768 ? "100%" : "unset" },
+            }}
+            onChange={(value) =>
+              currentSubCategoryType != "Deemed"
+                ? setSearchCriteria({
+                    ...searchCriteria,
+                    collegeState:
+                      currentSubCategoryType == "Govt"
+                        ? value
+                        : searchCriteria.collegeState,
+                    sfpu: currentSubCategoryType == "Govt"? searchCriteria.sfpu: value,
+                    filterBy: value == "AIQ" ? "Rank" : "State Rank",
+                  })
+                : setSearchCriteria({ ...searchCriteria, sfpu: value })
+            }
+            data={
+              currentSubCategoryType == "Govt"
+                ? [
+                    {
+                      label: "State Colleges",
+                      value: "State",
+                    },
+                    {
+                      label: "All India Colleges",
+                      value: "AIQ",
+                    },
+                  ]
+                : searchCriteria?.collegeType == "SF"
+                  ? [
+                      {
+                        label: "Self-Financing",
+                        value: "SF",
+                      },
+                      {
+                        label: "Private University",
+                        value: "PU",
+                      },
+                    ]
+                  : [
+                      {
+                        label: "Deemed / NRI",
+                        value: "Deemed - NRI",
+                      },
+                      {
+                        label: "Deemed / Management",
+                        value: "Deemed - Management",
+                      },
+                    ]
+            }
+          />
           <SegmentedControl
             label={"Filter By"}
             value={
@@ -116,7 +139,7 @@ const Medical = () => {
               searchCriteria.filterBy
               // : "All India Rank"
             }
-            color='blue'
+            color="blue"
             styles={{
               root: {
                 width: window.innerWidth < 768 ? "100%" : "unset",
@@ -127,23 +150,27 @@ const Medical = () => {
               setSearchCriteria((prev) => ({ ...prev, filterBy: value }))
             }
             data={
-              searchCriteria?.collegeType != "Deemed"?
-              [
-                {
-                  label: "By State Rank",
-                  value: "State Rank",
-                },
-                {
-                  label: "By NEET Mark",
-                  value: "NEET Mark",
-                },
-              ]
-              : ["All India Rank"]
+              (searchCriteria?.collegeType == "Govt" &&
+                searchCriteria?.collegeState == "State") ||
+              searchCriteria?.collegeType == "SF"
+                ? [
+                    {
+                      label: "By State Rank",
+                      value: "State Rank",
+                    },
+                    {
+                      label: "By NEET Mark",
+                      value: "NEET Mark",
+                    },
+                  ]
+                : [{ label: "All India Rank", value: "Rank" }]
             }
           />
         </div>
         <Suspense fallback={<SkeletonLoader />}>
-          <MedicalCollegeInfoTable searchCriteria={{ ...searchCriteria, searchKey: collegeSearchKey }} />
+          <MedicalCollegeInfoTable
+            searchCriteria={{ ...searchCriteria, searchKey: collegeSearchKey }}
+          />
         </Suspense>
       </ContentCard>
     </>

@@ -1,4 +1,5 @@
 import { medicalCutoffData } from "@/utils/medicalCutoffData";
+import { medicaMCC_AIQdata } from "@/utils/medicalMCC-AIQ";
 import { medicalMCC_Deemed } from "@/utils/medicalMCC-Deemed";
 import { Pagination } from "@mantine/core";
 import { usePagination } from "@mantine/hooks";
@@ -14,7 +15,10 @@ const communityColors = [
   "text-emerald-500",
   "text-rose-500",
 ];
-const allCasteCategories = ["OC", "BC", "BCM", "MBC & DNC", "SC", "SCA", "ST"];
+const allCasteCategories = {
+  "State": ["OC", "BC", "BCM", "MBC & DNC", "SC", "SCA", "ST"],
+  "AIQ": ["OC", "OBC", "SC", "ST", "EWS"]
+};
 
 const slugToCategoryMap = {
   Govt: ["Govt"],
@@ -37,15 +41,25 @@ export default function MedicalCollegeInfoTable({ searchCriteria }) {
                 ) &&
                 college[`${searchCriteria.sfpu} - Rank`] > 0
           )
-        : medicalCutoffData.filter((college) =>
-            college["College Name"]
-              .toLowerCase()
-              .replace(/\s+/g, "")
-              .includes(
-                searchCriteria.searchKey?.toLowerCase().replace(/\s+/g, "")
-              ) && (searchCriteria.collegeType == "SF"
-              ? college["College Type"] == searchCriteria.sfpu
-              : college["College Type"] == searchCriteria.collegeType)
+        : searchCriteria.collegeState == "State"? 
+            medicalCutoffData.filter((college) =>
+              college["College Name"]
+                .toLowerCase()
+                .replace(/\s+/g, "")
+                .includes(
+                  searchCriteria.searchKey?.toLowerCase().replace(/\s+/g, "")
+                ) && (searchCriteria.collegeType == "SF"
+                ? college["College Type"] == searchCriteria.sfpu
+                : college["College Type"] == searchCriteria.collegeType)
+            )
+            :
+            medicaMCC_AIQdata.filter((college) =>
+              college["College Name"]
+                .toLowerCase()
+                .replace(/\s+/g, "")
+                .includes(
+                  searchCriteria.searchKey?.toLowerCase().replace(/\s+/g, "")
+                )
           ),
     [searchCriteria]
   );
@@ -58,10 +72,10 @@ export default function MedicalCollegeInfoTable({ searchCriteria }) {
 
   return (
     <>
-      <div className='w-full self-end flex'>
+      <div className="flex w-full self-end">
         {searchCriteria.searchKey.trim() !== "" && (
-          <p className='ml-2'>
-            <span className='font-medium'>{collegesAfterFiltering.length}</span>{" "}
+          <p className="ml-2">
+            <span className="font-medium">{collegesAfterFiltering.length}</span>{" "}
             college(s) found
           </p>
         )}
@@ -69,19 +83,19 @@ export default function MedicalCollegeInfoTable({ searchCriteria }) {
           total={parseInt(collegesAfterFiltering.length / PAGE_SIZE) + 1}
           value={pagination.active}
           onChange={pagination.setPage}
-          className='ml-auto'
+          className="ml-auto"
         ></Pagination>
       </div>
 
-      <div className='overflow-x-scroll md:overflow-x-hidden flex flex-col mt-6 w-full transition-all'>
-        <div className='flex justify-around min-w-fit md:min-w-[unset] items-center mt-1 mx-1 p-1.5 md:p-3 rounded-se-lg rounded-ss-lg outline outline-1 outline-gray-200 shadow sticky top-0 bg-white'>
-          <h2 className='flex-1 max-w-16 min-w-14'>S.No.</h2>
-          <h2 className='min-w-52 max-w-96 flex-1 mx-2'>College Name</h2>
-          <h2 className='max-w-28 flex-1 min-w-24 mx-2'>Branch Name</h2>
+      <div className="mt-6 flex w-full flex-col overflow-x-scroll transition-all md:overflow-x-hidden">
+        <div className="sticky top-0 mx-1 mt-1 flex min-w-fit items-center justify-around rounded-se-lg rounded-ss-lg bg-white p-1.5 shadow outline outline-1 outline-gray-200 md:min-w-[unset] md:p-3">
+          <h2 className="min-w-14 max-w-16 flex-1">S.No.</h2>
+          <h2 className="mx-2 min-w-52 max-w-96 flex-1">College Name</h2>
+          <h2 className="mx-2 min-w-24 max-w-28 flex-1">Branch Name</h2>
           {searchCriteria.collegeType == "Deemed" ? (
-            <h2 className='max-w-36 flex-1 min-w-24'>Rank</h2>
+            <h2 className="min-w-24 max-w-36 flex-1">Rank</h2>
           ) : (
-            allCasteCategories.map((cat, i) => (
+            allCasteCategories[searchCriteria.collegeState].map((cat, i) => (
               <h2
                 key={i}
                 className={`flex-1 text-sm md:min-w-12 md:max-w-16 ${
@@ -102,57 +116,63 @@ export default function MedicalCollegeInfoTable({ searchCriteria }) {
         {collegesAfterFiltering
           .slice(
             PAGE_SIZE * pagination.active - PAGE_SIZE,
-            PAGE_SIZE * pagination.active
+            PAGE_SIZE * pagination.active,
           )
           .map((college, i) => (
             <div
               key={i}
-              className={`flex hover:bg-sky-200/70 transition-all min-w-fit mx-1 md:min-w-[unset] justify-around items-center outline p-1.5 md:p-1 min-h-24 last-of-type:mb-1 animate-fade-in overflow-hidden ${
+              className={`mx-1 flex min-h-24 min-w-fit animate-fade-in items-center justify-around overflow-hidden p-1.5 outline transition-all last-of-type:mb-1 hover:bg-sky-200/70 md:min-w-[unset] md:p-1 ${
                 i % 2 != 0 ? "bg-white" : "bg-blue-50/70"
               } outline-1 outline-gray-200 last-of-type:rounded-ee-md last-of-type:rounded-es-md`}
             >
-              <h2 className='flex-1 text-sm max-w-16 min-w-14'>
-                <p className='ml-2'>{i + 1}</p>
+              <h2 className="min-w-14 max-w-16 flex-1 text-sm">
+                <p className="ml-2">{i + 1}</p>
               </h2>
-              <h2 className='min-w-52 max-w-96 flex-1 mx-2 text-sm'>
+              <h2 className="mx-2 min-w-52 max-w-96 flex-1 text-sm">
                 {college["College Name"]}
               </h2>
-              <p className='max-w-28 flex-1 min-w-24 mx-2 text-sm'>MBBS</p>
+              <p className="mx-2 min-w-24 max-w-28 flex-1 text-sm">MBBS</p>
               {searchCriteria.collegeType == "Deemed" ? (
-                <h2 className='max-w-36 flex-1 min-w-24'>
-                  {college[`${searchCriteria.sfpu} - Rank`]}
-                </h2>
+                <p className="min-w-24 max-w-36 flex-1 text-sm">
+                  {
+                    new Intl.NumberFormat("en-IN", {
+                      maximumSignificantDigits: 3,
+                    }).format(college[`${searchCriteria.sfpu} - Rank`])
+                  }
+                </p>
               ) : (
-                allCasteCategories.map((key, i) => (
-                  <h2
-                    key={i}
-                    className={`flex-1 text-sm md:min-w-12 md:max-w-16 ${
-                      communityColors[i]
-                    } ${
-                      searchCriteria.filterBy == "State Rank"
-                        ? "min-w-16 max-w-20"
-                        : "min-w-12 max-w-16"
-                    }`}
-                  >
-                    {college[`${key} - ${searchCriteria.filterBy}`]
-                      ? college[`${key} - ${searchCriteria.filterBy}`]
-                          .toString()
-                          .includes(".")
-                        ? college[
-                            `${key} - ${searchCriteria.filterBy}`
-                          ].toFixed(1)
-                        : college[`${key} - ${searchCriteria.filterBy}`]
-                      : "-"}
-                  </h2>
-                ))
+                allCasteCategories[searchCriteria.collegeState].map(
+                  (key, i) => (
+                    <h2
+                      key={i}
+                      className={`flex-1 text-sm md:min-w-12 md:max-w-16 ${
+                        communityColors[i]
+                      } ${
+                        searchCriteria.filterBy == "State Rank"
+                          ? "min-w-16 max-w-20"
+                          : "min-w-12 max-w-16"
+                      }`}
+                    >
+                      {college[`${key} - ${searchCriteria.filterBy}`]
+                        ? college[`${key} - ${searchCriteria.filterBy}`]
+                            .toString()
+                            .includes(".")
+                          ? college[
+                              `${key} - ${searchCriteria.filterBy}`
+                            ].toFixed(1)
+                          : college[`${key} - ${searchCriteria.filterBy}`]
+                        : "-"}
+                    </h2>
+                  ),
+                )
               )}
             </div>
           ))}
       </div>
-      <div className='w-full md:self-end self-start flex'>
+      <div className="flex w-full self-start md:self-end">
         {searchCriteria.searchKey.trim() !== "" && (
-          <p className='ml-2'>
-            <span className='font-medium'>{collegesAfterFiltering.length}</span>{" "}
+          <p className="ml-2">
+            <span className="font-medium">{collegesAfterFiltering.length}</span>{" "}
             college(s) found
           </p>
         )}
@@ -160,7 +180,7 @@ export default function MedicalCollegeInfoTable({ searchCriteria }) {
           total={parseInt(collegesAfterFiltering.length / PAGE_SIZE) + 1}
           value={pagination.active}
           onChange={pagination.setPage}
-          className='ml-auto'
+          className="ml-auto"
         />
       </div>
     </>

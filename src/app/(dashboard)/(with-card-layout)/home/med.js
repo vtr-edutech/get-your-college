@@ -11,6 +11,8 @@ import { Suspense, lazy, useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { LuSearch } from "react-icons/lu";
 
+const MAX_RANK_MEDICAL = 1154767;
+
 const COUNSELLING_CATEGORY = {
   STATE: [
     { label: "TN-GQ 92.5", value: "GQ 92.5" },
@@ -117,7 +119,7 @@ export default function Med() {
           return;
         }
       } else {
-        data.MaxNEET = 1154767;
+        data.MaxNEET = MAX_RANK_MEDICAL;
       }
       setSearchCriteria({ ...searchCriteria, ...data, ...unSubmitSearch });
       // console.log("🚀 ~ searchSubmission ~ searchCriteria:", searchCriteria)
@@ -162,7 +164,7 @@ export default function Med() {
                   setValue("MinNEET", value == "STATE" ? 107 : 1);
                   resetField("MaxNEET");
                   if (value == "MCC") {
-                    setValue("MaxNEET", "1154767");
+                    setValue("MaxNEET", MAX_RANK_MEDICAL);
                   }
                   setUnSubmitSearch((prev) => ({
                     ...prev,
@@ -347,7 +349,7 @@ export default function Med() {
                     value:
                       unSubmitSearch.counsellingCategory == "STATE"
                         ? 720
-                        : 1154767,
+                        : MAX_RANK_MEDICAL,
                     message: `Maximum ${
                       unSubmitSearch.counsellingCategory == "STATE"
                         ? "cutoff"
@@ -355,7 +357,7 @@ export default function Med() {
                     } should be less than ${
                       unSubmitSearch.counsellingCategory == "STATE"
                         ? 720
-                        : 1154767
+                        : MAX_RANK_MEDICAL
                     }`,
                   },
                 })}
@@ -403,7 +405,7 @@ export default function Med() {
                     value:
                       unSubmitSearch.counsellingCategory == "STATE"
                         ? 720
-                        : 1154767,
+                        : MAX_RANK_MEDICAL,
                     message: `Maximum ${
                       unSubmitSearch.counsellingCategory == "STATE"
                         ? "cutoff"
@@ -411,7 +413,7 @@ export default function Med() {
                     } should be less than ${
                       unSubmitSearch.counsellingCategory == "STATE"
                         ? 720
-                        : 1154767
+                        : MAX_RANK_MEDICAL
                     }`,
                   },
                   disabled: unSubmitSearch.counsellingCategory == "MCC",
