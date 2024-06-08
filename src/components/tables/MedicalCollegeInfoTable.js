@@ -136,7 +136,7 @@ export default function MedicalCollegeInfoTable({ searchCriteria }) {
                 <p className="min-w-24 max-w-36 flex-1 text-sm">
                   {
                     new Intl.NumberFormat("en-IN", {
-                      maximumSignificantDigits: 3,
+                      maximumSignificantDigits: 8,
                     }).format(college[`${searchCriteria.sfpu} - Rank`])
                   }
                 </p>
