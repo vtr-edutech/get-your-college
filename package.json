@@ -7,13 +7,15 @@
     "dev-log": "next dev | npx logscreen",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "publish": "git push origin && git push prod"
   },
   "dependencies": {
     "@formkit/auto-animate": "^0.8.2",
     "@joshuajaco/react-pdf-renderer-bundled": "^3.1.12",
     "@mantine/core": "^7.6.1",
     "@mantine/hooks": "^7.6.1",
+    "@next/third-parties": "^14.2.3",
     "@react-pdf/renderer": "^3.4.4",
     "@reactour/tour": "^3.6.1",
     "@reduxjs/toolkit": "^2.2.1",
