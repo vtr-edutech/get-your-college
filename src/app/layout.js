@@ -6,6 +6,7 @@ import 'react-toastify/dist/ReactToastify.css'
 import { AuthProvider } from "@/app/AuthProvider";
 import { ColorSchemeScript, MantineProvider } from "@mantine/core";
 import "@mantine/core/styles.css";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import StoreProvider from "./StoreProvider";
 import TourProvider from "./TourProvider";
 import TransitionBar from "./TransitionBar";
@@ -56,6 +57,7 @@ export default function RootLayout({ children }) {
         <ColorSchemeScript />
       </head>
       <body className={inter.className + ` bg-background`}>
+        <GoogleAnalytics gaId="G-TGKTNWEQ2S" />
         <AuthProvider>
           <StoreProvider>
             <TourProvider>
