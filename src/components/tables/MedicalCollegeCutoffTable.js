@@ -5,6 +5,8 @@ import { Pagination } from "@mantine/core";
 import { usePagination } from "@mantine/hooks";
 import { useEffect, useMemo } from "react";
 import { medicalMCC_Deemed } from "@/utils/medicalMCC-Deemed";
+import { medicalAIQRounds } from "@/utils/medicalAIQ-Rounds";
+import { medicalDeemedRounds } from "@/utils/medicalDeemed-Rounds";
 
 const PAGE_SIZE = 25;
 
@@ -30,13 +32,13 @@ export default function MedicalCollegeCutoffTable({ searchCriteria }) {
                   parseFloat(searchCriteria?.MaxNEET)
             )
         : searchCriteria?.quota == "AIQ"
-        ? medicaMCC_AIQdata.filter(
+        ? medicalAIQRounds.filter(
             (college) =>
-              college[`${searchCriteria?.community} - Rank`] >=
+              college[`${searchCriteria?.medicalRound ?? 'Round-1'} ${searchCriteria?.community} - Rank`] >=
                 parseFloat(searchCriteria?.MinNEET)
               )
-              : medicalMCC_Deemed.filter(college => 
-                college[`${searchCriteria?.quota} - Rank`] >=
+              : medicalDeemedRounds.filter(college => 
+                college[`${searchCriteria?.medicalRound ?? 'Round-1'} ${searchCriteria?.quota} - Rank`] >=
                   parseFloat(searchCriteria?.MinNEET)
               );
     return dataBeforeFilter
@@ -67,14 +69,14 @@ export default function MedicalCollegeCutoffTable({ searchCriteria }) {
               } - NEET Mark`
             ]
           : a[
-              `${
+              `${searchCriteria?.medicalRound ?? 'Round-1'} ${
                 searchCriteria?.quota?.includes("Deemed")
                   ? searchCriteria?.quota
                   : searchCriteria?.community
               } - Rank`
             ] -
             b[
-              `${
+              `${searchCriteria?.medicalRound ?? 'Round-1'} ${
                 searchCriteria?.quota?.includes("Deemed")
                   ? searchCriteria?.quota
                   : searchCriteria?.community
@@ -91,15 +93,16 @@ export default function MedicalCollegeCutoffTable({ searchCriteria }) {
 
   useEffect(() => pagination.setPage(1), [searchCriteria]);
 
-  // if (!searchCriteria.community) return <p>Invalid Search Criteria!</p>;
-
+  const dataSelectorString = 
+  `${searchCriteria?.counsellingCategory != "STATE"? (`${searchCriteria?.medicalRound ?? 'Round-1'} `): ''}${searchCriteria?.quota?.includes("MQ") || searchCriteria?.quota?.includes("Deemed") ? searchCriteria?.quota: searchCriteria?.community} - ${searchCriteria?.counsellingCategory == "STATE"? searchCriteria.filterBy: "Rank"}`;
+                  
   return (
     <>
       <p className='ml-2 w-full text-left'>
         <span className='font-medium'>{results.length}</span> college(s) found
       </p>
       <div className='overflow-x-auto flex flex-col w-full transition-all'>
-        <div className='flex justify-around min-w-fit md:min-w-[unset] mt-1 mx-1 items-center p-2 md:p-4 rounded-se-lg rounded-ss-lg outline outline-1 outline-gray-200 sticky top-0 bg-white shadow'>
+        <div className='flex justify-around min-w-fit md:min-w-[unset] mt-1 mx-1 py-6 items-center p-2 md:p-4 rounded-se-lg rounded-ss-lg outline outline-1 outline-gray-200 sticky top-0 bg-white shadow'>
           <h2 className='flex-1 font-medium min-w-16 max-w-28'>S.No.</h2>
           <h2 className='min-w-44 max-w-96 flex-1 font-medium'>College Name</h2>
           <h2 className='flex-1 font-medium min-w-20 max-w-36'>Branch</h2>
@@ -138,18 +141,7 @@ export default function MedicalCollegeCutoffTable({ searchCriteria }) {
               </h2>
               <h2 className='max-w-36 flex-1 min-w-20 text-sm'>
                 {
-                  college[
-                    `${
-                      searchCriteria?.quota?.includes("MQ") ||
-                      searchCriteria?.quota?.includes("Deemed")
-                        ? searchCriteria?.quota
-                        : searchCriteria?.community
-                    } - ${
-                      searchCriteria?.counsellingCategory == "STATE"
-                        ? searchCriteria.filterBy
-                        : "Rank"
-                    }`
-                  ]
+                  college[dataSelectorString]
                 }
               </h2>
             </div>

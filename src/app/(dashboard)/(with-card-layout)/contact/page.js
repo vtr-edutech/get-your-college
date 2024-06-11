@@ -7,7 +7,6 @@ import { FiPhoneCall } from "react-icons/fi";
 import { HiOutlineMail } from "react-icons/hi";
 import { toast } from "react-toastify";
 import { GoPaperAirplane } from "react-icons/go";
-import Image from "next/image";
 import { IoLocationOutline } from "react-icons/io5";
 import { FaFacebook, FaInstagram, FaWhatsapp, FaYoutube } from "react-icons/fa6";
 
@@ -20,7 +19,7 @@ const contactDetails = [
   },
   {
     label: "E-mail",
-    value: "getyourcollege.vtr@gmail.com",
+    value: "support@getyourcollege.com",
     icon: <HiOutlineMail size={22} />,
     proto: "mailto:",
   },

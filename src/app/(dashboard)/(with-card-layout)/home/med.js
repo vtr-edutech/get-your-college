@@ -75,6 +75,7 @@ export default function Med() {
     searchKey: "",
     districtKey: "",
     filterBy: "NEET Mark",
+    medicalRound: "Round-1"
   });
 
   useEffect(() => {
@@ -105,22 +106,22 @@ export default function Med() {
           );
           return;
         }
-        if (data.community == "select") {
-          setError(
-            "community",
-            {
-              type: "validate",
-              message:
-                "Invalid Community!",
-            },
-            { shouldFocus: true }
-          );
-
-          return;
+        } else {
+          data.MaxNEET = MAX_RANK_MEDICAL;
         }
-      } else {
-        data.MaxNEET = MAX_RANK_MEDICAL;
-      }
+      if (data.community == "select") {
+        setError(
+          "community",
+          {
+            type: "validate",
+            message:
+              "Invalid Community!",
+          },
+          { shouldFocus: true }
+        );
+  
+        return;
+    }
       setSearchCriteria({ ...searchCriteria, ...data, ...unSubmitSearch });
       // console.log("🚀 ~ searchSubmission ~ searchCriteria:", searchCriteria)
     }
