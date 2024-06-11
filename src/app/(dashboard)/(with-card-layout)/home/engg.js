@@ -10,12 +10,7 @@ import React, {
 } from "react";
 import { useForm } from "react-hook-form";
 import { LuSearch } from "react-icons/lu";
-import {
-  Modal,
-  MultiSelect,
-  SegmentedControl,
-  Select,
-} from "@mantine/core";
+import { Modal, MultiSelect, SegmentedControl, Select } from "@mantine/core";
 import SkeletonLoader from "@/components/SkeletonLoader";
 import { ALL_DISTRICT } from "@/utils/collegeDistrictData";
 import { getWindowSize, inter, tw } from "@/utils";
@@ -24,6 +19,7 @@ import CutoffCalculator from "@/components/CutoffCalculator";
 import { collegeCourseGroups } from "@/utils/collegeCourseGroups";
 import { useTour } from "@reactour/tour";
 import { CUSTOM_BREAKPOINT } from "@/constants";
+import AdvertBanner from "@/components/AdvertBanner";
 
 const CollegesTable = lazy(() => import("@/components/CollegesTable"));
 
@@ -67,7 +63,7 @@ const Home = () => {
                 label: course["Branch Name"],
                 value: course["Branch Code"],
               })),
-            }))
+            })),
           )
         : [{ group: "ALL DEPARTMENTS", items: ["ALL"] }].concat(
             Object.keys(collegeCourseGroups)
@@ -78,16 +74,21 @@ const Home = () => {
                   label: course["Branch Name"],
                   value: course["Branch Code"],
                 })),
-              }))
+              })),
           ),
-    [courseGroup]
+    [courseGroup],
   );
 
   const { currentStep, isOpen, setCurrentStep, setIsOpen } = useTour();
   // current step ah depend ah paathu, if currstep not 1 or 0, then open if localstorageHomeTour is false
   useEffect(() => {
     const hasHomeFilterTourPlayed = localStorage.getItem("hasHomeFilterPlayed");
-    if (!isOpen && (!hasHomeFilterTourPlayed || hasHomeFilterTourPlayed != "true") /* && ![0, 1, 4, 5, 6].includes(currentStep)*/) {
+    if (
+      !isOpen &&
+      (!hasHomeFilterTourPlayed ||
+        hasHomeFilterTourPlayed !=
+          "true") /* && ![0, 1, 4, 5, 6].includes(currentStep)*/
+    ) {
       setIsOpen(true);
       setCurrentStep(2);
     }
@@ -107,7 +108,7 @@ const Home = () => {
             type: "validate",
             message: "Starting cutoff should be less than Ending cutoff",
           },
-          { shouldFocus: true }
+          { shouldFocus: true },
         );
         // setSearchCriteria(null);
         return;
@@ -124,7 +125,7 @@ const Home = () => {
         transitionProps={{ transition: "pop" }}
         onClose={close}
         centered
-        title='Cut-off Calculator'
+        title="Cut-off Calculator"
         styles={{
           content: {
             overflow: "hidden",
@@ -133,26 +134,27 @@ const Home = () => {
       >
         <CutoffCalculator />
       </Modal>
-      <h1 className='font-medium text-2xl'>
+      <AdvertBanner />
+      <h1 className="text-2xl font-medium">
         Let&apos;s get the right engineering college for you
       </h1>
-      <h3 className='font-normal text-base'>
+      <h3 className="text-base font-normal">
         Enter 12th Cut-Off marks and choose filter options
       </h3>
       <form
-        className='flex flex-col mt-2 md:w-full md:items-center gap-6 justify-start'
+        className="mt-2 flex flex-col justify-start gap-6 md:w-full md:items-center"
         onSubmit={handleSubmit(searchSubmission)}
       >
-        <div className='flex flex-col gap-12 md:gap-8 initial-filters'>
+        <div className="initial-filters flex flex-col gap-12 md:gap-8">
           {/* Category and Years container */}
-          <div className='flex flex-col md:flex-row gap-7 justify-center md:justify-start md:gap-16 md:flex-wrap'>
+          <div className="flex flex-col justify-center gap-7 md:flex-row md:flex-wrap md:justify-start md:gap-16">
             {/* Cutoff Category choose */}
-            <div className='flex flex-col justify-center gap-1 w-full md:w-[unset]'>
-              <p className='font-normal text-sm'>Cutoff category:</p>
+            <div className="flex w-full flex-col justify-center gap-1 md:w-[unset]">
+              <p className="text-sm font-normal">Cutoff category:</p>
               <SegmentedControl
                 ref={cutoffCategoryRef}
                 withItemsBorders={false}
-                color='blue'
+                color="blue"
                 styles={{
                   root: {
                     width:
@@ -190,13 +192,13 @@ const Home = () => {
               />
             </div>
             {/* Groups choose */}
-            <div className='flex flex-col justify-center gap-1'>
-              <p className='font-normal text-sm'>Choose Domain:</p>
+            <div className="flex flex-col justify-center gap-1">
+              <p className="text-sm font-normal">Choose Domain:</p>
               <Select
                 comboboxProps={{ shadow: "md" }}
-                defaultValue='ALL'
+                defaultValue="ALL"
                 allowDeselect={false}
-                checkIconPosition='left'
+                checkIconPosition="left"
                 title={courseGroup}
                 styles={{
                   root: {
@@ -212,17 +214,20 @@ const Home = () => {
                   },
                 }}
                 onChange={(value) => setCourseGroup(value)}
-                data={[{ label: "All departments", value: "ALL" }, ...Object.keys(collegeCourseGroups)]} // for now only year 2023 is available. later add 2021 and 2022 too
+                data={[
+                  { label: "All departments", value: "ALL" },
+                  ...Object.keys(collegeCourseGroups),
+                ]} // for now only year 2023 is available. later add 2021 and 2022 too
               />
             </div>
             {/* Year choose */}
-            <div className='flex flex-col justify-center gap-1'>
-              <p className='font-normal text-sm'>Search year:</p>
+            <div className="flex flex-col justify-center gap-1">
+              <p className="text-sm font-normal">Search year:</p>
               <Select
                 ref={yearInputRef}
-                defaultValue='2023'
+                defaultValue="2023"
                 allowDeselect={false}
-                checkIconPosition='right'
+                checkIconPosition="right"
                 styles={{
                   root: { width: "8rem" },
                   input: {
@@ -241,21 +246,21 @@ const Home = () => {
             </div>
           </div>
 
-          <hr className='md:hidden self-center border-none border-0 bg-black/10 h-[1px] w-[90%]' />
+          <hr className="h-[1px] w-[90%] self-center border-0 border-none bg-black/10 md:hidden" />
 
           {/* Linear Search bar */}
-          <div className='grid grid-cols-2 grid-rows-2 gap-4 gap-y-7 md:flex md:gap-4 md:justify-start md:items-center md:flex-wrap'>
+          <div className="grid grid-cols-2 grid-rows-2 gap-4 gap-y-7 md:flex md:flex-wrap md:items-center md:justify-start md:gap-4">
             {/* Min cutoff */}
-            <div className='flex flex-col gap-1 md:items-center relative'>
-              <p className='font-normal text-sm w-full text-left'>
+            <div className="relative flex flex-col gap-1 md:items-center">
+              <p className="w-full text-left text-sm font-normal">
                 Minimum Cut-off:
               </p>
               <input
-                type='number'
-                name='starting-cutoff'
-                id='starting-cutoff'
-                placeholder='Starting Cut-Off'
-                className='bg-card/10 outline p-2 max-w-44 w-full md:w-[8.5rem] placeholder:text-sm md:mb-0 mb-3 rounded-md outline-1 md:focus:outline-1 focus:outline-2 outline-mantine-blue/50 md:outline-gray-200 focus:outline-mantine-blue'
+                type="number"
+                name="starting-cutoff"
+                id="starting-cutoff"
+                placeholder="Starting Cut-Off"
+                className="mb-3 w-full max-w-44 rounded-md bg-card/10 p-2 outline outline-1 outline-mantine-blue/50 placeholder:text-sm focus:outline-2 focus:outline-mantine-blue md:mb-0 md:w-[8.5rem] md:outline-gray-200 md:focus:outline-1"
                 {...register("MinCutoff", {
                   required: { value: true, message: "This field is required" },
                   min: {
@@ -270,28 +275,28 @@ const Home = () => {
                 defaultValue={70}
               />
               {errors["MinCutoff"] && (
-                <p className='text-xs text-red-500 font-light absolute -top-7 left-0'>
+                <p className="absolute -top-7 left-0 text-xs font-light text-red-500">
                   {errors["MinCutoff"].message}
                 </p>
               )}
               <p
-                className='underline text-xs absolute cursor-pointer  top-[90%] md:top-[110%] left-1'
+                className="absolute left-1 top-[90%] cursor-pointer text-xs underline md:top-[110%]"
                 onClick={open}
               >
                 Calculate my Cut-off?
               </p>
             </div>
             {/* Max cutoff */}
-            <div className='flex flex-col gap-1 md:items-center relative'>
-              <p className='font-normal text-sm w-full text-left'>
+            <div className="relative flex flex-col gap-1 md:items-center">
+              <p className="w-full text-left text-sm font-normal">
                 Maximum Cut-off:
               </p>
               <input
-                type='number'
-                name='ending-cutoff'
-                id='ending-cutoff'
-                placeholder='Ending Cut-Off'
-                className='bg-card/10 outline p-2 max-w-44 w-full md:w-[8.5rem] placeholder:text-sm md:mb-0 mb-3 rounded-md outline-1 md:focus:outline-1 focus:outline-2 outline-mantine-blue/50 md:outline-gray-200 focus:outline-mantine-blue/60'
+                type="number"
+                name="ending-cutoff"
+                id="ending-cutoff"
+                placeholder="Ending Cut-Off"
+                className="mb-3 w-full max-w-44 rounded-md bg-card/10 p-2 outline outline-1 outline-mantine-blue/50 placeholder:text-sm focus:outline-2 focus:outline-mantine-blue/60 md:mb-0 md:w-[8.5rem] md:outline-gray-200 md:focus:outline-1"
                 {...register("MaxCutoff", {
                   required: { value: true, message: "This field is required" },
                   min: {
@@ -305,21 +310,21 @@ const Home = () => {
                 })}
               />
               {errors["MaxCutoff"] && (
-                <p className='text-xs text-red-500 font-light absolute -top-4 left-0'>
+                <p className="absolute -top-4 left-0 text-xs font-light text-red-500">
                   {errors["MaxCutoff"].message}
                 </p>
               )}
             </div>
             {/* Dept */}
-            <div className='grid col-span-2 md:flex md:flex-col md:gap-1 md:items-center relative'>
+            <div className="relative col-span-2 grid md:flex md:flex-col md:items-center md:gap-1">
               {/* For now we are using multi select, maybe revert or use combo later */}
               {/* Deleted previous versions of multiselec.. venuma na, old repo landhu edthuko */}
-              <p className='font-normal text-sm w-full text-left'>
+              <p className="w-full text-left text-sm font-normal">
                 Department:
               </p>
               <MultiSelect
                 searchable
-                placeholder='Select department'
+                placeholder="Select department"
                 data={courseGroupsDropdownData}
                 hiddenInputProps={{
                   ...register("Dept", {
@@ -335,7 +340,7 @@ const Home = () => {
                   if (values.includes("ALL") && values.length > 1) {
                     setValue("Dept", "ALL");
                   } else {
-                    setValue("Dept",values);
+                    setValue("Dept", values);
                   }
                 }}
                 styles={{
@@ -376,50 +381,50 @@ const Home = () => {
                 comboboxProps={{ withArrow: true, offset: 0, shadow: "xl" }}
               />
               {errors["Dept"] && (
-                <p className='text-xs text-red-500 font-light absolute -top-4 left-0'>
+                <p className="absolute -top-4 left-0 text-xs font-light text-red-500">
                   {errors["Dept"].message}
                 </p>
               )}
             </div>
             {/* Category */}
-            <div className='grid col-span-2 md:flex md:flex-col md:gap-1 md:items-center relative'>
-              <p className='font-normal text-sm w-full text-left'>Community:</p>
+            <div className="relative col-span-2 grid md:flex md:flex-col md:items-center md:gap-1">
+              <p className="w-full text-left text-sm font-normal">Community:</p>
               <select
-                name='category'
+                name="category"
                 defaultValue={"Select"}
-                className='bg-card/10 outline p-2 py-2.5 text-sm pr-8 rounded-md outline-[0.8px] md:focus:outline-1 focus:outline-2 outline-mantine-blue/50 md:outline-gray-200 placeholder:text-sm focus:outline-mantine-blue/60'
-                id='category'
+                className="rounded-md bg-card/10 p-2 py-2.5 pr-8 text-sm outline outline-[0.8px] outline-mantine-blue/50 placeholder:text-sm focus:outline-2 focus:outline-mantine-blue/60 md:outline-gray-200 md:focus:outline-1"
+                id="category"
                 {...register("Category", {
                   required: { value: true, message: "This field is required" },
                   validate: (value) =>
                     (value !== "select" &&
                       ["OC", "BC", "BCM", "MBC", "SC", "ST", "SCA"].includes(
-                        value
+                        value,
                       )) ||
                     "Invalid value selected!",
                 })}
               >
-                <option value='select'>Select Category</option>
-                <option value='OC'>OC</option>
-                <option value='BC'>BC</option>
-                <option value='BCM'>BCM</option>
-                <option value='MBC'>MBC</option>
-                <option value='SC'>SC</option>
-                <option value='ST'>ST</option>
-                <option value='SCA'>SCA</option>
+                <option value="select">Select Category</option>
+                <option value="OC">OC</option>
+                <option value="BC">BC</option>
+                <option value="BCM">BCM</option>
+                <option value="MBC">MBC</option>
+                <option value="SC">SC</option>
+                <option value="ST">ST</option>
+                <option value="SCA">SCA</option>
               </select>
               {errors["Category"] && (
-                <p className='text-xs text-red-500 font-light absolute -top-4 left-0'>
+                <p className="absolute -top-4 left-0 text-xs font-light text-red-500">
                   {errors["Category"].message}
                 </p>
               )}
             </div>
             {/* Submit Button */}
-            <div className='grid col-span-2 md:flex md:flex-col md:gap-1 md:items-center relative'>
-              <p className='font-normal text-sm w-full text-white text-left'>
+            <div className="relative col-span-2 grid md:flex md:flex-col md:items-center md:gap-1">
+              <p className="w-full text-left text-sm font-normal text-white">
                 &nbsp;
               </p>
-              <button className='bg-mantine-blue text-center col-span-2 w-full md:w-fit md:px-6 py-1.5 text-lg rounded flex gap-2 text-white items-center justify-center md:ml-2'>
+              <button className="col-span-2 flex w-full items-center justify-center gap-2 rounded bg-mantine-blue py-1.5 text-center text-lg text-white md:ml-2 md:w-fit md:px-6">
                 <LuSearch />
                 <p>Go</p>
               </button>
@@ -429,17 +434,17 @@ const Home = () => {
       </form>
 
       {/* div where table is shown */}
-      <div className='flex flex-col h-full w-full gap-4 items-center md:mt-2'>
+      <div className="flex h-full w-full flex-col items-center gap-4 md:mt-2">
         {searchCriteria?.MaxCutoff ? (
           <Suspense fallback={<SkeletonLoader />}>
-            <div className='flex md:flex-row flex-col w-full mt-8 gap-2 justify-between items-center'>
+            <div className="mt-8 flex w-full flex-col items-center justify-between gap-2 md:flex-row">
               {/* College name or code search */}
               <input
-                type='search'
-                name='searchKey'
-                placeholder='Search by college name, college code, etc.'
-                id='search'
-                className='py-2 px-3 w-full md:w-[50%] outline outline-1 placeholder:text-sm outline-gray-300 focus:outline-gray-400 md:outline-gray-200 rounded-md focus:outline-1 md:focus:outline-mantine-blue/60'
+                type="search"
+                name="searchKey"
+                placeholder="Search by college name, college code, etc."
+                id="search"
+                className="w-full rounded-md px-3 py-2 outline outline-1 outline-gray-300 placeholder:text-sm focus:outline-1 focus:outline-gray-400 md:w-[50%] md:outline-gray-200 md:focus:outline-mantine-blue/60"
                 onInput={(e) =>
                   setSearchCriteria({
                     ...searchCriteria,
@@ -450,13 +455,19 @@ const Home = () => {
               {/* Combobox'd select for districts */}
               <MultiSelect
                 searchable
-                placeholder='Filter by District'
+                placeholder="Filter by District"
                 data={ALL_DISTRICT}
                 onChange={(value) => {
                   if (value.includes("ALL")) {
-                    setSearchCriteria((prev) => ({ ...prev, DistrictKey: "ALL" }));
+                    setSearchCriteria((prev) => ({
+                      ...prev,
+                      DistrictKey: "ALL",
+                    }));
                   } else {
-                    setSearchCriteria((prev) => ({ ...prev, DistrictKey: value }));
+                    setSearchCriteria((prev) => ({
+                      ...prev,
+                      DistrictKey: value,
+                    }));
                   }
                 }}
                 comboboxProps={{
@@ -506,7 +517,7 @@ const Home = () => {
               <SegmentedControl
                 label={"Filter By"}
                 value={searchCriteria.filterBy}
-                color='blue'
+                color="blue"
                 styles={{
                   root: {
                     width:
@@ -532,15 +543,15 @@ const Home = () => {
           </Suspense>
         ) : (
           <>
-            <p className='text-sm font-light text-gray-500 mt-4'>
+            <p className="mt-4 text-sm font-light text-gray-500">
               Begin search by entering details and Go
             </p>
             <Image
               src={"/home-illustration.png"}
               width={220}
               height={0}
-              className='outline'
-              alt='Illustration Search'
+              className="outline"
+              alt="Illustration Search"
             />
           </>
         )}

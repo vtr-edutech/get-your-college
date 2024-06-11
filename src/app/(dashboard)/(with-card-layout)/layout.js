@@ -1,9 +1,9 @@
-'use client'
+"use client";
 import ContentCard from "@/components/ContentCard";
 import Navbar from "@/components/Navbar";
 import React, { Suspense, useEffect } from "react";
-import { useDisclosure } from '@mantine/hooks';
-import { Modal } from '@mantine/core';
+import { useDisclosure } from "@mantine/hooks";
+import { Modal } from "@mantine/core";
 import RegisterForm from "@/components/RegisterForm";
 import NavBarLoader from "@/components/NavBarLoader";
 import { signOut } from "next-auth/react";
@@ -24,21 +24,23 @@ const RootLayout = ({ children }) => {
     const intervalFunc = () => {
       console.log("Interval being checked");
       if (!loading && (!userInfo.firstName || !userInfo.registerNo)) {
-        toast.info("Please continue to register your details so we could guide you better!");
+        toast.info(
+          "Please continue to register your details so we could guide you better!",
+        );
         open();
       } else {
         // console.log("Stopping interval as user data is present");
         clearInterval(interval);
       }
-    }
+    };
 
     interval = setInterval(intervalFunc, 1000 * 60 * 2);
 
-    return () => clearInterval(interval)
-  },[userInfo, loading]);
+    return () => clearInterval(interval);
+  }, [userInfo, loading]);
 
   return (
-    <main className='flex min-h-screen justify-center w-full relative p-2 pt-12 md:pb-0 pb-16 md:pl-80 md:pr-12'>
+    <main className="relative flex min-h-screen w-full justify-center p-2 pb-16 pt-12 md:pb-0 md:pl-80 md:pr-12">
       <MobileCategorySelector />
       <Suspense fallback={<NavBarLoader />}>
         <Navbar modalOpen={open} logoutOpen={logoutHandlers.open} />
@@ -51,7 +53,7 @@ const RootLayout = ({ children }) => {
         transitionProps={{ transition: "pop" }}
         onClose={close}
         key={"ihusa"}
-        title='Edit User Information'
+        title="Edit User Information"
         centered
       >
         <RegisterForm closeFn={close} />
@@ -62,17 +64,17 @@ const RootLayout = ({ children }) => {
         key={"asdaf"}
         onClose={logoutHandlers.close}
         centered
-        title='Are you sure to logout?'
+        title="Are you sure to logout?"
       >
-        <div className='flex items-center'>
+        <div className="flex items-center">
           <button
-            className='px-6 py-1.5 rounded-md bg-red-500 text-red-50'
+            className="rounded-md bg-red-500 px-6 py-1.5 text-red-50"
             onClick={signOut}
           >
             Yes
           </button>
           <button
-            className='px-4 py-2 rounded-md outline-1 outline-stone-300 text-gray-800'
+            className="rounded-md px-4 py-2 text-gray-800 outline-1 outline-stone-300"
             onClick={logoutHandlers.close}
           >
             No
