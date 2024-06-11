@@ -6,6 +6,7 @@ import { getWindowSize } from "@/utils";
 import { Carousel } from "@mantine/carousel";
 import "@mantine/carousel/styles.css";
 import Link from "next/link";
+import Autoplay from "embla-carousel-autoplay";
 
 const AD_DATA = [
   {
@@ -27,7 +28,7 @@ const AD_DATA = [
 
 function AdvertBanner() {
   const [windowSize, setWindowSize] = useState({ width: 1453, height: 1234 });
-  // const autoplay = useRef(Autoplay({ delay: 2000 }));
+  const autoplay = useRef(Autoplay({ delay: 2000 }));
 
   useEffect(() => {
     setWindowSize(getWindowSize());
@@ -42,11 +43,8 @@ function AdvertBanner() {
       controlsOffset="xs"
       controlSize={windowSize.width < 768 ? 20 : 40}
       loop
-      // plugins={[autoplay.current]}
-      // onMouseEnter={autoplay.current.stop}
-      // onMouseLeave={autoplay.current.reset}
+      plugins={[autoplay.current]}
       withIndicators
-      initialSlide={Math.floor(Math.random() * AD_DATA.length)}
     >
       {AD_DATA.map((ad, i) => (
         <Carousel.Slide key={i} className="flex w-full justify-center">
