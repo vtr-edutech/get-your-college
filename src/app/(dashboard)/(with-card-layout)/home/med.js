@@ -599,6 +599,48 @@ export default function Med() {
                 }
               />
             </div>
+
+            {/* Medical Rounds */}
+            <div className="w-full overflow-x-auto mb-6">
+              <SegmentedControl
+                  label={"Medical Round"}
+                  value={searchCriteria.medicalRound}
+                  color='blue'
+                  onChange={(value) =>
+                    setSearchCriteria((prev) => ({ ...prev, medicalRound: value }))
+                  }
+                  data={
+                    [
+                      {
+                        label: "Round 1",
+                        value: "Round-1"
+                      },
+                      {
+                        label: "Round 2",
+                        value: "Round-2"
+                      },
+                      {
+                        label: "Round 3",
+                        value: "Round-3"
+                      },
+                      {
+                        label: "Round 4",
+                        value: "Round-4"
+                      },
+                      {
+                        label: "Round 5",
+                        value: "Round-5",
+                        disabled: searchCriteria?.counsellingCategory != "STATE"
+                      },
+                      {
+                        label: "Round 6",
+                        value: "Round-6",
+                        disabled: searchCriteria?.counsellingCategory != "STATE"
+                      },
+                    ]
+                  }
+                />
+            </div>
             <MedicalCutoffTable searchCriteria={searchCriteria} />
           </Suspense>
         ) : (

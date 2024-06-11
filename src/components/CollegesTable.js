@@ -126,7 +126,7 @@ const CollegesTable = ({ searchCriteria }) => {
         <span className='font-medium'>{collegesAfterFiltering.length}</span>{" "}
         college(s) found
       </p>
-      <div className='overflow-x-scroll flex flex-col w-full transition-all'>
+      <div className='overflow-x-auto flex flex-col w-full transition-all'>
         <div className='flex justify-around min-w-fit md:min-w-[unset] mt-1 mx-1 items-center p-2 md:p-4 rounded-se-lg rounded-ss-lg outline outline-1 outline-gray-200 sticky top-0 bg-white shadow'>
           <h2 className='flex-1 font-medium min-w-16 max-w-28'>S.No.</h2>
           <h2 className='flex-1 font-medium min-w-20 max-w-36'>College Code</h2>

@@ -98,7 +98,7 @@ export default function MedicalCollegeCutoffTable({ searchCriteria }) {
       <p className='ml-2 w-full text-left'>
         <span className='font-medium'>{results.length}</span> college(s) found
       </p>
-      <div className='overflow-x-scroll flex flex-col w-full transition-all'>
+      <div className='overflow-x-auto flex flex-col w-full transition-all'>
         <div className='flex justify-around min-w-fit md:min-w-[unset] mt-1 mx-1 items-center p-2 md:p-4 rounded-se-lg rounded-ss-lg outline outline-1 outline-gray-200 sticky top-0 bg-white shadow'>
           <h2 className='flex-1 font-medium min-w-16 max-w-28'>S.No.</h2>
           <h2 className='min-w-44 max-w-96 flex-1 font-medium'>College Name</h2>
@@ -128,10 +128,10 @@ export default function MedicalCollegeCutoffTable({ searchCriteria }) {
               } outline-1 outline-gray-200 last-of-type:rounded-ee-md last-of-type:mb-1 last-of-type:rounded-es-md`}
             >
               <h2 className='flex-1 text-sm min-w-16 max-w-28'>
-                <p className='ml-2'>{i + 1}</p>
+                {i + 1}
               </h2>
-              <h2 className='min-w-44 max-w-96 text-balance flex-1 text-sm'>
-                {college["College Name"]}
+              <h2 className='min-w-44 max-w-96 text-balance break-words flex-1 text-sm'>
+                {college["College Name"].split(",").join(", ")}
               </h2>
               <h2 className='flex-1 text-sm min-w-20 max-w-36'>
                 {searchCriteria?.Course}
