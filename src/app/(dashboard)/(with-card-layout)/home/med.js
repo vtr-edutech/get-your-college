@@ -607,6 +607,7 @@ export default function Med() {
                   label={"Medical Round"}
                   value={searchCriteria.medicalRound}
                   color='blue'
+                  disabled={searchCriteria?.counsellingCategory == "STATE"}
                   onChange={(value) =>
                     setSearchCriteria((prev) => ({ ...prev, medicalRound: value }))
                   }
@@ -627,16 +628,6 @@ export default function Med() {
                       {
                         label: "Round 4",
                         value: "Round-4"
-                      },
-                      {
-                        label: "Round 5",
-                        value: "Round-5",
-                        disabled: searchCriteria?.counsellingCategory != "STATE"
-                      },
-                      {
-                        label: "Round 6",
-                        value: "Round-6",
-                        disabled: searchCriteria?.counsellingCategory != "STATE"
                       },
                     ]
                   }
