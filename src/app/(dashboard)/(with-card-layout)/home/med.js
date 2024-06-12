@@ -2,9 +2,11 @@
 
 import SkeletonLoader from "@/components/SkeletonLoader";
 import { getWindowSize, inter, tw } from "@/utils";
+import { useUserInfo } from "@/utils/hooks";
 // import { DevTool } from "@hookform/devtools";
 import { SegmentedControl, Select } from "@mantine/core";
 import { useLocalStorage } from "@mantine/hooks";
+import { sendGAEvent } from "@next/third-parties/google";
 import { useTour } from "@reactour/tour";
 import Image from "next/image";
 import { Suspense, lazy, useEffect, useState } from "react";
@@ -36,8 +38,8 @@ const COMMUNITY = {
   MCC: ["OC", "OBC", "SC", "ST", "EWS"],
 };
 
-const MedicalCutoffTable = lazy(() =>
-  import("@/components/tables/MedicalCollegeCutoffTable")
+const MedicalCutoffTable = lazy(
+  () => import("@/components/tables/MedicalCollegeCutoffTable"),
 );
 
 export default function Med() {
@@ -54,7 +56,7 @@ export default function Med() {
       quota: COUNSELLING_CATEGORY["STATE"][0].value,
       state: "TN",
       year: "2023",
-      community: "select"
+      community: "select",
     },
   });
 
@@ -69,14 +71,16 @@ export default function Med() {
   const [unSubmitSearch, setUnSubmitSearch] = useState({
     counsellingCategory: "STATE",
     quota: COUNSELLING_CATEGORY["STATE"][0].value,
-  })
+  });
 
   const [searchCriteria, setSearchCriteria] = useState({
     searchKey: "",
     districtKey: "",
     filterBy: "NEET Mark",
-    medicalRound: "Round-1"
+    medicalRound: "Round-1",
   });
+
+  const { userInfo } = useUserInfo();
 
   useEffect(() => {
     const hasMedicalTourPlayed = localStorage.getItem("hasMedicalPlayed");
@@ -102,26 +106,31 @@ export default function Med() {
               message:
                 "Minimum NEET score should be less than Maximum NEET score",
             },
-            { shouldFocus: true }
+            { shouldFocus: true },
           );
           return;
         }
-        } else {
-          data.MaxNEET = MAX_RANK_MEDICAL;
-        }
+      } else {
+        data.MaxNEET = MAX_RANK_MEDICAL;
+      }
       if (data.community == "select") {
         setError(
           "community",
           {
             type: "validate",
-            message:
-              "Invalid Community!",
+            message: "Invalid Community!",
           },
-          { shouldFocus: true }
+          { shouldFocus: true },
         );
-  
+
         return;
-    }
+      }
+      sendGAEvent("event", "med_cutoff_submit", {
+        user: userInfo.firstName + "-" + userInfo.mobile,
+        ...searchCriteria,
+        ...data,
+        ...unSubmitSearch,
+      });
       setSearchCriteria({ ...searchCriteria, ...data, ...unSubmitSearch });
       // console.log("🚀 ~ searchSubmission ~ searchCriteria:", searchCriteria)
     }
@@ -129,26 +138,26 @@ export default function Med() {
 
   return (
     <>
-      <h1 className='font-medium text-2xl'>
+      <h1 className="text-2xl font-medium">
         Let&apos;s get the right medical college for you
       </h1>
-      <h3 className='font-normal text-base'>
+      <h3 className="text-base font-normal">
         Enter NEET Score and choose filter options
       </h3>
       <form
-        className='medical-intial-filters flex flex-col mt-2 md:w-full md:items-center gap-6 justify-start'
+        className="medical-intial-filters mt-2 flex flex-col justify-start gap-6 md:w-full md:items-center"
         onSubmit={handleSubmit(searchSubmission)}
       >
-        <div className='flex flex-col gap-12 md:gap-8'>
+        <div className="flex flex-col gap-12 md:gap-8">
           {/* Category and Years container */}
-          <div className='flex flex-col md:flex-row gap-7 justify-center md:justify-start md:gap-10 md:flex-wrap'>
+          <div className="flex flex-col justify-center gap-7 md:flex-row md:flex-wrap md:justify-start md:gap-10">
             {/* Medical counselling category choose */}
-            <div className='flex flex-col justify-center gap-1 w-full md:w-[unset] relative'>
-              <p className='font-normal text-sm'>Counselling category:</p>
+            <div className="relative flex w-full flex-col justify-center gap-1 md:w-[unset]">
+              <p className="text-sm font-normal">Counselling category:</p>
               <SegmentedControl
                 value={unSubmitSearch.counsellingCategory}
                 withItemsBorders={false}
-                color='blue'
+                color="blue"
                 styles={{
                   root: {
                     width:
@@ -185,7 +194,7 @@ export default function Med() {
                 ]}
               >
                 <input
-                  type='hidden'
+                  type="hidden"
                   {...register("counsellingCategory", {
                     required: {
                       value: true,
@@ -197,15 +206,15 @@ export default function Med() {
                   })}
                 />
                 {errors["counsellingCategory"] && (
-                  <p className='text-xs text-red-500 font-light absolute -bottom-4 left-0'>
+                  <p className="absolute -bottom-4 left-0 text-xs font-light text-red-500">
                     {errors["counsellingCategory"].message}
                   </p>
                 )}
               </SegmentedControl>
             </div>
             {/* Quota based on cutoff category */}
-            <div className='flex flex-col justify-center gap-1 relative'>
-              <p className='font-normal text-sm'>Quota:</p>
+            <div className="relative flex flex-col justify-center gap-1">
+              <p className="text-sm font-normal">Quota:</p>
               <Select
                 allowDeselect={false}
                 comboboxProps={{ shadow: "md" }}
@@ -225,7 +234,7 @@ export default function Med() {
                     },
                   }),
                 }}
-                checkIconPosition='left'
+                checkIconPosition="left"
                 styles={{
                   root: { width: windowSize.width < 768 ? "100%" : "12rem" },
                   input: {
@@ -238,19 +247,19 @@ export default function Med() {
                 }}
               />
               {errors["quota"] && (
-                <p className='text-xs text-red-500 font-light absolute -bottom-4 left-0'>
+                <p className="absolute -bottom-4 left-0 text-xs font-light text-red-500">
                   {errors["quota"].message}
                 </p>
               )}
             </div>
             {/* State choose */}
-            <div className='flex flex-col justify-center gap-1'>
-              <p className='font-normal text-sm'>State:</p>
+            <div className="flex flex-col justify-center gap-1">
+              <p className="text-sm font-normal">State:</p>
               <Select
-                defaultValue='TN'
+                defaultValue="TN"
                 allowDeselect={false}
                 disabled={unSubmitSearch.counsellingCategory == "MCC"}
-                checkIconPosition='right'
+                checkIconPosition="right"
                 comboboxProps={{ shadow: "xl" }}
                 styles={{
                   root: { width: "8rem" },
@@ -276,10 +285,10 @@ export default function Med() {
               />
             </div>
             {/* Year choose */}
-            <div className='flex flex-col justify-center gap-1 relative'>
-              <p className='font-normal text-sm'>Year:</p>
+            <div className="relative flex flex-col justify-center gap-1">
+              <p className="text-sm font-normal">Year:</p>
               <Select
-                defaultValue='2023'
+                defaultValue="2023"
                 comboboxProps={{ shadow: "xl" }}
                 // value={searchCriteria?.year}
                 onChange={(value) =>
@@ -287,7 +296,7 @@ export default function Med() {
                   setValue("year", value)
                 }
                 allowDeselect={false}
-                checkIconPosition='right'
+                checkIconPosition="right"
                 styles={{
                   root: { width: "8rem" },
                   input: {
@@ -309,30 +318,30 @@ export default function Med() {
                 data={["2023"]} // for now only year 2023 is available. later add 2021 and 2022 too
               />
               {errors["year"] && (
-                <p className='text-xs text-red-500 font-light absolute -bottom-4 left-0'>
+                <p className="absolute -bottom-4 left-0 text-xs font-light text-red-500">
                   {errors["year"].message}
                 </p>
               )}
             </div>
           </div>
 
-          <hr className='md:hidden self-center border-none border-0 bg-black/10 h-[1px] w-[90%]' />
+          <hr className="h-[1px] w-[90%] self-center border-0 border-none bg-black/10 md:hidden" />
 
           {/* Linear Search bar */}
-          <div className='grid grid-cols-2 grid-rows-2 gap-2 gap-y-7 md:flex md:gap-2 md:justify-start md:items-center md:flex-wrap'>
+          <div className="grid grid-cols-2 grid-rows-2 gap-2 gap-y-7 md:flex md:flex-wrap md:items-center md:justify-start md:gap-2">
             {/* Min NEET */}
-            <div className='flex flex-col gap-1 items-center relative'>
-              <p className='font-normal text-sm w-full text-left'>
+            <div className="relative flex flex-col items-center gap-1">
+              <p className="w-full text-left text-sm font-normal">
                 {unSubmitSearch.counsellingCategory == "STATE"
                   ? "Min (NEET Score)"
                   : "Your Rank"}
               </p>
               <input
-                type='number'
-                name='minimum-cutoff'
-                id='minimum-cutoff'
-                placeholder='Minimum Cutoff'
-                className='bg-card/10 outline p-2 max-w-44 w-full md:w-[8.5rem] placeholder:text-sm md:mb-0 mb-3 rounded-md outline-1 md:focus:outline-1 focus:outline-2 outline-mantine-blue/50 md:outline-gray-200 focus:outline-mantine-blue'
+                type="number"
+                name="minimum-cutoff"
+                id="minimum-cutoff"
+                placeholder="Minimum Cutoff"
+                className="mb-3 w-full max-w-44 rounded-md bg-card/10 p-2 outline outline-1 outline-mantine-blue/50 placeholder:text-sm focus:outline-2 focus:outline-mantine-blue md:mb-0 md:w-[8.5rem] md:outline-gray-200 md:focus:outline-1"
                 {...register("MinNEET", {
                   required: { value: true, message: "This field is required" },
                   min: {
@@ -367,15 +376,15 @@ export default function Med() {
                 }
               />
               {errors["MinNEET"] && (
-                <p className='text-xs text-red-500 font-light absolute -bottom-4 left-0 translate-y-[70%]'>
+                <p className="absolute -bottom-4 left-0 translate-y-[70%] text-xs font-light text-red-500">
                   {errors["MinNEET"].message}
                 </p>
               )}
             </div>
 
             {/* Max NEET */}
-            <div className='flex flex-col gap-1 items-center relative'>
-              <p className='font-normal text-sm w-full text-left'>
+            <div className="relative flex flex-col items-center gap-1">
+              <p className="w-full text-left text-sm font-normal">
                 Max (
                 {unSubmitSearch.counsellingCategory == "STATE"
                   ? "NEET Score"
@@ -383,12 +392,12 @@ export default function Med() {
                 ):
               </p>
               <input
-                type='number'
-                name='ending-cutoff'
-                id='ending-cutoff'
+                type="number"
+                name="ending-cutoff"
+                id="ending-cutoff"
                 disabled={unSubmitSearch.counsellingCategory == "MCC"}
-                placeholder='Ending Cut-Off'
-                className='bg-card/10 outline p-2 max-w-44 w-full md:w-[8.5rem] placeholder:text-sm md:mb-0 mb-3 rounded-md outline-1 md:focus:outline-1 focus:outline-2 outline-mantine-blue/50 md:outline-gray-200 focus:outline-mantine-blue/60'
+                placeholder="Ending Cut-Off"
+                className="mb-3 w-full max-w-44 rounded-md bg-card/10 p-2 outline outline-1 outline-mantine-blue/50 placeholder:text-sm focus:outline-2 focus:outline-mantine-blue/60 md:mb-0 md:w-[8.5rem] md:outline-gray-200 md:focus:outline-1"
                 {...register("MaxNEET", {
                   required: { value: true, message: "This field is required" },
                   min: {
@@ -421,20 +430,20 @@ export default function Med() {
                 })}
               />
               {errors["MaxNEET"] && (
-                <p className='text-xs text-red-500 font-light absolute -bottom-4 left-0 translate-y-[70%]'>
+                <p className="absolute -bottom-4 left-0 translate-y-[70%] text-xs font-light text-red-500">
                   {errors["MaxNEET"].message}
                 </p>
               )}
             </div>
 
             {/* Course name */}
-            <div className='grid col-span-2 md:flex md:flex-col md:gap-1 md:items-center relative'>
-              <p className='font-normal text-sm w-full text-left'>
+            <div className="relative col-span-2 grid md:flex md:flex-col md:items-center md:gap-1">
+              <p className="w-full text-left text-sm font-normal">
                 Course Name:
               </p>
               <Select
                 allowDeselect={false}
-                placeholder='Select department'
+                placeholder="Select department"
                 data={[
                   { label: "MBBS", value: "MBBS" },
                   { label: "BDS", value: "BDS", disabled: true },
@@ -481,19 +490,19 @@ export default function Med() {
                 comboboxProps={{ withArrow: true, offset: 0, shadow: "xl" }}
               />
               {errors["Course"] && (
-                <p className='text-xs text-red-500 font-light absolute -bottom-4 left-0'>
+                <p className="absolute -bottom-4 left-0 text-xs font-light text-red-500">
                   {errors["Course"].message}
                 </p>
               )}
             </div>
 
             {/* Community */}
-            <div className='grid col-span-2 md:flex md:flex-col md:gap-1 md:items-center relative'>
-              <p className='font-normal text-sm w-full text-left'>Community:</p>
+            <div className="relative col-span-2 grid md:flex md:flex-col md:items-center md:gap-1">
+              <p className="w-full text-left text-sm font-normal">Community:</p>
               <select
-                name='community'
+                name="community"
                 disabled={["Deemed", "MQ"].includes(
-                  unSubmitSearch.quota.split(" ")[0]
+                  unSubmitSearch.quota.split(" ")[0],
                 )}
                 onChange={(e) => {
                   setUnSubmitSearch({
@@ -504,19 +513,19 @@ export default function Med() {
                 }}
                 key={"huh"}
                 value={unSubmitSearch.community}
-                className='bg-card/10 outline p-2 py-2.5 text-sm pr-8 rounded-md outline-[0.8px] md:focus:outline-1 focus:outline-2 outline-mantine-blue/50 md:outline-gray-200 placeholder:text-sm focus:outline-mantine-blue/60'
-                id='community'
+                className="rounded-md bg-card/10 p-2 py-2.5 pr-8 text-sm outline outline-[0.8px] outline-mantine-blue/50 placeholder:text-sm focus:outline-2 focus:outline-mantine-blue/60 md:outline-gray-200 md:focus:outline-1"
+                id="community"
                 {...register("community", {
                   required: {
                     value: true,
                     message: "This field is required",
                   },
                   disabled: ["Deemed", "MQ"].includes(
-                    unSubmitSearch.quota.split(" ")[0]
+                    unSubmitSearch.quota.split(" ")[0],
                   ),
                 })}
               >
-                <option value='select'>Select Category</option>
+                <option value="select">Select Category</option>
                 {COMMUNITY[unSubmitSearch.counsellingCategory].map((cat) => (
                   <option key={cat} value={cat}>
                     {cat}
@@ -524,18 +533,18 @@ export default function Med() {
                 ))}
               </select>
               {errors["community"] && (
-                <p className='text-xs text-red-500 font-light absolute -bottom-4 left-0'>
+                <p className="absolute -bottom-4 left-0 text-xs font-light text-red-500">
                   {errors["community"].message}
                 </p>
               )}
             </div>
 
             {/* Submit */}
-            <div className='grid col-span-2 md:flex md:flex-col md:gap-1 md:items-center relative'>
-              <p className='font-normal text-sm w-full text-white text-left'>
+            <div className="relative col-span-2 grid md:flex md:flex-col md:items-center md:gap-1">
+              <p className="w-full text-left text-sm font-normal text-white">
                 &nbsp;
               </p>
-              <button className='bg-mantine-blue text-center col-span-2 w-full md:w-fit md:px-6 py-1.5 text-lg rounded flex gap-2 text-white items-center justify-center md:ml-2'>
+              <button className="col-span-2 flex w-full items-center justify-center gap-2 rounded bg-mantine-blue py-1.5 text-center text-lg text-white md:ml-2 md:w-fit md:px-6">
                 <LuSearch />
                 <p>Go</p>
               </button>
@@ -548,21 +557,21 @@ export default function Med() {
       {/* <DevTool control={control} /> */}
 
       {/* Results table */}
-      <div className='flex flex-col h-full w-full gap-4 items-center md:mt-2'>
+      <div className="flex h-full w-full flex-col items-center gap-4 md:mt-2">
         {searchCriteria?.Course ? (
           <Suspense fallback={<SkeletonLoader />}>
-            <div className='flex md:flex-row flex-col w-full mt-8 gap-2 justify-between items-center'>
+            <div className="mt-8 flex w-full flex-col items-center justify-between gap-2 md:flex-row">
               {/* College name or code search */}
               <input
-                type='search'
-                name='searchKey'
+                type="search"
+                name="searchKey"
                 placeholder={`Search by ${
                   unSubmitSearch.counsellingCategory == "STATE"
                     ? "college name, college code, etc."
                     : "college name, district, city, pincode"
                 }`}
-                id='search'
-                className='py-2 px-3 w-full md:w-[50%] outline outline-1 placeholder:text-sm outline-gray-300 focus:outline-gray-400 md:outline-gray-200 rounded-md focus:outline-1 md:focus:outline-mantine-blue/60'
+                id="search"
+                className="w-full rounded-md px-3 py-2 outline outline-1 outline-gray-300 placeholder:text-sm focus:outline-1 focus:outline-gray-400 md:w-[50%] md:outline-gray-200 md:focus:outline-mantine-blue/60"
                 onInput={(e) =>
                   setSearchCriteria({
                     ...searchCriteria,
@@ -577,7 +586,7 @@ export default function Med() {
                     ? searchCriteria.filterBy
                     : "All India Rank"
                 }
-                color='blue'
+                color="blue"
                 styles={{
                   root: { width: window.innerWidth < 768 ? "100%" : "unset" },
                 }}
@@ -602,50 +611,55 @@ export default function Med() {
             </div>
 
             {/* Medical Rounds */}
-            <div className="w-full overflow-x-auto mb-6">
+            <div className="mb-6 w-full overflow-x-auto">
               <SegmentedControl
-                  label={"Medical Round"}
-                  value={searchCriteria.medicalRound}
-                  color='blue'
-                  disabled={searchCriteria?.counsellingCategory == "STATE"}
-                  onChange={(value) =>
-                    setSearchCriteria((prev) => ({ ...prev, medicalRound: value }))
-                  }
-                  data={
-                    [
-                      {
-                        label: "Round 1",
-                        value: "Round-1"
-                      },
-                      {
-                        label: "Round 2",
-                        value: "Round-2"
-                      },
-                      {
-                        label: "Round 3",
-                        value: "Round-3"
-                      },
-                      {
-                        label: "Round 4",
-                        value: "Round-4"
-                      },
-                    ]
-                  }
-                />
+                label={"Medical Round"}
+                value={
+                  searchCriteria?.counsellingCategory == "STATE"
+                    ? "Round-1"
+                    : searchCriteria.medicalRound
+                }
+                color="blue"
+                disabled={searchCriteria?.counsellingCategory == "STATE"}
+                onChange={(value) =>
+                  setSearchCriteria((prev) => ({
+                    ...prev,
+                    medicalRound: value,
+                  }))
+                }
+                data={[
+                  {
+                    label: "Round 1",
+                    value: "Round-1",
+                  },
+                  {
+                    label: "Round 2",
+                    value: "Round-2",
+                  },
+                  {
+                    label: "Round 3",
+                    value: "Round-3",
+                  },
+                  {
+                    label: "Round 4",
+                    value: "Round-4",
+                  },
+                ]}
+              />
             </div>
             <MedicalCutoffTable searchCriteria={searchCriteria} />
           </Suspense>
         ) : (
           <>
-            <p className='text-sm font-light text-gray-500 mt-4'>
+            <p className="mt-4 text-sm font-light text-gray-500">
               Begin search by entering details and Go
             </p>
             <Image
               src={"/home-illustration.png"}
               width={220}
               height={0}
-              className='outline'
-              alt='Illustration Search'
+              className="outline"
+              alt="Illustration Search"
             />
           </>
         )}

@@ -2,14 +2,14 @@
 const nextConfig = {
   experimental: {
     missingSuspenseWithCSRBailout: false,
-    serverComponentsExternalPackages: ["@react-pdf/renderer"]
+    serverComponentsExternalPackages: ["@react-pdf/renderer"],
   },
   // transpilePackages: ["@react-pdf/renderer"],
   images: {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "i.ibb.co",
+        hostname: "www.getyourcollege.com",
         port: "",
         pathname: "/*/**",
       },

@@ -13,7 +13,13 @@ import { TbReportAnalytics } from "react-icons/tb";
 import { LuPhone } from "react-icons/lu";
 import { usePathname, useSearchParams } from "next/navigation";
 import { useSession } from "next-auth/react";
-import { Accordion, Combobox, Menu, Skeleton, useCombobox } from "@mantine/core";
+import {
+  Accordion,
+  Combobox,
+  Menu,
+  Skeleton,
+  useCombobox,
+} from "@mantine/core";
 import { useDispatch, useSelector } from "react-redux";
 import { selectCategory } from "@/store/collegeCategorySlice";
 import { COLLEGE_CATEGORIES } from "@/utils/nav_data";
@@ -21,6 +27,8 @@ import { cn } from "@/utils";
 import { useTour } from "@reactour/tour";
 import { GoQuestion } from "react-icons/go";
 import { useLocalStorage } from "@mantine/hooks";
+import { sendGAEvent } from "@next/third-parties/google";
+import { useUserInfo } from "@/utils/hooks";
 
 const MENU_ITEMS = [
   {
@@ -54,20 +62,22 @@ const MENU_ITEMS = [
 const Vr = ({ mt }) => {
   return (
     <div
-      className={`w-full bg-black/40 h-[1px] opacity-60 ${mt && "mt-auto"}`}
+      className={`h-[1px] w-full bg-black/40 opacity-60 ${mt && "mt-auto"}`}
     ></div>
   );
 };
 
 const Navbar = ({ modalOpen, logoutOpen }) => {
   const currentPathName = usePathname();
-  const currentSubCategoryType = useSearchParams().get('t');
+  const currentSubCategoryType = useSearchParams().get("t");
 
   const { data: session, status: hasSessionLoaded } = useSession();
   // console.log("🚀 ~ Nav ~ session:", session);
-  
+
   const dispatch = useDispatch();
   const selectedCollegeCategory = useSelector((state) => state.collegeCategory);
+
+  const { loading, userInfo } = useUserInfo();
 
   const collegeCategorySelect = useCombobox({
     onDropdownClose: () => collegeCategorySelect.resetSelectedOption(),
@@ -80,7 +90,7 @@ const Navbar = ({ modalOpen, logoutOpen }) => {
 
   const collegeCategoryDisplay = useMemo(
     () => COLLEGE_CATEGORIES.find((c) => c.value === selectedCollegeCategory),
-    [selectedCollegeCategory]
+    [selectedCollegeCategory],
   );
 
   const { setIsOpen, setCurrentStep } = useTour();
@@ -89,10 +99,10 @@ const Navbar = ({ modalOpen, logoutOpen }) => {
     defaultValue: "false",
   });
   /* Disabling modal opening if not name found has been disabled for now bcs this "client" component apparently runs on server too
-   * when in server it does not know session, hence return null/undefind so modal opens .. hence its annoying 
-  */
+   * when in server it does not know session, hence return null/undefind so modal opens .. hence its annoying
+   */
   // useEffect(() => {
-  //   if (!session?.user?.name) modalOpen() 
+  //   if (!session?.user?.name) modalOpen()
   // },[])
 
   useEffect(() => {
@@ -105,27 +115,27 @@ const Navbar = ({ modalOpen, logoutOpen }) => {
       }, 1000);
     }
 
-    return () => clearTimeout(timeoutForOpen)
-  },[])
+    return () => clearTimeout(timeoutForOpen);
+  }, []);
 
   return (
     <>
       {/* Mobile Nav */}
-      <div className='fixed left-0 flex max-h-16 md:hidden justify-around items-center w-full bottom-0 z-50 px-2 py-2 shadow shadow-black/40 bg-white'>
+      <div className="fixed bottom-0 left-0 z-50 flex max-h-16 w-full items-center justify-around bg-white px-2 py-2 shadow shadow-black/40 md:hidden">
         {MENU_ITEMS.slice(0, 4).map((menu, i) =>
           menu.subcategoryFrom ? (
-            <Menu key={Math.random()} width={125} shadow='lg' withArrow>
+            <Menu key={Math.random()} width={125} shadow="lg" withArrow>
               <Menu.Target>
                 <button
                   href={menu.to}
                   // key={i}
                   className={cn(
-                    "flex gap-1 flex-col items-center justify-center p-1.5 h-full rounded md:hidden",
-                    { "bg-slate-100": currentPathName === menu.to }
+                    "flex h-full flex-col items-center justify-center gap-1 rounded p-1.5 md:hidden",
+                    { "bg-slate-100": currentPathName === menu.to },
                   )}
                 >
                   {menu.icon}
-                  <p className='text-xs text-black/50'>{menu.name}</p>
+                  <p className="text-xs text-black/50">{menu.name}</p>
                 </button>
               </Menu.Target>
               <Menu.Dropdown>
@@ -159,26 +169,26 @@ const Navbar = ({ modalOpen, logoutOpen }) => {
               href={menu.to}
               key={Math.random()}
               className={cn(
-                "flex gap-1 flex-col items-center justify-center p-1.5 h-full rounded md:hidden",
+                "flex h-full flex-col items-center justify-center gap-1 rounded p-1.5 md:hidden",
                 {
                   "bg-slate-100":
                     currentPathName == "/report/generate" &&
                     menu.to == "/report"
                       ? true
                       : currentPathName === menu.to,
-                }
+                },
               )}
             >
               {menu.icon}
-              <p className='text-xs text-black/50'>{menu.name}</p>
+              <p className="text-xs text-black/50">{menu.name}</p>
             </Link>
-          )
+          ),
         )}
 
         {/* Profile button */}
         <button
           className={cn(
-            "flex gap-1 flex-col items-center justify-center p-1.5 h-fullmd:hidden"
+            "h-fullmd:hidden flex flex-col items-center justify-center gap-1 p-1.5",
           )}
         >
           <Skeleton
@@ -188,19 +198,19 @@ const Navbar = ({ modalOpen, logoutOpen }) => {
             radius={5}
           >
             <Menu
-              shadow='lg'
+              shadow="lg"
               withArrow
               offset={{ mainAxis: 10, crossAxis: -20 }}
             >
               <Menu.Target>
-                <div className='flex flex-col items-center justify-center p-1.5 h-full rounded md:hidden'>
+                <div className="flex h-full flex-col items-center justify-center rounded p-1.5 md:hidden">
                   <Image
                     src={session?.user?.image || "/profile-4.png"}
-                    alt='profile image'
+                    alt="profile image"
                     width={24}
                     height={24}
                   />
-                  <p className='text-sm text-black/50 truncate max-w-16'>
+                  <p className="max-w-16 truncate text-sm text-black/50">
                     {session?.user?.name?.split(" ")[0] || "User"}
                   </p>
                 </div>
@@ -208,14 +218,14 @@ const Navbar = ({ modalOpen, logoutOpen }) => {
               <Menu.Dropdown>
                 <Menu.Label>Profile</Menu.Label>
                 <Menu.Item onClick={modalOpen}>
-                  <div className='flex items-center gap-1'>
-                    <IoSettingsOutline className='text-black cursor-pointer' />
+                  <div className="flex items-center gap-1">
+                    <IoSettingsOutline className="cursor-pointer text-black" />
                     Settings
                   </div>
                 </Menu.Item>
                 <Menu.Label> </Menu.Label>
                 <Menu.Item onClick={logoutOpen}>
-                  <p className='text-red-400'>Logout</p>
+                  <p className="text-red-400">Logout</p>
                 </Menu.Item>
               </Menu.Dropdown>
             </Menu>
@@ -226,8 +236,8 @@ const Navbar = ({ modalOpen, logoutOpen }) => {
         <Link
           href={MENU_ITEMS[4].to}
           className={cn(
-            "flex absolute right-4 shadow shadow-black/10 rounded-full bottom-20 gap-1 bg-white flex-col items-center justify-center p-3 md:hidden",
-            { "bg-slate-100": currentPathName === "contact" }
+            "absolute bottom-20 right-4 flex flex-col items-center justify-center gap-1 rounded-full bg-white p-3 shadow shadow-black/10 md:hidden",
+            { "bg-slate-100": currentPathName === "contact" },
           )}
         >
           {MENU_ITEMS[4].icon}
@@ -235,34 +245,34 @@ const Navbar = ({ modalOpen, logoutOpen }) => {
       </div>
 
       {/* Desktop Nav */}
-      <div className='hidden md:flex-col md:flex md:h-screen md:items-center md:w-72 md:bg-white md:fixed md:top-0 md:left-0'>
+      <div className="hidden md:fixed md:left-0 md:top-0 md:flex md:h-screen md:w-72 md:flex-col md:items-center md:bg-white">
         {/* Profile Section */}
-        <div className='flex flex-col gap-4 justify-center items-center p-10 w-full'>
-          <div className='grid place-items-center w-20 h-20'>
+        <div className="flex w-full flex-col items-center justify-center gap-4 p-10">
+          <div className="grid h-20 w-20 place-items-center">
             <Skeleton visible={hasSessionLoaded === "loading"} circle>
               <Image
                 src={session?.user?.image || "/profile-4.png"}
-                alt='profile image'
+                alt="profile image"
                 width={200}
                 height={200}
               />
             </Skeleton>
           </div>
-          <div className='flex gap-2 items-center justify-center '>
+          <div className="flex items-center justify-center gap-2">
             <Skeleton
               visible={hasSessionLoaded === "loading"}
               radius={5}
               // height={24}
               // width={86}
             >
-              <h4 className='text-ellipsis w-fit'>
+              <h4 className="w-fit text-ellipsis">
                 Hi, {session?.user?.name?.split(" ")[0] || "User"}
               </h4>
             </Skeleton>
             <IoSettingsOutline
               onClick={modalOpen}
               size={20}
-              className='text-black cursor-pointer'
+              className="cursor-pointer text-black"
             />
           </div>
         </div>
@@ -270,16 +280,20 @@ const Navbar = ({ modalOpen, logoutOpen }) => {
         <Vr />
 
         {/* College Type selection */}
-        <div className='p-1 mt-3 grid place-items-center relative collge-type-selector'>
+        <div className="collge-type-selector relative mt-3 grid place-items-center p-1">
           <Combobox
             store={collegeCategorySelect}
             resetSelectionOnOptionHover
             withinPortal={false}
-            shadow='md'
+            shadow="md"
             transitionProps={{
               transition: "pop",
             }}
             onOptionSubmit={(v) => {
+              sendGAEvent("event", "college_type", {
+                college_type: v,
+                user: userInfo.firstName + "-" + userInfo.mobile,
+              });
               dispatch(selectCategory(v));
               collegeCategorySelect.updateSelectedOptionIndex("active");
               collegeCategorySelect.closeDropdown();
@@ -288,12 +302,12 @@ const Navbar = ({ modalOpen, logoutOpen }) => {
               width: "80%",
             }}
           >
-            <Combobox.Target targetType='button'>
+            <Combobox.Target targetType="button">
               <button
-                className='w-48 outline outline-1 outline-gray-100 rounded-sm bg-gray-100 p-2 flex justify-between items-center'
+                className="flex w-48 items-center justify-between rounded-sm bg-gray-100 p-2 outline outline-1 outline-gray-100"
                 onClick={() => collegeCategorySelect.toggleDropdown()}
               >
-                <span className='flex gap-2 items-center'>
+                <span className="flex items-center gap-2">
                   {collegeCategoryDisplay.icon}
                   {collegeCategoryDisplay.name}
                 </span>
@@ -303,11 +317,11 @@ const Navbar = ({ modalOpen, logoutOpen }) => {
             <Combobox.Dropdown>
               <Combobox.Options>
                 {COLLEGE_CATEGORIES.filter(
-                  (cateogry) => cateogry.value !== selectedCollegeCategory
+                  (cateogry) => cateogry.value !== selectedCollegeCategory,
                 ).map((cateogry, j) => (
                   <Combobox.Option
                     disabled={cateogry.disabled}
-                    className='flex items-center gap-2 text-balance'
+                    className="flex items-center gap-2 text-balance"
                     key={Math.random()}
                     value={cateogry.value}
                     active={cateogry.value === selectedCollegeCategory}
@@ -325,18 +339,18 @@ const Navbar = ({ modalOpen, logoutOpen }) => {
               setIsOpen(true);
               setCurrentStep(0);
             }}
-            className='absolute cursor-pointer -right-1 top-0 opacity-60'
+            className="absolute -right-1 top-0 cursor-pointer opacity-60"
           />
         </div>
 
         {/* Menu Section */}
-        <div className='flex flex-col gap-1 py-4 w-full overflow-x-hidden'>
+        <div className="flex w-full flex-col gap-1 overflow-x-hidden py-4">
           {MENU_ITEMS.map((menu, o) =>
             menu.subcategoryFrom ? (
               <Accordion
-                chevronPosition='right'
+                chevronPosition="right"
                 key={Math.random()}
-                variant='filled'
+                variant="filled"
                 unstyled
                 chevron={menu.icon}
                 defaultValue={currentSubCategoryType}
@@ -348,9 +362,9 @@ const Navbar = ({ modalOpen, logoutOpen }) => {
                   }`}
                 >
                   <Accordion.Control
-                    className={`flex w-full font-medium gap-2 items-center pl-14 py-4 ${
+                    className={`flex w-full items-center gap-2 py-4 pl-14 font-medium ${
                       currentPathName == menu.to
-                        ? "bg-blue-50 rounded-s-md shadow-sm shadow-black/10"
+                        ? "rounded-s-md bg-blue-50 shadow-sm shadow-black/10"
                         : ""
                     }`}
                   >
@@ -361,7 +375,7 @@ const Navbar = ({ modalOpen, logoutOpen }) => {
                       key={Math.random()}
                       className={`${
                         currentSubCategoryType == category.value
-                          ? "bg-blue-100 rounded-sm"
+                          ? "rounded-sm bg-blue-100"
                           : ""
                       }`}
                     >
@@ -372,7 +386,7 @@ const Navbar = ({ modalOpen, logoutOpen }) => {
                           query: { t: category.value },
                         }}
                         prefetch={false}
-                        className={`font-normal flex gap-2 items-center py-1 ml-20`}
+                        className={`ml-20 flex items-center gap-2 py-1 font-normal`}
                       >
                         ↪ {category.name}
                       </Link>
@@ -385,26 +399,26 @@ const Navbar = ({ modalOpen, logoutOpen }) => {
                 key={Math.random()}
                 href={menu.to}
                 prefetch={false}
-                className={`font-medium flex gap-2 items-center pl-4 py-4 ml-10 ${
+                className={`ml-10 flex items-center gap-2 py-4 pl-4 font-medium ${
                   currentPathName == menu.to
-                    ? "bg-blue-50 rounded-s-md shadow-sm shadow-black/30"
+                    ? "rounded-s-md bg-blue-50 shadow-sm shadow-black/30"
                     : ""
                 }`}
               >
                 {menu.icon}
                 {menu.name}
               </Link>
-            )
+            ),
           )}
         </div>
 
         <Vr mt />
 
         {/* Logout */}
-        <div className='flex p-5'>
+        <div className="flex p-5">
           <button
             onClick={logoutOpen}
-            className='flex gap-2 text-red-400 font-medium items-center'
+            className="flex items-center gap-2 font-medium text-red-400"
           >
             <MdLogout size={18} />
             LOGOUT

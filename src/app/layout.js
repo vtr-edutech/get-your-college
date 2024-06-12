@@ -2,7 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { PROJECT_NAME_TITLE_CASE } from "@/constants";
 import { Slide, ToastContainer } from "react-toastify";
-import 'react-toastify/dist/ReactToastify.css'
+import "react-toastify/dist/ReactToastify.css";
 import { AuthProvider } from "@/app/AuthProvider";
 import { ColorSchemeScript, MantineProvider } from "@mantine/core";
 import "@mantine/core/styles.css";
@@ -15,7 +15,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: `${PROJECT_NAME_TITLE_CASE} | You deserve the best`,
-  description: "Your complete guidance for Engineering & Medical College Counselling. Look for the most suitable colleges for your choice of career. Currently catering college admissions and guidances all over Tamil Nadu",
+  description:
+    "Your complete guidance for Engineering & Medical College Counselling. Look for the most suitable colleges for your choice of career. Currently catering college admissions and guidances all over Tamil Nadu",
   generator: "Next.js",
   applicationName: "Get Your College",
   // referrer: "origin-when-cross-origin",
@@ -52,7 +53,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang='en'>
+    <html lang="en">
       <head>
         <ColorSchemeScript />
       </head>
@@ -69,7 +70,7 @@ export default function RootLayout({ children }) {
           </StoreProvider>
         </AuthProvider>
         <ToastContainer
-          position='top-right'
+          position="top-right"
           autoClose={5000}
           hideProgressBar
           newestOnTop
@@ -78,7 +79,7 @@ export default function RootLayout({ children }) {
           pauseOnFocusLoss
           draggable
           pauseOnHover
-          theme='light'
+          theme="light"
           transition={Slide}
         />
       </body>

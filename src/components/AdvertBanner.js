@@ -28,7 +28,7 @@ const AD_DATA = [
 
 function AdvertBanner() {
   const [windowSize, setWindowSize] = useState({ width: 1453, height: 1234 });
-  const autoplay = useRef(Autoplay({ delay: 2000 }));
+  const autoplay = useRef(Autoplay({ delay: 4000 }));
 
   useEffect(() => {
     setWindowSize(getWindowSize());

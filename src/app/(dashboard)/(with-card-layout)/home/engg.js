@@ -20,6 +20,8 @@ import { collegeCourseGroups } from "@/utils/collegeCourseGroups";
 import { useTour } from "@reactour/tour";
 import { CUSTOM_BREAKPOINT } from "@/constants";
 import AdvertBanner from "@/components/AdvertBanner";
+import { sendGAEvent } from "@next/third-parties/google";
+import { useUserInfo } from "@/utils/hooks";
 
 const CollegesTable = lazy(() => import("@/components/CollegesTable"));
 
@@ -50,8 +52,7 @@ const Home = () => {
   });
   const [courseGroup, setCourseGroup] = useState("ALL");
 
-  // console.log("🚀 ~ Home ~ searchCriteria:", searchCriteria);
-  // console.log("🚀 ~ Home ~ courseGroup:", courseGroup);
+  const { loading, userInfo } = useUserInfo();
 
   const courseGroupsDropdownData = useMemo(
     () =>
@@ -114,6 +115,12 @@ const Home = () => {
         return;
       }
       const chosenYear = yearInputRef.current.value;
+      sendGAEvent("event", "engg_cutoff_submit", {
+        user: userInfo.firstName + "-" + userInfo.mobile,
+        ...searchCriteria,
+        ...data,
+        year: chosenYear,
+      });
       setSearchCriteria({ ...searchCriteria, ...data, year: chosenYear });
     }
   };
