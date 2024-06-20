@@ -446,7 +446,7 @@ export default function Med() {
                 placeholder="Select department"
                 data={[
                   { label: "MBBS", value: "MBBS" },
-                  { label: "BDS", value: "BDS", disabled: true },
+                  { label: "BDS", value: "BDS" },
                 ]}
                 hiddenInputProps={{
                   ...register("Course", {
@@ -614,13 +614,8 @@ export default function Med() {
             <div className="mb-6 w-full overflow-x-auto">
               <SegmentedControl
                 label={"Medical Round"}
-                value={
-                  searchCriteria?.counsellingCategory == "STATE"
-                    ? "Round-1"
-                    : searchCriteria.medicalRound
-                }
+                value={searchCriteria.medicalRound}
                 color="blue"
-                disabled={searchCriteria?.counsellingCategory == "STATE"}
                 onChange={(value) =>
                   setSearchCriteria((prev) => ({
                     ...prev,
