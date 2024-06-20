@@ -29,6 +29,12 @@ const AD_DATA = [
     place: "/home",
   },
   {
+    name: "Sairam Engineering College",
+    src: "/ads/ad-007.webp",
+    link: "https://sairam.edu.in/",
+    place: "/home",
+  },
+  {
     name: "Saveetha Engineering College",
     src: "/ads/ad-006.webp",
     link: "https://saveetha.ac.in/",
