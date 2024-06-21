@@ -60,25 +60,14 @@ export default function Home() {
       <WhyGYC />
 
       {/* Meet him section */}
-      <div className="flex min-h-[30vh] w-full flex-col items-center gap-8 p-4 md:min-h-[90vh] md:p-14">
+      {/* <div className="flex min-h-[30vh] w-full flex-col items-center gap-8 p-4 md:min-h-[90vh] md:p-14">
         <p className="mt-4 rounded-full px-2 py-1 text-sm outline outline-2 outline-gray-400">
           Our expert
         </p>
         <h1 className="text-center text-4xl font-bold md:text-5xl">
           Meet your guide, Dinesh Kumar
         </h1>
-        <iframe
-          className="h-[30vh] md:h-[100vh]"
-          width="100%"
-          height="100%"
-          src="https://www.youtube.com/embed/hy95MwKCXOU?si=Drxtxdwlc1U0vC1A"
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerPolicy="strict-origin-when-cross-origin"
-          allowFullScreen
-        ></iframe>
-      </div>
+      </div> */}
 
       {/* What are you waiting for? */}
       <WhatAreYourWaitingFor />
