@@ -1,22 +1,6 @@
 export const medicalCutoffData = {
   MBBS: [
     {
-      "OC - State Rank": "State Rank",
-      "OC - NEET Mark": "NEET Mark",
-      "BC - State Rank": "State Rank",
-      "BC - NEET Mark": "NEET Mark",
-      "BCM - State Rank": "State Rank",
-      "BCM - NEET Mark": "NEET Mark",
-      "MBC & DNC - State Rank": "State Rank",
-      "MBC & DNC - NEET Mark": "NEET Mark",
-      "SC - State Rank": "State Rank",
-      "SC - NEET Mark": "NEET Mark",
-      "SCA - State Rank": "State Rank",
-      "SCA - NEET Mark": "NEET Mark",
-      "ST - State Rank": "State Rank",
-      "ST - Neet Mark": "NEET Mark",
-    },
-    {
       "College Name": "ANNAPOORNA MEDICAL COLLEGE & HOSPITAL, SALEM",
       Type: "SF",
       Round: "Round-1",

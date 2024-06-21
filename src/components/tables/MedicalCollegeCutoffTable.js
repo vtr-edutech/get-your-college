@@ -1,10 +1,10 @@
 import { medicalCutoffData } from "@/utils/medicalCutoffData";
 import { medicalMQData } from "@/utils/medicalMQCutoffData";
-import { medicaMCC_AIQdata } from "@/utils/medicalMCC-AIQ";
+// import { medicaMCC_AIQdata } from "@/utils/medicalMCC-AIQ";
 import { Pagination } from "@mantine/core";
 import { usePagination } from "@mantine/hooks";
 import { useEffect, useMemo } from "react";
-import { medicalMCC_Deemed } from "@/utils/medicalMCC-Deemed";
+// import { medicalMCC_Deemed } from "@/utils/medicalMCC-Deemed";
 import { medicalAIQRounds } from "@/utils/medicalAIQ-Rounds";
 import { medicalDeemedRounds } from "@/utils/medicalDeemed-Rounds";
 
@@ -17,8 +17,9 @@ export default function MedicalCollegeCutoffTable({ searchCriteria }) {
     const dataBeforeFilter =
       searchCriteria?.counsellingCategory == "STATE"
         ? searchCriteria?.quota?.includes("MQ")
-          ? medicalMQData.filter(
+          ? medicalMQData[searchCriteria?.Course ?? "MBBS"].filter(
               (college) =>
+                (college.Round == searchCriteria?.medicalRound ?? "Round-1") &&
                 college[`${searchCriteria?.quota} - NEET Mark`] >=
                   parseFloat(searchCriteria?.MinNEET) &&
                 college[`${searchCriteria?.quota} - NEET Mark`] <=
@@ -26,7 +27,7 @@ export default function MedicalCollegeCutoffTable({ searchCriteria }) {
             )
           : medicalCutoffData[searchCriteria?.Course ?? "MBBS"].filter(
               (college) =>
-                college.Round == searchCriteria?.medicalRound &&
+                (college.Round == searchCriteria?.medicalRound ?? "Round-1") &&
                 college[`${searchCriteria?.community} - NEET Mark`] >=
                   parseFloat(searchCriteria?.MinNEET) &&
                 college[`${searchCriteria?.community} - NEET Mark`] <=

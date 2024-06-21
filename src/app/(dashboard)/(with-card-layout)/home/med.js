@@ -234,6 +234,9 @@ export default function Med() {
                     },
                   }),
                 }}
+                scrollAreaProps={{
+                  type: "always",
+                }}
                 checkIconPosition="left"
                 styles={{
                   root: { width: windowSize.width < 768 ? "100%" : "12rem" },

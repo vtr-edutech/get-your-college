@@ -8,6 +8,8 @@ import "@mantine/carousel/styles.css";
 import Link from "next/link";
 import Autoplay from "embla-carousel-autoplay";
 import { usePathname } from "next/navigation";
+import { sendGAEvent } from "@next/third-parties/google";
+import { useUserInfo } from "@/utils/hooks";
 
 const AD_DATA = [
   {
@@ -58,6 +60,7 @@ function AdvertBanner({ className }) {
   const [windowSize, setWindowSize] = useState({ width: 1453, height: 1234 });
   const autoplay = useRef(Autoplay({ delay: 4000 }));
   const location = usePathname();
+  const { userInfo } = useUserInfo();
 
   useEffect(() => {
     setWindowSize(getWindowSize());
@@ -81,6 +84,12 @@ function AdvertBanner({ className }) {
           <Carousel.Slide key={i} className="flex w-full justify-center">
             <Link
               href={ad.link}
+              onClick={(e) => {
+                sendGAEvent("event", "ad_banner_click", {
+                  user: userInfo.firstName + "-" + userInfo.mobile,
+                  clg_site: ad.name,
+                });
+              }}
               target="_blank"
               className="flex justify-center"
             >
