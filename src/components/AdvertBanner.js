@@ -52,6 +52,12 @@ const AD_DATA = [
     name: "Sairam Engineering College",
     src: "/ads/ad-003.webp",
     link: "https://www.sairam.edu.in",
+    place: ["/discover", "/colleges"],
+  },
+  {
+    name: "Rajalakshmi Institute of Technology",
+    src: "/ads/ad-008.webp",
+    link: "https://ritchennai.org/",
     place: "any",
   },
 ];
@@ -102,7 +108,10 @@ function AdvertBanner({ className }) {
               />
             </Link>
           </Carousel.Slide>
-        ) : ad.place === location ? (
+        ) : (typeof ad.place === "string" && ad.place === location) ||
+          (typeof ad.place === "object" &&
+            ad.place.length > 0 &&
+            ad.place.includes(location)) ? (
           <Carousel.Slide key={i} className="flex w-full justify-center">
             <Link
               href={ad.link}
